@@ -1,0 +1,1946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3406FE031A27C8E9004C5D46 /* code-purple@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE021A27C8E9004C5D46 /* code-purple@3x.png */; };
+		3406FE051A27C8FA004C5D46 /* code-purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE041A27C8FA004C5D46 /* code-purple@2x.png */; };
+		3406FE081A27C9C1004C5D46 /* near_me-colored@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE061A27C9C1004C5D46 /* near_me-colored@2x.png */; };
+		3406FE091A27C9C1004C5D46 /* near_me-colored@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE071A27C9C1004C5D46 /* near_me-colored@3x.png */; };
+		3406FE0C1A27CA3B004C5D46 /* walker-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE0A1A27CA3B004C5D46 /* walker-red@2x.png */; };
+		3406FE0D1A27CA3B004C5D46 /* walker-red@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE0B1A27CA3B004C5D46 /* walker-red@3x.png */; };
+		3406FE101A27CA94004C5D46 /* walking-blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE0E1A27CA94004C5D46 /* walking-blue@3x.png */; };
+		3406FE111A27CA94004C5D46 /* walking-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE0F1A27CA94004C5D46 /* walking-blue@2x.png */; };
+		3406FE141A27CAC8004C5D46 /* running-green@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE121A27CAC8004C5D46 /* running-green@3x.png */; };
+		3406FE151A27CAC8004C5D46 /* running-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE131A27CAC8004C5D46 /* running-green@2x.png */; };
+		34113A191A22238D00D60776 /* MVAPunInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 34113A181A22238D00D60776 /* MVAPunInt.m */; };
+		3423AE0F1A157DAA00F6F86C /* MVADataBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 3423AE0E1A157DAA00F6F86C /* MVADataBus.m */; };
+		342E24B41A2B73E200761796 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24B01A2B73E200761796 /* cross.png */; };
+		342E24B51A2B73E200761796 /* cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24B11A2B73E200761796 /* cross@2x.png */; };
+		342E24B61A2B73E200761796 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24B21A2B73E200761796 /* check.png */; };
+		342E24B71A2B73E200761796 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24B31A2B73E200761796 /* check@2x.png */; };
+		342E24BE1A2B752E00761796 /* dijkstra@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24B81A2B752E00761796 /* dijkstra@2x.png */; };
+		342E24BF1A2B752E00761796 /* astar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24B91A2B752E00761796 /* astar@2x.png */; };
+		342E24C01A2B752E00761796 /* astar.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24BA1A2B752E00761796 /* astar.png */; };
+		342E24C11A2B752E00761796 /* dijkstra.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24BB1A2B752E00761796 /* dijkstra.png */; };
+		342E24C21A2B752E00761796 /* astar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24BC1A2B752E00761796 /* astar@3x.png */; };
+		342E24C31A2B752E00761796 /* dijkstra@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24BD1A2B752E00761796 /* dijkstra@3x.png */; };
+		342E24C71A2B7CF400761796 /* trainer-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24C41A2B7CF400761796 /* trainer-yellow@2x.png */; };
+		342E24C81A2B7CF400761796 /* trainer-yellow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24C51A2B7CF400761796 /* trainer-yellow@3x.png */; };
+		342E24C91A2B7CF400761796 /* trainer-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24C61A2B7CF400761796 /* trainer-yellow.png */; };
+		342E24CD1A2B7DA400761796 /* car-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24CA1A2B7DA400761796 /* car-black.png */; };
+		342E24CE1A2B7DA400761796 /* car-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24CB1A2B7DA400761796 /* car-black@2x.png */; };
+		342E24CF1A2B7DA400761796 /* car-black@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342E24CC1A2B7DA400761796 /* car-black@3x.png */; };
+		344028271A14366700EE6EC0 /* MVAFrequencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 344028261A14366700EE6EC0 /* MVAFrequencies.m */; };
+		34476D991A1C0C7D00A9451E /* tmbDataBase.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34476D981A1C0C7D00A9451E /* tmbDataBase.plist */; };
+		34476D9C1A1C23A900A9451E /* busGraph.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34476D9A1A1C23A900A9451E /* busGraph.plist */; };
+		344A8F1F1A2A716500C51061 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F1C1A2A716500C51061 /* menu@2x.png */; };
+		344A8F201A2A716500C51061 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F1D1A2A716500C51061 /* menu.png */; };
+		344A8F211A2A716500C51061 /* menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F1E1A2A716500C51061 /* menu@3x.png */; };
+		344A8F271A2A722D00C51061 /* ALRadialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 344A8F241A2A722D00C51061 /* ALRadialButton.m */; };
+		344A8F281A2A722D00C51061 /* ALRadialMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 344A8F261A2A722D00C51061 /* ALRadialMenu.m */; };
+		344A8F2C1A2A995B00C51061 /* mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F291A2A995B00C51061 /* mapa.png */; };
+		344A8F2D1A2A995B00C51061 /* mapa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F2A1A2A995B00C51061 /* mapa@2x.png */; };
+		344A8F2E1A2A995B00C51061 /* mapa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F2B1A2A995B00C51061 /* mapa@3x.png */; };
+		344A8F321A2A9B4B00C51061 /* tuerca@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F2F1A2A9B4B00C51061 /* tuerca@3x.png */; };
+		344A8F331A2A9B4B00C51061 /* tuerca@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F301A2A9B4B00C51061 /* tuerca@2x.png */; };
+		344A8F341A2A9B4B00C51061 /* tuerca.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F311A2A9B4B00C51061 /* tuerca.png */; };
+		344A8F381A2A9C1400C51061 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F351A2A9C1400C51061 /* info.png */; };
+		344A8F391A2A9C1400C51061 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F361A2A9C1400C51061 /* info@2x.png */; };
+		344A8F3A1A2A9C1400C51061 /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344A8F371A2A9C1400C51061 /* info@3x.png */; };
+		344ACD5A1A2557360065E4E8 /* visitBCN.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 344ACD591A2557320065E4E8 /* visitBCN.mbtiles */; };
+		344ACD941A2557E00065E4E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349000B619B6431000BA3DCE /* CoreGraphics.framework */; };
+		344ACD961A2558A50065E4E8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ACD951A2558A50065E4E8 /* CoreLocation.framework */; };
+		344ACD981A2558CE0065E4E8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ACD971A2558CE0065E4E8 /* QuartzCore.framework */; };
+		344ACD9A1A2558E60065E4E8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ACD991A2558E60065E4E8 /* libsqlite3.dylib */; };
+		344ACDD61A2559040065E4E8 /* libMapbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ACDD41A2559040065E4E8 /* libMapbox.a */; };
+		344ACDD71A2559040065E4E8 /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 344ACDD51A2559040065E4E8 /* Mapbox.bundle */; };
+		344EE6CA1A2B2D8600CB1B96 /* campNouSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6C91A2B2D8600CB1B96 /* campNouSmall.jpg */; };
+		344EE6CD1A2B2FCB00CB1B96 /* laPedreraSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6CC1A2B2FCB00CB1B96 /* laPedreraSmall.jpeg */; };
+		344EE6CF1A2B2FD800CB1B96 /* museoMarSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6CE1A2B2FD800CB1B96 /* museoMarSmall.jpeg */; };
+		344EE6D11A2B2FED00CB1B96 /* parcJoanMiroSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6D01A2B2FED00CB1B96 /* parcJoanMiroSmall.jpeg */; };
+		344EE6D31A2B2FF300CB1B96 /* parcForumSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6D21A2B2FF300CB1B96 /* parcForumSmall.jpeg */; };
+		344EE6D51A2B2FFA00CB1B96 /* monestirPedrSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6D41A2B2FFA00CB1B96 /* monestirPedrSmall.jpeg */; };
+		344EE6D71A2B300200CB1B96 /* museuHistBcnSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6D61A2B300200CB1B96 /* museuHistBcnSmall.jpeg */; };
+		344EE6D91A2B300800CB1B96 /* basilicaSantaMariaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6D81A2B300800CB1B96 /* basilicaSantaMariaSmall.jpeg */; };
+		344EE6DB1A2B300B00CB1B96 /* basilicaMerceSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6DA1A2B300B00CB1B96 /* basilicaMerceSmall.jpeg */; };
+		344EE6DF1A2B301200CB1B96 /* plazaMonumentalSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6DE1A2B301200CB1B96 /* plazaMonumentalSmall.jpeg */; };
+		344EE6E11A2B301E00CB1B96 /* museuHistoriaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6E01A2B301E00CB1B96 /* museuHistoriaSmall.jpeg */; };
+		344EE6E31A2B302800CB1B96 /* teatreLiceuSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6E21A2B302800CB1B96 /* teatreLiceuSmall.jpeg */; };
+		344EE6E51A2B302E00CB1B96 /* casaLleoMoreraSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6E41A2B302E00CB1B96 /* casaLleoMoreraSmall.jpeg */; };
+		344EE6E71A2B303600CB1B96 /* estadiOlimpSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6E61A2B303600CB1B96 /* estadiOlimpSmall.jpeg */; };
+		344EE6E91A2B303B00CB1B96 /* fincaGuellSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6E81A2B303B00CB1B96 /* fincaGuellSmall.jpeg */; };
+		344EE6EB1A2B304000CB1B96 /* casaVicensSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6EA1A2B304000CB1B96 /* casaVicensSmall.jpeg */; };
+		344EE6ED1A2B304700CB1B96 /* fossarMoreresSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6EC1A2B304700CB1B96 /* fossarMoreresSmall.jpeg */; };
+		344EE6EF1A2B305300CB1B96 /* santaMariaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6EE1A2B305300CB1B96 /* santaMariaSmall.jpeg */; };
+		344EE6F11A2B305900CB1B96 /* catedralSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6F01A2B305900CB1B96 /* catedralSmall.jpeg */; };
+		344EE6F31A2B306100CB1B96 /* plReiSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6F21A2B306100CB1B96 /* plReiSmall.jpeg */; };
+		344EE6F51A2B306500CB1B96 /* plReialSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6F41A2B306500CB1B96 /* plReialSmall.jpeg */; };
+		344EE6F71A2B306E00CB1B96 /* santJaumeSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6F61A2B306E00CB1B96 /* santJaumeSmall.jpeg */; };
+		344EE6F91A2B307300CB1B96 /* plCatSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6F81A2B307300CB1B96 /* plCatSmall.jpeg */; };
+		344EE6FB1A2B307900CB1B96 /* ciutadellaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6FA1A2B307900CB1B96 /* ciutadellaSmall.jpeg */; };
+		344EE6FD1A2B307E00CB1B96 /* santJordiSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6FC1A2B307E00CB1B96 /* santJordiSmall.jpeg */; };
+		344EE6FF1A2B308700CB1B96 /* plEspanyaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6FE1A2B308700CB1B96 /* plEspanyaSmall.jpeg */; };
+		344EE7011A2B308C00CB1B96 /* mnacSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7001A2B308C00CB1B96 /* mnacSmall.jpeg */; };
+		344EE7031A2B309D00CB1B96 /* barcelonetaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7021A2B309D00CB1B96 /* barcelonetaSmall.jpeg */; };
+		344EE7051A2B30A900CB1B96 /* laDoradaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7041A2B30A900CB1B96 /* laDoradaSmall.jpeg */; };
+		344EE7071A2B30BA00CB1B96 /* monuColonSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7061A2B30BA00CB1B96 /* monuColonSmall.jpeg */; };
+		344EE7091A2B30C000CB1B96 /* torreAgbarSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7081A2B30C000CB1B96 /* torreAgbarSmall.jpeg */; };
+		344EE70B1A2B30C600CB1B96 /* museuPicassoSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE70A1A2B30C600CB1B96 /* museuPicassoSmall.jpeg */; };
+		344EE70D1A2B30CC00CB1B96 /* mercatBornSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE70C1A2B30CC00CB1B96 /* mercatBornSmall.jpeg */; };
+		344EE70F1A2B30D000CB1B96 /* arcTriomfSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE70E1A2B30D000CB1B96 /* arcTriomfSmall.jpeg */; };
+		344EE7111A2B30D800CB1B96 /* boqueriaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7101A2B30D800CB1B96 /* boqueriaSmall.jpeg */; };
+		344EE7131A2B30DC00CB1B96 /* sagradaFamSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7121A2B30DC00CB1B96 /* sagradaFamSmall.jpeg */; };
+		344EE7151A2B30E400CB1B96 /* palauMusicaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7141A2B30E400CB1B96 /* palauMusicaSmall.jpeg */; };
+		344EE7171A2B30EA00CB1B96 /* casaAmatSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7161A2B30EA00CB1B96 /* casaAmatSmall.jpeg */; };
+		344EE7191A2B30F100CB1B96 /* casaBatlloSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7181A2B30F100CB1B96 /* casaBatlloSmall.jpeg */; };
+		344EE71B1A2B311000CB1B96 /* palauGuellSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE71A1A2B311000CB1B96 /* palauGuellSmall.jpeg */; };
+		344EE71D1A2B311800CB1B96 /* parcGuellSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE71C1A2B311800CB1B96 /* parcGuellSmall.jpeg */; };
+		344EE71F1A2B33A200CB1B96 /* torreAgbarBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE71E1A2B33A200CB1B96 /* torreAgbarBig.jpg */; };
+		344EE7211A2B340D00CB1B96 /* parcGuellBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7201A2B340D00CB1B96 /* parcGuellBig.jpg */; };
+		344EE7231A2B347800CB1B96 /* casaBatlloBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7221A2B347800CB1B96 /* casaBatlloBig.jpg */; };
+		344EE7251A2B350200CB1B96 /* casaAmatBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7241A2B350200CB1B96 /* casaAmatBig.jpg */; };
+		344EE7271A2B359F00CB1B96 /* palauMusicaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7261A2B359F00CB1B96 /* palauMusicaBig.jpg */; };
+		344EE7291A2B36E100CB1B96 /* sagradaFamBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7281A2B36E100CB1B96 /* sagradaFamBig.jpg */; };
+		3450757C1A1D82FE00BB59DC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450757B1A1D82FE00BB59DC /* Reachability.m */; };
+		346219A71A2808D100763F02 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = 346219A41A2808D100763F02 /* head.png */; };
+		346219A81A2808D100763F02 /* head@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 346219A51A2808D100763F02 /* head@3x.png */; };
+		346219A91A2808D100763F02 /* head@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 346219A61A2808D100763F02 /* head@2x.png */; };
+		346C36B61A14DCBB006A9C2C /* MVABusSeq.m in Sources */ = {isa = PBXBuildFile; fileRef = 346C36B51A14DCBB006A9C2C /* MVABusSeq.m */; };
+		346C8F7D1A2723C90039696E /* code-purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 346C8F7C1A2723C90039696E /* code-purple.png */; };
+		34783A931A250F55005F65E5 /* MVAPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 34783A921A250F55005F65E5 /* MVAPair.m */; };
+		34783A961A250F9F005F65E5 /* MVAPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 34783A951A250F9F005F65E5 /* MVAPriorityQueue.m */; };
+		347CA49D1A2805A90018F5B8 /* UIViewController+ScrollingNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 347CA49C1A2805A90018F5B8 /* UIViewController+ScrollingNavbar.m */; };
+		347FEA5B1A169BF20091EBE0 /* fgcDataBase.plist in Resources */ = {isa = PBXBuildFile; fileRef = 347FEA591A169BF20091EBE0 /* fgcDataBase.plist */; };
+		347FEA5C1A169BF20091EBE0 /* busDataBase.plist in Resources */ = {isa = PBXBuildFile; fileRef = 347FEA5A1A169BF20091EBE0 /* busDataBase.plist */; };
+		347FEA5F1A16A2A90091EBE0 /* MVABusGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 347FEA5E1A16A2A90091EBE0 /* MVABusGraph.m */; };
+		347FEA621A16A3340091EBE0 /* MVASubwayGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 347FEA611A16A3340091EBE0 /* MVASubwayGraph.m */; };
+		34874C221A2A300D00E99794 /* campNouBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34874C211A2A300C00E99794 /* campNouBig.jpg */; };
+		348E9EBD1A159FE5007E960C /* MVADataFGC.m in Sources */ = {isa = PBXBuildFile; fileRef = 348E9EBC1A159FE5007E960C /* MVADataFGC.m */; };
+		348FC16F19F337DF007FD4D6 /* MVANode.m in Sources */ = {isa = PBXBuildFile; fileRef = 348FC16E19F337DF007FD4D6 /* MVANode.m */; };
+		348FC17219F337F2007FD4D6 /* MVAEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 348FC17119F337F2007FD4D6 /* MVAEdge.m */; };
+		348FC17819F33B50007FD4D6 /* MVAPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 348FC17719F33B50007FD4D6 /* MVAPath.m */; };
+		349000B519B6431000BA3DCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349000B419B6431000BA3DCE /* Foundation.framework */; };
+		349000B919B6431000BA3DCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349000B819B6431000BA3DCE /* UIKit.framework */; };
+		349000BF19B6431000BA3DCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 349000BD19B6431000BA3DCE /* InfoPlist.strings */; };
+		349000C119B6431000BA3DCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 349000C019B6431000BA3DCE /* main.m */; };
+		349000C519B6431000BA3DCE /* MVAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 349000C419B6431000BA3DCE /* MVAAppDelegate.m */; };
+		349000C819B6431000BA3DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349000C619B6431000BA3DCE /* Main.storyboard */; };
+		349000CB19B6431000BA3DCE /* MVAMapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 349000CA19B6431000BA3DCE /* MVAMapaViewController.m */; };
+		349000D419B6431000BA3DCE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349000D319B6431000BA3DCE /* XCTest.framework */; };
+		349000D519B6431000BA3DCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349000B419B6431000BA3DCE /* Foundation.framework */; };
+		349000D619B6431000BA3DCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349000B819B6431000BA3DCE /* UIKit.framework */; };
+		349000DE19B6431000BA3DCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 349000DC19B6431000BA3DCE /* InfoPlist.strings */; };
+		349000E019B6431000BA3DCE /* VisitBCNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 349000DF19B6431000BA3DCE /* VisitBCNTests.m */; };
+		349000EB19B6432A00BA3DCE /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 349000EA19B6432A00BA3DCE /* CHCSVParser.m */; };
+		349000EE19B644A800BA3DCE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 349000ED19B644A800BA3DCE /* libz.dylib */; };
+		349000FC19B644BF00BA3DCE /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 349000F219B644BF00BA3DCE /* ioapi.c */; };
+		349000FD19B644BF00BA3DCE /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 349000F419B644BF00BA3DCE /* mztools.c */; };
+		349000FE19B644BF00BA3DCE /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 349000F619B644BF00BA3DCE /* unzip.c */; };
+		349000FF19B644BF00BA3DCE /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 349000F819B644BF00BA3DCE /* zip.c */; };
+		3490010019B644BF00BA3DCE /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 349000FB19B644BF00BA3DCE /* SSZipArchive.m */; };
+		3490010419B64E7500BA3DCE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3490010319B64E7500BA3DCE /* MBProgressHUD.m */; };
+		3490011219B66C4600BA3DCE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3490010619B66C4600BA3DCE /* Icon.png */; };
+		3490011319B66C4600BA3DCE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3490010719B66C4600BA3DCE /* Icon@2x.png */; };
+		3490011419B66C4600BA3DCE /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3490010819B66C4600BA3DCE /* Icon-Small.png */; };
+		3490011519B66C4600BA3DCE /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3490010919B66C4600BA3DCE /* Icon-Small@2x.png */; };
+		3490011619B66C4600BA3DCE /* Icon-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3490010A19B66C4600BA3DCE /* Icon-iOS7@2x.png */; };
+		3490012319B6778800BA3DCE /* MVAStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3490012219B6778800BA3DCE /* MVAStop.m */; };
+		34A08B6E1A27AAAC009DBACC /* MVAPuntsIntsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A08B6D1A27AAAC009DBACC /* MVAPuntsIntsTableViewController.m */; };
+		34A08B711A27AB86009DBACC /* MVATaxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A08B701A27AB86009DBACC /* MVATaxis.m */; };
+		34A08B741A27AD10009DBACC /* MVAPunIntViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A08B731A27AD10009DBACC /* MVAPunIntViewController.m */; };
+		34A08B771A27B0F4009DBACC /* MVAPunIntTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A08B761A27B0F4009DBACC /* MVAPunIntTableViewCell.m */; };
+		34AB7A651A12273900D74CBE /* MVACustomModifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AB7A641A12273900D74CBE /* MVACustomModifications.m */; };
+		34AB7A681A1227CE00D74CBE /* MVATriple.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AB7A671A1227CE00D74CBE /* MVATriple.m */; };
+		34AE67671A2B3BEA0076E5D5 /* rain-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67641A2B3BEA0076E5D5 /* rain-blue@2x.png */; };
+		34AE67681A2B3BEA0076E5D5 /* rain-blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67651A2B3BEA0076E5D5 /* rain-blue@3x.png */; };
+		34AE67691A2B3BEA0076E5D5 /* rain-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67661A2B3BEA0076E5D5 /* rain-blue.png */; };
+		34AE676B1A2B3CE40076E5D5 /* boqueriaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE676A1A2B3CE40076E5D5 /* boqueriaBig.jpg */; };
+		34AE676D1A2B3E640076E5D5 /* laPedreraBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE676C1A2B3E640076E5D5 /* laPedreraBig.jpg */; };
+		34AE676F1A2B3EF30076E5D5 /* mercatBornBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE676E1A2B3EF30076E5D5 /* mercatBornBig.jpg */; };
+		34AE67711A2B3F330076E5D5 /* arcTriomfBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67701A2B3F330076E5D5 /* arcTriomfBig.jpg */; };
+		34AE67731A2B3F700076E5D5 /* museuPicassoBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67721A2B3F700076E5D5 /* museuPicassoBig.jpg */; };
+		34AE67751A2B3FB90076E5D5 /* monuColonBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67741A2B3FB90076E5D5 /* monuColonBig.jpg */; };
+		34AE67771A2B400D0076E5D5 /* laDoradaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67761A2B400D0076E5D5 /* laDoradaBig.jpg */; };
+		34AE67791A2B40A20076E5D5 /* barcelonetaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67781A2B40A20076E5D5 /* barcelonetaBig.jpg */; };
+		34AE677B1A2B40CE0076E5D5 /* mnacBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE677A1A2B40CE0076E5D5 /* mnacBig.jpg */; };
+		34AE677D1A2B416A0076E5D5 /* plEspanyaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE677C1A2B416A0076E5D5 /* plEspanyaBig.jpg */; };
+		34AE677F1A2B41B10076E5D5 /* santJordiBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE677E1A2B41B10076E5D5 /* santJordiBig.jpg */; };
+		34AE67811A2B41D40076E5D5 /* ciutadellaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67801A2B41D40076E5D5 /* ciutadellaBig.jpg */; };
+		34AE67831A2B41FD0076E5D5 /* plCatBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67821A2B41FD0076E5D5 /* plCatBig.jpg */; };
+		34AE67851A2B428F0076E5D5 /* santJaumeBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67841A2B428F0076E5D5 /* santJaumeBig.jpg */; };
+		34AE67871A2B43210076E5D5 /* plReiBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67861A2B43210076E5D5 /* plReiBig.jpg */; };
+		34AE67891A2B43750076E5D5 /* plReialBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67881A2B43750076E5D5 /* plReialBig.jpg */; };
+		34AE678B1A2B43E60076E5D5 /* catedralBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE678A1A2B43E60076E5D5 /* catedralBig.jpg */; };
+		34AE678D1A2B44FB0076E5D5 /* santaMariaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE678C1A2B44FB0076E5D5 /* santaMariaBig.jpg */; };
+		34AE678F1A2B45560076E5D5 /* fossarMoreresBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE678E1A2B45560076E5D5 /* fossarMoreresBig.jpg */; };
+		34AE67911A2B45850076E5D5 /* casaVicensBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67901A2B45850076E5D5 /* casaVicensBig.jpg */; };
+		34AE67931A2B45C60076E5D5 /* fincaGuellBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67921A2B45C60076E5D5 /* fincaGuellBig.jpg */; };
+		34AE67951A2B460E0076E5D5 /* estadiOlimpBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67941A2B460E0076E5D5 /* estadiOlimpBig.jpg */; };
+		34AE67971A2B46650076E5D5 /* casaLleoMoreraBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67961A2B46650076E5D5 /* casaLleoMoreraBig.jpg */; };
+		34AE67991A2B46CC0076E5D5 /* teatreLiceuBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67981A2B46CC0076E5D5 /* teatreLiceuBig.jpg */; };
+		34AE679B1A2B471D0076E5D5 /* museuHistoriaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE679A1A2B471D0076E5D5 /* museuHistoriaBig.jpg */; };
+		34AE679D1A2B47710076E5D5 /* plazaMonumentalBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE679C1A2B47710076E5D5 /* plazaMonumentalBig.jpg */; };
+		34AE679F1A2B47AD0076E5D5 /* palauGuellBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE679E1A2B47AD0076E5D5 /* palauGuellBig.jpg */; };
+		34AE67A11A2B47FF0076E5D5 /* basilicaMerceBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67A01A2B47FF0076E5D5 /* basilicaMerceBig.jpg */; };
+		34AE67A31A2B487A0076E5D5 /* basilicaSantaMariaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67A21A2B487A0076E5D5 /* basilicaSantaMariaBig.jpg */; };
+		34AE67A51A2B49140076E5D5 /* museuHistBcnBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67A41A2B49140076E5D5 /* museuHistBcnBig.jpg */; };
+		34AE67A71A2B4A050076E5D5 /* monestirPedrBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67A61A2B4A050076E5D5 /* monestirPedrBig.jpg */; };
+		34AE67A91A2B4ABE0076E5D5 /* parcForumBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67A81A2B4ABE0076E5D5 /* parcForumBig.jpg */; };
+		34AE67AB1A2B4B660076E5D5 /* parcJoanMiroBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67AA1A2B4B660076E5D5 /* parcJoanMiroBig.jpg */; };
+		34AE67AD1A2B4BBB0076E5D5 /* museoMarBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67AC1A2B4BBB0076E5D5 /* museoMarBig.jpg */; };
+		34B88F8D1A268EA7000E75A8 /* MVAConfigurationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B88F8C1A268EA7000E75A8 /* MVAConfigurationTableViewController.m */; };
+		34B88F901A2690CB000E75A8 /* MVAConfigTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B88F8F1A2690CB000E75A8 /* MVAConfigTableViewCell.m */; };
+		34B88F931A269216000E75A8 /* SevenSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B88F921A269216000E75A8 /* SevenSwitch.m */; };
+		34B88F991A269673000E75A8 /* walking-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B88F951A269673000E75A8 /* walking-blue.png */; };
+		34B88F9A1A269673000E75A8 /* near_me-colored.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B88F961A269673000E75A8 /* near_me-colored.png */; };
+		34B88F9B1A269673000E75A8 /* walker-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B88F971A269673000E75A8 /* walker-red.png */; };
+		34B88F9C1A269673000E75A8 /* running-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B88F981A269673000E75A8 /* running-green.png */; };
+		34B88F9F1A2696FD000E75A8 /* MVASliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B88F9E1A2696FD000E75A8 /* MVASliderTableViewCell.m */; };
+		34E0FC8819B7C85F001EAFAA /* tmb.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0FC8619B7C85F001EAFAA /* tmb.png */; };
+		34E0FC8919B7C85F001EAFAA /* tmb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0FC8719B7C85F001EAFAA /* tmb@2x.png */; };
+		34E0FC8C19B7C995001EAFAA /* fgc.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0FC8A19B7C995001EAFAA /* fgc.png */; };
+		34E0FC8D19B7C995001EAFAA /* fgc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E0FC8B19B7C995001EAFAA /* fgc@2x.png */; };
+		34E0FC9019B7D024001EAFAA /* MVACalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FC8F19B7D024001EAFAA /* MVACalendar.m */; };
+		34E0FC9619B7DD45001EAFAA /* MVARoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FC9519B7DD45001EAFAA /* MVARoute.m */; };
+		34E0FC9919B7E47B001EAFAA /* MVATrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FC9819B7E47B001EAFAA /* MVATrip.m */; };
+		34E0FC9C19B7F031001EAFAA /* MVADate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FC9B19B7F031001EAFAA /* MVADate.m */; };
+		34E0FC9F19B7F30E001EAFAA /* MVATime.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FC9E19B7F30E001EAFAA /* MVATime.m */; };
+		34E0FCA219B7F867001EAFAA /* MVADataTMB.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FCA119B7F867001EAFAA /* MVADataTMB.m */; };
+		34E0FCA519B7FA9D001EAFAA /* MVAGraphs.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FCA419B7FA9D001EAFAA /* MVAGraphs.m */; };
+		34E0FCA819B7FAAB001EAFAA /* MVAGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0FCA719B7FAAB001EAFAA /* MVAGraph.m */; };
+		34E1F0F11A213DC4003944F8 /* MVAAlgorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E1F0F01A213DC4003944F8 /* MVAAlgorithms.m */; };
+		34E222031A238A3D00DB4BAD /* pointsofinterest.json in Resources */ = {isa = PBXBuildFile; fileRef = 34E222021A238A3D00DB4BAD /* pointsofinterest.json */; };
+		34E784B119F846FE005AEAE7 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E784B019F846FE005AEAE7 /* images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		349000D719B6431000BA3DCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 349000A919B6430F00BA3DCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 349000B019B6431000BA3DCE;
+			remoteInfo = VisitBCN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3406FE021A27C8E9004C5D46 /* code-purple@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "code-purple@3x.png"; sourceTree = "<group>"; };
+		3406FE041A27C8FA004C5D46 /* code-purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "code-purple@2x.png"; sourceTree = "<group>"; };
+		3406FE061A27C9C1004C5D46 /* near_me-colored@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "near_me-colored@2x.png"; sourceTree = "<group>"; };
+		3406FE071A27C9C1004C5D46 /* near_me-colored@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "near_me-colored@3x.png"; sourceTree = "<group>"; };
+		3406FE0A1A27CA3B004C5D46 /* walker-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walker-red@2x.png"; sourceTree = "<group>"; };
+		3406FE0B1A27CA3B004C5D46 /* walker-red@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walker-red@3x.png"; sourceTree = "<group>"; };
+		3406FE0E1A27CA94004C5D46 /* walking-blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking-blue@3x.png"; sourceTree = "<group>"; };
+		3406FE0F1A27CA94004C5D46 /* walking-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking-blue@2x.png"; sourceTree = "<group>"; };
+		3406FE121A27CAC8004C5D46 /* running-green@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "running-green@3x.png"; sourceTree = "<group>"; };
+		3406FE131A27CAC8004C5D46 /* running-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "running-green@2x.png"; sourceTree = "<group>"; };
+		34113A171A22238D00D60776 /* MVAPunInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAPunInt.h; sourceTree = "<group>"; };
+		34113A181A22238D00D60776 /* MVAPunInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPunInt.m; sourceTree = "<group>"; };
+		3423AE0D1A157DAA00F6F86C /* MVADataBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVADataBus.h; sourceTree = "<group>"; };
+		3423AE0E1A157DAA00F6F86C /* MVADataBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVADataBus.m; sourceTree = "<group>"; };
+		342E24B01A2B73E200761796 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		342E24B11A2B73E200761796 /* cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross@2x.png"; sourceTree = "<group>"; };
+		342E24B21A2B73E200761796 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		342E24B31A2B73E200761796 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		342E24B81A2B752E00761796 /* dijkstra@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dijkstra@2x.png"; sourceTree = "<group>"; };
+		342E24B91A2B752E00761796 /* astar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "astar@2x.png"; sourceTree = "<group>"; };
+		342E24BA1A2B752E00761796 /* astar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = astar.png; sourceTree = "<group>"; };
+		342E24BB1A2B752E00761796 /* dijkstra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dijkstra.png; sourceTree = "<group>"; };
+		342E24BC1A2B752E00761796 /* astar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "astar@3x.png"; sourceTree = "<group>"; };
+		342E24BD1A2B752E00761796 /* dijkstra@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dijkstra@3x.png"; sourceTree = "<group>"; };
+		342E24C41A2B7CF400761796 /* trainer-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trainer-yellow@2x.png"; sourceTree = "<group>"; };
+		342E24C51A2B7CF400761796 /* trainer-yellow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trainer-yellow@3x.png"; sourceTree = "<group>"; };
+		342E24C61A2B7CF400761796 /* trainer-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trainer-yellow.png"; sourceTree = "<group>"; };
+		342E24CA1A2B7DA400761796 /* car-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-black.png"; sourceTree = "<group>"; };
+		342E24CB1A2B7DA400761796 /* car-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-black@2x.png"; sourceTree = "<group>"; };
+		342E24CC1A2B7DA400761796 /* car-black@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-black@3x.png"; sourceTree = "<group>"; };
+		344028251A14366700EE6EC0 /* MVAFrequencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAFrequencies.h; sourceTree = "<group>"; };
+		344028261A14366700EE6EC0 /* MVAFrequencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAFrequencies.m; sourceTree = "<group>"; };
+		34476D981A1C0C7D00A9451E /* tmbDataBase.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = tmbDataBase.plist; sourceTree = "<group>"; };
+		34476D9A1A1C23A900A9451E /* busGraph.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = busGraph.plist; sourceTree = "<group>"; };
+		344A8F1C1A2A716500C51061 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		344A8F1D1A2A716500C51061 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		344A8F1E1A2A716500C51061 /* menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@3x.png"; sourceTree = "<group>"; };
+		344A8F231A2A722D00C51061 /* ALRadialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialButton.h; sourceTree = "<group>"; };
+		344A8F241A2A722D00C51061 /* ALRadialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialButton.m; sourceTree = "<group>"; };
+		344A8F251A2A722D00C51061 /* ALRadialMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialMenu.h; sourceTree = "<group>"; };
+		344A8F261A2A722D00C51061 /* ALRadialMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialMenu.m; sourceTree = "<group>"; };
+		344A8F291A2A995B00C51061 /* mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa.png; sourceTree = "<group>"; };
+		344A8F2A1A2A995B00C51061 /* mapa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapa@2x.png"; sourceTree = "<group>"; };
+		344A8F2B1A2A995B00C51061 /* mapa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapa@3x.png"; sourceTree = "<group>"; };
+		344A8F2F1A2A9B4B00C51061 /* tuerca@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuerca@3x.png"; sourceTree = "<group>"; };
+		344A8F301A2A9B4B00C51061 /* tuerca@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuerca@2x.png"; sourceTree = "<group>"; };
+		344A8F311A2A9B4B00C51061 /* tuerca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuerca.png; sourceTree = "<group>"; };
+		344A8F351A2A9C1400C51061 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		344A8F361A2A9C1400C51061 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+		344A8F371A2A9C1400C51061 /* info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@3x.png"; sourceTree = "<group>"; };
+		344ACD591A2557320065E4E8 /* visitBCN.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = visitBCN.mbtiles; sourceTree = "<group>"; };
+		344ACD951A2558A50065E4E8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		344ACD971A2558CE0065E4E8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		344ACD991A2558E60065E4E8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		344ACD9C1A2559040065E4E8 /* Mapbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapbox.h; sourceTree = "<group>"; };
+		344ACD9D1A2559040065E4E8 /* RMAbstractMercatorTileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAbstractMercatorTileSource.h; sourceTree = "<group>"; };
+		344ACD9E1A2559040065E4E8 /* RMAbstractWebMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAbstractWebMapSource.h; sourceTree = "<group>"; };
+		344ACD9F1A2559040065E4E8 /* RMAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAnnotation.h; sourceTree = "<group>"; };
+		344ACDA01A2559040065E4E8 /* RMAttributionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAttributionViewController.h; sourceTree = "<group>"; };
+		344ACDA11A2559040065E4E8 /* RMBingSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMBingSource.h; sourceTree = "<group>"; };
+		344ACDA21A2559040065E4E8 /* RMCacheObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCacheObject.h; sourceTree = "<group>"; };
+		344ACDA31A2559040065E4E8 /* RMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCircle.h; sourceTree = "<group>"; };
+		344ACDA41A2559040065E4E8 /* RMCircleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCircleAnnotation.h; sourceTree = "<group>"; };
+		344ACDA51A2559040065E4E8 /* RMCompositeSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCompositeSource.h; sourceTree = "<group>"; };
+		344ACDA61A2559040065E4E8 /* RMConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMConfiguration.h; sourceTree = "<group>"; };
+		344ACDA71A2559040065E4E8 /* RMCoordinateGridSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCoordinateGridSource.h; sourceTree = "<group>"; };
+		344ACDA81A2559040065E4E8 /* RMDatabaseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDatabaseCache.h; sourceTree = "<group>"; };
+		344ACDA91A2559040065E4E8 /* RMDBMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDBMapSource.h; sourceTree = "<group>"; };
+		344ACDAA1A2559040065E4E8 /* RMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFoundation.h; sourceTree = "<group>"; };
+		344ACDAB1A2559040065E4E8 /* RMFractalTileProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFractalTileProjection.h; sourceTree = "<group>"; };
+		344ACDAC1A2559040065E4E8 /* RMGenericMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGenericMapSource.h; sourceTree = "<group>"; };
+		344ACDAD1A2559040065E4E8 /* RMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGlobalConstants.h; sourceTree = "<group>"; };
+		344ACDAE1A2559040065E4E8 /* RMGreatCircleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGreatCircleAnnotation.h; sourceTree = "<group>"; };
+		344ACDAF1A2559040065E4E8 /* RMInteractiveSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMInteractiveSource.h; sourceTree = "<group>"; };
+		344ACDB01A2559040065E4E8 /* RMLoadingTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLoadingTileView.h; sourceTree = "<group>"; };
+		344ACDB11A2559040065E4E8 /* RMMapboxSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapboxSource.h; sourceTree = "<group>"; };
+		344ACDB21A2559040065E4E8 /* RMMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapLayer.h; sourceTree = "<group>"; };
+		344ACDB31A2559040065E4E8 /* RMMapOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapOverlayView.h; sourceTree = "<group>"; };
+		344ACDB41A2559040065E4E8 /* RMMapQuestOpenAerialSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapQuestOpenAerialSource.h; sourceTree = "<group>"; };
+		344ACDB51A2559040065E4E8 /* RMMapQuestOSMSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapQuestOSMSource.h; sourceTree = "<group>"; };
+		344ACDB61A2559040065E4E8 /* RMMapScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapScrollView.h; sourceTree = "<group>"; };
+		344ACDB71A2559040065E4E8 /* RMMapTiledLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapTiledLayerView.h; sourceTree = "<group>"; };
+		344ACDB81A2559040065E4E8 /* RMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapView.h; sourceTree = "<group>"; };
+		344ACDB91A2559040065E4E8 /* RMMapViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapViewDelegate.h; sourceTree = "<group>"; };
+		344ACDBA1A2559040065E4E8 /* RMMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMarker.h; sourceTree = "<group>"; };
+		344ACDBB1A2559040065E4E8 /* RMMBTilesSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMBTilesSource.h; sourceTree = "<group>"; };
+		344ACDBC1A2559040065E4E8 /* RMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMemoryCache.h; sourceTree = "<group>"; };
+		344ACDBD1A2559040065E4E8 /* RMNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMNotifications.h; sourceTree = "<group>"; };
+		344ACDBE1A2559040065E4E8 /* RMOpenCycleMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenCycleMapSource.h; sourceTree = "<group>"; };
+		344ACDBF1A2559040065E4E8 /* RMOpenSeaMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenSeaMapLayer.h; sourceTree = "<group>"; };
+		344ACDC01A2559040065E4E8 /* RMOpenSeaMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenSeaMapSource.h; sourceTree = "<group>"; };
+		344ACDC11A2559040065E4E8 /* RMOpenStreetMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenStreetMapSource.h; sourceTree = "<group>"; };
+		344ACDC21A2559040065E4E8 /* RMPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPixel.h; sourceTree = "<group>"; };
+		344ACDC31A2559040065E4E8 /* RMPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPointAnnotation.h; sourceTree = "<group>"; };
+		344ACDC41A2559040065E4E8 /* RMPolygonAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPolygonAnnotation.h; sourceTree = "<group>"; };
+		344ACDC51A2559040065E4E8 /* RMPolylineAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPolylineAnnotation.h; sourceTree = "<group>"; };
+		344ACDC61A2559040065E4E8 /* RMProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMProjection.h; sourceTree = "<group>"; };
+		344ACDC71A2559040065E4E8 /* RMQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQuadTree.h; sourceTree = "<group>"; };
+		344ACDC81A2559040065E4E8 /* RMShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMShape.h; sourceTree = "<group>"; };
+		344ACDC91A2559040065E4E8 /* RMShapeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMShapeAnnotation.h; sourceTree = "<group>"; };
+		344ACDCA1A2559040065E4E8 /* RMStaticMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMStaticMapView.h; sourceTree = "<group>"; };
+		344ACDCB1A2559040065E4E8 /* RMTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTile.h; sourceTree = "<group>"; };
+		344ACDCC1A2559040065E4E8 /* RMTileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileCache.h; sourceTree = "<group>"; };
+		344ACDCD1A2559040065E4E8 /* RMTileCacheDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileCacheDownloadOperation.h; sourceTree = "<group>"; };
+		344ACDCE1A2559040065E4E8 /* RMTileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileImage.h; sourceTree = "<group>"; };
+		344ACDCF1A2559040065E4E8 /* RMTileMillSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileMillSource.h; sourceTree = "<group>"; };
+		344ACDD01A2559040065E4E8 /* RMTileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileSource.h; sourceTree = "<group>"; };
+		344ACDD11A2559040065E4E8 /* RMTileSourcesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileSourcesContainer.h; sourceTree = "<group>"; };
+		344ACDD21A2559040065E4E8 /* RMUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUserLocation.h; sourceTree = "<group>"; };
+		344ACDD31A2559040065E4E8 /* RMUserTrackingBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUserTrackingBarButtonItem.h; sourceTree = "<group>"; };
+		344ACDD41A2559040065E4E8 /* libMapbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMapbox.a; sourceTree = "<group>"; };
+		344ACDD51A2559040065E4E8 /* Mapbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Mapbox.bundle; sourceTree = "<group>"; };
+		344EE6C91A2B2D8600CB1B96 /* campNouSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = campNouSmall.jpg; sourceTree = "<group>"; };
+		344EE6CC1A2B2FCB00CB1B96 /* laPedreraSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laPedreraSmall.jpeg; sourceTree = "<group>"; };
+		344EE6CE1A2B2FD800CB1B96 /* museoMarSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museoMarSmall.jpeg; sourceTree = "<group>"; };
+		344EE6D01A2B2FED00CB1B96 /* parcJoanMiroSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parcJoanMiroSmall.jpeg; sourceTree = "<group>"; };
+		344EE6D21A2B2FF300CB1B96 /* parcForumSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parcForumSmall.jpeg; sourceTree = "<group>"; };
+		344EE6D41A2B2FFA00CB1B96 /* monestirPedrSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monestirPedrSmall.jpeg; sourceTree = "<group>"; };
+		344EE6D61A2B300200CB1B96 /* museuHistBcnSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museuHistBcnSmall.jpeg; sourceTree = "<group>"; };
+		344EE6D81A2B300800CB1B96 /* basilicaSantaMariaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basilicaSantaMariaSmall.jpeg; sourceTree = "<group>"; };
+		344EE6DA1A2B300B00CB1B96 /* basilicaMerceSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basilicaMerceSmall.jpeg; sourceTree = "<group>"; };
+		344EE6DE1A2B301200CB1B96 /* plazaMonumentalSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plazaMonumentalSmall.jpeg; sourceTree = "<group>"; };
+		344EE6E01A2B301E00CB1B96 /* museuHistoriaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museuHistoriaSmall.jpeg; sourceTree = "<group>"; };
+		344EE6E21A2B302800CB1B96 /* teatreLiceuSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teatreLiceuSmall.jpeg; sourceTree = "<group>"; };
+		344EE6E41A2B302E00CB1B96 /* casaLleoMoreraSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casaLleoMoreraSmall.jpeg; sourceTree = "<group>"; };
+		344EE6E61A2B303600CB1B96 /* estadiOlimpSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = estadiOlimpSmall.jpeg; sourceTree = "<group>"; };
+		344EE6E81A2B303B00CB1B96 /* fincaGuellSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fincaGuellSmall.jpeg; sourceTree = "<group>"; };
+		344EE6EA1A2B304000CB1B96 /* casaVicensSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casaVicensSmall.jpeg; sourceTree = "<group>"; };
+		344EE6EC1A2B304700CB1B96 /* fossarMoreresSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fossarMoreresSmall.jpeg; sourceTree = "<group>"; };
+		344EE6EE1A2B305300CB1B96 /* santaMariaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santaMariaSmall.jpeg; sourceTree = "<group>"; };
+		344EE6F01A2B305900CB1B96 /* catedralSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = catedralSmall.jpeg; sourceTree = "<group>"; };
+		344EE6F21A2B306100CB1B96 /* plReiSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plReiSmall.jpeg; sourceTree = "<group>"; };
+		344EE6F41A2B306500CB1B96 /* plReialSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plReialSmall.jpeg; sourceTree = "<group>"; };
+		344EE6F61A2B306E00CB1B96 /* santJaumeSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santJaumeSmall.jpeg; sourceTree = "<group>"; };
+		344EE6F81A2B307300CB1B96 /* plCatSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plCatSmall.jpeg; sourceTree = "<group>"; };
+		344EE6FA1A2B307900CB1B96 /* ciutadellaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ciutadellaSmall.jpeg; sourceTree = "<group>"; };
+		344EE6FC1A2B307E00CB1B96 /* santJordiSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santJordiSmall.jpeg; sourceTree = "<group>"; };
+		344EE6FE1A2B308700CB1B96 /* plEspanyaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plEspanyaSmall.jpeg; sourceTree = "<group>"; };
+		344EE7001A2B308C00CB1B96 /* mnacSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mnacSmall.jpeg; sourceTree = "<group>"; };
+		344EE7021A2B309D00CB1B96 /* barcelonetaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barcelonetaSmall.jpeg; sourceTree = "<group>"; };
+		344EE7041A2B30A900CB1B96 /* laDoradaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laDoradaSmall.jpeg; sourceTree = "<group>"; };
+		344EE7061A2B30BA00CB1B96 /* monuColonSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monuColonSmall.jpeg; sourceTree = "<group>"; };
+		344EE7081A2B30C000CB1B96 /* torreAgbarSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = torreAgbarSmall.jpeg; sourceTree = "<group>"; };
+		344EE70A1A2B30C600CB1B96 /* museuPicassoSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museuPicassoSmall.jpeg; sourceTree = "<group>"; };
+		344EE70C1A2B30CC00CB1B96 /* mercatBornSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercatBornSmall.jpeg; sourceTree = "<group>"; };
+		344EE70E1A2B30D000CB1B96 /* arcTriomfSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arcTriomfSmall.jpeg; sourceTree = "<group>"; };
+		344EE7101A2B30D800CB1B96 /* boqueriaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boqueriaSmall.jpeg; sourceTree = "<group>"; };
+		344EE7121A2B30DC00CB1B96 /* sagradaFamSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sagradaFamSmall.jpeg; sourceTree = "<group>"; };
+		344EE7141A2B30E400CB1B96 /* palauMusicaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = palauMusicaSmall.jpeg; sourceTree = "<group>"; };
+		344EE7161A2B30EA00CB1B96 /* casaAmatSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casaAmatSmall.jpeg; sourceTree = "<group>"; };
+		344EE7181A2B30F100CB1B96 /* casaBatlloSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casaBatlloSmall.jpeg; sourceTree = "<group>"; };
+		344EE71A1A2B311000CB1B96 /* palauGuellSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = palauGuellSmall.jpeg; sourceTree = "<group>"; };
+		344EE71C1A2B311800CB1B96 /* parcGuellSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parcGuellSmall.jpeg; sourceTree = "<group>"; };
+		344EE71E1A2B33A200CB1B96 /* torreAgbarBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = torreAgbarBig.jpg; sourceTree = "<group>"; };
+		344EE7201A2B340D00CB1B96 /* parcGuellBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parcGuellBig.jpg; sourceTree = "<group>"; };
+		344EE7221A2B347800CB1B96 /* casaBatlloBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casaBatlloBig.jpg; sourceTree = "<group>"; };
+		344EE7241A2B350200CB1B96 /* casaAmatBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casaAmatBig.jpg; sourceTree = "<group>"; };
+		344EE7261A2B359F00CB1B96 /* palauMusicaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = palauMusicaBig.jpg; sourceTree = "<group>"; };
+		344EE7281A2B36E100CB1B96 /* sagradaFamBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sagradaFamBig.jpg; sourceTree = "<group>"; };
+		3450757A1A1D82FE00BB59DC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3450757B1A1D82FE00BB59DC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		346219A41A2808D100763F02 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		346219A51A2808D100763F02 /* head@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "head@3x.png"; sourceTree = "<group>"; };
+		346219A61A2808D100763F02 /* head@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "head@2x.png"; sourceTree = "<group>"; };
+		346C36B41A14DCBB006A9C2C /* MVABusSeq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVABusSeq.h; sourceTree = "<group>"; };
+		346C36B51A14DCBB006A9C2C /* MVABusSeq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVABusSeq.m; sourceTree = "<group>"; };
+		346C8F7C1A2723C90039696E /* code-purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "code-purple.png"; sourceTree = "<group>"; };
+		34783A911A250F55005F65E5 /* MVAPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAPair.h; sourceTree = "<group>"; };
+		34783A921A250F55005F65E5 /* MVAPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPair.m; sourceTree = "<group>"; };
+		34783A941A250F9F005F65E5 /* MVAPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAPriorityQueue.h; sourceTree = "<group>"; };
+		34783A951A250F9F005F65E5 /* MVAPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPriorityQueue.m; sourceTree = "<group>"; };
+		347CA49B1A2805A90018F5B8 /* UIViewController+ScrollingNavbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollingNavbar.h"; sourceTree = "<group>"; };
+		347CA49C1A2805A90018F5B8 /* UIViewController+ScrollingNavbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ScrollingNavbar.m"; sourceTree = "<group>"; };
+		347FEA591A169BF20091EBE0 /* fgcDataBase.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = fgcDataBase.plist; sourceTree = "<group>"; };
+		347FEA5A1A169BF20091EBE0 /* busDataBase.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = busDataBase.plist; sourceTree = "<group>"; };
+		347FEA5D1A16A2A90091EBE0 /* MVABusGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVABusGraph.h; sourceTree = "<group>"; };
+		347FEA5E1A16A2A90091EBE0 /* MVABusGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVABusGraph.m; sourceTree = "<group>"; };
+		347FEA601A16A3340091EBE0 /* MVASubwayGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVASubwayGraph.h; sourceTree = "<group>"; };
+		347FEA611A16A3340091EBE0 /* MVASubwayGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVASubwayGraph.m; sourceTree = "<group>"; };
+		34874C211A2A300C00E99794 /* campNouBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = campNouBig.jpg; sourceTree = "<group>"; };
+		348E9EBB1A159FE5007E960C /* MVADataFGC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVADataFGC.h; sourceTree = "<group>"; };
+		348E9EBC1A159FE5007E960C /* MVADataFGC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVADataFGC.m; sourceTree = "<group>"; };
+		348FC16D19F337DF007FD4D6 /* MVANode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVANode.h; sourceTree = "<group>"; };
+		348FC16E19F337DF007FD4D6 /* MVANode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVANode.m; sourceTree = "<group>"; };
+		348FC17019F337F2007FD4D6 /* MVAEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAEdge.h; sourceTree = "<group>"; };
+		348FC17119F337F2007FD4D6 /* MVAEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAEdge.m; sourceTree = "<group>"; };
+		348FC17619F33B50007FD4D6 /* MVAPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAPath.h; sourceTree = "<group>"; };
+		348FC17719F33B50007FD4D6 /* MVAPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPath.m; sourceTree = "<group>"; };
+		349000B119B6431000BA3DCE /* VisitBCN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitBCN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		349000B419B6431000BA3DCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		349000B619B6431000BA3DCE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		349000B819B6431000BA3DCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		349000BC19B6431000BA3DCE /* VisitBCN-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisitBCN-Info.plist"; sourceTree = "<group>"; };
+		349000BE19B6431000BA3DCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		349000C019B6431000BA3DCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		349000C219B6431000BA3DCE /* VisitBCN-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisitBCN-Prefix.pch"; sourceTree = "<group>"; };
+		349000C319B6431000BA3DCE /* MVAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVAAppDelegate.h; sourceTree = "<group>"; };
+		349000C419B6431000BA3DCE /* MVAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVAAppDelegate.m; sourceTree = "<group>"; };
+		349000C719B6431000BA3DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		349000C919B6431000BA3DCE /* MVAMapaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVAMapaViewController.h; sourceTree = "<group>"; };
+		349000CA19B6431000BA3DCE /* MVAMapaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVAMapaViewController.m; sourceTree = "<group>"; };
+		349000D219B6431000BA3DCE /* VisitBCNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitBCNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		349000D319B6431000BA3DCE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		349000DB19B6431000BA3DCE /* VisitBCNTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisitBCNTests-Info.plist"; sourceTree = "<group>"; };
+		349000DD19B6431000BA3DCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		349000DF19B6431000BA3DCE /* VisitBCNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisitBCNTests.m; sourceTree = "<group>"; };
+		349000E919B6432A00BA3DCE /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		349000EA19B6432A00BA3DCE /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		349000ED19B644A800BA3DCE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		349000F119B644BF00BA3DCE /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		349000F219B644BF00BA3DCE /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		349000F319B644BF00BA3DCE /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		349000F419B644BF00BA3DCE /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		349000F519B644BF00BA3DCE /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		349000F619B644BF00BA3DCE /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		349000F719B644BF00BA3DCE /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		349000F819B644BF00BA3DCE /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		349000F919B644BF00BA3DCE /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		349000FA19B644BF00BA3DCE /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		349000FB19B644BF00BA3DCE /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		3490010219B64E7500BA3DCE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3490010319B64E7500BA3DCE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3490010619B66C4600BA3DCE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3490010719B66C4600BA3DCE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		3490010819B66C4600BA3DCE /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		3490010919B66C4600BA3DCE /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		3490010A19B66C4600BA3DCE /* Icon-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iOS7@2x.png"; sourceTree = "<group>"; };
+		3490012119B6778800BA3DCE /* MVAStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAStop.h; sourceTree = "<group>"; };
+		3490012219B6778800BA3DCE /* MVAStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAStop.m; sourceTree = "<group>"; };
+		34A08B6C1A27AAAC009DBACC /* MVAPuntsIntsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAPuntsIntsTableViewController.h; sourceTree = "<group>"; };
+		34A08B6D1A27AAAC009DBACC /* MVAPuntsIntsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPuntsIntsTableViewController.m; sourceTree = "<group>"; };
+		34A08B6F1A27AB86009DBACC /* MVATaxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVATaxis.h; sourceTree = "<group>"; };
+		34A08B701A27AB86009DBACC /* MVATaxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVATaxis.m; sourceTree = "<group>"; };
+		34A08B721A27AD10009DBACC /* MVAPunIntViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAPunIntViewController.h; sourceTree = "<group>"; };
+		34A08B731A27AD10009DBACC /* MVAPunIntViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPunIntViewController.m; sourceTree = "<group>"; };
+		34A08B751A27B0F4009DBACC /* MVAPunIntTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAPunIntTableViewCell.h; sourceTree = "<group>"; };
+		34A08B761A27B0F4009DBACC /* MVAPunIntTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPunIntTableViewCell.m; sourceTree = "<group>"; };
+		34AB7A631A12273900D74CBE /* MVACustomModifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVACustomModifications.h; sourceTree = "<group>"; };
+		34AB7A641A12273900D74CBE /* MVACustomModifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVACustomModifications.m; sourceTree = "<group>"; };
+		34AB7A661A1227CE00D74CBE /* MVATriple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVATriple.h; sourceTree = "<group>"; };
+		34AB7A671A1227CE00D74CBE /* MVATriple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVATriple.m; sourceTree = "<group>"; };
+		34AE67641A2B3BEA0076E5D5 /* rain-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rain-blue@2x.png"; sourceTree = "<group>"; };
+		34AE67651A2B3BEA0076E5D5 /* rain-blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rain-blue@3x.png"; sourceTree = "<group>"; };
+		34AE67661A2B3BEA0076E5D5 /* rain-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rain-blue.png"; sourceTree = "<group>"; };
+		34AE676A1A2B3CE40076E5D5 /* boqueriaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boqueriaBig.jpg; sourceTree = "<group>"; };
+		34AE676C1A2B3E640076E5D5 /* laPedreraBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laPedreraBig.jpg; sourceTree = "<group>"; };
+		34AE676E1A2B3EF30076E5D5 /* mercatBornBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercatBornBig.jpg; sourceTree = "<group>"; };
+		34AE67701A2B3F330076E5D5 /* arcTriomfBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arcTriomfBig.jpg; sourceTree = "<group>"; };
+		34AE67721A2B3F700076E5D5 /* museuPicassoBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museuPicassoBig.jpg; sourceTree = "<group>"; };
+		34AE67741A2B3FB90076E5D5 /* monuColonBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monuColonBig.jpg; sourceTree = "<group>"; };
+		34AE67761A2B400D0076E5D5 /* laDoradaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laDoradaBig.jpg; sourceTree = "<group>"; };
+		34AE67781A2B40A20076E5D5 /* barcelonetaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barcelonetaBig.jpg; sourceTree = "<group>"; };
+		34AE677A1A2B40CE0076E5D5 /* mnacBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mnacBig.jpg; sourceTree = "<group>"; };
+		34AE677C1A2B416A0076E5D5 /* plEspanyaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plEspanyaBig.jpg; sourceTree = "<group>"; };
+		34AE677E1A2B41B10076E5D5 /* santJordiBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santJordiBig.jpg; sourceTree = "<group>"; };
+		34AE67801A2B41D40076E5D5 /* ciutadellaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ciutadellaBig.jpg; sourceTree = "<group>"; };
+		34AE67821A2B41FD0076E5D5 /* plCatBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plCatBig.jpg; sourceTree = "<group>"; };
+		34AE67841A2B428F0076E5D5 /* santJaumeBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santJaumeBig.jpg; sourceTree = "<group>"; };
+		34AE67861A2B43210076E5D5 /* plReiBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plReiBig.jpg; sourceTree = "<group>"; };
+		34AE67881A2B43750076E5D5 /* plReialBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plReialBig.jpg; sourceTree = "<group>"; };
+		34AE678A1A2B43E60076E5D5 /* catedralBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = catedralBig.jpg; sourceTree = "<group>"; };
+		34AE678C1A2B44FB0076E5D5 /* santaMariaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santaMariaBig.jpg; sourceTree = "<group>"; };
+		34AE678E1A2B45560076E5D5 /* fossarMoreresBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fossarMoreresBig.jpg; sourceTree = "<group>"; };
+		34AE67901A2B45850076E5D5 /* casaVicensBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casaVicensBig.jpg; sourceTree = "<group>"; };
+		34AE67921A2B45C60076E5D5 /* fincaGuellBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fincaGuellBig.jpg; sourceTree = "<group>"; };
+		34AE67941A2B460E0076E5D5 /* estadiOlimpBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = estadiOlimpBig.jpg; sourceTree = "<group>"; };
+		34AE67961A2B46650076E5D5 /* casaLleoMoreraBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casaLleoMoreraBig.jpg; sourceTree = "<group>"; };
+		34AE67981A2B46CC0076E5D5 /* teatreLiceuBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teatreLiceuBig.jpg; sourceTree = "<group>"; };
+		34AE679A1A2B471D0076E5D5 /* museuHistoriaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museuHistoriaBig.jpg; sourceTree = "<group>"; };
+		34AE679C1A2B47710076E5D5 /* plazaMonumentalBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plazaMonumentalBig.jpg; sourceTree = "<group>"; };
+		34AE679E1A2B47AD0076E5D5 /* palauGuellBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = palauGuellBig.jpg; sourceTree = "<group>"; };
+		34AE67A01A2B47FF0076E5D5 /* basilicaMerceBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basilicaMerceBig.jpg; sourceTree = "<group>"; };
+		34AE67A21A2B487A0076E5D5 /* basilicaSantaMariaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basilicaSantaMariaBig.jpg; sourceTree = "<group>"; };
+		34AE67A41A2B49140076E5D5 /* museuHistBcnBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museuHistBcnBig.jpg; sourceTree = "<group>"; };
+		34AE67A61A2B4A050076E5D5 /* monestirPedrBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monestirPedrBig.jpg; sourceTree = "<group>"; };
+		34AE67A81A2B4ABE0076E5D5 /* parcForumBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parcForumBig.jpg; sourceTree = "<group>"; };
+		34AE67AA1A2B4B660076E5D5 /* parcJoanMiroBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parcJoanMiroBig.jpg; sourceTree = "<group>"; };
+		34AE67AC1A2B4BBB0076E5D5 /* museoMarBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museoMarBig.jpg; sourceTree = "<group>"; };
+		34B88F8B1A268EA7000E75A8 /* MVAConfigurationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAConfigurationTableViewController.h; sourceTree = "<group>"; };
+		34B88F8C1A268EA7000E75A8 /* MVAConfigurationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAConfigurationTableViewController.m; sourceTree = "<group>"; };
+		34B88F8E1A2690CB000E75A8 /* MVAConfigTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAConfigTableViewCell.h; sourceTree = "<group>"; };
+		34B88F8F1A2690CB000E75A8 /* MVAConfigTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAConfigTableViewCell.m; sourceTree = "<group>"; };
+		34B88F911A269216000E75A8 /* SevenSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenSwitch.h; sourceTree = "<group>"; };
+		34B88F921A269216000E75A8 /* SevenSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenSwitch.m; sourceTree = "<group>"; };
+		34B88F951A269673000E75A8 /* walking-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking-blue.png"; sourceTree = "<group>"; };
+		34B88F961A269673000E75A8 /* near_me-colored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "near_me-colored.png"; sourceTree = "<group>"; };
+		34B88F971A269673000E75A8 /* walker-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walker-red.png"; sourceTree = "<group>"; };
+		34B88F981A269673000E75A8 /* running-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "running-green.png"; sourceTree = "<group>"; };
+		34B88F9D1A2696FD000E75A8 /* MVASliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVASliderTableViewCell.h; sourceTree = "<group>"; };
+		34B88F9E1A2696FD000E75A8 /* MVASliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVASliderTableViewCell.m; sourceTree = "<group>"; };
+		34E0FC8619B7C85F001EAFAA /* tmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmb.png; sourceTree = "<group>"; };
+		34E0FC8719B7C85F001EAFAA /* tmb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmb@2x.png"; sourceTree = "<group>"; };
+		34E0FC8A19B7C995001EAFAA /* fgc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fgc.png; sourceTree = "<group>"; };
+		34E0FC8B19B7C995001EAFAA /* fgc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fgc@2x.png"; sourceTree = "<group>"; };
+		34E0FC8E19B7D024001EAFAA /* MVACalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVACalendar.h; sourceTree = "<group>"; };
+		34E0FC8F19B7D024001EAFAA /* MVACalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVACalendar.m; sourceTree = "<group>"; };
+		34E0FC9419B7DD45001EAFAA /* MVARoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVARoute.h; sourceTree = "<group>"; };
+		34E0FC9519B7DD45001EAFAA /* MVARoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVARoute.m; sourceTree = "<group>"; };
+		34E0FC9719B7E47B001EAFAA /* MVATrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVATrip.h; sourceTree = "<group>"; };
+		34E0FC9819B7E47B001EAFAA /* MVATrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVATrip.m; sourceTree = "<group>"; };
+		34E0FC9A19B7F031001EAFAA /* MVADate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVADate.h; sourceTree = "<group>"; };
+		34E0FC9B19B7F031001EAFAA /* MVADate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVADate.m; sourceTree = "<group>"; };
+		34E0FC9D19B7F30E001EAFAA /* MVATime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVATime.h; sourceTree = "<group>"; };
+		34E0FC9E19B7F30E001EAFAA /* MVATime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVATime.m; sourceTree = "<group>"; };
+		34E0FCA019B7F867001EAFAA /* MVADataTMB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVADataTMB.h; sourceTree = "<group>"; };
+		34E0FCA119B7F867001EAFAA /* MVADataTMB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVADataTMB.m; sourceTree = "<group>"; };
+		34E0FCA319B7FA9D001EAFAA /* MVAGraphs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAGraphs.h; sourceTree = "<group>"; };
+		34E0FCA419B7FA9D001EAFAA /* MVAGraphs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAGraphs.m; sourceTree = "<group>"; };
+		34E0FCA619B7FAAB001EAFAA /* MVAGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAGraph.h; sourceTree = "<group>"; };
+		34E0FCA719B7FAAB001EAFAA /* MVAGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAGraph.m; sourceTree = "<group>"; };
+		34E1F0EF1A213DC4003944F8 /* MVAAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAAlgorithms.h; sourceTree = "<group>"; };
+		34E1F0F01A213DC4003944F8 /* MVAAlgorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAAlgorithms.m; sourceTree = "<group>"; };
+		34E222021A238A3D00DB4BAD /* pointsofinterest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pointsofinterest.json; sourceTree = "<group>"; };
+		34E784B019F846FE005AEAE7 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = ../images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		349000AE19B6431000BA3DCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344ACD981A2558CE0065E4E8 /* QuartzCore.framework in Frameworks */,
+				344ACDD61A2559040065E4E8 /* libMapbox.a in Frameworks */,
+				344ACD9A1A2558E60065E4E8 /* libsqlite3.dylib in Frameworks */,
+				349000B919B6431000BA3DCE /* UIKit.framework in Frameworks */,
+				344ACD961A2558A50065E4E8 /* CoreLocation.framework in Frameworks */,
+				344ACD941A2557E00065E4E8 /* CoreGraphics.framework in Frameworks */,
+				349000EE19B644A800BA3DCE /* libz.dylib in Frameworks */,
+				349000B519B6431000BA3DCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349000CF19B6431000BA3DCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349000D419B6431000BA3DCE /* XCTest.framework in Frameworks */,
+				349000D619B6431000BA3DCE /* UIKit.framework in Frameworks */,
+				349000D519B6431000BA3DCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		340443E91A27EBC100AE96E9 /* PalauMusica */ = {
+			isa = PBXGroup;
+			children = (
+				344EE7261A2B359F00CB1B96 /* palauMusicaBig.jpg */,
+				344EE7141A2B30E400CB1B96 /* palauMusicaSmall.jpeg */,
+			);
+			name = PalauMusica;
+			sourceTree = "<group>";
+		};
+		340443F01A27EE4E00AE96E9 /* SagradaFamilia */ = {
+			isa = PBXGroup;
+			children = (
+				344EE7121A2B30DC00CB1B96 /* sagradaFamSmall.jpeg */,
+				344EE7281A2B36E100CB1B96 /* sagradaFamBig.jpg */,
+			);
+			name = SagradaFamilia;
+			sourceTree = "<group>";
+		};
+		340443F71A27EF8A00AE96E9 /* MercatBoqueria */ = {
+			isa = PBXGroup;
+			children = (
+				344EE7101A2B30D800CB1B96 /* boqueriaSmall.jpeg */,
+				34AE676A1A2B3CE40076E5D5 /* boqueriaBig.jpg */,
+			);
+			name = MercatBoqueria;
+			sourceTree = "<group>";
+		};
+		340443FE1A27F0D300AE96E9 /* MercatBorn */ = {
+			isa = PBXGroup;
+			children = (
+				34AE676E1A2B3EF30076E5D5 /* mercatBornBig.jpg */,
+				344EE70C1A2B30CC00CB1B96 /* mercatBornSmall.jpeg */,
+			);
+			name = MercatBorn;
+			sourceTree = "<group>";
+		};
+		340444051A27F24000AE96E9 /* ArcdeTriomf */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67701A2B3F330076E5D5 /* arcTriomfBig.jpg */,
+				344EE70E1A2B30D000CB1B96 /* arcTriomfSmall.jpeg */,
+			);
+			name = ArcdeTriomf;
+			sourceTree = "<group>";
+		};
+		3404440C1A27F35B00AE96E9 /* MuseuPicasso */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67721A2B3F700076E5D5 /* museuPicassoBig.jpg */,
+				344EE70A1A2B30C600CB1B96 /* museuPicassoSmall.jpeg */,
+			);
+			name = MuseuPicasso;
+			sourceTree = "<group>";
+		};
+		3406FE011A27C885004C5D46 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				342E24CA1A2B7DA400761796 /* car-black.png */,
+				342E24CB1A2B7DA400761796 /* car-black@2x.png */,
+				342E24CC1A2B7DA400761796 /* car-black@3x.png */,
+				342E24C41A2B7CF400761796 /* trainer-yellow@2x.png */,
+				342E24C51A2B7CF400761796 /* trainer-yellow@3x.png */,
+				342E24C61A2B7CF400761796 /* trainer-yellow.png */,
+				342E24B01A2B73E200761796 /* cross.png */,
+				342E24B11A2B73E200761796 /* cross@2x.png */,
+				342E24B21A2B73E200761796 /* check.png */,
+				342E24B31A2B73E200761796 /* check@2x.png */,
+				342E24B81A2B752E00761796 /* dijkstra@2x.png */,
+				342E24B91A2B752E00761796 /* astar@2x.png */,
+				342E24BA1A2B752E00761796 /* astar.png */,
+				342E24BB1A2B752E00761796 /* dijkstra.png */,
+				342E24BC1A2B752E00761796 /* astar@3x.png */,
+				342E24BD1A2B752E00761796 /* dijkstra@3x.png */,
+				34E0FC8A19B7C995001EAFAA /* fgc.png */,
+				34E0FC8B19B7C995001EAFAA /* fgc@2x.png */,
+				34E0FC8619B7C85F001EAFAA /* tmb.png */,
+				34E0FC8719B7C85F001EAFAA /* tmb@2x.png */,
+				3406FE021A27C8E9004C5D46 /* code-purple@3x.png */,
+				3406FE041A27C8FA004C5D46 /* code-purple@2x.png */,
+				346C8F7C1A2723C90039696E /* code-purple.png */,
+				3406FE061A27C9C1004C5D46 /* near_me-colored@2x.png */,
+				3406FE071A27C9C1004C5D46 /* near_me-colored@3x.png */,
+				34B88F961A269673000E75A8 /* near_me-colored.png */,
+				3406FE0A1A27CA3B004C5D46 /* walker-red@2x.png */,
+				3406FE0B1A27CA3B004C5D46 /* walker-red@3x.png */,
+				34B88F971A269673000E75A8 /* walker-red.png */,
+				3406FE0E1A27CA94004C5D46 /* walking-blue@3x.png */,
+				3406FE0F1A27CA94004C5D46 /* walking-blue@2x.png */,
+				34B88F951A269673000E75A8 /* walking-blue.png */,
+				3406FE121A27CAC8004C5D46 /* running-green@3x.png */,
+				3406FE131A27CAC8004C5D46 /* running-green@2x.png */,
+				34B88F981A269673000E75A8 /* running-green.png */,
+				34AE67641A2B3BEA0076E5D5 /* rain-blue@2x.png */,
+				34AE67651A2B3BEA0076E5D5 /* rain-blue@3x.png */,
+				34AE67661A2B3BEA0076E5D5 /* rain-blue.png */,
+				344A8F1C1A2A716500C51061 /* menu@2x.png */,
+				344A8F1D1A2A716500C51061 /* menu.png */,
+				344A8F1E1A2A716500C51061 /* menu@3x.png */,
+				344A8F291A2A995B00C51061 /* mapa.png */,
+				344A8F2A1A2A995B00C51061 /* mapa@2x.png */,
+				344A8F2B1A2A995B00C51061 /* mapa@3x.png */,
+				344A8F2F1A2A9B4B00C51061 /* tuerca@3x.png */,
+				344A8F301A2A9B4B00C51061 /* tuerca@2x.png */,
+				344A8F311A2A9B4B00C51061 /* tuerca.png */,
+				344A8F351A2A9C1400C51061 /* info.png */,
+				344A8F361A2A9C1400C51061 /* info@2x.png */,
+				344A8F371A2A9C1400C51061 /* info@3x.png */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		3406FE161A27CAE7004C5D46 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				347FEA591A169BF20091EBE0 /* fgcDataBase.plist */,
+				347FEA5A1A169BF20091EBE0 /* busDataBase.plist */,
+				34476D981A1C0C7D00A9451E /* tmbDataBase.plist */,
+				34476D9A1A1C23A900A9451E /* busGraph.plist */,
+				344ACD591A2557320065E4E8 /* visitBCN.mbtiles */,
+				34E222021A238A3D00DB4BAD /* pointsofinterest.json */,
+				346219A41A2808D100763F02 /* head.png */,
+				346219A51A2808D100763F02 /* head@3x.png */,
+				346219A61A2808D100763F02 /* head@2x.png */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		3406FE171A27CC3D004C5D46 /* ParcGuell */ = {
+			isa = PBXGroup;
+			children = (
+				344EE7201A2B340D00CB1B96 /* parcGuellBig.jpg */,
+				344EE71C1A2B311800CB1B96 /* parcGuellSmall.jpeg */,
+			);
+			name = ParcGuell;
+			sourceTree = "<group>";
+		};
+		3406FE251A27E7F8004C5D46 /* CasaBatllo */ = {
+			isa = PBXGroup;
+			children = (
+				344EE7221A2B347800CB1B96 /* casaBatlloBig.jpg */,
+				344EE7181A2B30F100CB1B96 /* casaBatlloSmall.jpeg */,
+			);
+			name = CasaBatllo;
+			sourceTree = "<group>";
+		};
+		3406FE2C1A27E962004C5D46 /* CasaAmatller */ = {
+			isa = PBXGroup;
+			children = (
+				344EE7241A2B350200CB1B96 /* casaAmatBig.jpg */,
+				344EE7161A2B30EA00CB1B96 /* casaAmatSmall.jpeg */,
+			);
+			name = CasaAmatller;
+			sourceTree = "<group>";
+		};
+		344A8F221A2A721D00C51061 /* ALRadial */ = {
+			isa = PBXGroup;
+			children = (
+				344A8F231A2A722D00C51061 /* ALRadialButton.h */,
+				344A8F241A2A722D00C51061 /* ALRadialButton.m */,
+				344A8F251A2A722D00C51061 /* ALRadialMenu.h */,
+				344A8F261A2A722D00C51061 /* ALRadialMenu.m */,
+			);
+			name = ALRadial;
+			sourceTree = "<group>";
+		};
+		344ACD9B1A2559040065E4E8 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				344ACD9C1A2559040065E4E8 /* Mapbox.h */,
+				344ACD9D1A2559040065E4E8 /* RMAbstractMercatorTileSource.h */,
+				344ACD9E1A2559040065E4E8 /* RMAbstractWebMapSource.h */,
+				344ACD9F1A2559040065E4E8 /* RMAnnotation.h */,
+				344ACDA01A2559040065E4E8 /* RMAttributionViewController.h */,
+				344ACDA11A2559040065E4E8 /* RMBingSource.h */,
+				344ACDA21A2559040065E4E8 /* RMCacheObject.h */,
+				344ACDA31A2559040065E4E8 /* RMCircle.h */,
+				344ACDA41A2559040065E4E8 /* RMCircleAnnotation.h */,
+				344ACDA51A2559040065E4E8 /* RMCompositeSource.h */,
+				344ACDA61A2559040065E4E8 /* RMConfiguration.h */,
+				344ACDA71A2559040065E4E8 /* RMCoordinateGridSource.h */,
+				344ACDA81A2559040065E4E8 /* RMDatabaseCache.h */,
+				344ACDA91A2559040065E4E8 /* RMDBMapSource.h */,
+				344ACDAA1A2559040065E4E8 /* RMFoundation.h */,
+				344ACDAB1A2559040065E4E8 /* RMFractalTileProjection.h */,
+				344ACDAC1A2559040065E4E8 /* RMGenericMapSource.h */,
+				344ACDAD1A2559040065E4E8 /* RMGlobalConstants.h */,
+				344ACDAE1A2559040065E4E8 /* RMGreatCircleAnnotation.h */,
+				344ACDAF1A2559040065E4E8 /* RMInteractiveSource.h */,
+				344ACDB01A2559040065E4E8 /* RMLoadingTileView.h */,
+				344ACDB11A2559040065E4E8 /* RMMapboxSource.h */,
+				344ACDB21A2559040065E4E8 /* RMMapLayer.h */,
+				344ACDB31A2559040065E4E8 /* RMMapOverlayView.h */,
+				344ACDB41A2559040065E4E8 /* RMMapQuestOpenAerialSource.h */,
+				344ACDB51A2559040065E4E8 /* RMMapQuestOSMSource.h */,
+				344ACDB61A2559040065E4E8 /* RMMapScrollView.h */,
+				344ACDB71A2559040065E4E8 /* RMMapTiledLayerView.h */,
+				344ACDB81A2559040065E4E8 /* RMMapView.h */,
+				344ACDB91A2559040065E4E8 /* RMMapViewDelegate.h */,
+				344ACDBA1A2559040065E4E8 /* RMMarker.h */,
+				344ACDBB1A2559040065E4E8 /* RMMBTilesSource.h */,
+				344ACDBC1A2559040065E4E8 /* RMMemoryCache.h */,
+				344ACDBD1A2559040065E4E8 /* RMNotifications.h */,
+				344ACDBE1A2559040065E4E8 /* RMOpenCycleMapSource.h */,
+				344ACDBF1A2559040065E4E8 /* RMOpenSeaMapLayer.h */,
+				344ACDC01A2559040065E4E8 /* RMOpenSeaMapSource.h */,
+				344ACDC11A2559040065E4E8 /* RMOpenStreetMapSource.h */,
+				344ACDC21A2559040065E4E8 /* RMPixel.h */,
+				344ACDC31A2559040065E4E8 /* RMPointAnnotation.h */,
+				344ACDC41A2559040065E4E8 /* RMPolygonAnnotation.h */,
+				344ACDC51A2559040065E4E8 /* RMPolylineAnnotation.h */,
+				344ACDC61A2559040065E4E8 /* RMProjection.h */,
+				344ACDC71A2559040065E4E8 /* RMQuadTree.h */,
+				344ACDC81A2559040065E4E8 /* RMShape.h */,
+				344ACDC91A2559040065E4E8 /* RMShapeAnnotation.h */,
+				344ACDCA1A2559040065E4E8 /* RMStaticMapView.h */,
+				344ACDCB1A2559040065E4E8 /* RMTile.h */,
+				344ACDCC1A2559040065E4E8 /* RMTileCache.h */,
+				344ACDCD1A2559040065E4E8 /* RMTileCacheDownloadOperation.h */,
+				344ACDCE1A2559040065E4E8 /* RMTileImage.h */,
+				344ACDCF1A2559040065E4E8 /* RMTileMillSource.h */,
+				344ACDD01A2559040065E4E8 /* RMTileSource.h */,
+				344ACDD11A2559040065E4E8 /* RMTileSourcesContainer.h */,
+				344ACDD21A2559040065E4E8 /* RMUserLocation.h */,
+				344ACDD31A2559040065E4E8 /* RMUserTrackingBarButtonItem.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		344EE6CB1A2B2F5800CB1B96 /* LaPedrera */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6CC1A2B2FCB00CB1B96 /* laPedreraSmall.jpeg */,
+				34AE676C1A2B3E640076E5D5 /* laPedreraBig.jpg */,
+			);
+			name = LaPedrera;
+			sourceTree = "<group>";
+		};
+		3450757D1A1D830300BB59DC /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				3450757A1A1D82FE00BB59DC /* Reachability.h */,
+				3450757B1A1D82FE00BB59DC /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		346219AA1A280C5400763F02 /* PlaçaCatalunya */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6F81A2B307300CB1B96 /* plCatSmall.jpeg */,
+				34AE67821A2B41FD0076E5D5 /* plCatBig.jpg */,
+			);
+			name = "PlaçaCatalunya";
+			sourceTree = "<group>";
+		};
+		346219B11A280DBB00763F02 /* PlaçaSantJaume */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6F61A2B306E00CB1B96 /* santJaumeSmall.jpeg */,
+				34AE67841A2B428F0076E5D5 /* santJaumeBig.jpg */,
+			);
+			name = "PlaçaSantJaume";
+			sourceTree = "<group>";
+		};
+		346219B81A280EA100763F02 /* PlaçaReial */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6F41A2B306500CB1B96 /* plReialSmall.jpeg */,
+				34AE67881A2B43750076E5D5 /* plReialBig.jpg */,
+			);
+			name = "PlaçaReial";
+			sourceTree = "<group>";
+		};
+		346219BF1A280F6900763F02 /* PlaçadelRei */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6F21A2B306100CB1B96 /* plReiSmall.jpeg */,
+				34AE67861A2B43210076E5D5 /* plReiBig.jpg */,
+			);
+			name = "PlaçadelRei";
+			sourceTree = "<group>";
+		};
+		346219C61A28103C00763F02 /* CatedraldeBarcelona */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6F01A2B305900CB1B96 /* catedralSmall.jpeg */,
+				34AE678A1A2B43E60076E5D5 /* catedralBig.jpg */,
+			);
+			name = CatedraldeBarcelona;
+			sourceTree = "<group>";
+		};
+		346219CD1A28127800763F02 /* SantaMariadelMar */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6EE1A2B305300CB1B96 /* santaMariaSmall.jpeg */,
+				34AE678C1A2B44FB0076E5D5 /* santaMariaBig.jpg */,
+			);
+			name = SantaMariadelMar;
+			sourceTree = "<group>";
+		};
+		346219D41A28135E00763F02 /* FossarMoreres */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6EC1A2B304700CB1B96 /* fossarMoreresSmall.jpeg */,
+				34AE678E1A2B45560076E5D5 /* fossarMoreresBig.jpg */,
+			);
+			name = FossarMoreres;
+			sourceTree = "<group>";
+		};
+		346219DB1A2813FC00763F02 /* CasaVicens */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6EA1A2B304000CB1B96 /* casaVicensSmall.jpeg */,
+				34AE67901A2B45850076E5D5 /* casaVicensBig.jpg */,
+			);
+			name = CasaVicens;
+			sourceTree = "<group>";
+		};
+		346219E21A28154B00763F02 /* FincaGuell */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67921A2B45C60076E5D5 /* fincaGuellBig.jpg */,
+				344EE6E81A2B303B00CB1B96 /* fincaGuellSmall.jpeg */,
+			);
+			name = FincaGuell;
+			sourceTree = "<group>";
+		};
+		346219E91A28164D00763F02 /* EstadiOlimpic */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67941A2B460E0076E5D5 /* estadiOlimpBig.jpg */,
+				344EE6E61A2B303600CB1B96 /* estadiOlimpSmall.jpeg */,
+			);
+			name = EstadiOlimpic;
+			sourceTree = "<group>";
+		};
+		346219F01A28184000763F02 /* Lleo i Morera */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67961A2B46650076E5D5 /* casaLleoMoreraBig.jpg */,
+				344EE6E41A2B302E00CB1B96 /* casaLleoMoreraSmall.jpeg */,
+			);
+			name = "Lleo i Morera";
+			sourceTree = "<group>";
+		};
+		346219F71A28194700763F02 /* Liceu */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6E21A2B302800CB1B96 /* teatreLiceuSmall.jpeg */,
+				34AE67981A2B46CC0076E5D5 /* teatreLiceuBig.jpg */,
+			);
+			name = Liceu;
+			sourceTree = "<group>";
+		};
+		346219FE1A281A4500763F02 /* MuseuHistoria */ = {
+			isa = PBXGroup;
+			children = (
+				34AE679A1A2B471D0076E5D5 /* museuHistoriaBig.jpg */,
+				344EE6E01A2B301E00CB1B96 /* museuHistoriaSmall.jpeg */,
+			);
+			name = MuseuHistoria;
+			sourceTree = "<group>";
+		};
+		34621A051A281B7100763F02 /* Monumental */ = {
+			isa = PBXGroup;
+			children = (
+				34AE679C1A2B47710076E5D5 /* plazaMonumentalBig.jpg */,
+				344EE6DE1A2B301200CB1B96 /* plazaMonumentalSmall.jpeg */,
+			);
+			name = Monumental;
+			sourceTree = "<group>";
+		};
+		34621A0C1A281C5700763F02 /* PalauGüell */ = {
+			isa = PBXGroup;
+			children = (
+				34AE679E1A2B47AD0076E5D5 /* palauGuellBig.jpg */,
+				344EE71A1A2B311000CB1B96 /* palauGuellSmall.jpeg */,
+			);
+			name = "PalauGüell";
+			sourceTree = "<group>";
+		};
+		347CA4601A27F5D50018F5B8 /* TorreAgbar */ = {
+			isa = PBXGroup;
+			children = (
+				344EE7081A2B30C000CB1B96 /* torreAgbarSmall.jpeg */,
+				344EE71E1A2B33A200CB1B96 /* torreAgbarBig.jpg */,
+			);
+			name = TorreAgbar;
+			sourceTree = "<group>";
+		};
+		347CA4671A27F7180018F5B8 /* Colom */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67741A2B3FB90076E5D5 /* monuColonBig.jpg */,
+				344EE7061A2B30BA00CB1B96 /* monuColonSmall.jpeg */,
+			);
+			name = Colom;
+			sourceTree = "<group>";
+		};
+		347CA46E1A27F8D20018F5B8 /* PeixDaurat */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67761A2B400D0076E5D5 /* laDoradaBig.jpg */,
+				344EE7041A2B30A900CB1B96 /* laDoradaSmall.jpeg */,
+			);
+			name = PeixDaurat;
+			sourceTree = "<group>";
+		};
+		347CA4751A27F9B80018F5B8 /* Barceloneta */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67781A2B40A20076E5D5 /* barcelonetaBig.jpg */,
+				344EE7021A2B309D00CB1B96 /* barcelonetaSmall.jpeg */,
+			);
+			name = Barceloneta;
+			sourceTree = "<group>";
+		};
+		347CA47C1A27FAB40018F5B8 /* MNAC */ = {
+			isa = PBXGroup;
+			children = (
+				34AE677A1A2B40CE0076E5D5 /* mnacBig.jpg */,
+				344EE7001A2B308C00CB1B96 /* mnacSmall.jpeg */,
+			);
+			name = MNAC;
+			sourceTree = "<group>";
+		};
+		347CA4831A27FBC00018F5B8 /* PlaçaEspanya */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6FE1A2B308700CB1B96 /* plEspanyaSmall.jpeg */,
+				34AE677C1A2B416A0076E5D5 /* plEspanyaBig.jpg */,
+			);
+			name = "PlaçaEspanya";
+			sourceTree = "<group>";
+		};
+		347CA48A1A27FD5A0018F5B8 /* SantJordi */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6FC1A2B307E00CB1B96 /* santJordiSmall.jpeg */,
+				34AE677E1A2B41B10076E5D5 /* santJordiBig.jpg */,
+			);
+			name = SantJordi;
+			sourceTree = "<group>";
+		};
+		347CA4911A27FEAD0018F5B8 /* Ciutadella */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6FA1A2B307900CB1B96 /* ciutadellaSmall.jpeg */,
+				34AE67801A2B41D40076E5D5 /* ciutadellaBig.jpg */,
+			);
+			name = Ciutadella;
+			sourceTree = "<group>";
+		};
+		347CA49E1A2805AD0018F5B8 /* ScrollingNavbar */ = {
+			isa = PBXGroup;
+			children = (
+				347CA49B1A2805A90018F5B8 /* UIViewController+ScrollingNavbar.h */,
+				347CA49C1A2805A90018F5B8 /* UIViewController+ScrollingNavbar.m */,
+			);
+			name = ScrollingNavbar;
+			sourceTree = "<group>";
+		};
+		349000A819B6430F00BA3DCE = {
+			isa = PBXGroup;
+			children = (
+				349000BA19B6431000BA3DCE /* VisitBCN */,
+				349000D919B6431000BA3DCE /* VisitBCNTests */,
+				349000B319B6431000BA3DCE /* Frameworks */,
+				349000B219B6431000BA3DCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		349000B219B6431000BA3DCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				349000B119B6431000BA3DCE /* VisitBCN.app */,
+				349000D219B6431000BA3DCE /* VisitBCNTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		349000B319B6431000BA3DCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				344ACD9B1A2559040065E4E8 /* Headers */,
+				344ACDD41A2559040065E4E8 /* libMapbox.a */,
+				344ACDD51A2559040065E4E8 /* Mapbox.bundle */,
+				344ACD991A2558E60065E4E8 /* libsqlite3.dylib */,
+				344ACD971A2558CE0065E4E8 /* QuartzCore.framework */,
+				344ACD951A2558A50065E4E8 /* CoreLocation.framework */,
+				349000ED19B644A800BA3DCE /* libz.dylib */,
+				349000B419B6431000BA3DCE /* Foundation.framework */,
+				349000B619B6431000BA3DCE /* CoreGraphics.framework */,
+				349000B819B6431000BA3DCE /* UIKit.framework */,
+				349000D319B6431000BA3DCE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		349000BA19B6431000BA3DCE /* VisitBCN */ = {
+			isa = PBXGroup;
+			children = (
+				349000C319B6431000BA3DCE /* MVAAppDelegate.h */,
+				349000C419B6431000BA3DCE /* MVAAppDelegate.m */,
+				349000C619B6431000BA3DCE /* Main.storyboard */,
+				34AF1DCD19F33F3D004537C5 /* Libraries */,
+				3490010119B64E4C00BA3DCE /* Source */,
+				3490012419B6779C00BA3DCE /* Model */,
+				349000BB19B6431000BA3DCE /* Supporting Files */,
+				34E784B019F846FE005AEAE7 /* images.xcassets */,
+			);
+			path = VisitBCN;
+			sourceTree = "<group>";
+		};
+		349000BB19B6431000BA3DCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34A08B781A27B770009DBACC /* PunIntsImages */,
+				3406FE011A27C885004C5D46 /* Logos */,
+				3406FE161A27CAE7004C5D46 /* Data */,
+				3490010619B66C4600BA3DCE /* Icon.png */,
+				3490010719B66C4600BA3DCE /* Icon@2x.png */,
+				3490010819B66C4600BA3DCE /* Icon-Small.png */,
+				3490010919B66C4600BA3DCE /* Icon-Small@2x.png */,
+				3490010A19B66C4600BA3DCE /* Icon-iOS7@2x.png */,
+				349000BC19B6431000BA3DCE /* VisitBCN-Info.plist */,
+				349000BD19B6431000BA3DCE /* InfoPlist.strings */,
+				349000C019B6431000BA3DCE /* main.m */,
+				349000C219B6431000BA3DCE /* VisitBCN-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		349000D919B6431000BA3DCE /* VisitBCNTests */ = {
+			isa = PBXGroup;
+			children = (
+				349000DF19B6431000BA3DCE /* VisitBCNTests.m */,
+				349000DA19B6431000BA3DCE /* Supporting Files */,
+			);
+			path = VisitBCNTests;
+			sourceTree = "<group>";
+		};
+		349000DA19B6431000BA3DCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				349000DB19B6431000BA3DCE /* VisitBCNTests-Info.plist */,
+				349000DC19B6431000BA3DCE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		349000EC19B6433F00BA3DCE /* CSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				349000E919B6432A00BA3DCE /* CHCSVParser.h */,
+				349000EA19B6432A00BA3DCE /* CHCSVParser.m */,
+			);
+			name = CSVParser;
+			sourceTree = "<group>";
+		};
+		349000EF19B644BF00BA3DCE /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				349000F019B644BF00BA3DCE /* minizip */,
+				349000FA19B644BF00BA3DCE /* SSZipArchive.h */,
+				349000FB19B644BF00BA3DCE /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		349000F019B644BF00BA3DCE /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				349000F119B644BF00BA3DCE /* crypt.h */,
+				349000F219B644BF00BA3DCE /* ioapi.c */,
+				349000F319B644BF00BA3DCE /* ioapi.h */,
+				349000F419B644BF00BA3DCE /* mztools.c */,
+				349000F519B644BF00BA3DCE /* mztools.h */,
+				349000F619B644BF00BA3DCE /* unzip.c */,
+				349000F719B644BF00BA3DCE /* unzip.h */,
+				349000F819B644BF00BA3DCE /* zip.c */,
+				349000F919B644BF00BA3DCE /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		3490010119B64E4C00BA3DCE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				349000C919B6431000BA3DCE /* MVAMapaViewController.h */,
+				349000CA19B6431000BA3DCE /* MVAMapaViewController.m */,
+				34A08B6C1A27AAAC009DBACC /* MVAPuntsIntsTableViewController.h */,
+				34A08B6D1A27AAAC009DBACC /* MVAPuntsIntsTableViewController.m */,
+				34A08B751A27B0F4009DBACC /* MVAPunIntTableViewCell.h */,
+				34A08B761A27B0F4009DBACC /* MVAPunIntTableViewCell.m */,
+				34A08B721A27AD10009DBACC /* MVAPunIntViewController.h */,
+				34A08B731A27AD10009DBACC /* MVAPunIntViewController.m */,
+				34B88F8B1A268EA7000E75A8 /* MVAConfigurationTableViewController.h */,
+				34B88F8C1A268EA7000E75A8 /* MVAConfigurationTableViewController.m */,
+				34A08B6F1A27AB86009DBACC /* MVATaxis.h */,
+				34A08B701A27AB86009DBACC /* MVATaxis.m */,
+				34B88F8E1A2690CB000E75A8 /* MVAConfigTableViewCell.h */,
+				34B88F8F1A2690CB000E75A8 /* MVAConfigTableViewCell.m */,
+				34B88F9D1A2696FD000E75A8 /* MVASliderTableViewCell.h */,
+				34B88F9E1A2696FD000E75A8 /* MVASliderTableViewCell.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		3490010519B64E7B00BA3DCE /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3490010219B64E7500BA3DCE /* MBProgressHUD.h */,
+				3490010319B64E7500BA3DCE /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		3490012419B6779C00BA3DCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34AB7A6E1A1275BF00D74CBE /* Graph */,
+				34AB7A6D1A1275A300D74CBE /* Structures */,
+				34AB7A6F1A1275D900D74CBE /* Data Bases */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		34A08B781A27B770009DBACC /* PunIntsImages */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6CB1A2B2F5800CB1B96 /* LaPedrera */,
+				34A1383B1A29FA8F00421753 /* MuseuMaritim */,
+				34A138341A29FA6F00421753 /* ParcJoanMiró */,
+				34A1382D1A29F8B500421753 /* Forum */,
+				34A138261A29F52200421753 /* MonestirPedralbes */,
+				34A1381F1A29F36800421753 /* MuseuHistBCN */,
+				34A138181A29F04100421753 /* BasilicaSantaMaria */,
+				34A138111A29EE3E00421753 /* BasilicaMerce */,
+				34621A0C1A281C5700763F02 /* PalauGüell */,
+				34621A051A281B7100763F02 /* Monumental */,
+				346219FE1A281A4500763F02 /* MuseuHistoria */,
+				346219F71A28194700763F02 /* Liceu */,
+				346219F01A28184000763F02 /* Lleo i Morera */,
+				346219E91A28164D00763F02 /* EstadiOlimpic */,
+				346219E21A28154B00763F02 /* FincaGuell */,
+				346219DB1A2813FC00763F02 /* CasaVicens */,
+				346219D41A28135E00763F02 /* FossarMoreres */,
+				346219CD1A28127800763F02 /* SantaMariadelMar */,
+				346219C61A28103C00763F02 /* CatedraldeBarcelona */,
+				346219BF1A280F6900763F02 /* PlaçadelRei */,
+				346219B81A280EA100763F02 /* PlaçaReial */,
+				346219B11A280DBB00763F02 /* PlaçaSantJaume */,
+				346219AA1A280C5400763F02 /* PlaçaCatalunya */,
+				347CA4911A27FEAD0018F5B8 /* Ciutadella */,
+				347CA48A1A27FD5A0018F5B8 /* SantJordi */,
+				347CA4831A27FBC00018F5B8 /* PlaçaEspanya */,
+				347CA47C1A27FAB40018F5B8 /* MNAC */,
+				347CA4751A27F9B80018F5B8 /* Barceloneta */,
+				347CA46E1A27F8D20018F5B8 /* PeixDaurat */,
+				347CA4671A27F7180018F5B8 /* Colom */,
+				347CA4601A27F5D50018F5B8 /* TorreAgbar */,
+				3404440C1A27F35B00AE96E9 /* MuseuPicasso */,
+				340444051A27F24000AE96E9 /* ArcdeTriomf */,
+				340443FE1A27F0D300AE96E9 /* MercatBorn */,
+				340443F71A27EF8A00AE96E9 /* MercatBoqueria */,
+				340443F01A27EE4E00AE96E9 /* SagradaFamilia */,
+				340443E91A27EBC100AE96E9 /* PalauMusica */,
+				3406FE2C1A27E962004C5D46 /* CasaAmatller */,
+				3406FE251A27E7F8004C5D46 /* CasaBatllo */,
+				3406FE171A27CC3D004C5D46 /* ParcGuell */,
+				34A08B791A27B782009DBACC /* CampNou */,
+			);
+			name = PunIntsImages;
+			sourceTree = "<group>";
+		};
+		34A08B791A27B782009DBACC /* CampNou */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6C91A2B2D8600CB1B96 /* campNouSmall.jpg */,
+				34874C211A2A300C00E99794 /* campNouBig.jpg */,
+			);
+			name = CampNou;
+			sourceTree = "<group>";
+		};
+		34A138111A29EE3E00421753 /* BasilicaMerce */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67A01A2B47FF0076E5D5 /* basilicaMerceBig.jpg */,
+				344EE6DA1A2B300B00CB1B96 /* basilicaMerceSmall.jpeg */,
+			);
+			name = BasilicaMerce;
+			sourceTree = "<group>";
+		};
+		34A138181A29F04100421753 /* BasilicaSantaMaria */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6D81A2B300800CB1B96 /* basilicaSantaMariaSmall.jpeg */,
+				34AE67A21A2B487A0076E5D5 /* basilicaSantaMariaBig.jpg */,
+			);
+			name = BasilicaSantaMaria;
+			sourceTree = "<group>";
+		};
+		34A1381F1A29F36800421753 /* MuseuHistBCN */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67A41A2B49140076E5D5 /* museuHistBcnBig.jpg */,
+				344EE6D61A2B300200CB1B96 /* museuHistBcnSmall.jpeg */,
+			);
+			name = MuseuHistBCN;
+			sourceTree = "<group>";
+		};
+		34A138261A29F52200421753 /* MonestirPedralbes */ = {
+			isa = PBXGroup;
+			children = (
+				34AE67A61A2B4A050076E5D5 /* monestirPedrBig.jpg */,
+				344EE6D41A2B2FFA00CB1B96 /* monestirPedrSmall.jpeg */,
+			);
+			name = MonestirPedralbes;
+			sourceTree = "<group>";
+		};
+		34A1382D1A29F8B500421753 /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6D21A2B2FF300CB1B96 /* parcForumSmall.jpeg */,
+				34AE67A81A2B4ABE0076E5D5 /* parcForumBig.jpg */,
+			);
+			name = Forum;
+			sourceTree = "<group>";
+		};
+		34A138341A29FA6F00421753 /* ParcJoanMiró */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6D01A2B2FED00CB1B96 /* parcJoanMiroSmall.jpeg */,
+				34AE67AA1A2B4B660076E5D5 /* parcJoanMiroBig.jpg */,
+			);
+			name = "ParcJoanMiró";
+			sourceTree = "<group>";
+		};
+		34A1383B1A29FA8F00421753 /* MuseuMaritim */ = {
+			isa = PBXGroup;
+			children = (
+				344EE6CE1A2B2FD800CB1B96 /* museoMarSmall.jpeg */,
+				34AE67AC1A2B4BBB0076E5D5 /* museoMarBig.jpg */,
+			);
+			name = MuseuMaritim;
+			sourceTree = "<group>";
+		};
+		34AB7A6D1A1275A300D74CBE /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				34AB7A661A1227CE00D74CBE /* MVATriple.h */,
+				34AB7A671A1227CE00D74CBE /* MVATriple.m */,
+				34783A941A250F9F005F65E5 /* MVAPriorityQueue.h */,
+				34783A951A250F9F005F65E5 /* MVAPriorityQueue.m */,
+				34783A911A250F55005F65E5 /* MVAPair.h */,
+				34783A921A250F55005F65E5 /* MVAPair.m */,
+				34AB7A631A12273900D74CBE /* MVACustomModifications.h */,
+				34AB7A641A12273900D74CBE /* MVACustomModifications.m */,
+				34113A171A22238D00D60776 /* MVAPunInt.h */,
+				34113A181A22238D00D60776 /* MVAPunInt.m */,
+			);
+			name = Structures;
+			sourceTree = "<group>";
+		};
+		34AB7A6E1A1275BF00D74CBE /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				34E0FCA319B7FA9D001EAFAA /* MVAGraphs.h */,
+				34E0FCA419B7FA9D001EAFAA /* MVAGraphs.m */,
+				34E0FCA619B7FAAB001EAFAA /* MVAGraph.h */,
+				34E0FCA719B7FAAB001EAFAA /* MVAGraph.m */,
+				34E1F0EF1A213DC4003944F8 /* MVAAlgorithms.h */,
+				34E1F0F01A213DC4003944F8 /* MVAAlgorithms.m */,
+				347FEA5D1A16A2A90091EBE0 /* MVABusGraph.h */,
+				347FEA5E1A16A2A90091EBE0 /* MVABusGraph.m */,
+				347FEA601A16A3340091EBE0 /* MVASubwayGraph.h */,
+				347FEA611A16A3340091EBE0 /* MVASubwayGraph.m */,
+				348FC16D19F337DF007FD4D6 /* MVANode.h */,
+				348FC16E19F337DF007FD4D6 /* MVANode.m */,
+				348FC17019F337F2007FD4D6 /* MVAEdge.h */,
+				348FC17119F337F2007FD4D6 /* MVAEdge.m */,
+				348FC17619F33B50007FD4D6 /* MVAPath.h */,
+				348FC17719F33B50007FD4D6 /* MVAPath.m */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
+		34AB7A6F1A1275D900D74CBE /* Data Bases */ = {
+			isa = PBXGroup;
+			children = (
+				34E0FCA019B7F867001EAFAA /* MVADataTMB.h */,
+				34E0FCA119B7F867001EAFAA /* MVADataTMB.m */,
+				348E9EBB1A159FE5007E960C /* MVADataFGC.h */,
+				348E9EBC1A159FE5007E960C /* MVADataFGC.m */,
+				3423AE0D1A157DAA00F6F86C /* MVADataBus.h */,
+				3423AE0E1A157DAA00F6F86C /* MVADataBus.m */,
+				3490012119B6778800BA3DCE /* MVAStop.h */,
+				3490012219B6778800BA3DCE /* MVAStop.m */,
+				34E0FC8E19B7D024001EAFAA /* MVACalendar.h */,
+				34E0FC8F19B7D024001EAFAA /* MVACalendar.m */,
+				34E0FC9419B7DD45001EAFAA /* MVARoute.h */,
+				34E0FC9519B7DD45001EAFAA /* MVARoute.m */,
+				34E0FC9719B7E47B001EAFAA /* MVATrip.h */,
+				34E0FC9819B7E47B001EAFAA /* MVATrip.m */,
+				34E0FC9A19B7F031001EAFAA /* MVADate.h */,
+				34E0FC9B19B7F031001EAFAA /* MVADate.m */,
+				34E0FC9D19B7F30E001EAFAA /* MVATime.h */,
+				34E0FC9E19B7F30E001EAFAA /* MVATime.m */,
+				344028251A14366700EE6EC0 /* MVAFrequencies.h */,
+				344028261A14366700EE6EC0 /* MVAFrequencies.m */,
+				346C36B41A14DCBB006A9C2C /* MVABusSeq.h */,
+				346C36B51A14DCBB006A9C2C /* MVABusSeq.m */,
+			);
+			name = "Data Bases";
+			sourceTree = "<group>";
+		};
+		34AF1DCD19F33F3D004537C5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				344A8F221A2A721D00C51061 /* ALRadial */,
+				347CA49E1A2805AD0018F5B8 /* ScrollingNavbar */,
+				34B88F941A26921D000E75A8 /* SevenSwitch */,
+				3450757D1A1D830300BB59DC /* Reachability */,
+				3490010519B64E7B00BA3DCE /* MBProgressHUD */,
+				349000EF19B644BF00BA3DCE /* SSZipArchive */,
+				349000EC19B6433F00BA3DCE /* CSVParser */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		34B88F941A26921D000E75A8 /* SevenSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				34B88F911A269216000E75A8 /* SevenSwitch.h */,
+				34B88F921A269216000E75A8 /* SevenSwitch.m */,
+			);
+			name = SevenSwitch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		349000B019B6431000BA3DCE /* VisitBCN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 349000E319B6431000BA3DCE /* Build configuration list for PBXNativeTarget "VisitBCN" */;
+			buildPhases = (
+				349000AD19B6431000BA3DCE /* Sources */,
+				349000AE19B6431000BA3DCE /* Frameworks */,
+				349000AF19B6431000BA3DCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisitBCN;
+			productName = VisitBCN;
+			productReference = 349000B119B6431000BA3DCE /* VisitBCN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		349000D119B6431000BA3DCE /* VisitBCNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 349000E619B6431000BA3DCE /* Build configuration list for PBXNativeTarget "VisitBCNTests" */;
+			buildPhases = (
+				349000CE19B6431000BA3DCE /* Sources */,
+				349000CF19B6431000BA3DCE /* Frameworks */,
+				349000D019B6431000BA3DCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				349000D819B6431000BA3DCE /* PBXTargetDependency */,
+			);
+			name = VisitBCNTests;
+			productName = VisitBCNTests;
+			productReference = 349000D219B6431000BA3DCE /* VisitBCNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		349000A919B6430F00BA3DCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MVA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Mauro Vime Castillo";
+				TargetAttributes = {
+					349000D119B6431000BA3DCE = {
+						TestTargetID = 349000B019B6431000BA3DCE;
+					};
+				};
+			};
+			buildConfigurationList = 349000AC19B6430F00BA3DCE /* Build configuration list for PBXProject "VisitBCN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 349000A819B6430F00BA3DCE;
+			productRefGroup = 349000B219B6431000BA3DCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				349000B019B6431000BA3DCE /* VisitBCN */,
+				349000D119B6431000BA3DCE /* VisitBCNTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		349000AF19B6431000BA3DCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344EE6E91A2B303B00CB1B96 /* fincaGuellSmall.jpeg in Resources */,
+				344EE7071A2B30BA00CB1B96 /* monuColonSmall.jpeg in Resources */,
+				3406FE151A27CAC8004C5D46 /* running-green@2x.png in Resources */,
+				34AE67791A2B40A20076E5D5 /* barcelonetaBig.jpg in Resources */,
+				344EE6FF1A2B308700CB1B96 /* plEspanyaSmall.jpeg in Resources */,
+				34476D9C1A1C23A900A9451E /* busGraph.plist in Resources */,
+				342E24C81A2B7CF400761796 /* trainer-yellow@3x.png in Resources */,
+				34AE676D1A2B3E640076E5D5 /* laPedreraBig.jpg in Resources */,
+				34E0FC8819B7C85F001EAFAA /* tmb.png in Resources */,
+				344EE70D1A2B30CC00CB1B96 /* mercatBornSmall.jpeg in Resources */,
+				34E222031A238A3D00DB4BAD /* pointsofinterest.json in Resources */,
+				3406FE091A27C9C1004C5D46 /* near_me-colored@3x.png in Resources */,
+				3406FE031A27C8E9004C5D46 /* code-purple@3x.png in Resources */,
+				344EE6D71A2B300200CB1B96 /* museuHistBcnSmall.jpeg in Resources */,
+				344A8F211A2A716500C51061 /* menu@3x.png in Resources */,
+				342E24C21A2B752E00761796 /* astar@3x.png in Resources */,
+				344ACDD71A2559040065E4E8 /* Mapbox.bundle in Resources */,
+				34E784B119F846FE005AEAE7 /* images.xcassets in Resources */,
+				34AE67751A2B3FB90076E5D5 /* monuColonBig.jpg in Resources */,
+				344A8F391A2A9C1400C51061 /* info@2x.png in Resources */,
+				344EE7131A2B30DC00CB1B96 /* sagradaFamSmall.jpeg in Resources */,
+				344EE6DB1A2B300B00CB1B96 /* basilicaMerceSmall.jpeg in Resources */,
+				344EE7211A2B340D00CB1B96 /* parcGuellBig.jpg in Resources */,
+				344A8F341A2A9B4B00C51061 /* tuerca.png in Resources */,
+				3490011219B66C4600BA3DCE /* Icon.png in Resources */,
+				3406FE101A27CA94004C5D46 /* walking-blue@3x.png in Resources */,
+				34AE67731A2B3F700076E5D5 /* museuPicassoBig.jpg in Resources */,
+				34AE67851A2B428F0076E5D5 /* santJaumeBig.jpg in Resources */,
+				34AE67A91A2B4ABE0076E5D5 /* parcForumBig.jpg in Resources */,
+				34AE679D1A2B47710076E5D5 /* plazaMonumentalBig.jpg in Resources */,
+				3406FE051A27C8FA004C5D46 /* code-purple@2x.png in Resources */,
+				34B88F9B1A269673000E75A8 /* walker-red.png in Resources */,
+				34AE679F1A2B47AD0076E5D5 /* palauGuellBig.jpg in Resources */,
+				344EE71D1A2B311800CB1B96 /* parcGuellSmall.jpeg in Resources */,
+				3490011419B66C4600BA3DCE /* Icon-Small.png in Resources */,
+				344A8F2E1A2A995B00C51061 /* mapa@3x.png in Resources */,
+				347FEA5B1A169BF20091EBE0 /* fgcDataBase.plist in Resources */,
+				344EE6CA1A2B2D8600CB1B96 /* campNouSmall.jpg in Resources */,
+				342E24CF1A2B7DA400761796 /* car-black@3x.png in Resources */,
+				344EE7291A2B36E100CB1B96 /* sagradaFamBig.jpg in Resources */,
+				344A8F2D1A2A995B00C51061 /* mapa@2x.png in Resources */,
+				34B88F9C1A269673000E75A8 /* running-green.png in Resources */,
+				344EE6F51A2B306500CB1B96 /* plReialSmall.jpeg in Resources */,
+				342E24C01A2B752E00761796 /* astar.png in Resources */,
+				34AE67811A2B41D40076E5D5 /* ciutadellaBig.jpg in Resources */,
+				34AE679B1A2B471D0076E5D5 /* museuHistoriaBig.jpg in Resources */,
+				34B88F9A1A269673000E75A8 /* near_me-colored.png in Resources */,
+				344EE7271A2B359F00CB1B96 /* palauMusicaBig.jpg in Resources */,
+				344EE6E31A2B302800CB1B96 /* teatreLiceuSmall.jpeg in Resources */,
+				34AE67A31A2B487A0076E5D5 /* basilicaSantaMariaBig.jpg in Resources */,
+				34AE67691A2B3BEA0076E5D5 /* rain-blue.png in Resources */,
+				34AE67991A2B46CC0076E5D5 /* teatreLiceuBig.jpg in Resources */,
+				346219A71A2808D100763F02 /* head.png in Resources */,
+				344EE6EF1A2B305300CB1B96 /* santaMariaSmall.jpeg in Resources */,
+				344EE6D11A2B2FED00CB1B96 /* parcJoanMiroSmall.jpeg in Resources */,
+				344EE6EB1A2B304000CB1B96 /* casaVicensSmall.jpeg in Resources */,
+				344A8F331A2A9B4B00C51061 /* tuerca@2x.png in Resources */,
+				342E24CD1A2B7DA400761796 /* car-black.png in Resources */,
+				344EE6F31A2B306100CB1B96 /* plReiSmall.jpeg in Resources */,
+				344EE6E71A2B303600CB1B96 /* estadiOlimpSmall.jpeg in Resources */,
+				344EE7011A2B308C00CB1B96 /* mnacSmall.jpeg in Resources */,
+				34AE67AB1A2B4B660076E5D5 /* parcJoanMiroBig.jpg in Resources */,
+				344EE6D91A2B300800CB1B96 /* basilicaSantaMariaSmall.jpeg in Resources */,
+				34AE678B1A2B43E60076E5D5 /* catedralBig.jpg in Resources */,
+				344EE7251A2B350200CB1B96 /* casaAmatBig.jpg in Resources */,
+				344ACD5A1A2557360065E4E8 /* visitBCN.mbtiles in Resources */,
+				34E0FC8919B7C85F001EAFAA /* tmb@2x.png in Resources */,
+				349000BF19B6431000BA3DCE /* InfoPlist.strings in Resources */,
+				344EE7151A2B30E400CB1B96 /* palauMusicaSmall.jpeg in Resources */,
+				342E24BE1A2B752E00761796 /* dijkstra@2x.png in Resources */,
+				344EE6CF1A2B2FD800CB1B96 /* museoMarSmall.jpeg in Resources */,
+				344EE71F1A2B33A200CB1B96 /* torreAgbarBig.jpg in Resources */,
+				34B88F991A269673000E75A8 /* walking-blue.png in Resources */,
+				344EE6D31A2B2FF300CB1B96 /* parcForumSmall.jpeg in Resources */,
+				3406FE141A27CAC8004C5D46 /* running-green@3x.png in Resources */,
+				34AE678D1A2B44FB0076E5D5 /* santaMariaBig.jpg in Resources */,
+				344EE7051A2B30A900CB1B96 /* laDoradaSmall.jpeg in Resources */,
+				344EE6CD1A2B2FCB00CB1B96 /* laPedreraSmall.jpeg in Resources */,
+				34AE67681A2B3BEA0076E5D5 /* rain-blue@3x.png in Resources */,
+				34AE677F1A2B41B10076E5D5 /* santJordiBig.jpg in Resources */,
+				34AE67971A2B46650076E5D5 /* casaLleoMoreraBig.jpg in Resources */,
+				344EE70F1A2B30D000CB1B96 /* arcTriomfSmall.jpeg in Resources */,
+				344A8F1F1A2A716500C51061 /* menu@2x.png in Resources */,
+				34AE67771A2B400D0076E5D5 /* laDoradaBig.jpg in Resources */,
+				344EE6D51A2B2FFA00CB1B96 /* monestirPedrSmall.jpeg in Resources */,
+				344EE6F11A2B305900CB1B96 /* catedralSmall.jpeg in Resources */,
+				349000C819B6431000BA3DCE /* Main.storyboard in Resources */,
+				344EE6F71A2B306E00CB1B96 /* santJaumeSmall.jpeg in Resources */,
+				3406FE081A27C9C1004C5D46 /* near_me-colored@2x.png in Resources */,
+				3406FE111A27CA94004C5D46 /* walking-blue@2x.png in Resources */,
+				342E24B51A2B73E200761796 /* cross@2x.png in Resources */,
+				344EE6ED1A2B304700CB1B96 /* fossarMoreresSmall.jpeg in Resources */,
+				34AE67891A2B43750076E5D5 /* plReialBig.jpg in Resources */,
+				344EE6FB1A2B307900CB1B96 /* ciutadellaSmall.jpeg in Resources */,
+				344EE6FD1A2B307E00CB1B96 /* santJordiSmall.jpeg in Resources */,
+				34AE67671A2B3BEA0076E5D5 /* rain-blue@2x.png in Resources */,
+				34E0FC8D19B7C995001EAFAA /* fgc@2x.png in Resources */,
+				344EE6E11A2B301E00CB1B96 /* museuHistoriaSmall.jpeg in Resources */,
+				344A8F2C1A2A995B00C51061 /* mapa.png in Resources */,
+				34AE67911A2B45850076E5D5 /* casaVicensBig.jpg in Resources */,
+				344EE7191A2B30F100CB1B96 /* casaBatlloSmall.jpeg in Resources */,
+				344A8F201A2A716500C51061 /* menu.png in Resources */,
+				344EE7111A2B30D800CB1B96 /* boqueriaSmall.jpeg in Resources */,
+				34874C221A2A300D00E99794 /* campNouBig.jpg in Resources */,
+				34AE676F1A2B3EF30076E5D5 /* mercatBornBig.jpg in Resources */,
+				34AE67AD1A2B4BBB0076E5D5 /* museoMarBig.jpg in Resources */,
+				3490011619B66C4600BA3DCE /* Icon-iOS7@2x.png in Resources */,
+				3406FE0D1A27CA3B004C5D46 /* walker-red@3x.png in Resources */,
+				342E24C31A2B752E00761796 /* dijkstra@3x.png in Resources */,
+				34AE67A51A2B49140076E5D5 /* museuHistBcnBig.jpg in Resources */,
+				34AE67A71A2B4A050076E5D5 /* monestirPedrBig.jpg in Resources */,
+				3490011319B66C4600BA3DCE /* Icon@2x.png in Resources */,
+				34E0FC8C19B7C995001EAFAA /* fgc.png in Resources */,
+				34AE677D1A2B416A0076E5D5 /* plEspanyaBig.jpg in Resources */,
+				344EE7031A2B309D00CB1B96 /* barcelonetaSmall.jpeg in Resources */,
+				34AE678F1A2B45560076E5D5 /* fossarMoreresBig.jpg in Resources */,
+				342E24C11A2B752E00761796 /* dijkstra.png in Resources */,
+				344EE7231A2B347800CB1B96 /* casaBatlloBig.jpg in Resources */,
+				342E24B41A2B73E200761796 /* cross.png in Resources */,
+				342E24CE1A2B7DA400761796 /* car-black@2x.png in Resources */,
+				342E24BF1A2B752E00761796 /* astar@2x.png in Resources */,
+				346C8F7D1A2723C90039696E /* code-purple.png in Resources */,
+				3406FE0C1A27CA3B004C5D46 /* walker-red@2x.png in Resources */,
+				344EE7091A2B30C000CB1B96 /* torreAgbarSmall.jpeg in Resources */,
+				34AE67871A2B43210076E5D5 /* plReiBig.jpg in Resources */,
+				344A8F3A1A2A9C1400C51061 /* info@3x.png in Resources */,
+				34AE67831A2B41FD0076E5D5 /* plCatBig.jpg in Resources */,
+				347FEA5C1A169BF20091EBE0 /* busDataBase.plist in Resources */,
+				344EE6E51A2B302E00CB1B96 /* casaLleoMoreraSmall.jpeg in Resources */,
+				344A8F321A2A9B4B00C51061 /* tuerca@3x.png in Resources */,
+				3490011519B66C4600BA3DCE /* Icon-Small@2x.png in Resources */,
+				346219A81A2808D100763F02 /* head@3x.png in Resources */,
+				346219A91A2808D100763F02 /* head@2x.png in Resources */,
+				342E24C71A2B7CF400761796 /* trainer-yellow@2x.png in Resources */,
+				344EE6F91A2B307300CB1B96 /* plCatSmall.jpeg in Resources */,
+				34AE677B1A2B40CE0076E5D5 /* mnacBig.jpg in Resources */,
+				342E24C91A2B7CF400761796 /* trainer-yellow.png in Resources */,
+				344EE70B1A2B30C600CB1B96 /* museuPicassoSmall.jpeg in Resources */,
+				344A8F381A2A9C1400C51061 /* info.png in Resources */,
+				34AE67951A2B460E0076E5D5 /* estadiOlimpBig.jpg in Resources */,
+				344EE71B1A2B311000CB1B96 /* palauGuellSmall.jpeg in Resources */,
+				34AE67A11A2B47FF0076E5D5 /* basilicaMerceBig.jpg in Resources */,
+				34AE67931A2B45C60076E5D5 /* fincaGuellBig.jpg in Resources */,
+				342E24B61A2B73E200761796 /* check.png in Resources */,
+				344EE6DF1A2B301200CB1B96 /* plazaMonumentalSmall.jpeg in Resources */,
+				344EE7171A2B30EA00CB1B96 /* casaAmatSmall.jpeg in Resources */,
+				342E24B71A2B73E200761796 /* check@2x.png in Resources */,
+				34AE676B1A2B3CE40076E5D5 /* boqueriaBig.jpg in Resources */,
+				34AE67711A2B3F330076E5D5 /* arcTriomfBig.jpg in Resources */,
+				34476D991A1C0C7D00A9451E /* tmbDataBase.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349000D019B6431000BA3DCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349000DE19B6431000BA3DCE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		349000AD19B6431000BA3DCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349000EB19B6432A00BA3DCE /* CHCSVParser.m in Sources */,
+				349000FF19B644BF00BA3DCE /* zip.c in Sources */,
+				34E0FC9619B7DD45001EAFAA /* MVARoute.m in Sources */,
+				34E1F0F11A213DC4003944F8 /* MVAAlgorithms.m in Sources */,
+				34A08B771A27B0F4009DBACC /* MVAPunIntTableViewCell.m in Sources */,
+				3490010019B644BF00BA3DCE /* SSZipArchive.m in Sources */,
+				348E9EBD1A159FE5007E960C /* MVADataFGC.m in Sources */,
+				34E0FC9C19B7F031001EAFAA /* MVADate.m in Sources */,
+				34A08B711A27AB86009DBACC /* MVATaxis.m in Sources */,
+				349000FE19B644BF00BA3DCE /* unzip.c in Sources */,
+				34B88F901A2690CB000E75A8 /* MVAConfigTableViewCell.m in Sources */,
+				348FC16F19F337DF007FD4D6 /* MVANode.m in Sources */,
+				3490012319B6778800BA3DCE /* MVAStop.m in Sources */,
+				34E0FC9F19B7F30E001EAFAA /* MVATime.m in Sources */,
+				344028271A14366700EE6EC0 /* MVAFrequencies.m in Sources */,
+				344A8F271A2A722D00C51061 /* ALRadialButton.m in Sources */,
+				34A08B6E1A27AAAC009DBACC /* MVAPuntsIntsTableViewController.m in Sources */,
+				349000CB19B6431000BA3DCE /* MVAMapaViewController.m in Sources */,
+				34E0FCA819B7FAAB001EAFAA /* MVAGraph.m in Sources */,
+				34A08B741A27AD10009DBACC /* MVAPunIntViewController.m in Sources */,
+				34AB7A651A12273900D74CBE /* MVACustomModifications.m in Sources */,
+				34E0FC9919B7E47B001EAFAA /* MVATrip.m in Sources */,
+				34113A191A22238D00D60776 /* MVAPunInt.m in Sources */,
+				34E0FC9019B7D024001EAFAA /* MVACalendar.m in Sources */,
+				348FC17819F33B50007FD4D6 /* MVAPath.m in Sources */,
+				347CA49D1A2805A90018F5B8 /* UIViewController+ScrollingNavbar.m in Sources */,
+				34E0FCA519B7FA9D001EAFAA /* MVAGraphs.m in Sources */,
+				347FEA621A16A3340091EBE0 /* MVASubwayGraph.m in Sources */,
+				344A8F281A2A722D00C51061 /* ALRadialMenu.m in Sources */,
+				347FEA5F1A16A2A90091EBE0 /* MVABusGraph.m in Sources */,
+				34AB7A681A1227CE00D74CBE /* MVATriple.m in Sources */,
+				349000FD19B644BF00BA3DCE /* mztools.c in Sources */,
+				34783A931A250F55005F65E5 /* MVAPair.m in Sources */,
+				34E0FCA219B7F867001EAFAA /* MVADataTMB.m in Sources */,
+				349000C119B6431000BA3DCE /* main.m in Sources */,
+				3490010419B64E7500BA3DCE /* MBProgressHUD.m in Sources */,
+				34B88F931A269216000E75A8 /* SevenSwitch.m in Sources */,
+				3450757C1A1D82FE00BB59DC /* Reachability.m in Sources */,
+				3423AE0F1A157DAA00F6F86C /* MVADataBus.m in Sources */,
+				348FC17219F337F2007FD4D6 /* MVAEdge.m in Sources */,
+				34B88F8D1A268EA7000E75A8 /* MVAConfigurationTableViewController.m in Sources */,
+				349000C519B6431000BA3DCE /* MVAAppDelegate.m in Sources */,
+				34B88F9F1A2696FD000E75A8 /* MVASliderTableViewCell.m in Sources */,
+				349000FC19B644BF00BA3DCE /* ioapi.c in Sources */,
+				346C36B61A14DCBB006A9C2C /* MVABusSeq.m in Sources */,
+				34783A961A250F9F005F65E5 /* MVAPriorityQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349000CE19B6431000BA3DCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349000E019B6431000BA3DCE /* VisitBCNTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		349000D819B6431000BA3DCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 349000B019B6431000BA3DCE /* VisitBCN */;
+			targetProxy = 349000D719B6431000BA3DCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		349000BD19B6431000BA3DCE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				349000BE19B6431000BA3DCE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		349000C619B6431000BA3DCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				349000C719B6431000BA3DCE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		349000DC19B6431000BA3DCE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				349000DD19B6431000BA3DCE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		349000E119B6431000BA3DCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		349000E219B6431000BA3DCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		349000E419B6431000BA3DCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisitBCN/VisitBCN-Prefix.pch";
+				INFOPLIST_FILE = "VisitBCN/VisitBCN-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "be276284-733f-471c-b5a5-1cfe7a252c77";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		349000E519B6431000BA3DCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisitBCN/VisitBCN-Prefix.pch";
+				INFOPLIST_FILE = "VisitBCN/VisitBCN-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e0ddd617-df34-44f1-869a-91f7988f30fa";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		349000E719B6431000BA3DCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VisitBCN.app/VisitBCN";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisitBCN/VisitBCN-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VisitBCNTests/VisitBCNTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		349000E819B6431000BA3DCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VisitBCN.app/VisitBCN";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VisitBCN/VisitBCN-Prefix.pch";
+				INFOPLIST_FILE = "VisitBCNTests/VisitBCNTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		349000AC19B6430F00BA3DCE /* Build configuration list for PBXProject "VisitBCN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349000E119B6431000BA3DCE /* Debug */,
+				349000E219B6431000BA3DCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		349000E319B6431000BA3DCE /* Build configuration list for PBXNativeTarget "VisitBCN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349000E419B6431000BA3DCE /* Debug */,
+				349000E519B6431000BA3DCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		349000E619B6431000BA3DCE /* Build configuration list for PBXNativeTarget "VisitBCNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349000E719B6431000BA3DCE /* Debug */,
+				349000E819B6431000BA3DCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 349000A919B6430F00BA3DCE /* Project object */;
+}

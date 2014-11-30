@@ -1,0 +1,43 @@
+//
+//  MVAEdge.m
+//  VisitBCN
+//
+//  Created by Mauro Vime Castillo on 19/10/14.
+//  Copyright (c) 2014 Mauro Vime Castillo. All rights reserved.
+//
+
+#import "MVAEdge.h"
+
+@implementation MVAEdge
+
+- (void)encodeWithCoder:(NSCoder *)coder;
+{
+    [coder encodeObject:self.destini forKey:@"destini"];
+    [coder encodeObject:self.weight forKey:@"weight"];
+    [coder encodeObject:self.tripID forKey:@"trip"];
+    [coder encodeBool:self.change forKey:@"change"];
+}
+
+- (id)initWithCoder:(NSCoder *)coder;
+{
+    self = [[MVAEdge alloc] init];
+    if (self) {
+        self.destini = [coder decodeObjectForKey:@"destini"];
+        self.weight = [coder decodeObjectForKey:@"weight"];
+        self.tripID = [coder decodeObjectForKey:@"trip"];
+        self.change = [coder decodeBoolForKey:@"change"];
+    }
+    return self;
+}
+
+-(id)copy
+{
+    MVAEdge *edge = [[MVAEdge alloc] init];
+    edge.destini  = [self.destini copy];
+    edge.weight = self.weight;
+    edge.tripID = self.tripID;
+    edge.change = self.change;
+    return edge;
+}
+
+@end
