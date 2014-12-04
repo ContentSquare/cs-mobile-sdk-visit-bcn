@@ -13,6 +13,7 @@
 #import "MVAPath.h"
 #import "MVAGraph.h"
 #import "MVAPriorityQueue.h"
+#import "MVAPunIntViewController.h"
 
 @interface MVAAlgorithms : NSObject
 
@@ -25,6 +26,7 @@
 @property MVACalendar *cal;
 
 @property MVAPriorityQueue *openNodes;
+@property MVAPunIntViewController *viewController;
 
 -(MVAPath *)dijkstraPathFrom:(MVANode *)nodeA toNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds;
 -(MVAPath *)astarPathFrom:(MVANode *)nodeA toNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds;

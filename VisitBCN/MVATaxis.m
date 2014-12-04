@@ -19,11 +19,11 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
 -(void)openHailo
 {
     NSString *urlString = @"hailoapp://confirm?pickupCoordinate=";
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f,",51.511807]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f",-0.117389]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f,",self.orig.latitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f",self.orig.longitude]];
     urlString = [urlString stringByAppendingString:@"&destinationCoordinate="];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f,",51.514996]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f",-0.098970]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f,",self.dest.latitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f",self.dest.longitude]];
     
     urlString = [urlString stringByAppendingString:hailoAPI];
     NSURL* url = [NSURL URLWithString:urlString];
@@ -37,8 +37,8 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
 {
     NSString *urlString = @"https://api.hailoapp.com/drivers/eta?api_token=";
     urlString = [urlString stringByAppendingString:[self urlencodeString:hailoAPI]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&latitude=%f",41.4066245]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&longitude=%f",2.139769900000033]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&latitude=%f",self.dest.latitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&longitude=%f",self.dest.longitude]];
     
     NSError *error = nil;
     NSHTTPURLResponse *responseCode = nil;
@@ -81,8 +81,8 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
 {
     NSString *urlString = @"https://api.uber.com/v1/estimates/time?server_token=";
     urlString = [urlString stringByAppendingString:uberAPI];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_latitude=%f",41.4066245]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_longitude=%f",2.139769900000033]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_latitude=%f",self.orig.latitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_longitude=%f",self.orig.longitude]];
     
     NSError *error = nil;
     NSHTTPURLResponse *responseCode = nil;
@@ -112,8 +112,8 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
 {
     NSString *urlString = @"https://api.uber.com/v1/products?server_token=";
     urlString = [urlString stringByAppendingString:uberAPI];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&latitude=%f",41.4066245]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&longitude=%f",2.139769900000033]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&latitude=%f",self.orig.latitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&longitude=%f",self.orig.longitude]];
     
     NSError *error = nil;
     NSHTTPURLResponse *responseCode = nil;
@@ -143,10 +143,10 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
 {
     NSString *urlString = @"https://api.uber.com/v1/estimates/price?server_token=";
     urlString = [urlString stringByAppendingString:uberAPI];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_latitude=%f",41.4066245]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_longitude=%f",2.139769900000033]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&end_latitude=%f",41.3847208]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&end_longitude=%f",2.1836174999999685]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_latitude=%f",self.orig.latitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_longitude=%f",self.orig.longitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&end_latitude=%f",self.dest.latitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&end_longitude=%f",self.dest.longitude]];
     
     NSError *error = nil;
     NSHTTPURLResponse *responseCode = nil;

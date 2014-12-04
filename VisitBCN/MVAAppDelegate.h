@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "MVADataTMB.h"
-#import "MVAGraphs.h"
 #import "MVADataBus.h"
 #import "MVADataFGC.h"
 #import "MVAPuntsIntsTableViewController.h"
+#import <CoreLocation/CoreLocation.h>
+#import "MVACustomLocationsTableViewController.h"
 
 @interface MVAAppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -20,11 +21,11 @@
 @property MVADataTMB *dataTMB;
 @property MVADataFGC *dataFGC;
 @property MVADataBus *dataBus;
-@property MVAGraphs *graphs;
 @property NSMutableArray *puntos;
 @property CLLocationManager *locationManager;
 @property CLLocationCoordinate2D coordinates;
 @property CGFloat degrees;
 @property MVAPuntsIntsTableViewController *table;
+@property MVACustomLocationsTableViewController *custom;
 
 @end

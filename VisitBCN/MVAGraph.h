@@ -13,6 +13,7 @@
 #import "MVADataBus.h"
 #import "MVAPath.h"
 #import "MVAPunInt.h"
+#import "MVAPunIntViewController.h"
 
 @interface MVAGraph : NSObject
 
@@ -23,6 +24,7 @@
 @property MVADataFGC *dataFGC;
 @property MVADataTMB *dataTMB;
 @property MVACalendar *cal;
+@property MVAPunIntViewController *viewController;
 
 -(MVAPath *)computePathFromNodes:(NSArray *)originNodes toNode:(NSMutableDictionary *)destiniNodes withAlgorithmID:(int)identifier andOCoords:(CLLocationCoordinate2D)oCoords andDest:(MVAPunInt *)punInt;
 -(double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB;

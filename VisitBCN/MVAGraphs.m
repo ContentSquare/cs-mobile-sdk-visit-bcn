@@ -12,6 +12,7 @@
 
 -(void)generateGraphsWithBUSDB:(MVADataBus *)dataBus andTMBDB:(MVADataTMB *)dataTMB andFGCDB:(MVADataFGC *)dataFGC
 {
+    [self load];
     self.subwayGraph = [[MVASubwayGraph alloc] init];
     self.busGraph.dataBus = dataBus;
     self.busGraph.dataTMB = dataTMB;
@@ -22,14 +23,20 @@
 {
     NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
     
-    dispatch_apply(2, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(size_t size) {
+    self.subwayGraph.viewController = self.viewController;
+    self.busGraph.viewController = self.viewController;
+    
+    self.subwayPath = [self pathForSubwayGraphWithOrigin:origin andDestination:punInt];
+    self.busPath = [self pathForBusGraphWithOrigin:origin andDestination:punInt];
+    
+    /*dispatch_apply(2, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(size_t size) {
         if (size == 0) {
             self.subwayPath = [self pathForSubwayGraphWithOrigin:origin andDestination:punInt];
         }
         else {
             self.busPath = [self pathForBusGraphWithOrigin:origin andDestination:punInt];
         }
-    });
+    });*/
     
     NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
     double dif = (end-start);
@@ -51,32 +58,40 @@
         double distD = [self.busGraph distanceForCoordinates:punInt.coordinates andCoordinates:stopCords];
         if (distO <= [self loadWalkingDist]) {
             if ([routesO objectForKey:[node.stop.routes firstObject]] == nil) {
-                [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
-                [routeStopO setObject:[NSNumber numberWithInt:(int)[originA count]] forKey:[node.stop.routes firstObject]];
-                [originA addObject:[NSNumber numberWithInt:node.identificador]];
+                if (node.stop.routes != nil) {
+                    [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
+                    [routeStopO setObject:[NSNumber numberWithInt:(int)[originA count]] forKey:[node.stop.routes firstObject]];
+                    [originA addObject:[NSNumber numberWithInt:node.identificador]];
+                }
             }
             else {
                 NSNumber *dist = [routesO objectForKey:[node.stop.routes firstObject]];
                 if (distO < [dist doubleValue]) {
-                    NSNumber *pos = [routeStopO objectForKey:[node.stop.routes firstObject]];
-                    [originA setObject:[NSNumber numberWithInt:node.identificador] atIndexedSubscript:[pos intValue]];
-                    [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
+                    if (node.stop.routes != nil) {
+                        NSNumber *pos = [routeStopO objectForKey:[node.stop.routes firstObject]];
+                        [originA setObject:[NSNumber numberWithInt:node.identificador] atIndexedSubscript:[pos intValue]];
+                        [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
+                    }
                 }
             }
         }
         else if (distD <= [self loadWalkingDist]) {
             if ([routesD objectForKey:[node.stop.routes firstObject]] == nil) {
-                [destA setObject:[node.stop.routes firstObject] forKeyedSubscript:[NSNumber numberWithInt:node.identificador]];
-                [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
+                if (node.stop.routes != nil) {
+                    [destA setObject:[node.stop.routes firstObject] forKeyedSubscript:[NSNumber numberWithInt:node.identificador]];
+                    [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
+                }
             }
             else {
                 NSNumber *dist = [routesD objectForKey:[node.stop.routes firstObject]];
                 if (distD < [dist doubleValue]) {
-                    NSArray *array = [destA allKeysForObject:[node.stop.routes firstObject]];
-                    NSNumber *key = [array firstObject];
-                    [destA removeObjectForKey:key];
-                    [destA setObject:[node.stop.routes firstObject] forKey:[NSNumber numberWithInt:node.identificador]];
-                    [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
+                    if (node.stop.routes != nil) {
+                        NSArray *array = [destA allKeysForObject:[node.stop.routes firstObject]];
+                        NSNumber *key = [array firstObject];
+                        [destA removeObjectForKey:key];
+                        [destA setObject:[node.stop.routes firstObject] forKey:[NSNumber numberWithInt:node.identificador]];
+                        [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
+                    }
                 }
             }
         }
@@ -107,32 +122,41 @@
         double distD = [self.subwayGraph distanceForCoordinates:punInt.coordinates andCoordinates:stopCords];
         if (distO <= [self loadWalkingDist]) {
             if ([routesO objectForKey:[node.stop.routes firstObject]] == nil) {
-                [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
-                [routeStopO setObject:[NSNumber numberWithInt:(int)[originA count]] forKey:[node.stop.routes firstObject]];
-                [originA addObject:[NSNumber numberWithInt:node.identificador]];
+                if (node.stop.routes != nil) {
+                    [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
+                    [routeStopO setObject:[NSNumber numberWithInt:(int)[originA count]] forKey:[node.stop.routes firstObject]];
+                    [originA addObject:[NSNumber numberWithInt:node.identificador]];
+                }
             }
             else {
                 NSNumber *dist = [routesO objectForKey:[node.stop.routes firstObject]];
                 if (distO < [dist doubleValue]) {
-                    NSNumber *pos = [routeStopO objectForKey:[node.stop.routes firstObject]];
-                    [originA setObject:[NSNumber numberWithInt:node.identificador] atIndexedSubscript:[pos intValue]];
-                    [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
+                    if (node.stop.routes != nil) {
+                        NSNumber *pos = [routeStopO objectForKey:[node.stop.routes firstObject]];
+                        [originA setObject:[NSNumber numberWithInt:node.identificador] atIndexedSubscript:[pos intValue]];
+                        [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
+                    }
                 }
             }
         }
         else if (distD <= [self loadWalkingDist]) {
             if ([routesD objectForKey:[node.stop.routes firstObject]] == nil) {
-                [destA setObject:[node.stop.routes firstObject] forKeyedSubscript:[NSNumber numberWithInt:node.identificador]];
-                [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
+                if (node.stop.routes != nil) {
+                    [destA setObject:[node.stop.routes firstObject] forKeyedSubscript:[NSNumber numberWithInt:node.identificador]];
+                    [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
+                }
+                
             }
             else {
                 NSNumber *dist = [routesD objectForKey:[node.stop.routes firstObject]];
                 if (distD < [dist doubleValue]) {
-                    NSArray *array = [destA allKeysForObject:[node.stop.routes firstObject]];
-                    NSNumber *key = [array firstObject];
-                    [destA removeObjectForKey:key];
-                    [destA setObject:[node.stop.routes firstObject] forKey:[NSNumber numberWithInt:node.identificador]];
-                    [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
+                    if (node.stop.routes != nil) {
+                        NSArray *array = [destA allKeysForObject:[node.stop.routes firstObject]];
+                        NSNumber *key = [array firstObject];
+                        [destA removeObjectForKey:key];
+                        [destA setObject:[node.stop.routes firstObject] forKey:[NSNumber numberWithInt:node.identificador]];
+                        [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
+                    }
                 }
             }
         }
@@ -180,7 +204,7 @@
 
 -(int)loadAlg
 {
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.igrades.subjects"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSString *nom = @"VisitBCNAlgorithm";
     NSData *data = [defaults objectForKey:nom];
     if(data == nil){
@@ -194,7 +218,7 @@
 
 -(double)loadWalkingDist
 {
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.igrades.subjects"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSString *nom = @"VisitBCNWalkingDist";
     NSData *data = [defaults objectForKey:nom];
     if(data == nil){

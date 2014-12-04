@@ -10,6 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import "MVAPunInt.h"
 
 @interface MVAAppDelegate() <CLLocationManagerDelegate>
 
@@ -35,7 +36,8 @@
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     NSDictionary *attributes = @{ NSFontAttributeName: [UIFont systemFontOfSize:18],
-                                  NSForegroundColorAttributeName: [UIColor whiteColor]};
+                                  NSForegroundColorAttributeName: [UIColor whiteColor],
+                                  NSBackgroundColorAttributeName: [UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f]};
     [[UINavigationBar appearance] setTitleTextAttributes:attributes];
     
     return YES;
@@ -82,10 +84,6 @@
     self.dataTMB = [[MVADataTMB alloc] init];
     [self loadTMB];
     
-    /* GRAPHS */
-    self.graphs = [[MVAGraphs alloc] init];
-    [self.graphs load];
-    
     /* POINTS OF INTEREST */
     [self loadPI];
 }
@@ -122,11 +120,21 @@
                 punto.fotoGr = [dic objectForKey:@"foto-gran"];
                 punto.street = [dic objectForKey:@"street"];
                 punto.color = [dic objectForKey:@"color"];
+                NSNumber *x = [dic objectForKey:@"squareX"];
+                NSNumber *y = [dic objectForKey:@"squareY"];
+                punto.squareX = [x floatValue];
+                punto.squareY = [y floatValue];
                 [self.puntos addObject:punto];
             }
         }
     }
-    
+
+    NSSortDescriptor *sortDescriptor;
+    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"nombre" ascending:YES];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+
+    self.puntos = [[self.puntos sortedArrayUsingDescriptors:sortDescriptors] mutableCopy];
+
     NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
     double dif = (end-start);
     NSLog(@"Load PIs time: %.16f",dif);
@@ -193,7 +201,8 @@
 {
     CLLocation *newLocation = [locations lastObject];
     self.coordinates = newLocation.coordinate;
-    [self.table.tableView reloadData];
+    if (self.table != nil) [self.table.tableView reloadData];
+    if (self.custom != nil) [self.custom.tableView reloadData];
 }
 
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
@@ -211,7 +220,7 @@
 -(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
     // Use the true heading if it is valid.
     self.degrees = newHeading.magneticHeading;
-    [self.table.tableView reloadData];
+    if (self.table != nil) [self.table.tableView reloadData];
 }
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error

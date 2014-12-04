@@ -85,7 +85,7 @@
 
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"yyyyMMdd"];
-    NSString *anomesdia = [dateFormatter stringFromDate:[NSDate date]];
+    NSString *anomesdia = [dateFormatter stringFromDate:[self loadCustomDate]];
     
     NSMutableArray *services = [[NSMutableArray alloc] init];
     //CREACIÓ DE LES ARESTES FGC
@@ -159,7 +159,7 @@
                 edge.weight = [NSNumber numberWithInt:1];
                 edge.change = NO;
                 if (up) edge.tripID = [route.routeID stringByAppendingString:@"-UP"];
-                else  edge.tripID = [route.routeID stringByAppendingString:@"-DOWN"];// REVISAR
+                else  edge.tripID = [route.routeID stringByAppendingString:@"-DOWN"];
                 
                 NSMutableArray *array = [self.edgeList objectAtIndex:([pos1 intValue] + tmbstops)];
                 [array addObject:edge];
@@ -253,6 +253,32 @@
     NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
     double dif = (end-start);
     NSLog(@"Subway creation time: %.16f",dif);
+}
+
+-(BOOL)customDate
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if (data == nil) {
+        [defaults setObject:@"NO" forKey:@"VisitBCNCustomDateEnabled"];
+        return NO;
+    }
+    NSString *string = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if ([string isEqualToString:@"NO"]) return NO;
+    return YES;
+}
+
+-(NSDate *)loadCustomDate
+{
+    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
+    if (![self customDate]) return [NSDate date];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSDate *date = [defaults objectForKey:@"VisitBCNCustomDate"];
+    if (!date) return [NSDate date];
+    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"Europe/Madrid"];
+    NSInteger seconds = [tz secondsFromGMTForDate: date];
+    date = [NSDate dateWithTimeInterval:seconds sinceDate: date];
+    return date;
 }
 
 @end

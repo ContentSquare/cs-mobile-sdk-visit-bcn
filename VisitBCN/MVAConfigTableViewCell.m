@@ -26,12 +26,16 @@
 
 -(void)configSwitch
 {
-    int alg = 1;
+    int alg = 0;
     BOOL dijkstra = YES;
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.igrades.subjects"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSData *data = [defaults objectForKey:self.objectName];
     if(data == nil){
-        [defaults setInteger:1 forKey:self.objectName];
+        if ([self.objectName isEqualToString:@"VisitBCNRain"]) [defaults setInteger:0 forKey:self.objectName];
+        else {
+            [defaults setInteger:1 forKey:self.objectName];
+            alg = 1;
+        }
     }
     else {
         alg = (int)[defaults integerForKey:self.objectName];
@@ -39,11 +43,13 @@
     if(alg == 0) {
         dijkstra = NO;
         if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) self.label.text = @"Algorithm: A*";
-        else self.label.text = @"Is raining in Barcelona? NO";
+        else if ([self.objectName isEqualToString:@"VisitBCNRain"]) self.label.text = @"Is raining in Barcelona? NO";
+        else self.label.text = @"Taxi service: Hailo";
     }
     else {
         if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) self.label.text = @"Algorithm: Dijkstra";
-        else self.label.text = @"Is raining in Barcelona? YES";
+        else if ([self.objectName isEqualToString:@"VisitBCNRain"]) self.label.text = @"Is raining in Barcelona? YES";
+        else self.label.text = @"Taxi service: Uber";
     }
     if (self.mySwitch == nil) {
         self.mySwitch = [[SevenSwitch alloc] initWithFrame:CGRectMake(0, 0, self.cellSwitch.frame.size.width, self.cellSwitch.frame.size.height)];
@@ -52,72 +58,62 @@
             self.mySwitch.offImage = [UIImage imageNamed:@"astar"];
             self.mySwitch.onImage = [UIImage imageNamed:@"dijkstra"];
         }
-        else {
+        else if ([self.objectName isEqualToString:@"VisitBCNRain"]) {
             self.mySwitch.offImage = [UIImage imageNamed:@"cross"];
             self.mySwitch.onImage = [UIImage imageNamed:@"check"];
         }
+        else {
+            self.mySwitch.offImage = [UIImage imageNamed:@"hailo_orange"];
+            self.mySwitch.onImage = [UIImage imageNamed:@"uber_black"];
+            
+        }
+        
         self.mySwitch.onTintColor = self.cellSwitch.backgroundColor;
         [self.mySwitch setBackgroundColor:[UIColor clearColor]];
         self.mySwitch.isRounded = NO;
+        
         if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) self.mySwitch.borderColor = [UIColor orangeColor];
-        else self.mySwitch.borderColor = [UIColor lightGrayColor];
+        else if ([self.objectName isEqualToString:@"VisitBCNRain"]) self.mySwitch.borderColor = [UIColor lightGrayColor];
+        else self.mySwitch.borderColor = [UIColor colorWithRed:(243.0f/255.0f) green:(181.0f/255.0f) blue:(59.0f/255.0f) alpha:1.0f];
+        
         [self.cellSwitch addSubview:self.mySwitch];
         [self.mySwitch setOn:dijkstra animated:YES];
         if (dijkstra) [self.mySwitch setThumbTintColor:[UIColor whiteColor]];
         else {
-            if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) [self.mySwitch setThumbTintColor:[UIColor whiteColor]];
-            else [self.mySwitch setThumbTintColor:[UIColor lightGrayColor]];
+            if ([self.objectName isEqualToString:@"VisitBCNRain"]) [self.mySwitch setThumbTintColor:[UIColor lightGrayColor]];
+            else [self.mySwitch setThumbTintColor:[UIColor whiteColor]];
         }
     }
     if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) [self.cellSwitch setBackgroundColor:[UIColor orangeColor]];
-    else [self.cellSwitch setBackgroundColor:[UIColor clearColor]];
+    else if ([self.objectName isEqualToString:@"VisitBCNRain"]) [self.cellSwitch setBackgroundColor:[UIColor clearColor]];
+    else [self.cellSwitch setBackgroundColor:[UIColor colorWithRed:(243.0f/255.0f) green:(181.0f/255.0f) blue:(59.0f/255.0f) alpha:1.0f]];
 }
 
 - (void)switchChanged:(SevenSwitch *)sender {
-    int alg = 1;
-    BOOL dijkstra = YES;
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.igrades.subjects"];
-    NSData *data = [defaults objectForKey:self.objectName];
-    if(data == nil){
-        [defaults setInteger:1 forKey:self.objectName];
-    }
-    else {
-        alg = (int)[defaults integerForKey:self.objectName];
-    }
-    if(alg == 0) {
-        dijkstra = NO;
-        if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) self.label.text = @"Algorithm: A*";
-        else self.label.text = @"Is raining in Barcelona? NO";
-    }
-    else {
-        if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) self.label.text = @"Algorithm: Dijkstra";
-        else self.label.text = @"Is raining in Barcelona? YES";
-    }
+    BOOL dijkstra = sender.on;
     dijkstra = !dijkstra;
     if(dijkstra) {
         [sender setThumbTintColor:[UIColor whiteColor]];
         [self saveAlgorithm:dijkstra];
-        [self.papi.tableView reloadData];
+        if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) self.label.text = @"Algorithm: A*";
+        else if ([self.objectName isEqualToString:@"VisitBCNRain"]) self.label.text = @"Is raining in Barcelona? NO";
+        else self.label.text = @"Taxi service: Hailo";
     }
     else {
-        if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) [sender setThumbTintColor:[UIColor whiteColor]];
-        else [sender setThumbTintColor:[UIColor lightGrayColor]];
+        if ([self.objectName isEqualToString:@"VisitBCNRain"]) [sender setThumbTintColor:[UIColor lightGrayColor]];
+        else [sender setThumbTintColor:[UIColor whiteColor]];
         [self saveAlgorithm:dijkstra];
-        [self.papi.tableView reloadData];
+        if ([self.objectName isEqualToString:@"VisitBCNAlgorithm"]) self.label.text = @"Algorithm: Dijkstra";
+        else if ([self.objectName isEqualToString:@"VisitBCNRain"]) self.label.text = @"Is raining in Barcelona? YES";
+        else self.label.text = @"Taxi service: Uber";
     }
 }
 
 -(void)saveAlgorithm:(BOOL)alarmaPermitida
 {
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.igrades.subjects"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     if (alarmaPermitida) [defaults setInteger:1 forKey:self.objectName];
     else [defaults setInteger:0 forKey:self.objectName];
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end

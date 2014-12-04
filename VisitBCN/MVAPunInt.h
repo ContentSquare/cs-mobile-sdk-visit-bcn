@@ -18,6 +18,7 @@
 @property NSString *fotoGr;
 @property CLLocationCoordinate2D coordinates;
 @property NSString *color;
-
+@property CGFloat squareX;
+@property CGFloat squareY;
 
 @end

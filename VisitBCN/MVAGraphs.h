@@ -18,6 +18,7 @@
 @property MVASubwayGraph *subwayGraph;
 @property MVAPath *subwayPath;
 @property MVAPath *busPath;
+@property MVAPunIntViewController *viewController;
 
 -(void)generateGraphsWithBUSDB:(MVADataBus *)dataBus andTMBDB:(MVADataTMB *)dataTMB andFGCDB:(MVADataFGC *)dataFGC;
 -(void)computePathsWithOrigin:(CLLocationCoordinate2D)origin andDestination:(MVAPunInt *)punInt;

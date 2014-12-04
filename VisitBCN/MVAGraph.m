@@ -30,6 +30,7 @@
     if (identifier == 1) { // DIJKSTRA
         NSNumber *infinity = [NSNumber numberWithDouble:DBL_MAX];
         MVAAlgorithms *alg = [[MVAAlgorithms alloc] init];
+        alg.viewController = self.viewController;
         alg.nodes = [self.nodes mutableCopy];
         NSNumber *posA = [originNodes firstObject];
         MVANode *nodeA = [alg.nodes objectAtIndex:[posA intValue]];
@@ -46,15 +47,10 @@
             node.pathNodes = [[NSMutableArray alloc] init];
             if ([originNodes containsObject:[NSNumber numberWithInt:node.identificador]]) {
                 node.open = YES;
-                [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
-                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[NSDate date]];
-                NSInteger hour = [components hour];
-                NSInteger minute = [components minute];
-                NSInteger seconds = [components second];
-                double sec_rep = (hour * 60 * 60) + (minute * 60) + seconds;
+                double sec_rep = [self initTime];
                 double dist = [self distanceForCoordinates:oCoords
                                             andCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude)];
-                double walkingSpeed = ([self loadWalkingSpeed] / 3600);
+                double walkingSpeed = [self loadWalkingSpeed];
                 sec_rep += (dist / walkingSpeed);
                 
                 if (self.type == 1) {
@@ -112,6 +108,7 @@
         
         NSNumber *infinity = [NSNumber numberWithDouble:DBL_MAX];
         MVAAlgorithms *alg = [[MVAAlgorithms alloc] init];
+        alg.viewController = self.viewController;
         alg.nodes = [self.nodes mutableCopy];
         NSNumber *posA = [originNodes firstObject];
         MVANode *nodeA = [alg.nodes objectAtIndex:[posA intValue]];
@@ -127,15 +124,10 @@
             node.pathEdges = [[NSMutableArray alloc] init];
             node.pathNodes = [[NSMutableArray alloc] init];
             if ([originNodes containsObject:[NSNumber numberWithInt:node.identificador]]) {
-                [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
-                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[NSDate date]];
-                NSInteger hour = [components hour];
-                NSInteger minute = [components minute];
-                NSInteger seconds = [components second];
-                double sec_rep = (hour * 60 * 60) + (minute * 60) + seconds;
+                double sec_rep = [self initTime];
                 double dist = [self distanceForCoordinates:oCoords
                                             andCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude)];
-                double walkingSpeed = ([self loadWalkingSpeed] / 3600);
+                double walkingSpeed = [self loadWalkingSpeed];
                 sec_rep += (dist / walkingSpeed);
                 
                 CLLocationCoordinate2D cordA = CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude);
@@ -153,6 +145,7 @@
                     node.distance = [NSNumber numberWithDouble:(sec_rep + freq)];
                     double dist = [self distanceForCoordinates:cordA andCoordinates:punInt.coordinates];
                     double busSpeed = (176.0 / 36.0);
+                    if ([self loadRain]) busSpeed /= 1.2;
                     node.score = [NSNumber numberWithDouble:((sec_rep + freq) + (dist / busSpeed))];
                 }
                 MVAPair *p = [[MVAPair alloc] init];
@@ -197,7 +190,8 @@
     }
     NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
     double dif = (end-start);
-    NSLog(@"Algorithm execution time: %.16f",dif);
+    if (self.type == 1) NSLog(@"Subway execution time: %.16f",dif);
+    else NSLog(@"Bus execution time: %.16f",dif);
     
     return self.path;
 }
@@ -212,8 +206,9 @@
     
     double a = (sin(dLat/2.0) * sin(dLat/2.0)) + (sin(dLon/2.0) * sin(dLon/2.0) * cos(lat1) * cos(lat2));
     double c = 2 * atan2(sqrt(a), sqrt(1-a));
+    double realDist = (R * c);
     
-    return (R * c);
+    return (realDist * 1.25);
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder;
@@ -236,16 +231,70 @@
 
 -(double)loadWalkingSpeed
 {
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.igrades.subjects"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSString *nom = @"VisitBCNWalkingSpeed";
     NSData *data = [defaults objectForKey:nom];
     if(data == nil){
-        [defaults setDouble:5000.0 forKey:nom];
-        return 5000.0;
+        [defaults setDouble:(5000.0/3600.0) forKey:nom];
+        if ([self loadRain]) return ((5000.0/3600.0) / 1.2);
+        return (5000.0/3600.0);
     }
     else {
+        if ([self loadRain]) return ([defaults doubleForKey:nom] / 1.2);
         return [defaults doubleForKey:nom];
     }
+}
+
+-(BOOL)loadRain
+{
+    int alg = 0;
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [defaults objectForKey:@"VisitBCNRain"];
+    if(data == nil){
+        [defaults setInteger:0 forKey:@"VisitBCNRain"];
+    }
+    else {
+        alg = (int)[defaults integerForKey:@"VisitBCNRain"];
+    }
+    if (alg == 1) return YES;
+    return NO;
+}
+
+-(double)initTime
+{
+    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[self loadCustomDate]];
+    NSInteger hour = [components hour];
+    NSInteger minute = [components minute];
+    NSInteger seconds = [components second];
+    double sec_rep = (hour * 3600) + (minute * 60) + seconds;
+    return sec_rep;
+}
+
+-(BOOL)customDate
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if (data == nil) {
+        [defaults setObject:@"NO" forKey:@"VisitBCNCustomDateEnabled"];
+        return NO;
+    }
+    NSString *string = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if ([string isEqualToString:@"NO"]) return NO;
+    return YES;
+}
+
+-(NSDate *)loadCustomDate
+{
+    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
+    if (![self customDate]) return [NSDate date];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSDate *date = [defaults objectForKey:@"VisitBCNCustomDate"];
+    if (!date) return [NSDate date];
+    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"Europe/Madrid"];
+    NSInteger seconds = [tz secondsFromGMTForDate: date];
+    date = [NSDate dateWithTimeInterval:seconds sinceDate: date];
+    return date;
 }
 
 @end

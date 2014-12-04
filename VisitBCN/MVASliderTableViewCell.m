@@ -57,11 +57,11 @@
 
 -(double)loadWalkingSpeed
 {
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.igrades.subjects"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSData *data = [defaults objectForKey:self.objectName];
     if(data == nil){
         if ([self.objectName isEqualToString:@"VisitBCNWalkingSpeed"]) {
-            [defaults setDouble:5000.0 forKey:self.objectName];
+            [defaults setDouble:(5000.0/3600) forKey:self.objectName];
             return 5000.0;
         }
         else {
@@ -70,6 +70,7 @@
         }
     }
     else {
+        if ([self.objectName isEqualToString:@"VisitBCNWalkingSpeed"]) return ([defaults doubleForKey:self.objectName] * 3600);
         return [defaults doubleForKey:self.objectName];
     }
 }
@@ -77,8 +78,9 @@
 
 -(void)saveSpeed:(double)speed
 {
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.igrades.subjects"];
-    [defaults setDouble:speed forKey:self.objectName];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    if ([self.objectName isEqualToString:@"VisitBCNWalkingSpeed"]) [defaults setDouble:(speed/3600) forKey:self.objectName];
+    else [defaults setDouble:speed forKey:self.objectName];
 }
 
 @end

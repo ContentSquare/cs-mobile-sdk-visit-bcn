@@ -12,6 +12,8 @@
 #import "UIViewController+ScrollingNavbar.h"
 #import "MVAPunIntViewController.h"
 #import "ALRadialMenu.h"
+#import "MVAPunInt.h"
+#import "MVACustomLocation.h"
 
 @interface MVAPuntsIntsTableViewController () <CLLocationManagerDelegate,UITableViewDataSource,UITableViewDelegate,ALRadialMenuDelegate>
 
@@ -19,6 +21,7 @@
 @property MVAPunInt *selectedPoint;
 @property (strong, nonatomic) ALRadialMenu *socialMenu;
 @property BOOL menuON;
+@property NSArray *customLocations;
 
 @end
 
@@ -36,7 +39,7 @@
     [self followScrollView:self.tableView usingTopConstraint:self.topConstraint withDelay:65];
     [self setShouldScrollWhenContentFits:YES];
     
-    [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f]];
     
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"head"]];
 }
@@ -53,7 +56,7 @@
     [self.homeButton setTitle:@"" forState:UIControlStateNormal];
     [self.homeButton setBackgroundImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
     [self.homeButton setContentMode:UIViewContentModeCenter];
-    [self.homeButton setBackgroundColor:[UIColor orangeColor]];
+    [self.homeButton setBackgroundColor:[UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f]];
     [self.homeButton.layer setCornerRadius:25.0f];
     [self.homeButton setClipsToBounds:YES];
     
@@ -96,8 +99,34 @@
     
     double a = (sin(dLat/2.0) * sin(dLat/2.0)) + (sin(dLon/2.0) * sin(dLon/2.0) * cos(lat1) * cos(lat2));
     double c = 2 * atan2(sqrt(a), sqrt(1-a));
+    double realDist = (R * c);
     
-    return (R * c);
+    return (realDist * 1.1);
+}
+
+-(int)loadCustom
+{
+    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [sharedDefaults objectForKey:@"VisitBCNIsCustom"];
+    if (data == nil) {
+        [sharedDefaults setObject:[NSNumber numberWithInt:0] forKey:@"VisitBCNIsCustom"];
+        return 0;
+    }
+    NSNumber *num = [sharedDefaults objectForKey:@"VisitBCNIsCustom"];
+    return [num intValue];
+}
+
+- (void) loadCustomLocations
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *savedArray = [defaults objectForKey:@"VisitBCNCustomLocations"];
+    if (savedArray != nil) {
+        NSArray *oldArray = [NSKeyedUnarchiver unarchiveObjectWithData:savedArray];
+        self.customLocations = [[NSArray alloc] initWithArray:oldArray];
+    }
+    else {
+        self.customLocations = [[NSArray alloc] init];
+    }
 }
 
 #pragma mark - Table view data source
@@ -109,6 +138,74 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 125.0f;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    int pos = [self loadCustom];
+    if (pos == 0) return 0.1f;
+    return 180.0f;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.1f;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    CGFloat w = self.view.frame.size.width;
+    int pos = [self loadCustom];
+    if (pos > 0) {
+        [self loadCustomLocations];
+        MVACustomLocation *loc = [self.customLocations objectAtIndex:(pos - 1)];
+        UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, w, 180)];
+        CGFloat w = self.view.frame.size.width;
+        
+        UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(((w / 2.0) - 51.0), 10, 102, 102)];
+        if (loc.foto != nil) imV.image = loc.foto;
+        else imV.image = [UIImage imageNamed:@"customPlace"];
+        [imV.layer setCornerRadius:51.0];
+        [imV setClipsToBounds:YES];
+        [imV.layer setBorderWidth:2.0f];
+        [imV.layer setBorderColor:[[UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f] CGColor]];
+        [v addSubview:imV];
+        
+        UILabel *nom = [[UILabel alloc] initWithFrame:CGRectMake(8, 120, w - 16, 20)];
+        nom.text = loc.name;
+        [nom setTextAlignment:NSTextAlignmentCenter];
+        [nom setTextColor:[UIColor blackColor]];
+        [nom setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:15]];
+        [nom setAdjustsFontSizeToFitWidth:YES];
+        [v addSubview:nom];
+        
+        UILabel *coord = [[UILabel alloc] initWithFrame:CGRectMake(8, 150, w - 16, 20)];
+        NSString *cords = [NSString stringWithFormat:@"(%.4f,%.4f)",loc.coordinates.latitude,loc.coordinates.longitude];
+        coord.text = cords;
+        [coord setTextAlignment:NSTextAlignmentCenter];
+        [coord setTextColor:[UIColor blackColor]];
+        [coord setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15]];
+        [coord setAdjustsFontSizeToFitWidth:YES];
+        [v addSubview:coord];
+        
+        UIView *headerView = [[UIView alloc] initWithFrame:v.frame];
+        [headerView setBackgroundColor:[UIColor clearColor]];
+        
+        UISwipeGestureRecognizer *tapGestureRecognizer;
+        tapGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(headerTapped:)];
+        tapGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+        [headerView addGestureRecognizer:tapGestureRecognizer];
+        
+        [v addSubview:headerView];
+        
+        return v;
+    }
+    return [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, w, 0.1f)];
+}
+
+-(void)headerTapped:(UITapGestureRecognizer *)onetap
+{
+    [self performSegueWithIdentifier:@"customSegue" sender:self];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -167,9 +264,6 @@
         MVAPunIntViewController *vc = (MVAPunIntViewController *) [segue destinationViewController];
         vc.punto = self.selectedPoint;
     }
-    
-    // Get the new view controller using .
-    // Pass the selected object to the new view controller.
 }
 
 - (IBAction)menuSelected:(id)sender {

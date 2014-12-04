@@ -7,19 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface MVATaxis : NSObject
 
 -(void)openHailo;
 -(void)loadHailoTime;
+
+-(void)openUber;
 -(void)loadUberTime;
 -(void)loadUberProducts;
 -(void)loadUberPrice;
--(void)openUber;
 
 @property NSDictionary *hailoTimes;
 @property NSDictionary *uberTimes;
 @property NSDictionary *uberProducts;
 @property NSDictionary *uberPrices;
+
+@property CLLocationCoordinate2D orig;
+@property CLLocationCoordinate2D dest;
+
+@property int type;
 
 @end

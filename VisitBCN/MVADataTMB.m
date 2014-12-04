@@ -247,7 +247,7 @@
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"yyyyMMdd"];
-    NSString *anomesdia = [dateFormatter stringFromDate:[NSDate date]];
+    NSString *anomesdia = [dateFormatter stringFromDate:[self loadCustomDate]];
     BOOL para = NO;
     for(int i = 0; i < [self.dates count] && !para; ++i) {
         MVADate *date = [self.dates objectAtIndex:i];
@@ -263,7 +263,7 @@
     }
     
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
-    long day = [self dayOfWeek:[NSDate date]];
+    long day = [self dayOfWeek:[self loadCustomDate]];
     for (int i = 0; i < [self.calendars count]; ++i) {
         MVACalendar *cal = [self.calendars objectAtIndex:i];
         NSString *is = [cal.days objectAtIndex:day];
@@ -275,7 +275,8 @@
     return nil;
 }
 
--(long)dayOfWeek:(NSDate *)anyDate{
+-(long)dayOfWeek:(NSDate *)anyDate
+{
     NSLocale *frLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"es_ES"];
     
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
@@ -284,6 +285,32 @@
     int weekday = (int)[comps weekday];
     int europeanWeekday = ((weekday + 5) % 7) + 1;
     return (europeanWeekday - 1);
+}
+
+-(BOOL)customDate
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if (data == nil) {
+        [defaults setObject:@"NO" forKey:@"VisitBCNCustomDateEnabled"];
+        return NO;
+    }
+    NSString *string = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if ([string isEqualToString:@"NO"]) return NO;
+    return YES;
+}
+
+-(NSDate *)loadCustomDate
+{
+    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
+    if (![self customDate]) return [NSDate date];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSDate *date = [defaults objectForKey:@"VisitBCNCustomDate"];
+    if (!date) return [NSDate date];
+    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"Europe/Madrid"];
+    NSInteger seconds = [tz secondsFromGMTForDate: date];
+    date = [NSDate dateWithTimeInterval:seconds sinceDate: date];
+    return date;
 }
 
 #pragma mark - Saving/Loading functions
