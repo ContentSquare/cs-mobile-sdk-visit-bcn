@@ -8,8 +8,8 @@
 
 #import "MVAPunIntViewController.h"
 #import "Reachability.h"
-#import "MVATaxis.h"
 #import "MVAGraphs.h"
+#import "MVADetailsViewController.h"
 
 @interface MVAPunIntViewController ()
 
@@ -28,7 +28,7 @@
 @property double carTime;
 @property double carSpeed;
 
-@property MVATaxis *taxis;
+@property double initTime;
 
 @end
 
@@ -186,7 +186,7 @@
     //Optional stuff, Add The B view
     self.pathsView = [UIView new];
     self.pathsView.translatesAutoresizingMaskIntoConstraints = NO; //we are using auto layout
-    self.pathsView.backgroundColor = [UIColor colorWithRed:(52.0/255.0) green:(94.0/255.0) blue:(242.0/255.0) alpha:1];
+    self.pathsView.backgroundColor = [UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f];
     [self.pathsView.layer setCornerRadius:50];
     [self.pathsView setClipsToBounds:YES];
     [subContentView addSubview:self.pathsView];
@@ -274,6 +274,7 @@
     self.pathsResume.textColor = [UIColor whiteColor];
     self.pathsResume.font = [UIFont fontWithName:@"Helveticaneue-Bold" size:11.0f];
     [self.pathsView addSubview:self.pathsResume];
+    self.initTime = [self initalTime];
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     dispatch_async(queue, ^{
         MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -304,7 +305,7 @@
             UIImageView *logo = [[UIImageView alloc] initWithFrame:CGRectMake(30, 20, 40, 40)];
             if ((self.subwayPath == nil) && (self.busPath == nil)) {
                 if (self.walkDist < [self loadWalkingDist]) {
-                    double ref = [self initTime] + self.walkTime;
+                    double ref = self.initTime + self.walkTime;
                     int second = (ref - (floor(ref/60) * 60.0f)) ;
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
@@ -314,7 +315,7 @@
                 }
                 else {
                     logo.image = [UIImage imageNamed:@"taxi-white"];
-                    double ref = [self initTime] + self.carTime;
+                    double ref = self.initTime + self.carTime;
                     int second = (ref - (floor(ref/60) * 60.0f)) ;
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
@@ -324,7 +325,7 @@
             }
             else if (self.subwayPath == nil && self.busPath != nil) {
                 if (self.walkDist < [self loadWalkingDist]) {
-                    double ref = [self initTime] + self.walkTime;
+                    double ref = self.initTime + self.walkTime;
                     int second = (ref - (floor(ref/60) * 60.0f)) ;
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
@@ -344,7 +345,7 @@
             }
             else if (self.subwayPath != nil && self.busPath == nil) {
                 if (self.walkDist < [self loadWalkingDist]) {
-                    double ref = [self initTime] + self.walkTime;
+                    double ref = self.initTime + self.walkTime;
                     int second = (ref - (floor(ref/60) * 60.0f)) ;
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
@@ -365,7 +366,7 @@
             else {
                 if (self.subwayPath.totalWeight <= self.busPath.totalWeight) {
                     if (self.walkDist < [self loadWalkingDist]) {
-                        double ref = [self initTime] + self.walkTime;
+                        double ref = self.initTime + self.walkTime;
                         int second = (ref - (floor(ref/60) * 60.0f)) ;
                         double ref2 = (ref / 60.0);
                         int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
@@ -386,7 +387,7 @@
                 }
                 else {
                     if (self.walkDist < [self loadWalkingDist]) {
-                        double ref = [self initTime] + self.walkTime;
+                        double ref = self.initTime + self.walkTime;
                         int second = (ref - (floor(ref/60) * 60.0f)) ;
                         double ref2 = (ref / 60.0);
                         int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
@@ -519,7 +520,7 @@
     }
 }
 
--(double)initTime
+-(double)initalTime
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[self loadCustomDate]];
@@ -586,6 +587,22 @@
     NSArray *oldArray = [NSKeyedUnarchiver unarchiveObjectWithData:savedArray];
     NSArray *customLocations = [[NSArray alloc] initWithArray:oldArray];
     return [customLocations objectAtIndex:([self loadCustom] - 1)];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"detailSegue"]) {
+        MVADetailsViewController *vc = (MVADetailsViewController *)segue.destinationViewController;
+        vc.subwayPath = self.subwayPath;
+        vc.busPath = self.busPath;
+        vc.walkDist = self.walkDist;
+        vc.walkTime = self.walkTime;
+        vc.carDist = self.carDist;
+        vc.carTime = self.carTime;
+        vc.punto = self.punto;
+        vc.orig = [self getCoordinates];
+        vc.initTime = self.initTime;
+    }
 }
 
 @end

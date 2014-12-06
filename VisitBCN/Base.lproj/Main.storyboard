@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="egA-T2-Kbw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="egA-T2-Kbw">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPR-j6-Nb5">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -426,8 +426,8 @@
                                     <action selector="menuSelected:" destination="vyI-MN-aGv" eventType="touchUpInside" id="B5z-0z-Mu0"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="2S7-ab-x4U">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="2S7-ab-x4U">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PunIntCell" rowHeight="125" id="KjE-Kx-tPw" customClass="MVAPunIntTableViewCell">
@@ -576,39 +576,31 @@
                     </view>
                     <navigationItem key="navigationItem" title="CAMP NOU" id="IuD-eb-Ars"/>
                     <connections>
-                        <segue destination="aPb-HO-YbV" kind="push" identifier="detailSegue" id="Hb2-d1-kAq"/>
+                        <segue destination="P06-A6-6y5" kind="push" identifier="detailSegue" id="g9s-L6-8VY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xES-k4-NWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031" y="853"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="mqX-5T-iwl">
+        <!--Paths-->
+        <scene sceneID="h3S-qp-DXN">
             <objects>
-                <tableViewController id="aPb-HO-YbV" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="g2b-zm-mRg">
+                <viewController id="P06-A6-6y5" customClass="MVADetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mvg-Yq-kTP"/>
+                        <viewControllerLayoutGuide type="bottom" id="sjO-Rw-b2K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yra-ZG-nUP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fga-bz-ucP">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fga-bz-ucP" id="XK4-cA-hjO">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="aPb-HO-YbV" id="Yj6-Q9-Fey"/>
-                            <outlet property="delegate" destination="aPb-HO-YbV" id="ywN-gg-CYF"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="yBh-gi-3nf"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3bM-Gr-qku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Paths" id="WiD-SN-dr8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKG-kf-BYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1895" y="853"/>
+            <point key="canvasLocation" x="1504" y="853"/>
         </scene>
     </scenes>
     <resources>
@@ -625,7 +617,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sib-Jy-cIv"/>
         <segue reference="psl-y8-6LP"/>
+        <segue reference="sib-Jy-cIv"/>
     </inferredMetricsTieBreakers>
 </document>

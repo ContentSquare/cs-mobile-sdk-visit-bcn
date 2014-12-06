@@ -40,13 +40,13 @@
 
 -(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
 {
-    if (section == 0) return @"Changing the algorithm doesn't afect to the results and is used just as a case of study.";
+    if (section == 0) return @"Changing the algorithm doesn't have any effect on the results and is used just as a case of study.";
     if (section == 1) return @"This will reduce the walking and driving speed.";
     if (section == 2) return @"Choose between Uber or Hailo and get relevant information when asking for an itinerary with an internet connection.";
-    if (section == 3) return @"Change this value, will influence in the travelling and arrival time.";
+    if (section == 3) return @"Changing this value, will influence in the travelling and arrival time.";
     if (section == 4) return @"This will fix the maximum distance desired from the actual point to the nearest stops and from the arrival stops to the desired destination.";
-    if (section == 5) return @"Select if you want a custom origin location or find the way back home.";
-    if (section == 6) return @"This option permits to select a future date for calculating the intineraries.";
+    if (section == 5) return @"Select if you want a custom origin location or to find the way back home.";
+    if (section == 6) return @"This option permits to select a future date for calculating the itineraries.";
     return @"";
 }
 
@@ -54,7 +54,7 @@
 {
     CGFloat w = self.view.frame.size.width;
     NSString *text = [self tableView:tableView titleForFooterInSection:section];
-    return ([self heightForView:[UIFont systemFontOfSize:10.0f] text:text andSize:(w - 30)] + 20);
+    return ([self heightForView:[UIFont systemFontOfSize:10.0f] text:text andSize:(w - 16)] + 20);
 }
 
 -(CGFloat)heightForView:(UIFont *)font text:(NSString *)text andSize:(CGFloat)width
@@ -72,7 +72,7 @@
 {
     CGFloat w = self.view.frame.size.width;
     UILabel *myLabel = [[UILabel alloc] init];
-    myLabel.frame = CGRectMake(15, 5, (w - 30), ([self tableView:tableView heightForFooterInSection:section] - 20));
+    myLabel.frame = CGRectMake(8, 5, (w - 16), ([self tableView:tableView heightForFooterInSection:section] - 20));
     myLabel.numberOfLines = 0;
     [myLabel setFont:[UIFont systemFontOfSize:10.0f]];
     myLabel.text = [self tableView:tableView titleForFooterInSection:section];

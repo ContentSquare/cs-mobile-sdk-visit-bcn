@@ -217,6 +217,7 @@
         [manager startUpdatingLocation];
     }
 }
+
 -(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
     // Use the true heading if it is valid.
     self.degrees = newHeading.magneticHeading;
