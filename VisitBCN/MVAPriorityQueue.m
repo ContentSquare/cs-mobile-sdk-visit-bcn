@@ -117,4 +117,23 @@
     }
 }
 
+-(int)posOfElement:(int)identificador
+{
+    for (int i = 0; i < [self.v count]; ++i) {
+        MVAPair *p = [self.v objectAtIndex:i];
+        if (p.second == identificador) return i;
+    }
+    return -1;
+}
+
+-(MVAPair *)objectAtIndex:(int)index
+{
+    return [self.v objectAtIndex:index];
+}
+
+-(void)setObject:(MVAPair *)p atIndex:(int)index
+{
+    [self.v setObject:p atIndexedSubscript:index];
+}
+
 @end

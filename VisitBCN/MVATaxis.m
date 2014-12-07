@@ -25,6 +25,8 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
     urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f,",self.dest.latitude]];
     urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f",self.dest.longitude]];
     
+    urlString = [urlString stringByAppendingString:@"&referrer="];
+    
     urlString = [urlString stringByAppendingString:hailoAPI];
     NSURL* url = [NSURL URLWithString:urlString];
     
@@ -174,12 +176,95 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
 
 -(void)openUber
 {
-    NSString *urlString = @"uber://?action=setPickup&pickup=my_location";
+    NSArray *prices = [self.uberPrices objectForKey:@"prices"];
+    NSDictionary *estPrice = [prices firstObject];
+    NSString *urlString = @"uber://?client_id=YOUR_CLIENT_ID";
+    urlString = [urlString stringByAppendingString:uberAPI];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&action=setPickup&pickup[latitude]=%f",self.orig.latitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&pickup[longitude]=%f",self.orig.longitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&dropoff[latitude]=%f",self.dest.latitude]];
+    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&dropoff[longitude]=%f",self.dest.longitude]];
+    urlString = [urlString stringByAppendingString:@"&product_id="];
+    urlString = [urlString stringByAppendingString:[estPrice objectForKey:@"product_id"]];
+    
     NSURL* url = [NSURL URLWithString:urlString];
     
     if ([[UIApplication sharedApplication] canOpenURL:url]){
         [[UIApplication sharedApplication] openURL:url];
     }
+}
+
+-(double)taxiFareWithDistance:(double)dist andTime:(double)time
+{
+    long day = [self dayOfWeek:[self loadCustomDate]];
+    double initTime = [self initTime];
+    if (day >= 1 && day <= 5) {
+        if (initTime >= 28800 && initTime <= 72000) {
+            return (2.10 + (1.03 * (dist/1000.0)));
+        }
+        else {
+            double est = (2.10 + (1.03 * (dist/1000.0)));
+            return fmax(est, 7);
+        }
+    }
+    else {
+        if (initTime >= 28800 && initTime <= 72000) {
+            double est = (2.10 + (1.03 * (dist/1000.0)));
+            return fmax(est, 7);
+        }
+        else {
+            return (2.30 + (1.40 * (dist/1000.0)));
+        }
+    }
+}
+
+-(double)initTime
+{
+    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[self loadCustomDate]];
+    NSInteger hour = [components hour];
+    NSInteger minute = [components minute];
+    NSInteger seconds = [components second];
+    double sec_rep = (hour * 3600) + (minute * 60) + seconds;
+    return sec_rep;
+}
+
+-(long)dayOfWeek:(NSDate *)anyDate
+{
+    NSLocale *frLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"es_ES"];
+    
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    [gregorian setLocale:frLocale];
+    NSDateComponents *comps = [gregorian components:NSWeekdayCalendarUnit fromDate:anyDate];
+    int weekday = (int)[comps weekday];
+    int europeanWeekday = ((weekday + 5) % 7) + 1;
+    return europeanWeekday;
+}
+
+-(BOOL)customDate
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if (data == nil) {
+        [defaults setObject:@"NO" forKey:@"VisitBCNCustomDateEnabled"];
+        return NO;
+    }
+    NSString *string = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if ([string isEqualToString:@"NO"]) return NO;
+    return YES;
+}
+
+-(NSDate *)loadCustomDate
+{
+    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
+    if (![self customDate]) return [NSDate date];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSDate *date = [defaults objectForKey:@"VisitBCNCustomDate"];
+    if (!date) return [NSDate date];
+    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"Europe/Madrid"];
+    NSInteger seconds = [tz secondsFromGMTForDate: date];
+    date = [NSDate dateWithTimeInterval:seconds sinceDate: date];
+    return date;
 }
 
 @end

@@ -91,7 +91,6 @@
 
 - (void)switchChanged:(SevenSwitch *)sender {
     BOOL dijkstra = sender.on;
-    dijkstra = !dijkstra;
     if(dijkstra) {
         [sender setThumbTintColor:[UIColor whiteColor]];
         [self saveAlgorithm:dijkstra];

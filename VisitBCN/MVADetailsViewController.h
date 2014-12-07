@@ -10,6 +10,7 @@
 #import "MVAPath.h"
 #import "MVAPunInt.h"
 #import <CoreLocation/CoreLocation.h>
+#import "MVAGraphs.h"
 
 @interface MVADetailsViewController : UIViewController
 
@@ -18,6 +19,7 @@
 
 @property MVAPath *subwayPath;
 @property MVAPath *busPath;
+@property MVAGraphs *graphs;
 
 @property double walkDist;
 @property double walkTime;

@@ -17,5 +17,8 @@
 -(BOOL)isEmpty;
 -(MVAPair *)firstObject;
 -(void)removeFirst;
+-(int)posOfElement:(int)identificador;
+-(MVAPair *)objectAtIndex:(int)index;
+-(void)setObject:(MVAPair *)p atIndex:(int)index;
 
 @end

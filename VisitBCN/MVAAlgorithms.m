@@ -79,6 +79,14 @@
                     destNode.open = YES;
                     [self.openNodes insertar:p];
                 }
+                else {
+                    int pos = [self.openNodes posOfElement:destNode.identificador];
+                    if (pos >= 0) {
+                        MVAPair *p = [self.openNodes objectAtIndex:pos];
+                        p.first = nextTrain;
+                        [self.openNodes setObject:p atIndex:pos];
+                    }
+                }
                 destNode.distance = [NSNumber numberWithDouble:nextTrain];
                 destNode.pathNodes = [node.pathNodes mutableCopy];
                 [destNode.pathNodes addObject:node];
@@ -110,6 +118,14 @@
                     destNode.open = YES;
                     [self.openNodes insertar:p];
                 }
+                else {
+                    int pos = [self.openNodes posOfElement:destNode.identificador];
+                    if (pos >= 0) {
+                        MVAPair *p = [self.openNodes objectAtIndex:pos];
+                        p.first = time;
+                        [self.openNodes setObject:p atIndex:pos];
+                    }
+                }
                 destNode.distance = [NSNumber numberWithDouble:time];
                 destNode.pathNodes = [node.pathNodes mutableCopy];
                 [destNode.pathNodes addObject:node];
@@ -122,6 +138,11 @@
 
 -(double)getNextTrainForNode:(MVANode *)node edge:(MVAEdge *)edge andTime:(double)actualTime
 {
+    BOOL nextDay = NO;
+    if (actualTime >= 86400) {
+        actualTime -= 86400;
+        nextDay = YES;
+    }
     MVAStop *stop = node.stop;
     if ([stop.stopID hasPrefix:@"001-"]) {
         NSString *tripID = edge.tripID;
@@ -179,6 +200,7 @@
             }
             ++trainCount;
         }
+        if (nextDay) return arrivalTime + 86400;
         return arrivalTime;
     }
     else {
@@ -208,6 +230,7 @@
                 }
             }
         }
+        if (nextDay) return arrivalTime + 86400;
         return arrivalTime;
     }
 }
@@ -216,6 +239,7 @@
 {
     NSArray *myArray = [time componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@":"]];
     NSString *horaStr = [myArray objectAtIndex:0];
+    if ([horaStr intValue] >= 24) horaStr = 0;
     NSString *minutStr = [myArray objectAtIndex:1];
     NSString *anoStr = [myArray objectAtIndex:2];
     int hora = (int)[horaStr intValue];
@@ -286,6 +310,14 @@
             p.second = dest.identificador;
             dest.open = YES;
             [self.openNodes insertar:p];
+        }
+        else {
+            int pos = [self.openNodes posOfElement:dest.identificador];
+            if (pos >= 0) {
+                MVAPair *p = [self.openNodes objectAtIndex:pos];
+                p.first = tentative;
+                [self.openNodes setObject:p atIndex:pos];
+            }
         }
     }
 }

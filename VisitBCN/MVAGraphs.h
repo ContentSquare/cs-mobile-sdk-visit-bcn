@@ -17,7 +17,9 @@
 @property MVABusGraph *busGraph;
 @property MVASubwayGraph *subwayGraph;
 @property MVAPath *subwayPath;
+@property NSString *subwayError;
 @property MVAPath *busPath;
+@property NSString *busError;
 @property MVAPunIntViewController *viewController;
 
 -(void)generateGraphsWithBUSDB:(MVADataBus *)dataBus andTMBDB:(MVADataTMB *)dataTMB andFGCDB:(MVADataFGC *)dataFGC;

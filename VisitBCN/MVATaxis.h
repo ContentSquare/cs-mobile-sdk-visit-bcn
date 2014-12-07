@@ -19,6 +19,8 @@
 -(void)loadUberProducts;
 -(void)loadUberPrice;
 
+-(double)taxiFareWithDistance:(double)dist andTime:(double)time;
+
 @property NSDictionary *hailoTimes;
 @property NSDictionary *uberTimes;
 @property NSDictionary *uberProducts;

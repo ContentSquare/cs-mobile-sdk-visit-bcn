@@ -251,7 +251,7 @@
     BOOL para = NO;
     for(int i = 0; i < [self.dates count] && !para; ++i) {
         MVADate *date = [self.dates objectAtIndex:i];
-        if (date.date == [anomesdia intValue]) {
+        if (date.date == [anomesdia intValue] && date.type == 1) {
             for (int j = 0; j < [self.calendars count]; ++j) {
                 MVACalendar *cal = [self.calendars objectAtIndex:j];
                 if ([cal.serviceID isEqualToString:date.serviceID]) {

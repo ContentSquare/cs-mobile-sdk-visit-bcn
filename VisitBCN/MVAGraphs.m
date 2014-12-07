@@ -50,7 +50,7 @@
     NSMutableDictionary *routeStopO = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *routesO = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *routesD = [[NSMutableDictionary alloc] init];
-    
+    self.busError = nil;
     for (int i = 0; i < [self.busGraph.nodes count]; ++i) {
         MVANode *node = [self.busGraph.nodes objectAtIndex:i];
         CLLocationCoordinate2D stopCords = CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude);
@@ -98,7 +98,10 @@
         
     }
     
-    if ([originA count] == 0 || [[destA allKeys] count] == 0) return nil;
+    if ([originA count] == 0 || [[destA allKeys] count] == 0) {
+        self.busError = @"DEMASIADO LEJOS";
+        return nil;
+    }
     
     return [self.busGraph computePathFromNodes:originA
                                           toNode:destA
@@ -114,7 +117,7 @@
     NSMutableDictionary *routeStopO = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *routesO = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *routesD = [[NSMutableDictionary alloc] init];
-    
+    self.subwayError = nil;
     for (int i = 0; i < [self.subwayGraph.nodes count]; ++i) {
         MVANode *node = [self.subwayGraph.nodes objectAtIndex:i];
         CLLocationCoordinate2D stopCords = CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude);
@@ -145,7 +148,6 @@
                     [destA setObject:[node.stop.routes firstObject] forKeyedSubscript:[NSNumber numberWithInt:node.identificador]];
                     [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
                 }
-                
             }
             else {
                 NSNumber *dist = [routesD objectForKey:[node.stop.routes firstObject]];
@@ -163,7 +165,10 @@
         
     }
     
-    if ([originA count] == 0 || [[destA allKeys] count] == 0) return nil;
+    if ([originA count] == 0 || [[destA allKeys] count] == 0) {
+        self.subwayError = @"DEMASIADO LEJOS";
+        return nil;
+    }
     
     return [self.subwayGraph computePathFromNodes:originA
                                            toNode:destA

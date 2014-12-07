@@ -15,6 +15,7 @@
 
 @property MVAPath *subwayPath;
 @property MVAPath *busPath;
+@property MVAGraphs *graphs;
 
 @property UIView *pathsView;
 @property UIActivityIndicatorView *activityIndicator;
@@ -278,13 +279,13 @@
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     dispatch_async(queue, ^{
         MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
-        MVAGraphs *graphs = [[MVAGraphs alloc] init];
-        [graphs generateGraphsWithBUSDB:delegate.dataBus andTMBDB:delegate.dataTMB andFGCDB:delegate.dataFGC];
-        graphs.viewController = self;
+        self.graphs = [[MVAGraphs alloc] init];
+        [self.graphs generateGraphsWithBUSDB:delegate.dataBus andTMBDB:delegate.dataTMB andFGCDB:delegate.dataFGC];
+        self.graphs.viewController = self;
         
         if (self.punto != nil) {
             if ([self distanceForCoordinates:[self getCoordinates] andCoordinates:self.punto.coordinates] > [self loadWalkingDist]) {
-                [graphs computePathsWithOrigin:[self getCoordinates] andDestination:self.punto];
+                [self.graphs computePathsWithOrigin:[self getCoordinates] andDestination:self.punto];
             }
         }
         else {
@@ -292,15 +293,15 @@
                 MVAPunInt *punto = [[MVAPunInt alloc] init];
                 punto.nombre = self.customlocation.name;
                 punto.coordinates = self.customlocation.coordinates;
-                [graphs computePathsWithOrigin:[self getCoordinates] andDestination:punto];
+                [self.graphs computePathsWithOrigin:[self getCoordinates] andDestination:punto];
             }
         }
         
         [self calculateWalkAndCar];
         
         dispatch_sync(dispatch_get_main_queue(), ^{
-            self.subwayPath = graphs.subwayPath;
-            self.busPath = graphs.busPath;
+            self.subwayPath = self.graphs.subwayPath;
+            self.busPath = self.graphs.busPath;
             [self.activityIndicator stopAnimating];
             UIImageView *logo = [[UIImageView alloc] initWithFrame:CGRectMake(30, 20, 40, 40)];
             if ((self.subwayPath == nil) && (self.busPath == nil)) {
@@ -310,6 +311,7 @@
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                     int hora   = floor(ref / 3600);
+                    if (hora >= 24) hora -= 24;
                     self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                     logo.image = [UIImage imageNamed:@"walking-white"];
                 }
@@ -320,6 +322,7 @@
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                     int hora   = floor(ref / 3600);
+                    if (hora >= 24) hora -= 24;
                     self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                 }
             }
@@ -330,6 +333,7 @@
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                     int hora   = floor(ref / 3600);
+                    if (hora >= 24) hora -= 24;
                     self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                     logo.image = [UIImage imageNamed:@"walking-white"];
                 }
@@ -339,6 +343,7 @@
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                     int hora   = floor(ref / 3600);
+                    if (hora >= 24) hora -= 24;
                     self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                     logo.image = [UIImage imageNamed:@"bus-white"];
                 }
@@ -350,6 +355,7 @@
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                     int hora   = floor(ref / 3600);
+                    if (hora >= 24) hora -= 24;
                     self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                     logo.image = [UIImage imageNamed:@"walking-white"];
                 }
@@ -359,6 +365,7 @@
                     double ref2 = (ref / 60.0);
                     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                     int hora   = floor(ref / 3600);
+                    if (hora >= 24) hora -= 24;
                     self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                     logo.image = [UIImage imageNamed:@"train-white"];
                 }
@@ -371,6 +378,7 @@
                         double ref2 = (ref / 60.0);
                         int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                         int hora   = floor(ref / 3600);
+                        if (hora >= 24) hora -= 24;
                         self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                         logo.image = [UIImage imageNamed:@"walking-white"];
                     }
@@ -380,6 +388,7 @@
                         double ref2 = (ref / 60.0);
                         int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                         int hora   = floor(ref / 3600);
+                        if (hora >= 24) hora -= 24;
                         self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                         logo.image = [UIImage imageNamed:@"train-white"];
                     }
@@ -392,6 +401,7 @@
                         double ref2 = (ref / 60.0);
                         int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                         int hora   = floor(ref / 3600);
+                        if (hora >= 24) hora -= 24;
                         self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                         logo.image = [UIImage imageNamed:@"walking-white"];
                     }
@@ -401,6 +411,7 @@
                         double ref2 = (ref / 60.0);
                         int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                         int hora   = floor(ref / 3600);
+                        if (hora >= 24) hora -= 24;
                         self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
                         logo.image = [UIImage imageNamed:@"bus-white"];
                     }
@@ -602,6 +613,7 @@
         vc.punto = self.punto;
         vc.orig = [self getCoordinates];
         vc.initTime = self.initTime;
+        vc.graphs = self.graphs;
     }
 }
 
