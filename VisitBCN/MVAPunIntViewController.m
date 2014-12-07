@@ -7,7 +7,6 @@
 //
 
 #import "MVAPunIntViewController.h"
-#import "Reachability.h"
 #import "MVAGraphs.h"
 #import "MVADetailsViewController.h"
 
@@ -459,17 +458,6 @@
 -(void)handleSingleTap:(UITapGestureRecognizer *)gr
 {
     [self performSegueWithIdentifier:@"detailSegue" sender:self];
-}
-
-- (BOOL)connectedToInternet
-{
-    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
-    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
-    if (networkStatus == NotReachable) {
-        return NO;
-    } else {
-        return YES;
-    }
 }
 
 -(double)loadWalkingSpeed

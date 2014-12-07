@@ -276,7 +276,7 @@
             newDist = [currentNode.distance doubleValue] + expecTime;
         }
         else newDist = [self getNextTrainForNode:dest edge:edge andTime:[currentNode.distance doubleValue]];
-        tentative = (newDist + ([self distanceForCoordinates:cord andCoordinates:self.piCoord]));
+        tentative = (newDist + [self heuristicForCoords:cord]);
     }
     else {
         double time = [currentNode.distance doubleValue];

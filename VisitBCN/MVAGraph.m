@@ -137,16 +137,17 @@
                 if (self.type == 1) {
                     double next = sec_rep;
                     node.distance = [NSNumber numberWithDouble:(next)];
-                    node.score = [NSNumber numberWithDouble:(next + [self distanceForCoordinates:cordA andCoordinates:punInt.coordinates])];
+                    double dist = [self distanceForCoordinates:cordA andCoordinates:punInt.coordinates];
+                    double walkingSpeed = [self loadWalkingSpeed];
+                    node.score = [NSNumber numberWithDouble:(next + (dist/walkingSpeed))];
                 }
                 else {
                     MVACalendar *cal = [self.dataTMB getCurrentCalendarforSubway:NO];
                     double freq = [self.dataBus frequencieForStop:node.stop andTime:sec_rep andCalendar:cal.serviceID];
                     node.distance = [NSNumber numberWithDouble:(sec_rep + freq)];
                     double dist = [self distanceForCoordinates:cordA andCoordinates:punInt.coordinates];
-                    double busSpeed = (176.0 / 36.0);
-                    if ([self loadRain]) busSpeed /= 1.2;
-                    node.score = [NSNumber numberWithDouble:((sec_rep + freq) + (dist / busSpeed))];
+                    double walkingSpeed = [self loadWalkingSpeed];
+                    node.score = [NSNumber numberWithDouble:((sec_rep + freq) + (dist / walkingSpeed))];
                 }
                 MVAPair *p = [[MVAPair alloc] init];
                 p.first = [node.score doubleValue];

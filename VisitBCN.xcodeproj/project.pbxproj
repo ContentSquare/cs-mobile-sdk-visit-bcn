@@ -190,6 +190,7 @@
 		34831F711A339588005F1787 /* bus-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34831F6E1A339588005F1787 /* bus-red@2x.png */; };
 		34831F721A339588005F1787 /* bus-red@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34831F6F1A339588005F1787 /* bus-red@3x.png */; };
 		34874C221A2A300D00E99794 /* campNouBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34874C211A2A300C00E99794 /* campNouBig.jpg */; };
+		348CC7721A33E3D100A394E6 /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348CC7711A33E3D100A394E6 /* fondo.jpg */; };
 		348E9EBD1A159FE5007E960C /* MVADataFGC.m in Sources */ = {isa = PBXBuildFile; fileRef = 348E9EBC1A159FE5007E960C /* MVADataFGC.m */; };
 		348FC16F19F337DF007FD4D6 /* MVANode.m in Sources */ = {isa = PBXBuildFile; fileRef = 348FC16E19F337DF007FD4D6 /* MVANode.m */; };
 		348FC17219F337F2007FD4D6 /* MVAEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 348FC17119F337F2007FD4D6 /* MVAEdge.m */; };
@@ -224,6 +225,11 @@
 		34A08B711A27AB86009DBACC /* MVATaxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A08B701A27AB86009DBACC /* MVATaxis.m */; };
 		34A08B741A27AD10009DBACC /* MVAPunIntViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A08B731A27AD10009DBACC /* MVAPunIntViewController.m */; };
 		34A08B771A27B0F4009DBACC /* MVAPunIntTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A08B761A27B0F4009DBACC /* MVAPunIntTableViewCell.m */; };
+		34A21A1E1A33D844002F3AEB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A21A1C1A33D844002F3AEB /* Bolts.framework */; };
+		34A21A1F1A33D844002F3AEB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A21A1D1A33D844002F3AEB /* Parse.framework */; };
+		34A21A211A33DB42002F3AEB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A21A201A33DB42002F3AEB /* MobileCoreServices.framework */; };
+		34A21A231A33DB7A002F3AEB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A21A221A33DB7A002F3AEB /* Social.framework */; };
+		34A21A251A33DB81002F3AEB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A21A241A33DB81002F3AEB /* Accounts.framework */; };
 		34AB7A651A12273900D74CBE /* MVACustomModifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AB7A641A12273900D74CBE /* MVACustomModifications.m */; };
 		34AB7A681A1227CE00D74CBE /* MVATriple.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AB7A671A1227CE00D74CBE /* MVATriple.m */; };
 		34AE67671A2B3BEA0076E5D5 /* rain-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34AE67641A2B3BEA0076E5D5 /* rain-blue@2x.png */; };
@@ -564,6 +570,7 @@
 		34831F6E1A339588005F1787 /* bus-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-red@2x.png"; sourceTree = "<group>"; };
 		34831F6F1A339588005F1787 /* bus-red@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-red@3x.png"; sourceTree = "<group>"; };
 		34874C211A2A300C00E99794 /* campNouBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = campNouBig.jpg; sourceTree = "<group>"; };
+		348CC7711A33E3D100A394E6 /* fondo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo.jpg; sourceTree = "<group>"; };
 		348E9EBB1A159FE5007E960C /* MVADataFGC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVADataFGC.h; sourceTree = "<group>"; };
 		348E9EBC1A159FE5007E960C /* MVADataFGC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVADataFGC.m; sourceTree = "<group>"; };
 		348FC16D19F337DF007FD4D6 /* MVANode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVANode.h; sourceTree = "<group>"; };
@@ -621,6 +628,11 @@
 		34A08B731A27AD10009DBACC /* MVAPunIntViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPunIntViewController.m; sourceTree = "<group>"; };
 		34A08B751A27B0F4009DBACC /* MVAPunIntTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAPunIntTableViewCell.h; sourceTree = "<group>"; };
 		34A08B761A27B0F4009DBACC /* MVAPunIntTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPunIntTableViewCell.m; sourceTree = "<group>"; };
+		34A21A1C1A33D844002F3AEB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		34A21A1D1A33D844002F3AEB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		34A21A201A33DB42002F3AEB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		34A21A221A33DB7A002F3AEB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		34A21A241A33DB81002F3AEB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		34AB7A631A12273900D74CBE /* MVACustomModifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVACustomModifications.h; sourceTree = "<group>"; };
 		34AB7A641A12273900D74CBE /* MVACustomModifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVACustomModifications.m; sourceTree = "<group>"; };
 		34AB7A661A1227CE00D74CBE /* MVATriple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVATriple.h; sourceTree = "<group>"; };
@@ -711,12 +723,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A21A251A33DB81002F3AEB /* Accounts.framework in Frameworks */,
+				34A21A231A33DB7A002F3AEB /* Social.framework in Frameworks */,
+				34A21A211A33DB42002F3AEB /* MobileCoreServices.framework in Frameworks */,
 				344ACD981A2558CE0065E4E8 /* QuartzCore.framework in Frameworks */,
 				344ACDD61A2559040065E4E8 /* libMapbox.a in Frameworks */,
 				344ACD9A1A2558E60065E4E8 /* libsqlite3.dylib in Frameworks */,
 				349000B919B6431000BA3DCE /* UIKit.framework in Frameworks */,
+				34A21A1F1A33D844002F3AEB /* Parse.framework in Frameworks */,
 				344ACD961A2558A50065E4E8 /* CoreLocation.framework in Frameworks */,
 				344ACD941A2557E00065E4E8 /* CoreGraphics.framework in Frameworks */,
+				34A21A1E1A33D844002F3AEB /* Bolts.framework in Frameworks */,
 				349000EE19B644A800BA3DCE /* libz.dylib in Frameworks */,
 				349000B519B6431000BA3DCE /* Foundation.framework in Frameworks */,
 			);
@@ -1285,6 +1302,11 @@
 		349000B319B6431000BA3DCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34A21A241A33DB81002F3AEB /* Accounts.framework */,
+				34A21A221A33DB7A002F3AEB /* Social.framework */,
+				34A21A201A33DB42002F3AEB /* MobileCoreServices.framework */,
+				34A21A1C1A33D844002F3AEB /* Bolts.framework */,
+				34A21A1D1A33D844002F3AEB /* Parse.framework */,
 				344ACD9B1A2559040065E4E8 /* Headers */,
 				344ACDD41A2559040065E4E8 /* libMapbox.a */,
 				344ACDD51A2559040065E4E8 /* Mapbox.bundle */,
@@ -1329,6 +1351,7 @@
 				3490010919B66C4600BA3DCE /* Icon-Small@2x.png */,
 				3490010A19B66C4600BA3DCE /* Icon-iOS7@2x.png */,
 				342B615D1A2E916D00558760 /* round_test.png */,
+				348CC7711A33E3D100A394E6 /* fondo.jpg */,
 				349000BC19B6431000BA3DCE /* VisitBCN-Info.plist */,
 				349000BD19B6431000BA3DCE /* InfoPlist.strings */,
 				349000C019B6431000BA3DCE /* main.m */,
@@ -1745,6 +1768,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348CC7721A33E3D100A394E6 /* fondo.jpg in Resources */,
 				34411B761A2CFD0F0003D383 /* taxi-color@2x.png in Resources */,
 				344EE6E91A2B303B00CB1B96 /* fincaGuellSmall.jpeg in Resources */,
 				344EE7071A2B30BA00CB1B96 /* monuColonSmall.jpeg in Resources */,
@@ -2168,6 +2192,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisitBCN/VisitBCN-Prefix.pch";
 				INFOPLIST_FILE = "VisitBCN/VisitBCN-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2193,6 +2218,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VisitBCN/VisitBCN-Prefix.pch";
 				INFOPLIST_FILE = "VisitBCN/VisitBCN-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
