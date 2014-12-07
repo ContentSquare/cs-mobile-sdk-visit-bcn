@@ -24,8 +24,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [Parse setApplicationId:@"NzwtEWhQpaIT9ocg0hZwxNt1d4qz871nAYX2AZQY"
-                  clientKey:@"QlTkAr6JAbSQCWcJlvuvcLSzIiq8TpezhCiHKAWP"];
+    [Parse setApplicationId:@""
+                  clientKey:@""];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
