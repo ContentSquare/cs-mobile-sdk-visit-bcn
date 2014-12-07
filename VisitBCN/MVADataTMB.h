@@ -29,6 +29,7 @@
 @property NSMutableArray *freqs;
 @property NSMutableArray *dates;
 
+-(NSString *)getNextCalendarforSubway:(BOOL)subway;
 -(MVACalendar *)getCurrentCalendarforSubway:(BOOL)subway;
 -(void)parseDataBase;
 

@@ -242,6 +242,44 @@
 	NSLog(@"ERROR: %@", [error localizedDescription]);
 }
 
+-(NSString *)getNextCalendarforSubway:(BOOL)subway
+{
+    
+    int daysToAdd = 1;
+    NSDate *newDate1 = [[self loadCustomDate] dateByAddingTimeInterval:60*60*24*daysToAdd];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"yyyyMMdd"];
+    NSString *anomesdia = [dateFormatter stringFromDate:newDate1];
+    BOOL para = NO;
+    for(int i = 0; i < [self.dates count] && !para; ++i) {
+        MVADate *date = [self.dates objectAtIndex:i];
+        if (date.date == [anomesdia intValue] && date.type == 1) {
+            for (int j = 0; j < [self.calendars count]; ++j) {
+                MVACalendar *cal = [self.calendars objectAtIndex:j];
+                if ([cal.serviceID isEqualToString:date.serviceID]) {
+                    if (subway && [cal.serviceID hasPrefix:@"001"]) return cal;
+                    else if (!subway && [cal.serviceID hasPrefix:@"002"]) return cal;
+                }
+            }
+        }
+    }
+    
+    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
+    long day = [self dayOfWeek:[self loadCustomDate]];
+    day += 1;
+    if(day == 7) day = 0;
+    for (int i = 0; i < [self.calendars count]; ++i) {
+        MVACalendar *cal = [self.calendars objectAtIndex:i];
+        NSString *is = [cal.days objectAtIndex:day];
+        if ([is isEqualToString:@"1"]){
+            if (subway && [cal.serviceID hasPrefix:@"001"]) return cal;
+            else if (!subway && [cal.serviceID hasPrefix:@"002"]) return cal;
+        }
+    }
+    return nil;
+}
+
 #pragma mark - Consulting functions
 -(MVACalendar *)getCurrentCalendarforSubway:(BOOL)subway
 {

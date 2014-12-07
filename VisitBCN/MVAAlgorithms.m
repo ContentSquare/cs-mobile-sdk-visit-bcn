@@ -11,6 +11,8 @@
 @interface MVAAlgorithms ()
 
 @property CLLocationCoordinate2D piCoord;
+@property NSString *nextTMBCalendar;
+@property MVACalendar *currentCal;
 
 @end
 
@@ -20,6 +22,9 @@
 {
     NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
     self.piCoord = crds;
+    
+    if (self.type == 1) self.nextTMBCalendar = [self.dataTMB getNextCalendarforSubway:YES];
+    else  self.currentCal = [self.dataTMB getCurrentCalendarforSubway:NO];
     
     MVAPair *p = [self.openNodes firstObject];
     [self.openNodes removeFirst];
@@ -146,6 +151,13 @@
     MVAStop *stop = node.stop;
     if ([stop.stopID hasPrefix:@"001-"]) {
         NSString *tripID = edge.tripID;
+        if (nextDay && ![tripID hasSuffix:self.nextTMBCalendar]) {
+            NSArray *array = [tripID componentsSeparatedByString:@"-"];
+            NSString *route = [array firstObject];
+            NSString *way = [array objectAtIndex:1];
+            tripID = [route stringByAppendingString:[@"-" stringByAppendingString:[way stringByAppendingString:[@"-" stringByAppendingString:self.nextTMBCalendar]]]];
+        }
+        
         NSNumber *tripPos = [self.dataTMB.tripsHash objectForKey:tripID];
         MVATrip *trip = [self.dataTMB.trips objectAtIndex:[tripPos intValue]];
         NSString *firstID = [trip.sequence firstObject];
@@ -285,8 +297,7 @@
             double walkingSpeed = [self loadWalkingSpeed];
             double expecTime = (dist / walkingSpeed);
             time += expecTime;
-            MVACalendar *cal = [self.dataTMB getCurrentCalendarforSubway:NO];
-            time += [self.dataBus frequencieForStop:edge.destini.stop andTime:time andCalendar:cal.serviceID];
+            time += [self.dataBus frequencieForStop:edge.destini.stop andTime:time andCalendar:self.currentCal.serviceID];
         }
         else if ([edge.tripID isEqualToString:@"landmark"]) {
             double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(currentNode.stop.latitude, currentNode.stop.longitude) andCoordinates:cord];
@@ -331,6 +342,9 @@
 
 -(MVAPath *)astarPathFrom:(MVANode *)nodeA toNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds
 {
+    if (self.type == 1) self.nextTMBCalendar = [self.dataTMB getNextCalendarforSubway:YES];
+    else  self.currentCal = [self.dataTMB getCurrentCalendarforSubway:NO];
+    
     self.piCoord = crds;
     MVANode *currentNode = nil;
     BOOL para = NO;
