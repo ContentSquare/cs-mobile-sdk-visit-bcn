@@ -511,8 +511,8 @@
     NSString *nom = @"VisitBCNWalkingDist";
     NSData *data = [defaults objectForKey:nom];
     if(data == nil){
-        [defaults setDouble:1000.0 forKey:nom];
-        return 1000.0;
+        [defaults setDouble:2000.0 forKey:nom];
+        return 2000.0;
     }
     else {
         return [defaults doubleForKey:nom];
@@ -549,10 +549,7 @@
     if (![self customDate]) return [NSDate date];
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSDate *date = [defaults objectForKey:@"VisitBCNCustomDate"];
-    if (!date) return [NSDate date];
-    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"Europe/Madrid"];
-    NSInteger seconds = [tz secondsFromGMTForDate: date];
-    date = [NSDate dateWithTimeInterval:seconds sinceDate: date];
+    if (!date) return [NSDate date];;
     return date;
 }
 

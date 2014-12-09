@@ -11,7 +11,7 @@
 @interface MVAAlgorithms ()
 
 @property CLLocationCoordinate2D piCoord;
-@property NSString *nextTMBCalendar;
+@property MVACalendar *nextTMBCalendar;
 @property MVACalendar *currentCal;
 
 @end
@@ -151,11 +151,11 @@
     MVAStop *stop = node.stop;
     if ([stop.stopID hasPrefix:@"001-"]) {
         NSString *tripID = edge.tripID;
-        if (nextDay && ![tripID hasSuffix:self.nextTMBCalendar]) {
+        if (nextDay && ![tripID hasSuffix:self.nextTMBCalendar.serviceID]) {
             NSArray *array = [tripID componentsSeparatedByString:@"-"];
             NSString *route = [array firstObject];
             NSString *way = [array objectAtIndex:1];
-            tripID = [route stringByAppendingString:[@"-" stringByAppendingString:[way stringByAppendingString:[@"-" stringByAppendingString:self.nextTMBCalendar]]]];
+            tripID = [route stringByAppendingString:[@"-" stringByAppendingString:[way stringByAppendingString:[@"-" stringByAppendingString:self.nextTMBCalendar.serviceID]]]];
         }
         
         NSNumber *tripPos = [self.dataTMB.tripsHash objectForKey:tripID];
@@ -191,6 +191,7 @@
             NSNumber *freqPos = [trip.freqs objectAtIndex:i];
             MVAFrequencies *freq = [self.dataTMB.freqs objectAtIndex:[freqPos intValue]];
             int initTime = [self timeToInt:freq.startTime];
+            if (initTime <= 60) initTime = 0;
             int endTime = [self timeToInt:freq.endTime];
             if ((initTime <= actualTime) && (endTime >= actualTime)) {
                 para = YES;
@@ -203,8 +204,13 @@
         para = NO;
         int trainCount = 0;
         double arrivalTime = 0;
+        int initTime = [self timeToInt:actualFreq.startTime];
+        if (initTime <= 60) initTime = 0;
+        if (nextDay) {
+            return (actualTime + ([actualFreq.headway doubleValue]/2.0) + 86460);
+        }
         while (!para) {
-            double newTime = ([self timeToInt:actualFreq.startTime]) + (trainCount * [actualFreq.headway intValue]) + dif;
+            double newTime = initTime + (trainCount * [actualFreq.headway intValue]) + dif;
             
             if (newTime > actualTime) {
                 arrivalTime = newTime;
@@ -212,7 +218,6 @@
             }
             ++trainCount;
         }
-        if (nextDay) return arrivalTime + 86400;
         return arrivalTime;
     }
     else {
@@ -224,7 +229,6 @@
             NSNumber *tripPos = [self.dataFGC.tripsHash objectForKey:tripID];
             MVATrip *trip = [self.dataFGC.trips objectAtIndex:[tripPos intValue]];
             if ([edge.tripID hasSuffix:@"UP"] && trip.direcUP) {
-               // NSLog(@"ARRIBA");
                 double arrive = [self timeToInt:time.arrivalTime];
                 double espera = arrive - actualTime;
                 if (arrive > actualTime && espera < dif && espera < 3600) {
@@ -233,7 +237,6 @@
                 }
             }
             else if ([edge.tripID hasSuffix:@"DOWN"] && !trip.direcUP) {
-                //NSLog(@"ABAJO");
                 double arrive = [self timeToInt:time.arrivalTime];
                 double espera = arrive - actualTime;
                 if (arrive > actualTime && espera < dif && espera < 3600) {
@@ -251,7 +254,7 @@
 {
     NSArray *myArray = [time componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@":"]];
     NSString *horaStr = [myArray objectAtIndex:0];
-    if ([horaStr intValue] >= 24) horaStr = 0;
+    //if ([horaStr intValue] >= 24) horaStr = 0;
     NSString *minutStr = [myArray objectAtIndex:1];
     NSString *anoStr = [myArray objectAtIndex:2];
     int hora = (int)[horaStr intValue];

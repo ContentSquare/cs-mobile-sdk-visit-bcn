@@ -260,10 +260,7 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
     if (![self customDate]) return [NSDate date];
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSDate *date = [defaults objectForKey:@"VisitBCNCustomDate"];
-    if (!date) return [NSDate date];
-    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"Europe/Madrid"];
-    NSInteger seconds = [tz secondsFromGMTForDate: date];
-    date = [NSDate dateWithTimeInterval:seconds sinceDate: date];
+    if (!date) return [NSDate date];;
     return date;
 }
 

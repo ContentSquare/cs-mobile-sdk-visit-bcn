@@ -127,7 +127,6 @@
         dispatch_apply([stop.times count], dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(size_t size) {
             MVATime *time = [stop.times objectAtIndex:size];
             if ([trips objectForKey:time.tripID] == nil) {
-                //NSLog(@"Borra");
                 @synchronized (set) {
                     [set addIndex:(int)size];
                 }
@@ -200,29 +199,41 @@
     //CREACIÓ DE CONEXIONS TMB <-> FGC
     for (int i = 0; i < [modi.fgcEdgeConections count]; ++i) {
         MVATriple *tri = [modi.fgcEdgeConections objectAtIndex:i];
-        
-        NSString *idA = (NSString *)tri.elem1;
-        NSNumber *numA = [dataTMB.stopsHash objectForKey:idA];
-        NSString *idB = (NSString *)tri.elem2;
-        NSNumber *numB = [dataFGC.stopsHash objectForKey:idB];
-        
-        if (numA != nil && numB != nil) {
-            MVAEdge *e = [[MVAEdge alloc] init];
-            e.destini = [self.nodes objectAtIndex:([numB intValue] + tmbstops)];
-            e.weight = [NSNumber numberWithInt:120];//(NSNumber *)tri.elem3;
-            e.change = YES;
-            NSMutableArray *array = [self.edgeList objectAtIndex:[numA intValue]];
-            [array addObject:e];
-            [self.edgeList setObject:array atIndexedSubscript:[numA intValue]];
+        for(int j = 0; j < [dataFGC.stops count]; ++j) {
+            NSString *idA = (NSString *)tri.elem1;
+            NSNumber *numA = [dataTMB.stopsHash objectForKey:idA];
             
-            MVAEdge *e2 = [[MVAEdge alloc] init];
-            e2.destini = [self.nodes objectAtIndex:[numA intValue]];
-            e2.weight = [NSNumber numberWithInt:120];//(NSNumber *)tri.elem3;
-            e2.change = YES;
-            NSMutableArray *array2 = [self.edgeList objectAtIndex:([numB intValue] + tmbstops)];
-            [array2 addObject:e2];
-            [self.edgeList setObject:array2 atIndexedSubscript:([numB intValue] + tmbstops)];
+            MVAStop *stop = [self.dataFGC.stops objectAtIndex:j];
+            NSString *idB = (NSString *)tri.elem2;
+            
+            NSScanner *scanner = [NSScanner scannerWithString:idB];
+            NSString *prefix;
+            [scanner scanUpToString:@"-" intoString:&prefix];
+            
+            NSScanner *scanner2 = [NSScanner scannerWithString:stop.stopID];
+            NSString *prefix2;
+            [scanner2 scanUpToString:@"-" intoString:&prefix2];
+            
+            if (numA != nil && [prefix isEqualToString:prefix2]) {
+                MVAEdge *e = [[MVAEdge alloc] init];
+                e.destini = [self.nodes objectAtIndex:(j + tmbstops)];
+                e.weight = [NSNumber numberWithInt:120];//(NSNumber *)tri.elem3;
+                e.change = YES;
+                NSMutableArray *array = [self.edgeList objectAtIndex:[numA intValue]];
+                [array addObject:e];
+                [self.edgeList setObject:array atIndexedSubscript:[numA intValue]];
+                
+                MVAEdge *e2 = [[MVAEdge alloc] init];
+                e2.destini = [self.nodes objectAtIndex:[numA intValue]];
+                e2.weight = [NSNumber numberWithInt:120];//(NSNumber *)tri.elem3;
+                e2.change = YES;
+                NSMutableArray *array2 = [self.edgeList objectAtIndex:(j + tmbstops)];
+                [array2 addObject:e2];
+                [self.edgeList setObject:array2 atIndexedSubscript:(j + tmbstops)];
+            }
+            
         }
+        
     }
     
     //CREACIÓ DE CONEXIONS FGC <-> FGC
@@ -274,10 +285,7 @@
     if (![self customDate]) return [NSDate date];
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSDate *date = [defaults objectForKey:@"VisitBCNCustomDate"];
-    if (!date) return [NSDate date];
-    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"Europe/Madrid"];
-    NSInteger seconds = [tz secondsFromGMTForDate: date];
-    date = [NSDate dateWithTimeInterval:seconds sinceDate: date];
+    if (!date) return [NSDate date];;
     return date;
 }
 

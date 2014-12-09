@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="egA-T2-Kbw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="egA-T2-Kbw">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -252,10 +252,10 @@
                                                 <constraint firstAttribute="width" constant="60" id="bUh-rE-Qct"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-iu-X71">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-iu-X71">
                                             <rect key="frame" x="8" y="8" width="225" height="25"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="25" id="uBu-4Y-xz7"/>
+                                                <constraint firstAttribute="height" constant="25" id="etp-Qr-bfe"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -280,12 +280,13 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="Wjn-tE-GAE" secondAttribute="bottom" constant="8.5" id="8ei-xS-ZqH"/>
+                                        <constraint firstItem="yJC-iu-X71" firstAttribute="leading" secondItem="PRY-aV-9DE" secondAttribute="leading" constant="8" id="9IC-MA-VXP"/>
                                         <constraint firstItem="Frg-ce-Uvw" firstAttribute="top" secondItem="PRY-aV-9DE" secondAttribute="topMargin" id="9Kr-LE-dd7"/>
                                         <constraint firstItem="Frg-ce-Uvw" firstAttribute="trailing" secondItem="PRY-aV-9DE" secondAttribute="trailingMargin" id="CSb-be-A0K"/>
+                                        <constraint firstItem="Frg-ce-Uvw" firstAttribute="leading" secondItem="yJC-iu-X71" secondAttribute="trailing" constant="19" id="D75-4D-Pug"/>
                                         <constraint firstItem="Wjn-tE-GAE" firstAttribute="leading" secondItem="PRY-aV-9DE" secondAttribute="leading" id="ECs-qe-jfT"/>
-                                        <constraint firstItem="yJC-iu-X71" firstAttribute="top" secondItem="PRY-aV-9DE" secondAttribute="topMargin" id="UYv-It-Mn3"/>
+                                        <constraint firstItem="yJC-iu-X71" firstAttribute="top" secondItem="PRY-aV-9DE" secondAttribute="top" constant="8" id="PL2-Ue-gpb"/>
                                         <constraint firstAttribute="trailing" secondItem="Wjn-tE-GAE" secondAttribute="trailing" id="dEx-64-jZB"/>
-                                        <constraint firstItem="yJC-iu-X71" firstAttribute="leading" secondItem="PRY-aV-9DE" secondAttribute="leadingMargin" id="vtR-Ne-WXD"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -617,7 +618,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="psl-y8-6LP"/>
+        <segue reference="Tzg-x6-sEG"/>
         <segue reference="sib-Jy-cIv"/>
     </inferredMetricsTieBreakers>
 </document>

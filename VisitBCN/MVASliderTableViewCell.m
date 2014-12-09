@@ -65,8 +65,8 @@
             return 5000.0;
         }
         else {
-            [defaults setDouble:1000.0 forKey:self.objectName];
-            return 1000.0;
+            [defaults setDouble:2000.0 forKey:self.objectName];
+            return 2000.0;
         }
     }
     else {

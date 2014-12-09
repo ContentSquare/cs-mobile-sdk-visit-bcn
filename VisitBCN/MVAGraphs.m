@@ -227,8 +227,8 @@
     NSString *nom = @"VisitBCNWalkingDist";
     NSData *data = [defaults objectForKey:nom];
     if(data == nil){
-        [defaults setDouble:1000.0 forKey:nom];
-        return 1000.0;
+        [defaults setDouble:2000.0 forKey:nom];
+        return 2000.0;
     }
     else {
         return [defaults doubleForKey:nom];

@@ -242,7 +242,7 @@
 	NSLog(@"ERROR: %@", [error localizedDescription]);
 }
 
--(NSString *)getNextCalendarforSubway:(BOOL)subway
+-(MVACalendar *)getNextCalendarforSubway:(BOOL)subway
 {
     
     int daysToAdd = 1;
@@ -266,9 +266,7 @@
     }
     
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
-    long day = [self dayOfWeek:[self loadCustomDate]];
-    day += 1;
-    if(day == 7) day = 0;
+    long day = [self dayOfWeek:newDate1];
     for (int i = 0; i < [self.calendars count]; ++i) {
         MVACalendar *cal = [self.calendars objectAtIndex:i];
         NSString *is = [cal.days objectAtIndex:day];
@@ -345,9 +343,6 @@
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSDate *date = [defaults objectForKey:@"VisitBCNCustomDate"];
     if (!date) return [NSDate date];
-    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"Europe/Madrid"];
-    NSInteger seconds = [tz secondsFromGMTForDate: date];
-    date = [NSDate dateWithTimeInterval:seconds sinceDate: date];
     return date;
 }
 
