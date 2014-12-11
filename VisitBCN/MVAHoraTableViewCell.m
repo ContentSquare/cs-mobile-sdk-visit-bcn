@@ -70,7 +70,8 @@
     }
     [self.datePicker setUserInteractionEnabled:state];
     [self.datePicker setHidden:!state];
-    
+    [self.papi.tableView beginUpdates];
+    [self.papi.tableView endUpdates];
 }
 
 -(BOOL)customDate

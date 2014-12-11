@@ -10,7 +10,6 @@
 
 @implementation MVAFrequencies
 
-
 -(void)insertElement:(NSString *)elem atIndex:(NSInteger)index
 {
     if (index == 0) self.tripID = elem;

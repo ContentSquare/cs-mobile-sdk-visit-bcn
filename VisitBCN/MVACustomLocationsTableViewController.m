@@ -179,6 +179,9 @@
     if (indexPath.row > 0) {
         if (editingStyle == UITableViewCellEditingStyleDelete)
         {
+            if (indexPath.row == [self loadCustom]) {
+                [self saveCustom:0];
+            }
             [self.customLocations removeObjectAtIndex:(indexPath.row - 1)];
             [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
@@ -215,12 +218,23 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
+    MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
+    delegate.custom = self;
     return YES;
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [textField becomeFirstResponder];
+    MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
+    delegate.custom = nil;
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField
 {
     self.customName = textField.text;
+    MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
+    delegate.custom = self;
 }
 
 -(IBAction)addSel:(id)sender

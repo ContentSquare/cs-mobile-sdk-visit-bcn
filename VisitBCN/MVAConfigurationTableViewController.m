@@ -30,7 +30,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 7;
+    return 6;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -42,11 +42,11 @@
 {
     if (section == 0) return @"Changing the algorithm doesn't have any effect on the results and is used just as a case of study.";
     if (section == 1) return @"This will reduce the walking and driving speed.";
-    if (section == 2) return @"Choose between Uber or Hailo and get relevant information when asking for an itinerary with an internet connection.";
-    if (section == 3) return @"Changing this value, will influence in the travelling and arrival time.";
-    if (section == 4) return @"This will fix the maximum distance desired from the actual point to the nearest stops and from the arrival stops to the desired destination.";
-    if (section == 5) return @"Select if you want a custom origin location or to find the way back home.";
-    if (section == 6) return @"This option permits to select a future date for calculating the itineraries.";
+    //if (section == 2) return @"Choose between Uber or Hailo and get relevant information when asking for an itinerary with an internet connection.";
+    if (section == 2) return @"Changing this value, will influence in the travelling and arrival time.";
+    if (section == 3) return @"This will fix the maximum distance desired from the actual point to the nearest stops and from the arrival stops to the desired destination.";
+    if (section == 4) return @"Select if you want a custom origin location or to find the way back home.";
+    if (section == 5) return @"This option permits to select a future date for calculating the itineraries.";
     return @"";
 }
 
@@ -83,9 +83,10 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section <= 2 || indexPath.section == 5) return 55.0;
-    if (indexPath.section <= 4) return 95.0;
-    return 225.0;
+    if (indexPath.section <= 1 || indexPath.section == 4) return 55.0;
+    if (indexPath.section <= 3) return 95.0;
+    if ([self customDate]) return 255.0;
+    return 50.0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -108,7 +109,7 @@
         [switchCell configSwitch];
         return switchCell;
     }
-    else if (indexPath.section == 2) {
+    /*else if (indexPath.section == 2) {
         MVAConfigTableViewCell *switchCell = [tableView dequeueReusableCellWithIdentifier:@"switchCell" forIndexPath:indexPath];
         switchCell.papi = self;
         switchCell.objectName = @"VisitBCNTaxi";
@@ -116,8 +117,8 @@
         [switchCell.cellSwitch setBackgroundColor:[UIColor colorWithRed:(16.0f/255.0f) green:(17.0f/255.0f) blue:(36.0f/255.0f) alpha:1.0f]];
         [switchCell configSwitch];
         return switchCell;
-    }
-    else if (indexPath.section == 3) {
+    }*/
+    else if (indexPath.section == 2) {
         MVASliderTableViewCell *sliderCell = [tableView dequeueReusableCellWithIdentifier:@"sliderCell" forIndexPath:indexPath];
         [sliderCell.speedSlider setMaximumValue:9000];
         [sliderCell.speedSlider setMinimumValue:1000];
@@ -129,7 +130,7 @@
         [sliderCell initCell];
         return sliderCell;
     }
-    else if (indexPath.section == 4) {
+    else if (indexPath.section == 3) {
         MVASliderTableViewCell *sliderCell = [tableView dequeueReusableCellWithIdentifier:@"sliderCell" forIndexPath:indexPath];
         [sliderCell.speedSlider setMaximumValue:2500];
         [sliderCell.speedSlider setMinimumValue:500];
@@ -141,14 +142,28 @@
         [sliderCell initCell];
         return sliderCell;
     }
-    else if (indexPath.section == 5) {
+    else if (indexPath.section == 4) {
         MVACustomLocTableViewCell *customLocCell = [tableView dequeueReusableCellWithIdentifier:@"customCell" forIndexPath:indexPath];
         return customLocCell;
     }
     else {
         MVAHoraTableViewCell *horaCell = [tableView dequeueReusableCellWithIdentifier:@"horaCell" forIndexPath:indexPath];
+        horaCell.papi = self;
         return horaCell;
     }
+}
+        
+-(BOOL)customDate
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if (data == nil) {
+        [defaults setObject:@"NO" forKey:@"VisitBCNCustomDateEnabled"];
+        return NO;
+    }
+    NSString *string = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if ([string isEqualToString:@"NO"]) return NO;
+    return YES;
 }
 
 @end

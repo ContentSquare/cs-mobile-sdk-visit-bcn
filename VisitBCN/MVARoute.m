@@ -44,7 +44,6 @@
                             blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 
-
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
     [coder encodeObject:self.routeID forKey:@"routeID"];

@@ -697,22 +697,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVACustomModifications.m"
-            timestampString = "438102357.757347"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-init"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAGraphs.m"
             timestampString = "439604554.07814"
             startingColumnNumber = "9223372036854775807"
@@ -2314,11 +2298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "467"
-            endingLineNumber = "467"
+            startingLineNumber = "502"
+            endingLineNumber = "502"
             landmarkName = "@implementation MVAAlgorithms"
             landmarkType = "3">
          </BreakpointContent>
@@ -2362,11 +2346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "463"
-            endingLineNumber = "463"
+            startingLineNumber = "498"
+            endingLineNumber = "498"
             landmarkName = "@implementation MVAAlgorithms"
             landmarkType = "3">
          </BreakpointContent>
@@ -2410,11 +2394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "462"
-            endingLineNumber = "462"
+            startingLineNumber = "497"
+            endingLineNumber = "497"
             landmarkName = "@implementation MVAAlgorithms"
             landmarkType = "3">
          </BreakpointContent>
@@ -2426,11 +2410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2746,11 +2730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "464"
-            endingLineNumber = "464"
+            startingLineNumber = "499"
+            endingLineNumber = "499"
             landmarkName = "@implementation MVAAlgorithms"
             landmarkType = "3">
          </BreakpointContent>
@@ -2808,11 +2792,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "468"
-            endingLineNumber = "468"
+            startingLineNumber = "503"
+            endingLineNumber = "503"
             landmarkName = "@implementation MVAAlgorithms"
             landmarkType = "3">
          </BreakpointContent>
@@ -2824,11 +2808,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "497"
-            endingLineNumber = "497"
+            startingLineNumber = "532"
+            endingLineNumber = "532"
             landmarkName = "@implementation MVAAlgorithms"
             landmarkType = "3">
          </BreakpointContent>
@@ -2840,11 +2824,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "482"
-            endingLineNumber = "482"
+            startingLineNumber = "517"
+            endingLineNumber = "517"
             landmarkName = "@implementation MVAAlgorithms"
             landmarkType = "3">
          </BreakpointContent>
@@ -2856,11 +2840,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "488"
-            endingLineNumber = "488"
+            startingLineNumber = "523"
+            endingLineNumber = "523"
             landmarkName = "@implementation MVAAlgorithms"
             landmarkType = "3">
          </BreakpointContent>
@@ -2872,11 +2856,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "359"
-            endingLineNumber = "359"
+            startingLineNumber = "394"
+            endingLineNumber = "394"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3736,11 +3720,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "370"
-            endingLineNumber = "370"
+            startingLineNumber = "405"
+            endingLineNumber = "405"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3752,11 +3736,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "358"
-            endingLineNumber = "358"
+            startingLineNumber = "393"
+            endingLineNumber = "393"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3768,11 +3752,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "364"
-            endingLineNumber = "364"
+            startingLineNumber = "399"
+            endingLineNumber = "399"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3784,11 +3768,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "362"
-            endingLineNumber = "362"
+            startingLineNumber = "397"
+            endingLineNumber = "397"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3800,11 +3784,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "361"
-            endingLineNumber = "361"
+            startingLineNumber = "396"
+            endingLineNumber = "396"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3832,11 +3816,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "322"
+            endingLineNumber = "322"
             landmarkName = "-updateNodesForEdge:andNode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3848,103 +3832,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "284"
-            endingLineNumber = "284"
-            landmarkName = "-updateNodesForEdge:andNode:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
-            landmarkName = "-updateNodesForEdge:andNode:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "292"
-            endingLineNumber = "292"
-            landmarkName = "-updateNodesForEdge:andNode:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "288"
-            endingLineNumber = "288"
-            landmarkName = "-updateNodesForEdge:andNode:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "317"
-            endingLineNumber = "317"
-            landmarkName = "-updateNodesForEdge:andNode:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "318"
-            endingLineNumber = "318"
-            landmarkName = "-updateNodesForEdge:andNode:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "319"
@@ -3960,11 +3848,107 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "374"
-            endingLineNumber = "374"
+            startingLineNumber = "325"
+            endingLineNumber = "325"
+            landmarkName = "-updateNodesForEdge:andNode:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439916594.735558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "327"
+            endingLineNumber = "327"
+            landmarkName = "-updateNodesForEdge:andNode:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439916594.735558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "323"
+            endingLineNumber = "323"
+            landmarkName = "-updateNodesForEdge:andNode:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439916594.735558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "352"
+            endingLineNumber = "352"
+            landmarkName = "-updateNodesForEdge:andNode:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439916594.735558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
+            landmarkName = "-updateNodesForEdge:andNode:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439916594.735558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
+            landmarkName = "-updateNodesForEdge:andNode:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439916594.735558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "409"
+            endingLineNumber = "409"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -3976,11 +3960,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "306"
-            endingLineNumber = "306"
+            startingLineNumber = "341"
+            endingLineNumber = "341"
             landmarkName = "-updateNodesForEdge:andNode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4024,11 +4008,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "309"
-            endingLineNumber = "309"
+            startingLineNumber = "344"
+            endingLineNumber = "344"
             landmarkName = "-updateNodesForEdge:andNode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4040,11 +4024,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
             landmarkName = "-updateNodesForEdge:andNode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4056,11 +4040,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "354"
-            endingLineNumber = "354"
+            startingLineNumber = "389"
+            endingLineNumber = "389"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4072,11 +4056,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "353"
-            endingLineNumber = "353"
+            startingLineNumber = "388"
+            endingLineNumber = "388"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4152,11 +4136,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAConfigTableViewCell.m"
-            timestampString = "439573216.733948"
+            timestampString = "439871353.661092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-switchChanged:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAConfigTableViewCell.m"
+            timestampString = "439871353.661092"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "-switchChanged:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4168,27 +4168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAConfigTableViewCell.m"
-            timestampString = "439573216.733948"
+            timestampString = "439871293.600633"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "-switchChanged:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAConfigTableViewCell.m"
-            timestampString = "439573216.733948"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "-saveAlgorithm:"
             landmarkType = "5">
          </BreakpointContent>
@@ -4200,27 +4184,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAConfigTableViewCell.m"
-            timestampString = "439573216.733948"
+            timestampString = "439871293.600633"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "-switchChanged:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAConfigTableViewCell.m"
-            timestampString = "439573216.733948"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "-saveAlgorithm:"
             landmarkType = "5">
          </BreakpointContent>
@@ -5080,11 +5048,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "444"
-            endingLineNumber = "444"
+            startingLineNumber = "479"
+            endingLineNumber = "479"
             landmarkName = "-loadRain"
             landmarkType = "5">
          </BreakpointContent>
@@ -5096,11 +5064,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "443"
-            endingLineNumber = "443"
+            startingLineNumber = "478"
+            endingLineNumber = "478"
             landmarkName = "-loadRain"
             landmarkType = "5">
          </BreakpointContent>
@@ -5576,23 +5544,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAHoraTableViewCell.m"
-            timestampString = "439179844.394341"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "-loadCustomDate"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAHoraTableViewCell.m"
-            timestampString = "439747042.532264"
+            timestampString = "439870740.23408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "106"
@@ -5608,11 +5560,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAHoraTableViewCell.m"
-            timestampString = "439179844.394341"
+            timestampString = "439870740.23408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "-loadCustomDate"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAHoraTableViewCell.m"
+            timestampString = "439870740.23408"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "-initTime"
             landmarkType = "5">
          </BreakpointContent>
@@ -5848,11 +5816,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439917062.272124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -5864,11 +5832,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -5880,11 +5848,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6104,11 +6072,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAHoraTableViewCell.m"
-            timestampString = "439179844.394341"
+            timestampString = "439870740.23408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-customDate"
             landmarkType = "5">
          </BreakpointContent>
@@ -6120,27 +6088,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAHoraTableViewCell.m"
-            timestampString = "439179844.394341"
+            timestampString = "439870740.23408"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-customDate"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAHoraTableViewCell.m"
+            timestampString = "439870740.23408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
             endingLineNumber = "86"
-            landmarkName = "-customDate"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAHoraTableViewCell.m"
-            timestampString = "439179844.394341"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
             landmarkName = "-customDate"
             landmarkType = "5">
          </BreakpointContent>
@@ -6344,11 +6312,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVACustomLocationsTableViewController.m"
-            timestampString = "439347021.487676"
+            timestampString = "439872059.742367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "237"
-            endingLineNumber = "237"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
             landmarkName = "-addSel:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6360,11 +6328,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVACustomLocationsTableViewController.m"
-            timestampString = "439347021.487676"
+            timestampString = "439872059.742367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "238"
-            endingLineNumber = "238"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
             landmarkName = "-addSel:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6584,11 +6552,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAConfigTableViewCell.m"
-            timestampString = "439573216.733948"
+            timestampString = "439871293.600633"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "-saveAlgorithm:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6600,11 +6568,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6632,11 +6600,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6648,27 +6616,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "-getNextTrainForNode:edge:andTime:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6760,11 +6712,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6840,11 +6792,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "248"
-            endingLineNumber = "248"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6856,11 +6808,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6872,11 +6824,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
+            startingLineNumber = "262"
+            endingLineNumber = "262"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6888,11 +6840,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -6904,11 +6856,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7096,11 +7048,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "366"
-            endingLineNumber = "366"
+            startingLineNumber = "401"
+            endingLineNumber = "401"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7112,11 +7064,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "367"
-            endingLineNumber = "367"
+            startingLineNumber = "402"
+            endingLineNumber = "402"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7128,11 +7080,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "285"
-            endingLineNumber = "285"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
             landmarkName = "-updateNodesForEdge:andNode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7144,11 +7096,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "321"
-            endingLineNumber = "321"
+            startingLineNumber = "356"
+            endingLineNumber = "356"
             landmarkName = "-updateNodesForEdge:andNode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7160,11 +7112,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "322"
-            endingLineNumber = "322"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
             landmarkName = "-updateNodesForEdge:andNode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7224,11 +7176,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "371"
-            endingLineNumber = "371"
+            startingLineNumber = "406"
+            endingLineNumber = "406"
             landmarkName = "-astarPathFrom:toNode:withCoo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7240,11 +7192,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "379"
-            endingLineNumber = "379"
+            startingLineNumber = "414"
+            endingLineNumber = "414"
             landmarkName = "-pathwithGoal:andPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7256,11 +7208,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "384"
-            endingLineNumber = "384"
+            startingLineNumber = "419"
+            endingLineNumber = "419"
             landmarkName = "-pathwithGoal:andPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7272,11 +7224,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "294"
-            endingLineNumber = "294"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
             landmarkName = "-updateNodesForEdge:andNode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7288,11 +7240,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "295"
-            endingLineNumber = "295"
+            startingLineNumber = "330"
+            endingLineNumber = "330"
             landmarkName = "-updateNodesForEdge:andNode:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7304,11 +7256,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7320,11 +7272,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7336,11 +7288,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7448,11 +7400,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7656,11 +7608,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7672,11 +7624,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7688,11 +7640,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7704,11 +7656,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7720,11 +7672,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7736,11 +7688,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7752,27 +7704,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "191"
             endingLineNumber = "191"
-            landmarkName = "-getNextTrainForNode:edge:andTime:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7848,11 +7784,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7864,11 +7800,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7880,11 +7816,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7896,11 +7832,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7912,11 +7848,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7928,11 +7864,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7944,43 +7880,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
+            timestampString = "439916594.735558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
-            landmarkName = "-getNextTrainForNode:edge:andTime:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "-getNextTrainForNode:edge:andTime:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VisitBCN/MVAAlgorithms.m"
-            timestampString = "439753544.445532"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
             landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
@@ -7998,6 +7902,166 @@
             startingLineNumber = "48"
             endingLineNumber = "48"
             landmarkName = "-dijkstraPathFrom:toNode:withCoo:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAConfigTableViewCell.m"
+            timestampString = "439871099.571523"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-configSwitch"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVACustomLocationsTableViewController.m"
+            timestampString = "439871963.94647"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
+            landmarkName = "-textFieldDidEndEditing:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVACustomLocationsTableViewController.m"
+            timestampString = "439872059.742367"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "-textFieldShouldReturn:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVACustomLocationsTableViewController.m"
+            timestampString = "439872059.742367"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "-textFieldDidBeginEditing:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVACustomLocationsTableViewController.m"
+            timestampString = "439872013.207461"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "-tableView:viewForHeaderInSection:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVACustomLocationsTableViewController.m"
+            timestampString = "439872093.85405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "-textFieldDidBeginEditing:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439916586.460279"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "-getNextTrainForNode:edge:andTime:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439917062.272124"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "-getNextTrainForNode:edge:andTime:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439917062.272124"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
+            landmarkName = "-getNextTrainForNode:edge:andTime:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVAAlgorithms.m"
+            timestampString = "439917062.272124"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "-getNextTrainForNode:edge:andTime:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

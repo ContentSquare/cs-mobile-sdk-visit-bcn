@@ -18,6 +18,15 @@
 
 @implementation MVAAlgorithms
 
+/**
+ *  Dijkstra's algorithm
+ *
+ *  @param nodeA Origin node for the Dijkstra computation
+ *  @param nodeB Destination node for the Dijkstra computation
+ *  @param crds  Coordinates of the final destination
+ *
+ *  @return The MVAPath object for the given parameters and the current graph
+ */
 -(MVAPath *)dijkstraPathFrom:(MVANode *)nodeA toNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds
 {
     NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
@@ -145,19 +154,11 @@
 {
     BOOL nextDay = NO;
     if (actualTime >= 86400) {
-        actualTime -= 86400;
         nextDay = YES;
     }
     MVAStop *stop = node.stop;
     if ([stop.stopID hasPrefix:@"001-"]) {
         NSString *tripID = edge.tripID;
-        if (nextDay && ![tripID hasSuffix:self.nextTMBCalendar.serviceID]) {
-            NSArray *array = [tripID componentsSeparatedByString:@"-"];
-            NSString *route = [array firstObject];
-            NSString *way = [array objectAtIndex:1];
-            tripID = [route stringByAppendingString:[@"-" stringByAppendingString:[way stringByAppendingString:[@"-" stringByAppendingString:self.nextTMBCalendar.serviceID]]]];
-        }
-        
         NSNumber *tripPos = [self.dataTMB.tripsHash objectForKey:tripID];
         MVATrip *trip = [self.dataTMB.trips objectAtIndex:[tripPos intValue]];
         NSString *firstID = [trip.sequence firstObject];
@@ -193,12 +194,58 @@
             int initTime = [self timeToInt:freq.startTime];
             if (initTime <= 60) initTime = 0;
             int endTime = [self timeToInt:freq.endTime];
-            if ((initTime <= actualTime) && (endTime >= actualTime)) {
+            double numTrains = floor((endTime - initTime)/[freq.headway doubleValue]);
+            double lastTrain = ((numTrains * [freq.headway doubleValue]) + dif + initTime);
+            if ((initTime <= actualTime) && (lastTrain >= actualTime)) {
                 para = YES;
                 actualFreq = freq;
             }
         }
         if (actualFreq == nil) {
+            
+            actualTime -= 86400;
+            NSArray *array = [tripID componentsSeparatedByString:@"-"];
+            NSString *route = [array firstObject];
+            NSString *way = [array objectAtIndex:1];
+            tripID = [route stringByAppendingString:[@"-" stringByAppendingString:[way stringByAppendingString:[@"-" stringByAppendingString:self.nextTMBCalendar.serviceID]]]];
+            
+            if (nextDay && ![tripID hasSuffix:self.nextTMBCalendar.serviceID]) {
+                
+                NSNumber *tripPos = [self.dataTMB.tripsHash objectForKey:tripID];
+                MVATrip *trip = [self.dataTMB.trips objectAtIndex:[tripPos intValue]];
+                
+                MVAFrequencies *actualFreqN = nil;
+                for (int i = 0; i < [trip.freqs count] && !para; ++i) {
+                    NSNumber *freqPos = [trip.freqs objectAtIndex:i];
+                    MVAFrequencies *freq = [self.dataTMB.freqs objectAtIndex:[freqPos intValue]];
+                    int initTime = [self timeToInt:freq.startTime];
+                    if (initTime <= 60) initTime = 0;
+                    int endTime = [self timeToInt:freq.endTime];
+                    double numTrains = floor((endTime - initTime)/[freq.headway doubleValue]);
+                    double lastTrain = ((numTrains * [freq.headway doubleValue]) + dif + initTime);
+                    if ((initTime <= actualTime) && (lastTrain >= actualTime)) {
+                        para = YES;
+                        actualFreqN = freq;
+                    }
+                }
+                if (actualFreqN != nil) {
+                    para = NO;
+                    int trainCount = 0;
+                    double arrivalTime = 0;
+                    int initTime = [self timeToInt:actualFreqN.startTime];
+                    if (initTime <= 60) initTime = 0;
+                    while (!para) {
+                        double newTime = initTime + (trainCount * [actualFreqN.headway intValue]) + dif;
+                        
+                        if (newTime > actualTime) {
+                            arrivalTime = newTime;
+                            para = YES;
+                        }
+                        ++trainCount;
+                    }
+                    return arrivalTime;
+                }
+            }
             return DBL_MAX;
         }
         para = NO;
@@ -206,9 +253,6 @@
         double arrivalTime = 0;
         int initTime = [self timeToInt:actualFreq.startTime];
         if (initTime <= 60) initTime = 0;
-        if (nextDay) {
-            return (actualTime + ([actualFreq.headway doubleValue]/2.0) + 86460);
-        }
         while (!para) {
             double newTime = initTime + (trainCount * [actualFreq.headway intValue]) + dif;
             

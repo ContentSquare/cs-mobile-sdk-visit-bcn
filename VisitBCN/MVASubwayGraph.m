@@ -169,8 +169,8 @@
     
     //CREACIÓ DE CONEXIONS TMB <-> TMB
     MVACustomModifications *modi = [[MVACustomModifications alloc] init];
-    for (int i = 0; i < [modi.tmbEdgeConections count]; ++i) {
-        MVATriple *tri = [modi.tmbEdgeConections objectAtIndex:i];
+    for (int i = 0; i < [modi.tmbEdgeConnections count]; ++i) {
+        MVATriple *tri = [modi.tmbEdgeConnections objectAtIndex:i];
         
         NSString *idA = (NSString *)tri.elem1;
         NSNumber *numA = [dataTMB.stopsHash objectForKey:idA];
@@ -197,8 +197,8 @@
     }
     
     //CREACIÓ DE CONEXIONS TMB <-> FGC
-    for (int i = 0; i < [modi.fgcEdgeConections count]; ++i) {
-        MVATriple *tri = [modi.fgcEdgeConections objectAtIndex:i];
+    for (int i = 0; i < [modi.fgcEdgeConnections count]; ++i) {
+        MVATriple *tri = [modi.fgcEdgeConnections objectAtIndex:i];
         for(int j = 0; j < [dataFGC.stops count]; ++j) {
             NSString *idA = (NSString *)tri.elem1;
             NSNumber *numA = [dataTMB.stopsHash objectForKey:idA];

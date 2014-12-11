@@ -610,8 +610,8 @@
         NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
         NSData *data = [defaults objectForKey:@"VisitBCNTaxi"];
         if(data == nil){
-            [defaults setInteger:1 forKey:@"VisitBCNTaxi"];
-            alg = 1;
+            [defaults setInteger:0 forKey:@"VisitBCNTaxi"];
+            alg = 0;
         }
         else {
             alg = (int)[defaults integerForKey:@"VisitBCNTaxi"];

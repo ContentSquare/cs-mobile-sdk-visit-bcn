@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MVAConfigurationTableViewController.h"
 
 @interface MVAHoraTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIView *cellSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+@property MVAConfigurationTableViewController *papi;
 
 @end
