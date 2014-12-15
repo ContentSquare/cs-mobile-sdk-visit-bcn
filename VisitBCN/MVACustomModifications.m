@@ -10,6 +10,13 @@
 
 @implementation MVACustomModifications
 
+/**
+ *  This function is overriden from NSObject. Returns self initialized
+ *
+ *  @return self, initialized object
+ *
+ *  @since version 1.0
+ */
 -(id)init
 {
     self.tmbEdgeConnections = [[NSMutableArray alloc] initWithCapacity:24];

@@ -42,7 +42,7 @@
     return self;
 }
 
--(void)insertar:(MVAPair *)pair
+-(void)addObject:(MVAPair *)pair
 {
     if (self.tope == self.topemaxim) {
         NSLog(@"Error: Inserting in a full queue");
@@ -57,6 +57,12 @@
     }
 }
 
+/**
+ *  This function swaps the position of two objects in the priority queue
+ *
+ *  @param pos1 The first position
+ *  @param pos2 The second position
+ */
 -(void)swap:(int)pos1 and:(int)pos2
 {
     MVAPair *elem = [self.v objectAtIndex:pos1];
@@ -115,25 +121,6 @@
         }
         else break;
     }
-}
-
--(int)posOfElement:(int)identificador
-{
-    for (int i = 0; i < [self.v count]; ++i) {
-        MVAPair *p = [self.v objectAtIndex:i];
-        if (p.second == identificador) return i;
-    }
-    return -1;
-}
-
--(MVAPair *)objectAtIndex:(int)index
-{
-    return [self.v objectAtIndex:index];
-}
-
--(void)setObject:(MVAPair *)p atIndex:(int)index
-{
-    [self.v setObject:p atIndexedSubscript:index];
 }
 
 @end

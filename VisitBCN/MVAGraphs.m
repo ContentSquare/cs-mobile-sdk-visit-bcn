@@ -29,73 +29,37 @@
     self.subwayPath = [self pathForSubwayGraphWithOrigin:origin andDestination:punInt];
     self.busPath = [self pathForBusGraphWithOrigin:origin andDestination:punInt];
     
-    /*dispatch_apply(2, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(size_t size) {
-        if (size == 0) {
-            self.subwayPath = [self pathForSubwayGraphWithOrigin:origin andDestination:punInt];
-        }
-        else {
-            self.busPath = [self pathForBusGraphWithOrigin:origin andDestination:punInt];
-        }
-    });*/
-    
     NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
     double dif = (end-start);
     NSLog(@"Total execution time: %.16f",dif);
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param origin <#origin description#>
+ *  @param punInt <#punInt description#>
+ *
+ *  @return <#return value description#>
+ */
 -(MVAPath *)pathForBusGraphWithOrigin:(CLLocationCoordinate2D)origin andDestination:(MVAPunInt *)punInt
 {
+    NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
+    
     NSMutableArray *originA = [[NSMutableArray alloc] init];
-    NSMutableDictionary *destA = [[NSMutableDictionary alloc] initWithCapacity:4];
-    NSMutableDictionary *routeStopO = [[NSMutableDictionary alloc] init];
-    NSMutableDictionary *routesO = [[NSMutableDictionary alloc] init];
-    NSMutableDictionary *routesD = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary *destA = [[NSMutableDictionary alloc] initWithCapacity:5];
     self.busError = nil;
     for (int i = 0; i < [self.busGraph.nodes count]; ++i) {
         MVANode *node = [self.busGraph.nodes objectAtIndex:i];
         CLLocationCoordinate2D stopCords = CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude);
         double distO = [self.busGraph distanceForCoordinates:origin andCoordinates:stopCords];
         double distD = [self.busGraph distanceForCoordinates:punInt.coordinates andCoordinates:stopCords];
-        if (distO <= [self loadWalkingDist]) {
-            if ([routesO objectForKey:[node.stop.routes firstObject]] == nil) {
-                if (node.stop.routes != nil) {
-                    [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
-                    [routeStopO setObject:[NSNumber numberWithInt:(int)[originA count]] forKey:[node.stop.routes firstObject]];
-                    [originA addObject:[NSNumber numberWithInt:node.identificador]];
-                }
-            }
-            else {
-                NSNumber *dist = [routesO objectForKey:[node.stop.routes firstObject]];
-                if (distO < [dist doubleValue]) {
-                    if (node.stop.routes != nil) {
-                        NSNumber *pos = [routeStopO objectForKey:[node.stop.routes firstObject]];
-                        [originA setObject:[NSNumber numberWithInt:node.identificador] atIndexedSubscript:[pos intValue]];
-                        [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
-                    }
-                }
-            }
+        if ((distO <= [self loadWalkingDist]) && (node.stop.routes != nil)) {
+            [originA addObject:[NSNumber numberWithInt:node.identificador]];
         }
-        else if (distD <= [self loadWalkingDist]) {
-            if ([routesD objectForKey:[node.stop.routes firstObject]] == nil) {
-                if (node.stop.routes != nil) {
-                    [destA setObject:[node.stop.routes firstObject] forKeyedSubscript:[NSNumber numberWithInt:node.identificador]];
-                    [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
-                }
-            }
-            else {
-                NSNumber *dist = [routesD objectForKey:[node.stop.routes firstObject]];
-                if (distD < [dist doubleValue]) {
-                    if (node.stop.routes != nil) {
-                        NSArray *array = [destA allKeysForObject:[node.stop.routes firstObject]];
-                        NSNumber *key = [array firstObject];
-                        [destA removeObjectForKey:key];
-                        [destA setObject:[node.stop.routes firstObject] forKey:[NSNumber numberWithInt:node.identificador]];
-                        [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
-                    }
-                }
-            }
+        else if ((distD <= [self loadWalkingDist]) && (node.stop.routes != nil)) {
+            [destA setObject:[node.stop.routes firstObject] forKeyedSubscript:[NSNumber numberWithInt:node.identificador]];
         }
-        
     }
     
     if ([originA count] == 0 || [[destA allKeys] count] == 0) {
@@ -103,64 +67,44 @@
         return nil;
     }
     
-    return [self.busGraph computePathFromNodes:originA
-                                          toNode:destA
-                               withAlgorithmID:[self loadAlg]
-                                      andOCoords:origin
-                                      andDest:punInt];
+    MVAPath *retPath = [self.busGraph computePathFromNodes:originA
+                                                    toNode:destA
+                                           withAlgorithmID:[self loadAlg]
+                                                andOCoords:origin
+                                                   andDest:punInt];
+    
+    NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
+    double dif = (end-start);
+    NSLog(@"Bus execution time: %.16f",dif);
+    
+    return retPath;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param origin <#origin description#>
+ *  @param punInt <#punInt description#>
+ *
+ *  @return <#return value description#>
+ */
 -(MVAPath *)pathForSubwayGraphWithOrigin:(CLLocationCoordinate2D)origin andDestination:(MVAPunInt *)punInt
 {
+    NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
+    
     NSMutableArray *originA = [[NSMutableArray alloc] init];
-    NSMutableDictionary *destA = [[NSMutableDictionary alloc] initWithCapacity:4];
-    NSMutableDictionary *routeStopO = [[NSMutableDictionary alloc] init];
-    NSMutableDictionary *routesO = [[NSMutableDictionary alloc] init];
-    NSMutableDictionary *routesD = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary *destA = [[NSMutableDictionary alloc] initWithCapacity:5];
     self.subwayError = nil;
     for (int i = 0; i < [self.subwayGraph.nodes count]; ++i) {
         MVANode *node = [self.subwayGraph.nodes objectAtIndex:i];
         CLLocationCoordinate2D stopCords = CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude);
         double distO = [self.subwayGraph distanceForCoordinates:origin andCoordinates:stopCords];
         double distD = [self.subwayGraph distanceForCoordinates:punInt.coordinates andCoordinates:stopCords];
-        if (distO <= [self loadWalkingDist]) {
-            if ([routesO objectForKey:[node.stop.routes firstObject]] == nil) {
-                if (node.stop.routes != nil) {
-                    [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
-                    [routeStopO setObject:[NSNumber numberWithInt:(int)[originA count]] forKey:[node.stop.routes firstObject]];
-                    [originA addObject:[NSNumber numberWithInt:node.identificador]];
-                }
-            }
-            else {
-                NSNumber *dist = [routesO objectForKey:[node.stop.routes firstObject]];
-                if (distO < [dist doubleValue]) {
-                    if (node.stop.routes != nil) {
-                        NSNumber *pos = [routeStopO objectForKey:[node.stop.routes firstObject]];
-                        [originA setObject:[NSNumber numberWithInt:node.identificador] atIndexedSubscript:[pos intValue]];
-                        [routesO setObject:[NSNumber numberWithDouble:distO] forKey:[node.stop.routes firstObject]];
-                    }
-                }
-            }
+        if ((distO <= [self loadWalkingDist]) && (node.stop.routes != nil)) {
+            [originA addObject:[NSNumber numberWithInt:node.identificador]];
         }
-        else if (distD <= [self loadWalkingDist]) {
-            if ([routesD objectForKey:[node.stop.routes firstObject]] == nil) {
-                if (node.stop.routes != nil) {
-                    [destA setObject:[node.stop.routes firstObject] forKeyedSubscript:[NSNumber numberWithInt:node.identificador]];
-                    [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
-                }
-            }
-            else {
-                NSNumber *dist = [routesD objectForKey:[node.stop.routes firstObject]];
-                if (distD < [dist doubleValue]) {
-                    if (node.stop.routes != nil) {
-                        NSArray *array = [destA allKeysForObject:[node.stop.routes firstObject]];
-                        NSNumber *key = [array firstObject];
-                        [destA removeObjectForKey:key];
-                        [destA setObject:[node.stop.routes firstObject] forKey:[NSNumber numberWithInt:node.identificador]];
-                        [routesD setObject:[NSNumber numberWithDouble:distD] forKey:[node.stop.routes firstObject]];
-                    }
-                }
-            }
+        else if ((distD <= [self loadWalkingDist])  && (node.stop.routes != nil)) {
+            [destA setObject:[node.stop.routes firstObject] forKeyedSubscript:[NSNumber numberWithInt:node.identificador]];
         }
         
     }
@@ -170,11 +114,17 @@
         return nil;
     }
     
-    return [self.subwayGraph computePathFromNodes:originA
-                                           toNode:destA
-                                  withAlgorithmID:[self loadAlg]
-                                       andOCoords:origin
-                                       andDest:punInt];
+    MVAPath *retPath = [self.subwayGraph computePathFromNodes:originA
+                                                       toNode:destA
+                                              withAlgorithmID:[self loadAlg]
+                                                   andOCoords:origin
+                                                      andDest:punInt];
+    
+    NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
+    double dif = (end-start);
+    NSLog(@"Subway execution time: %.16f",dif);
+    
+    return retPath;
 }
 
 -(void)load
@@ -207,6 +157,11 @@
     NSLog(@"Save Grafs time: %.16f",dif);
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ */
 -(int)loadAlg
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -221,6 +176,11 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ */
 -(double)loadWalkingDist
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];

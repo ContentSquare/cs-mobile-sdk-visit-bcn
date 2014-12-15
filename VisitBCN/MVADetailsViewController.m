@@ -7,8 +7,6 @@
 //
 
 #import "MVADetailsViewController.h"
-#import "MVAPathTableViewCell.h"
-#import "MVATaxiTableViewCell.h"
 #import "MVATaxis.h"
 #import "Reachability.h"
 
@@ -21,20 +19,44 @@
 
 @implementation MVADetailsViewController
 
-- (void)viewDidLoad {
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning {
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ *
+ *  @param animated <#animated description#>
+ */
 -(void)viewWillAppear:(BOOL)animated
 {
     [self createParallax];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)createParallax
 {
     NSMutableDictionary* views = [NSMutableDictionary new];
@@ -166,6 +188,13 @@
     
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(UIView *)insetView
 {
     UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 403)];
@@ -173,6 +202,13 @@
     return v;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(UIView *)subwayView
 {
     CGFloat w = self.view.frame.size.width;
@@ -351,6 +387,13 @@
     return v;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(UIView *)busView
 {
     CGFloat w = self.view.frame.size.width;
@@ -446,21 +489,24 @@
         
         int x = 134;
         
-        NSString *prevRouteID = @"";
+        NSString *prevTripID = @"";
         
         for (int i = 0; i < [self.busPath.edges count]; ++i) {
             MVAEdge *edge = [self.busPath.edges objectAtIndex:i];
-            MVANode *dest = edge.destini;
             
-            NSString *routeID = [dest.stop.routes firstObject];
+            NSString *tripID = edge.tripID;
             
-            if (![prevRouteID isEqualToString:routeID]) {
+            if ([edge.tripID isEqualToString:@"walking"] || [edge.tripID isEqualToString:@"change"] || [edge.tripID isEqualToString:@"landmark"]) {
+                tripID = @"special";
+            }
+            
+            if (![prevTripID isEqualToString:tripID]) {
                 UIBezierPath *path = [UIBezierPath bezierPath];
                 [path moveToPoint:CGPointMake(x, 16.25)];
                 [path addLineToPoint:CGPointMake((x + 50), 16.25)];
                 CAShapeLayer *shapeLayer = [CAShapeLayer layer];
                 [shapeLayer setPath:[path CGPath]];
-                if (edge.tripID == nil || [edge.tripID isEqualToString:@"landmark"]) {
+                if ([edge.tripID isEqualToString:@"walking"] || [edge.tripID isEqualToString:@"change"] || [edge.tripID isEqualToString:@"landmark"]) {
                     shapeLayer.strokeColor = [[UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f] CGColor];
                     shapeLayer.lineWidth = 3.0;
                     shapeLayer.fillColor = [[UIColor clearColor] CGColor];
@@ -473,12 +519,13 @@
                     [scrollView addSubview:nombreR];
                     
                     UIImageView *changeIm = [[UIImageView alloc] initWithFrame:CGRectMake((x + 15), 7.5, 20, 20)];
-                    if (edge.tripID == nil) changeIm.image = [UIImage imageNamed:@"change-directions"];
+                    if ([edge.tripID isEqualToString:@"change"]) changeIm.image = [UIImage imageNamed:@"change-directions"];
                     else changeIm.image = [UIImage imageNamed:@"walking-white-small"];
                     [scrollView  addSubview:changeIm];
+                    prevTripID = @"special";
                 }
                 else {
-                    NSNumber *pos = [self.graphs.busGraph.dataBus.busRoutesHash objectForKey:routeID];
+                    NSNumber *pos = [self.graphs.busGraph.dataBus.busRoutesHash objectForKey:tripID];
                     MVARoute *route = [self.graphs.busGraph.dataBus.busRoutes objectAtIndex:[pos intValue]];
                     
                     shapeLayer.strokeColor = [route.color CGColor];
@@ -488,7 +535,7 @@
                     
                     UILabel *nombreR = [[UILabel alloc] initWithFrame:CGRectMake((x + 10), 2.5, 30, 30)];
                     [nombreR setBackgroundColor:route.color];
-                    [nombreR setText:routeID];
+                    [nombreR setText:tripID];
                     [nombreR setTextColor:route.textColor];
                     [nombreR setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:13.0f]];
                     [nombreR setAdjustsFontSizeToFitWidth:YES];
@@ -496,7 +543,7 @@
                     [nombreR setClipsToBounds:YES];
                     [nombreR setTextAlignment:NSTextAlignmentCenter];
                     [scrollView addSubview:nombreR];
-                    prevRouteID = routeID;
+                    prevTripID = tripID;
                 }
                 if ([edge.tripID isEqualToString:@"landmark"]) {
                     UIImageView *destIm = [[UIImageView alloc] initWithFrame:CGRectMake((x + 58), 2.5, 30, 30)];
@@ -523,6 +570,13 @@
     return v;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(UIView *)walkingView
 {
     CGFloat w = self.view.frame.size.width;
@@ -598,6 +652,13 @@
     return v;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(UIView *)taxiCellView
 {
     CGFloat w = self.view.frame.size.width;
@@ -606,246 +667,119 @@
     self.taxis.dest = self.punto.coordinates;
     
     if ([self connectedToInternet]) {
-        int alg = 0;
-        NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
-        NSData *data = [defaults objectForKey:@"VisitBCNTaxi"];
-        if(data == nil){
-            [defaults setInteger:0 forKey:@"VisitBCNTaxi"];
-            alg = 0;
-        }
-        else {
-            alg = (int)[defaults integerForKey:@"VisitBCNTaxi"];
-        }
-        if(alg == 0) {
-            self.taxiView = [[UIView alloc] initWithFrame:CGRectMake(0, 304.5, w, 100)];
-            [self.taxiView setBackgroundColor:[UIColor colorWithRed:(243.0f/255.0f) green:(181.0f/255.0f) blue:(59.0f/255.0f) alpha:1.0f]];
-            UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(8, 8, 34, 34)];
-            [imV setImage:[UIImage imageNamed:@"logoHailo"]];
-            [self.taxiView addSubview:imV];
-            UILabel *name = [[UILabel alloc] initWithFrame:CGRectMake(50, 8, 104, 34)];
-            [name setText:@"Hailo"];
-            [name setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
-            [name setAdjustsFontSizeToFitWidth:YES];
-            [name setTextAlignment:NSTextAlignmentLeft];
-            [name setTextColor:[UIColor whiteColor]];
-            [self.taxiView addSubview:name];
-            
-            UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-            indicator.alpha = 1.0;
-            indicator.center = CGPointMake((w/2.0), 50);
-            indicator.hidesWhenStopped = YES;
-            [self.taxiView addSubview: indicator];
-            [indicator startAnimating];
-            
-            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-            dispatch_async(queue, ^{
-                [self.taxis loadHailoTime];
-                dispatch_sync(dispatch_get_main_queue(), ^{
-                    
-                    UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hailoTap:)];
-                    
-                    singleTap.numberOfTapsRequired = 1;
-                    singleTap.numberOfTouchesRequired = 1;
-                    [self.taxiView addGestureRecognizer: singleTap];
-                    
-                    [indicator stopAnimating];
-                    NSDictionary *error = [self.taxis.hailoTimes objectForKey:@"error"];
-                    NSArray *etas = [self.taxis.hailoTimes objectForKey:@"etas"];
-                    if (error != nil) {
-                        UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
-                        [time setText:[NSString stringWithFormat:@"%d minutes",(int)floor(self.carTime/60.0)]];
-                        [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
-                        [time setAdjustsFontSizeToFitWidth:YES];
-                        [time setTextAlignment:NSTextAlignmentRight];
-                        [time setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:time];
-                        UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72,((w - 92) - 12), 20)];
-                        [pickUp setText:@"The Hailo server returned an error. Data is estimated."];
-                        [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [pickUp setAdjustsFontSizeToFitWidth:YES];
-                        [pickUp setTextAlignment:NSTextAlignmentLeft];
-                        [pickUp setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:pickUp];
-                        UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 92), 72, 84, 20)];
-                        double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
-                        [price setText:[NSString stringWithFormat:@"%.2f€",est]];
-                        [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [price setAdjustsFontSizeToFitWidth:YES];
-                        [price setTextAlignment:NSTextAlignmentRight];
-                        [price setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:price];
-                    }
-                    else if ([etas count] == 0) {
-                        UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
-                        [time setText:[NSString stringWithFormat:@"%d minutes",(int)floor(self.carTime/60.0)]];
-                        [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
-                        [time setAdjustsFontSizeToFitWidth:YES];
-                        [time setTextAlignment:NSTextAlignmentRight];
-                        [time setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:time];
-                        UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72, ((w - 92) - 12), 20)];
-                        [pickUp setText:@"The Hailo server didn't return any taxi. Data is estimated."];
-                        [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [pickUp setAdjustsFontSizeToFitWidth:YES];
-                        [pickUp setTextAlignment:NSTextAlignmentLeft];
-                        [pickUp setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:pickUp];
-                        UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 8 - 90), 72, 90, 20)];
-                        double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
-                        [price setText:[NSString stringWithFormat:@"%.2f€",est]];
-                        [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [price setAdjustsFontSizeToFitWidth:YES];
-                        [price setTextAlignment:NSTextAlignmentRight];
-                        [price setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:price];
-                    }
-                    else {
-                        NSMutableDictionary *estTime = [etas firstObject];
-                        NSNumber *travelTime = [estTime objectForKey:@"eta"];
-                        UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
-                        [time setText:[NSString stringWithFormat:@"%d minutes",[travelTime intValue]]];
-                        [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
-                        [time setAdjustsFontSizeToFitWidth:YES];
-                        [time setTextAlignment:NSTextAlignmentRight];
-                        [time setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:time];
-                        UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72, 154, 20)];
-                        [pickUp setText:[@"Taxi service: " stringByAppendingString:[estTime objectForKey:@"service_type"]]];
-                        [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [pickUp setAdjustsFontSizeToFitWidth:YES];
-                        [pickUp setTextAlignment:NSTextAlignmentLeft];
-                        [pickUp setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:pickUp];
-                        UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 8 - 90), 72, 90, 20)];
-                        double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
-                        [price setText:[NSString stringWithFormat:@"%.2f€",est]];
-                        [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [price setAdjustsFontSizeToFitWidth:YES];
-                        [price setTextAlignment:NSTextAlignmentRight];
-                        [price setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:price];
-                    }
-                });
+        self.taxiView = [[UIView alloc] initWithFrame:CGRectMake(0, 304.5, w, 100)];
+        [self.taxiView setBackgroundColor:[UIColor colorWithRed:(243.0f/255.0f) green:(181.0f/255.0f) blue:(59.0f/255.0f) alpha:1.0f]];
+        UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(8, 8, 34, 34)];
+        [imV setImage:[UIImage imageNamed:@"logoHailo"]];
+        [self.taxiView addSubview:imV];
+        UILabel *name = [[UILabel alloc] initWithFrame:CGRectMake(50, 8, 104, 34)];
+        [name setText:@"Hailo"];
+        [name setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
+        [name setAdjustsFontSizeToFitWidth:YES];
+        [name setTextAlignment:NSTextAlignmentLeft];
+        [name setTextColor:[UIColor whiteColor]];
+        [self.taxiView addSubview:name];
+        
+        UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        indicator.alpha = 1.0;
+        indicator.center = CGPointMake((w/2.0), 50);
+        indicator.hidesWhenStopped = YES;
+        [self.taxiView addSubview: indicator];
+        [indicator startAnimating];
+        
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+        dispatch_async(queue, ^{
+            [self.taxis loadHailoTime];
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                
+                UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hailoTap:)];
+                
+                singleTap.numberOfTapsRequired = 1;
+                singleTap.numberOfTouchesRequired = 1;
+                [self.taxiView addGestureRecognizer: singleTap];
+                
+                [indicator stopAnimating];
+                NSDictionary *error = [self.taxis.hailoTimes objectForKey:@"error"];
+                NSArray *etas = [self.taxis.hailoTimes objectForKey:@"etas"];
+                if (error != nil) {
+                    UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
+                    [time setText:[NSString stringWithFormat:@"%d minutes",(int)floor(self.carTime/60.0)]];
+                    [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
+                    [time setAdjustsFontSizeToFitWidth:YES];
+                    [time setTextAlignment:NSTextAlignmentRight];
+                    [time setTextColor:[UIColor whiteColor]];
+                    [self.taxiView addSubview:time];
+                    UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72,((w - 92) - 12), 20)];
+                    [pickUp setText:@"The Hailo server returned an error. Data is estimated."];
+                    [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
+                    [pickUp setAdjustsFontSizeToFitWidth:YES];
+                    [pickUp setTextAlignment:NSTextAlignmentLeft];
+                    [pickUp setTextColor:[UIColor whiteColor]];
+                    [self.taxiView addSubview:pickUp];
+                    UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 92), 72, 84, 20)];
+                    double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
+                    [price setText:[NSString stringWithFormat:@"%.2f€",est]];
+                    [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
+                    [price setAdjustsFontSizeToFitWidth:YES];
+                    [price setTextAlignment:NSTextAlignmentRight];
+                    [price setTextColor:[UIColor whiteColor]];
+                    [self.taxiView addSubview:price];
+                }
+                else if ([etas count] == 0) {
+                    UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
+                    [time setText:[NSString stringWithFormat:@"%d minutes",(int)floor(self.carTime/60.0)]];
+                    [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
+                    [time setAdjustsFontSizeToFitWidth:YES];
+                    [time setTextAlignment:NSTextAlignmentRight];
+                    [time setTextColor:[UIColor whiteColor]];
+                    [self.taxiView addSubview:time];
+                    UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72, ((w - 92) - 12), 20)];
+                    [pickUp setText:@"The Hailo server didn't return any taxi. Data is estimated."];
+                    [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
+                    [pickUp setAdjustsFontSizeToFitWidth:YES];
+                    [pickUp setTextAlignment:NSTextAlignmentLeft];
+                    [pickUp setTextColor:[UIColor whiteColor]];
+                    [self.taxiView addSubview:pickUp];
+                    UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 8 - 90), 72, 90, 20)];
+                    double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
+                    [price setText:[NSString stringWithFormat:@"%.2f€",est]];
+                    [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
+                    [price setAdjustsFontSizeToFitWidth:YES];
+                    [price setTextAlignment:NSTextAlignmentRight];
+                    [price setTextColor:[UIColor whiteColor]];
+                    [self.taxiView addSubview:price];
+                }
+                else {
+                    NSMutableDictionary *estTime = [etas firstObject];
+                    NSNumber *travelTime = [estTime objectForKey:@"eta"];
+                    UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
+                    [time setText:[NSString stringWithFormat:@"%d minutes",[travelTime intValue]]];
+                    [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
+                    [time setAdjustsFontSizeToFitWidth:YES];
+                    [time setTextAlignment:NSTextAlignmentRight];
+                    [time setTextColor:[UIColor whiteColor]];
+                    [self.taxiView addSubview:time];
+                    UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72, 154, 20)];
+                    [pickUp setText:[@"Taxi service: " stringByAppendingString:[estTime objectForKey:@"service_type"]]];
+                    [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
+                    [pickUp setAdjustsFontSizeToFitWidth:YES];
+                    [pickUp setTextAlignment:NSTextAlignmentLeft];
+                    [pickUp setTextColor:[UIColor whiteColor]];
+                    [self.taxiView addSubview:pickUp];
+                    UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 8 - 90), 72, 90, 20)];
+                    double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
+                    [price setText:[NSString stringWithFormat:@"%.2f€",est]];
+                    [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
+                    [price setAdjustsFontSizeToFitWidth:YES];
+                    [price setTextAlignment:NSTextAlignmentRight];
+                    [price setTextColor:[UIColor whiteColor]];
+                    [self.taxiView addSubview:price];
+                }
             });
-            
-            return self.taxiView;
-        }
-        else {
-            self.taxiView = [[UIView alloc] initWithFrame:CGRectMake(0, 304.5, w, 100)];
-            [self.taxiView setBackgroundColor:[UIColor colorWithRed:(16.0f/255.0f) green:(17.0f/255.0f) blue:(36.0f/255.0f) alpha:1.0f]];
-            UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(8, 8, 34, 34)];
-            [imV setImage:[UIImage imageNamed:@"logoUber"]];
-            [self.taxiView addSubview:imV];
-            UILabel *name = [[UILabel alloc] initWithFrame:CGRectMake(50, 8, 104, 34)];
-            [name setText:@"Uber"];
-            [name setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
-            [name setAdjustsFontSizeToFitWidth:YES];
-            [name setTextAlignment:NSTextAlignmentLeft];
-            [name setTextColor:[UIColor whiteColor]];
-            [self.taxiView addSubview:name];
-            
-            UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-            indicator.alpha = 1.0;
-            indicator.center = CGPointMake((w/2.0), 50);
-            indicator.hidesWhenStopped = YES;
-            [self.taxiView addSubview: indicator];
-            [indicator startAnimating];
-            
-            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-            dispatch_async(queue, ^{
-                [self.taxis loadUberTime];
-                [self.taxis loadUberPrice];
-                dispatch_sync(dispatch_get_main_queue(), ^{
-                    
-                    UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(uberTap:)];
-                    
-                    singleTap.numberOfTapsRequired = 1;
-                    singleTap.numberOfTouchesRequired = 1;
-                    [self.taxiView addGestureRecognizer: singleTap];
-                    
-                    [indicator stopAnimating];
-                    NSDictionary *error = [self.taxis.uberTimes objectForKey:@"error"];
-                    NSArray *times = [self.taxis.uberTimes objectForKey:@"times"];
-                    NSArray *prices = [self.taxis.uberPrices objectForKey:@"prices"];
-                    if (error != nil) {
-                        UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
-                        [time setText:[NSString stringWithFormat:@"%d minutes",(int)floor(self.carTime/60.0)]];
-                        [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
-                        [time setAdjustsFontSizeToFitWidth:YES];
-                        [time setTextAlignment:NSTextAlignmentRight];
-                        [time setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:time];
-                        UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72,((w - 92) - 12), 20)];
-                        [pickUp setText:@"The Uber server returned an error. Data is estimated."];
-                        [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [pickUp setAdjustsFontSizeToFitWidth:YES];
-                        [pickUp setTextAlignment:NSTextAlignmentLeft];
-                        [pickUp setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:pickUp];
-                        UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 92), 72, 84, 20)];
-                        double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
-                        [price setText:[NSString stringWithFormat:@"%.2f€",est]];
-                        [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [price setAdjustsFontSizeToFitWidth:YES];
-                        [price setTextAlignment:NSTextAlignmentRight];
-                        [price setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:price];
-                    }
-                    else if ([times count] == 0 || [prices count] == 0) {
-                        UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
-                        [time setText:[NSString stringWithFormat:@"%d minutes",(int)floor(self.carTime/60.0)]];
-                        [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
-                        [time setAdjustsFontSizeToFitWidth:YES];
-                        [time setTextAlignment:NSTextAlignmentRight];
-                        [time setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:time];
-                        UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72, ((w - 92) - 12), 20)];
-                        [pickUp setText:@"The Uber server didn't return any taxi. Data is estimated."];
-                        [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [pickUp setAdjustsFontSizeToFitWidth:YES];
-                        [pickUp setTextAlignment:NSTextAlignmentLeft];
-                        [pickUp setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:pickUp];
-                        UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 8 - 90), 72, 90, 20)];
-                        double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
-                        [price setText:[NSString stringWithFormat:@"%.2f€",est]];
-                        [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [price setAdjustsFontSizeToFitWidth:YES];
-                        [price setTextAlignment:NSTextAlignmentRight];
-                        [price setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:price];
-                    }
-                    else {
-                        NSDictionary *estTime = [times firstObject];
-                        NSDictionary *estPrice = [prices firstObject];
-                        NSNumber *tripTime = [estTime objectForKey:@"estimate"];
-                        UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
-                        [time setText:[NSString stringWithFormat:@"%d minutes",(int)floor([tripTime doubleValue]/60.0)]];
-                        [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
-                        [time setAdjustsFontSizeToFitWidth:YES];
-                        [time setTextAlignment:NSTextAlignmentRight];
-                        [time setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:time];
-                        UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72, 154, 20)];
-                        [pickUp setText:[@"Taxi service: " stringByAppendingString:[estPrice objectForKey:@"display_name"]]];
-                        [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [pickUp setAdjustsFontSizeToFitWidth:YES];
-                        [pickUp setTextAlignment:NSTextAlignmentLeft];
-                        [pickUp setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:pickUp];
-                        UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 8 - 90), 72, 90, 20)];
-                        [price setText:[estPrice objectForKey:@"estimate"]];
-                        [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
-                        [price setAdjustsFontSizeToFitWidth:YES];
-                        [price setTextAlignment:NSTextAlignmentRight];
-                        [price setTextColor:[UIColor whiteColor]];
-                        [self.taxiView addSubview:price];
-                    }
-                });
-            });
-            
-            return self.taxiView;
-        }
+        });
+        
+        return self.taxiView;
+
     }
     else {
         self.taxiView = [[UIView alloc] initWithFrame:CGRectMake(0, 304.5, w, 100)];
@@ -886,6 +820,13 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(UIView *)footerView
 {
     CGFloat w = self.view.frame.size.width;
@@ -898,16 +839,30 @@
     return v;
 }
 
+/*-(void)hailoTap:(UITapGestureRecognizer *)gr
+{
+    [self.taxis openHailo];
+}*/
+
+/**
+ *  <#Description#>
+ *
+ *  @param gr <#gr description#>
+ *
+ *  @since version 1.0
+ */
 -(void)hailoTap:(UITapGestureRecognizer *)gr
 {
     [self.taxis openHailo];
 }
 
--(void)uberTap:(UITapGestureRecognizer *)gr
-{
-    [self.taxis openUber];
-}
-
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 - (BOOL)connectedToInternet
 {
     Reachability *networkReachability = [Reachability reachabilityForInternetConnection];

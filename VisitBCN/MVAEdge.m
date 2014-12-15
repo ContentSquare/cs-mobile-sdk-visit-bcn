@@ -10,6 +10,30 @@
 
 @implementation MVAEdge
 
+/**
+ *  This function is overriden from NSObject. Returns a copy of self
+ *
+ *  @return A MVAEdge object witht he same data than the original object
+ *
+ *  @since version 1.0
+ */
+-(id)copy
+{
+    MVAEdge *edge = [[MVAEdge alloc] init];
+    edge.destini  = [self.destini copy];
+    edge.weight = self.weight;
+    edge.tripID = self.tripID;
+    edge.change = self.change;
+    return edge;
+}
+
+/**
+ *  Encodes the receiver using a given archiver. (required)
+ *
+ *  @param coder An archiver object
+ *
+ *  @since version 1.0
+ */
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
     [coder encodeObject:self.destini forKey:@"destini"];
@@ -18,6 +42,15 @@
     [coder encodeBool:self.change forKey:@"change"];
 }
 
+/**
+ *  Returns an object initialized from data in a given unarchiver. (required)
+ *
+ *  @param An unarchiver object
+ *
+ *  @return self, initialized using the data in decoder.
+ *
+ *  @since version 1.0
+ */
 - (id)initWithCoder:(NSCoder *)coder;
 {
     self = [[MVAEdge alloc] init];
@@ -30,14 +63,6 @@
     return self;
 }
 
--(id)copy
-{
-    MVAEdge *edge = [[MVAEdge alloc] init];
-    edge.destini  = [self.destini copy];
-    edge.weight = self.weight;
-    edge.tripID = self.tripID;
-    edge.change = self.change;
-    return edge;
-}
+
 
 @end

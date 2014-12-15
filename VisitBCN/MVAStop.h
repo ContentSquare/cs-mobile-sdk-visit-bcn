@@ -82,7 +82,16 @@
  *  @since version 1.0
  */
 -(void)insertElement:(NSString *)elem atIndex:(NSInteger)index isFGC:(BOOL)isFGC;
+
+/**
+ *  This function inserts the self MVAStop object in the bus or subway arrays
+ *
+ *  @param busStops    The array of bus stops
+ *  @param subwayStops The array of subway stops
+ *  @param isFGC       A boolean indicating if the data inside the MVAStop object is given by FGC or tMB
+ *
+ *  @since version 1.0
+ */
 -(void)insertInBus:(NSMutableArray *)busStops metro:(NSMutableArray *)subwayStops isFGC:(BOOL)isFGC;
--(BOOL)isEqualToStop:(MVAStop *)stop;
 
 @end

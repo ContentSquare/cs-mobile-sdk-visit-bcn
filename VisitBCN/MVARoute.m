@@ -35,6 +35,15 @@
     }
 }
 
+/**
+ *  Returna the UIColor for a color encoded in hexadecimal
+ *
+ *  @param hexString The hexadecimal string
+ *
+ *  @return The UIColor that's represented by the hexadecimal string
+ *
+ *  @since version 1.0
+ */
 -(UIColor *)colorFromHexString:(NSString *)hexString {
     unsigned rgbValue = 0;
     NSScanner *scanner = [NSScanner scannerWithString:hexString];
@@ -44,6 +53,13 @@
                             blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 
+/**
+ *  Encodes the receiver using a given archiver. (required)
+ *
+ *  @param coder An archiver object
+ *
+ *  @since version 1.0
+ */
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
     [coder encodeObject:self.routeID forKey:@"routeID"];
@@ -57,6 +73,15 @@
     [coder encodeObject:(NSData *)[NSKeyedArchiver archivedDataWithRootObject:self.trips] forKey:@"trips"];
 }
 
+/**
+ *  Returns an object initialized from data in a given unarchiver. (required)
+ *
+ *  @param An unarchiver object
+ *
+ *  @return self, initialized using the data in decoder.
+ *
+ *  @since version 1.0
+ */
 - (id)initWithCoder:(NSCoder *)coder;
 {
     self = [[MVARoute alloc] init];

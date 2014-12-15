@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
     CHCSVErrorCodeInvalidFormat = 1,
     
     /**
-     *  When using @c CHCSVParserOptionsUsesFirstLineAsKeys, all of the lines in the file
+     *  When using CHCSVParserOptionsUsesFirstLineAsKeys, all of the lines in the file
      *  must have the same number of fields. If they do not, parsing is aborted and this error is returned.
      */
     CHCSVErrorCodeIncorrectNumberOfFields,
@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
 /**
  *  Indicates that the parser has started parsing the stream
  *
- *  @param parser The @c CHCSVParser instance
+ *  @param parser The CHCSVParser instance
  */
 - (void)parserDidBeginDocument:(CHCSVParser *)parser;
 
@@ -66,14 +66,14 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
  *
  *  This method is not invoked if any error is encountered
  *
- *  @param parser The @c CHCSVParser instance
+ *  @param parser The CHCSVParser instance
  */
 - (void)parserDidEndDocument:(CHCSVParser *)parser;
 
 /**
  *  Indicates the parser has started parsing a line
  *
- *  @param parser       The @c CHCSVParser instance
+ *  @param parser       The CHCSVParser instance
  *  @param recordNumber The 1-based number of the record
  */
 - (void)parser:(CHCSVParser *)parser didBeginLine:(NSUInteger)recordNumber;
@@ -81,7 +81,7 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
 /**
  *  Indicates the parser has finished parsing a line
  *
- *  @param parser       The @c CHCSVParser instance
+ *  @param parser       The CHCSVParser instance
  *  @param recordNumber The 1-based number of the record
  */
 - (void)parser:(CHCSVParser *)parser didEndLine:(NSUInteger)recordNumber;
@@ -89,7 +89,7 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
 /**
  *  Indicates the parser has parsed a field on the current line
  *
- *  @param parser     The @c CHCSVParser instance
+ *  @param parser     The CHCSVParser instance
  *  @param field      The parsed string. If configured to do so, this string may be sanitized and trimmed
  *  @param fieldIndex The 0-based index of the field within the current record
  */
@@ -98,9 +98,9 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
 /**
  *  Indicates the parser has encountered a comment
  *
- *  This method is only invoked if @c CHCSVParser.recognizesComments is @c YES
+ *  This method is only invoked if CHCSVParser.recognizesComments is YES
  *
- *  @param parser  The @c CHCSVParser instance
+ *  @param parser  The CHCSVParser instance
  *  @param comment The parsed comment
  */
 - (void)parser:(CHCSVParser *)parser didReadComment:(NSString *)comment;
@@ -108,8 +108,8 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
 /**
  *  Indicates the parser encounter an error while parsing
  *
- *  @param parser The @c CHCSVParser instance
- *  @param error  The @c NSError instance
+ *  @param parser The CHCSVParser instance
+ *  @param error  The NSError instance
  */
 - (void)parser:(CHCSVParser *)parser didFailWithError:(NSError *)error;
 
@@ -118,42 +118,42 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
 @interface CHCSVParser : NSObject
 
 /**
- *  The delegate for the @c CHCSVParser
+ *  The delegate for the CHCSVParser
  */
 @property (assign) id<CHCSVParserDelegate> delegate;
 
 /**
- *  If @c YES, then the parser will removing surrounding double quotes and will unescape characters.
- *  The default value is @c NO.
+ *  If YES, then the parser will removing surrounding double quotes and will unescape characters.
+ *  The default value is NO.
  *  @warning Do not mutate this property after parsing has begun
  */
 @property (nonatomic, assign) BOOL sanitizesFields;
 
 /**
- *  If @c YES, then the parser will trim whitespace around fields. If @c sanitizesFields is also @c YES,
- *  then the sanitized field is also trimmed. The default value is @c NO.
+ *  If YES, then the parser will trim whitespace around fields. If sanitizesFields is also YES,
+ *  then the sanitized field is also trimmed. The default value is NO.
  *  @warning Do not mutate this property after parsing has begun
  */
 @property (nonatomic, assign) BOOL trimsWhitespace;
 
 /**
- *  If @c YES, then the parser will allow special characters (delimiter, newline, quote, etc)
- *  to be escaped within a field using a backslash character. The default value is @c NO.
+ *  If YES, then the parser will allow special characters (delimiter, newline, quote, etc)
+ *  to be escaped within a field using a backslash character. The default value is NO.
  *  @warning Do not mutate this property after parsing has begun
  */
 @property (nonatomic, assign) BOOL recognizesBackslashesAsEscapes;
 
 /**
- *  If @c YES, then the parser will interpret any field that begins with an octothorpe as a comment.
- *  Comments are terminated using an unescaped newline character. The default value is @c NO.
+ *  If YES, then the parser will interpret any field that begins with an octothorpe as a comment.
+ *  Comments are terminated using an unescaped newline character. The default value is NO.
  *  @warning Do not mutate this property after parsing has begun
  */
 @property (nonatomic, assign) BOOL recognizesComments;
 
 /**
- *  If @c YES, then quoted fields may begin with an equal sign.
+ *  If YES, then quoted fields may begin with an equal sign.
  *  Some programs produce fields with a leading equal sign to indicate that the contents must be represented exactly.
- *  The default value is @c NO.
+ *  The default value is NO.
  *  @warning Do not mutate this property after parsing has begun
  */
 @property (nonatomic, assign) BOOL recognizesLeadingEqualSign;
@@ -168,11 +168,11 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
 /**
  *  The designated initializer
  *
- *  @param stream    The @c NSInputStream from which bytes will be read and parsed. Must not be @c nil
- *  @param encoding  A pointer to an @c NSStringEncoding. If non-nil, this will be filled in with the encoding used to parse the stream
- *  @param delimiter The delimiter character to be used when parsing the stream. Must not be @c nil, and may not be the double quote character
+ *  @param stream    The NSInputStream from which bytes will be read and parsed. Must not be nil
+ *  @param encoding  A pointer to an NSStringEncoding. If non-nil, this will be filled in with the encoding used to parse the stream
+ *  @param delimiter The delimiter character to be used when parsing the stream. Must not be nil, and may not be the double quote character
  *
- *  @return a @c CHCSVParser instance, or @c nil if initialization failed
+ *  @return a CHCSVParser instance, or nil if initialization failed
  */
 - (instancetype)initWithInputStream:(NSInputStream *)stream usedEncoding:(inout NSStringEncoding *)encoding delimiter:(unichar)delimiter NS_DESIGNATED_INITIALIZER;
 
@@ -181,9 +181,9 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
  *
  *  Internally it calls the designated initializer and provides a stream of the UTF8 representation of the string as well as the comma delimiter.
  *
- *  @param csv The @c NSString to parse. Must not be @c nil
+ *  @param csv The NSString to parse. Must not be nil
  *
- *  @return a @c CHCSVParser instance, or @c nil if initialization failed
+ *  @return a CHCSVParser instance, or nil if initialization failed
  */
 - (instancetype)initWithCSVString:(NSString *)csv;
 
@@ -192,10 +192,10 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
  *
  *  Internally it calls the designated initializer and provides a stream of the UTF8 representation of the string as well as the provided delimiter.
  *
- *  @param string The @c NSString to parse. Must not be @c nil
- *  @param delimiter The delimiter character to be used when parsing the string. Must not be @c nil, and may not be the double quote character
+ *  @param string The NSString to parse. Must not be nil
+ *  @param delimiter The delimiter character to be used when parsing the string. Must not be nil, and may not be the double quote character
  *
- *  @return a @c CHCSVParser instance, or @c nil if initialization failed
+ *  @return a CHCSVParser instance, or nil if initialization failed
  */
 - (instancetype)initWithDelimitedString:(NSString *)string delimiter:(unichar)delimiter;
 
@@ -205,9 +205,9 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
  *  Internally it calls the designated initializer and provides a stream to the URL as well as the comma delimiter.
  *  The parser attempts to infer the encoding from the stream.
  *
- *  @param csvURL The @c NSURL to the CSV file
+ *  @param csvURL The NSURL to the CSV file
  *
- *  @return a @c CHCSVParser instance, or @c nil if initialization failed
+ *  @return a CHCSVParser instance, or nil if initialization failed
  */
 - (instancetype)initWithContentsOfCSVURL:(NSURL *)csvURL;
 
@@ -217,10 +217,10 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
  *  Internally it calls the designated initializer and provides a stream to the URL as well as the provided delimiter.
  *  The parser attempts to infer the encoding from the stream.
  *
- *  @param URL       The @c NSURL to the delimited file
- *  @param delimiter The delimiter character to be used when parsing the string. Must not be @c nil, and may not be the double quote character
+ *  @param URL       The NSURL to the delimited file
+ *  @param delimiter The delimiter character to be used when parsing the string. Must not be nil, and may not be the double quote character
  *
- *  @return a @c CHCSVParser instance, or @c nil if initialization failed
+ *  @return a CHCSVParser instance, or nil if initialization failed
  */
 - (instancetype)initWithContentsOfDelimitedURL:(NSURL *)URL delimiter:(unichar)delimiter;
 
@@ -243,23 +243,23 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
 @interface CHCSVWriter : NSObject
 
 /**
- *  Initializes a @c CHCSVWriter to write to the provided file path. Assumes @c NSUTF8Encoding and the comma delimiter
+ *  Initializes a CHCSVWriter to write to the provided file path. Assumes NSUTF8Encoding and the comma delimiter
  *
  *  @param path The path to the CSV file
  *
- *  @return a @c CHCSVWriter instance, or @c nil if initialization failed
+ *  @return a CHCSVWriter instance, or nil if initialization failed
  */
 - (instancetype)initForWritingToCSVFile:(NSString *)path;
 
 /**
  *  The designated initializer
  *
- *  @param stream    The @c NSOutputStream to which bytes will be written. 
- *  If you wish to append to an existing file, you can provide an @c NSOutputStream that is set to append to the target file
+ *  @param stream    The NSOutputStream to which bytes will be written.
+ *  If you wish to append to an existing file, you can provide an NSOutputStream that is set to append to the target file
  *  @param encoding  The byte encoding to use when writing strings to the stream
  *  @param delimiter The field delimiter to use during writing
  *
- *  @return a @c CHCSVWriter instance, or @c nil if initialization failed
+ *  @return a CHCSVWriter instance, or nil if initialization failed
  */
 - (instancetype)initWithOutputStream:(NSOutputStream *)stream encoding:(NSStringEncoding)encoding delimiter:(unichar)delimiter NS_DESIGNATED_INITIALIZER;
 
@@ -269,7 +269,7 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
  *  If necessary, this will also write a delimiter to the stream as well. This method takes care of all escaping.
  *
  *  @param field The object to be written to the stream
- *  If you provide an object that is not an @c NSString, its @c description will be written to the stream.
+ *  If you provide an object that is not an NSString, its description will be written to the stream.
  */
 - (void)writeField:(id)field;
 
@@ -282,7 +282,7 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
  *  Write a series of fields to the stream as a new line
  *
  *  If another line is already in progress, it is terminated and a new line is begun.
- *  This method iteratively invokes @c writeField:, followed by @c finishLine.
+ *  This method iteratively invokes writeField:, followed by finishLine.
  *
  *  @param fields A sequence of fields to be written
  */
@@ -293,7 +293,7 @@ typedef NS_ENUM(NSInteger, CHCSVErrorCode) {
  *
  *  If another line is already in progress, it is terminated and a new line is begun.
  *  The new line will be started with the octothorpe (#) character, followed by the comment.
- *  The comment is terminated using @c finishLine
+ *  The comment is terminated using finishLine
  *
  *  @param comment The comment to be written to the stream
  */
@@ -334,7 +334,7 @@ typedef NS_OPTIONS(NSUInteger, CHCSVParserOptions) {
     CHCSVParserOptionsTrimsWhitespace = 1 << 3,
     /**
      *  When you specify this option, instead of gettin an Array of Arrays of Strings,
-     *  you get an Array of @c CHCSVOrderedDictionary instances.
+     *  you get an Array of CHCSVOrderedDictionary instances.
      *  If the file only contains a single line, then an empty array is returned.
      */
     CHCSVParserOptionsUsesFirstLineAsKeys = 1 << 4,
@@ -350,7 +350,7 @@ typedef NS_OPTIONS(NSUInteger, CHCSVParserOptions) {
 };
 
 /**
- *  An @c NSDictionary subclass that maintains a strong ordering of its key-value pairs
+ *  An NSDictionary subclass that maintains a strong ordering of its key-value pairs
  */
 @interface CHCSVOrderedDictionary : NSDictionary
 
@@ -364,58 +364,58 @@ typedef NS_OPTIONS(NSUInteger, CHCSVParserOptions) {
 /**
  *  A convenience constructor to parse a CSV file
  *
- *  @param fileURL The @c NSURL to the CSV file
+ *  @param fileURL The NSURL to the CSV file
  *
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise
  */
 + (instancetype)arrayWithContentsOfCSVURL:(NSURL *)fileURL;
 
 /**
  *  A convenience constructor to parse a CSV file
  *
- *  @param fileURL The @c NSURL to the CSV file
- *  @param options A bitwise-OR of @c CHCSVParserOptions to control how parsing should occur
+ *  @param fileURL The NSURL to the CSV file
+ *  @param options A bitwise-OR of CHCSVParserOptions to control how parsing should occur
  *
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise
  */
 + (instancetype)arrayWithContentsOfCSVURL:(NSURL *)fileURL options:(CHCSVParserOptions)options;
 
 /**
  *  A convenience constructor to parse a delimited file
  *
- *  @param fileURL   The @c NSURL to the delimited file
+ *  @param fileURL   The NSURL to the delimited file
  *  @param delimiter The delimiter used in the file
  *
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise
  */
 + (instancetype)arrayWithContentsOfDelimitedURL:(NSURL *)fileURL delimiter:(unichar)delimiter;
 
 /**
  *  A convenience constructor to parse a delimited file
  *
- *  @param fileURL   The @c NSURL to the delimited file
- *  @param options   A bitwise-OR of @c CHCSVParserOptions to control how parsing should occur
+ *  @param fileURL   The NSURL to the delimited file
+ *  @param options   A bitwise-OR of CHCSVParserOptions to control how parsing should occur
  *  @param delimiter The delimiter used in the file
  *
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise
  */
 + (instancetype)arrayWithContentsOfDelimitedURL:(NSURL *)fileURL options:(CHCSVParserOptions)options delimiter:(unichar)delimiter;
 
 /**
  *  A convenience constructor to parse a delimited file
  *
- *  @param fileURL   The @c NSURL to the delimited file
- *  @param options   A bitwise-OR of @c CHCSVParserOptions to control how parsing should occur
+ *  @param fileURL   The NSURL to the delimited file
+ *  @param options   A bitwise-OR of CHCSVParserOptions to control how parsing should occur
  *  @param delimiter The delimiter used in the file
- *  @param error     A pointer to an @c NSError*, which will be filled in if parsing fails
+ *  @param error     A pointer to an NSError*, which will be filled in if parsing fails
  *
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise.
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise.
  */
 + (instancetype)arrayWithContentsOfDelimitedURL:(NSURL *)fileURL options:(CHCSVParserOptions)options delimiter:(unichar)delimiter error:(NSError *__autoreleasing *)error;
 
 /**
- *  If the receiver is an @c NSArray of @c NSArrays of objects, this will turn it into a comma-delimited string
- *  Returns the string of CSV, if writing succeeds; @c nil otherwise.
+ *  If the receiver is an NSArray of NSArrays of objects, this will turn it into a comma-delimited string
+ *  Returns the string of CSV, if writing succeeds; nil otherwise.
  */
 - (NSString *)CSVString;
 
@@ -425,16 +425,16 @@ typedef NS_OPTIONS(NSUInteger, CHCSVParserOptions) {
 
 /**
  *  Parses the receiver as a comma-delimited string
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise.
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise.
  */
 @property (nonatomic, readonly) NSArray *CSVComponents;
 
 /**
  *  Parses the receiver as a comma-delimited string
  *
- *  @param options A bitwise-OR of @c CHCSVParserOptions to control how parsing should occur
+ *  @param options A bitwise-OR of CHCSVParserOptions to control how parsing should occur
  *
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise.
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise.
  */
 - (NSArray *)CSVComponentsWithOptions:(CHCSVParserOptions)options;
 
@@ -443,7 +443,7 @@ typedef NS_OPTIONS(NSUInteger, CHCSVParserOptions) {
  *
  *  @param delimiter The delimiter used in the string
  *
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise.
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise.
  */
 - (NSArray *)componentsSeparatedByDelimiter:(unichar)delimiter;
 
@@ -451,9 +451,9 @@ typedef NS_OPTIONS(NSUInteger, CHCSVParserOptions) {
  *  Parses the receiver as a delimited string
  *
  *  @param delimiter The delimiter used in the string
- *  @param options   A bitwise-OR of @c CHCSVParserOptions to control how parsing should occur
+ *  @param options   A bitwise-OR of CHCSVParserOptions to control how parsing should occur
  *
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise.
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise.
  */
 - (NSArray *)componentsSeparatedByDelimiter:(unichar)delimiter options:(CHCSVParserOptions)options;
 
@@ -461,10 +461,10 @@ typedef NS_OPTIONS(NSUInteger, CHCSVParserOptions) {
  *  Parses the receiver as a delimited string
  *
  *  @param delimiter The delimiter used in the string
- *  @param options   A bitwise-OR of @c CHCSVParserOptions to control how parsing should occur
- *  @param error     A pointer to an @c NSError*, which will be filled in if parsing fails
+ *  @param options   A bitwise-OR of CHCSVParserOptions to control how parsing should occur
+ *  @param error     A pointer to an NSError*, which will be filled in if parsing fails
  *
- *  @return An @c NSArray of @c NSArrays of @c NSStrings, if parsing succeeds; @c nil otherwise.
+ *  @return An NSArray of NSArrays of NSStrings, if parsing succeeds; nil otherwise.
  */
 - (NSArray *)componentsSeparatedByDelimiter:(unichar)delimiter options:(CHCSVParserOptions)options error:(NSError *__autoreleasing *)error;
 

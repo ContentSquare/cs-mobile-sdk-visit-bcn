@@ -15,10 +15,8 @@
 @property MVATrip *trip;
 @property MVADate *date;
 @property MVATime *time;
-
 @property NSString *filePathFGC;
 @property NSString *outputPathFGC;
-
 @property NSString *docName;
 @property int line;
 
@@ -29,6 +27,13 @@
 
 @implementation MVADataFGC
 
+/**
+ *  This function is overriden from NSObject. Returns self initialized
+ *
+ *  @return self, initialized object
+ *
+ *  @since version 1.0
+ */
 -(id)init
 {
     self.stops = [[NSMutableArray alloc] init];
@@ -45,20 +50,28 @@
 
 -(void)parseDataBase
 {
-    /* http://www.fgc.cat/google/google_transit.zip */
     NSString *filePathFGC = [[NSBundle mainBundle] pathForResource:@"google_transit" ofType:@"zip"];
     NSData *dataFGC = [NSData dataWithContentsOfFile:filePathFGC];
     if (dataFGC) {
         NSString *fileNameFGC = @"google_transit.zip";
         self.filePathFGC = [NSTemporaryDirectory() stringByAppendingPathComponent:fileNameFGC];
         [dataFGC writeToFile:self.filePathFGC atomically:YES];
-        [self unZip:self.filePathFGC at:@"/FGC_GTFS_ZIP" inFGC:YES];
+        [self unZip:self.filePathFGC at:@"/FGC_GTFS_ZIP"];
         self.outputPathFGC = [self.outputPathFGC stringByAppendingString:@"/FGC"];
         [self parseGTFSAtPath:self.outputPathFGC];
     }
 }
 
--(void)unZip:(NSString *)filePath at:(NSString *)folder inFGC:(BOOL)isFGC
+/**
+ *  Function that extracts the ziped folder
+ *
+ *  @param filePath The path of the zip file
+ *  @param folder   The name of the folder where the extracted data should be stored
+ *  @param isFGC    A boolean indicating if the data is from TMB or FGC
+ *
+ *  @since version 1.0
+ */
+-(void)unZip:(NSString *)filePath at:(NSString *)folder
 {
     NSArray  *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -66,6 +79,13 @@
     [SSZipArchive unzipFileAtPath:filePath toDestination:self.outputPathFGC delegate:self];
 }
 
+/**
+ *  This function parses the files at a given path
+ *
+ *  @param filesPath The path of the files that need to be parsed
+ *
+ *  @since version 1.0
+ */
 -(void)parseGTFSAtPath:(NSString *)filesPath
 {
     NSError *error = nil;
@@ -154,11 +174,26 @@
 
 #pragma mark - parser methods
 
+/**
+ *  CHCSVParserDelegate method. Indicates when the parser has begun a new document
+ *
+ *  @param parser A CHCSVParser object
+ *
+ *  @since version 1.0
+ */
 - (void)parserDidBeginDocument:(CHCSVParser *)parser
 {
     self.line = 0;
 }
 
+/**
+ *  CHCSVParserDelegate method. Indicates when the parser has begun a new line of the document
+ *
+ *  @param parser       A CHCSVParser object
+ *  @param recordNumber The number of the line being parsed
+ *
+ *  @since version 1.0
+ */
 - (void)parser:(CHCSVParser *)parser didBeginLine:(NSUInteger)recordNumber
 {
     if ([self.docName isEqualToString:@"stops.txt"]) self.parada = [[MVAStop alloc] init];
@@ -168,6 +203,15 @@
     else if ([self.docName isEqualToString:@"stop_times.txt"]) self.time = [[MVATime alloc] init];
 }
 
+/**
+ *  CHCSVParserDelegate method. Indicates when the parser has read a new field of the current line
+ *
+ *  @param parser     A CHCSVParser object
+ *  @param field      The field that has been read
+ *  @param fieldIndex The index of this field in the line
+ *
+ *  @since version 1.0
+ */
 - (void)parser:(CHCSVParser *)parser didReadField:(NSString *)field atIndex:(NSInteger)fieldIndex
 {
     if ([self.docName isEqualToString:@"stops.txt"]) {
@@ -187,7 +231,16 @@
     }
 }
 
-- (void)parser:(CHCSVParser *)parser didEndLine:(NSUInteger)recordNumber {
+/**
+ *  CHCSVParserDelegate method. Indicates when the aprser has finished reading a line
+ *
+ *  @param parser       A CHCSVParser object
+ *  @param recordNumber The number of the line dad has been parsed
+ *
+ *  @since version 1.0
+ */
+- (void)parser:(CHCSVParser *)parser didEndLine:(NSUInteger)recordNumber
+{
     if ([self.docName isEqualToString:@"stops.txt"]) {
         if (self.line > 0) {
             [self.stopsHash setObject:[NSNumber numberWithInt:(int)[self.stops count]]
@@ -251,11 +304,26 @@
     ++self.line;
 }
 
+/**
+ *  CHCSVParserDelegate method. Indicates when the parser has finished parsing a document
+ *
+ *  @param parser A CHCSVParser object
+ *
+ *  @since version 1.0
+ */
 - (void)parserDidEndDocument:(CHCSVParser *)parser
 {
     // AÑADIR OBJETO A RECIPIENTE
 }
 
+/**
+ *  CHCSVParserDelegate method. Indicates that an error ocurred while parsing the document
+ *
+ *  @param parser A CHCSVParser object
+ *  @param error  The NSError indicating why the parsing ahs failed
+ *
+ *  @since version 1.0
+ */
 - (void)parser:(CHCSVParser *)parser didFailWithError:(NSError *)error
 {
     NSLog(@"ERROR: %@", [error localizedDescription]);
@@ -263,7 +331,17 @@
 
 #pragma mark - Consulting functions
 
--(long)dayOfWeek:(NSDate *)anyDate{
+/**
+ *  Returns the day of the week for a given date
+ *
+ *  @param anyDate A NSDate object
+ *
+ *  @return The day of the week in European mode
+ *
+ *  @since version 1.0
+ */
+-(long)dayOfWeek:(NSDate *)anyDate
+{
     NSTimeInterval interval = [anyDate timeIntervalSinceReferenceDate]/(60.0*60.0*24.0);
     long dayix=((long)interval) % 7;
     return dayix;
@@ -271,6 +349,13 @@
 
 #pragma mark - Saving/Loading functions
 
+/**
+ *  Encodes the receiver using a given archiver. (required)
+ *
+ *  @param coder An archiver object
+ *
+ *  @since version 1.0
+ */
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
     [coder encodeObject:(NSData *)[NSKeyedArchiver archivedDataWithRootObject:self.stops] forKey:@"subwayStops"];
@@ -280,9 +365,17 @@
     [coder encodeObject:(NSData *)[NSKeyedArchiver archivedDataWithRootObject:self.trips] forKey:@"trips"];
     [coder encodeObject:(NSData *)[NSKeyedArchiver archivedDataWithRootObject:self.tripsHash] forKey:@"tripsHash"];
     [coder encodeObject:(NSData *)[NSKeyedArchiver archivedDataWithRootObject:self.dates] forKey:@"dates"];
-    
 }
 
+/**
+ *  Returns an object initialized from data in a given unarchiver. (required)
+ *
+ *  @param An unarchiver object
+ *
+ *  @return self, initialized using the data in decoder.
+ *
+ *  @since version 1.0
+ */
 - (id)initWithCoder:(NSCoder *)coder;
 {
     self = [[MVADataFGC alloc] init];

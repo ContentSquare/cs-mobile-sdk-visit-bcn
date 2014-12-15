@@ -140,14 +140,15 @@
 		345009CD1A3291EB003A8199 /* current@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 345009CA1A3291EB003A8199 /* current@3x.png */; };
 		345009CE1A3291EB003A8199 /* current@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 345009CB1A3291EB003A8199 /* current@2x.png */; };
 		345009CF1A3291EB003A8199 /* current.png in Resources */ = {isa = PBXBuildFile; fileRef = 345009CC1A3291EB003A8199 /* current.png */; };
-		34501C511A31FB4200CE2420 /* MVAPathTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34501C501A31FB4200CE2420 /* MVAPathTableViewCell.m */; };
-		34501C541A31FE9D00CE2420 /* MVATaxiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34501C531A31FE9D00CE2420 /* MVATaxiTableViewCell.m */; };
 		34501C5A1A32329A00CE2420 /* logoUber.png in Resources */ = {isa = PBXBuildFile; fileRef = 34501C561A32329A00CE2420 /* logoUber.png */; };
 		34501C5B1A32329A00CE2420 /* logoUber@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34501C571A32329A00CE2420 /* logoUber@2x.png */; };
 		34501C5C1A32329A00CE2420 /* logoUber@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34501C581A32329A00CE2420 /* logoUber@3x.png */; };
 		34501C601A32436D00CE2420 /* mapHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = 34501C5D1A32436D00CE2420 /* mapHeader.png */; };
 		34501C611A32436D00CE2420 /* mapHeader@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34501C5E1A32436D00CE2420 /* mapHeader@3x.png */; };
 		34501C621A32436D00CE2420 /* mapHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34501C5F1A32436D00CE2420 /* mapHeader@2x.png */; };
+		3450552B1A3A19C200FC7647 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 345055281A3A19C200FC7647 /* error@2x.png */; };
+		3450552C1A3A19C200FC7647 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 345055291A3A19C200FC7647 /* error.png */; };
+		3450552D1A3A19C200FC7647 /* error3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3450552A1A3A19C200FC7647 /* error3x.png */; };
 		3450757C1A1D82FE00BB59DC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450757B1A1D82FE00BB59DC /* Reachability.m */; };
 		34545E1A1A2BE76800E9C943 /* warning-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34545E171A2BE76800E9C943 /* warning-white@2x.png */; };
 		34545E1B1A2BE76800E9C943 /* warning-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 34545E181A2BE76800E9C943 /* warning-white.png */; };
@@ -510,16 +511,15 @@
 		345009CA1A3291EB003A8199 /* current@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current@3x.png"; sourceTree = "<group>"; };
 		345009CB1A3291EB003A8199 /* current@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current@2x.png"; sourceTree = "<group>"; };
 		345009CC1A3291EB003A8199 /* current.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = current.png; sourceTree = "<group>"; };
-		34501C4F1A31FB4200CE2420 /* MVAPathTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAPathTableViewCell.h; sourceTree = "<group>"; };
-		34501C501A31FB4200CE2420 /* MVAPathTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAPathTableViewCell.m; sourceTree = "<group>"; };
-		34501C521A31FE9D00CE2420 /* MVATaxiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVATaxiTableViewCell.h; sourceTree = "<group>"; };
-		34501C531A31FE9D00CE2420 /* MVATaxiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVATaxiTableViewCell.m; sourceTree = "<group>"; };
 		34501C561A32329A00CE2420 /* logoUber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoUber.png; sourceTree = "<group>"; };
 		34501C571A32329A00CE2420 /* logoUber@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoUber@2x.png"; sourceTree = "<group>"; };
 		34501C581A32329A00CE2420 /* logoUber@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoUber@3x.png"; sourceTree = "<group>"; };
 		34501C5D1A32436D00CE2420 /* mapHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapHeader.png; sourceTree = "<group>"; };
 		34501C5E1A32436D00CE2420 /* mapHeader@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapHeader@3x.png"; sourceTree = "<group>"; };
 		34501C5F1A32436D00CE2420 /* mapHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapHeader@2x.png"; sourceTree = "<group>"; };
+		345055281A3A19C200FC7647 /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
+		345055291A3A19C200FC7647 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		3450552A1A3A19C200FC7647 /* error3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error3x.png; sourceTree = "<group>"; };
 		3450757A1A1D82FE00BB59DC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		3450757B1A1D82FE00BB59DC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		34545E171A2BE76800E9C943 /* warning-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-white@2x.png"; sourceTree = "<group>"; };
@@ -809,6 +809,9 @@
 		3406FE011A27C885004C5D46 /* Logos */ = {
 			isa = PBXGroup;
 			children = (
+				345055281A3A19C200FC7647 /* error@2x.png */,
+				345055291A3A19C200FC7647 /* error.png */,
+				3450552A1A3A19C200FC7647 /* error3x.png */,
 				34831F6D1A339588005F1787 /* bus-red.png */,
 				34831F6E1A339588005F1787 /* bus-red@2x.png */,
 				34831F6F1A339588005F1787 /* bus-red@3x.png */,
@@ -1426,10 +1429,6 @@
 				34A08B731A27AD10009DBACC /* MVAPunIntViewController.m */,
 				345C94B01A2E13F000F8671C /* MVADetailsViewController.h */,
 				345C94B11A2E13F000F8671C /* MVADetailsViewController.m */,
-				34501C521A31FE9D00CE2420 /* MVATaxiTableViewCell.h */,
-				34501C531A31FE9D00CE2420 /* MVATaxiTableViewCell.m */,
-				34501C4F1A31FB4200CE2420 /* MVAPathTableViewCell.h */,
-				34501C501A31FB4200CE2420 /* MVAPathTableViewCell.m */,
 				34B88F8B1A268EA7000E75A8 /* MVAConfigurationTableViewController.h */,
 				34B88F8C1A268EA7000E75A8 /* MVAConfigurationTableViewController.m */,
 				3446B51F1A2FA7E50009A919 /* MVACustomLocationsTableViewController.h */,
@@ -1611,12 +1610,12 @@
 		34AB7A6E1A1275BF00D74CBE /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				34E1F0EF1A213DC4003944F8 /* MVAAlgorithms.h */,
+				34E1F0F01A213DC4003944F8 /* MVAAlgorithms.m */,
 				34E0FCA319B7FA9D001EAFAA /* MVAGraphs.h */,
 				34E0FCA419B7FA9D001EAFAA /* MVAGraphs.m */,
 				34E0FCA619B7FAAB001EAFAA /* MVAGraph.h */,
 				34E0FCA719B7FAAB001EAFAA /* MVAGraph.m */,
-				34E1F0EF1A213DC4003944F8 /* MVAAlgorithms.h */,
-				34E1F0F01A213DC4003944F8 /* MVAAlgorithms.m */,
 				347FEA5D1A16A2A90091EBE0 /* MVABusGraph.h */,
 				347FEA5E1A16A2A90091EBE0 /* MVABusGraph.m */,
 				347FEA601A16A3340091EBE0 /* MVASubwayGraph.h */,
@@ -1799,6 +1798,7 @@
 				344ACDD71A2559040065E4E8 /* Mapbox.bundle in Resources */,
 				34545E341A2BEB9200E9C943 /* walking-white.png in Resources */,
 				34545E331A2BEB9200E9C943 /* walking-white@3x.png in Resources */,
+				3450552B1A3A19C200FC7647 /* error@2x.png in Resources */,
 				34E784B119F846FE005AEAE7 /* images.xcassets in Resources */,
 				34AE67751A2B3FB90076E5D5 /* monuColonBig.jpg in Resources */,
 				345009C31A3288E1003A8199 /* museum.png in Resources */,
@@ -1864,11 +1864,13 @@
 				34AE67AB1A2B4B660076E5D5 /* parcJoanMiroBig.jpg in Resources */,
 				344EE6D91A2B300800CB1B96 /* basilicaSantaMariaSmall.jpeg in Resources */,
 				34AE678B1A2B43E60076E5D5 /* catedralBig.jpg in Resources */,
+				3450552D1A3A19C200FC7647 /* error3x.png in Resources */,
 				344EE7251A2B350200CB1B96 /* casaAmatBig.jpg in Resources */,
 				344ACD5A1A2557360065E4E8 /* visitBCN.mbtiles in Resources */,
 				34E0FC8919B7C85F001EAFAA /* tmb@2x.png in Resources */,
 				349000BF19B6431000BA3DCE /* InfoPlist.strings in Resources */,
 				344EE7151A2B30E400CB1B96 /* palauMusicaSmall.jpeg in Resources */,
+				3450552C1A3A19C200FC7647 /* error.png in Resources */,
 				342E24BE1A2B752E00761796 /* dijkstra@2x.png in Resources */,
 				347863031A336FED009594D4 /* change-directions@2x.png in Resources */,
 				344EE6CF1A2B2FD800CB1B96 /* museoMarSmall.jpeg in Resources */,
@@ -2023,7 +2025,6 @@
 				34E0FC9F19B7F30E001EAFAA /* MVATime.m in Sources */,
 				344028271A14366700EE6EC0 /* MVAFrequencies.m in Sources */,
 				344A8F271A2A722D00C51061 /* ALRadialButton.m in Sources */,
-				34501C511A31FB4200CE2420 /* MVAPathTableViewCell.m in Sources */,
 				34A08B6E1A27AAAC009DBACC /* MVAPuntsIntsTableViewController.m in Sources */,
 				349000CB19B6431000BA3DCE /* MVAMapaViewController.m in Sources */,
 				34E0FCA819B7FAAB001EAFAA /* MVAGraph.m in Sources */,
@@ -2049,7 +2050,6 @@
 				34B88F931A269216000E75A8 /* SevenSwitch.m in Sources */,
 				3450757C1A1D82FE00BB59DC /* Reachability.m in Sources */,
 				3423AE0F1A157DAA00F6F86C /* MVADataBus.m in Sources */,
-				34501C541A31FE9D00CE2420 /* MVATaxiTableViewCell.m in Sources */,
 				348FC17219F337F2007FD4D6 /* MVAEdge.m in Sources */,
 				34B88F8D1A268EA7000E75A8 /* MVAConfigurationTableViewController.m in Sources */,
 				349000C519B6431000BA3DCE /* MVAAppDelegate.m in Sources */,

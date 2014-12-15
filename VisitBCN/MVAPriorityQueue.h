@@ -44,7 +44,7 @@
  *  @see MVAPair class
  *  @since version 1.0
  */
--(void)insertar:(MVAPair *)pair;
+-(void)addObject:(MVAPair *)pair;
 
 /**
  *  Function that returns if the priority que is empty
@@ -71,39 +71,5 @@
  *  @since version 1.0
  */
 -(void)removeFirst;
-
-/**
- *  Function that returns the position of an object inside the priority queue. The objects are analised by the second element
- *
- *  @param identificador The identifier of the object that wants to be found
- *
- *  @return The position of the desired object. If the object doesn't exist in the priority queue the function returns -1
- *
- *  @since version 1.0
- */
--(int)posOfElement:(int)identificador;
-
-/**
- *  This functions returns the MVAPAir object stored at the given position
- *
- *  @param index The position of the object that needs to be retreived
- *
- *  @return The object that is stored in the position 'index' inside the priority queue
- *
- *  @see MVAPair class
- *  @since version 1.0
- */
--(MVAPair *)objectAtIndex:(int)index;
-
-/**
- *  This functions sets the MVAPair object stored at the given position
- *
- *  @param p     The MVAPair object that needs to be stored
- *  @param index The position where the object needs to be stored
- *
- *  @see MVAPair class
- *  @since version 1.0
- */
--(void)setObject:(MVAPair *)p atIndex:(int)index;
 
 @end

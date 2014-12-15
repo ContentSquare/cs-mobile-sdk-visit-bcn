@@ -21,6 +21,16 @@
 
 @implementation MVAAppDelegate
 
+/**
+ *  <#Description#>
+ *
+ *  @param application   <#application description#>
+ *  @param launchOptions <#launchOptions description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
@@ -61,6 +71,14 @@
     return YES;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param application <#application description#>
+ *  @param deviceToken <#deviceToken description#>
+ *
+ *  @since version 1.0
+ */
 - (void)application:(UIApplication *)application
 didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
@@ -70,38 +88,86 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     [currentInstallation saveInBackground];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param application <#application description#>
+ *  @param userInfo    <#userInfo description#>
+ *
+ *  @since version 1.0
+ */
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
     [PFPush handlePush:userInfo];
 }
-							
+
+/**
+ *  <#Description#>
+ *
+ *  @param application <#application description#>
+ *
+ *  @since version 1.0
+ */
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param application <#application description#>
+ *
+ *  @since version 1.0
+ */
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param application <#application description#>
+ *
+ *  @since version 1.0
+ */
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param application <#application description#>
+ *
+ *  @since version 1.0
+ */
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param application <#application description#>
+ *
+ *  @since version 1.0
+ */
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)loadAllTheInformation
 {
     /* BUSES */
@@ -120,6 +186,11 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     [self loadPI];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)loadPI
 {
     NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
@@ -172,6 +243,11 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     NSLog(@"Load PIs time: %.16f",dif);
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)loadTMB
 {
     NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
@@ -187,6 +263,11 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     NSLog(@"Load TMB time: %.16f",dif);
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)loadFGC
 {
     NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
@@ -203,6 +284,11 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     NSLog(@"Load FGC time: %.16f",dif);
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)loadBuses
 {
     NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
@@ -219,7 +305,13 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     NSLog(@"Load buses time: %.16f",dif);
 }
 
-
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(BOOL)hasGPS
 {
     CTTelephonyNetworkInfo *myNetworkInfo = [[CTTelephonyNetworkInfo alloc] init];
@@ -229,6 +321,16 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     return YES;
 }
 
+#pragma mark - Location delegate functions
+
+/**
+ *  <#Description#>
+ *
+ *  @param manager   <#manager description#>
+ *  @param locations <#locations description#>
+ *
+ *  @since version 1.0
+ */
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation *newLocation = [locations lastObject];
@@ -237,6 +339,14 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     if (self.custom != nil) [self.custom.tableView reloadData];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param manager <#manager description#>
+ *  @param status  <#status description#>
+ *
+ *  @since version 1.0
+ */
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {
     if ((status == kCLAuthorizationStatusAuthorized) || (status == kCLAuthorizationStatusAuthorizedAlways)) {
@@ -250,12 +360,29 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     }
 }
 
--(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
+/**
+ *  <#Description#>
+ *
+ *  @param manager    <#manager description#>
+ *  @param newHeading <#newHeading description#>
+ *
+ *  @since version 1.0
+ */
+-(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+{
     // Use the true heading if it is valid.
     self.degrees = newHeading.magneticHeading;
     if (self.table != nil) [self.table.tableView reloadData];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param manager <#manager description#>
+ *  @param error   <#error description#>
+ *
+ *  @since version 1.0
+ */
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
     if (error.code == kCLErrorDenied) {

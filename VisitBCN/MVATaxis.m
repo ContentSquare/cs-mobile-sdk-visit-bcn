@@ -10,9 +10,9 @@
 
 @implementation MVATaxis
 
-NSString * const hailoAPI = @"26lsOoj9SzZQo4+RPBqb2UGX+ImifoDA9T78Y50hu8Kgn1ppWHbq1x9yAv84TFEJtQlpsPsQdqbYxow969HlNJJlMmYfhQxHErgB/Yl4CcUo+QoX3yYvKGB9tuK84x1WKC1bulbR3vG7COCnskty4iAJZmOFSdP6o7ztWcPcZAyAsLN8ssOfIFZarZOSbQJuiX5SLwFDIRrf230snbM3+w==";
+NSString * const hailoAPI = @"";
 
-NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
+NSString * const uberAPI = @"";
 
 # pragma mark - Hailo methods
 
@@ -66,6 +66,15 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param unencodedString <#unencodedString description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 - (NSString *)urlencodeString:(NSString *)unencodedString
 {
     NSString *encodedString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(
@@ -218,6 +227,13 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(double)initTime
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
@@ -229,6 +245,15 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
     return sec_rep;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param anyDate <#anyDate description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(long)dayOfWeek:(NSDate *)anyDate
 {
     NSLocale *frLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"es_ES"];
@@ -241,6 +266,13 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
     return europeanWeekday;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(BOOL)customDate
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -254,6 +286,13 @@ NSString * const uberAPI = @"rrAyHsIkVixZmeRG79WWnxupFtWRVaRKE_Gbdapz";
     return YES;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(NSDate *)loadCustomDate
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];

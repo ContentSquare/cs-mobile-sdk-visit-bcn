@@ -18,26 +18,67 @@
 
 @implementation MVAConfigurationTableViewController
 
-- (void)viewDidLoad {
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning {
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 6;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return 1;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
 {
     if (section == 0) return @"Changing the algorithm doesn't have any effect on the results and is used just as a case of study.";
@@ -50,6 +91,16 @@
     return @"";
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     CGFloat w = self.view.frame.size.width;
@@ -57,6 +108,17 @@
     return ([self heightForView:[UIFont systemFontOfSize:10.0f] text:text andSize:(w - 16)] + 20);
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param font  <#font description#>
+ *  @param text  <#text description#>
+ *  @param width <#width description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(CGFloat)heightForView:(UIFont *)font text:(NSString *)text andSize:(CGFloat)width
 {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, CGFLOAT_MAX)];
@@ -68,6 +130,16 @@
     return label.frame.size.height;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
     CGFloat w = self.view.frame.size.width;
@@ -82,15 +154,36 @@
     return headerView;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (indexPath.section <= 1 || indexPath.section == 4) return 55.0;
     if (indexPath.section <= 3) return 95.0;
     if ([self customDate]) return 255.0;
     return 50.0;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (indexPath.section == 0) {
         MVAConfigTableViewCell *switchCell = [tableView dequeueReusableCellWithIdentifier:@"switchCell" forIndexPath:indexPath];
         switchCell.papi = self;
@@ -152,7 +245,14 @@
         return horaCell;
     }
 }
-        
+
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(BOOL)customDate
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];

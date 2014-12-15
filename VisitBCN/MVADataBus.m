@@ -172,13 +172,22 @@
         double ini = [self timeToInt:f.startTime];
         double fin = [self timeToInt:f.endTime];
         if ((ini <= time) && (time <= fin) && ([f.tripID hasSuffix:serviceID])) {
-            return ([f.headway doubleValue] / 2.0);
+            return [f.headway doubleValue];
         }
     }
     
     return DBL_MAX;
 }
 
+/**
+ *  Returns an integer with the time given respresented in seconds
+ *
+ *  @param time The time ins NSString
+ *
+ *  @return The integer with the time in seconds
+ *
+ *  @since version 1.0
+ */
 -(int)timeToInt:(NSString *)time
 {
     NSArray *myArray = [time componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@":"]];
@@ -191,6 +200,17 @@
     return (seconds + (60 * minute) + (3600 * hora));
 }
 
+/**
+ *  Haversine distance between two coordinates
+ *
+ *  @param cordA The first coordinate
+ *  @param cordB The second coordinate
+ *
+ *  @return The distance in meters
+ *
+ *  @see http://www.movable-type.co.uk/scripts/latlong.html
+ *  @since version 1.0
+ */
 -(double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB
 {
     double R = 6372797.560856;
@@ -207,6 +227,13 @@
 
 #pragma mark - parser methods
 
+/**
+ *  CHCSVParserDelegate method. Indicates when the parser has begun a new document
+ *
+ *  @param parser A CHCSVParser object
+ *
+ *  @since version 1.0
+ */
 - (void)parserDidBeginDocument:(CHCSVParser *)parser
 {
     self.line = 0;
@@ -228,6 +255,14 @@
     self.ida = YES;
 }
 
+/**
+ *  CHCSVParserDelegate method. Indicates when the parser has begun a new line of the document
+ *
+ *  @param parser       A CHCSVParser object
+ *  @param recordNumber The number of the line being parsed
+ *
+ *  @since version 1.0
+ */
 - (void)parser:(CHCSVParser *)parser didBeginLine:(NSUInteger)recordNumber
 {
     self.busSeq = [[MVABusSeq alloc] init];
@@ -236,6 +271,15 @@
     self.freq = [[MVAFrequencies alloc] init];
 }
 
+/**
+ *  CHCSVParserDelegate method. Indicates when the parser has read a new field of the current line
+ *
+ *  @param parser     A CHCSVParser object
+ *  @param field      The field that has been read
+ *  @param fieldIndex The index of this field in the line
+ *
+ *  @since version 1.0
+ */
 - (void)parser:(CHCSVParser *)parser didReadField:(NSString *)field atIndex:(NSInteger)fieldIndex
 {
     if ([self.docName isEqualToString:@"tripBuses.txt"]) {
@@ -272,6 +316,14 @@
     }
 }
 
+/**
+ *  CHCSVParserDelegate method. Indicates when the aprser has finished reading a line
+ *
+ *  @param parser       A CHCSVParser object
+ *  @param recordNumber The number of the line dad has been parsed
+ *
+ *  @since version 1.0
+ */
 - (void)parser:(CHCSVParser *)parser didEndLine:(NSUInteger)recordNumber
 {
     if ([self.docName isEqualToString:@"tripBuses.txt"]) {
@@ -341,16 +393,38 @@
     ++self.line;
 }
 
+/**
+ *  CHCSVParserDelegate method. Indicates when the parser has finished parsing a document
+ *
+ *  @param parser A CHCSVParser object
+ *
+ *  @since version 1.0
+ */
 - (void)parserDidEndDocument:(CHCSVParser *)parser
 {
     // AÑADIR OBJETO A RECIPIENTE
 }
 
+/**
+ *  CHCSVParserDelegate method. Indicates that an error ocurred while parsing the document
+ *
+ *  @param parser A CHCSVParser object
+ *  @param error  The NSError indicating why the parsing ahs failed
+ *
+ *  @since version 1.0
+ */
 - (void)parser:(CHCSVParser *)parser didFailWithError:(NSError *)error
 {
     NSLog(@"ERROR: %@", [error localizedDescription]);
 }
 
+/**
+ *  Encodes the receiver using a given archiver. (required)
+ *
+ *  @param coder An archiver object
+ *
+ *  @since version 1.0
+ */
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
     [coder encodeObject:(NSData *)[NSKeyedArchiver archivedDataWithRootObject:self.busStops] forKey:@"busStops"];
@@ -364,6 +438,15 @@
     [coder encodeObject:(NSData *)[NSKeyedArchiver archivedDataWithRootObject:self.frequencies] forKey:@"freqs"];
 }
 
+/**
+ *  Returns an object initialized from data in a given unarchiver. (required)
+ *
+ *  @param An unarchiver object
+ *
+ *  @return self, initialized using the data in decoder.
+ *
+ *  @since version 1.0
+ */
 - (id)initWithCoder:(NSCoder *)coder;
 {
     self = [[MVADataBus alloc] init];

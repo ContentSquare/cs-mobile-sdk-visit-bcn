@@ -16,6 +16,16 @@
 
 @implementation MVAConfigTableViewCell
 
+/**
+ *  <#Description#>
+ *
+ *  @param style           <#style description#>
+ *  @param reuseIdentifier <#reuseIdentifier description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -90,7 +100,15 @@
     else [self.cellSwitch setBackgroundColor:[UIColor colorWithRed:(243.0f/255.0f) green:(181.0f/255.0f) blue:(59.0f/255.0f) alpha:1.0f]];
 }
 
-- (void)switchChanged:(SevenSwitch *)sender {
+/**
+ *  <#Description#>
+ *
+ *  @param sender <#sender description#>
+ *
+ *  @since version 1.0
+ */
+- (void)switchChanged:(SevenSwitch *)sender
+{
     BOOL dijkstra = sender.on;
     if(dijkstra) {
         if ([self.objectName isEqualToString:@"VisitBCNRain"]) [sender setThumbTintColor:[UIColor lightGrayColor]];
@@ -109,6 +127,13 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param alarmaPermitida <#alarmaPermitida description#>
+ *
+ *  @since version 1.0
+ */
 -(void)saveAlgorithm:(BOOL)alarmaPermitida
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];

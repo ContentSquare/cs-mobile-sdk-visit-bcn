@@ -15,26 +15,28 @@
 @property MVAPath *subwayPath;
 @property MVAPath *busPath;
 @property MVAGraphs *graphs;
-
 @property UIView *pathsView;
 @property UIActivityIndicatorView *activityIndicator;
 @property UILabel *pathsResume;
-
 @property double walkDist;
 @property double walkSpeed;
 @property double walkTime;
-
 @property double carDist;
 @property double carTime;
 @property double carSpeed;
-
 @property double initTime;
 
 @end
 
 @implementation MVAPunIntViewController
 
-- (void)viewDidLoad {
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     if (self.punto != nil) self.navigationItem.title = self.punto.nombre;
@@ -44,11 +46,33 @@
     self.stop = NO;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+/**
+ *  <#Description#>
+ *
+ *  @param animated <#animated description#>
+ *
+ *  @since version 1.0
+ */
 -(void)viewDidDisappear:(BOOL)animated
 {
     self.stop = YES;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)createParallax
 {
     NSMutableDictionary* views = [NSMutableDictionary new];
@@ -243,11 +267,17 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+/**
+ *  <#Description#>
+ *
+ *  @param font  <#font description#>
+ *  @param text  <#text description#>
+ *  @param width <#width description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(CGFloat)heightForView:(UIFont *)font text:(NSString *)text andSize:(CGFloat)width
 {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, CGFLOAT_MAX)];
@@ -259,118 +289,75 @@
     return label.frame.size.height;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)calcularPaths
 {
-    self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-    self.activityIndicator.alpha = 1.0;
-    self.activityIndicator.center = CGPointMake(50, 45);
-    self.activityIndicator.hidesWhenStopped = YES;
-    [self.pathsView addSubview: self.activityIndicator];
-    [self.activityIndicator startAnimating];
-    self.pathsResume = [[UILabel alloc] initWithFrame:CGRectMake(20, 60, 60, 30)];
-    self.pathsResume.text = @"Loading";
-    [self.pathsResume setAdjustsFontSizeToFitWidth:YES];
-    [self.pathsResume setTextAlignment:NSTextAlignmentCenter];
-    self.pathsResume.textColor = [UIColor whiteColor];
-    self.pathsResume.font = [UIFont fontWithName:@"Helveticaneue-Bold" size:11.0f];
-    [self.pathsView addSubview:self.pathsResume];
-    self.initTime = [self initalTime];
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-    dispatch_async(queue, ^{
-        MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
-        self.graphs = [[MVAGraphs alloc] init];
-        [self.graphs generateGraphsWithBUSDB:delegate.dataBus andTMBDB:delegate.dataTMB andFGCDB:delegate.dataFGC];
-        self.graphs.viewController = self;
+    if (self.pathsResume == nil) {
+        self.pathsResume = [[UILabel alloc] initWithFrame:CGRectMake(20, 60, 60, 30)];
+        self.pathsResume.text = @"Loading";
+        [self.pathsResume setAdjustsFontSizeToFitWidth:YES];
+        [self.pathsResume setTextAlignment:NSTextAlignmentCenter];
+        self.pathsResume.textColor = [UIColor whiteColor];
+        self.pathsResume.font = [UIFont fontWithName:@"Helveticaneue-Bold" size:11.0f];
+        [self.pathsView addSubview:self.pathsResume];
         
-        if (self.punto != nil) {
-            if ([self distanceForCoordinates:[self getCoordinates] andCoordinates:self.punto.coordinates] > [self loadWalkingDist]) {
-                [self.graphs computePathsWithOrigin:[self getCoordinates] andDestination:self.punto];
-            }
-        }
-        else {
-            if ([self distanceForCoordinates:[self getCoordinates] andCoordinates:self.customlocation.coordinates] > [self loadWalkingDist]) {
-                MVAPunInt *punto = [[MVAPunInt alloc] init];
-                punto.nombre = self.customlocation.name;
-                punto.coordinates = self.customlocation.coordinates;
-                [self.graphs computePathsWithOrigin:[self getCoordinates] andDestination:punto];
-            }
-        }
+        UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(reloadPath:)];
         
-        [self calculateWalkAndCar];
-        
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            self.subwayPath = self.graphs.subwayPath;
-            self.busPath = self.graphs.busPath;
-            [self.activityIndicator stopAnimating];
-            UIImageView *logo = [[UIImageView alloc] initWithFrame:CGRectMake(30, 20, 40, 40)];
-            if ((self.subwayPath == nil) && (self.busPath == nil)) {
-                if (self.walkDist < [self loadWalkingDist]) {
-                    double ref = self.initTime + self.walkTime;
-                    int second = (ref - (floor(ref/60) * 60.0f)) ;
-                    double ref2 = (ref / 60.0);
-                    int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
-                    int hora   = floor(ref / 3600);
-                    if (hora >= 24) hora -= 24;
-                    self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
-                    logo.image = [UIImage imageNamed:@"walking-white"];
-                }
-                else {
-                    logo.image = [UIImage imageNamed:@"taxi-white"];
-                    double ref = self.initTime + self.carTime;
-                    int second = (ref - (floor(ref/60) * 60.0f)) ;
-                    double ref2 = (ref / 60.0);
-                    int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
-                    int hora   = floor(ref / 3600);
-                    if (hora >= 24) hora -= 24;
-                    self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
-                }
-            }
-            else if (self.subwayPath == nil && self.busPath != nil) {
-                if (self.walkDist < [self loadWalkingDist]) {
-                    double ref = self.initTime + self.walkTime;
-                    int second = (ref - (floor(ref/60) * 60.0f)) ;
-                    double ref2 = (ref / 60.0);
-                    int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
-                    int hora   = floor(ref / 3600);
-                    if (hora >= 24) hora -= 24;
-                    self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
-                    logo.image = [UIImage imageNamed:@"walking-white"];
-                }
-                else {
-                    double ref = self.busPath.totalWeight;
-                    int second = (ref - (floor(ref/60) * 60.0f)) ;
-                    double ref2 = (ref / 60.0);
-                    int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
-                    int hora   = floor(ref / 3600);
-                    if (hora >= 24) hora -= 24;
-                    self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
-                    logo.image = [UIImage imageNamed:@"bus-white"];
-                }
-            }
-            else if (self.subwayPath != nil && self.busPath == nil) {
-                if (self.walkDist < [self loadWalkingDist]) {
-                    double ref = self.initTime + self.walkTime;
-                    int second = (ref - (floor(ref/60) * 60.0f)) ;
-                    double ref2 = (ref / 60.0);
-                    int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
-                    int hora   = floor(ref / 3600);
-                    if (hora >= 24) hora -= 24;
-                    self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
-                    logo.image = [UIImage imageNamed:@"walking-white"];
-                }
-                else {
-                    double ref = self.subwayPath.totalWeight;
-                    int second = (ref - (floor(ref/60) * 60.0f)) ;
-                    double ref2 = (ref / 60.0);
-                    int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
-                    int hora   = floor(ref / 3600);
-                    if (hora >= 24) hora -= 24;
-                    self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
-                    logo.image = [UIImage imageNamed:@"train-white"];
+        singleTap.numberOfTapsRequired = 1;
+        singleTap.numberOfTouchesRequired = 1;
+        [self.pathsView addGestureRecognizer: singleTap];
+    }
+    
+    [[self.pathsView viewWithTag:123]removeFromSuperview] ;
+    CLLocationCoordinate2D cords = [self getCoordinates];
+    if (cords.latitude == 0) {
+        UIImageView *logo = [[UIImageView alloc] initWithFrame:CGRectMake(30, 20, 40, 40)];
+        self.pathsResume.text = @"NO GPS DATA";
+        logo.image = [UIImage imageNamed:@"error"];
+        logo.tag = 123;
+        [self.pathsView addSubview:logo];
+    }
+    else {
+        self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        self.activityIndicator.alpha = 1.0;
+        self.activityIndicator.center = CGPointMake(50, 45);
+        self.activityIndicator.hidesWhenStopped = YES;
+        [self.pathsView addSubview: self.activityIndicator];
+        [self.activityIndicator startAnimating];
+        self.initTime = [self initalTime];
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+        dispatch_async(queue, ^{
+            MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
+            self.graphs = [[MVAGraphs alloc] init];
+            [self.graphs generateGraphsWithBUSDB:delegate.dataBus andTMBDB:delegate.dataTMB andFGCDB:delegate.dataFGC];
+            self.graphs.viewController = self;
+            
+            if (self.punto != nil) {
+                if ([self distanceForCoordinates:cords andCoordinates:self.punto.coordinates] > [self loadWalkingDist]) {
+                    [self.graphs computePathsWithOrigin:cords andDestination:self.punto];
                 }
             }
             else {
-                if (self.subwayPath.totalWeight <= self.busPath.totalWeight) {
+                if ([self distanceForCoordinates:cords andCoordinates:self.customlocation.coordinates] > [self loadWalkingDist]) {
+                    MVAPunInt *punto = [[MVAPunInt alloc] init];
+                    punto.nombre = self.customlocation.name;
+                    punto.coordinates = self.customlocation.coordinates;
+                    [self.graphs computePathsWithOrigin:cords andDestination:punto];
+                }
+            }
+            
+            [self calculateWalkAndCar];
+            
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                self.subwayPath = self.graphs.subwayPath;
+                self.busPath = self.graphs.busPath;
+                [self.activityIndicator stopAnimating];
+                UIImageView *logo = [[UIImageView alloc] initWithFrame:CGRectMake(30, 20, 40, 40)];
+                if ((self.subwayPath == nil) && (self.busPath == nil)) {
                     if (self.walkDist < [self loadWalkingDist]) {
                         double ref = self.initTime + self.walkTime;
                         int second = (ref - (floor(ref/60) * 60.0f)) ;
@@ -382,18 +369,17 @@
                         logo.image = [UIImage imageNamed:@"walking-white"];
                     }
                     else {
-                        double ref = self.subwayPath.totalWeight;
+                        logo.image = [UIImage imageNamed:@"taxi-white"];
+                        double ref = self.initTime + self.carTime;
                         int second = (ref - (floor(ref/60) * 60.0f)) ;
                         double ref2 = (ref / 60.0);
                         int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
                         int hora   = floor(ref / 3600);
                         if (hora >= 24) hora -= 24;
                         self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
-                        logo.image = [UIImage imageNamed:@"train-white"];
                     }
-                    
                 }
-                else {
+                else if (self.subwayPath == nil && self.busPath != nil) {
                     if (self.walkDist < [self loadWalkingDist]) {
                         double ref = self.initTime + self.walkTime;
                         int second = (ref - (floor(ref/60) * 60.0f)) ;
@@ -415,18 +401,93 @@
                         logo.image = [UIImage imageNamed:@"bus-white"];
                     }
                 }
-            }
-            [self.pathsView addSubview:logo];
-            
-            UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
-            
-            singleTap.numberOfTapsRequired = 1;
-            singleTap.numberOfTouchesRequired = 1;
-            [self.pathsView addGestureRecognizer: singleTap];
+                else if (self.subwayPath != nil && self.busPath == nil) {
+                    if (self.walkDist < [self loadWalkingDist]) {
+                        double ref = self.initTime + self.walkTime;
+                        int second = (ref - (floor(ref/60) * 60.0f)) ;
+                        double ref2 = (ref / 60.0);
+                        int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
+                        int hora   = floor(ref / 3600);
+                        if (hora >= 24) hora -= 24;
+                        self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
+                        logo.image = [UIImage imageNamed:@"walking-white"];
+                    }
+                    else {
+                        double ref = self.subwayPath.totalWeight;
+                        int second = (ref - (floor(ref/60) * 60.0f)) ;
+                        double ref2 = (ref / 60.0);
+                        int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
+                        int hora   = floor(ref / 3600);
+                        if (hora >= 24) hora -= 24;
+                        self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
+                        logo.image = [UIImage imageNamed:@"train-white"];
+                    }
+                }
+                else {
+                    if (self.subwayPath.totalWeight <= self.busPath.totalWeight) {
+                        if (self.walkDist < [self loadWalkingDist]) {
+                            double ref = self.initTime + self.walkTime;
+                            int second = (ref - (floor(ref/60) * 60.0f)) ;
+                            double ref2 = (ref / 60.0);
+                            int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
+                            int hora   = floor(ref / 3600);
+                            if (hora >= 24) hora -= 24;
+                            self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
+                            logo.image = [UIImage imageNamed:@"walking-white"];
+                        }
+                        else {
+                            double ref = self.subwayPath.totalWeight;
+                            int second = (ref - (floor(ref/60) * 60.0f)) ;
+                            double ref2 = (ref / 60.0);
+                            int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
+                            int hora   = floor(ref / 3600);
+                            if (hora >= 24) hora -= 24;
+                            self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
+                            logo.image = [UIImage imageNamed:@"train-white"];
+                        }
+                        
+                    }
+                    else {
+                        if (self.walkDist < [self loadWalkingDist]) {
+                            double ref = self.initTime + self.walkTime;
+                            int second = (ref - (floor(ref/60) * 60.0f)) ;
+                            double ref2 = (ref / 60.0);
+                            int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
+                            int hora   = floor(ref / 3600);
+                            if (hora >= 24) hora -= 24;
+                            self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
+                            logo.image = [UIImage imageNamed:@"walking-white"];
+                        }
+                        else {
+                            double ref = self.busPath.totalWeight;
+                            int second = (ref - (floor(ref/60) * 60.0f)) ;
+                            double ref2 = (ref / 60.0);
+                            int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
+                            int hora   = floor(ref / 3600);
+                            if (hora >= 24) hora -= 24;
+                            self.pathsResume.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hora,minute,second];
+                            logo.image = [UIImage imageNamed:@"bus-white"];
+                        }
+                    }
+                }
+                [self.pathsView addSubview:logo];
+                
+                UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+                
+                singleTap.numberOfTapsRequired = 1;
+                singleTap.numberOfTouchesRequired = 1;
+                [self.pathsView addGestureRecognizer: singleTap];
+            });
         });
-    });
+    }
+    
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)calculateWalkAndCar
 {
     double realDist;
@@ -441,6 +502,16 @@
     self.carTime = self.carDist / self.carSpeed;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param cordA <#cordA description#>
+ *  @param cordB <#cordB description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB
 {
     double R = 6372797.560856;
@@ -455,11 +526,37 @@
     return (R * c);
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param gr <#gr description#>
+ *
+ *  @since version 1.0
+ */
+-(void)reloadPath:(UITapGestureRecognizer *)gr
+{
+    [self calcularPaths];
+}
+
+/**
+ *  <#Description#>
+ *
+ *  @param gr <#gr description#>
+ *
+ *  @since version 1.0
+ */
 -(void)handleSingleTap:(UITapGestureRecognizer *)gr
 {
     [self performSegueWithIdentifier:@"detailSegue" sender:self];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(double)loadWalkingSpeed
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -476,6 +573,13 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(BOOL)loadRain
 {
     int alg = 0;
@@ -491,20 +595,13 @@
     return NO;
 }
 
--(int)loadUberOrHailo
-{
-    int alg = 1;
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
-    NSData *data = [defaults objectForKey:@"VisitBCNTaxi"];
-    if(data == nil){
-        [defaults setInteger:1 forKey:@"VisitBCNTaxi"];
-    }
-    else {
-        alg = (int)[defaults integerForKey:@"VisitBCNTaxi"];
-    }
-    return alg;
-}
-
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(double)loadWalkingDist
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -519,6 +616,13 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(double)initalTime
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
@@ -530,6 +634,13 @@
     return sec_rep;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(BOOL)customDate
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -543,6 +654,13 @@
     return YES;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(NSDate *)loadCustomDate
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
@@ -553,6 +671,13 @@
     return date;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(CLLocationCoordinate2D)getCoordinates
 {
     int custom = [self loadCustom];
@@ -564,6 +689,13 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(int)loadCustom
 {
     NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -576,6 +708,13 @@
     return [num intValue];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 - (MVACustomLocation *) loadCustomLocation
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -585,6 +724,14 @@
     return [customLocations objectAtIndex:([self loadCustom] - 1)];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param segue  <#segue description#>
+ *  @param sender <#sender description#>
+ *
+ *  @since version 1.0
+ */
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"detailSegue"]) {

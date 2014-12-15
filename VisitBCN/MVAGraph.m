@@ -23,8 +23,6 @@
 
 -(MVAPath *)computePathFromNodes:(NSArray *)originNodes toNode:(NSMutableDictionary *)destiniNodes withAlgorithmID:(int)identifier andOCoords:(CLLocationCoordinate2D)oCoords andDest:(MVAPunInt *)punInt
 {
-    NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
-    
     self.count = 0;
     self.path = nil;
     if (identifier == 1) { // DIJKSTRA
@@ -32,8 +30,6 @@
         MVAAlgorithms *alg = [[MVAAlgorithms alloc] init];
         alg.viewController = self.viewController;
         alg.nodes = [self.nodes mutableCopy];
-        NSNumber *posA = [originNodes firstObject];
-        MVANode *nodeA = [alg.nodes objectAtIndex:[posA intValue]];
         alg.edgeList = self.edgeList;
         alg.type = self.type;
         alg.dataBus = self.dataBus;
@@ -68,7 +64,7 @@
                 MVAPair *p = [[MVAPair alloc] init];
                 p.first = [node.distance doubleValue];
                 p.second = node.identificador;
-                [alg.openNodes insertar:p];
+                [alg.openNodes addObject:p];
             }
             else {
                 node.pathNodes = [[NSMutableArray alloc] init];
@@ -100,9 +96,8 @@
             [alg.edgeList setObject:edges atIndexedSubscript:[key intValue]];
         }
         
-        self.path = [alg dijkstraPathFrom:nodeA
-                                   toNode:node
-                                  withCoo:punInt.coordinates];
+        self.path = [alg dijkstraPathtoNode:node
+                                    withCoo:punInt.coordinates];
     }
     else { // A*
         
@@ -110,8 +105,6 @@
         MVAAlgorithms *alg = [[MVAAlgorithms alloc] init];
         alg.viewController = self.viewController;
         alg.nodes = [self.nodes mutableCopy];
-        NSNumber *posA = [originNodes firstObject];
-        MVANode *nodeA = [alg.nodes objectAtIndex:[posA intValue]];
         alg.edgeList = self.edgeList;
         alg.type = self.type;
         alg.dataBus = self.dataBus;
@@ -132,27 +125,24 @@
                 
                 CLLocationCoordinate2D cordA = CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude);
                 node.previous = nil;
-                node.open = YES;
                 
                 if (self.type == 1) {
                     double next = sec_rep;
                     node.distance = [NSNumber numberWithDouble:(next)];
                     double dist = [self distanceForCoordinates:cordA andCoordinates:punInt.coordinates];
-                    double walkingSpeed = [self loadWalkingSpeed];
-                    node.score = [NSNumber numberWithDouble:(next + (dist/walkingSpeed))];
+                    node.score = [NSNumber numberWithDouble:(next + (dist / [self loadWalkingSpeed]))];
                 }
                 else {
                     MVACalendar *cal = [self.dataTMB getCurrentCalendarforSubway:NO];
                     double freq = [self.dataBus frequencieForStop:node.stop andTime:sec_rep andCalendar:cal.serviceID];
                     node.distance = [NSNumber numberWithDouble:(sec_rep + freq)];
                     double dist = [self distanceForCoordinates:cordA andCoordinates:punInt.coordinates];
-                    double walkingSpeed = [self loadWalkingSpeed];
-                    node.score = [NSNumber numberWithDouble:((sec_rep + freq) + (dist / walkingSpeed))];
+                    node.score = [NSNumber numberWithDouble:((sec_rep + freq) + (dist / [self loadWalkingSpeed]))];
                 }
                 MVAPair *p = [[MVAPair alloc] init];
                 p.first = [node.score doubleValue];
                 p.second = node.identificador;
-                [alg.openNodes insertar:p];
+                [alg.openNodes addObject:p];
             }
             else {
                 node.score = infinity;
@@ -185,14 +175,9 @@
             [alg.edgeList setObject:edges atIndexedSubscript:[key intValue]];
         }
         
-        self.path = [alg astarPathFrom:nodeA
-                                toNode:node
-                               withCoo:punInt.coordinates];
+        self.path = [alg astarPathtoNode:node
+                                 withCoo:punInt.coordinates];
     }
-    NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
-    double dif = (end-start);
-    if (self.type == 1) NSLog(@"Subway execution time: %.16f",dif);
-    else NSLog(@"Bus execution time: %.16f",dif);
     
     return self.path;
 }
@@ -209,9 +194,14 @@
     double c = 2 * atan2(sqrt(a), sqrt(1-a));
     double realDist = (R * c);
     
-    return (realDist * 1.25);
+    return realDist;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param coder <#coder description#>
+ */
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
     [coder encodeObject:self.nodes forKey:@"nodes"];
@@ -219,6 +209,15 @@
     [coder encodeObject:[NSNumber numberWithInteger:self.type] forKey:@"type"];
 }
 
+/**
+ *  Returns an object initialized from data in a given unarchiver. (required)
+ *
+ *  @param An unarchiver object
+ *
+ *  @return self, initialized using the data in decoder.
+ *
+ *  @since version 1.0
+ */
 - (id)initWithCoder:(NSCoder *)coder;
 {
     self = [[MVAGraph alloc] init];
@@ -230,6 +229,11 @@
     return self;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ */
 -(double)loadWalkingSpeed
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];

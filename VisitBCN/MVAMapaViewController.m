@@ -27,11 +27,26 @@
 
 @implementation MVAMapaViewController
 
+/**
+ *  <#Description#>
+ *
+ *  @param animated <#animated description#>
+ *
+ *  @since version 1.0
+ */
 -(void)viewDidLoad:(BOOL)animated
 {
     self.mapView = nil;
     
 }
+
+/**
+ *  <#Description#>
+ *
+ *  @param animated <#animated description#>
+ *
+ *  @since version 1.0
+ */
 -(void)viewDidAppear:(BOOL)animated
 {
     if (self.mapView == nil) {
@@ -76,13 +91,34 @@
     }
 }
 
-- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
+/**
+ *  <#Description#>
+ *
+ *  @param mapView <#mapView description#>
+ *  @param overlay <#overlay description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
+{
     if ([overlay isKindOfClass:[MKTileOverlay class]]) {
         return [[MKTileOverlayRenderer alloc] initWithTileOverlay:overlay];
     }
     return nil;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param mapView    <#mapView description#>
+ *  @param annotation <#annotation description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 - (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation
 {
     if (annotation.isUserLocationAnnotation) return nil;
@@ -144,6 +180,15 @@
     return marker;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param control    <#control description#>
+ *  @param annotation <#annotation description#>
+ *  @param map        <#map description#>
+ *
+ *  @since version 1.0
+ */
 - (void)tapOnCalloutAccessoryControl:(UIControl *)control forAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map
 {
     NSNumber *i = annotation.userInfo;
@@ -157,13 +202,33 @@
     }
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+/**
+ *  <#Description#>
+ *
+ *  @param segue  <#segue description#>
+ *  @param sender <#sender description#>
+ *
+ *  @since version 1.0
+ */
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     if ([segue.identifier isEqualToString:@"punIntSegue"]) {
         MVAPunIntViewController *vc = (MVAPunIntViewController *) [segue destinationViewController];
         vc.punto = self.selectedPoint;
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param image <#image description#>
+ *  @param size  <#size description#>
+ *  @param punto <#punto description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 - (UIImage *)imageByCroppingImage:(UIImage *)image toSize:(CGSize)size andPunto:(MVAPunInt *)punto
 {
     CGRect rect = CGRectMake(punto.squareX, punto.squareY, size.height, size.width);
@@ -172,7 +237,18 @@
     return img;
 }
 
-- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
+/**
+ *  <#Description#>
+ *
+ *  @param image   <#image description#>
+ *  @param newSize <#newSize description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize
+{
     UIGraphicsBeginImageContextWithOptions(newSize, NO, 1.0f);
     [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -180,6 +256,15 @@
     return newImage;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param view <#view description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 - (UIImage *) imageWithView:(UIView *)view
 {
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, [[UIScreen mainScreen] scale]);
@@ -189,6 +274,13 @@
     return img;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(int)loadCustom
 {
     NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -201,6 +293,13 @@
     return [num intValue];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 - (MVACustomLocation *) loadCustomLocation
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];

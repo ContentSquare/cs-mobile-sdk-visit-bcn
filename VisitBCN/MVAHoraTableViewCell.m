@@ -17,7 +17,13 @@
 
 @implementation MVAHoraTableViewCell
 
-- (void)awakeFromNib {
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)awakeFromNib
+{
     // Initialization code
     [self.datePicker setMinimumDate:[NSDate date]];
     NSComparisonResult result = [[NSDate date] compare:[self loadCustomDate]];
@@ -50,13 +56,29 @@
     [self initTime];
 }
 
-- (IBAction)timeChanged:(id)sender {
+/**
+ *  <#Description#>
+ *
+ *  @param sender <#sender description#>
+ *
+ *  @since version 1.0
+ */
+- (IBAction)timeChanged:(id)sender
+{
     NSDate *pickerDate = [(UIDatePicker *)sender date];
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     [defaults setObject:pickerDate forKey:@"VisitBCNCustomDate"];
 }
 
-- (void)switchChanged:(SevenSwitch *)sender {
+/**
+ *  <#Description#>
+ *
+ *  @param sender <#sender description#>
+ *
+ *  @since version 1.0
+ */
+- (void)switchChanged:(SevenSwitch *)sender
+{
     BOOL state = sender.on;
     if (state) {
         NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -74,6 +96,31 @@
     [self.papi.tableView endUpdates];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+-(double)initTime
+{
+    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[self loadCustomDate]];
+    NSInteger hour = [components hour];
+    NSInteger minute = [components minute];
+    NSInteger seconds = [components second];
+    double sec_rep = (hour * 3600) + (minute * 60) + seconds;
+    return sec_rep;
+}
+
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(BOOL)customDate
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -87,17 +134,13 @@
     return YES;
 }
 
--(double)initTime
-{
-    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[self loadCustomDate]];
-    NSInteger hour = [components hour];
-    NSInteger minute = [components minute];
-    NSInteger seconds = [components second];
-    double sec_rep = (hour * 3600) + (minute * 60) + seconds;
-    return sec_rep;
-}
-
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(NSDate *)loadCustomDate
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];

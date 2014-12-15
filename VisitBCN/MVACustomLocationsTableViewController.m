@@ -18,25 +18,42 @@
 @property NSString *customName;
 @property UIImage *customImage;
 @property MVACustomLocation *destLoc;
+@property UITextField *textField;
 
 @end
 
 @implementation MVACustomLocationsTableViewController
 
-- (void)viewDidLoad {
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    self.customName = nil;
     self.customImage = nil;
     [self loadCustomLocations];
     MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
     delegate.custom = self;
 }
 
-- (void)didReceiveMemoryWarning {
+
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 - (void) loadCustomLocations
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -50,6 +67,11 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 - (void) guardar
 {
     NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -58,41 +80,66 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return ([self.customLocations count] + 1);
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     MVACustomElementTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"elementCell" forIndexPath:indexPath];
-    
     [cell.nombre setAdjustsFontSizeToFitWidth:YES];
     [cell.coords setAdjustsFontSizeToFitWidth:YES];
-    
     int pos = [self loadCustom];
-    
     if (pos == indexPath.row) [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
     else [cell setAccessoryType:UITableViewCellAccessoryNone];
-    
     if (indexPath.row == 0) {
         MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
         cell.foto.image = [UIImage imageNamed:@"radar"];
         cell.nombre.text = @"Current location";
         if (delegate.coordinates.latitude == 0) {
-            [cell.coords setText:@"No GPS data"];
+            [cell.coords setText:@"NO GPS DATA"];
         }
         else {
             cell.coords.text = [NSString stringWithFormat:@"(%.4f,%.4f)",delegate.coordinates.latitude,delegate.coordinates.longitude];
         }
         return cell;
     }
-    
     MVACustomLocation *location = [self.customLocations objectAtIndex:(indexPath.row - 1)];
-    
     if (location.foto == nil) cell.foto.image = [UIImage imageNamed:@"customPlace"];
     else cell.foto.image = location.foto;
     [cell.foto.layer setCornerRadius:25.0f];
@@ -104,11 +151,31 @@
     return cell;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 160;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     CGFloat w = self.view.frame.size.width;
@@ -162,18 +229,45 @@
     return v;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @since version 1.0
+ */
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self saveCustom:(int)indexPath.row];
     [self.tableView reloadData];
 }
 
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (indexPath.row == 0) return NO;
     return YES;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView    <#tableView description#>
+ *  @param editingStyle <#editingStyle description#>
+ *  @param indexPath    <#indexPath description#>
+ *
+ *  @since version 1.0
+ */
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row > 0) {
@@ -190,31 +284,72 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(NSString *)tableView:(UITableView *)tableView titleForSwipeAccessoryButtonForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return @"Take me here  ";
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @since version 1.0
+ */
 -(void)tableView:(UITableView *)tableView swipeAccessoryButtonPushedForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.destLoc = [self.customLocations objectAtIndex:(indexPath.row - 1)];
     [self performSegueWithIdentifier:@"segueDest" sender:self];
 }
 
-
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @since version 1.0
+ */
 -(void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
     delegate.custom = nil;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @since version 1.0
+ */
 -(void) tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
     delegate.custom = self;
 }
 
-
+/**
+ *
+ *
+ *  @param textField <#textField description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
@@ -223,13 +358,28 @@
     return YES;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param textField <#textField description#>
+ *
+ *  @since version 1.0
+ */
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
+    self.textField = textField;
     [textField becomeFirstResponder];
     MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
     delegate.custom = nil;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param textField <#textField description#>
+ *
+ *  @since version 1.0
+ */
 -(void)textFieldDidEndEditing:(UITextField *)textField
 {
     self.customName = textField.text;
@@ -237,25 +387,38 @@
     delegate.custom = self;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param sender <#sender description#>
+ *
+ *  @since version 1.0
+ */
 -(IBAction)addSel:(id)sender
 {
-    if (self.customName == nil || [self.customName isEqualToString:@""]) {
+    MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
+    if (delegate.coordinates.latitude == 0 || [self.textField.text isEqualToString:@""]) {
         // MOSTRAR ERROR
     }
     else {
         MVACustomLocation *loc = [[MVACustomLocation alloc] init];
         if (self.customImage != nil) loc.foto = self.customImage;
-        loc.name = self.customName;
+        loc.name = self.textField.text;
         MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
         loc.coordinates = delegate.coordinates;
         [self.customLocations addObject:loc];
         [self guardar];
-        self.customName = nil;
+        self.textField.text = @"";
         self.customImage = nil;
         [self.tableView reloadData];
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
 -(void)chooseFoto
 {
     if (nil != NSClassFromString(@"UIAlertController")) {
@@ -356,6 +519,14 @@
     
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param popup       <#popup description#>
+ *  @param buttonIndex <#buttonIndex description#>
+ *
+ *  @since version 1.0
+ */
 - (void)actionSheet:(UIActionSheet *)popup clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     switch (popup.tag) {
@@ -419,13 +590,27 @@
     }
 }
 
-
+/**
+ *  <#Description#>
+ *
+ *  @param picker <#picker description#>
+ *
+ *  @since version 1.0
+ */
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [picker dismissViewControllerAnimated:YES completion:nil];
     [self.tableView reloadData];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param picker <#picker description#>
+ *  @param info   <#info description#>
+ *
+ *  @since version 1.0
+ */
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     [picker dismissViewControllerAnimated:YES completion:^{
@@ -443,6 +628,15 @@
     }];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param navigationController <#navigationController description#>
+ *  @param viewController       <#viewController description#>
+ *  @param animated             <#animated description#>
+ *
+ *  @since version 1.0
+ */
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -495,6 +689,13 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(int)loadCustom
 {
     NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -507,18 +708,41 @@
     return [num intValue];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param index <#index description#>
+ *
+ *  @since version 1.0
+ */
 -(void)saveCustom:(int)index
 {
     NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     [sharedDefaults setObject:[NSNumber numberWithInt:index] forKey:@"VisitBCNIsCustom"];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param onetap <#onetap description#>
+ *
+ *  @since version 1.0
+ */
 -(void)fotoTapped:(UITapGestureRecognizer *)onetap
 {
     [self chooseFoto];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+/**
+ *  <#Description#>
+ *
+ *  @param segue  <#segue description#>
+ *  @param sender <#sender description#>
+ *
+ *  @since version 1.0
+ */
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     if ([segue.identifier isEqualToString:@"segueDest"]) {
         MVAPunIntViewController *vc = (MVAPunIntViewController *) [segue destinationViewController];
         vc.customlocation = self.destLoc;

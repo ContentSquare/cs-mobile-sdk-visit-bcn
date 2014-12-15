@@ -10,24 +10,26 @@
 
 @interface MVAAlgorithms ()
 
+/**
+ *  <#Description#>
+ */
 @property CLLocationCoordinate2D piCoord;
+
+/**
+ *  <#Description#>
+ */
 @property MVACalendar *nextTMBCalendar;
+
+/**
+ *  <#Description#>
+ */
 @property MVACalendar *currentCal;
 
 @end
 
 @implementation MVAAlgorithms
 
-/**
- *  Dijkstra's algorithm
- *
- *  @param nodeA Origin node for the Dijkstra computation
- *  @param nodeB Destination node for the Dijkstra computation
- *  @param crds  Coordinates of the final destination
- *
- *  @return The MVAPath object for the given parameters and the current graph
- */
--(MVAPath *)dijkstraPathFrom:(MVANode *)nodeA toNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds
+-(MVAPath *)dijkstraPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds
 {
     NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
     self.piCoord = crds;
@@ -35,17 +37,17 @@
     if (self.type == 1) self.nextTMBCalendar = [self.dataTMB getNextCalendarforSubway:YES];
     else  self.currentCal = [self.dataTMB getCurrentCalendarforSubway:NO];
     
-    MVAPair *p = [self.openNodes firstObject];
-    [self.openNodes removeFirst];
-    MVANode *currentNode = [self.nodes objectAtIndex:p.second];
+    MVANode *currentNode = nil;
+    BOOL para = NO;
     
-    while ((currentNode != nil) && (currentNode.identificador != nodeB.identificador) && !self.viewController.stop) {
-        [self updateNodesForNode:currentNode];
+    while (![self.openNodes isEmpty] && !para && !self.viewController.stop) {
         MVAPair *p = [self.openNodes firstObject];
-        if (p == nil)  currentNode = nil;
-        else {
-            [self.openNodes removeFirst];
-            currentNode = [self.nodes objectAtIndex:p.second];
+        [self.openNodes removeFirst];
+        currentNode = [self.nodes objectAtIndex:p.second];
+        if (currentNode.identificador == nodeB.identificador) para = YES;
+        if (([currentNode.distance doubleValue] == p.first) && !para) {
+            [self updateNodesForNode:currentNode];
+            currentNode.open = YES;
         }
     }
     if (self.viewController.stop) {
@@ -67,97 +69,96 @@
     return path;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param node <#node description#>
+ */
 -(void)updateNodesForNode:(MVANode *)node
 {
     NSArray *conectados = [self.edgeList objectAtIndex:node.identificador];
     for (int i = 0; i < [conectados count]; ++i) {
         MVAEdge *edge = [conectados objectAtIndex:i];
         MVANode *destNode = edge.destini;
-        if (self.type == 1) {
-            double nextTrain;
-            if (edge.change) {
-                nextTrain = [node.distance doubleValue] + [edge.weight doubleValue];
-            }
-            else if ([edge.tripID isEqualToString:@"landmark"]) {
-                double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude) andCoordinates:self.piCoord];
-                double walkingSpeed = [self loadWalkingSpeed];
-                double expecTime = (dist / walkingSpeed);
-                nextTrain += expecTime;
-            }
-            else nextTrain = [self getNextTrainForNode:destNode edge:edge andTime:[node.distance doubleValue]];
-            if (nextTrain < [destNode.distance doubleValue]) {
-                if (!destNode.open) {
+        if (!destNode.open) {
+            CLLocationCoordinate2D cord = CLLocationCoordinate2DMake(destNode.stop.latitude, destNode.stop.longitude);
+            if (self.type == 1) {
+                double nextTrain;
+                if (edge.change) {
+                    nextTrain = [node.distance doubleValue] + [edge.weight doubleValue];
+                }
+                else if ([edge.tripID isEqualToString:@"landmark"]) {
+                    double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude) andCoordinates:self.piCoord];
+                    double walkingSpeed = [self loadWalkingSpeed];
+                    double expecTime = (dist / walkingSpeed);
+                    nextTrain += expecTime;
+                }
+                else nextTrain = [self getNextTrainForNode:destNode edge:edge andTime:[node.distance doubleValue]];
+                if (nextTrain < [destNode.distance doubleValue]) {
                     MVAPair *p = [[MVAPair alloc] init];
                     p.first = nextTrain;
                     p.second = destNode.identificador;
-                    destNode.open = YES;
-                    [self.openNodes insertar:p];
+                    [self.openNodes addObject:p];
+                    
+                    destNode.distance = [NSNumber numberWithDouble:nextTrain];
+                    destNode.pathNodes = [node.pathNodes mutableCopy];
+                    [destNode.pathNodes addObject:node];
+                    destNode.pathEdges = [node.pathEdges mutableCopy];
+                    [destNode.pathEdges addObject:edge];
                 }
-                else {
-                    int pos = [self.openNodes posOfElement:destNode.identificador];
-                    if (pos >= 0) {
-                        MVAPair *p = [self.openNodes objectAtIndex:pos];
-                        p.first = nextTrain;
-                        [self.openNodes setObject:p atIndex:pos];
-                    }
-                }
-                destNode.distance = [NSNumber numberWithDouble:nextTrain];
-                destNode.pathNodes = [node.pathNodes mutableCopy];
-                [destNode.pathNodes addObject:node];
-                destNode.pathEdges = [node.pathEdges mutableCopy];
-                [destNode.pathEdges addObject:edge];
-            }
-        }
-        else {
-            double time = [node.distance doubleValue];
-            if ([edge.tripID isEqualToString:@"walking"] || [edge.tripID isEqualToString:@"change"]) {
-                time += [edge.weight doubleValue];
-                MVACalendar *cal = [self.dataTMB getCurrentCalendarforSubway:NO];
-                time += [self.dataBus frequencieForStop:edge.destini.stop andTime:time andCalendar:cal.serviceID];
-            }
-            else if ([edge.tripID isEqualToString:@"landmark"]) {
-                double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude) andCoordinates:self.piCoord];
-                double walkingSpeed = [self loadWalkingSpeed];
-                double expecTime = (dist / walkingSpeed);
-                time += expecTime;
             }
             else {
-                time += [self timeInBusFromNodeA:node toNodeB:destNode];
-            }
-            if (time < [destNode.distance doubleValue]) {
-                if (!destNode.open) {
+                double time = [node.distance doubleValue];
+                if ([edge.tripID isEqualToString:@"walking"] || [edge.tripID isEqualToString:@"change"]) {
+                    double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude) andCoordinates:cord];
+                    double walkingSpeed = [self loadWalkingSpeed];
+                    double expecTime = (dist / walkingSpeed);
+                    time += expecTime;
+                    time += [self.dataBus frequencieForStop:edge.destini.stop andTime:time andCalendar:self.currentCal.serviceID];
+                }
+                else if ([edge.tripID isEqualToString:@"landmark"]) {
+                    double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude) andCoordinates:cord];
+                    double walkingSpeed = [self loadWalkingSpeed];
+                    double expecTime = (dist / walkingSpeed);
+                    time += expecTime;
+                }
+                else {
+                    time += [self timeInBusFromNodeA:node toNodeB:destNode];
+                }
+                if (time < [destNode.distance doubleValue]) {
+                    destNode.pathNodes = [node.pathNodes mutableCopy];
+                    [destNode.pathNodes addObject:node];
+                    destNode.pathEdges = [node.pathEdges mutableCopy];
+                    [destNode.pathEdges addObject:edge];
+                    destNode.distance = [NSNumber numberWithDouble:time];
                     MVAPair *p = [[MVAPair alloc] init];
                     p.first = time;
                     p.second = destNode.identificador;
-                    destNode.open = YES;
-                    [self.openNodes insertar:p];
+                    [self.openNodes addObject:p];
                 }
-                else {
-                    int pos = [self.openNodes posOfElement:destNode.identificador];
-                    if (pos >= 0) {
-                        MVAPair *p = [self.openNodes objectAtIndex:pos];
-                        p.first = time;
-                        [self.openNodes setObject:p atIndex:pos];
-                    }
-                }
-                destNode.distance = [NSNumber numberWithDouble:time];
-                destNode.pathNodes = [node.pathNodes mutableCopy];
-                [destNode.pathNodes addObject:node];
-                destNode.pathEdges = [node.pathEdges mutableCopy];
-                [destNode.pathEdges addObject:edge];
             }
         }
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param node       <#node description#>
+ *  @param edge       <#edge description#>
+ *  @param actualTime <#actualTime description#>
+ *
+ *  @return <#return value description#>
+ */
 -(double)getNextTrainForNode:(MVANode *)node edge:(MVAEdge *)edge andTime:(double)actualTime
 {
-    BOOL nextDay = NO;
-    if (actualTime >= 86400) {
-        nextDay = YES;
-    }
     MVAStop *stop = node.stop;
     if ([stop.stopID hasPrefix:@"001-"]) {
+        BOOL nextDay = NO;
+        if (actualTime >= 86400) {
+            nextDay = YES;
+        }
+        
         NSString *tripID = edge.tripID;
         NSNumber *tripPos = [self.dataTMB.tripsHash objectForKey:tripID];
         MVATrip *trip = [self.dataTMB.trips objectAtIndex:[tripPos intValue]];
@@ -289,16 +290,21 @@
                 }
             }
         }
-        if (nextDay) return arrivalTime + 86400;
         return arrivalTime;
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param time <#time description#>
+ *
+ *  @return <#return value description#>
+ */
 -(int)timeToInt:(NSString *)time
 {
     NSArray *myArray = [time componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@":"]];
     NSString *horaStr = [myArray objectAtIndex:0];
-    //if ([horaStr intValue] >= 24) horaStr = 0;
     NSString *minutStr = [myArray objectAtIndex:1];
     NSString *anoStr = [myArray objectAtIndex:2];
     int hora = (int)[horaStr intValue];
@@ -307,6 +313,14 @@
     return (seconds + (60 * minute) + (3600 * hora));
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param nodeA <#nodeA description#>
+ *  @param nodeB <#nodeB description#>
+ *
+ *  @return <#return value description#>
+ */
 -(double)timeInBusFromNodeA:(MVANode *)nodeA toNodeB:(MVANode *)nodeB
 {
     CLLocationCoordinate2D cordA = CLLocationCoordinate2DMake(nodeA.stop.latitude, nodeA.stop.longitude);
@@ -317,6 +331,12 @@
     return ((distance / busSpeed) + 30);
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param edge        <#edge description#>
+ *  @param currentNode <#currentNode description#>
+ */
 -(void)updateNodesForEdge:(MVAEdge *)edge andNode:(MVANode *)currentNode
 {
     MVANode *dest = edge.destini;
@@ -344,50 +364,50 @@
             double walkingSpeed = [self loadWalkingSpeed];
             double expecTime = (dist / walkingSpeed);
             time += expecTime;
+            time += 240.0;
             time += [self.dataBus frequencieForStop:edge.destini.stop andTime:time andCalendar:self.currentCal.serviceID];
+            newDist = time;
+            tentative = (newDist + [self heuristicForCoords:cord]);
         }
         else if ([edge.tripID isEqualToString:@"landmark"]) {
             double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(currentNode.stop.latitude, currentNode.stop.longitude) andCoordinates:cord];
             double walkingSpeed = [self loadWalkingSpeed];
             double expecTime = (dist / walkingSpeed);
             time += expecTime;
+            newDist = time;
+            tentative = newDist;
         }
         else {
             time += [self timeInBusFromNodeA:currentNode toNodeB:dest];
+            newDist = time;
+            tentative = (newDist + [self heuristicForCoords:cord]);
         }
-        newDist = time;
-        tentative = (newDist + [self heuristicForCoords:cord]);
     }
     if (tentative < [dest.score doubleValue]) {
         dest.previous = currentNode;
         dest.distance = [NSNumber numberWithDouble:newDist];
         dest.score = [NSNumber numberWithDouble:tentative];
-        if (!dest.open) {
-            MVAPair *p = [[MVAPair alloc] init];
-            p.first = tentative;
-            p.second = dest.identificador;
-            dest.open = YES;
-            [self.openNodes insertar:p];
-        }
-        else {
-            int pos = [self.openNodes posOfElement:dest.identificador];
-            if (pos >= 0) {
-                MVAPair *p = [self.openNodes objectAtIndex:pos];
-                p.first = tentative;
-                [self.openNodes setObject:p atIndex:pos];
-            }
-        }
+        MVAPair *p = [[MVAPair alloc] init];
+        p.first = tentative;
+        p.second = dest.identificador;
+        [self.openNodes addObject:p];
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param cord <#cord description#>
+ *
+ *  @return <#return value description#>
+ */
 -(double)heuristicForCoords:(CLLocationCoordinate2D)cord
 {
     double dist = [self distanceForCoordinates:cord andCoordinates:self.piCoord];
-    double walkingSpeed = [self loadWalkingSpeed];
-    return (dist / walkingSpeed);
+    return (dist / [self loadWalkingSpeed]);
 }
 
--(MVAPath *)astarPathFrom:(MVANode *)nodeA toNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds
+-(MVAPath *)astarPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds
 {
     if (self.type == 1) self.nextTMBCalendar = [self.dataTMB getNextCalendarforSubway:YES];
     else  self.currentCal = [self.dataTMB getCurrentCalendarforSubway:NO];
@@ -397,10 +417,10 @@
     BOOL para = NO;
     while (![self.openNodes isEmpty] && !para && !self.viewController.stop) {
         MVAPair *p = [self.openNodes firstObject];
+        [self.openNodes removeFirst];
         currentNode = [self.nodes objectAtIndex:p.second];
-        if (currentNode == nil || currentNode.identificador == nodeB.identificador) para = YES;
-        if (!para) {
-            [self.openNodes removeFirst];
+        if (currentNode.identificador == nodeB.identificador) para = YES;
+        if (!para && (p.first == [currentNode.score doubleValue])) {
             NSArray *edges = [self.edgeList objectAtIndex:currentNode.identificador];
             for (MVAEdge *edge in edges) {
                 [self updateNodesForEdge:edge andNode:currentNode];
@@ -418,6 +438,12 @@
     return path;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param node <#node description#>
+ *  @param path <#path description#>
+ */
 -(void)pathwithGoal:(MVANode *)node andPath:(MVAPath *)path
 {
     if(node.previous != nil) {
@@ -432,7 +458,13 @@
     }
 }
 
-// Haversine -> http://en.wikipedia.org/wiki/Haversine_formula
+/**
+ *  Haversine
+ *
+ *  @param double <#double description#>
+ *
+ *  @return <#return value description#>
+ */
 -(double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB
 {
     double R = 6372797.560856;
@@ -445,9 +477,17 @@
     double c = 2 * atan2(sqrt(a), sqrt(1-a));
     double realDist = (R * c);
     
-    return (realDist * 1.25);
+    return realDist;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param nodeA <#nodeA description#>
+ *  @param nodeB <#nodeB description#>
+ *
+ *  @return <#return value description#>
+ */
 -(MVAEdge *)edgeFromNode:(MVANode *)nodeA toNode:(MVANode *)nodeB
 {
     NSMutableArray *edges = [self.edgeList objectAtIndex:nodeA.identificador];
@@ -457,6 +497,11 @@
     return nil;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ */
 -(double)loadWalkingSpeed
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -473,6 +518,11 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ */
 -(BOOL)loadRain
 {
     int alg = 0;

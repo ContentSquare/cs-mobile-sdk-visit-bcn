@@ -39,19 +39,31 @@
     else [busStops addObject:self];
 }
 
+/**
+ *  This function is overriden from NSObject. Indicates if self and another object are equal or not
+ *
+ *  @param other The other object to be compared
+ *
+ *  @return A boolean indicating if are equal or not
+ *
+ *  @since version 1.0
+ */
 - (BOOL)isEqual:(id)other {
     if (other == self)
         return YES;
     if (!other || ![other isKindOfClass:[self class]])
         return NO;
-    return [self isEqualToStop:other];
+    MVAStop *comp = (MVAStop *)other;
+    return ([self.stopID isEqualToString:comp.stopID]);
 }
 
--(BOOL)isEqualToStop:(MVAStop *)stop
-{
-    return (self.code == stop.code);
-}
-
+/**
+ *  This function is overriden from NSObject. Returns a MVAStop copy of self
+ *
+ *  @return The new MVAStop copied object
+ *
+ *  @since version 1.0
+ */
 -(id)copy
 {
     MVAStop *copia = [[MVAStop alloc] init];
@@ -65,6 +77,13 @@
     return copia;
 }
 
+/**
+ *  Encodes the receiver using a given archiver. (required)
+ *
+ *  @param coder An archiver object
+ *
+ *  @since version 1.0
+ */
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
     [coder encodeObject:self.stopID forKey:@"stopID"];
@@ -76,6 +95,15 @@
     [coder encodeObject:(NSData *)[NSKeyedArchiver archivedDataWithRootObject:self.routes] forKey:@"routes"];
 }
 
+/**
+ *  Returns an object initialized from data in a given unarchiver. (required)
+ *
+ *  @param An unarchiver object
+ *
+ *  @return self, initialized using the data in decoder.
+ *
+ *  @since version 1.0
+ */
 - (id)initWithCoder:(NSCoder *)coder;
 {
     self = [[MVAStop alloc] init];

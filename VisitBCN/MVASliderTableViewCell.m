@@ -16,7 +16,13 @@
 
 @implementation MVASliderTableViewCell
 
-- (void)awakeFromNib {
+/**
+ *  <#Description#>
+ *
+ *  @since version 1.0
+ */
+- (void)awakeFromNib
+{
     // Initialization code
     self.created = NO;
 }
@@ -35,13 +41,30 @@
     self.speed.text = [formatter stringFromNumber:[NSNumber numberWithDouble:(speed/1000)]];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+/**
+ *  <#Description#>
+ *
+ *  @param selected <#selected description#>
+ *  @param animated <#animated description#>
+ *
+ *  @since version 1.0
+ */
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
 }
 
-- (IBAction)sliderChanged:(id)sender {
+/**
+ *  <#Description#>
+ *
+ *  @param sender <#sender description#>
+ *
+ *  @since version 1.0
+ */
+- (IBAction)sliderChanged:(id)sender
+{
     double speed = self.speedSlider.value;
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setMinimumFractionDigits:3];
@@ -55,6 +78,13 @@
     self.created = YES;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(double)loadWalkingSpeed
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -75,7 +105,13 @@
     }
 }
 
-
+/**
+ *  <#Description#>
+ *
+ *  @param speed <#speed description#>
+ *
+ *  @since version 1.0
+ */
 -(void)saveSpeed:(double)speed
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];

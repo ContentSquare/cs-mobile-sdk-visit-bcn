@@ -266,6 +266,13 @@
     NSLog(@"Subway creation time: %.16f",dif);
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *
+ *  @since version 1.0
+ */
 -(BOOL)customDate
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -279,6 +286,13 @@
     return YES;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @return A NSDate object
+ *
+ *  @since version 1.0
+ */
 -(NSDate *)loadCustomDate
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
