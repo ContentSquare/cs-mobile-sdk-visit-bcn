@@ -31,7 +31,14 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZPR-j6-Nb5" secondAttribute="bottom" id="VrE-YT-bq6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Map" id="NUS-an-Q5C"/>
+                    <navigationItem key="navigationItem" title="Map" id="NUS-an-Q5C">
+                        <barButtonItem key="rightBarButtonItem" image="custom" id="iV7-ED-GFg">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="customSel:" destination="vXZ-lx-hvc" id="IKO-eV-M00"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailView" destination="ZPR-j6-Nb5" id="d4e-64-4mN"/>
                         <segue destination="Rl3-9c-ZYh" kind="push" identifier="punIntSegue" id="sib-Jy-cIv"/>
@@ -822,6 +829,7 @@
     </scenes>
     <resources>
         <image name="code-purple" width="500" height="500"/>
+        <image name="custom" width="500" height="500"/>
         <image name="custom-green" width="500" height="500"/>
         <image name="empty_star" width="500" height="500"/>
         <image name="fondo.jpg" width="414" height="736"/>
@@ -838,9 +846,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="psl-y8-6LP"/>
         <segue reference="s6b-it-Y7c"/>
-        <segue reference="paZ-hq-JcE"/>
-        <segue reference="C8V-Ks-vAR"/>
         <segue reference="eD9-iN-p1Y"/>
+        <segue reference="sib-Jy-cIv"/>
     </inferredMetricsTieBreakers>
 </document>

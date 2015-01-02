@@ -625,38 +625,30 @@
  *
  *  @since version 1.0
  */
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+-(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     if ([navigationController.viewControllers count] == 3)
     {
-        CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
+        CGFloat h = [[UIScreen mainScreen] bounds].size.height;
+        CGFloat w = [[UIScreen mainScreen] bounds].size.width;
         
         UIView *plCropOverlay = [[[viewController.view.subviews objectAtIndex:1]subviews] objectAtIndex:0];
         
         plCropOverlay.hidden = YES;
         
-        int position = 0;
-        
-        if (screenHeight == 568) {
-            position = 124;
-        }
-        else {
-            position = 80;
-        }
+        CGFloat position = (h - w) / 2.0f;
         
         CAShapeLayer *circleLayer = [CAShapeLayer layer];
         
-        CGFloat w = self.view.frame.size.width;
-        
-        UIBezierPath *path2 = [UIBezierPath bezierPathWithOvalInRect:
-                               CGRectMake(0.0f, position, w, w)];
+        UIBezierPath *path2 = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0.0f, position, w, w)];
         [path2 setUsesEvenOddFillRule:YES];
         
         [circleLayer setPath:[path2 CGPath]];
         
         [circleLayer setFillColor:[[UIColor clearColor] CGColor]];
-        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, w, screenHeight-72) cornerRadius:0];
+        circleLayer.borderWidth = 5.0f;
+        circleLayer.borderColor = [UIColor redColor].CGColor;
+        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, w, h-72) cornerRadius:0];
         
         [path appendPath:path2];
         [path setUsesEvenOddFillRule:YES];
@@ -672,7 +664,11 @@
         [moveLabel setText:@"Move and Scale"];
         [moveLabel setTextAlignment:NSTextAlignmentCenter];
         [moveLabel setTextColor:[UIColor whiteColor]];
-        
+
+        CGFloat previewHeight = w + (w / 3);
+        CGFloat totalBlack = h - previewHeight;
+        CGFloat heightOfBlackTopAndBottom = totalBlack / 2;
+        NSLog(@"Height is: %f", heightOfBlackTopAndBottom);
         [viewController.view addSubview:moveLabel];
     }
 }

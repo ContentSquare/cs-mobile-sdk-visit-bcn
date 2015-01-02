@@ -620,7 +620,7 @@
         imV.tag = 1234567;
         imV.alpha = 0.0f;
         [self.view addSubview:imV];
-        [UIView animateWithDuration: 0.5
+        [UIView animateWithDuration: 0.6
                          animations:^{
                              imV.alpha = 1.0;
                              self.tableView.alpha = 0.0;
@@ -635,7 +635,7 @@
     }
     else {
         UIView *view = [self.view viewWithTag:1234567];
-        [UIView animateWithDuration: 0.5
+        [UIView animateWithDuration: 0.6
                          animations:^{
                              view.alpha = 0.0f;
                              self.tableView.alpha = 1.0;
@@ -750,15 +750,12 @@
 - (void) radialMenu:(ALRadialMenu *)radialMenu didSelectItemAtIndex:(NSInteger)index
 {
     if (index == 1) {
-        NSLog(@"Info");
         [self performSegueWithIdentifier:@"segueInfo" sender:self];
     }
     else if (index == 5) {
-        NSLog(@"Mapa");
         [self performSegueWithIdentifier:@"segueMap" sender:self];
     }
     else if (index == 7) {
-        NSLog(@"Config");
         [self performSegueWithIdentifier:@"segueConfig" sender:self];
     }
 }

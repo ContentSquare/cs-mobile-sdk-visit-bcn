@@ -762,11 +762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAMapaViewController.m"
-            timestampString = "441750928.469269"
+            timestampString = "441893793.719265"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "366"
-            endingLineNumber = "366"
+            startingLineNumber = "420"
+            endingLineNumber = "420"
             landmarkName = "@implementation MVAMapaViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -3082,11 +3082,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAMapaViewController.m"
-            timestampString = "441750928.469269"
+            timestampString = "441893636.599919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "@implementation MVAMapaViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -3658,11 +3658,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VisitBCN/MVAMapaViewController.m"
-            timestampString = "441750928.469269"
+            timestampString = "441893636.599919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "@implementation MVAMapaViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -9622,6 +9622,22 @@
             startingLineNumber = "117"
             endingLineNumber = "117"
             landmarkName = "-actualizar:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VisitBCN/MVACustomLocationsTableViewController.m"
+            timestampString = "441890545.477032"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "672"
+            endingLineNumber = "672"
+            landmarkName = "-navigationController:didShowViewController:animated:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

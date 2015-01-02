@@ -87,6 +87,34 @@
             [mapView addAnnotation:annotation1];
         }
     }
+    else {
+        BOOL tro = NO;
+        NSArray *ann = self.mapView.annotations;
+        for (int i = 0; i < [ann count] && !tro; ++i) {
+            RMAnnotation *annot = [ann objectAtIndex:i];
+            NSNumber *num = annot.userInfo;
+            if ([num intValue] == -1) {
+                [self.mapView removeAnnotation:annot];
+                tro = YES;
+                if ([self loadCustom] > 0) {
+                    MVACustomLocation *loc = [self loadCustomLocation];
+                    RMAnnotation *annotation1 = [[RMAnnotation alloc] initWithMapView:self.mapView
+                                                                           coordinate:loc.coordinates
+                                                                             andTitle:loc.name];
+                    annotation1.userInfo = [NSNumber numberWithInt:(-1)];
+                    [self.mapView addAnnotation:annotation1];
+                }
+            }
+        }
+        if (!tro && ([self loadCustom] > 0)) {
+            MVACustomLocation *loc = [self loadCustomLocation];
+            RMAnnotation *annotation1 = [[RMAnnotation alloc] initWithMapView:self.mapView
+                                                                   coordinate:loc.coordinates
+                                                                     andTitle:loc.name];
+            annotation1.userInfo = [NSNumber numberWithInt:(-1)];
+            [self.mapView addAnnotation:annotation1];
+        }
+    }
 }
 
 /**
@@ -198,6 +226,18 @@
         self.selectedPoint = [delegate.puntos objectAtIndex:[i intValue]];
         [self performSegueWithIdentifier:@"punIntSegue" sender:self];
     }
+}
+
+/**
+ *  Function that gets called when the user selects the custom location button.
+ *
+ *  @param sender The button that triggers this function.
+ *
+ *  @since version 1.0
+ */
+- (IBAction)customSel:(id)sender
+{
+    [self performSegueWithIdentifier:@"customSegue" sender:self];
 }
 
 /**

@@ -93,6 +93,9 @@
 		344ACD9A1A2558E60065E4E8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ACD991A2558E60065E4E8 /* libsqlite3.dylib */; };
 		344ACDD61A2559040065E4E8 /* libMapbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ACDD41A2559040065E4E8 /* libMapbox.a */; };
 		344ACDD71A2559040065E4E8 /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 344ACDD51A2559040065E4E8 /* Mapbox.bundle */; };
+		344D79FE1A56C25300A40195 /* custom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344D79FB1A56C25300A40195 /* custom@2x.png */; };
+		344D79FF1A56C25300A40195 /* custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344D79FC1A56C25300A40195 /* custom@3x.png */; };
+		344D7A001A56C25300A40195 /* custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 344D79FD1A56C25300A40195 /* custom.png */; };
 		344EE6CA1A2B2D8600CB1B96 /* campNouSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6C91A2B2D8600CB1B96 /* campNouSmall.jpg */; };
 		344EE6CD1A2B2FCB00CB1B96 /* laPedreraSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6CC1A2B2FCB00CB1B96 /* laPedreraSmall.jpeg */; };
 		344EE6CF1A2B2FD800CB1B96 /* museoMarSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6CE1A2B2FD800CB1B96 /* museoMarSmall.jpeg */; };
@@ -477,6 +480,9 @@
 		344ACDD31A2559040065E4E8 /* RMUserTrackingBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUserTrackingBarButtonItem.h; sourceTree = "<group>"; };
 		344ACDD41A2559040065E4E8 /* libMapbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMapbox.a; sourceTree = "<group>"; };
 		344ACDD51A2559040065E4E8 /* Mapbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Mapbox.bundle; sourceTree = "<group>"; };
+		344D79FB1A56C25300A40195 /* custom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom@2x.png"; sourceTree = "<group>"; };
+		344D79FC1A56C25300A40195 /* custom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom@3x.png"; sourceTree = "<group>"; };
+		344D79FD1A56C25300A40195 /* custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custom.png; sourceTree = "<group>"; };
 		344EE6C91A2B2D8600CB1B96 /* campNouSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = campNouSmall.jpg; sourceTree = "<group>"; };
 		344EE6CC1A2B2FCB00CB1B96 /* laPedreraSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laPedreraSmall.jpeg; sourceTree = "<group>"; };
 		344EE6CE1A2B2FD800CB1B96 /* museoMarSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museoMarSmall.jpeg; sourceTree = "<group>"; };
@@ -836,6 +842,9 @@
 		3406FE011A27C885004C5D46 /* Logos */ = {
 			isa = PBXGroup;
 			children = (
+				344D79FB1A56C25300A40195 /* custom@2x.png */,
+				344D79FC1A56C25300A40195 /* custom@3x.png */,
+				344D79FD1A56C25300A40195 /* custom.png */,
 				3493B2DB1A56111000B31C85 /* airplane@3x.png */,
 				3493B2DC1A56111000B31C85 /* airplane@2x.png */,
 				3493B2DD1A56111000B31C85 /* airplane.png */,
@@ -1866,6 +1875,7 @@
 				344EE6DB1A2B300B00CB1B96 /* basilicaMerceSmall.jpeg in Resources */,
 				344EE7211A2B340D00CB1B96 /* parcGuellBig.jpg in Resources */,
 				3446B5271A2FA9550009A919 /* custom-green@3x.png in Resources */,
+				344D79FF1A56C25300A40195 /* custom@3x.png in Resources */,
 				344A8F341A2A9B4B00C51061 /* tuerca.png in Resources */,
 				34545E321A2BEB9200E9C943 /* walking-white@2x.png in Resources */,
 				3406FE101A27CA94004C5D46 /* walking-blue@3x.png in Resources */,
@@ -1968,6 +1978,7 @@
 				344EE6F71A2B306E00CB1B96 /* santJaumeSmall.jpeg in Resources */,
 				3446B5341A2FC0570009A919 /* customPlace.png in Resources */,
 				34FA46081A32985300968951 /* logoHailo.png in Resources */,
+				344D7A001A56C25300A40195 /* custom.png in Resources */,
 				3406FE081A27C9C1004C5D46 /* near_me-colored@2x.png in Resources */,
 				3406FE111A27CA94004C5D46 /* walking-blue@2x.png in Resources */,
 				342E24B51A2B73E200761796 /* cross@2x.png in Resources */,
@@ -1976,6 +1987,7 @@
 				344EE6FB1A2B307900CB1B96 /* ciutadellaSmall.jpeg in Resources */,
 				344EE6FD1A2B307E00CB1B96 /* santJordiSmall.jpeg in Resources */,
 				347862FC1A3368A1009594D4 /* train-purple@2x.png in Resources */,
+				344D79FE1A56C25300A40195 /* custom@2x.png in Resources */,
 				340DDE8C1A5416960075F679 /* delete.png in Resources */,
 				34AE67671A2B3BEA0076E5D5 /* rain-blue@2x.png in Resources */,
 				344EE6E11A2B301E00CB1B96 /* museuHistoriaSmall.jpeg in Resources */,
