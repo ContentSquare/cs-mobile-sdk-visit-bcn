@@ -262,6 +262,9 @@
             if (indexPath.row == [self loadCustom]) {
                 [self saveCustom:0];
             }
+            else if (indexPath.row < [self loadCustom]) {
+                [self saveCustom:([self loadCustom] - 1)];
+            }
             [self.customLocations removeObjectAtIndex:(indexPath.row - 1)];
             [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
@@ -664,11 +667,7 @@
         [moveLabel setText:@"Move and Scale"];
         [moveLabel setTextAlignment:NSTextAlignmentCenter];
         [moveLabel setTextColor:[UIColor whiteColor]];
-
-        CGFloat previewHeight = w + (w / 3);
-        CGFloat totalBlack = h - previewHeight;
-        CGFloat heightOfBlackTopAndBottom = totalBlack / 2;
-        NSLog(@"Height is: %f", heightOfBlackTopAndBottom);
+        
         [viewController.view addSubview:moveLabel];
     }
 }
