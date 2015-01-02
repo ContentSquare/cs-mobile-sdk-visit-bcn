@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAPunIntTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntTableViewCell</TokenIdentifier>
+			<Abstract type="html">This class is a sbclass of UITableViewCell and is used to create the cells displayed in the list of the main window of the app</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPuntsIntsTableViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/setFondo:</TokenIdentifier>
+			<Abstract type="html">The background image</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *fondo</Declaration>
+			
+			
+			<Anchor>//api/name/fondo</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/fondo</TokenIdentifier>
+			<Abstract type="html">The background image</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *fondo</Declaration>
+			
+			
+			<Anchor>//api/name/fondo</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntTableViewCell/fondo</TokenIdentifier>
+			<Abstract type="html">The background image</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *fondo</Declaration>
+			
+			
+			<Anchor>//api/name/fondo</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/setDistance:</TokenIdentifier>
+			<Abstract type="html">The display of the distance</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/distance</TokenIdentifier>
+			<Abstract type="html">The display of the distance</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntTableViewCell/distance</TokenIdentifier>
+			<Abstract type="html">The display of the distance</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/setName:</TokenIdentifier>
+			<Abstract type="html">The display of the name</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/name</TokenIdentifier>
+			<Abstract type="html">The display of the name</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntTableViewCell/name</TokenIdentifier>
+			<Abstract type="html">The display of the name</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/setStreet:</TokenIdentifier>
+			<Abstract type="html">The display of the address</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *street</Declaration>
+			
+			
+			<Anchor>//api/name/street</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/street</TokenIdentifier>
+			<Abstract type="html">The display of the address</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *street</Declaration>
+			
+			
+			<Anchor>//api/name/street</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntTableViewCell/street</TokenIdentifier>
+			<Abstract type="html">The display of the address</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *street</Declaration>
+			
+			
+			<Anchor>//api/name/street</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/setGps:</TokenIdentifier>
+			<Abstract type="html">The display of the GPS arrow</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *gps</Declaration>
+			
+			
+			<Anchor>//api/name/gps</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/gps</TokenIdentifier>
+			<Abstract type="html">The display of the GPS arrow</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *gps</Declaration>
+			
+			
+			<Anchor>//api/name/gps</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntTableViewCell/gps</TokenIdentifier>
+			<Abstract type="html">The display of the GPS arrow</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *gps</Declaration>
+			
+			
+			<Anchor>//api/name/gps</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntTableViewCell/awakeFromNib</TokenIdentifier>
+			<Abstract type="html">Function that gets called to initialize the cell</Abstract>
+			<DeclaredIn>MVAPunIntTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)awakeFromNib</Declaration>
+			
+			
+			<Anchor>//api/name/awakeFromNib</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

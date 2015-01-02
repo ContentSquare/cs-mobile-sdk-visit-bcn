@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAPunInt.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+			<Abstract type="html">This class is used to store and represent the points of interest of Barcelona that are given in the app&apos;s data base</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setNombre:</TokenIdentifier>
+			<Abstract type="html">The name of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *nombre</Declaration>
+			
+			
+			<Anchor>//api/name/nombre</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/nombre</TokenIdentifier>
+			<Abstract type="html">The name of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *nombre</Declaration>
+			
+			
+			<Anchor>//api/name/nombre</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/nombre</TokenIdentifier>
+			<Abstract type="html">The name of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *nombre</Declaration>
+			
+			
+			<Anchor>//api/name/nombre</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setStreet:</TokenIdentifier>
+			<Abstract type="html">The address of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *street</Declaration>
+			
+			
+			<Anchor>//api/name/street</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/street</TokenIdentifier>
+			<Abstract type="html">The address of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *street</Declaration>
+			
+			
+			<Anchor>//api/name/street</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/street</TokenIdentifier>
+			<Abstract type="html">The address of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *street</Declaration>
+			
+			
+			<Anchor>//api/name/street</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setDescr:</TokenIdentifier>
+			<Abstract type="html">The description of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *descr</Declaration>
+			
+			
+			<Anchor>//api/name/descr</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/descr</TokenIdentifier>
+			<Abstract type="html">The description of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *descr</Declaration>
+			
+			
+			<Anchor>//api/name/descr</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/descr</TokenIdentifier>
+			<Abstract type="html">The description of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *descr</Declaration>
+			
+			
+			<Anchor>//api/name/descr</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setFotoPeq:</TokenIdentifier>
+			<Abstract type="html">The name of the small image provided for this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *fotoPeq</Declaration>
+			
+			
+			<Anchor>//api/name/fotoPeq</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/fotoPeq</TokenIdentifier>
+			<Abstract type="html">The name of the small image provided for this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *fotoPeq</Declaration>
+			
+			
+			<Anchor>//api/name/fotoPeq</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/fotoPeq</TokenIdentifier>
+			<Abstract type="html">The name of the small image provided for this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *fotoPeq</Declaration>
+			
+			
+			<Anchor>//api/name/fotoPeq</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setFotoGr:</TokenIdentifier>
+			<Abstract type="html">The name of the big image provided for this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *fotoGr</Declaration>
+			
+			
+			<Anchor>//api/name/fotoGr</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/fotoGr</TokenIdentifier>
+			<Abstract type="html">The name of the big image provided for this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *fotoGr</Declaration>
+			
+			
+			<Anchor>//api/name/fotoGr</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/fotoGr</TokenIdentifier>
+			<Abstract type="html">The name of the big image provided for this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *fotoGr</Declaration>
+			
+			
+			<Anchor>//api/name/fotoGr</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setCoordinates:</TokenIdentifier>
+			<Abstract type="html">Coordinates of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/coordinates</TokenIdentifier>
+			<Abstract type="html">Coordinates of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/coordinates</TokenIdentifier>
+			<Abstract type="html">Coordinates of this point of interest</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setColor:</TokenIdentifier>
+			<Abstract type="html">This color property is used to create the list that appears in the main window of the app</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/color</TokenIdentifier>
+			<Abstract type="html">This color property is used to create the list that appears in the main window of the app</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/color</TokenIdentifier>
+			<Abstract type="html">This color property is used to create the list that appears in the main window of the app</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property NSString *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setSquareX:</TokenIdentifier>
+			<Abstract type="html">This property tells the application the X coordinate of the origin point that will be used to crop the small image and get a thumbnail for the map</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat squareX</Declaration>
+			
+			
+			<Anchor>//api/name/squareX</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/squareX</TokenIdentifier>
+			<Abstract type="html">This property tells the application the X coordinate of the origin point that will be used to crop the small image and get a thumbnail for the map</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat squareX</Declaration>
+			
+			
+			<Anchor>//api/name/squareX</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/squareX</TokenIdentifier>
+			<Abstract type="html">This property tells the application the X coordinate of the origin point that will be used to crop the small image and get a thumbnail for the map</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat squareX</Declaration>
+			
+			
+			<Anchor>//api/name/squareX</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setSquareY:</TokenIdentifier>
+			<Abstract type="html">This property tells the application the Y coordinate of the origin point that will be used to crop the small image and get a thumbnail for the map</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat squareY</Declaration>
+			
+			
+			<Anchor>//api/name/squareY</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/squareY</TokenIdentifier>
+			<Abstract type="html">This property tells the application the Y coordinate of the origin point that will be used to crop the small image and get a thumbnail for the map</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat squareY</Declaration>
+			
+			
+			<Anchor>//api/name/squareY</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/squareY</TokenIdentifier>
+			<Abstract type="html">This property tells the application the Y coordinate of the origin point that will be used to crop the small image and get a thumbnail for the map</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat squareY</Declaration>
+			
+			
+			<Anchor>//api/name/squareY</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/setOffset:</TokenIdentifier>
+			<Abstract type="html">This property tells the application what&apos;s the offset of the description of this point of interest.</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/offset</TokenIdentifier>
+			<Abstract type="html">This property tells the application what&apos;s the offset of the description of this point of interest.</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunInt/offset</TokenIdentifier>
+			<Abstract type="html">This property tells the application what&apos;s the offset of the description of this point of interest.</Abstract>
+			<DeclaredIn>MVAPunInt.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVAPunInt.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunInt/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVAPunInt.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

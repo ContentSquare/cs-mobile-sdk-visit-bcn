@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAStaredTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAStaredTableViewCell</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UITableViewCell and is used to create the cell for the stared itineraries</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStaredTableViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/setDayLabel:</TokenIdentifier>
+			<Abstract type="html">The display of the date of the itinerary</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *dayLabel</Declaration>
+			
+			
+			<Anchor>//api/name/dayLabel</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/dayLabel</TokenIdentifier>
+			<Abstract type="html">The display of the date of the itinerary</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *dayLabel</Declaration>
+			
+			
+			<Anchor>//api/name/dayLabel</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredTableViewCell/dayLabel</TokenIdentifier>
+			<Abstract type="html">The display of the date of the itinerary</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *dayLabel</Declaration>
+			
+			
+			<Anchor>//api/name/dayLabel</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/setHourLabel:</TokenIdentifier>
+			<Abstract type="html">The display of the hour of the itinerary</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *hourLabel</Declaration>
+			
+			
+			<Anchor>//api/name/hourLabel</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/hourLabel</TokenIdentifier>
+			<Abstract type="html">The display of the hour of the itinerary</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *hourLabel</Declaration>
+			
+			
+			<Anchor>//api/name/hourLabel</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredTableViewCell/hourLabel</TokenIdentifier>
+			<Abstract type="html">The display of the hour of the itinerary</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *hourLabel</Declaration>
+			
+			
+			<Anchor>//api/name/hourLabel</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/setOrigFoto:</TokenIdentifier>
+			<Abstract type="html">The display of the origin&apos;s picture</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *origFoto</Declaration>
+			
+			
+			<Anchor>//api/name/origFoto</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/origFoto</TokenIdentifier>
+			<Abstract type="html">The display of the origin&apos;s picture</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *origFoto</Declaration>
+			
+			
+			<Anchor>//api/name/origFoto</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredTableViewCell/origFoto</TokenIdentifier>
+			<Abstract type="html">The display of the origin&apos;s picture</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *origFoto</Declaration>
+			
+			
+			<Anchor>//api/name/origFoto</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/setDestFoto:</TokenIdentifier>
+			<Abstract type="html">The display of the destination&apos;s picture</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *destFoto</Declaration>
+			
+			
+			<Anchor>//api/name/destFoto</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/destFoto</TokenIdentifier>
+			<Abstract type="html">The display of the destination&apos;s picture</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *destFoto</Declaration>
+			
+			
+			<Anchor>//api/name/destFoto</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredTableViewCell/destFoto</TokenIdentifier>
+			<Abstract type="html">The display of the destination&apos;s picture</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *destFoto</Declaration>
+			
+			
+			<Anchor>//api/name/destFoto</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/awakeFromNib</TokenIdentifier>
+			<Abstract type="html">Function that gets called to initialize the cell</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)awakeFromNib</Declaration>
+			
+			
+			<Anchor>//api/name/awakeFromNib</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewCell/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the cell is selected</Abstract>
+			<DeclaredIn>MVAStaredTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>selected</Name>
+					<Abstract type="html">A bool that indicates if the cell has been selected</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">A bool that indicates if the selection needs to be animated or not</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

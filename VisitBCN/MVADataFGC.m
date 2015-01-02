@@ -22,9 +22,6 @@
 
 @end
 
-#define EXPECTED_TIME_TMB 150.0
-#define EXPECTED_TIME_FGC 150.0
-
 @implementation MVADataFGC
 
 /**
@@ -57,7 +54,7 @@
         self.filePathFGC = [NSTemporaryDirectory() stringByAppendingPathComponent:fileNameFGC];
         [dataFGC writeToFile:self.filePathFGC atomically:YES];
         [self unZip:self.filePathFGC at:@"/FGC_GTFS_ZIP"];
-        self.outputPathFGC = [self.outputPathFGC stringByAppendingString:@"/FGC"];
+        //self.outputPathFGC = [self.outputPathFGC stringByAppendingString:@"/FGC"];
         [self parseGTFSAtPath:self.outputPathFGC];
     }
 }
@@ -67,7 +64,6 @@
  *
  *  @param filePath The path of the zip file
  *  @param folder   The name of the folder where the extracted data should be stored
- *  @param isFGC    A boolean indicating if the data is from TMB or FGC
  *
  *  @since version 1.0
  */
@@ -118,15 +114,15 @@
     }
     
     // LIMPIAR PARADAS AISLADAS
+    NSMutableIndexSet *indexSet = [[NSMutableIndexSet alloc] init];
     int numStops = (int)[self.stops count];
     for (int i = 0; i < numStops; ++i) {
         MVAStop *stop = [self.stops objectAtIndex:i];
         if (stop.routes == nil) {
-            [self.stops removeObjectAtIndex:i];
-            [self.stopsHash removeObjectForKey:stop.stopID];
+            [indexSet addIndex:i];
+            //[self.stopsHash removeObjectForKey:stop.stopID];
         }
         else if([stop.routes count] > 1) {
-            //NSLog([stop.name stringByAppendingString:[NSString stringWithFormat:@" - routes: %d",(int)[stop.routes count]]]);
             for(int j = 1; j < [stop.routes count]; ++j) {
                 NSString *routeID = [stop.routes objectAtIndex:j];
                 int posRoute = [[self.routesHash objectForKey:routeID] intValue];
@@ -155,7 +151,6 @@
                         }
                     }
                 }
-                [self.stopsHash setObject:[NSNumber numberWithInt:(int)[self.stops count]] forKey:stopCopy.stopID];
                 [self.stops addObject:stopCopy];
             }
             NSString *routeID = [stop.routes objectAtIndex:0];
@@ -163,12 +158,12 @@
             [stop.routes addObject:routeID];
         }
     }
+    [self.stops removeObjectsAtIndexes:indexSet];
     self.stopsHash = [[NSMutableDictionary alloc] init];
     for(int i = 0; i < [self.stops count]; ++i) {
         MVAStop *stop = [self.stops objectAtIndex:i];
         [self.stopsHash setObject:[NSNumber numberWithInt:i] forKey:stop.stopID];
     }
-    //for (
     NSLog(@"total difference: %.16f", total);
 }
 
@@ -269,9 +264,9 @@
                     [self.tripsHash setObject:[NSNumber numberWithInteger:[self.trips count]] forKey:self.trip.tripID];
                     [self.trips addObject:self.trip];
                 }
-                else {
-                    //NSLog(@"NO QUEREMOS ESTE TRIP");
-                }
+            }
+            else {
+                //NSLog(@"NO QUEREMOS ESTE TRIP");
             }
         }
         self.trip = nil;
@@ -295,7 +290,7 @@
                 
             }
             else {
-                //NSLog(@"NO QUEREMOS ESTE TIME");
+               // NSLog(@"NO QUEREMOS ESTE TIME");
             }
             
         }
@@ -370,7 +365,7 @@
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *

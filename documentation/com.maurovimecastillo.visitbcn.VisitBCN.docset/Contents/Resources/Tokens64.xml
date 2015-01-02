@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAPriorityQueue+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAPriorityQueue()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+            
+			
+			<NodeRef refid="64"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/setTopemaxim:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>@property int topemaxim</Declaration>
+			
+			
+			<Anchor>//api/name/topemaxim</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/topemaxim</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>@property int topemaxim</Declaration>
+			
+			
+			<Anchor>//api/name/topemaxim</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPriorityQueue/topemaxim</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>@property int topemaxim</Declaration>
+			
+			
+			<Anchor>//api/name/topemaxim</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/setTope:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>@property int tope</Declaration>
+			
+			
+			<Anchor>//api/name/tope</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/tope</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>@property int tope</Declaration>
+			
+			
+			<Anchor>//api/name/tope</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPriorityQueue/tope</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>@property int tope</Declaration>
+			
+			
+			<Anchor>//api/name/tope</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/setV:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *v</Declaration>
+			
+			
+			<Anchor>//api/name/v</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/v</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *v</Declaration>
+			
+			
+			<Anchor>//api/name/v</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPriorityQueue/v</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *v</Declaration>
+			
+			
+			<Anchor>//api/name/v</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

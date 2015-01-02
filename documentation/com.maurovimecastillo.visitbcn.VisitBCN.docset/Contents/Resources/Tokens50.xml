@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAConfigTableViewCell+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAConfigTableViewCell()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.m</DeclaredIn>
+            
+			
+			<NodeRef refid="50"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/setMySwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.m</DeclaredIn>
+			
+			<Declaration>@property SevenSwitch *mySwitch</Declaration>
+			
+			
+			<Anchor>//api/name/mySwitch</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/mySwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.m</DeclaredIn>
+			
+			<Declaration>@property SevenSwitch *mySwitch</Declaration>
+			
+			
+			<Anchor>//api/name/mySwitch</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAConfigTableViewCell/mySwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.m</DeclaredIn>
+			
+			<Declaration>@property SevenSwitch *mySwitch</Declaration>
+			
+			
+			<Anchor>//api/name/mySwitch</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

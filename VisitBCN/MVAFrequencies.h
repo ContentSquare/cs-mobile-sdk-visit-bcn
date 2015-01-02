@@ -24,8 +24,8 @@
 
 /**
  *  The identifier of the trip
- *  @see MVATrip class
  *
+ *  @see MVATrip class
  *  @since version 1.0
  */
 @property NSString *tripID;

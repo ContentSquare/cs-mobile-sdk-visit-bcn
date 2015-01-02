@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAHoraTableViewCell+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAHoraTableViewCell()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+            
+			
+			<NodeRef refid="59"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/setMySwitch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+			
+			<Declaration>@property SevenSwitch *mySwitch</Declaration>
+			
+			
+			<Anchor>//api/name/mySwitch</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/mySwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+			
+			<Declaration>@property SevenSwitch *mySwitch</Declaration>
+			
+			
+			<Anchor>//api/name/mySwitch</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAHoraTableViewCell/mySwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+			
+			<Declaration>@property SevenSwitch *mySwitch</Declaration>
+			
+			
+			<Anchor>//api/name/mySwitch</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

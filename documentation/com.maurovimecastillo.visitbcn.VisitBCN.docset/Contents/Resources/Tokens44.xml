@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVATaxis.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVATaxis</TokenIdentifier>
+			<Abstract type="html">This class is used to make the calls to the Hailo API and retreive the taxi data</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/setHailoTimes:</TokenIdentifier>
+			<Abstract type="html">The structure that stores the results of the query answer</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>@property NSDictionary *hailoTimes</Declaration>
+			
+			
+			<Anchor>//api/name/hailoTimes</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/hailoTimes</TokenIdentifier>
+			<Abstract type="html">The structure that stores the results of the query answer</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>@property NSDictionary *hailoTimes</Declaration>
+			
+			
+			<Anchor>//api/name/hailoTimes</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATaxis/hailoTimes</TokenIdentifier>
+			<Abstract type="html">The structure that stores the results of the query answer</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>@property NSDictionary *hailoTimes</Declaration>
+			
+			
+			<Anchor>//api/name/hailoTimes</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/setOrig:</TokenIdentifier>
+			<Abstract type="html">The origin&apos;s coordinates (the pick up coordinates)</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D orig</Declaration>
+			
+			
+			<Anchor>//api/name/orig</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/orig</TokenIdentifier>
+			<Abstract type="html">The origin&apos;s coordinates (the pick up coordinates)</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D orig</Declaration>
+			
+			
+			<Anchor>//api/name/orig</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATaxis/orig</TokenIdentifier>
+			<Abstract type="html">The origin&apos;s coordinates (the pick up coordinates)</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D orig</Declaration>
+			
+			
+			<Anchor>//api/name/orig</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/setDest:</TokenIdentifier>
+			<Abstract type="html">The destination&apos;s coordinates (the drop off coordinates)</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D dest</Declaration>
+			
+			
+			<Anchor>//api/name/dest</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/dest</TokenIdentifier>
+			<Abstract type="html">The destination&apos;s coordinates (the drop off coordinates)</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D dest</Declaration>
+			
+			
+			<Anchor>//api/name/dest</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATaxis/dest</TokenIdentifier>
+			<Abstract type="html">The destination&apos;s coordinates (the drop off coordinates)</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D dest</Declaration>
+			
+			
+			<Anchor>//api/name/dest</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/openHailo</TokenIdentifier>
+			<Abstract type="html">Function that opens the Hailo app using the URL scheme</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>- (void)openHailo</Declaration>
+			
+			
+			<Anchor>//api/name/openHailo</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/loadHailoTime</TokenIdentifier>
+			<Abstract type="html">Function that downloads from the API the Hailo data</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>- (void)loadHailoTime</Declaration>
+			
+			
+			<Anchor>//api/name/loadHailoTime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/taxiFareWithDistance:andDate:</TokenIdentifier>
+			<Abstract type="html">Function used when there&apos;s no internet connection. This function makes an estimation of the taxi fare</Abstract>
+			<DeclaredIn>MVATaxis.h</DeclaredIn>
+			
+			<Declaration>- (double)taxiFareWithDistance:(double)dist andDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dist</Name>
+					<Abstract type="html">The distance between the two points</Abstract>
+				</Parameter><Parameter>
+					<Name>date</Name>
+					<Abstract type="html">The date of the trip</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The taxi fare estimated</Abstract></ReturnValue>
+			<Anchor>//api/name/taxiFareWithDistance:andDate:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/urlencodeString:</TokenIdentifier>
+			<Abstract type="html">Function that encodes an string to use it for the APIs</Abstract>
+			<DeclaredIn>MVATaxis.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)urlencodeString:(NSString *)unencodedString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>unencodedString</Name>
+					<Abstract type="html">The unencoded string</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The encoded string</Abstract></ReturnValue>
+			<Anchor>//api/name/urlencodeString:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/initTimeForDate:</TokenIdentifier>
+			<Abstract type="html">Functiont that converts the initial time for this execution into an integer that represents the date in seconds</Abstract>
+			<DeclaredIn>MVATaxis.m</DeclaredIn>
+			
+			<Declaration>- (int)initTimeForDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">The date of the trip</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Integer with the date in seconds</Abstract></ReturnValue>
+			<Anchor>//api/name/initTimeForDate:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/dayOfWeek:</TokenIdentifier>
+			<Abstract type="html">Returns the day of the week for a given date</Abstract>
+			<DeclaredIn>MVATaxis.m</DeclaredIn>
+			
+			<Declaration>- (long)dayOfWeek:(NSDate *)anyDate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>anyDate</Name>
+					<Abstract type="html">A NSDate object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The day of the week in European mode</Abstract></ReturnValue>
+			<Anchor>//api/name/dayOfWeek:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/customDate</TokenIdentifier>
+			<Abstract type="html">Function that loads if the user has chosen a custom date for the execution</Abstract>
+			<DeclaredIn>MVATaxis.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)customDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">A bool with the answer to the query</Abstract></ReturnValue>
+			<Anchor>//api/name/customDate</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATaxis/loadCustomDate</TokenIdentifier>
+			<Abstract type="html">Function that loads the custom date chosen by the user</Abstract>
+			<DeclaredIn>MVATaxis.m</DeclaredIn>
+			
+			<Declaration>- (NSDate *)loadCustomDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The date in an NSDate object</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomDate</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

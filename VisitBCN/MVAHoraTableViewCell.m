@@ -18,17 +18,18 @@
 @implementation MVAHoraTableViewCell
 
 /**
- *  <#Description#>
+ *  Function that gets called to initialize the cell
  *
  *  @since version 1.0
  */
 - (void)awakeFromNib
 {
-    // Initialization code
     [self.datePicker setMinimumDate:[NSDate date]];
-    NSComparisonResult result = [[NSDate date] compare:[self loadCustomDate]];
+    NSDate *customDate = [self loadCustomDate];
+    NSComparisonResult result = [[NSDate date] compare:customDate];
     self.label.text = @"Calculate trips for custom time";
-    if (result == NSOrderedDescending) [self.datePicker setMinimumDate:[self loadCustomDate]];
+    BOOL custom = [self customDate];
+    if (result == NSOrderedDescending) [self.datePicker setMinimumDate:customDate];
     if (self.mySwitch == nil) {
         self.mySwitch = [[SevenSwitch alloc] initWithFrame:CGRectMake(0, 0, self.cellSwitch.frame.size.width, self.cellSwitch.frame.size.height)];
         [self.mySwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
@@ -43,23 +44,23 @@
         self.mySwitch.borderColor = [UIColor lightGrayColor];
         
         [self.cellSwitch addSubview:self.mySwitch];
-        [self.mySwitch setOn:[self customDate] animated:YES];
+        [self.mySwitch setOn:custom animated:YES];
         [self.cellSwitch setBackgroundColor:[UIColor clearColor]];
         
-        [self.datePicker setDate:[self loadCustomDate] animated:NO];
+        [self.datePicker setDate:customDate animated:NO];
         [self.datePicker setTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
     }
-    if ([self customDate]) [self.mySwitch setThumbTintColor:[UIColor whiteColor]];
+    if (custom) [self.mySwitch setThumbTintColor:[UIColor whiteColor]];
     else [self.mySwitch setThumbTintColor:[UIColor lightGrayColor]];
-    [self.datePicker setUserInteractionEnabled:[self customDate]];
-    [self.datePicker setHidden:![self customDate]];
+    [self.datePicker setUserInteractionEnabled:custom];
+    [self.datePicker setHidden:!custom];
     [self initTime];
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user changes the custom time selected
  *
- *  @param sender <#sender description#>
+ *  @param sender The date picker
  *
  *  @since version 1.0
  */
@@ -71,9 +72,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user changes the switch value
  *
- *  @param sender <#sender description#>
+ *  @param sender The SevenSwitch object
  *
  *  @since version 1.0
  */
@@ -97,9 +98,9 @@
 }
 
 /**
- *  <#Description#>
+ *  This function calculates the initial time for this graph execution
  *
- *  @return <#return value description#>
+ *  @return The time in seconds
  *
  *  @since version 1.0
  */
@@ -115,9 +116,9 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads if the user has selected a custom date
  *
- *  @return <#return value description#>
+ *  @return A boolean
  *
  *  @since version 1.0
  */
@@ -135,9 +136,9 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads either the custom date chosen by the user or the current date of the device
  *
- *  @return <#return value description#>
+ *  @return An NSDate object
  *
  *  @since version 1.0
  */

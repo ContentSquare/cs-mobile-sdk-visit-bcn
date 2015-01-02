@@ -28,22 +28,20 @@
 @implementation MVAMapaViewController
 
 /**
- *  <#Description#>
- *
- *  @param animated <#animated description#>
+ *  Function that gets called when the view controller has loaded the view
  *
  *  @since version 1.0
  */
--(void)viewDidLoad:(BOOL)animated
+-(void)viewDidLoad
 {
     self.mapView = nil;
     
 }
 
 /**
- *  <#Description#>
+ *  Notifies the view controller that its view was added to a view hierarchy.
  *
- *  @param animated <#animated description#>
+ *  @param animated If YES, the view was added to the window using an animation.
  *
  *  @since version 1.0
  */
@@ -61,7 +59,7 @@
         mapView.adjustTilesForRetinaDisplay = YES; // these tiles aren't designed specifically for retina, so make them legible
         mapView.delegate = self;
         [mapView setMaxZoom:offlineSource.maxZoom];
-        [mapView setMinZoom:12];
+        [mapView setMinZoom:12.1];
         [mapView setBouncingEnabled:YES];
         RMSphericalTrapezium trap = offlineSource.latitudeLongitudeBoundingBox;
         [mapView setConstraintsSouthWest:trap.southWest northEast:trap.northEast];
@@ -92,12 +90,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate for a renderer object to use when drawing the specified overlay.
  *
- *  @param mapView <#mapView description#>
- *  @param overlay <#overlay description#>
+ *  @param mapView The map view that requested the renderer object.
+ *  @param overlay The overlay object that is about to be displayed.
  *
- *  @return <#return value description#>
+ *  @return The renderer to use when presenting the specified overlay on the map. If you return nil, no content is drawn for the specified overlay object.
  *
  *  @since version 1.0
  */
@@ -110,12 +108,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate to return the layer for a created annotation.
  *
- *  @param mapView    <#mapView description#>
- *  @param annotation <#annotation description#>
+ *  @param mapView    The map object.
+ *  @param annotation The annotation created.
  *
- *  @return <#return value description#>
+ *  @return The layer that represents the annotation.
  *
  *  @since version 1.0
  */
@@ -181,11 +179,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the user taped on the call out of one of the annotations.
  *
- *  @param control    <#control description#>
- *  @param annotation <#annotation description#>
- *  @param map        <#map description#>
+ *  @param control    The control object.
+ *  @param annotation The annotation that contains the call out.
+ *  @param map        The map object.
  *
  *  @since version 1.0
  */
@@ -203,10 +201,10 @@
 }
 
 /**
- *  <#Description#>
+ *  Called when a segue is about to be performed. (required)
  *
- *  @param segue  <#segue description#>
- *  @param sender <#sender description#>
+ *  @param segue  The segue object containing information about the view controllers involved in the segue.
+ *  @param sender The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.
  *
  *  @since version 1.0
  */
@@ -219,14 +217,15 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that crops a given image to fit a new size.
  *
- *  @param image <#image description#>
- *  @param size  <#size description#>
- *  @param punto <#punto description#>
+ *  @param image The original image.
+ *  @param size  The new size.
+ *  @param punto MVAPunInt class object that indicates the origin coordinates of the new image.
  *
- *  @return <#return value description#>
+ *  @return The new image.
  *
+ *  @see MVAPunInt class
  *  @since version 1.0
  */
 - (UIImage *)imageByCroppingImage:(UIImage *)image toSize:(CGSize)size andPunto:(MVAPunInt *)punto
@@ -238,18 +237,18 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that scales a given image to ft a new size.
  *
- *  @param image   <#image description#>
- *  @param newSize <#newSize description#>
+ *  @param image   The original image.
+ *  @param newSize The new size.
  *
- *  @return <#return value description#>
+ *  @return The scaled image.
  *
  *  @since version 1.0
  */
 - (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize
 {
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, 1.0f);
+    UIGraphicsBeginImageContext(newSize);
     [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -257,15 +256,15 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that creates a UIImage from a UIView given
  *
- *  @param view <#view description#>
+ *  @param view The UIView that needs to be converted into an image
  *
- *  @return <#return value description#>
+ *  @return The UIImage created
  *
  *  @since version 1.0
  */
-- (UIImage *) imageWithView:(UIView *)view
+- (UIImage *)imageWithView:(UIView *)view
 {
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, [[UIScreen mainScreen] scale]);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
@@ -275,9 +274,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the index of the custom location chosen
  *
- *  @return <#return value description#>
+ *  @return The index of the custom location inside the custom locations array
  *
  *  @since version 1.0
  */
@@ -294,10 +293,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the custom location selected by the user
  *
- *  @return <#return value description#>
+ *  @return The MVACustomLocation object
  *
+ *  @see MVACustomLocation class
  *  @since version 1.0
  */
 - (MVACustomLocation *) loadCustomLocation

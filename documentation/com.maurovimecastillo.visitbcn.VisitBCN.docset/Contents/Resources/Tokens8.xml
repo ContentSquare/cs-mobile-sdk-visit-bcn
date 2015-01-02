@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVACustomElementTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVACustomElementTableViewCell</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UITableViewCell and is used to create the cells for the custom locations created by the user</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocationsTableViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomElementTableViewCell/setFoto:</TokenIdentifier>
+			<Abstract type="html">The image of the cell</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *foto</Declaration>
+			
+			
+			<Anchor>//api/name/foto</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomElementTableViewCell/foto</TokenIdentifier>
+			<Abstract type="html">The image of the cell</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *foto</Declaration>
+			
+			
+			<Anchor>//api/name/foto</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomElementTableViewCell/foto</TokenIdentifier>
+			<Abstract type="html">The image of the cell</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *foto</Declaration>
+			
+			
+			<Anchor>//api/name/foto</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomElementTableViewCell/setNombre:</TokenIdentifier>
+			<Abstract type="html">The display of the name of the custom location</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *nombre</Declaration>
+			
+			
+			<Anchor>//api/name/nombre</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomElementTableViewCell/nombre</TokenIdentifier>
+			<Abstract type="html">The display of the name of the custom location</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *nombre</Declaration>
+			
+			
+			<Anchor>//api/name/nombre</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomElementTableViewCell/nombre</TokenIdentifier>
+			<Abstract type="html">The display of the name of the custom location</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *nombre</Declaration>
+			
+			
+			<Anchor>//api/name/nombre</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomElementTableViewCell/setCoords:</TokenIdentifier>
+			<Abstract type="html">The display of the coordinates of the custom location</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *coords</Declaration>
+			
+			
+			<Anchor>//api/name/coords</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomElementTableViewCell/coords</TokenIdentifier>
+			<Abstract type="html">The display of the coordinates of the custom location</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *coords</Declaration>
+			
+			
+			<Anchor>//api/name/coords</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomElementTableViewCell/coords</TokenIdentifier>
+			<Abstract type="html">The display of the coordinates of the custom location</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *coords</Declaration>
+			
+			
+			<Anchor>//api/name/coords</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomElementTableViewCell/awakeFromNib</TokenIdentifier>
+			<Abstract type="html">Function that gets called to initialize the cell</Abstract>
+			<DeclaredIn>MVACustomElementTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)awakeFromNib</Declaration>
+			
+			
+			<Anchor>//api/name/awakeFromNib</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

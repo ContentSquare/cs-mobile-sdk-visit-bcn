@@ -180,7 +180,7 @@
         if (numA != nil && numB != nil) {
             MVAEdge *e = [[MVAEdge alloc] init];
             e.destini = [self.nodes objectAtIndex:[numB intValue]];
-            e.weight = [NSNumber numberWithInt:120];//(NSNumber *)tri.elem3;
+            e.weight = [NSNumber numberWithInt:420];//(NSNumber *)tri.elem3;
             e.change = YES;
             NSMutableArray *array = [self.edgeList objectAtIndex:[numA intValue]];
             [array addObject:e];
@@ -188,7 +188,7 @@
             
             MVAEdge *e2 = [[MVAEdge alloc] init];
             e2.destini = [self.nodes objectAtIndex:[numA intValue]];
-            e2.weight = [NSNumber numberWithInt:120];//(NSNumber *)tri.elem3;
+            e2.weight = [NSNumber numberWithInt:420];//(NSNumber *)tri.elem3;
             e2.change = YES;
             NSMutableArray *array2 = [self.edgeList objectAtIndex:[numB intValue]];
             [array2 addObject:e2];
@@ -217,7 +217,7 @@
             if (numA != nil && [prefix isEqualToString:prefix2]) {
                 MVAEdge *e = [[MVAEdge alloc] init];
                 e.destini = [self.nodes objectAtIndex:(j + tmbstops)];
-                e.weight = [NSNumber numberWithInt:120];//(NSNumber *)tri.elem3;
+                e.weight = [NSNumber numberWithInt:420];//(NSNumber *)tri.elem3;
                 e.change = YES;
                 NSMutableArray *array = [self.edgeList objectAtIndex:[numA intValue]];
                 [array addObject:e];
@@ -225,7 +225,7 @@
                 
                 MVAEdge *e2 = [[MVAEdge alloc] init];
                 e2.destini = [self.nodes objectAtIndex:[numA intValue]];
-                e2.weight = [NSNumber numberWithInt:120];//(NSNumber *)tri.elem3;
+                e2.weight = [NSNumber numberWithInt:420];//(NSNumber *)tri.elem3;
                 e2.change = YES;
                 NSMutableArray *array2 = [self.edgeList objectAtIndex:(j + tmbstops)];
                 [array2 addObject:e2];
@@ -252,7 +252,7 @@
                 NSNumber *numB = [dataFGC.stopsHash objectForKey:stop2.stopID];
                 MVAEdge *e = [[MVAEdge alloc] init];
                 e.destini = [self.nodes objectAtIndex:([numB intValue] + tmbstops)];
-                e.weight = [NSNumber numberWithInt:120];
+                e.weight = [NSNumber numberWithInt:420];
                 e.change = YES;
                 NSMutableArray *array = [self.edgeList objectAtIndex:([numA intValue] + tmbstops)];
                 [array addObject:e];
@@ -267,9 +267,9 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads if the user has selected a custom date
  *
- *  @return <#return value description#>
+ *  @return A boolean
  *
  *  @since version 1.0
  */
@@ -287,9 +287,9 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads either the custom date chosen by the user or the current date of the device
  *
- *  @return A NSDate object
+ *  @return An NSDate object
  *
  *  @since version 1.0
  */

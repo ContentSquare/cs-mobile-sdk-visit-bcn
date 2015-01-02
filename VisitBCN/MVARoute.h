@@ -80,8 +80,8 @@
 
 /**
  *  The trips that operate in this route
- *  @see MVATrip class
  *
+ *  @see MVATrip class
  *  @since version 1.0
  */
 @property NSMutableArray *trips;

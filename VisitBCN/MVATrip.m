@@ -10,6 +10,27 @@
 
 @implementation MVATrip
 
+/**
+ *  This function is overriden from NSObject. Returns a MVATrip copy of self.
+ *
+ *  @return The new MVATrip copied object
+ *
+ *  @since version 1.0
+ */
+-(id)copy
+{
+    MVATrip *copyElem = [[MVATrip alloc] init];
+    copyElem.routeID = [self.routeID copy];
+    copyElem.serviceID = [self.serviceID copy];
+    copyElem.tripID = [self.tripID copy];
+    copyElem.directionID = [self.directionID copy];
+    copyElem.tripName = [self.tripName copy];
+    copyElem.direcUP = self.direcUP;
+    copyElem.sequence = [self.sequence copy];
+    copyElem.freqs = [self.freqs copy];
+    return copyElem;
+}
+
 -(void)insertElement:(NSString *)elem atIndex:(NSInteger)index isFGC:(BOOL)isFGC
 {
     if (isFGC) {
@@ -59,7 +80,7 @@
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *

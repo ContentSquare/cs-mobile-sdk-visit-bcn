@@ -7,8 +7,9 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of the MVAGraph class
  *
+ *  @see MVAGraph class
  *  @since version 1.0
  */
 
@@ -18,9 +19,9 @@
 @interface MVABusGraph : MVAGraph
 
 /**
- *  <#Description#>
+ *  This function creates the bus graph
  *
- *  @param dataBase <#dataBase description#>
+ *  @param dataBase An object containing the bus data base
  *
  *  @since version 1.0
  */

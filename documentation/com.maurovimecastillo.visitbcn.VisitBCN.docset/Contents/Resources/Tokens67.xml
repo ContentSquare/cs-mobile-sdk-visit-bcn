@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVASliderTableViewCell+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVASliderTableViewCell()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVASliderTableViewCell.m</DeclaredIn>
+            
+			
+			<NodeRef refid="67"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/setCreated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVASliderTableViewCell.m</DeclaredIn>
+			
+			<Declaration>@property BOOL created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="67"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/created</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVASliderTableViewCell.m</DeclaredIn>
+			
+			<Declaration>@property BOOL created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="67"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASliderTableViewCell/created</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVASliderTableViewCell.m</DeclaredIn>
+			
+			<Declaration>@property BOOL created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="67"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

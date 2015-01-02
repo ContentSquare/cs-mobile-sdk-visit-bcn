@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVACustomLocTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocTableViewCell</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UITableViewCell and is used to create the custom location cell</Abstract>
+			<DeclaredIn>MVACustomLocTableViewCell.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAConfigurationTableViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocTableViewCell/setLogo:</TokenIdentifier>
+			<Abstract type="html">The image of the cell</Abstract>
+			<DeclaredIn>MVACustomLocTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocTableViewCell/logo</TokenIdentifier>
+			<Abstract type="html">The image of the cell</Abstract>
+			<DeclaredIn>MVACustomLocTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocTableViewCell/logo</TokenIdentifier>
+			<Abstract type="html">The image of the cell</Abstract>
+			<DeclaredIn>MVACustomLocTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocTableViewCell/setLabel:</TokenIdentifier>
+			<Abstract type="html">The name of the cell</Abstract>
+			<DeclaredIn>MVACustomLocTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocTableViewCell/label</TokenIdentifier>
+			<Abstract type="html">The name of the cell</Abstract>
+			<DeclaredIn>MVACustomLocTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocTableViewCell/label</TokenIdentifier>
+			<Abstract type="html">The name of the cell</Abstract>
+			<DeclaredIn>MVACustomLocTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocTableViewCell/awakeFromNib</TokenIdentifier>
+			<Abstract type="html">Function that gets called to initialize the cell</Abstract>
+			<DeclaredIn>MVACustomLocTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)awakeFromNib</Declaration>
+			
+			
+			<Anchor>//api/name/awakeFromNib</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

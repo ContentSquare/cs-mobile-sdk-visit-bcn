@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVABusSeq.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVABusSeq</TokenIdentifier>
+			<Abstract type="html">This class represents a stop inside a route and it&apos;s position in the stop list.</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVABusSeq/setRouteID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the route</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *routeID</Declaration>
+			
+			
+			<Anchor>//api/name/routeID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVABusSeq/routeID</TokenIdentifier>
+			<Abstract type="html">The identifier of the route</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *routeID</Declaration>
+			
+			
+			<Anchor>//api/name/routeID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVABusSeq/routeID</TokenIdentifier>
+			<Abstract type="html">The identifier of the route</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *routeID</Declaration>
+			
+			
+			<Anchor>//api/name/routeID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVABusSeq/setStopID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the stop</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *stopID</Declaration>
+			
+			
+			<Anchor>//api/name/stopID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVABusSeq/stopID</TokenIdentifier>
+			<Abstract type="html">The identifier of the stop</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *stopID</Declaration>
+			
+			
+			<Anchor>//api/name/stopID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVABusSeq/stopID</TokenIdentifier>
+			<Abstract type="html">The identifier of the stop</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *stopID</Declaration>
+			
+			
+			<Anchor>//api/name/stopID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVABusSeq/setPos:</TokenIdentifier>
+			<Abstract type="html">The position in the trip of the current stop for the current route</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+			
+			<Declaration>@property NSString *pos</Declaration>
+			
+			
+			<Anchor>//api/name/pos</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVABusSeq/pos</TokenIdentifier>
+			<Abstract type="html">The position in the trip of the current stop for the current route</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+			
+			<Declaration>@property NSString *pos</Declaration>
+			
+			
+			<Anchor>//api/name/pos</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVABusSeq/pos</TokenIdentifier>
+			<Abstract type="html">The position in the trip of the current stop for the current route</Abstract>
+			<DeclaredIn>MVABusSeq.h</DeclaredIn>
+			
+			<Declaration>@property NSString *pos</Declaration>
+			
+			
+			<Anchor>//api/name/pos</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

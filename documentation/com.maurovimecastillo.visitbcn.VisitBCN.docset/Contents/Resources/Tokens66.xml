@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAPuntsIntsTableViewController+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAPuntsIntsTableViewController()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+            
+			
+			<NodeRef refid="66"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setTopConstraint:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topConstraint</Declaration>
+			
+			
+			<Anchor>//api/name/topConstraint</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/topConstraint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topConstraint</Declaration>
+			
+			
+			<Anchor>//api/name/topConstraint</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/topConstraint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topConstraint</Declaration>
+			
+			
+			<Anchor>//api/name/topConstraint</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setSelectedPoint:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPunInt *selectedPoint</Declaration>
+			
+			
+			<Anchor>//api/name/selectedPoint</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/selectedPoint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPunInt *selectedPoint</Declaration>
+			
+			
+			<Anchor>//api/name/selectedPoint</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/selectedPoint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPunInt *selectedPoint</Declaration>
+			
+			
+			<Anchor>//api/name/selectedPoint</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setSocialMenu:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) ALRadialMenu *socialMenu</Declaration>
+			
+			
+			<Anchor>//api/name/socialMenu</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/socialMenu</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) ALRadialMenu *socialMenu</Declaration>
+			
+			
+			<Anchor>//api/name/socialMenu</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/socialMenu</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) ALRadialMenu *socialMenu</Declaration>
+			
+			
+			<Anchor>//api/name/socialMenu</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setMenuON:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL menuON</Declaration>
+			
+			
+			<Anchor>//api/name/menuON</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/menuON</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL menuON</Declaration>
+			
+			
+			<Anchor>//api/name/menuON</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/menuON</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL menuON</Declaration>
+			
+			
+			<Anchor>//api/name/menuON</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setCustomLoc:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVACustomLocation *customLoc</Declaration>
+			
+			
+			<Anchor>//api/name/customLoc</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/customLoc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVACustomLocation *customLoc</Declaration>
+			
+			
+			<Anchor>//api/name/customLoc</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/customLoc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVACustomLocation *customLoc</Declaration>
+			
+			
+			<Anchor>//api/name/customLoc</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setSearchBar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UISearchBar *searchBar</Declaration>
+			
+			
+			<Anchor>//api/name/searchBar</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/searchBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UISearchBar *searchBar</Declaration>
+			
+			
+			<Anchor>//api/name/searchBar</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/searchBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UISearchBar *searchBar</Declaration>
+			
+			
+			<Anchor>//api/name/searchBar</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setSearchDisplay:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UISearchDisplayController *searchDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/searchDisplay</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/searchDisplay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UISearchDisplayController *searchDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/searchDisplay</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/searchDisplay</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UISearchDisplayController *searchDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/searchDisplay</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setFilteredContentList:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *filteredContentList</Declaration>
+			
+			
+			<Anchor>//api/name/filteredContentList</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/filteredContentList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *filteredContentList</Declaration>
+			
+			
+			<Anchor>//api/name/filteredContentList</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/filteredContentList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *filteredContentList</Declaration>
+			
+			
+			<Anchor>//api/name/filteredContentList</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setIsSearching:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL isSearching</Declaration>
+			
+			
+			<Anchor>//api/name/isSearching</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/isSearching</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL isSearching</Declaration>
+			
+			
+			<Anchor>//api/name/isSearching</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/isSearching</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL isSearching</Declaration>
+			
+			
+			<Anchor>//api/name/isSearching</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

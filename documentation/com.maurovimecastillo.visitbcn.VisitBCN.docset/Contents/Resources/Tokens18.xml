@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVADetailsViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVADetailsViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UIViewController and is used to display the details of the paths.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setPunto:</TokenIdentifier>
+			<Abstract type="html">The point to be displayed and that will be used to calculate the itineraries.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunInt *punto</Declaration>
+			
+			
+			<Anchor>//api/name/punto</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/punto</TokenIdentifier>
+			<Abstract type="html">The point to be displayed and that will be used to calculate the itineraries.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunInt *punto</Declaration>
+			
+			
+			<Anchor>//api/name/punto</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/punto</TokenIdentifier>
+			<Abstract type="html">The point to be displayed and that will be used to calculate the itineraries.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunInt *punto</Declaration>
+			
+			
+			<Anchor>//api/name/punto</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setCustomlocation:</TokenIdentifier>
+			<Abstract type="html">A custom location selected by the user. The default value is nil.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACustomLocation *customlocation</Declaration>
+			
+			
+			<Anchor>//api/name/customlocation</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/customlocation</TokenIdentifier>
+			<Abstract type="html">A custom location selected by the user. The default value is nil.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACustomLocation *customlocation</Declaration>
+			
+			
+			<Anchor>//api/name/customlocation</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/customlocation</TokenIdentifier>
+			<Abstract type="html">A custom location selected by the user. The default value is nil.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACustomLocation *customlocation</Declaration>
+			
+			
+			<Anchor>//api/name/customlocation</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setOrig:</TokenIdentifier>
+			<Abstract type="html">The origin&apos;s coordinates.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D orig</Declaration>
+			
+			
+			<Anchor>//api/name/orig</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/orig</TokenIdentifier>
+			<Abstract type="html">The origin&apos;s coordinates.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D orig</Declaration>
+			
+			
+			<Anchor>//api/name/orig</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/orig</TokenIdentifier>
+			<Abstract type="html">The origin&apos;s coordinates.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D orig</Declaration>
+			
+			
+			<Anchor>//api/name/orig</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setSubwayPath:</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the subway path</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/subwayPath</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the subway path</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/subwayPath</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the subway path</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setBusPath:</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the bus path</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/busPath</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the bus path</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/busPath</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the bus path</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setGraphs:</TokenIdentifier>
+			<Abstract type="html">The graphs that will be used to compute the subway and bus paths.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAGraphs</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAGraphs *graphs</Declaration>
+			
+			
+			<Anchor>//api/name/graphs</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/graphs</TokenIdentifier>
+			<Abstract type="html">The graphs that will be used to compute the subway and bus paths.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAGraphs</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAGraphs *graphs</Declaration>
+			
+			
+			<Anchor>//api/name/graphs</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/graphs</TokenIdentifier>
+			<Abstract type="html">The graphs that will be used to compute the subway and bus paths.</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAGraphs</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAGraphs *graphs</Declaration>
+			
+			
+			<Anchor>//api/name/graphs</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setWalkDist:</TokenIdentifier>
+			<Abstract type="html">The distance walking distance from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double walkDist</Declaration>
+			
+			
+			<Anchor>//api/name/walkDist</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/walkDist</TokenIdentifier>
+			<Abstract type="html">The distance walking distance from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double walkDist</Declaration>
+			
+			
+			<Anchor>//api/name/walkDist</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/walkDist</TokenIdentifier>
+			<Abstract type="html">The distance walking distance from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double walkDist</Declaration>
+			
+			
+			<Anchor>//api/name/walkDist</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setWalkTime:</TokenIdentifier>
+			<Abstract type="html">The time needed to walk from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double walkTime</Declaration>
+			
+			
+			<Anchor>//api/name/walkTime</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/walkTime</TokenIdentifier>
+			<Abstract type="html">The time needed to walk from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double walkTime</Declaration>
+			
+			
+			<Anchor>//api/name/walkTime</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/walkTime</TokenIdentifier>
+			<Abstract type="html">The time needed to walk from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double walkTime</Declaration>
+			
+			
+			<Anchor>//api/name/walkTime</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setCarDist:</TokenIdentifier>
+			<Abstract type="html">The distance in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double carDist</Declaration>
+			
+			
+			<Anchor>//api/name/carDist</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/carDist</TokenIdentifier>
+			<Abstract type="html">The distance in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double carDist</Declaration>
+			
+			
+			<Anchor>//api/name/carDist</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/carDist</TokenIdentifier>
+			<Abstract type="html">The distance in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double carDist</Declaration>
+			
+			
+			<Anchor>//api/name/carDist</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setCarTime:</TokenIdentifier>
+			<Abstract type="html">The travel time in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double carTime</Declaration>
+			
+			
+			<Anchor>//api/name/carTime</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/carTime</TokenIdentifier>
+			<Abstract type="html">The travel time in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double carTime</Declaration>
+			
+			
+			<Anchor>//api/name/carTime</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/carTime</TokenIdentifier>
+			<Abstract type="html">The travel time in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double carTime</Declaration>
+			
+			
+			<Anchor>//api/name/carTime</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setInitTime:</TokenIdentifier>
+			<Abstract type="html">The initial time of the paths in seconds</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double initTime</Declaration>
+			
+			
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/initTime</TokenIdentifier>
+			<Abstract type="html">The initial time of the paths in seconds</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double initTime</Declaration>
+			
+			
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/initTime</TokenIdentifier>
+			<Abstract type="html">The initial time of the paths in seconds</Abstract>
+			<DeclaredIn>MVADetailsViewController.h</DeclaredIn>
+			
+			<Declaration>@property double initTime</Declaration>
+			
+			
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Function that gets called when there&apos;s a memory leak or warning</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/viewWillAppear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view is about to be added to a view hierarchy.</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewWillAppear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the view is being added to the window using an animation.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewWillAppear:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/loadSavedPaths</TokenIdentifier>
+			<Abstract type="html">Function that loads the paths saved by the user</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)loadSavedPaths</Declaration>
+			
+			
+			<Anchor>//api/name/loadSavedPaths</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/createParallax</TokenIdentifier>
+			<Abstract type="html">Function that create the parallax effect</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)createParallax</Declaration>
+			
+			
+			<Anchor>//api/name/createParallax</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/insetView</TokenIdentifier>
+			<Abstract type="html">Function that creates the insets</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)insetView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The insets view</Abstract></ReturnValue>
+			<Anchor>//api/name/insetView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/subwayView</TokenIdentifier>
+			<Abstract type="html">Function that creates the subway view</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)subwayView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The subway view</Abstract></ReturnValue>
+			<Anchor>//api/name/subwayView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/busView</TokenIdentifier>
+			<Abstract type="html">Function that creates the bus view</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)busView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The bus view</Abstract></ReturnValue>
+			<Anchor>//api/name/busView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/subwayPathView:</TokenIdentifier>
+			<Abstract type="html">Function that gets called after the subway path view has been selected</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)subwayPathView:(UITapGestureRecognizer *)gr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gr</Name>
+					<Abstract type="html">The tap gesture recognizer object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/subwayPathView:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/busPathView:</TokenIdentifier>
+			<Abstract type="html">Function that gets called after the bus path view has been selected</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)busPathView:(UITapGestureRecognizer *)gr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gr</Name>
+					<Abstract type="html">The tap gesture recognizer object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/busPathView:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/walkingView</TokenIdentifier>
+			<Abstract type="html">Function that creates the walking view</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)walkingView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The walking view</Abstract></ReturnValue>
+			<Anchor>//api/name/walkingView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/taxiCellView</TokenIdentifier>
+			<Abstract type="html">Function that creates the taxi view</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)taxiCellView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The taxi view</Abstract></ReturnValue>
+			<Anchor>//api/name/taxiCellView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/footerView</TokenIdentifier>
+			<Abstract type="html">Function that creates the footer view</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)footerView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The footer view</Abstract></ReturnValue>
+			<Anchor>//api/name/footerView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/starTapped:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user selects the star button.</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)starTapped:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The star button.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/starTapped:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/hailoTap:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)hailoTap:(UITapGestureRecognizer *)gr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gr</Name>
+					<Abstract type="html">The tap gesture recognizer object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/hailoTap:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/loadCustom</TokenIdentifier>
+			<Abstract type="html">Function that loads the index of the custom location chosen</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (int)loadCustom</Declaration>
+			
+			<ReturnValue><Abstract type="html">The index of the custom location inside the custom locations array</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustom</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/loadCustomLocation</TokenIdentifier>
+			<Abstract type="html">Function that loads if the user has chosen a custom location.</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (MVACustomLocation *)loadCustomLocation</Declaration>
+			
+			<ReturnValue><Abstract type="html">The MVACustonLocation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomLocation</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/customDate</TokenIdentifier>
+			<Abstract type="html">This function loads if the user has selected a custom date</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)customDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">A boolean</Abstract></ReturnValue>
+			<Anchor>//api/name/customDate</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/loadCustomDate</TokenIdentifier>
+			<Abstract type="html">This function loads either the custom date chosen by the user or the current date of the device</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSDate *)loadCustomDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSDate object</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomDate</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/connectedToInternet</TokenIdentifier>
+			<Abstract type="html">Function that checks if there&apos;s internet connection</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)connectedToInternet</Declaration>
+			
+			<ReturnValue><Abstract type="html">A bool answering the query</Abstract></ReturnValue>
+			<Anchor>//api/name/connectedToInternet</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html">Called when a segue is about to be performed. (required)</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>segue</Name>
+					<Abstract type="html">The segue object containing information about the view controllers involved in the segue.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

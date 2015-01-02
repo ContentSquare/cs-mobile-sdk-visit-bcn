@@ -7,7 +7,7 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of UIViewController and is used to display the list of points of interest of the app
  *
  *  @since version 1.0
  */
@@ -17,14 +17,14 @@
 @interface MVAPuntsIntsTableViewController : UIViewController
 
 /**
- * <#Description#>
+ * The table view that needs to be controlled by this view controller
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 /**
- * <#Description#>
+ * The home button that aopens the menu of the app
  *
  *  @since version 1.0
  */

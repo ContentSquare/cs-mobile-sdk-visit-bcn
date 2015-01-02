@@ -9,6 +9,12 @@
 /**
  *  This class is used to store and represent the points of interest of Barcelona that are given in the app's data base
  *
+ *  We can represent this class as a table:
+ *
+ *  | Nombre | Street | Description | Small image | Big image | Coordinates | Color  |   X   |   Y   |
+ *  |:------:|:------:|:-----------:|:-----------:|:---------:|:-----------:|:------:|:-----:|:-----:|
+ *  | String | String |   String    |   String    |  String   | Coordinates | String | Float | Float |
+ *
  *  @since version 1.0
  */
 
@@ -47,6 +53,8 @@
 
 /**
  *  The name of the big image provided for this point of interest
+ *
+ *  @since version 1.0
  */
 @property NSString *fotoGr;
 
@@ -77,5 +85,12 @@
  *  @since version 1.0
  */
 @property CGFloat squareY;
+
+/**
+ *  This property tells the application what's the offset of the description of this point of interest.
+ *
+ *  @since version 1.0
+ */
+@property CGFloat offset;
 
 @end

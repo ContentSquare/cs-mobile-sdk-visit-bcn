@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVADetailMapViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVADetailMapViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UIViewController and is used to display the given path on a map.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/setSavedPath:</TokenIdentifier>
+			<Abstract type="html">The path to be displayed.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVASavedPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/savedPath</TokenIdentifier>
+			<Abstract type="html">The path to be displayed.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVASavedPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailMapViewController/savedPath</TokenIdentifier>
+			<Abstract type="html">The path to be displayed.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVASavedPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/setSubway:</TokenIdentifier>
+			<Abstract type="html">A bool tha tindicates if the path given is for the subway or the bus network.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/subway</TokenIdentifier>
+			<Abstract type="html">A bool tha tindicates if the path given is for the subway or the bus network.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailMapViewController/subway</TokenIdentifier>
+			<Abstract type="html">A bool tha tindicates if the path given is for the subway or the bus network.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVADetailMapViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view was added to a view hierarchy.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the view was added to the window using an animation.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/mapView:rendererForOverlay:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for a renderer object to use when drawing the specified overlay.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.m</DeclaredIn>
+			
+			<Declaration>- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id&lt;MKOverlay&gt;)overlay</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map view that requested the renderer object.</Abstract>
+				</Parameter><Parameter>
+					<Name>overlay</Name>
+					<Abstract type="html">The overlay object that is about to be displayed.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The renderer to use when presenting the specified overlay on the map. If you return nil, no content is drawn for the specified overlay object.</Abstract></ReturnValue>
+			<Anchor>//api/name/mapView:rendererForOverlay:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/mapView:layerForAnnotation:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate to return the layer for a created annotation.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.m</DeclaredIn>
+			
+			<Declaration>- (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mapView</Name>
+					<Abstract type="html">The map object.</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">The annotation created.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The layer that represents the annotation.</Abstract></ReturnValue>
+			<Anchor>//api/name/mapView:layerForAnnotation:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/colorForRoute:</TokenIdentifier>
+			<Abstract type="html">Function that searches for the desired route and returns its color.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIColor *)colorForRoute:(NSString *)routeID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>routeID</Name>
+					<Abstract type="html">The route&apos;s identifier.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The color of the desired route.</Abstract></ReturnValue>
+			<Anchor>//api/name/colorForRoute:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/imageByCroppingImage:toSize:andPunto:</TokenIdentifier>
+			<Abstract type="html">Function that crops a given image to fit a new size.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (UIImage *)imageByCroppingImage:(UIImage *)image toSize:(CGSize)size andPunto:(MVAPunInt *)punto</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">The original image.</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">The new size.</Abstract>
+				</Parameter><Parameter>
+					<Name>punto</Name>
+					<Abstract type="html">MVAPunInt class object that indicates the origin coordinates of the new image.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The new image.</Abstract></ReturnValue>
+			<Anchor>//api/name/imageByCroppingImage:toSize:andPunto:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/imageWithImage:scaledToSize:</TokenIdentifier>
+			<Abstract type="html">Function that scales a given image to ft a new size.</Abstract>
+			<DeclaredIn>MVADetailMapViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">The original image.</Abstract>
+				</Parameter><Parameter>
+					<Name>newSize</Name>
+					<Abstract type="html">The new size.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The scaled image.</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWithImage:scaledToSize:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailMapViewController/imageWithView:</TokenIdentifier>
+			<Abstract type="html">Function that creates a UIImage from a UIView given</Abstract>
+			<DeclaredIn>MVADetailMapViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)imageWithView:(UIView *)view</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>view</Name>
+					<Abstract type="html">The UIView that needs to be converted into an image</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The UIImage created</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWithView:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

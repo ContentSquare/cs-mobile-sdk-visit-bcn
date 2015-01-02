@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAMapaViewController+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAMapaViewController()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+            
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAMapaViewController/setDetailView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *detailView</Declaration>
+			
+			
+			<Anchor>//api/name/detailView</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAMapaViewController/detailView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *detailView</Declaration>
+			
+			
+			<Anchor>//api/name/detailView</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAMapaViewController/detailView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *detailView</Declaration>
+			
+			
+			<Anchor>//api/name/detailView</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAMapaViewController/setSelectedPoint:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPunInt *selectedPoint</Declaration>
+			
+			
+			<Anchor>//api/name/selectedPoint</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAMapaViewController/selectedPoint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPunInt *selectedPoint</Declaration>
+			
+			
+			<Anchor>//api/name/selectedPoint</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAMapaViewController/selectedPoint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPunInt *selectedPoint</Declaration>
+			
+			
+			<Anchor>//api/name/selectedPoint</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAMapaViewController/setMapView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>@property RMMapView *mapView</Declaration>
+			
+			
+			<Anchor>//api/name/mapView</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAMapaViewController/mapView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>@property RMMapView *mapView</Declaration>
+			
+			
+			<Anchor>//api/name/mapView</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAMapaViewController/mapView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>@property RMMapView *mapView</Declaration>
+			
+			
+			<Anchor>//api/name/mapView</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

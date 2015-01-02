@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAHoraTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAHoraTableViewCell</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UITableViewCell and is used to create the custom date picker</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAConfigurationTableViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/setCellSwitch:</TokenIdentifier>
+			<Abstract type="html">The switch view</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *cellSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwitch</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/cellSwitch</TokenIdentifier>
+			<Abstract type="html">The switch view</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *cellSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwitch</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAHoraTableViewCell/cellSwitch</TokenIdentifier>
+			<Abstract type="html">The switch view</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *cellSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwitch</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/setLabel:</TokenIdentifier>
+			<Abstract type="html">The label of the cell</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/label</TokenIdentifier>
+			<Abstract type="html">The label of the cell</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAHoraTableViewCell/label</TokenIdentifier>
+			<Abstract type="html">The label of the cell</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/setDatePicker:</TokenIdentifier>
+			<Abstract type="html">The date picker</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker</Declaration>
+			
+			
+			<Anchor>//api/name/datePicker</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/datePicker</TokenIdentifier>
+			<Abstract type="html">The date picker</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker</Declaration>
+			
+			
+			<Anchor>//api/name/datePicker</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAHoraTableViewCell/datePicker</TokenIdentifier>
+			<Abstract type="html">The date picker</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker</Declaration>
+			
+			
+			<Anchor>//api/name/datePicker</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/setPapi:</TokenIdentifier>
+			<Abstract type="html">The view controller that creates this cell</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property MVAConfigurationTableViewController *papi</Declaration>
+			
+			
+			<Anchor>//api/name/papi</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/papi</TokenIdentifier>
+			<Abstract type="html">The view controller that creates this cell</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property MVAConfigurationTableViewController *papi</Declaration>
+			
+			
+			<Anchor>//api/name/papi</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAHoraTableViewCell/papi</TokenIdentifier>
+			<Abstract type="html">The view controller that creates this cell</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property MVAConfigurationTableViewController *papi</Declaration>
+			
+			
+			<Anchor>//api/name/papi</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/awakeFromNib</TokenIdentifier>
+			<Abstract type="html">Function that gets called to initialize the cell</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)awakeFromNib</Declaration>
+			
+			
+			<Anchor>//api/name/awakeFromNib</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/timeChanged:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user changes the custom time selected</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)timeChanged:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The date picker</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/timeChanged:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/switchChanged:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user changes the switch value</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)switchChanged:(SevenSwitch *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The SevenSwitch object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/switchChanged:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/initTime</TokenIdentifier>
+			<Abstract type="html">This function calculates the initial time for this graph execution</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (double)initTime</Declaration>
+			
+			<ReturnValue><Abstract type="html">The time in seconds</Abstract></ReturnValue>
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/customDate</TokenIdentifier>
+			<Abstract type="html">This function loads if the user has selected a custom date</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)customDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">A boolean</Abstract></ReturnValue>
+			<Anchor>//api/name/customDate</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAHoraTableViewCell/loadCustomDate</TokenIdentifier>
+			<Abstract type="html">This function loads either the custom date chosen by the user or the current date of the device</Abstract>
+			<DeclaredIn>MVAHoraTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (NSDate *)loadCustomDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSDate object</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomDate</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

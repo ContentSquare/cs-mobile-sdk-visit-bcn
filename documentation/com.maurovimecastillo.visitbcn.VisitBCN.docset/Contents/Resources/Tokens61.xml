@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVALoadViewController+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVALoadViewController()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVALoadViewController.m</DeclaredIn>
+            
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

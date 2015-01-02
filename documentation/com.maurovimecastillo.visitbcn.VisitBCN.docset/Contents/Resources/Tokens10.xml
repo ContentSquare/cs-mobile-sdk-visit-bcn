@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVACustomLocation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+			<Abstract type="html">This class is used to save the custom locations created by the user</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocation/setName:</TokenIdentifier>
+			<Abstract type="html">The name given by the user to this location</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+			
+			<Declaration>@property NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocation/name</TokenIdentifier>
+			<Abstract type="html">The name given by the user to this location</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+			
+			<Declaration>@property NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocation/name</TokenIdentifier>
+			<Abstract type="html">The name given by the user to this location</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+			
+			<Declaration>@property NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocation/setCoordinates:</TokenIdentifier>
+			<Abstract type="html">The coordinates of the custom location</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocation/coordinates</TokenIdentifier>
+			<Abstract type="html">The coordinates of the custom location</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocation/coordinates</TokenIdentifier>
+			<Abstract type="html">The coordinates of the custom location</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocation/setFoto:</TokenIdentifier>
+			<Abstract type="html">A photo that represents the location and makes it easy to remember</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+			
+			<Declaration>@property UIImage *foto</Declaration>
+			
+			
+			<Anchor>//api/name/foto</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocation/foto</TokenIdentifier>
+			<Abstract type="html">A photo that represents the location and makes it easy to remember</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+			
+			<Declaration>@property UIImage *foto</Declaration>
+			
+			
+			<Anchor>//api/name/foto</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocation/foto</TokenIdentifier>
+			<Abstract type="html">A photo that represents the location and makes it easy to remember</Abstract>
+			<DeclaredIn>MVACustomLocation.h</DeclaredIn>
+			
+			<Declaration>@property UIImage *foto</Declaration>
+			
+			
+			<Anchor>//api/name/foto</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocation/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVACustomLocation.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocation/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVACustomLocation.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

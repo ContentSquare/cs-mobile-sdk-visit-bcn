@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAFrequencies.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+			<Abstract type="html">This class represents a time frequency for a given trip.</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/setTripID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/tripID</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAFrequencies/tripID</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/setStartTime:</TokenIdentifier>
+			<Abstract type="html">The starting time of this frequency</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>@property NSString *startTime</Declaration>
+			
+			
+			<Anchor>//api/name/startTime</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/startTime</TokenIdentifier>
+			<Abstract type="html">The starting time of this frequency</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>@property NSString *startTime</Declaration>
+			
+			
+			<Anchor>//api/name/startTime</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAFrequencies/startTime</TokenIdentifier>
+			<Abstract type="html">The starting time of this frequency</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>@property NSString *startTime</Declaration>
+			
+			
+			<Anchor>//api/name/startTime</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/setEndTime:</TokenIdentifier>
+			<Abstract type="html">The ending time of this frequency</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>@property NSString *endTime</Declaration>
+			
+			
+			<Anchor>//api/name/endTime</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/endTime</TokenIdentifier>
+			<Abstract type="html">The ending time of this frequency</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>@property NSString *endTime</Declaration>
+			
+			
+			<Anchor>//api/name/endTime</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAFrequencies/endTime</TokenIdentifier>
+			<Abstract type="html">The ending time of this frequency</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>@property NSString *endTime</Declaration>
+			
+			
+			<Anchor>//api/name/endTime</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/setHeadway:</TokenIdentifier>
+			<Abstract type="html">The headway time of the trains for this frequency</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>@property NSString *headway</Declaration>
+			
+			
+			<Anchor>//api/name/headway</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/headway</TokenIdentifier>
+			<Abstract type="html">The headway time of the trains for this frequency</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>@property NSString *headway</Declaration>
+			
+			
+			<Anchor>//api/name/headway</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAFrequencies/headway</TokenIdentifier>
+			<Abstract type="html">The headway time of the trains for this frequency</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>@property NSString *headway</Declaration>
+			
+			
+			<Anchor>//api/name/headway</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/insertElement:atIndex:</TokenIdentifier>
+			<Abstract type="html">This function is used to insert a given data to the correct field</Abstract>
+			<DeclaredIn>MVAFrequencies.h</DeclaredIn>
+			
+			<Declaration>- (void)insertElement:(NSString *)elem atIndex:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>elem</Name>
+					<Abstract type="html">The data to be inserted</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of this data in the GTFS file</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertElement:atIndex:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/copy</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns a MVAFrequencies copy of self.</Abstract>
+			<DeclaredIn>MVAFrequencies.m</DeclaredIn>
+			
+			<Declaration>- (id)copy</Declaration>
+			
+			<ReturnValue><Abstract type="html">The new MVAFrequencies copied object</Abstract></ReturnValue>
+			<Anchor>//api/name/copy</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVAFrequencies.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAFrequencies/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVAFrequencies.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

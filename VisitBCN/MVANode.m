@@ -11,11 +11,11 @@
 @implementation MVANode
 
 /**
- *  <#Description#>
+ *  This function is overriden from NSObject. Returns a boolean indicating if the given object is equal to self
  *
- *  @param object <#object description#>
+ *  @param object A MVANode object
  *
- *  @return <#return value description#>
+ *  @return A BOOL
  */
 -(BOOL)isEqual:(id)object
 {
@@ -26,7 +26,7 @@
 /**
  *  This function is overriden from NSObject. Returns a copy of self
  *
- *  @return A MVANode object witht he same data than the original object
+ *  @return A MVANode object with the same data than the original object
  *
  *  @since version 1.0
  */
@@ -56,12 +56,13 @@
     [coder encodeObject:self.stop forKey:@"stop"];
     [coder encodeObject:[NSNumber numberWithInt:self.identificador] forKey:@"identificador"];
     [coder encodeObject:[NSNumber numberWithInt:self.type] forKey:@"type"];
+    [coder encodeObject:self.distance forKey:@"distance"];
 }
 
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *
@@ -74,6 +75,7 @@
         self.stop = [coder decodeObjectForKey:@"stop"];
         self.identificador = [[coder decodeObjectForKey:@"identificador"] intValue];
         self.type = [[coder decodeObjectForKey:@"type"] intValue];
+        self.distance = [coder decodeObjectForKey:@"distance"];
     }
     return self;
 }

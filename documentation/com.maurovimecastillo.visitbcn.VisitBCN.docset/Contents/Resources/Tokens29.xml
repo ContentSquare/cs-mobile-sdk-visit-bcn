@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAPath.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+			<Abstract type="html">This class represents the path calculated by Dijkstra or A* algorithms</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPath/setNodes:</TokenIdentifier>
+			<Abstract type="html">The nodes that create the path, including a final node representing the point of interest</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *nodes</Declaration>
+			
+			
+			<Anchor>//api/name/nodes</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPath/nodes</TokenIdentifier>
+			<Abstract type="html">The nodes that create the path, including a final node representing the point of interest</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *nodes</Declaration>
+			
+			
+			<Anchor>//api/name/nodes</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPath/nodes</TokenIdentifier>
+			<Abstract type="html">The nodes that create the path, including a final node representing the point of interest</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *nodes</Declaration>
+			
+			
+			<Anchor>//api/name/nodes</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPath/setEdges:</TokenIdentifier>
+			<Abstract type="html">The edges that create the path</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *edges</Declaration>
+			
+			
+			<Anchor>//api/name/edges</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPath/edges</TokenIdentifier>
+			<Abstract type="html">The edges that create the path</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *edges</Declaration>
+			
+			
+			<Anchor>//api/name/edges</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPath/edges</TokenIdentifier>
+			<Abstract type="html">The edges that create the path</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *edges</Declaration>
+			
+			
+			<Anchor>//api/name/edges</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPath/setTotalWeight:</TokenIdentifier>
+			<Abstract type="html">The weight that&apos;s returned as a result of the execution</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+			
+			<Declaration>@property double totalWeight</Declaration>
+			
+			
+			<Anchor>//api/name/totalWeight</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPath/totalWeight</TokenIdentifier>
+			<Abstract type="html">The weight that&apos;s returned as a result of the execution</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+			
+			<Declaration>@property double totalWeight</Declaration>
+			
+			
+			<Anchor>//api/name/totalWeight</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPath/totalWeight</TokenIdentifier>
+			<Abstract type="html">The weight that&apos;s returned as a result of the execution</Abstract>
+			<DeclaredIn>MVAPath.h</DeclaredIn>
+			
+			<Declaration>@property double totalWeight</Declaration>
+			
+			
+			<Anchor>//api/name/totalWeight</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPath/copy</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns a copy of self</Abstract>
+			<DeclaredIn>MVAPath.m</DeclaredIn>
+			
+			<Declaration>- (id)copy</Declaration>
+			
+			<ReturnValue><Abstract type="html">A MVAPath object with the same data than the original object</Abstract></ReturnValue>
+			<Anchor>//api/name/copy</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPath/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVAPath.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPath/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVAPath.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

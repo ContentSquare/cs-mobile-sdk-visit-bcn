@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAPunIntViewController+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAPunIntViewController()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+            
+			
+			<NodeRef refid="65"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setSubwayPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/subwayPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/subwayPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setBusPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/busPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/busPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setGraphs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAGraphs *graphs</Declaration>
+			
+			
+			<Anchor>//api/name/graphs</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/graphs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAGraphs *graphs</Declaration>
+			
+			
+			<Anchor>//api/name/graphs</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/graphs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVAGraphs *graphs</Declaration>
+			
+			
+			<Anchor>//api/name/graphs</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setPathsView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIView *pathsView</Declaration>
+			
+			
+			<Anchor>//api/name/pathsView</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/pathsView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIView *pathsView</Declaration>
+			
+			
+			<Anchor>//api/name/pathsView</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/pathsView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIView *pathsView</Declaration>
+			
+			
+			<Anchor>//api/name/pathsView</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setActivityIndicator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIActivityIndicatorView *activityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/activityIndicator</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/activityIndicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIActivityIndicatorView *activityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/activityIndicator</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/activityIndicator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIActivityIndicatorView *activityIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/activityIndicator</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setPathsResume:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property UILabel *pathsResume</Declaration>
+			
+			
+			<Anchor>//api/name/pathsResume</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/pathsResume</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property UILabel *pathsResume</Declaration>
+			
+			
+			<Anchor>//api/name/pathsResume</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/pathsResume</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property UILabel *pathsResume</Declaration>
+			
+			
+			<Anchor>//api/name/pathsResume</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setWalkDist:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double walkDist</Declaration>
+			
+			
+			<Anchor>//api/name/walkDist</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/walkDist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double walkDist</Declaration>
+			
+			
+			<Anchor>//api/name/walkDist</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/walkDist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double walkDist</Declaration>
+			
+			
+			<Anchor>//api/name/walkDist</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setWalkSpeed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double walkSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/walkSpeed</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/walkSpeed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double walkSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/walkSpeed</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/walkSpeed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double walkSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/walkSpeed</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setWalkTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double walkTime</Declaration>
+			
+			
+			<Anchor>//api/name/walkTime</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/walkTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double walkTime</Declaration>
+			
+			
+			<Anchor>//api/name/walkTime</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/walkTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double walkTime</Declaration>
+			
+			
+			<Anchor>//api/name/walkTime</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setCarDist:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double carDist</Declaration>
+			
+			
+			<Anchor>//api/name/carDist</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/carDist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double carDist</Declaration>
+			
+			
+			<Anchor>//api/name/carDist</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/carDist</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double carDist</Declaration>
+			
+			
+			<Anchor>//api/name/carDist</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setCarTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double carTime</Declaration>
+			
+			
+			<Anchor>//api/name/carTime</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/carTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double carTime</Declaration>
+			
+			
+			<Anchor>//api/name/carTime</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/carTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double carTime</Declaration>
+			
+			
+			<Anchor>//api/name/carTime</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setCarSpeed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double carSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/carSpeed</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/carSpeed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double carSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/carSpeed</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/carSpeed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double carSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/carSpeed</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setInitTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double initTime</Declaration>
+			
+			
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/initTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double initTime</Declaration>
+			
+			
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/initTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>@property double initTime</Declaration>
+			
+			
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

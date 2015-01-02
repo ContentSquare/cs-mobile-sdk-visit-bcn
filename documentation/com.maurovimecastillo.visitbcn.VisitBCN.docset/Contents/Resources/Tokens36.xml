@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVARoute.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+			<Abstract type="html">This class represents a route.</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="36"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/setRouteID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the route.</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSString *routeID</Declaration>
+			
+			
+			<Anchor>//api/name/routeID</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/routeID</TokenIdentifier>
+			<Abstract type="html">The identifier of the route.</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSString *routeID</Declaration>
+			
+			
+			<Anchor>//api/name/routeID</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVARoute/routeID</TokenIdentifier>
+			<Abstract type="html">The identifier of the route.</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSString *routeID</Declaration>
+			
+			
+			<Anchor>//api/name/routeID</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/setAgencyID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the agency</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property int agencyID</Declaration>
+			
+			
+			<Anchor>//api/name/agencyID</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/agencyID</TokenIdentifier>
+			<Abstract type="html">The identifier of the agency</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property int agencyID</Declaration>
+			
+			
+			<Anchor>//api/name/agencyID</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVARoute/agencyID</TokenIdentifier>
+			<Abstract type="html">The identifier of the agency</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property int agencyID</Declaration>
+			
+			
+			<Anchor>//api/name/agencyID</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/setShortName:</TokenIdentifier>
+			<Abstract type="html">The short name of the route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSString *shortName</Declaration>
+			
+			
+			<Anchor>//api/name/shortName</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/shortName</TokenIdentifier>
+			<Abstract type="html">The short name of the route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSString *shortName</Declaration>
+			
+			
+			<Anchor>//api/name/shortName</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVARoute/shortName</TokenIdentifier>
+			<Abstract type="html">The short name of the route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSString *shortName</Declaration>
+			
+			
+			<Anchor>//api/name/shortName</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/setLongName:</TokenIdentifier>
+			<Abstract type="html">The full name of the route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSString *longName</Declaration>
+			
+			
+			<Anchor>//api/name/longName</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/longName</TokenIdentifier>
+			<Abstract type="html">The full name of the route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSString *longName</Declaration>
+			
+			
+			<Anchor>//api/name/longName</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVARoute/longName</TokenIdentifier>
+			<Abstract type="html">The full name of the route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSString *longName</Declaration>
+			
+			
+			<Anchor>//api/name/longName</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/setType:</TokenIdentifier>
+			<Abstract type="html">The route type</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/type</TokenIdentifier>
+			<Abstract type="html">The route type</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVARoute/type</TokenIdentifier>
+			<Abstract type="html">The route type</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/setUrl:</TokenIdentifier>
+			<Abstract type="html">The URL with the information of the route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/url</TokenIdentifier>
+			<Abstract type="html">The URL with the information of the route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVARoute/url</TokenIdentifier>
+			<Abstract type="html">The URL with the information of the route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/setColor:</TokenIdentifier>
+			<Abstract type="html">The route&apos;s color</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property UIColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/color</TokenIdentifier>
+			<Abstract type="html">The route&apos;s color</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property UIColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVARoute/color</TokenIdentifier>
+			<Abstract type="html">The route&apos;s color</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property UIColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/setTextColor:</TokenIdentifier>
+			<Abstract type="html">The route&apos;s text color</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property UIColor *textColor</Declaration>
+			
+			
+			<Anchor>//api/name/textColor</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/textColor</TokenIdentifier>
+			<Abstract type="html">The route&apos;s text color</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property UIColor *textColor</Declaration>
+			
+			
+			<Anchor>//api/name/textColor</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVARoute/textColor</TokenIdentifier>
+			<Abstract type="html">The route&apos;s text color</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>@property UIColor *textColor</Declaration>
+			
+			
+			<Anchor>//api/name/textColor</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/setTrips:</TokenIdentifier>
+			<Abstract type="html">The trips that operate in this route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *trips</Declaration>
+			
+			
+			<Anchor>//api/name/trips</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/trips</TokenIdentifier>
+			<Abstract type="html">The trips that operate in this route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *trips</Declaration>
+			
+			
+			<Anchor>//api/name/trips</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVARoute/trips</TokenIdentifier>
+			<Abstract type="html">The trips that operate in this route</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *trips</Declaration>
+			
+			
+			<Anchor>//api/name/trips</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/insertElement:atIndex:isFGC:</TokenIdentifier>
+			<Abstract type="html">This function is used to insert a given data to the correct field</Abstract>
+			<DeclaredIn>MVARoute.h</DeclaredIn>
+			
+			<Declaration>- (void)insertElement:(NSString *)elem atIndex:(NSInteger)index isFGC:(BOOL)isFGC</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>elem</Name>
+					<Abstract type="html">The data to insert</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the data in the GTFS file</Abstract>
+				</Parameter><Parameter>
+					<Name>isFGC</Name>
+					<Abstract type="html">Boolean variable that indicates the source of the data</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertElement:atIndex:isFGC:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/copy</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns a MVARoute copy of self.</Abstract>
+			<DeclaredIn>MVARoute.m</DeclaredIn>
+			
+			<Declaration>- (id)copy</Declaration>
+			
+			<ReturnValue><Abstract type="html">The new MVARoute copied object</Abstract></ReturnValue>
+			<Anchor>//api/name/copy</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/colorFromHexString:</TokenIdentifier>
+			<Abstract type="html">Returna the UIColor for a color encoded in hexadecimal</Abstract>
+			<DeclaredIn>MVARoute.m</DeclaredIn>
+			
+			<Declaration>- (UIColor *)colorFromHexString:(NSString *)hexString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hexString</Name>
+					<Abstract type="html">The hexadecimal string</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The UIColor that&apos;s represented by the hexadecimal string</Abstract></ReturnValue>
+			<Anchor>//api/name/colorFromHexString:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVARoute.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVARoute/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVARoute.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

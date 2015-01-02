@@ -10,6 +10,28 @@
 
 @implementation MVARoute
 
+/**
+ *  This function is overriden from NSObject. Returns a MVARoute copy of self.
+ *
+ *  @return The new MVARoute copied object
+ *
+ *  @since version 1.0
+ */
+-(id)copy
+{
+    MVARoute *copyElem = [[MVARoute alloc] init];
+    copyElem.routeID = [self.routeID copy];
+    copyElem.agencyID = self.agencyID;
+    copyElem.shortName = [self.shortName copy];
+    copyElem.longName = [self.longName copy];
+    copyElem.type = self.type;
+    copyElem.url = [self.url copy];
+    copyElem.color = [self.color copy];
+    copyElem.textColor = [self.textColor copy];
+    copyElem.trips = [self.trips copy];
+    return copyElem;
+}
+
 -(void)insertElement:(NSString *)elem atIndex:(NSInteger)index isFGC:(BOOL)isFGC
 {
     if (isFGC) {
@@ -76,7 +98,7 @@
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *

@@ -35,12 +35,14 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that computes the bus path from the origin location to the destination point
  *
- *  @param origin <#origin description#>
- *  @param punInt <#punInt description#>
+ *  @param origin Origin coordinates
+ *  @param punInt Destination point
  *
- *  @return <#return value description#>
+ *  @return An MVAPath object with the bus path
+ *
+ *  @since version 1.0
  */
 -(MVAPath *)pathForBusGraphWithOrigin:(CLLocationCoordinate2D)origin andDestination:(MVAPunInt *)punInt
 {
@@ -81,12 +83,14 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that computes the subway path from the origin location to the destination point
  *
- *  @param origin <#origin description#>
- *  @param punInt <#punInt description#>
+ *  @param origin Origin coordinates
+ *  @param punInt Destination point
  *
- *  @return <#return value description#>
+ *  @return An MVAPath object with the subway path
+ *
+ *  @since version 1.0
  */
 -(MVAPath *)pathForSubwayGraphWithOrigin:(CLLocationCoordinate2D)origin andDestination:(MVAPunInt *)punInt
 {
@@ -158,9 +162,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the algorithm chosen by the user ( 0 = Dijkstra, 1 = A*, Default = 1).
  *
- *  @return <#return value description#>
+ *  @return The algorithm's identifier
+ *
+ *  @since version 1.0
  */
 -(int)loadAlg
 {
@@ -168,8 +174,8 @@
     NSString *nom = @"VisitBCNAlgorithm";
     NSData *data = [defaults objectForKey:nom];
     if(data == nil){
-        [defaults setInteger:1 forKey:nom];
-        return 1;
+        [defaults setInteger:0 forKey:nom];
+        return 0;
     }
     else {
         return (int)[defaults integerForKey:nom];
@@ -177,9 +183,11 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads the walking distance indicated by the user. (The default value is 5 km)
  *
- *  @return <#return value description#>
+ *  @return The distance in meters
+ *
+ *  @since version 1.0
  */
 -(double)loadWalkingDist
 {

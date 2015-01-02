@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVASliderTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVASliderTableViewCell</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UITableViewCell and is used to create the cell</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAConfigurationTableViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="38"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/setSlowLogo:</TokenIdentifier>
+			<Abstract type="html">The image for the slow speed limit</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *slowLogo</Declaration>
+			
+			
+			<Anchor>//api/name/slowLogo</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/slowLogo</TokenIdentifier>
+			<Abstract type="html">The image for the slow speed limit</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *slowLogo</Declaration>
+			
+			
+			<Anchor>//api/name/slowLogo</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASliderTableViewCell/slowLogo</TokenIdentifier>
+			<Abstract type="html">The image for the slow speed limit</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *slowLogo</Declaration>
+			
+			
+			<Anchor>//api/name/slowLogo</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/setFastLogo:</TokenIdentifier>
+			<Abstract type="html">The image for the fast speed limit</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *fastLogo</Declaration>
+			
+			
+			<Anchor>//api/name/fastLogo</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/fastLogo</TokenIdentifier>
+			<Abstract type="html">The image for the fast speed limit</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *fastLogo</Declaration>
+			
+			
+			<Anchor>//api/name/fastLogo</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASliderTableViewCell/fastLogo</TokenIdentifier>
+			<Abstract type="html">The image for the fast speed limit</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *fastLogo</Declaration>
+			
+			
+			<Anchor>//api/name/fastLogo</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/setSpeed:</TokenIdentifier>
+			<Abstract type="html">The label that&apos;s used as a display of the selected speed</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speed</Declaration>
+			
+			
+			<Anchor>//api/name/speed</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/speed</TokenIdentifier>
+			<Abstract type="html">The label that&apos;s used as a display of the selected speed</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speed</Declaration>
+			
+			
+			<Anchor>//api/name/speed</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASliderTableViewCell/speed</TokenIdentifier>
+			<Abstract type="html">The label that&apos;s used as a display of the selected speed</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *speed</Declaration>
+			
+			
+			<Anchor>//api/name/speed</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/setText:</TokenIdentifier>
+			<Abstract type="html">The label for the cell&apos;s text</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/text</TokenIdentifier>
+			<Abstract type="html">The label for the cell&apos;s text</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASliderTableViewCell/text</TokenIdentifier>
+			<Abstract type="html">The label for the cell&apos;s text</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/setSpeedSlider:</TokenIdentifier>
+			<Abstract type="html">The slider used to select the speed</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *speedSlider</Declaration>
+			
+			
+			<Anchor>//api/name/speedSlider</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/speedSlider</TokenIdentifier>
+			<Abstract type="html">The slider used to select the speed</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *speedSlider</Declaration>
+			
+			
+			<Anchor>//api/name/speedSlider</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASliderTableViewCell/speedSlider</TokenIdentifier>
+			<Abstract type="html">The slider used to select the speed</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UISlider *speedSlider</Declaration>
+			
+			
+			<Anchor>//api/name/speedSlider</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/setObjectName:</TokenIdentifier>
+			<Abstract type="html">An string used to customize the cell between the speed cell and the distance cell</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property NSString *objectName</Declaration>
+			
+			
+			<Anchor>//api/name/objectName</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/objectName</TokenIdentifier>
+			<Abstract type="html">An string used to customize the cell between the speed cell and the distance cell</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property NSString *objectName</Declaration>
+			
+			
+			<Anchor>//api/name/objectName</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASliderTableViewCell/objectName</TokenIdentifier>
+			<Abstract type="html">An string used to customize the cell between the speed cell and the distance cell</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property NSString *objectName</Declaration>
+			
+			
+			<Anchor>//api/name/objectName</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/initCell</TokenIdentifier>
+			<Abstract type="html">Funcation that gets called to initialize the cell</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.h</DeclaredIn>
+			
+			<Declaration>- (void)initCell</Declaration>
+			
+			
+			<Anchor>//api/name/initCell</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/awakeFromNib</TokenIdentifier>
+			<Abstract type="html">Function that gets called to initialize the cell</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)awakeFromNib</Declaration>
+			
+			
+			<Anchor>//api/name/awakeFromNib</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/setSelected:animated:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the cell is selected</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)setSelected:(BOOL)selected animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>selected</Name>
+					<Abstract type="html">A bool that indicates if the cell has been selected</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">A bool that indicates if the selection needs to be animated or not</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSelected:animated:</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/sliderChanged:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user changes the value of the slider</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)sliderChanged:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The slider object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sliderChanged:</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/loadWalkingSpeed</TokenIdentifier>
+			<Abstract type="html">This function loads the walking speed indicated by the user. (The default value is 5km/h)</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (double)loadWalkingSpeed</Declaration>
+			
+			<ReturnValue><Abstract type="html">The speed in m/s</Abstract></ReturnValue>
+			<Anchor>//api/name/loadWalkingSpeed</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASliderTableViewCell/saveSpeed:</TokenIdentifier>
+			<Abstract type="html">Function that saves the selected speed by the user</Abstract>
+			<DeclaredIn>MVASliderTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)saveSpeed:(double)speed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>speed</Name>
+					<Abstract type="html">The speed selected</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveSpeed:</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

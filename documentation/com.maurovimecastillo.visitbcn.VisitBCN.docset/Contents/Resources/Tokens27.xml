@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVANode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+			<Abstract type="html">This class represents a MVANode inside the graph.</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAGraph</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/setStop:</TokenIdentifier>
+			<Abstract type="html">The stop that identifies this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAStop *stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/stop</TokenIdentifier>
+			<Abstract type="html">The stop that identifies this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAStop *stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVANode/stop</TokenIdentifier>
+			<Abstract type="html">The stop that identifies this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAStop *stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/setDistance:</TokenIdentifier>
+			<Abstract type="html">This property is used in both algorithms and indicates the current value of the node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property NSNumber *distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/distance</TokenIdentifier>
+			<Abstract type="html">This property is used in both algorithms and indicates the current value of the node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property NSNumber *distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVANode/distance</TokenIdentifier>
+			<Abstract type="html">This property is used in both algorithms and indicates the current value of the node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property NSNumber *distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/setScore:</TokenIdentifier>
+			<Abstract type="html">This property is used for the A* algorithm and indicates the current prediction for this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property NSNumber *score</Declaration>
+			
+			
+			<Anchor>//api/name/score</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/score</TokenIdentifier>
+			<Abstract type="html">This property is used for the A* algorithm and indicates the current prediction for this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property NSNumber *score</Declaration>
+			
+			
+			<Anchor>//api/name/score</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVANode/score</TokenIdentifier>
+			<Abstract type="html">This property is used for the A* algorithm and indicates the current prediction for this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property NSNumber *score</Declaration>
+			
+			
+			<Anchor>//api/name/score</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/setPathNodes:</TokenIdentifier>
+			<Abstract type="html">An array with the nodes that form the minimum path from the origin to this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *pathNodes</Declaration>
+			
+			
+			<Anchor>//api/name/pathNodes</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/pathNodes</TokenIdentifier>
+			<Abstract type="html">An array with the nodes that form the minimum path from the origin to this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *pathNodes</Declaration>
+			
+			
+			<Anchor>//api/name/pathNodes</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVANode/pathNodes</TokenIdentifier>
+			<Abstract type="html">An array with the nodes that form the minimum path from the origin to this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *pathNodes</Declaration>
+			
+			
+			<Anchor>//api/name/pathNodes</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/setPathEdges:</TokenIdentifier>
+			<Abstract type="html">An array with the edges that form the minimum path from the origin to this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *pathEdges</Declaration>
+			
+			
+			<Anchor>//api/name/pathEdges</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/pathEdges</TokenIdentifier>
+			<Abstract type="html">An array with the edges that form the minimum path from the origin to this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *pathEdges</Declaration>
+			
+			
+			<Anchor>//api/name/pathEdges</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVANode/pathEdges</TokenIdentifier>
+			<Abstract type="html">An array with the edges that form the minimum path from the origin to this node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *pathEdges</Declaration>
+			
+			
+			<Anchor>//api/name/pathEdges</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/setIdentificador:</TokenIdentifier>
+			<Abstract type="html">The identifier of the object</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property int identificador</Declaration>
+			
+			
+			<Anchor>//api/name/identificador</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/identificador</TokenIdentifier>
+			<Abstract type="html">The identifier of the object</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property int identificador</Declaration>
+			
+			
+			<Anchor>//api/name/identificador</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVANode/identificador</TokenIdentifier>
+			<Abstract type="html">The identifier of the object</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property int identificador</Declaration>
+			
+			
+			<Anchor>//api/name/identificador</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/setOpen:</TokenIdentifier>
+			<Abstract type="html">This BOOL indicates if the node has been opened previously</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property BOOL open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/open</TokenIdentifier>
+			<Abstract type="html">This BOOL indicates if the node has been opened previously</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property BOOL open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVANode/open</TokenIdentifier>
+			<Abstract type="html">This BOOL indicates if the node has been opened previously</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property BOOL open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/setPrevious:</TokenIdentifier>
+			<Abstract type="html">This MVANode obect points to the previos MVANode in the path. This property is used in the A* algorithm</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVANode *previous</Declaration>
+			
+			
+			<Anchor>//api/name/previous</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/previous</TokenIdentifier>
+			<Abstract type="html">This MVANode obect points to the previos MVANode in the path. This property is used in the A* algorithm</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVANode *previous</Declaration>
+			
+			
+			<Anchor>//api/name/previous</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVANode/previous</TokenIdentifier>
+			<Abstract type="html">This MVANode obect points to the previos MVANode in the path. This property is used in the A* algorithm</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVANode *previous</Declaration>
+			
+			
+			<Anchor>//api/name/previous</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/setType:</TokenIdentifier>
+			<Abstract type="html">This property is used to customize the treatment of this node for the two graphs. If type is 1 then is a subway node, if is 2 then is a bus node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/type</TokenIdentifier>
+			<Abstract type="html">This property is used to customize the treatment of this node for the two graphs. If type is 1 then is a subway node, if is 2 then is a bus node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVANode/type</TokenIdentifier>
+			<Abstract type="html">This property is used to customize the treatment of this node for the two graphs. If type is 1 then is a subway node, if is 2 then is a bus node</Abstract>
+			<DeclaredIn>MVANode.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/isEqual:</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns a boolean indicating if the given object is equal to self</Abstract>
+			<DeclaredIn>MVANode.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqual:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">A MVANode object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A BOOL</Abstract></ReturnValue>
+			<Anchor>//api/name/isEqual:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/copy</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns a copy of self</Abstract>
+			<DeclaredIn>MVANode.m</DeclaredIn>
+			
+			<Declaration>- (id)copy</Declaration>
+			
+			<ReturnValue><Abstract type="html">A MVANode object with the same data than the original object</Abstract></ReturnValue>
+			<Anchor>//api/name/copy</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVANode.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVANode/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVANode.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVATrip.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+			<Abstract type="html">This class represents a trip that operates in a certain route in one of the two directions and with a certain type of service.</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/setRouteID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the route</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *routeID</Declaration>
+			
+			
+			<Anchor>//api/name/routeID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/routeID</TokenIdentifier>
+			<Abstract type="html">The identifier of the route</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *routeID</Declaration>
+			
+			
+			<Anchor>//api/name/routeID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATrip/routeID</TokenIdentifier>
+			<Abstract type="html">The identifier of the route</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *routeID</Declaration>
+			
+			
+			<Anchor>//api/name/routeID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/setServiceID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the service</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *serviceID</Declaration>
+			
+			
+			<Anchor>//api/name/serviceID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/serviceID</TokenIdentifier>
+			<Abstract type="html">The identifier of the service</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *serviceID</Declaration>
+			
+			
+			<Anchor>//api/name/serviceID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATrip/serviceID</TokenIdentifier>
+			<Abstract type="html">The identifier of the service</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *serviceID</Declaration>
+			
+			
+			<Anchor>//api/name/serviceID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/setTripID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/tripID</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATrip/tripID</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/setDirectionID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the direction</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSString *directionID</Declaration>
+			
+			
+			<Anchor>//api/name/directionID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/directionID</TokenIdentifier>
+			<Abstract type="html">The identifier of the direction</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSString *directionID</Declaration>
+			
+			
+			<Anchor>//api/name/directionID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATrip/directionID</TokenIdentifier>
+			<Abstract type="html">The identifier of the direction</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSString *directionID</Declaration>
+			
+			
+			<Anchor>//api/name/directionID</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/setTripName:</TokenIdentifier>
+			<Abstract type="html">The name of the trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSString *tripName</Declaration>
+			
+			
+			<Anchor>//api/name/tripName</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/tripName</TokenIdentifier>
+			<Abstract type="html">The name of the trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSString *tripName</Declaration>
+			
+			
+			<Anchor>//api/name/tripName</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATrip/tripName</TokenIdentifier>
+			<Abstract type="html">The name of the trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSString *tripName</Declaration>
+			
+			
+			<Anchor>//api/name/tripName</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/setDirecUP:</TokenIdentifier>
+			<Abstract type="html">A boolean that indicates the direction of this trips</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property BOOL direcUP</Declaration>
+			
+			
+			<Anchor>//api/name/direcUP</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/direcUP</TokenIdentifier>
+			<Abstract type="html">A boolean that indicates the direction of this trips</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property BOOL direcUP</Declaration>
+			
+			
+			<Anchor>//api/name/direcUP</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATrip/direcUP</TokenIdentifier>
+			<Abstract type="html">A boolean that indicates the direction of this trips</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property BOOL direcUP</Declaration>
+			
+			
+			<Anchor>//api/name/direcUP</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/setSequence:</TokenIdentifier>
+			<Abstract type="html">The sequence of stops of this trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/sequence</TokenIdentifier>
+			<Abstract type="html">The sequence of stops of this trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATrip/sequence</TokenIdentifier>
+			<Abstract type="html">The sequence of stops of this trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/setFreqs:</TokenIdentifier>
+			<Abstract type="html">The frequencies of this trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *freqs</Declaration>
+			
+			
+			<Anchor>//api/name/freqs</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/freqs</TokenIdentifier>
+			<Abstract type="html">The frequencies of this trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *freqs</Declaration>
+			
+			
+			<Anchor>//api/name/freqs</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATrip/freqs</TokenIdentifier>
+			<Abstract type="html">The frequencies of this trip</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *freqs</Declaration>
+			
+			
+			<Anchor>//api/name/freqs</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/insertElement:atIndex:isFGC:</TokenIdentifier>
+			<Abstract type="html">This function is used to insert a given data to the correct field</Abstract>
+			<DeclaredIn>MVATrip.h</DeclaredIn>
+			
+			<Declaration>- (void)insertElement:(NSString *)elem atIndex:(NSInteger)index isFGC:(BOOL)isFGC</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>elem</Name>
+					<Abstract type="html">The data to be inserted</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of this data in the GTFS file</Abstract>
+				</Parameter><Parameter>
+					<Name>isFGC</Name>
+					<Abstract type="html">A boolean that indicates if the data is for the FGC agency</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertElement:atIndex:isFGC:</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/copy</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns a MVATrip copy of self.</Abstract>
+			<DeclaredIn>MVATrip.m</DeclaredIn>
+			
+			<Declaration>- (id)copy</Declaration>
+			
+			<ReturnValue><Abstract type="html">The new MVATrip copied object</Abstract></ReturnValue>
+			<Anchor>//api/name/copy</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVATrip.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATrip/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVATrip.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

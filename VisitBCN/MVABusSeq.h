@@ -24,16 +24,16 @@
 
 /**
  *  The identifier of the route
- *  @see MVARoute class
  *
+ *  @see MVARoute class
  *  @since version 1.0
  */
 @property NSString *routeID;
 
 /**
  *  The identifier of the stop
- *  @see MVAStop class
  *
+ *  @see MVAStop class
  *  @since version 1.0
  */
 @property NSString *stopID;

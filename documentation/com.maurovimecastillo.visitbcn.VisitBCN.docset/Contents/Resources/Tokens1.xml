@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAAlgorithms.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAAlgorithms</TokenIdentifier>
+			<Abstract type="html">This class contains the both algorithms (Dijkstra and A*)</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setNodes:</TokenIdentifier>
+			<Abstract type="html">An array containin all the nodes of the graph that will be explored</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *nodes</Declaration>
+			
+			
+			<Anchor>//api/name/nodes</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/nodes</TokenIdentifier>
+			<Abstract type="html">An array containin all the nodes of the graph that will be explored</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *nodes</Declaration>
+			
+			
+			<Anchor>//api/name/nodes</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/nodes</TokenIdentifier>
+			<Abstract type="html">An array containin all the nodes of the graph that will be explored</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *nodes</Declaration>
+			
+			
+			<Anchor>//api/name/nodes</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setEdgeList:</TokenIdentifier>
+			<Abstract type="html">An array with all the edges of the graph that will be explored</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *edgeList</Declaration>
+			
+			
+			<Anchor>//api/name/edgeList</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/edgeList</TokenIdentifier>
+			<Abstract type="html">An array with all the edges of the graph that will be explored</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *edgeList</Declaration>
+			
+			
+			<Anchor>//api/name/edgeList</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/edgeList</TokenIdentifier>
+			<Abstract type="html">An array with all the edges of the graph that will be explored</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *edgeList</Declaration>
+			
+			
+			<Anchor>//api/name/edgeList</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setType:</TokenIdentifier>
+			<Abstract type="html">The type of graph that will be explored (subway or bus).</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/type</TokenIdentifier>
+			<Abstract type="html">The type of graph that will be explored (subway or bus).</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/type</TokenIdentifier>
+			<Abstract type="html">The type of graph that will be explored (subway or bus).</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setDataBus:</TokenIdentifier>
+			<Abstract type="html">The bus network data base</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataBus</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataBus *dataBus</Declaration>
+			
+			
+			<Anchor>//api/name/dataBus</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/dataBus</TokenIdentifier>
+			<Abstract type="html">The bus network data base</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataBus</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataBus *dataBus</Declaration>
+			
+			
+			<Anchor>//api/name/dataBus</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/dataBus</TokenIdentifier>
+			<Abstract type="html">The bus network data base</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataBus</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataBus *dataBus</Declaration>
+			
+			
+			<Anchor>//api/name/dataBus</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setDataFGC:</TokenIdentifier>
+			<Abstract type="html">The FGC network data base</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataFGC</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataFGC *dataFGC</Declaration>
+			
+			
+			<Anchor>//api/name/dataFGC</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/dataFGC</TokenIdentifier>
+			<Abstract type="html">The FGC network data base</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataFGC</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataFGC *dataFGC</Declaration>
+			
+			
+			<Anchor>//api/name/dataFGC</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/dataFGC</TokenIdentifier>
+			<Abstract type="html">The FGC network data base</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataFGC</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataFGC *dataFGC</Declaration>
+			
+			
+			<Anchor>//api/name/dataFGC</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setDataTMB:</TokenIdentifier>
+			<Abstract type="html">The TMB subway network data base</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataTMB</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataTMB *dataTMB</Declaration>
+			
+			
+			<Anchor>//api/name/dataTMB</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/dataTMB</TokenIdentifier>
+			<Abstract type="html">The TMB subway network data base</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataTMB</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataTMB *dataTMB</Declaration>
+			
+			
+			<Anchor>//api/name/dataTMB</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/dataTMB</TokenIdentifier>
+			<Abstract type="html">The TMB subway network data base</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataTMB</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataTMB *dataTMB</Declaration>
+			
+			
+			<Anchor>//api/name/dataTMB</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setCal:</TokenIdentifier>
+			<Abstract type="html">The current calendar for the execution</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACalendar *cal</Declaration>
+			
+			
+			<Anchor>//api/name/cal</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/cal</TokenIdentifier>
+			<Abstract type="html">The current calendar for the execution</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACalendar *cal</Declaration>
+			
+			
+			<Anchor>//api/name/cal</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/cal</TokenIdentifier>
+			<Abstract type="html">The current calendar for the execution</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACalendar *cal</Declaration>
+			
+			
+			<Anchor>//api/name/cal</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setOpenNodes:</TokenIdentifier>
+			<Abstract type="html">A priority queue that will be used to explore the graph</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPriorityQueue</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPriorityQueue *openNodes</Declaration>
+			
+			
+			<Anchor>//api/name/openNodes</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/openNodes</TokenIdentifier>
+			<Abstract type="html">A priority queue that will be used to explore the graph</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPriorityQueue</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPriorityQueue *openNodes</Declaration>
+			
+			
+			<Anchor>//api/name/openNodes</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/openNodes</TokenIdentifier>
+			<Abstract type="html">A priority queue that will be used to explore the graph</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPriorityQueue</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPriorityQueue *openNodes</Declaration>
+			
+			
+			<Anchor>//api/name/openNodes</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setViewController:</TokenIdentifier>
+			<Abstract type="html">The view controller that called this algorithm execution</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunIntViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/viewController</TokenIdentifier>
+			<Abstract type="html">The view controller that called this algorithm execution</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunIntViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/viewController</TokenIdentifier>
+			<Abstract type="html">The view controller that called this algorithm execution</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunIntViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/dijkstraPathtoNode:withCoo:</TokenIdentifier>
+			<Abstract type="html">Dijkstra&apos;s algorithm</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>- (MVAPath *)dijkstraPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nodeB</Name>
+					<Abstract type="html">Destination node for the Dijkstra computation</Abstract>
+				</Parameter><Parameter>
+					<Name>crds</Name>
+					<Abstract type="html">Coordinates of the final destination</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The MVAPath object for the given parameters and the current graph</Abstract></ReturnValue>
+			<Anchor>//api/name/dijkstraPathtoNode:withCoo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/astarPathtoNode:withCoo:</TokenIdentifier>
+			<Abstract type="html">A* algorithm</Abstract>
+			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
+			
+			<Declaration>- (MVAPath *)astarPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nodeB</Name>
+					<Abstract type="html">Destination node for the A* computation</Abstract>
+				</Parameter><Parameter>
+					<Name>crds</Name>
+					<Abstract type="html">Coordinates of the final destination</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The MVAPath object for the given parameters and the current graph</Abstract></ReturnValue>
+			<Anchor>//api/name/astarPathtoNode:withCoo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/updateNodesForNode:</TokenIdentifier>
+			<Abstract type="html">Function that updates all the adjacent nodes of the given one.</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)updateNodesForNode:(MVANode *)node</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">An object representing the current node</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateNodesForNode:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/getNextTrainForEdge:andTime:</TokenIdentifier>
+			<Abstract type="html">Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line.</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (double)getNextTrainForEdge:(MVAEdge *)edge andTime:(double)actualTime</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>edge</Name>
+					<Abstract type="html">The edge that contains the destination node and the identifier of the trip</Abstract>
+				</Parameter><Parameter>
+					<Name>actualTime</Name>
+					<Abstract type="html">The time for the query</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The time of the next train</Abstract></ReturnValue>
+			<Anchor>//api/name/getNextTrainForEdge:andTime:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/timeToInt:</TokenIdentifier>
+			<Abstract type="html">Function that transforms a time in HH:MM:SS into an integer in seconds</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>- (int)timeToInt:(NSString *)time</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>time</Name>
+					<Abstract type="html">The time as a string</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The time in seconds</Abstract></ReturnValue>
+			<Anchor>//api/name/timeToInt:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/timeInBusFromNodeA:toNodeB:</TokenIdentifier>
+			<Abstract type="html">Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter &apos;rain&apos; given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times.</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (double)timeInBusFromNodeA:(MVANode *)nodeA toNodeB:(MVANode *)nodeB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nodeA</Name>
+					<Abstract type="html">The origin node</Abstract>
+				</Parameter><Parameter>
+					<Name>nodeB</Name>
+					<Abstract type="html">The destination node</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The time in bus from the origin to the destination</Abstract></ReturnValue>
+			<Anchor>//api/name/timeInBusFromNodeA:toNodeB:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/updateNodeForEdge:andNode:</TokenIdentifier>
+			<Abstract type="html">Function that updates the destination node of an edge from the current node</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)updateNodeForEdge:(MVAEdge *)edge andNode:(MVANode *)currentNode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>edge</Name>
+					<Abstract type="html">The edge object</Abstract>
+				</Parameter><Parameter>
+					<Name>currentNode</Name>
+					<Abstract type="html">The current node object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateNodeForEdge:andNode:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/heuristicForCoords:</TokenIdentifier>
+			<Abstract type="html">Heuristic function. This function calculates the heuristic for a certain location</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>- (double)heuristicForCoords:(CLLocationCoordinate2D)cord</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cord</Name>
+					<Abstract type="html">The location coordinates</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The heuristic value</Abstract></ReturnValue>
+			<Anchor>//api/name/heuristicForCoords:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/pathwithGoal:andPath:</TokenIdentifier>
+			<Abstract type="html">Function that recursively construct the path coputed by the A* algorithm.</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)pathwithGoal:(MVANode *)node andPath:(MVAPath *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The first node of the path</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pathwithGoal:andPath:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/distanceForCoordinates:andCoordinates:</TokenIdentifier>
+			<Abstract type="html">Haversine distance between two coordinates</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>- (double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cordA</Name>
+					<Abstract type="html">The first coordinate</Abstract>
+				</Parameter><Parameter>
+					<Name>cordB</Name>
+					<Abstract type="html">The second coordinate</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The distance in meters</Abstract></ReturnValue>
+			<Anchor>//api/name/distanceForCoordinates:andCoordinates:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/edgeFromNode:toNode:</TokenIdentifier>
+			<Abstract type="html">Function that returns the edge that connects the first node with the second.</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>- (MVAEdge *)edgeFromNode:(MVANode *)nodeA toNode:(MVANode *)nodeB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nodeA</Name>
+					<Abstract type="html">The first node</Abstract>
+				</Parameter><Parameter>
+					<Name>nodeB</Name>
+					<Abstract type="html">The second node</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The MVAEdge object that represents the edge</Abstract></ReturnValue>
+			<Anchor>//api/name/edgeFromNode:toNode:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/loadWalkingSpeed</TokenIdentifier>
+			<Abstract type="html">This function loads the walking speed indicated by the user. (The default value is 5km/h)</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>- (double)loadWalkingSpeed</Declaration>
+			
+			<ReturnValue><Abstract type="html">The speed in m/s</Abstract></ReturnValue>
+			<Anchor>//api/name/loadWalkingSpeed</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/loadRain</TokenIdentifier>
+			<Abstract type="html">Function that loads if is raining in Barcelona or not.</Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)loadRain</Declaration>
+			
+			<ReturnValue><Abstract type="html">A bool with the answer to the query</Abstract></ReturnValue>
+			<Anchor>//api/name/loadRain</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

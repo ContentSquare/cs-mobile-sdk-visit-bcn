@@ -31,7 +31,7 @@
 @implementation MVAPunIntViewController
 
 /**
- *  <#Description#>
+ *  Function that gets called when the view controller has loaded the view
  *
  *  @since version 1.0
  */
@@ -47,7 +47,7 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when there's a memory leak or warning
  *
  *  @since version 1.0
  */
@@ -57,9 +57,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Notifies the view controller that its view was removed from a view hierarchy.
  *
- *  @param animated <#animated description#>
+ *  @param animated If YES, the disappearance of the view was animated.
  *
  *  @since version 1.0
  */
@@ -69,7 +69,7 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that creates the parallax effect.
  *
  *  @since version 1.0
  */
@@ -81,13 +81,14 @@
     
     CGFloat textSize;
     if (self.punto != nil) {
-        textSize = [self heightForView:[UIFont fontWithName:@"HelveticaNeue-Medium" size:17]
+        textSize = [self heightForView:[UIFont systemFontOfSize:18.0f]//[UIFont fontWithName:@"HelveticaNeue-Regular" size:20]
                                   text:self.punto.descr
                                andSize:(self.view.frame.size.width - 16)];
+        textSize -= self.punto.offset;
     }
     else textSize = (self.view.frame.size.height - 500);
     
-    if (textSize < (self.view.frame.size.height - 340)) textSize = (self.view.frame.size.height - 500);
+    if (textSize < (self.view.frame.size.height - 500)) textSize = (self.view.frame.size.height - 500);
     
     //Create the ScrollView
     UIScrollView* scrollView = [UIScrollView new];
@@ -105,11 +106,15 @@
     //Add the image view and other addtional views to the content view
     UIImage *img;
     if (self.punto != nil) img = [UIImage imageNamed:self.punto.fotoGr];
-    else img = self.customlocation.foto;
+    else {
+        if (self.customlocation.foto != nil) img = self.customlocation.foto;
+        else img = [UIImage imageNamed:@"customPlace"];
+    }
     UIImageView* topImageView = [[UIImageView alloc] initWithImage:img];
     topImageView.translatesAutoresizingMaskIntoConstraints = NO; //we are using auto layout
     topImageView.contentMode = UIViewContentModeScaleAspectFill;
     topImageView.clipsToBounds = YES;
+    
     [contentView addSubview:topImageView];
     views[@"topImageView"] = topImageView;
     
@@ -195,9 +200,10 @@
     else aView.text = @"Custom location";
     aView.translatesAutoresizingMaskIntoConstraints = NO; //we are using auto layout
     aView.backgroundColor = [UIColor clearColor];
-    [aView setFont: [UIFont fontWithName:@"HelveticaNeue-Medium" size:17]];
+    [aView setFont: [UIFont systemFontOfSize:18.0f]];//[UIFont fontWithName:@"HelveticaNeue-Regular" size:20]];
     aView.textColor = [UIColor blackColor];
     aView.textAlignment = NSTextAlignmentJustified;
+    [aView setScrollEnabled:NO];
     [subContentView addSubview:aView];
     views[@"aView"] = aView;
     format = @"|-8-[aView]-8-|";
@@ -268,13 +274,13 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that calculates the height of a view that will contain a given text with an specific font and text size.
  *
- *  @param font  <#font description#>
- *  @param text  <#text description#>
- *  @param width <#width description#>
+ *  @param font  The font used
+ *  @param text  The text
+ *  @param width The width of the view
  *
- *  @return <#return value description#>
+ *  @return The height needed to display the text
  *
  *  @since version 1.0
  */
@@ -290,7 +296,7 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that calls the functions needed to calculate the itineraries desired
  *
  *  @since version 1.0
  */
@@ -298,7 +304,7 @@
 {
     if (self.pathsResume == nil) {
         self.pathsResume = [[UILabel alloc] initWithFrame:CGRectMake(20, 60, 60, 30)];
-        self.pathsResume.text = @"Loading";
+        self.pathsResume.text = @"Travelling";
         [self.pathsResume setAdjustsFontSizeToFitWidth:YES];
         [self.pathsResume setTextAlignment:NSTextAlignmentCenter];
         self.pathsResume.textColor = [UIColor whiteColor];
@@ -306,7 +312,6 @@
         [self.pathsView addSubview:self.pathsResume];
         
         UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(reloadPath:)];
-        
         singleTap.numberOfTapsRequired = 1;
         singleTap.numberOfTouchesRequired = 1;
         [self.pathsView addGestureRecognizer: singleTap];
@@ -322,6 +327,7 @@
         [self.pathsView addSubview:logo];
     }
     else {
+        [self.pathsView setUserInteractionEnabled:NO];
         self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
         self.activityIndicator.alpha = 1.0;
         self.activityIndicator.center = CGPointMake(50, 45);
@@ -356,6 +362,7 @@
                 self.subwayPath = self.graphs.subwayPath;
                 self.busPath = self.graphs.busPath;
                 [self.activityIndicator stopAnimating];
+                [self.pathsView setUserInteractionEnabled:YES];
                 UIImageView *logo = [[UIImageView alloc] initWithFrame:CGRectMake(30, 20, 40, 40)];
                 if ((self.subwayPath == nil) && (self.busPath == nil)) {
                     if (self.walkDist < [self loadWalkingDist]) {
@@ -484,7 +491,7 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that calcultes the time and distances for the walking and car options.
  *
  *  @since version 1.0
  */
@@ -493,7 +500,7 @@
     double realDist;
     if (self.punto != nil) realDist = [self distanceForCoordinates:[self getCoordinates] andCoordinates:self.punto.coordinates];
     else realDist = [self distanceForCoordinates:[self getCoordinates] andCoordinates:self.customlocation.coordinates];
-    self.walkDist = (1.25 * realDist);
+    self.walkDist = (1.2 * realDist);
     self.walkSpeed = [self loadWalkingSpeed];
     self.walkTime = (self.walkDist / self.walkSpeed);
     self.carDist = (1.4 * realDist);
@@ -503,13 +510,14 @@
 }
 
 /**
- *  <#Description#>
+ *  Haversine distance between two coordinates
  *
- *  @param cordA <#cordA description#>
- *  @param cordB <#cordB description#>
+ *  @param cordA The first coordinate
+ *  @param cordB The second coordinate
  *
- *  @return <#return value description#>
+ *  @return The distance in meters
  *
+ *  @see http://www.movable-type.co.uk/scripts/latlong.html
  *  @since version 1.0
  */
 -(double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB
@@ -527,9 +535,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user wants to reload the itineraries
  *
- *  @param gr <#gr description#>
+ *  @param gr The tap gesture recognizer object
  *
  *  @since version 1.0
  */
@@ -539,9 +547,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user wants to view the detailed information of the itineraries
  *
- *  @param gr <#gr description#>
+ *  @param gr gr The tap gesture recognizer object
  *
  *  @since version 1.0
  */
@@ -551,9 +559,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the walking speed selected by the user
  *
- *  @return <#return value description#>
+ *  @return The walking speed selected
  *
  *  @since version 1.0
  */
@@ -574,9 +582,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads if the user has indicated that is rainig in Barcelona.
  *
- *  @return <#return value description#>
+ *  @return A bool that answers the query
  *
  *  @since version 1.0
  */
@@ -596,9 +604,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the walking distance selected by the user.
  *
- *  @return <#return value description#>
+ *  @return The walking distance selected by the user.
  *
  *  @since version 1.0
  */
@@ -617,9 +625,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the initial time for the computation.
  *
- *  @return <#return value description#>
+ *  @return The initial time in seconds.
  *
  *  @since version 1.0
  */
@@ -635,9 +643,9 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads if the user has selected a custom date
  *
- *  @return <#return value description#>
+ *  @return A boolean
  *
  *  @since version 1.0
  */
@@ -655,9 +663,9 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads either the custom date chosen by the user or the current date of the device
  *
- *  @return <#return value description#>
+ *  @return An NSDate object
  *
  *  @since version 1.0
  */
@@ -672,9 +680,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the origin's coordinates. The custom location coordinates or the current coordinates.
  *
- *  @return <#return value description#>
+ *  @return The coordinates
  *
  *  @since version 1.0
  */
@@ -709,10 +717,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the custom location selected by the user
  *
- *  @return <#return value description#>
+ *  @return The MVACustomLocation object
  *
+ *  @see MVACustomLocation class
  *  @since version 1.0
  */
 - (MVACustomLocation *) loadCustomLocation
@@ -725,10 +734,10 @@
 }
 
 /**
- *  <#Description#>
+ *  Called when a segue is about to be performed. (required)
  *
- *  @param segue  <#segue description#>
- *  @param sender <#sender description#>
+ *  @param segue  The segue object containing information about the view controllers involved in the segue.
+ *  @param sender The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.
  *
  *  @since version 1.0
  */
@@ -743,6 +752,7 @@
         vc.carDist = self.carDist;
         vc.carTime = self.carTime;
         vc.punto = self.punto;
+        vc.customlocation = self.customlocation;
         vc.orig = [self getCoordinates];
         vc.initTime = self.initTime;
         vc.graphs = self.graphs;

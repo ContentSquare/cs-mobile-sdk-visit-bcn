@@ -24,9 +24,9 @@
 
 /**
  *  The identifier of the service
+ *
  *  @see MVADate class
  *  @see MVATrip class
- *
  *  @since version 1.0
  */
 @property NSString *serviceID;
@@ -54,8 +54,8 @@
 
 /**
  *  The exceptions of this calendar
- *  @see MVADate
  *
+ *  @see MVADate
  *  @since version 1.0
  */
 @property NSMutableArray *exceptions;

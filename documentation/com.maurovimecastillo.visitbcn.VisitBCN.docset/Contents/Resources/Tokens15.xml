@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVADataTMB.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVADataTMB</TokenIdentifier>
+			<Abstract type="html">This class englobes all the data of the FGC subway network.</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/setStops:</TokenIdentifier>
+			<Abstract type="html">Stops of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *stops</Declaration>
+			
+			
+			<Anchor>//api/name/stops</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/stops</TokenIdentifier>
+			<Abstract type="html">Stops of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *stops</Declaration>
+			
+			
+			<Anchor>//api/name/stops</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataTMB/stops</TokenIdentifier>
+			<Abstract type="html">Stops of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *stops</Declaration>
+			
+			
+			<Anchor>//api/name/stops</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/setStopsHash:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the stopIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *stopsHash</Declaration>
+			
+			
+			<Anchor>//api/name/stopsHash</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/stopsHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the stopIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *stopsHash</Declaration>
+			
+			
+			<Anchor>//api/name/stopsHash</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataTMB/stopsHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the stopIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *stopsHash</Declaration>
+			
+			
+			<Anchor>//api/name/stopsHash</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/setRoutes:</TokenIdentifier>
+			<Abstract type="html">Routes of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *routes</Declaration>
+			
+			
+			<Anchor>//api/name/routes</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/routes</TokenIdentifier>
+			<Abstract type="html">Routes of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *routes</Declaration>
+			
+			
+			<Anchor>//api/name/routes</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataTMB/routes</TokenIdentifier>
+			<Abstract type="html">Routes of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *routes</Declaration>
+			
+			
+			<Anchor>//api/name/routes</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/setRoutesHash:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the routeIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *routesHash</Declaration>
+			
+			
+			<Anchor>//api/name/routesHash</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/routesHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the routeIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *routesHash</Declaration>
+			
+			
+			<Anchor>//api/name/routesHash</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataTMB/routesHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the routeIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *routesHash</Declaration>
+			
+			
+			<Anchor>//api/name/routesHash</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/setTrips:</TokenIdentifier>
+			<Abstract type="html">Trips of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *trips</Declaration>
+			
+			
+			<Anchor>//api/name/trips</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/trips</TokenIdentifier>
+			<Abstract type="html">Trips of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *trips</Declaration>
+			
+			
+			<Anchor>//api/name/trips</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataTMB/trips</TokenIdentifier>
+			<Abstract type="html">Trips of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *trips</Declaration>
+			
+			
+			<Anchor>//api/name/trips</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/setTripsHash:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the tripIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHash</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHash</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/tripsHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the tripIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHash</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHash</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataTMB/tripsHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the tripIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHash</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHash</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/setFreqs:</TokenIdentifier>
+			<Abstract type="html">Frequencies of the trains that circulate in the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *freqs</Declaration>
+			
+			
+			<Anchor>//api/name/freqs</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/freqs</TokenIdentifier>
+			<Abstract type="html">Frequencies of the trains that circulate in the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *freqs</Declaration>
+			
+			
+			<Anchor>//api/name/freqs</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataTMB/freqs</TokenIdentifier>
+			<Abstract type="html">Frequencies of the trains that circulate in the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *freqs</Declaration>
+			
+			
+			<Anchor>//api/name/freqs</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/setCalendars:</TokenIdentifier>
+			<Abstract type="html">Calendars of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *calendars</Declaration>
+			
+			
+			<Anchor>//api/name/calendars</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/calendars</TokenIdentifier>
+			<Abstract type="html">Calendars of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *calendars</Declaration>
+			
+			
+			<Anchor>//api/name/calendars</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataTMB/calendars</TokenIdentifier>
+			<Abstract type="html">Calendars of the TMB subway network</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *calendars</Declaration>
+			
+			
+			<Anchor>//api/name/calendars</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/setDates:</TokenIdentifier>
+			<Abstract type="html">Calendar dates that indicate the exceptions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *dates</Declaration>
+			
+			
+			<Anchor>//api/name/dates</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/dates</TokenIdentifier>
+			<Abstract type="html">Calendar dates that indicate the exceptions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *dates</Declaration>
+			
+			
+			<Anchor>//api/name/dates</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataTMB/dates</TokenIdentifier>
+			<Abstract type="html">Calendar dates that indicate the exceptions</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *dates</Declaration>
+			
+			
+			<Anchor>//api/name/dates</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/getNextCalendarforSubway:</TokenIdentifier>
+			<Abstract type="html">This function returns the calendar object for the calendar used in the algorithm calculations</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (MVACalendar *)getNextCalendarforSubway:(BOOL)subway</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>subway</Name>
+					<Abstract type="html">A boolean that indicates if the desired calendar is for the subway or the bus service.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The MVACalendar object with the desired calendar data</Abstract></ReturnValue>
+			<Anchor>//api/name/getNextCalendarforSubway:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/getCurrentCalendarforSubway:</TokenIdentifier>
+			<Abstract type="html">This function returns the calendar object for the calendar, plus 1 day, used in the algorithm calculations</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (MVACalendar *)getCurrentCalendarforSubway:(BOOL)subway</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>subway</Name>
+					<Abstract type="html">A boolean that indicates if the desired calendar is for the subway or the bus service.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The MVACalendar object with the desired calendar data</Abstract></ReturnValue>
+			<Anchor>//api/name/getCurrentCalendarforSubway:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/parseDataBase</TokenIdentifier>
+			<Abstract type="html">This function initiates the parsing of the TMB subway data</Abstract>
+			<DeclaredIn>MVADataTMB.h</DeclaredIn>
+			
+			<Declaration>- (void)parseDataBase</Declaration>
+			
+			
+			<Anchor>//api/name/parseDataBase</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/init</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns self initialized</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">self, initialized object</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/unZip:at:</TokenIdentifier>
+			<Abstract type="html">Function that extracts the ziped folder</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (void)unZip:(NSString *)filePath at:(NSString *)folder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path of the zip file</Abstract>
+				</Parameter><Parameter>
+					<Name>folder</Name>
+					<Abstract type="html">The name of the folder where the extracted data should be stored</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unZip:at:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/parseGTFSAtPath:</TokenIdentifier>
+			<Abstract type="html">This function parses the files at a given path</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (void)parseGTFSAtPath:(NSString *)filesPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filesPath</Name>
+					<Abstract type="html">The path of the files that need to be parsed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parseGTFSAtPath:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/parserDidBeginDocument:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has begun a new document</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (void)parserDidBeginDocument:(CHCSVParser *)parser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parserDidBeginDocument:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/parser:didBeginLine:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has begun a new line of the document</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didBeginLine:(NSUInteger)recordNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>recordNumber</Name>
+					<Abstract type="html">The number of the line being parsed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didBeginLine:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/parser:didReadField:atIndex:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has read a new field of the current line</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didReadField:(NSString *)field atIndex:(NSInteger)fieldIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>field</Name>
+					<Abstract type="html">The field that has been read</Abstract>
+				</Parameter><Parameter>
+					<Name>fieldIndex</Name>
+					<Abstract type="html">The index of this field in the line</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didReadField:atIndex:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/parser:didEndLine:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the aprser has finished reading a line</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didEndLine:(NSUInteger)recordNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>recordNumber</Name>
+					<Abstract type="html">The number of the line dad has been parsed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didEndLine:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/parserDidEndDocument:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has finished parsing a document</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (void)parserDidEndDocument:(CHCSVParser *)parser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parserDidEndDocument:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/parser:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates that an error ocurred while parsing the document</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didFailWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The NSError indicating why the parsing ahs failed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didFailWithError:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/dayOfWeek:</TokenIdentifier>
+			<Abstract type="html">Returns the day of the week for a given date</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (long)dayOfWeek:(NSDate *)anyDate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>anyDate</Name>
+					<Abstract type="html">A NSDate object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The day of the week in European mode</Abstract></ReturnValue>
+			<Anchor>//api/name/dayOfWeek:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/customDate</TokenIdentifier>
+			<Abstract type="html">Loads if the user whants a custom date or the actual</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)customDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">A BOOL indicating if the date is custom or not</Abstract></ReturnValue>
+			<Anchor>//api/name/customDate</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/loadCustomDate</TokenIdentifier>
+			<Abstract type="html">Loads the MVADate that user desires (the actual or a custom)</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (NSDate *)loadCustomDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">A NSDate object</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomDate</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVADataTMB.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -10,6 +10,23 @@
 
 @implementation MVAFrequencies
 
+/**
+ *  This function is overriden from NSObject. Returns a MVAFrequencies copy of self.
+ *
+ *  @return The new MVAFrequencies copied object
+ *
+ *  @since version 1.0
+ */
+-(id)copy
+{
+    MVAFrequencies *copyElem = [[MVAFrequencies alloc] init];
+    copyElem.tripID = [self.tripID copy];
+    copyElem.startTime = [self.startTime copy];
+    copyElem.endTime = [self.endTime copy];
+    copyElem.headway = [self.headway copy];
+    return copyElem;
+}
+
 -(void)insertElement:(NSString *)elem atIndex:(NSInteger)index
 {
     if (index == 0) self.tripID = elem;
@@ -36,7 +53,7 @@
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *

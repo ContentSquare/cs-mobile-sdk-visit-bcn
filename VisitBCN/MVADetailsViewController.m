@@ -9,28 +9,36 @@
 #import "MVADetailsViewController.h"
 #import "MVATaxis.h"
 #import "Reachability.h"
+#import "MVASavedPath.h"
+#import "MVAPathViewController.h"
 
 @interface MVADetailsViewController ()
 
 @property MVATaxis *taxis;
 @property UIView *taxiView;
+@property MVASavedPath *savedPath;
+@property BOOL created;
+@property BOOL subway;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *starButton;
+@property NSMutableArray *savedPaths;
 
 @end
 
 @implementation MVADetailsViewController
 
 /**
- *  <#Description#>
+ *  Function that gets called when the view controller has loaded the view
  *
  *  @since version 1.0
  */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.created = NO;
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when there's a memory leak or warning
  *
  *  @since version 1.0
  */
@@ -41,19 +49,72 @@
 }
 
 /**
- *  <#Description#>
+ *  Notifies the view controller that its view is about to be added to a view hierarchy.
+ *
+ *  @param animated If YES, the view is being added to the window using an animation.
  *
  *  @since version 1.0
- *
- *  @param animated <#animated description#>
  */
 -(void)viewWillAppear:(BOOL)animated
 {
-    [self createParallax];
+    if (!self.created) {
+        [self loadSavedPaths];
+        self.savedPath = [[MVASavedPath alloc] init];
+        self.savedPath.subwayPath = self.subwayPath;
+        self.savedPath.busPath = self.busPath;
+        self.savedPath.initTime = self.initTime;
+        self.savedPath.initCords = self.orig;
+        self.savedPath.date = [self loadCustomDate];
+        self.savedPath.punto = self.punto;
+        self.savedPath.walkDist = self.walkDist;
+        self.savedPath.walkTime = self.walkTime;
+        self.savedPath.carDist = self.carDist;
+        self.savedPath.carTime = self.carTime;
+        if ([self loadCustom] > 0) self.savedPath.customlocation = [self loadCustomLocation];
+        else {
+            MVACustomLocation *loc = [[MVACustomLocation alloc] init];
+            loc.name = @"Current location";
+            loc.coordinates = self.orig;
+            loc.foto = [UIImage imageNamed:@"radar"];
+            self.savedPath.customlocation = loc;
+        }
+        if (self.customlocation != nil) {
+            MVAPunInt *testP = [[MVAPunInt alloc] init];
+            testP.nombre = self.customlocation.name;
+            testP.coordinates = self.customlocation.coordinates;
+            self.savedPath.punto = testP;
+            self.savedPath.destImage = self.customlocation.foto;
+        }
+        [self createParallax];
+        [self.starButton setImage:[UIImage imageNamed:@"empty_star"]];
+    }
+    else if (self.savedPath.identificador != -1) {
+        [self.starButton setImage:[UIImage imageNamed:@"full_star"]];
+    }
+
+    self.created= YES;
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the paths saved by the user
+ *
+ *  @since version 1.0
+ */
+- (void)loadSavedPaths
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *savedArray = [defaults objectForKey:@"VisitBCNSavedPaths"];
+    if (savedArray != nil) {
+        NSArray *oldArray = [NSKeyedUnarchiver unarchiveObjectWithData:savedArray];
+        self.savedPaths = [[NSMutableArray alloc] initWithArray:oldArray];
+    }
+    else {
+        self.savedPaths = [[NSMutableArray alloc] init];
+    }
+}
+
+/**
+ *  Function that create the parallax effect
  *
  *  @since version 1.0
  */
@@ -189,9 +250,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that creates the insets
  *
- *  @return <#return value description#>
+ *  @return The insets view
  *
  *  @since version 1.0
  */
@@ -203,9 +264,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that creates the subway view
  *
- *  @return <#return value description#>
+ *  @return The subway view
  *
  *  @since version 1.0
  */
@@ -346,6 +407,8 @@
                         route = [self.graphs.subwayGraph.dataFGC.routes objectAtIndex:[pos intValue]];
                     }
                     
+                    [self.savedPath.subwayRoutes addObject:route];
+                    
                     shapeLayer.strokeColor = [route.color CGColor];
                     shapeLayer.lineWidth = 3.0;
                     shapeLayer.fillColor = [[UIColor clearColor] CGColor];
@@ -382,15 +445,21 @@
         scrollView.backgroundColor = [UIColor clearColor];
         
         [v addSubview:scrollView];
+        
+        UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(subwayPathView:)];
+        
+        singleTap.numberOfTapsRequired = 1;
+        singleTap.numberOfTouchesRequired = 1;
+        [v addGestureRecognizer: singleTap];
     }
     
     return v;
 }
 
 /**
- *  <#Description#>
+ *  Function that creates the bus view
  *
- *  @return <#return value description#>
+ *  @return The bus view
  *
  *  @since version 1.0
  */
@@ -419,7 +488,13 @@
     }
     else {
         MVANode *nodeA = [self.busPath.nodes firstObject];
-        MVANode *nodeB = [self.busPath.nodes objectAtIndex:([self.busPath.nodes count] - 2)];
+        MVAEdge *edge = [self.busPath.edges lastObject];
+        int lastS = 0;
+        while ([edge.tripID isEqualToString:@"landmark"] || [edge.tripID isEqualToString:@"walking"]) {
+            ++lastS;
+            edge = [self.busPath.edges objectAtIndex:([self.busPath.edges count] - (1 + lastS))];
+        }
+        MVANode *nodeB = edge.destini;
         MVANode *landmark = [self.busPath.nodes lastObject];
         
         UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake(97, 8, (w - (8 + 97)), 20)];
@@ -528,6 +603,8 @@
                     NSNumber *pos = [self.graphs.busGraph.dataBus.busRoutesHash objectForKey:tripID];
                     MVARoute *route = [self.graphs.busGraph.dataBus.busRoutes objectAtIndex:[pos intValue]];
                     
+                    [self.savedPath.busRoutes addObject:route];
+                    
                     shapeLayer.strokeColor = [route.color CGColor];
                     shapeLayer.lineWidth = 3.0;
                     shapeLayer.fillColor = [[UIColor clearColor] CGColor];
@@ -565,15 +642,46 @@
         
         [v addSubview:scrollView];
         
+        UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(busPathView:)];
+        
+        singleTap.numberOfTapsRequired = 1;
+        singleTap.numberOfTouchesRequired = 1;
+        [v addGestureRecognizer: singleTap];
     }
     
     return v;
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called after the subway path view has been selected
  *
- *  @return <#return value description#>
+ *  @param gr The tap gesture recognizer object
+ *
+ *  @since version 1.0
+ */
+-(void)subwayPathView:(UITapGestureRecognizer *)gr
+{
+    self.subway = YES;
+    [self performSegueWithIdentifier:@"seguePathView" sender:self];
+}
+
+/**
+ *  Function that gets called after the bus path view has been selected
+ *
+ *  @param gr The tap gesture recognizer object
+ *
+ *  @since version 1.0
+ */
+-(void)busPathView:(UITapGestureRecognizer *)gr
+{
+    self.subway = NO;
+    [self performSegueWithIdentifier:@"seguePathView" sender:self];
+}
+
+/**
+ *  Function that creates the walking view
+ *
+ *  @return The walking view
  *
  *  @since version 1.0
  */
@@ -641,7 +749,7 @@
     [formatter setMinimumIntegerDigits:2];
     [formatter setPaddingCharacter:@"0"];
     [formatter setPaddingPosition:NSNumberFormatterPadBeforePrefix];
-    dist.text = [[formatter stringFromNumber:[NSNumber numberWithDouble:(self.walkDist/1000)]] stringByAppendingString:@" Kms "];
+    dist.text = [[formatter stringFromNumber:[NSNumber numberWithDouble:(self.walkDist/1000)]] stringByAppendingString:@" kms "];
     [dist setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
     [dist setAdjustsFontSizeToFitWidth:YES];
     [dist setTextAlignment:NSTextAlignmentCenter];
@@ -653,9 +761,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that creates the taxi view
  *
- *  @return <#return value description#>
+ *  @return The taxi view
  *
  *  @since version 1.0
  */
@@ -717,7 +825,7 @@
                     [pickUp setTextColor:[UIColor whiteColor]];
                     [self.taxiView addSubview:pickUp];
                     UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 92), 72, 84, 20)];
-                    double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
+                    double est = [self.taxis taxiFareWithDistance:self.carDist andDate:self.savedPath.date];
                     [price setText:[NSString stringWithFormat:@"%.2f€",est]];
                     [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
                     [price setAdjustsFontSizeToFitWidth:YES];
@@ -741,7 +849,7 @@
                     [pickUp setTextColor:[UIColor whiteColor]];
                     [self.taxiView addSubview:pickUp];
                     UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 8 - 90), 72, 90, 20)];
-                    double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
+                    double est = [self.taxis taxiFareWithDistance:self.carDist andDate:self.savedPath.date];
                     [price setText:[NSString stringWithFormat:@"%.2f€",est]];
                     [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
                     [price setAdjustsFontSizeToFitWidth:YES];
@@ -767,7 +875,7 @@
                     [pickUp setTextColor:[UIColor whiteColor]];
                     [self.taxiView addSubview:pickUp];
                     UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 8 - 90), 72, 90, 20)];
-                    double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
+                    double est = [self.taxis taxiFareWithDistance:self.carDist andDate:self.savedPath.date];
                     [price setText:[NSString stringWithFormat:@"%.2f€",est]];
                     [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
                     [price setAdjustsFontSizeToFitWidth:YES];
@@ -809,7 +917,7 @@
         [pickUp setTextColor:[UIColor darkGrayColor]];
         [self.taxiView addSubview:pickUp];
         UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 98), 72, 90, 20)];
-        double est = [self.taxis taxiFareWithDistance:self.carDist andTime:self.carTime];
+        double est = [self.taxis taxiFareWithDistance:self.carDist andDate:self.savedPath.date];
         [price setText:[NSString stringWithFormat:@"%.2f€",est]];
         [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
         [price setAdjustsFontSizeToFitWidth:YES];
@@ -821,9 +929,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that creates the footer view
  *
- *  @return <#return value description#>
+ *  @return The footer view
  *
  *  @since version 1.0
  */
@@ -834,20 +942,41 @@
     UILabel *myLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, 5, (w - 16), 40)];
     myLabel.numberOfLines = 0;
     [myLabel setFont:[UIFont systemFontOfSize:10.0f]];
-    myLabel.text = @"All the times, itineraries and taxi fares calculated are an estimation and can be subject of variation due to unexpected events or special conditions.";
+    myLabel.text = @"All the times, itineraries and taxi fares calculated, are an estimation and can be subject of variation due to unexpected events or special conditions.";
     [v addSubview:myLabel];
     return v;
 }
 
-/*-(void)hailoTap:(UITapGestureRecognizer *)gr
+/**
+ *  Function that gets called when the user selects the star button.
+ *
+ *  @param sender The star button.
+ *
+ *  @since version 1.0
+ */
+- (IBAction)starTapped:(id)sender
 {
-    [self.taxis openHailo];
-}*/
+    if (self.savedPath.identificador == -1) {
+        [self.starButton setImage:[UIImage imageNamed:@"full_star"]];
+        self.savedPath.identificador = (int)[self.savedPaths count];
+        [self.savedPaths addObject:self.savedPath];
+    }
+    else {
+        [self.starButton setImage:[UIImage imageNamed:@"empty_star"]];
+        [self.savedPaths removeObjectAtIndex:self.savedPath.identificador];
+        self.savedPath.identificador = -1;
+    }
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+    dispatch_async(queue, ^{
+        NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+        [sharedDefaults setObject:[NSKeyedArchiver archivedDataWithRootObject:[self.savedPaths mutableCopy]] forKey:@"VisitBCNSavedPaths"];
+    });
+}
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user
  *
- *  @param gr <#gr description#>
+ *  @param gr The tap gesture recognizer object.
  *
  *  @since version 1.0
  */
@@ -857,9 +986,81 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the index of the custom location chosen
  *
- *  @return <#return value description#>
+ *  @return The index of the custom location inside the custom locations array
+ *
+ *  @since version 1.0
+ */
+-(int)loadCustom
+{
+    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [sharedDefaults objectForKey:@"VisitBCNIsCustom"];
+    if (data == nil) {
+        [sharedDefaults setObject:[NSNumber numberWithInt:0] forKey:@"VisitBCNIsCustom"];
+        return 0;
+    }
+    NSNumber *num = [sharedDefaults objectForKey:@"VisitBCNIsCustom"];
+    return [num intValue];
+}
+
+/**
+ *  Function that loads if the user has chosen a custom location.
+ *
+ *  @return The MVACustonLocation object.
+ *
+ *  @see MVACustomLocation object
+ *  @since version 1.0
+ */
+- (MVACustomLocation *) loadCustomLocation
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *savedArray = [defaults objectForKey:@"VisitBCNCustomLocations"];
+    NSArray *oldArray = [NSKeyedUnarchiver unarchiveObjectWithData:savedArray];
+    NSArray *customLocations = [[NSArray alloc] initWithArray:oldArray];
+    return [customLocations objectAtIndex:([self loadCustom] - 1)];
+}
+
+/**
+ *  This function loads if the user has selected a custom date
+ *
+ *  @return A boolean
+ *
+ *  @since version 1.0
+ */
+-(BOOL)customDate
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if (data == nil) {
+        [defaults setObject:@"NO" forKey:@"VisitBCNCustomDateEnabled"];
+        return NO;
+    }
+    NSString *string = [defaults objectForKey:@"VisitBCNCustomDateEnabled"];
+    if ([string isEqualToString:@"NO"]) return NO;
+    return YES;
+}
+
+/**
+ *  This function loads either the custom date chosen by the user or the current date of the device
+ *
+ *  @return An NSDate object
+ *
+ *  @since version 1.0
+ */
+-(NSDate *)loadCustomDate
+{
+    [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSDate *date = [defaults objectForKey:@"VisitBCNCustomDate"];
+    if (!date) return [NSDate date];
+    return date;
+}
+
+/**
+ *  Function that checks if there's internet connection
+ *
+ *  @return A bool answering the query
  *
  *  @since version 1.0
  */
@@ -871,6 +1072,23 @@
         return NO;
     } else {
         return YES;
+    }
+}
+
+/**
+ *  Called when a segue is about to be performed. (required)
+ *
+ *  @param segue  The segue object containing information about the view controllers involved in the segue.
+ *  @param sender The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.
+ *
+ *  @since version 1.0
+ */
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"seguePathView"]) {
+        MVAPathViewController *vc = (MVAPathViewController *)segue.destinationViewController;
+        vc.subway = self.subway;
+        vc.savedPath = self.savedPath;
     }
 }
 

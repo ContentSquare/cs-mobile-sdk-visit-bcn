@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAStop.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+			<Abstract type="html">This class represents a stop.</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="42"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/setStopID:</TokenIdentifier>
+			<Abstract type="html">The stop identifier</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSString *stopID</Declaration>
+			
+			
+			<Anchor>//api/name/stopID</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/stopID</TokenIdentifier>
+			<Abstract type="html">The stop identifier</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSString *stopID</Declaration>
+			
+			
+			<Anchor>//api/name/stopID</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStop/stopID</TokenIdentifier>
+			<Abstract type="html">The stop identifier</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSString *stopID</Declaration>
+			
+			
+			<Anchor>//api/name/stopID</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/setCode:</TokenIdentifier>
+			<Abstract type="html">The stop code provided by the agency</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property int code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/code</TokenIdentifier>
+			<Abstract type="html">The stop code provided by the agency</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property int code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStop/code</TokenIdentifier>
+			<Abstract type="html">The stop code provided by the agency</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property int code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/setName:</TokenIdentifier>
+			<Abstract type="html">The stop&apos;s name</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/name</TokenIdentifier>
+			<Abstract type="html">The stop&apos;s name</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStop/name</TokenIdentifier>
+			<Abstract type="html">The stop&apos;s name</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/setLatitude:</TokenIdentifier>
+			<Abstract type="html">The latitude of the stop&apos;s coordinates</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/latitude</TokenIdentifier>
+			<Abstract type="html">The latitude of the stop&apos;s coordinates</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStop/latitude</TokenIdentifier>
+			<Abstract type="html">The latitude of the stop&apos;s coordinates</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/setLongitude:</TokenIdentifier>
+			<Abstract type="html">The longitude of the stop&apos;s coordinates</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/longitude</TokenIdentifier>
+			<Abstract type="html">The longitude of the stop&apos;s coordinates</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStop/longitude</TokenIdentifier>
+			<Abstract type="html">The longitude of the stop&apos;s coordinates</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/setTimes:</TokenIdentifier>
+			<Abstract type="html">The example stop times</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *times</Declaration>
+			
+			
+			<Anchor>//api/name/times</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/times</TokenIdentifier>
+			<Abstract type="html">The example stop times</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *times</Declaration>
+			
+			
+			<Anchor>//api/name/times</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStop/times</TokenIdentifier>
+			<Abstract type="html">The example stop times</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *times</Declaration>
+			
+			
+			<Anchor>//api/name/times</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/setRoutes:</TokenIdentifier>
+			<Abstract type="html">The routes that operate in this stop</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *routes</Declaration>
+			
+			
+			<Anchor>//api/name/routes</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/routes</TokenIdentifier>
+			<Abstract type="html">The routes that operate in this stop</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *routes</Declaration>
+			
+			
+			<Anchor>//api/name/routes</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStop/routes</TokenIdentifier>
+			<Abstract type="html">The routes that operate in this stop</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *routes</Declaration>
+			
+			
+			<Anchor>//api/name/routes</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/insertElement:atIndex:isFGC:</TokenIdentifier>
+			<Abstract type="html">This function is used to insert a given data to the correct field</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>- (void)insertElement:(NSString *)elem atIndex:(NSInteger)index isFGC:(BOOL)isFGC</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>elem</Name>
+					<Abstract type="html">The data to be inserted</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of this data in the GTFS file</Abstract>
+				</Parameter><Parameter>
+					<Name>isFGC</Name>
+					<Abstract type="html">A boolean that indicates if the data is for the FGC agency</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertElement:atIndex:isFGC:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/insertInBus:metro:isFGC:</TokenIdentifier>
+			<Abstract type="html">This function inserts the self MVAStop object in the bus or subway arrays</Abstract>
+			<DeclaredIn>MVAStop.h</DeclaredIn>
+			
+			<Declaration>- (void)insertInBus:(NSMutableArray *)busStops metro:(NSMutableArray *)subwayStops isFGC:(BOOL)isFGC</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>busStops</Name>
+					<Abstract type="html">The array of bus stops</Abstract>
+				</Parameter><Parameter>
+					<Name>subwayStops</Name>
+					<Abstract type="html">The array of subway stops</Abstract>
+				</Parameter><Parameter>
+					<Name>isFGC</Name>
+					<Abstract type="html">A boolean indicating if the data inside the MVAStop object is given by FGC or tMB</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertInBus:metro:isFGC:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/isEqual:</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Indicates if self and another object are equal or not</Abstract>
+			<DeclaredIn>MVAStop.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqual:(id)other</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>other</Name>
+					<Abstract type="html">The other object to be compared</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A boolean indicating if are equal or not</Abstract></ReturnValue>
+			<Anchor>//api/name/isEqual:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/copy</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns a MVAStop copy of self</Abstract>
+			<DeclaredIn>MVAStop.m</DeclaredIn>
+			
+			<Declaration>- (id)copy</Declaration>
+			
+			<ReturnValue><Abstract type="html">The new MVAStop copied object</Abstract></ReturnValue>
+			<Anchor>//api/name/copy</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVAStop.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStop/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVAStop.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

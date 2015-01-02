@@ -7,7 +7,7 @@
 //
 
 /**
- *  <#Description#>
+ *  App's delegate.
  *
  *  @since version 1.0
  */
@@ -23,73 +23,80 @@
 @interface MVAAppDelegate : UIResponder <UIApplicationDelegate>
 
 /**
- *  <#Description#>
+ *  The window object.
  *
  *  @since version 1.0
  */
 @property (strong, nonatomic) UIWindow *window;
 
 /**
- *  <#Description#>
+ *  The TMB subway data base object.
  *
  *  @since version 1.0
  */
 @property MVADataTMB *dataTMB;
 
 /**
- *  <#Description#>
+ *  The FGC data base object.
  *
  *  @since version 1.0
  */
 @property MVADataFGC *dataFGC;
 
 /**
- *  <#Description#>
+ *  The bus datat abse object.
  *
  *  @since version 1.0
  */
 @property MVADataBus *dataBus;
 
 /**
- *  <#Description#>
+ *  The array that will contain the Barcelona landmarks.
  *
  *  @since version 1.0
  */
 @property NSMutableArray *puntos;
 
 /**
- *  <#Description#>
+ *  The location manager object that will control the location notifications.
  *
  *  @since version 1.0
  */
 @property CLLocationManager *locationManager;
 
 /**
- *  <#Description#>
+ *  The last coordinates detected for this device.
  *
  *  @since version 1.0
  */
 @property CLLocationCoordinate2D coordinates;
 
 /**
- *  <#Description#>
+ *  The degrees of the device's heading.
  *
  *  @since version 1.0
  */
 @property CGFloat degrees;
 
 /**
- *  <#Description#>
+ *  This property is used to handle the interaction between this delegate and the landmarks view controller.
  *
  *  @since version 1.0
  */
 @property MVAPuntsIntsTableViewController *table;
 
 /**
- *  <#Description#>
+ *  This property is used to handle the interaction between this delegate and the custom locations view controller.
  *
  *  @since version 1.0
  */
 @property MVACustomLocationsTableViewController *custom;
+
+/**
+ *  Function that loads all the information needed by the app.
+ *
+ *  @since version 1.0
+ */
+-(void)loadAllTheInformation;
 
 @end

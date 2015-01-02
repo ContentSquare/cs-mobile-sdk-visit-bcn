@@ -7,7 +7,7 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of UIViewController and is used to display the map with the points of interest.
  *
  *  @since version 1.0
  */

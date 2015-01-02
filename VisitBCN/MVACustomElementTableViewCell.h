@@ -7,8 +7,9 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of UITableViewCell and is used to create the cells for the custom locations created by the user
  *
+ *  @see MVACustomLocationsTableViewController class
  *  @since version 1.0
  */
 
@@ -17,21 +18,21 @@
 @interface MVACustomElementTableViewCell : UITableViewCell
 
 /**
- *  <#Description#>
+ *  The image of the cell
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UIImageView *foto;
 
 /**
- *  <#Description#>
+ *  The display of the name of the custom location
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UILabel *nombre;
 
 /**
- *  <#Description#>
+ *  The display of the coordinates of the custom location
  *
  *  @since version 1.0
  */

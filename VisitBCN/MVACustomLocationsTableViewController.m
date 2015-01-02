@@ -25,7 +25,7 @@
 @implementation MVACustomLocationsTableViewController
 
 /**
- *  <#Description#>
+ *  Function that gets called when the view controller has loaded the view
  *
  *  @since version 1.0
  */
@@ -38,9 +38,8 @@
     delegate.custom = self;
 }
 
-
 /**
- *  <#Description#>
+ *  Function that gets called when there's a memory leak or warning
  *
  *  @since version 1.0
  */
@@ -50,11 +49,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the custom locations created by the user
  *
  *  @since version 1.0
  */
-- (void) loadCustomLocations
+- (void)loadCustomLocations
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSData *savedArray = [defaults objectForKey:@"VisitBCNCustomLocations"];
@@ -68,11 +67,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that saves the custom locations created by the user
  *
  *  @since version 1.0
  */
-- (void) guardar
+- (void)guardar
 {
     NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     [sharedDefaults setObject:[NSKeyedArchiver archivedDataWithRootObject:self.customLocations] forKey:@"VisitBCNCustomLocations"];
@@ -81,26 +80,12 @@
 #pragma mark - Table view data source
 
 /**
- *  <#Description#>
+ *  Tells the data source to return the number of rows in a given section of a table view. (required)
  *
- *  @param tableView <#tableView description#>
+ *  @param tableView The table-view object requesting this information.
+ *  @param section   An index number identifying a section in tableView.
  *
- *  @return <#return value description#>
- *
- *  @since version 1.0
- */
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-/**
- *  <#Description#>
- *
- *  @param tableView <#tableView description#>
- *  @param section   <#section description#>
- *
- *  @return <#return value description#>
+ *  @return The number of rows in section.
  *
  *  @since version 1.0
  */
@@ -110,12 +95,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the data source for a cell to insert in a particular location of the table view. (required)
  *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
+ *  @param tableView A table-view object requesting the cell.
+ *  @param indexPath An index path locating a row in tableView.
  *
- *  @return <#return value description#>
+ *  @return An object inheriting from UITableViewCell that the table view can use for the specified row. An assertion is raised if you return nil.
  *
  *  @since version 1.0
  */
@@ -152,12 +137,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate for the height to use for the header of a particular section.
  *
- *  @param tableView <#tableView description#>
- *  @param section   <#section description#>
+ *  @param tableView The table-view object requesting this information.
+ *  @param section   An index number identifying a section of tableView .
  *
- *  @return <#return value description#>
+ *  @return A nonnegative floating-point value that specifies the height (in points) of the header for section.
  *
  *  @since version 1.0
  */
@@ -167,12 +152,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate for a view object to display in the header of the specified section of the table view.
  *
- *  @param tableView <#tableView description#>
- *  @param section   <#section description#>
+ *  @param tableView The table-view object asking for the view object.
+ *  @param section   An index number identifying a section of tableView.
  *
- *  @return <#return value description#>
+ *  @return A view object to be displayed in the header of section.
  *
  *  @since version 1.0
  */
@@ -204,6 +189,7 @@
     [nom setReturnKeyType:UIReturnKeyDone];
     [nom setDelegate:self];
     if (self.customName != nil) [nom setText:self.customName];
+    else [nom setText:@""];
     [v addSubview:nom];
     
     UILabel *coords = [[UILabel alloc] initWithFrame:CGRectMake(120, 70, (w - 128), 23)];
@@ -230,26 +216,26 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the specified row is now selected.
  *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
+ *  @param tableView A table-view object informing the delegate about the new row selection.
+ *  @param indexPath An index path locating the new selected row in tableView.
  *
  *  @since version 1.0
  */
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self saveCustom:(int)indexPath.row];
     [self.tableView reloadData];
 }
 
 /**
- *  <#Description#>
+ *  Asks the data source to verify that the given row is editable.
  *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
+ *  @param tableView The table-view object requesting this information.
+ *  @param indexPath An index path locating a row in tableView.
  *
- *  @return <#return value description#>
+ *  @return YES if the row indicated by indexPath is editable; otherwise, NO.
  *
  *  @since version 1.0
  */
@@ -260,11 +246,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the data source to commit the insertion or deletion of a specified row in the receiver.
  *
- *  @param tableView    <#tableView description#>
- *  @param editingStyle <#editingStyle description#>
- *  @param indexPath    <#indexPath description#>
+ *  @param tableView    The table-view object requesting the insertion or deletion.
+ *  @param editingStyle The cell editing style corresponding to a insertion or deletion requested for the row specified by indexPath. Possible editing styles are UITableViewCellEditingStyleInsert or UITableViewCellEditingStyleDelete.
+ *  @param indexPath    An index path locating the row in tableView.
  *
  *  @since version 1.0
  */
@@ -285,12 +271,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate the title for the accessory button of a specified row.
  *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
+ *  @param tableView The table-view object requesting the insertion or deletion.
+ *  @param indexPath An index path locating the row in tableView.
  *
- *  @return <#return value description#>
+ *  @return The title of the button
  *
  *  @since version 1.0
  */
@@ -300,10 +286,10 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the accessory button has been selected
  *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
+ *  @param tableView The table-view object requesting the insertion or deletion.
+ *  @param indexPath An index path locating the row in tableView.
  *
  *  @since version 1.0
  */
@@ -314,10 +300,10 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the table view is about to go into editing mode.
  *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
+ *  @param tableView The table-view object providing this information.
+ *  @param indexPath An index path locating the row in tableView.
  *
  *  @since version 1.0
  */
@@ -328,10 +314,10 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the table view has left editing mode.
  *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
+ *  @param tableView The table-view object providing this information.
+ *  @param indexPath An index path locating the row in tableView.
  *
  *  @since version 1.0
  */
@@ -342,11 +328,11 @@
 }
 
 /**
+ *  Asks the delegate if the text field should return and exit the editing mode
  *
+ *  @param textField The text field object
  *
- *  @param textField <#textField description#>
- *
- *  @return <#return value description#>
+ *  @return A bool that answers the query
  *
  *  @since version 1.0
  */
@@ -359,9 +345,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the user has begun the editing of the text field
  *
- *  @param textField <#textField description#>
+ *  @param textField The text field object
  *
  *  @since version 1.0
  */
@@ -374,9 +360,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the use rhas ended editing the text field
  *
- *  @param textField <#textField description#>
+ *  @param textField The text field object
  *
  *  @since version 1.0
  */
@@ -388,9 +374,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user whants to add a new custom location
  *
- *  @param sender <#sender description#>
+ *  @param sender The button selected
  *
  *  @since version 1.0
  */
@@ -410,12 +396,13 @@
         [self guardar];
         self.textField.text = @"";
         self.customImage = nil;
+        self.customName = nil;
         [self.tableView reloadData];
     }
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user whants to select a picture for a custom location
  *
  *  @since version 1.0
  */
@@ -514,16 +501,17 @@
                                 @"Take a picture",
                                 @"Choose from library",
                                 nil];
+        popup.tag = 1;
         [popup showInView:[UIApplication sharedApplication].keyWindow];
     }
     
 }
 
 /**
- *  <#Description#>
+ *  Delegate function that receives the selectio of a UIActionSheet (iOS 7.0)
  *
- *  @param popup       <#popup description#>
- *  @param buttonIndex <#buttonIndex description#>
+ *  @param popup       The action sheet
+ *  @param buttonIndex The index of the button selected
  *
  *  @since version 1.0
  */
@@ -591,9 +579,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the user has canceled picking the media
  *
- *  @param picker <#picker description#>
+ *  @param picker The picker controller used
  *
  *  @since version 1.0
  */
@@ -604,10 +592,10 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the user has finished picking up the media from the device.
  *
- *  @param picker <#picker description#>
- *  @param info   <#info description#>
+ *  @param picker The picker controller used
+ *  @param info   The information of the media selected
  *
  *  @since version 1.0
  */
@@ -629,11 +617,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Called just before the navigation controller displays a view controller’s view and navigation item properties.
  *
- *  @param navigationController <#navigationController description#>
- *  @param viewController       <#viewController description#>
- *  @param animated             <#animated description#>
+ *  @param navigationController The navigation controller that is showing the view and properties of a view controller.
+ *  @param viewController       The view controller whose view and navigation item properties are being shown.
+ *  @param animated             YES to animate the transition; otherwise, NO.
  *
  *  @since version 1.0
  */
@@ -690,9 +678,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the index of the custom location chosen
  *
- *  @return <#return value description#>
+ *  @return The index of the custom location inside the custom locations array
  *
  *  @since version 1.0
  */
@@ -709,7 +697,7 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that saves the index of the custom location chosen
  *
  *  @param index <#index description#>
  *
@@ -722,9 +710,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user taps into the new custom location picutre
  *
- *  @param onetap <#onetap description#>
+ *  @param onetap The tap gesture recognizer object
  *
  *  @since version 1.0
  */
@@ -734,10 +722,10 @@
 }
 
 /**
- *  <#Description#>
+ *  Called when a segue is about to be performed. (required)
  *
- *  @param segue  <#segue description#>
- *  @param sender <#sender description#>
+ *  @param segue  The segue object containing information about the view controllers involved in the segue.
+ *  @param sender The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.
  *
  *  @since version 1.0
  */

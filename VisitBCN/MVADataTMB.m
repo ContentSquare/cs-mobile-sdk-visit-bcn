@@ -24,9 +24,6 @@
 
 @end
 
-#define EXPECTED_TIME_TMB 150.0
-#define EXPECTED_TIME_FGC 150.0
-
 @implementation MVADataTMB
 
 /**
@@ -458,7 +455,7 @@
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAPriorityQueue.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAPriorityQueue</TokenIdentifier>
+			<Abstract type="html">This class creates a priority queue for the given class MVAPair</Abstract>
+			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPair</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/init</TokenIdentifier>
+			<Abstract type="html">Predefined constructor</Abstract>
+			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">The MVAPriorityQueue object created</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/initWithCapacity:</TokenIdentifier>
+			<Abstract type="html">Constructor with capacity</Abstract>
+			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithCapacity:(NSUInteger)numItems</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>numItems</Name>
+					<Abstract type="html">The initial cpacity of the priority queue.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The MVAPriorityQueue object created with the given capacity</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCapacity:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/addObject:</TokenIdentifier>
+			<Abstract type="html">Function to insert an element in the priority queue</Abstract>
+			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPair</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addObject:(MVAPair *)pair</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pair</Name>
+					<Abstract type="html">MVAPair object that needs to be inserted in the priority queue</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addObject:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/isEmpty</TokenIdentifier>
+			<Abstract type="html">Function that returns if the priority que is empty</Abstract>
+			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEmpty</Declaration>
+			
+			<ReturnValue><Abstract type="html">Boolean that indicates if the priority queue is empty or not</Abstract></ReturnValue>
+			<Anchor>//api/name/isEmpty</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/firstObject</TokenIdentifier>
+			<Abstract type="html">Function that returns the first object of the priority queue</Abstract>
+			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPair</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (MVAPair *)firstObject</Declaration>
+			
+			<ReturnValue><Abstract type="html">The first object of the priority queue</Abstract></ReturnValue>
+			<Anchor>//api/name/firstObject</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/removeFirst</TokenIdentifier>
+			<Abstract type="html">Function that removes the first object</Abstract>
+			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
+			
+			<Declaration>- (void)removeFirst</Declaration>
+			
+			
+			<Anchor>//api/name/removeFirst</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/swap:and:</TokenIdentifier>
+			<Abstract type="html">This function swaps the position of two objects in the priority queue</Abstract>
+			<DeclaredIn>MVAPriorityQueue.m</DeclaredIn>
+			
+			<Declaration>- (void)swap:(int)pos1 and:(int)pos2</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pos1</Name>
+					<Abstract type="html">The first position</Abstract>
+				</Parameter><Parameter>
+					<Name>pos2</Name>
+					<Abstract type="html">The second position</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/swap:and:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

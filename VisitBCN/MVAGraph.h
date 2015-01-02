@@ -7,7 +7,13 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is an abstract class representing a graph.
+ *
+ *  We can represent this class as a table:
+ *
+ *  | Nodes | Edge list | Type |  Bus data   |  FGC data  |  TMB data  |  Calendar   |   View controller   |
+ *  |:-----:|:---------:|:----:|:-----------:|:----------:|:----------:|:-----------:|:-------------------:|
+ *  | Array |   Array   | Int  | MVADataBus  | MVADataFGC | MVADataTMB | MVACalendar |  UIVeiwController   |
  *
  *  @since version 1.0
  */
@@ -24,84 +30,90 @@
 @interface MVAGraph : NSObject
 
 /**
- *  <#Description#>
+ *  An array containing all the nodes of the graph
  *
  *  @since version 1.0
  */
 @property NSMutableArray *nodes;
 
 /**
- *  <#Description#>
+ *  An array with all the edges of the graph. For each node, this array contains a list of edges.
  *
  *  @since version 1.0
  */
 @property NSMutableArray *edgeList;
 
 /**
- *  <#Description#>
+ *  The type of graph
  *
  *  @since version 1.0
  */
 @property int type;
 
 /**
- *  <#Description#>
+ *  The bus network data base
  *
+ *  @see MVADataBus class
  *  @since version 1.0
  */
 @property MVADataBus *dataBus;
 
 /**
- *  <#Description#>
+ *  The FGC network data base
  *
+ *  @see MVADataFGC class
  *  @since version 1.0
  */
 @property MVADataFGC *dataFGC;
 
 /**
- *  <#Description#>
+ *  The TMB subway network data base
  *
+ *  @see MVADataTMB class
  *  @since version 1.0
  */
 @property MVADataTMB *dataTMB;
 
 /**
- *  <#Description#>
+ *  The current calendar for the execution
  *
+ *  @see MVACalendar class
  *  @since version 1.0
  */
 @property MVACalendar *cal;
 
 /**
- *  <#Description#>
+ *  The view controller that called this algorithm execution
  *
+ *  @see MVAPunIntViewController class
  *  @since version 1.0
  */
 @property MVAPunIntViewController *viewController;
 
 /**
- *  <#Description#>
+ *  Function that calls the algorithms for this graph
  *
- *  @param originNodes  <#originNodes description#>
- *  @param destiniNodes <#destiniNodes description#>
- *  @param identifier   <#identifier description#>
- *  @param oCoords      <#oCoords description#>
- *  @param punInt       <#punInt description#>
+ *  @param originNodes  The origin nodes that are inside the desired radius
+ *  @param destiniNodes The destination nodes that are inside the desired radius
+ *  @param identifier   The identifier of the algorithm (0 = Dijkstra, 1 = A*).
+ *  @param oCoords      The origin coordinates
+ *  @param punInt       The destination point
  *
- *  @return <#return value description#>
+ *  @return An MVAPath object with the computed path
  *
  *  @since version 1.0
  */
 -(MVAPath *)computePathFromNodes:(NSArray *)originNodes toNode:(NSMutableDictionary *)destiniNodes withAlgorithmID:(int)identifier andOCoords:(CLLocationCoordinate2D)oCoords andDest:(MVAPunInt *)punInt;
 
 /**
- *  <#Description#>
+ *  Haversine distance between two coordinates
  *
- *  @param cordA <#cordA description#>
- *  @param cordB <#cordB description#>
+ *  @param cordA The first coordinate
+ *  @param cordB The second coordinate
  *
- *  @return <#return value description#>
+ *  @return The distance in meters
  *
+ *  @see http://www.movable-type.co.uk/scripts/latlong.html
  *  @since version 1.0
  */
 -(double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB;

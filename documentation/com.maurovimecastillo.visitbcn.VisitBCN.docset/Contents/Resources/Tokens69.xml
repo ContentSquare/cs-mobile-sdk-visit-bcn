@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAStaredTableViewController+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAStaredTableViewController()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+            
+			
+			<NodeRef refid="69"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/setSavedPaths:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *savedPaths</Declaration>
+			
+			
+			<Anchor>//api/name/savedPaths</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/savedPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *savedPaths</Declaration>
+			
+			
+			<Anchor>//api/name/savedPaths</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredTableViewController/savedPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *savedPaths</Declaration>
+			
+			
+			<Anchor>//api/name/savedPaths</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/setSavedPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/savedPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredTableViewController/savedPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="69"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

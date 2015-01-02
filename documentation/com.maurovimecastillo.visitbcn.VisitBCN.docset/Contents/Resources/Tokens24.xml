@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAInfoViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAInfoViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UIViewController and is used to display useful information and the copyright</Abstract>
+			<DeclaredIn>MVAInfoViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAInfoViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVAInfoViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAInfoViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Function that gets called when there&apos;s a memory leak or warning</Abstract>
+			<DeclaredIn>MVAInfoViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAInfoViewController/viewWillAppear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view is about to be added to a view hierarchy.</Abstract>
+			<DeclaredIn>MVAInfoViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewWillAppear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the view is being added to the window using an animation.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewWillAppear:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAInfoViewController/createScrollView</TokenIdentifier>
+			<Abstract type="html">Function that creates the scroll view with all the information</Abstract>
+			<DeclaredIn>MVAInfoViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)createScrollView</Declaration>
+			
+			
+			<Anchor>//api/name/createScrollView</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

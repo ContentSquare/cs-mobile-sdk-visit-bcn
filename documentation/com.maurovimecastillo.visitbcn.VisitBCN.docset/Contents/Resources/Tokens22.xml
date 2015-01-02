@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAGraphs.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAGraphs</TokenIdentifier>
+			<Abstract type="html">This class contains the two graphs and all the propoerties needed for storing the result of their coputation.</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/setBusGraph:</TokenIdentifier>
+			<Abstract type="html">The bus graph</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVABusGraph</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVABusGraph *busGraph</Declaration>
+			
+			
+			<Anchor>//api/name/busGraph</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/busGraph</TokenIdentifier>
+			<Abstract type="html">The bus graph</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVABusGraph</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVABusGraph *busGraph</Declaration>
+			
+			
+			<Anchor>//api/name/busGraph</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraphs/busGraph</TokenIdentifier>
+			<Abstract type="html">The bus graph</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVABusGraph</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVABusGraph *busGraph</Declaration>
+			
+			
+			<Anchor>//api/name/busGraph</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/setSubwayGraph:</TokenIdentifier>
+			<Abstract type="html">The subway graph</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVASubwayGraph</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVASubwayGraph *subwayGraph</Declaration>
+			
+			
+			<Anchor>//api/name/subwayGraph</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/subwayGraph</TokenIdentifier>
+			<Abstract type="html">The subway graph</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVASubwayGraph</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVASubwayGraph *subwayGraph</Declaration>
+			
+			
+			<Anchor>//api/name/subwayGraph</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraphs/subwayGraph</TokenIdentifier>
+			<Abstract type="html">The subway graph</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVASubwayGraph</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVASubwayGraph *subwayGraph</Declaration>
+			
+			
+			<Anchor>//api/name/subwayGraph</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/setSubwayPath:</TokenIdentifier>
+			<Abstract type="html">The subway path that we obtain from the graph&apos;s computation</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/subwayPath</TokenIdentifier>
+			<Abstract type="html">The subway path that we obtain from the graph&apos;s computation</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraphs/subwayPath</TokenIdentifier>
+			<Abstract type="html">The subway path that we obtain from the graph&apos;s computation</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/setSubwayError:</TokenIdentifier>
+			<Abstract type="html">If an error occurs, this string will contain the description</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>@property NSString *subwayError</Declaration>
+			
+			
+			<Anchor>//api/name/subwayError</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/subwayError</TokenIdentifier>
+			<Abstract type="html">If an error occurs, this string will contain the description</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>@property NSString *subwayError</Declaration>
+			
+			
+			<Anchor>//api/name/subwayError</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraphs/subwayError</TokenIdentifier>
+			<Abstract type="html">If an error occurs, this string will contain the description</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>@property NSString *subwayError</Declaration>
+			
+			
+			<Anchor>//api/name/subwayError</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/setBusPath:</TokenIdentifier>
+			<Abstract type="html">The bus path that we obtain from the graph&apos;s computation</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/busPath</TokenIdentifier>
+			<Abstract type="html">The bus path that we obtain from the graph&apos;s computation</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraphs/busPath</TokenIdentifier>
+			<Abstract type="html">The bus path that we obtain from the graph&apos;s computation</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/setBusError:</TokenIdentifier>
+			<Abstract type="html">If an error occurs, this string will contain the description</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>@property NSString *busError</Declaration>
+			
+			
+			<Anchor>//api/name/busError</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/busError</TokenIdentifier>
+			<Abstract type="html">If an error occurs, this string will contain the description</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>@property NSString *busError</Declaration>
+			
+			
+			<Anchor>//api/name/busError</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraphs/busError</TokenIdentifier>
+			<Abstract type="html">If an error occurs, this string will contain the description</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>@property NSString *busError</Declaration>
+			
+			
+			<Anchor>//api/name/busError</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/setViewController:</TokenIdentifier>
+			<Abstract type="html">The view controller that called this algorithm execution</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunIntViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/viewController</TokenIdentifier>
+			<Abstract type="html">The view controller that called this algorithm execution</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunIntViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraphs/viewController</TokenIdentifier>
+			<Abstract type="html">The view controller that called this algorithm execution</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunIntViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/generateGraphsWithBUSDB:andTMBDB:andFGCDB:</TokenIdentifier>
+			<Abstract type="html">Function that generates the grphs from the data bases</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>- (void)generateGraphsWithBUSDB:(MVADataBus *)dataBus andTMBDB:(MVADataTMB *)dataTMB andFGCDB:(MVADataFGC *)dataFGC</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataBus</Name>
+					<Abstract type="html">The bus network data base</Abstract>
+				</Parameter><Parameter>
+					<Name>dataTMB</Name>
+					<Abstract type="html">The TMB subway network data base</Abstract>
+				</Parameter><Parameter>
+					<Name>dataFGC</Name>
+					<Abstract type="html">The FGC network data base</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/generateGraphsWithBUSDB:andTMBDB:andFGCDB:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/computePathsWithOrigin:andDestination:</TokenIdentifier>
+			<Abstract type="html">Function that computes both paths from the origin to the destination point</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>- (void)computePathsWithOrigin:(CLLocationCoordinate2D)origin andDestination:(MVAPunInt *)punInt</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>origin</Name>
+					<Abstract type="html">Origin coordinates</Abstract>
+				</Parameter><Parameter>
+					<Name>punInt</Name>
+					<Abstract type="html">Destination point</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/computePathsWithOrigin:andDestination:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/load</TokenIdentifier>
+			<Abstract type="html">Function that loads the bus graph</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>- (void)load</Declaration>
+			
+			
+			<Anchor>//api/name/load</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/save</TokenIdentifier>
+			<Abstract type="html">Function that saves the bus graph</Abstract>
+			<DeclaredIn>MVAGraphs.h</DeclaredIn>
+			
+			<Declaration>- (void)save</Declaration>
+			
+			
+			<Anchor>//api/name/save</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/pathForBusGraphWithOrigin:andDestination:</TokenIdentifier>
+			<Abstract type="html">Function that computes the bus path from the origin location to the destination point</Abstract>
+			<DeclaredIn>MVAGraphs.m</DeclaredIn>
+			
+			<Declaration>- (MVAPath *)pathForBusGraphWithOrigin:(CLLocationCoordinate2D)origin andDestination:(MVAPunInt *)punInt</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>origin</Name>
+					<Abstract type="html">Origin coordinates</Abstract>
+				</Parameter><Parameter>
+					<Name>punInt</Name>
+					<Abstract type="html">Destination point</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An MVAPath object with the bus path</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForBusGraphWithOrigin:andDestination:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/pathForSubwayGraphWithOrigin:andDestination:</TokenIdentifier>
+			<Abstract type="html">Function that computes the subway path from the origin location to the destination point</Abstract>
+			<DeclaredIn>MVAGraphs.m</DeclaredIn>
+			
+			<Declaration>- (MVAPath *)pathForSubwayGraphWithOrigin:(CLLocationCoordinate2D)origin andDestination:(MVAPunInt *)punInt</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>origin</Name>
+					<Abstract type="html">Origin coordinates</Abstract>
+				</Parameter><Parameter>
+					<Name>punInt</Name>
+					<Abstract type="html">Destination point</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An MVAPath object with the subway path</Abstract></ReturnValue>
+			<Anchor>//api/name/pathForSubwayGraphWithOrigin:andDestination:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/loadAlg</TokenIdentifier>
+			<Abstract type="html">Function that loads the algorithm chosen by the user ( 0 = Dijkstra, 1 = A*, Default = 1).</Abstract>
+			<DeclaredIn>MVAGraphs.m</DeclaredIn>
+			
+			<Declaration>- (int)loadAlg</Declaration>
+			
+			<ReturnValue><Abstract type="html">The algorithm&apos;s identifier</Abstract></ReturnValue>
+			<Anchor>//api/name/loadAlg</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraphs/loadWalkingDist</TokenIdentifier>
+			<Abstract type="html">This function loads the walking distance indicated by the user. (The default value is 5 km)</Abstract>
+			<DeclaredIn>MVAGraphs.m</DeclaredIn>
+			
+			<Declaration>- (double)loadWalkingDist</Declaration>
+			
+			<ReturnValue><Abstract type="html">The distance in meters</Abstract></ReturnValue>
+			<Anchor>//api/name/loadWalkingDist</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAGraph.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAGraph</TokenIdentifier>
+			<Abstract type="html">This class is an abstract class representing a graph.</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setNodes:</TokenIdentifier>
+			<Abstract type="html">An array containing all the nodes of the graph</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *nodes</Declaration>
+			
+			
+			<Anchor>//api/name/nodes</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/nodes</TokenIdentifier>
+			<Abstract type="html">An array containing all the nodes of the graph</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *nodes</Declaration>
+			
+			
+			<Anchor>//api/name/nodes</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/nodes</TokenIdentifier>
+			<Abstract type="html">An array containing all the nodes of the graph</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *nodes</Declaration>
+			
+			
+			<Anchor>//api/name/nodes</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setEdgeList:</TokenIdentifier>
+			<Abstract type="html">An array with all the edges of the graph. For each node, this array contains a list of edges.</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *edgeList</Declaration>
+			
+			
+			<Anchor>//api/name/edgeList</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/edgeList</TokenIdentifier>
+			<Abstract type="html">An array with all the edges of the graph. For each node, this array contains a list of edges.</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *edgeList</Declaration>
+			
+			
+			<Anchor>//api/name/edgeList</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/edgeList</TokenIdentifier>
+			<Abstract type="html">An array with all the edges of the graph. For each node, this array contains a list of edges.</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *edgeList</Declaration>
+			
+			
+			<Anchor>//api/name/edgeList</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setType:</TokenIdentifier>
+			<Abstract type="html">The type of graph</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/type</TokenIdentifier>
+			<Abstract type="html">The type of graph</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/type</TokenIdentifier>
+			<Abstract type="html">The type of graph</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setDataBus:</TokenIdentifier>
+			<Abstract type="html">The bus network data base</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataBus</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataBus *dataBus</Declaration>
+			
+			
+			<Anchor>//api/name/dataBus</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/dataBus</TokenIdentifier>
+			<Abstract type="html">The bus network data base</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataBus</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataBus *dataBus</Declaration>
+			
+			
+			<Anchor>//api/name/dataBus</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/dataBus</TokenIdentifier>
+			<Abstract type="html">The bus network data base</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataBus</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataBus *dataBus</Declaration>
+			
+			
+			<Anchor>//api/name/dataBus</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setDataFGC:</TokenIdentifier>
+			<Abstract type="html">The FGC network data base</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataFGC</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataFGC *dataFGC</Declaration>
+			
+			
+			<Anchor>//api/name/dataFGC</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/dataFGC</TokenIdentifier>
+			<Abstract type="html">The FGC network data base</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataFGC</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataFGC *dataFGC</Declaration>
+			
+			
+			<Anchor>//api/name/dataFGC</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/dataFGC</TokenIdentifier>
+			<Abstract type="html">The FGC network data base</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataFGC</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataFGC *dataFGC</Declaration>
+			
+			
+			<Anchor>//api/name/dataFGC</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setDataTMB:</TokenIdentifier>
+			<Abstract type="html">The TMB subway network data base</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataTMB</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataTMB *dataTMB</Declaration>
+			
+			
+			<Anchor>//api/name/dataTMB</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/dataTMB</TokenIdentifier>
+			<Abstract type="html">The TMB subway network data base</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataTMB</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataTMB *dataTMB</Declaration>
+			
+			
+			<Anchor>//api/name/dataTMB</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/dataTMB</TokenIdentifier>
+			<Abstract type="html">The TMB subway network data base</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADataTMB</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVADataTMB *dataTMB</Declaration>
+			
+			
+			<Anchor>//api/name/dataTMB</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setCal:</TokenIdentifier>
+			<Abstract type="html">The current calendar for the execution</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACalendar *cal</Declaration>
+			
+			
+			<Anchor>//api/name/cal</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/cal</TokenIdentifier>
+			<Abstract type="html">The current calendar for the execution</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACalendar *cal</Declaration>
+			
+			
+			<Anchor>//api/name/cal</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/cal</TokenIdentifier>
+			<Abstract type="html">The current calendar for the execution</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACalendar *cal</Declaration>
+			
+			
+			<Anchor>//api/name/cal</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setViewController:</TokenIdentifier>
+			<Abstract type="html">The view controller that called this algorithm execution</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunIntViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/viewController</TokenIdentifier>
+			<Abstract type="html">The view controller that called this algorithm execution</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunIntViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/viewController</TokenIdentifier>
+			<Abstract type="html">The view controller that called this algorithm execution</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunIntViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/computePathFromNodes:toNode:withAlgorithmID:andOCoords:andDest:</TokenIdentifier>
+			<Abstract type="html">Function that calls the algorithms for this graph</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>- (MVAPath *)computePathFromNodes:(NSArray *)originNodes toNode:(NSMutableDictionary *)destiniNodes withAlgorithmID:(int)identifier andOCoords:(CLLocationCoordinate2D)oCoords andDest:(MVAPunInt *)punInt</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>originNodes</Name>
+					<Abstract type="html">The origin nodes that are inside the desired radius</Abstract>
+				</Parameter><Parameter>
+					<Name>destiniNodes</Name>
+					<Abstract type="html">The destination nodes that are inside the desired radius</Abstract>
+				</Parameter><Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">The identifier of the algorithm (0 = Dijkstra, 1 = A*).</Abstract>
+				</Parameter><Parameter>
+					<Name>oCoords</Name>
+					<Abstract type="html">The origin coordinates</Abstract>
+				</Parameter><Parameter>
+					<Name>punInt</Name>
+					<Abstract type="html">The destination point</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An MVAPath object with the computed path</Abstract></ReturnValue>
+			<Anchor>//api/name/computePathFromNodes:toNode:withAlgorithmID:andOCoords:andDest:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/distanceForCoordinates:andCoordinates:</TokenIdentifier>
+			<Abstract type="html">Haversine distance between two coordinates</Abstract>
+			<DeclaredIn>MVAGraph.h</DeclaredIn>
+			
+			<Declaration>- (double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cordA</Name>
+					<Abstract type="html">The first coordinate</Abstract>
+				</Parameter><Parameter>
+					<Name>cordB</Name>
+					<Abstract type="html">The second coordinate</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The distance in meters</Abstract></ReturnValue>
+			<Anchor>//api/name/distanceForCoordinates:andCoordinates:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/loadWalkingSpeed</TokenIdentifier>
+			<Abstract type="html">This function loads the walking speed indicated by the user. (The default value is 5km/h)</Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>- (double)loadWalkingSpeed</Declaration>
+			
+			<ReturnValue><Abstract type="html">The speed in m/s</Abstract></ReturnValue>
+			<Anchor>//api/name/loadWalkingSpeed</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/loadRain</TokenIdentifier>
+			<Abstract type="html">This function loads the walking speed indicated by the user. (The default value is 5km/h)</Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)loadRain</Declaration>
+			
+			<ReturnValue><Abstract type="html">The speed in m/s</Abstract></ReturnValue>
+			<Anchor>//api/name/loadRain</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/initTime</TokenIdentifier>
+			<Abstract type="html">This function calculates the initial time for this graph execution</Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>- (double)initTime</Declaration>
+			
+			<ReturnValue><Abstract type="html">The time in seconds</Abstract></ReturnValue>
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/customDate</TokenIdentifier>
+			<Abstract type="html">This function loads if the user has selected a custom date</Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)customDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">A boolean</Abstract></ReturnValue>
+			<Anchor>//api/name/customDate</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/loadCustomDate</TokenIdentifier>
+			<Abstract type="html">This function loads either the custom date chosen by the user or the current date of the device</Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>- (NSDate *)loadCustomDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSDate object</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomDate</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

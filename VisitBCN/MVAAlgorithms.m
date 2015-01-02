@@ -7,22 +7,12 @@
 //
 
 #import "MVAAlgorithms.h"
+#import "MVAPair.h"
 
 @interface MVAAlgorithms ()
 
-/**
- *  <#Description#>
- */
 @property CLLocationCoordinate2D piCoord;
-
-/**
- *  <#Description#>
- */
 @property MVACalendar *nextTMBCalendar;
-
-/**
- *  <#Description#>
- */
 @property MVACalendar *currentCal;
 
 @end
@@ -44,10 +34,12 @@
         MVAPair *p = [self.openNodes firstObject];
         [self.openNodes removeFirst];
         currentNode = [self.nodes objectAtIndex:p.second];
-        if (currentNode.identificador == nodeB.identificador) para = YES;
-        if (([currentNode.distance doubleValue] == p.first) && !para) {
-            [self updateNodesForNode:currentNode];
-            currentNode.open = YES;
+        if (([currentNode.distance doubleValue] == p.first)) {
+            if (currentNode.identificador == nodeB.identificador) para = YES;
+            else {
+                [self updateNodesForNode:currentNode];
+                currentNode.open = YES;
+            }
         }
     }
     if (self.viewController.stop) {
@@ -70,9 +62,14 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that updates all the adjacent nodes of the given one.
  *
- *  @param node <#node description#>
+ *  @param node An object representing the current node
+ *
+ *  @see MVANode class
+ *  @see MVAEdge class
+ *
+ *  @since version 1.0
  */
 -(void)updateNodesForNode:(MVANode *)node
 {
@@ -86,20 +83,26 @@
                 double nextTrain;
                 if (edge.change) {
                     nextTrain = [node.distance doubleValue] + [edge.weight doubleValue];
+                    if ([node.pathEdges count] > 0) {
+                        MVAEdge *test = [node.pathEdges lastObject];
+                        if ([test.tripID isEqualToString:@"walking"]) nextTrain = DBL_MAX;
+                    }
+                    else if ([node.pathEdges count] == 0) {
+                        nextTrain = DBL_MAX;
+                    }
                 }
                 else if ([edge.tripID isEqualToString:@"landmark"]) {
                     double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude) andCoordinates:self.piCoord];
                     double walkingSpeed = [self loadWalkingSpeed];
-                    double expecTime = (dist / walkingSpeed);
-                    nextTrain += expecTime;
+                    double expecTime = ((dist * 1.2) / walkingSpeed);
+                    nextTrain = [node.distance doubleValue] + expecTime;
                 }
-                else nextTrain = [self getNextTrainForNode:destNode edge:edge andTime:[node.distance doubleValue]];
+                else nextTrain = [self getNextTrainForEdge:edge andTime:[node.distance doubleValue]];
                 if (nextTrain < [destNode.distance doubleValue]) {
                     MVAPair *p = [[MVAPair alloc] init];
                     p.first = nextTrain;
                     p.second = destNode.identificador;
                     [self.openNodes addObject:p];
-                    
                     destNode.distance = [NSNumber numberWithDouble:nextTrain];
                     destNode.pathNodes = [node.pathNodes mutableCopy];
                     [destNode.pathNodes addObject:node];
@@ -112,14 +115,18 @@
                 if ([edge.tripID isEqualToString:@"walking"] || [edge.tripID isEqualToString:@"change"]) {
                     double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude) andCoordinates:cord];
                     double walkingSpeed = [self loadWalkingSpeed];
-                    double expecTime = (dist / walkingSpeed);
+                    double expecTime = ((dist * 1.2) / walkingSpeed);
                     time += expecTime;
                     time += [self.dataBus frequencieForStop:edge.destini.stop andTime:time andCalendar:self.currentCal.serviceID];
+                    if ([node.pathEdges count] > 0) {
+                        MVAEdge *test = [node.pathEdges lastObject];
+                        if ([test.tripID isEqualToString:@"walking"]) time = DBL_MAX;
+                    }
                 }
                 else if ([edge.tripID isEqualToString:@"landmark"]) {
                     double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude) andCoordinates:cord];
                     double walkingSpeed = [self loadWalkingSpeed];
-                    double expecTime = (dist / walkingSpeed);
+                    double expecTime = ((dist * 1.2) / walkingSpeed);
                     time += expecTime;
                 }
                 else {
@@ -142,17 +149,20 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line.
  *
- *  @param node       <#node description#>
- *  @param edge       <#edge description#>
- *  @param actualTime <#actualTime description#>
+ *  @param edge       The edge that contains the destination node and the identifier of the trip
+ *  @param actualTime The time for the query
  *
- *  @return <#return value description#>
+ *  @return The time of the next train
+ *
+ *  @see MVAEdge class
+ *
+ *  @since version 1.0
  */
--(double)getNextTrainForNode:(MVANode *)node edge:(MVAEdge *)edge andTime:(double)actualTime
+-(double)getNextTrainForEdge:(MVAEdge *)edge andTime:(double)actualTime
 {
-    MVAStop *stop = node.stop;
+    MVAStop *stop = edge.destini.stop;
     if ([stop.stopID hasPrefix:@"001-"]) {
         BOOL nextDay = NO;
         if (actualTime >= 86400) {
@@ -268,8 +278,8 @@
     else {
         double arrivalTime = DBL_MAX;
         double dif = DBL_MAX;
-        for (int i = 0; i < [node.stop.times count]; ++i) {
-            MVATime *time = [node.stop.times objectAtIndex:i];
+        for (int i = 0; i < [stop.times count]; ++i) {
+            MVATime *time = [stop.times objectAtIndex:i];
             NSString *tripID = time.tripID;
             NSNumber *tripPos = [self.dataFGC.tripsHash objectForKey:tripID];
             MVATrip *trip = [self.dataFGC.trips objectAtIndex:[tripPos intValue]];
@@ -295,11 +305,13 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that transforms a time in HH:MM:SS into an integer in seconds
  *
- *  @param time <#time description#>
+ *  @param time The time as a string
  *
- *  @return <#return value description#>
+ *  @return The time in seconds
+ *
+ *  @since version 1.0
  */
 -(int)timeToInt:(NSString *)time
 {
@@ -314,12 +326,15 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter 'rain' given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times.
  *
- *  @param nodeA <#nodeA description#>
- *  @param nodeB <#nodeB description#>
+ *  @param nodeA The origin node
+ *  @param nodeB The destination node
  *
- *  @return <#return value description#>
+ *  @return The time in bus from the origin to the destination
+ *
+ *  @see MVANode class
+ *  @since version 1.0
  */
 -(double)timeInBusFromNodeA:(MVANode *)nodeA toNodeB:(MVANode *)nodeB
 {
@@ -332,12 +347,17 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that updates the destination node of an edge from the current node
  *
- *  @param edge        <#edge description#>
- *  @param currentNode <#currentNode description#>
+ *  @param edge        The edge object
+ *  @param currentNode The current node object
+ *
+ *  @see MVAEdge class
+ *  @see MVANode class
+ *
+ *  @since version 1.0
  */
--(void)updateNodesForEdge:(MVAEdge *)edge andNode:(MVANode *)currentNode
+-(void)updateNodeForEdge:(MVAEdge *)edge andNode:(MVANode *)currentNode
 {
     MVANode *dest = edge.destini;
     CLLocationCoordinate2D cord = CLLocationCoordinate2DMake(dest.stop.latitude, dest.stop.longitude);
@@ -347,14 +367,21 @@
     if (self.type == 1) {
         if (edge.change) {
             newDist = [currentNode.distance doubleValue] + [edge.weight doubleValue];
+            if ([currentNode.pathEdges count] > 0) {
+                MVAEdge *test = [currentNode.pathEdges lastObject];
+                if ([test.tripID isEqualToString:@"walking"]) newDist = DBL_MAX;
+            }
+            else if ([currentNode.pathEdges count] == 0) {
+                newDist = DBL_MAX;
+            }
         }
         else if ([edge.tripID isEqualToString:@"landmark"]) {
             double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(currentNode.stop.latitude, currentNode.stop.longitude) andCoordinates:self.piCoord];
             double walkingSpeed = [self loadWalkingSpeed];
-            double expecTime = (dist / walkingSpeed);
+            double expecTime = ((dist * 1.2) / walkingSpeed);
             newDist = [currentNode.distance doubleValue] + expecTime;
         }
-        else newDist = [self getNextTrainForNode:dest edge:edge andTime:[currentNode.distance doubleValue]];
+        else newDist = [self getNextTrainForEdge:edge andTime:[currentNode.distance doubleValue]];
         tentative = (newDist + [self heuristicForCoords:cord]);
     }
     else {
@@ -362,17 +389,21 @@
         if ([edge.tripID isEqualToString:@"walking"] || [edge.tripID isEqualToString:@"change"]) {
             double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(currentNode.stop.latitude, currentNode.stop.longitude) andCoordinates:cord];
             double walkingSpeed = [self loadWalkingSpeed];
-            double expecTime = (dist / walkingSpeed);
+            double expecTime = ((dist * 1.2) / walkingSpeed);
             time += expecTime;
             time += 240.0;
             time += [self.dataBus frequencieForStop:edge.destini.stop andTime:time andCalendar:self.currentCal.serviceID];
             newDist = time;
+            if ([currentNode.pathEdges count] > 0) {
+                MVAEdge *test = [currentNode.pathEdges lastObject];
+                if ([test.tripID isEqualToString:@"walking"]) newDist = DBL_MAX;
+            }
             tentative = (newDist + [self heuristicForCoords:cord]);
         }
         else if ([edge.tripID isEqualToString:@"landmark"]) {
             double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(currentNode.stop.latitude, currentNode.stop.longitude) andCoordinates:cord];
             double walkingSpeed = [self loadWalkingSpeed];
-            double expecTime = (dist / walkingSpeed);
+            double expecTime = ((dist * 1.2) / walkingSpeed);
             time += expecTime;
             newDist = time;
             tentative = newDist;
@@ -387,6 +418,7 @@
         dest.previous = currentNode;
         dest.distance = [NSNumber numberWithDouble:newDist];
         dest.score = [NSNumber numberWithDouble:tentative];
+        dest.pathEdges = [[[NSArray alloc] initWithObjects:edge, nil] mutableCopy];
         MVAPair *p = [[MVAPair alloc] init];
         p.first = tentative;
         p.second = dest.identificador;
@@ -395,11 +427,13 @@
 }
 
 /**
- *  <#Description#>
+ *  Heuristic function. This function calculates the heuristic for a certain location
  *
- *  @param cord <#cord description#>
+ *  @param cord The location coordinates
  *
- *  @return <#return value description#>
+ *  @return The heuristic value
+ *
+ *  @since version 1.0
  */
 -(double)heuristicForCoords:(CLLocationCoordinate2D)cord
 {
@@ -419,11 +453,14 @@
         MVAPair *p = [self.openNodes firstObject];
         [self.openNodes removeFirst];
         currentNode = [self.nodes objectAtIndex:p.second];
-        if (currentNode.identificador == nodeB.identificador) para = YES;
-        if (!para && (p.first == [currentNode.score doubleValue])) {
-            NSArray *edges = [self.edgeList objectAtIndex:currentNode.identificador];
-            for (MVAEdge *edge in edges) {
-                [self updateNodesForEdge:edge andNode:currentNode];
+        if (p.first == [currentNode.score doubleValue]) {
+            if (currentNode.identificador == nodeB.identificador) para = YES;
+            else {
+                NSArray *edges = [self.edgeList objectAtIndex:currentNode.identificador];
+                for (MVAEdge *edge in edges) {
+                    if (!edge.destini.open) [self updateNodeForEdge:edge andNode:currentNode];
+                }
+                currentNode.open = YES;
             }
         }
     }
@@ -439,10 +476,13 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that recursively construct the path coputed by the A* algorithm.
  *
- *  @param node <#node description#>
- *  @param path <#path description#>
+ *  @param node The first node of the path
+ *  @param path The path object
+ *
+ *  @see MVANode class
+ *  @since version 1.0
  */
 -(void)pathwithGoal:(MVANode *)node andPath:(MVAPath *)path
 {
@@ -459,11 +499,15 @@
 }
 
 /**
- *  Haversine
+ *  Haversine distance between two coordinates
  *
- *  @param double <#double description#>
+ *  @param cordA The first coordinate
+ *  @param cordB The second coordinate
  *
- *  @return <#return value description#>
+ *  @return The distance in meters
+ *
+ *  @see http://www.movable-type.co.uk/scripts/latlong.html
+ *  @since version 1.0
  */
 -(double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB
 {
@@ -481,12 +525,14 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that returns the edge that connects the first node with the second.
  *
- *  @param nodeA <#nodeA description#>
- *  @param nodeB <#nodeB description#>
+ *  @param nodeA The first node
+ *  @param nodeB The second node
  *
- *  @return <#return value description#>
+ *  @return The MVAEdge object that represents the edge
+ *
+ *  @since version 1.0
  */
 -(MVAEdge *)edgeFromNode:(MVANode *)nodeA toNode:(MVANode *)nodeB
 {
@@ -498,9 +544,11 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads the walking speed indicated by the user. (The default value is 5km/h)
  *
- *  @return <#return value description#>
+ *  @return The speed in m/s
+ *
+ *  @since version 1.0
  */
 -(double)loadWalkingSpeed
 {
@@ -519,9 +567,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads if is raining in Barcelona or not.
  *
- *  @return <#return value description#>
+ *  @return A bool with the answer to the query
+ *
+ *  @since version 1.0
  */
 -(BOOL)loadRain
 {

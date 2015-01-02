@@ -30,6 +30,8 @@
 /**
  *  Constructor with capacity
  *
+ *  @param numItems The initial cpacity of the priority queue.
+ *
  *  @return The MVAPriorityQueue object created with the given capacity
  *
  *  @since version 1.0

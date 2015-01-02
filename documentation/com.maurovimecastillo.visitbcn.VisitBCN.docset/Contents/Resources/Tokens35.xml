@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAPuntsIntsTableViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAPuntsIntsTableViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UIViewController and is used to display the list of points of interest of the app</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setTableView:</TokenIdentifier>
+			<Abstract type="html">The table view that needs to be controlled by this view controller</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/tableView</TokenIdentifier>
+			<Abstract type="html">The table view that needs to be controlled by this view controller</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/tableView</TokenIdentifier>
+			<Abstract type="html">The table view that needs to be controlled by this view controller</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/setHomeButton:</TokenIdentifier>
+			<Abstract type="html">The home button that aopens the menu of the app</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *homeButton</Declaration>
+			
+			
+			<Anchor>//api/name/homeButton</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/homeButton</TokenIdentifier>
+			<Abstract type="html">The home button that aopens the menu of the app</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *homeButton</Declaration>
+			
+			
+			<Anchor>//api/name/homeButton</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPuntsIntsTableViewController/homeButton</TokenIdentifier>
+			<Abstract type="html">The home button that aopens the menu of the app</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIButton *homeButton</Declaration>
+			
+			
+			<Anchor>//api/name/homeButton</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Function that gets called when there&apos;s a memory leak or warning</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/viewWillAppear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view is about to be added to a view hierarchy.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewWillAppear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the view is being added to the window using an animation.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewWillAppear:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/viewWillDisappear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view is about to be removed from a view hierarchy.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewWillDisappear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the disappearance of the view is being animated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewWillDisappear:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/viewDidDisappear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view was removed from a view hierarchy.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidDisappear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the disappearance of the view was animated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewDidDisappear:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/scrollViewShouldScrollToTop:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate if the scroll view should scroll to the top of the content.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scroll-view object requesting this information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES to permit scrolling to the top of the content, NO to disallow it.</Abstract></ReturnValue>
+			<Anchor>//api/name/scrollViewShouldScrollToTop:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/distanceForCoordinates:andCoordinates:</TokenIdentifier>
+			<Abstract type="html">Haversine distance between two coordinates</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cordA</Name>
+					<Abstract type="html">The first coordinate</Abstract>
+				</Parameter><Parameter>
+					<Name>cordB</Name>
+					<Abstract type="html">The second coordinate</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The distance in meters</Abstract></ReturnValue>
+			<Anchor>//api/name/distanceForCoordinates:andCoordinates:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/loadCustom</TokenIdentifier>
+			<Abstract type="html">Function that loads the index of the custom location chosen</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (int)loadCustom</Declaration>
+			
+			<ReturnValue><Abstract type="html">The index of the custom location inside the custom locations array</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustom</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/loadCustomLocation</TokenIdentifier>
+			<Abstract type="html">Function that loads the custom location selected by the user</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (MVACustomLocation *)loadCustomLocation</Declaration>
+			
+			<ReturnValue><Abstract type="html">The MVACustomLocation object</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomLocation</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/searchDisplayController:didLoadSearchResultsTableView:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the controller has loaded its table view.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)searchDisplayController:(UISearchDisplayController *)controller didLoadSearchResultsTableView:(UITableView *)tableView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The search display controller for which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The search display controller’s table view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchDisplayController:didLoadSearchResultsTableView:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/searchBarTextDidBeginEditing:</TokenIdentifier>
+			<Abstract type="html">Delegate function that gets called when the user starts entering text</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>searchBar</Name>
+					<Abstract type="html">The search bar object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchBarTextDidBeginEditing:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/searchBarSearchButtonClicked:</TokenIdentifier>
+			<Abstract type="html">Delegate function that gets called when the user begins a search</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>searchBar</Name>
+					<Abstract type="html">The search bar object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchBarSearchButtonClicked:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/searchBar:textDidChange:</TokenIdentifier>
+			<Abstract type="html">Delegate function that gets called when the user edits the text in the search bar</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>searchBar</Name>
+					<Abstract type="html">The search bar object</Abstract>
+				</Parameter><Parameter>
+					<Name>searchText</Name>
+					<Abstract type="html">The text</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchBar:textDidChange:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/searchBarTextDidEndEditing:</TokenIdentifier>
+			<Abstract type="html">Delegate function that gets called when the user exits the search bar</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>searchBar</Name>
+					<Abstract type="html">The search bar object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchBarTextDidEndEditing:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/searchTableList</TokenIdentifier>
+			<Abstract type="html">Function that filters the list to fit the search.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)searchTableList</Declaration>
+			
+			
+			<Anchor>//api/name/searchTableList</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/tableView:heightForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for the height to use for a row in a specified location.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path that locates a row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A nonnegative floating-point value that specifies the height (in points) that row should be.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:heightForRowAtIndexPath:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/tableView:heightForHeaderInSection:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for the height to use for the header of a particular section.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section of tableView .</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A nonnegative floating-point value that specifies the height (in points) of the header for section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:heightForHeaderInSection:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/tableView:heightForFooterInSection:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for the height to use for the footer of a particular section.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section of tableView .</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A nonnegative floating-point value that specifies the height (in points) of the footer for section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:heightForFooterInSection:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/tableView:viewForHeaderInSection:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for a view object to display in the header of the specified section of the table view.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object asking for the view object.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section of tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A view object to be displayed in the header of section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:viewForHeaderInSection:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/tableView:numberOfRowsInSection:</TokenIdentifier>
+			<Abstract type="html">Tells the data source to return the number of rows in a given section of a table view. (required)</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The number of rows in section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:numberOfRowsInSection:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the data source for a cell to insert in a particular location of the table view. (required)</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">A table-view object requesting the cell.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating a row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An object inheriting from UITableViewCell that the table view can use for the specified row. An assertion is raised if you return nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/tableView:didSelectRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the specified row is now selected.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">A table-view object informing the delegate about the new row selection.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating the new selected row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tableView:didSelectRowAtIndexPath:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/headerTapped:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user taps/swipes inside the header view.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)headerTapped:(UITapGestureRecognizer *)onetap</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>onetap</Name>
+					<Abstract type="html">The tap gesture recognizer object that calls this function.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/headerTapped:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/imageWithView:</TokenIdentifier>
+			<Abstract type="html">Function that creates a UIImage from a UIView given</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIImage *)imageWithView:(UIView *)view</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>view</Name>
+					<Abstract type="html">The UIView that needs to be converted into an image</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The UIImage created</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWithView:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html">Called when a segue is about to be performed. (required)</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>segue</Name>
+					<Abstract type="html">The segue object containing information about the view controllers involved in the segue.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/menuSelected:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user opens/closes the menu</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)menuSelected:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The home menu button</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/menuSelected:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/calculateUserAngle:</TokenIdentifier>
+			<Abstract type="html">Function that caclualtes the angle between the current location and another given location. This function doesn&apos;t work with a custom location. This function uses the head of the device to calculate the angle.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)calculateUserAngle:(CLLocationCoordinate2D)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">The coordinates of the other location</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The angle between the two coordinates</Abstract></ReturnValue>
+			<Anchor>//api/name/calculateUserAngle:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/numberOfItemsInRadialMenu:</TokenIdentifier>
+			<Abstract type="html">ALRadialMenuDelegate function that indicates the number of items in the menu.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)numberOfItemsInRadialMenu:(ALRadialMenu *)radialMenu</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>radialMenu</Name>
+					<Abstract type="html">The radial menu that calls this delegate function</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The number of items in the menu</Abstract></ReturnValue>
+			<Anchor>//api/name/numberOfItemsInRadialMenu:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/arcSizeForRadialMenu:</TokenIdentifier>
+			<Abstract type="html">ALRadialMenuDelegate function that gets called to indicate the arc radius (distance between the button and objects final resting spot)</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)arcSizeForRadialMenu:(ALRadialMenu *)radialMenu</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>radialMenu</Name>
+					<Abstract type="html">The radial menu that calls this delegate function</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The arc radius</Abstract></ReturnValue>
+			<Anchor>//api/name/arcSizeForRadialMenu:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/arcRadiusForRadialMenu:</TokenIdentifier>
+			<Abstract type="html">ALRadialMenuDelegate function that gets called to indicate the radius of the menu</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)arcRadiusForRadialMenu:(ALRadialMenu *)radialMenu</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>radialMenu</Name>
+					<Abstract type="html">The radial menu that calls this delegate function</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The radius</Abstract></ReturnValue>
+			<Anchor>//api/name/arcRadiusForRadialMenu:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/radialMenu:buttonForIndex:</TokenIdentifier>
+			<Abstract type="html">ALRadialMenuDelegate function that gets called for the creaton of the button for each item of the menu.</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (ALRadialButton *)radialMenu:(ALRadialMenu *)radialMenu buttonForIndex:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>radialMenu</Name>
+					<Abstract type="html">The radial menu that calls this delegate function</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the button that needs to be created</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The ALRadialButton used for th given item</Abstract></ReturnValue>
+			<Anchor>//api/name/radialMenu:buttonForIndex:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPuntsIntsTableViewController/radialMenu:didSelectItemAtIndex:</TokenIdentifier>
+			<Abstract type="html">ALRadialMenuDelegate function called when the user thaps one of the items</Abstract>
+			<DeclaredIn>MVAPuntsIntsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)radialMenu:(ALRadialMenu *)radialMenu didSelectItemAtIndex:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>radialMenu</Name>
+					<Abstract type="html">The radial menu that calls this delegate function</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the item selected</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/radialMenu:didSelectItemAtIndex:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

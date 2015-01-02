@@ -1,0 +1,1776 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MVADataBus Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">VisitBCN </a></h1>
+				<a id="developerHome" href="../index.html">Mauro Vime Castillo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MVADataBus Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/busHash">&nbsp;&nbsp;&nbsp;&nbsp;busHash</option>
+	
+	<option value="//api/name/busRoutes">&nbsp;&nbsp;&nbsp;&nbsp;busRoutes</option>
+	
+	<option value="//api/name/busRoutesHash">&nbsp;&nbsp;&nbsp;&nbsp;busRoutesHash</option>
+	
+	<option value="//api/name/busStops">&nbsp;&nbsp;&nbsp;&nbsp;busStops</option>
+	
+	<option value="//api/name/frequencies">&nbsp;&nbsp;&nbsp;&nbsp;frequencies</option>
+	
+	<option value="//api/name/tripsHashIda">&nbsp;&nbsp;&nbsp;&nbsp;tripsHashIda</option>
+	
+	<option value="//api/name/tripsHashVuelta">&nbsp;&nbsp;&nbsp;&nbsp;tripsHashVuelta</option>
+	
+	<option value="//api/name/tripsIda">&nbsp;&nbsp;&nbsp;&nbsp;tripsIda</option>
+	
+	<option value="//api/name/tripsVuelta">&nbsp;&nbsp;&nbsp;&nbsp;tripsVuelta</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/distanceForCoordinates:andCoordinates:">&nbsp;&nbsp;&nbsp;&nbsp;- distanceForCoordinates:andCoordinates:</option>
+	
+	<option value="//api/name/encodeWithCoder:">&nbsp;&nbsp;&nbsp;&nbsp;- encodeWithCoder:</option>
+	
+	<option value="//api/name/frequencieForStop:andTime:andCalendar:">&nbsp;&nbsp;&nbsp;&nbsp;- frequencieForStop:andTime:andCalendar:</option>
+	
+	<option value="//api/name/initWithCoder:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCoder:</option>
+	
+	<option value="//api/name/loadRain">&nbsp;&nbsp;&nbsp;&nbsp;- loadRain</option>
+	
+	<option value="//api/name/parseDataBase">&nbsp;&nbsp;&nbsp;&nbsp;- parseDataBase</option>
+	
+	<option value="//api/name/parser:didBeginLine:">&nbsp;&nbsp;&nbsp;&nbsp;- parser:didBeginLine:</option>
+	
+	<option value="//api/name/parser:didEndLine:">&nbsp;&nbsp;&nbsp;&nbsp;- parser:didEndLine:</option>
+	
+	<option value="//api/name/parser:didFailWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- parser:didFailWithError:</option>
+	
+	<option value="//api/name/parser:didReadField:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- parser:didReadField:atIndex:</option>
+	
+	<option value="//api/name/parserDidBeginDocument:">&nbsp;&nbsp;&nbsp;&nbsp;- parserDidBeginDocument:</option>
+	
+	<option value="//api/name/parserDidEndDocument:">&nbsp;&nbsp;&nbsp;&nbsp;- parserDidEndDocument:</option>
+	
+	<option value="//api/name/timeToInt:">&nbsp;&nbsp;&nbsp;&nbsp;- timeToInt:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/busHash">busHash</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/busRoutes">busRoutes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/busRoutesHash">busRoutesHash</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/busStops">busStops</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/frequencies">frequencies</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tripsHashIda">tripsHashIda</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tripsHashVuelta">tripsHashVuelta</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tripsIda">tripsIda</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tripsVuelta">tripsVuelta</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/distanceForCoordinates:andCoordinates:">distanceForCoordinates:andCoordinates:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encodeWithCoder:">encodeWithCoder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/frequencieForStop:andTime:andCalendar:">frequencieForStop:andTime:andCalendar:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCoder:">initWithCoder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadRain">loadRain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseDataBase">parseDataBase</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parser:didBeginLine:">parser:didBeginLine:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parser:didEndLine:">parser:didEndLine:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parser:didFailWithError:">parser:didFailWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parser:didReadField:atIndex:">parser:didReadField:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parserDidBeginDocument:">parserDidBeginDocument:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parserDidEndDocument:">parserDidEndDocument:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeToInt:">timeToInt:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MVADataBus Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MVADataBus Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MVADataBus.h<br />MVADataBus.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class englobes all the data of the bus network.</p>
+
+<p>We can represent this class as a table:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center"> Bus stops </th>
+<th align="center">  Bus hash  </th>
+<th align="center"> Bus routes </th>
+<th align="center"> Bus routes hash </th>
+<th align="center"> Trips ida </th>
+<th align="center"> Trips ida hash </th>
+<th align="center"> Trips vuelta </th>
+<th align="center"> Trips vuelta hash </th>
+<th align="center"> Frequencies </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">   Array   </td>
+<td align="center"> Hash table </td>
+<td align="center">   Array    </td>
+<td align="center">   Hash table    </td>
+<td align="center">   Array   </td>
+<td align="center">   Hash table   </td>
+<td align="center">    Array     </td>
+<td align="center">    Hash table     </td>
+<td align="center">    Array    </td>
+</tr>
+</tbody>
+</table>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/busStops">&nbsp;&nbsp;busStops</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/busHash">&nbsp;&nbsp;busHash</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/busRoutes">&nbsp;&nbsp;busRoutes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/busRoutesHash">&nbsp;&nbsp;busRoutesHash</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tripsIda">&nbsp;&nbsp;tripsIda</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tripsHashIda">&nbsp;&nbsp;tripsHashIda</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tripsVuelta">&nbsp;&nbsp;tripsVuelta</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tripsHashVuelta">&nbsp;&nbsp;tripsHashVuelta</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/frequencies">&nbsp;&nbsp;frequencies</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parseDataBase">&ndash;&nbsp;parseDataBase</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/frequencieForStop:andTime:andCalendar:">&ndash;&nbsp;frequencieForStop:andTime:andCalendar:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeToInt:">&ndash;&nbsp;timeToInt:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/distanceForCoordinates:andCoordinates:">&ndash;&nbsp;distanceForCoordinates:andCoordinates:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadRain">&ndash;&nbsp;loadRain</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parserDidBeginDocument:">&ndash;&nbsp;parserDidBeginDocument:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parser:didBeginLine:">&ndash;&nbsp;parser:didBeginLine:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parser:didReadField:atIndex:">&ndash;&nbsp;parser:didReadField:atIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parser:didEndLine:">&ndash;&nbsp;parser:didEndLine:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parserDidEndDocument:">&ndash;&nbsp;parserDidEndDocument:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parser:didFailWithError:">&ndash;&nbsp;parser:didFailWithError:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/encodeWithCoder:">&ndash;&nbsp;encodeWithCoder:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithCoder:">&ndash;&nbsp;initWithCoder:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/busHash" title="busHash"></a>
+	<h3 class="subsubtitle method-title">busHash</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This hash table is used to index the stopIDs and make more efficient the algorithm executions</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableDictionary *busHash</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This hash table is used to index the stopIDs and make more efficient the algorithm executions</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/busRoutes" title="busRoutes"></a>
+	<h3 class="subsubtitle method-title">busRoutes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The routes that operate in the bus network</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *busRoutes</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The routes that operate in the bus network</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVARoute.html">MVARoute</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/busRoutesHash" title="busRoutesHash"></a>
+	<h3 class="subsubtitle method-title">busRoutesHash</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This hash table is used to index the routeIDs and make more efficient the algorithm executions</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableDictionary *busRoutesHash</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This hash table is used to index the routeIDs and make more efficient the algorithm executions</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/busStops" title="busStops"></a>
+	<h3 class="subsubtitle method-title">busStops</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The stops of the bus network</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *busStops</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The stops of the bus network</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVAStop.html">MVAStop</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/frequencies" title="frequencies"></a>
+	<h3 class="subsubtitle method-title">frequencies</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The frequencies of all the bus routes and directions</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *frequencies</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The frequencies of all the bus routes and directions</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVAFrequencies.html">MVAFrequencies</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tripsHashIda" title="tripsHashIda"></a>
+	<h3 class="subsubtitle method-title">tripsHashIda</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This hash table is used to index the &lsquo;tripsIda&rsquo; and make more efficient the algorithm executions</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableDictionary *tripsHashIda</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This hash table is used to index the &lsquo;tripsIda&rsquo; and make more efficient the algorithm executions</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tripsHashVuelta" title="tripsHashVuelta"></a>
+	<h3 class="subsubtitle method-title">tripsHashVuelta</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This hash table is used to index the &lsquo;tripsVuelta&rsquo; and make more efficient the algorithm executions</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableDictionary *tripsHashVuelta</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This hash table is used to index the &lsquo;tripsVuelta&rsquo; and make more efficient the algorithm executions</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tripsIda" title="tripsIda"></a>
+	<h3 class="subsubtitle method-title">tripsIda</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The trips in the &lsquo;forward&rsquo; direction</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *tripsIda</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The trips in the &lsquo;forward&rsquo; direction</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVATrip.html">MVATrip</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tripsVuelta" title="tripsVuelta"></a>
+	<h3 class="subsubtitle method-title">tripsVuelta</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The trips in the'backward' direction</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *tripsVuelta</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The trips in the'backward' direction</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVATrip.html">MVATrip</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/distanceForCoordinates:andCoordinates:" title="distanceForCoordinates:andCoordinates:"></a>
+	<h3 class="subsubtitle method-title">distanceForCoordinates:andCoordinates:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Haversine distance between two coordinates</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)distanceForCoordinates:(CLLocationCoordinate2D)<em>cordA</em> andCoordinates:(CLLocationCoordinate2D)<em>cordB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cordA</em></dt>
+			<dd><p>The first coordinate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cordB</em></dt>
+			<dd><p>The second coordinate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The distance in meters</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Haversine distance between two coordinates</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="http://www.movable-type.co.uk/scripts/latlong.html">http://www.movable-type.co.uk/scripts/latlong.html</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/encodeWithCoder:" title="encodeWithCoder:"></a>
+	<h3 class="subsubtitle method-title">encodeWithCoder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Encodes the receiver using a given archiver. (required)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)encodeWithCoder:(NSCoder *)<em>coder</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>coder</em></dt>
+			<dd><p>An archiver object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Encodes the receiver using a given archiver. (required)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/frequencieForStop:andTime:andCalendar:" title="frequencieForStop:andTime:andCalendar:"></a>
+	<h3 class="subsubtitle method-title">frequencieForStop:andTime:andCalendar:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function is used as a query to retrieve the frequency for a given stop, time and calendar</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)frequencieForStop:(MVAStop *)<em>stop</em> andTime:(double)<em>currentTime</em> andCalendar:(NSString *)<em>serviceID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>stop</em></dt>
+			<dd><p>The bus stop that performs the query</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currentTime</em></dt>
+			<dd><p>The time for which the query is performed</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>serviceID</em></dt>
+			<dd><p>The identifier of the service that operates in that stop at that moment</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The frequency in seconds (double)</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function is used as a query to retrieve the frequency for a given stop, time and calendar</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithCoder:" title="initWithCoder:"></a>
+	<h3 class="subsubtitle method-title">initWithCoder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an object initialized from data in a given unarchiver. (required)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithCoder:(NSCoder *)<em>coder</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>coder</em></dt>
+			<dd><p>An unarchiver object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>self, initialized using the data in decoder.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an object initialized from data in a given unarchiver. (required)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadRain" title="loadRain"></a>
+	<h3 class="subsubtitle method-title">loadRain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&lt;#Description#></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)loadRain</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&lt;#return value description#></p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&lt;#Description#></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parseDataBase" title="parseDataBase"></a>
+	<h3 class="subsubtitle method-title">parseDataBase</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function initiates the parsing of the bus data</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)parseDataBase</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function initiates the parsing of the bus data</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parser:didBeginLine:" title="parser:didBeginLine:"></a>
+	<h3 class="subsubtitle method-title">parser:didBeginLine:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>CHCSVParserDelegate method. Indicates when the parser has begun a new line of the document</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)parser:(CHCSVParser *)<em>parser</em> didBeginLine:(NSUInteger)<em>recordNumber</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parser</em></dt>
+			<dd><p>A CHCSVParser object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recordNumber</em></dt>
+			<dd><p>The number of the line being parsed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>CHCSVParserDelegate method. Indicates when the parser has begun a new line of the document</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parser:didEndLine:" title="parser:didEndLine:"></a>
+	<h3 class="subsubtitle method-title">parser:didEndLine:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>CHCSVParserDelegate method. Indicates when the aprser has finished reading a line</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)parser:(CHCSVParser *)<em>parser</em> didEndLine:(NSUInteger)<em>recordNumber</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parser</em></dt>
+			<dd><p>A CHCSVParser object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recordNumber</em></dt>
+			<dd><p>The number of the line dad has been parsed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>CHCSVParserDelegate method. Indicates when the aprser has finished reading a line</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parser:didFailWithError:" title="parser:didFailWithError:"></a>
+	<h3 class="subsubtitle method-title">parser:didFailWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>CHCSVParserDelegate method. Indicates that an error ocurred while parsing the document</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)parser:(CHCSVParser *)<em>parser</em> didFailWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parser</em></dt>
+			<dd><p>A CHCSVParser object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>The NSError indicating why the parsing ahs failed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>CHCSVParserDelegate method. Indicates that an error ocurred while parsing the document</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parser:didReadField:atIndex:" title="parser:didReadField:atIndex:"></a>
+	<h3 class="subsubtitle method-title">parser:didReadField:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>CHCSVParserDelegate method. Indicates when the parser has read a new field of the current line</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)parser:(CHCSVParser *)<em>parser</em> didReadField:(NSString *)<em>field</em> atIndex:(NSInteger)<em>fieldIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parser</em></dt>
+			<dd><p>A CHCSVParser object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>The field that has been read</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fieldIndex</em></dt>
+			<dd><p>The index of this field in the line</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>CHCSVParserDelegate method. Indicates when the parser has read a new field of the current line</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parserDidBeginDocument:" title="parserDidBeginDocument:"></a>
+	<h3 class="subsubtitle method-title">parserDidBeginDocument:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>CHCSVParserDelegate method. Indicates when the parser has begun a new document</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)parserDidBeginDocument:(CHCSVParser *)<em>parser</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parser</em></dt>
+			<dd><p>A CHCSVParser object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>CHCSVParserDelegate method. Indicates when the parser has begun a new document</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parserDidEndDocument:" title="parserDidEndDocument:"></a>
+	<h3 class="subsubtitle method-title">parserDidEndDocument:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>CHCSVParserDelegate method. Indicates when the parser has finished parsing a document</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)parserDidEndDocument:(CHCSVParser *)<em>parser</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parser</em></dt>
+			<dd><p>A CHCSVParser object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>CHCSVParserDelegate method. Indicates when the parser has finished parsing a document</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeToInt:" title="timeToInt:"></a>
+	<h3 class="subsubtitle method-title">timeToInt:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an integer with the time given respresented in seconds</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (int)timeToInt:(NSString *)<em>time</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>time</em></dt>
+			<dd><p>The time ins NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The integer with the time in seconds</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an integer with the time given respresented in seconds</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVADataBus.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 Mauro Vime Castillo. All rights reserved. (Last updated: 2015-01-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

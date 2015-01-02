@@ -9,6 +9,12 @@
 /**
  *  This class is used to add custom modifications to the given data like, for example, connections between stops or the documents that the parser should read
  *
+ *  We can represent this class as a table:
+ *
+ *  | TMB connections | FGC connections | Exceptions |
+ *  |:---------------:|:---------------:|:----------:|
+ *  |     NSArray     |     NSArray     |   NSArray  |
+ *
  *  @since version 1.0
  */
 

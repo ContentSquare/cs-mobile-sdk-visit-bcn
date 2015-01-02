@@ -11,7 +11,7 @@
 @implementation MVACustomLocTableViewCell
 
 /**
- *  <#Description#>
+ *  Function that gets called to initialize the cell
  *
  *  @since version 1.0
  */

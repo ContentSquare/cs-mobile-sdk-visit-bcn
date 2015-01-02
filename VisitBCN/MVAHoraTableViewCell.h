@@ -7,8 +7,9 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of UITableViewCell and is used to create the custom date picker
  *
+ *  @see MVAConfigurationTableViewController class
  *  @since version 1.0
  */
 
@@ -18,28 +19,28 @@
 @interface MVAHoraTableViewCell : UITableViewCell
 
 /**
- *  <#Description#>
+ *  The switch view
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UIView *cellSwitch;
 
 /**
- *  <#Description#>
+ *  The label of the cell
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
 /**
- *  <#Description#>
+ *  The date picker
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 /**
- *  <#Description#>
+ *  The view controller that creates this cell
  *
  *  @since version 1.0
  */

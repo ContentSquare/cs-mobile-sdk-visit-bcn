@@ -7,7 +7,7 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of UITableViewController and is used to create, select and store the custom locations created by the user
  *
  *  @since version 1.0
  */

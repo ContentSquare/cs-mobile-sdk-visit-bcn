@@ -105,7 +105,7 @@
 	//calculate the item fling interval based on the number of items
 	//never go on for more than half a second
 	//FIXME make this configurable
-	float maxDuration = .50;
+	float maxDuration = .250;
 	float flingInterval = maxDuration/[self.items count];
 	
 	//start the timer that kicks off each animation set
@@ -135,8 +135,7 @@
 	
 	//calculate the item fling interval based on the number of items
 	//never go on for more than half a second
-	//FIXME make this configurable
-	float maxDuration = .50;
+	float maxDuration = .250;
 	float flingInterval = maxDuration/[self.items count];
 	
 	//fling index is still the last object from the fling out

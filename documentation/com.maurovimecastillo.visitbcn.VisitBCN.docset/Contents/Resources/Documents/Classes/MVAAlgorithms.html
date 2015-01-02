@@ -1,0 +1,1854 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MVAAlgorithms Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">VisitBCN </a></h1>
+				<a id="developerHome" href="../index.html">Mauro Vime Castillo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MVAAlgorithms Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/cal">&nbsp;&nbsp;&nbsp;&nbsp;cal</option>
+	
+	<option value="//api/name/dataBus">&nbsp;&nbsp;&nbsp;&nbsp;dataBus</option>
+	
+	<option value="//api/name/dataFGC">&nbsp;&nbsp;&nbsp;&nbsp;dataFGC</option>
+	
+	<option value="//api/name/dataTMB">&nbsp;&nbsp;&nbsp;&nbsp;dataTMB</option>
+	
+	<option value="//api/name/edgeList">&nbsp;&nbsp;&nbsp;&nbsp;edgeList</option>
+	
+	<option value="//api/name/nodes">&nbsp;&nbsp;&nbsp;&nbsp;nodes</option>
+	
+	<option value="//api/name/openNodes">&nbsp;&nbsp;&nbsp;&nbsp;openNodes</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	<option value="//api/name/viewController">&nbsp;&nbsp;&nbsp;&nbsp;viewController</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/astarPathtoNode:withCoo:">&nbsp;&nbsp;&nbsp;&nbsp;- astarPathtoNode:withCoo:</option>
+	
+	<option value="//api/name/dijkstraPathtoNode:withCoo:">&nbsp;&nbsp;&nbsp;&nbsp;- dijkstraPathtoNode:withCoo:</option>
+	
+	<option value="//api/name/distanceForCoordinates:andCoordinates:">&nbsp;&nbsp;&nbsp;&nbsp;- distanceForCoordinates:andCoordinates:</option>
+	
+	<option value="//api/name/edgeFromNode:toNode:">&nbsp;&nbsp;&nbsp;&nbsp;- edgeFromNode:toNode:</option>
+	
+	<option value="//api/name/getNextTrainForEdge:andTime:">&nbsp;&nbsp;&nbsp;&nbsp;- getNextTrainForEdge:andTime:</option>
+	
+	<option value="//api/name/heuristicForCoords:">&nbsp;&nbsp;&nbsp;&nbsp;- heuristicForCoords:</option>
+	
+	<option value="//api/name/loadRain">&nbsp;&nbsp;&nbsp;&nbsp;- loadRain</option>
+	
+	<option value="//api/name/loadWalkingSpeed">&nbsp;&nbsp;&nbsp;&nbsp;- loadWalkingSpeed</option>
+	
+	<option value="//api/name/pathwithGoal:andPath:">&nbsp;&nbsp;&nbsp;&nbsp;- pathwithGoal:andPath:</option>
+	
+	<option value="//api/name/timeInBusFromNodeA:toNodeB:">&nbsp;&nbsp;&nbsp;&nbsp;- timeInBusFromNodeA:toNodeB:</option>
+	
+	<option value="//api/name/timeToInt:">&nbsp;&nbsp;&nbsp;&nbsp;- timeToInt:</option>
+	
+	<option value="//api/name/updateNodeForEdge:andNode:">&nbsp;&nbsp;&nbsp;&nbsp;- updateNodeForEdge:andNode:</option>
+	
+	<option value="//api/name/updateNodesForNode:">&nbsp;&nbsp;&nbsp;&nbsp;- updateNodesForNode:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cal">cal</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataBus">dataBus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataFGC">dataFGC</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataTMB">dataTMB</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/edgeList">edgeList</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nodes">nodes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openNodes">openNodes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewController">viewController</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/astarPathtoNode:withCoo:">astarPathtoNode:withCoo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dijkstraPathtoNode:withCoo:">dijkstraPathtoNode:withCoo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/distanceForCoordinates:andCoordinates:">distanceForCoordinates:andCoordinates:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/edgeFromNode:toNode:">edgeFromNode:toNode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getNextTrainForEdge:andTime:">getNextTrainForEdge:andTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/heuristicForCoords:">heuristicForCoords:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadRain">loadRain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadWalkingSpeed">loadWalkingSpeed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathwithGoal:andPath:">pathwithGoal:andPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeInBusFromNodeA:toNodeB:">timeInBusFromNodeA:toNodeB:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeToInt:">timeToInt:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateNodeForEdge:andNode:">updateNodeForEdge:andNode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateNodesForNode:">updateNodesForNode:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MVAAlgorithms Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MVAAlgorithms Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MVAAlgorithms.h<br />MVAAlgorithms.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class contains the both algorithms (Dijkstra and A*)</p>
+
+<p>We can represent this class as a table:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center"> Nodes </th>
+<th align="center"> EdgeList </th>
+<th align="center"> Type </th>
+<th align="center">  Bus data  </th>
+<th align="center">  FGC data  </th>
+<th align="center">  TMB data  </th>
+<th align="center">  Calendar   </th>
+<th align="center">   Open Nodes   </th>
+<th align="center"> View Controller  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"> Array </td>
+<td align="center">  Array   </td>
+<td align="center"> Int  </td>
+<td align="center"> <a href="../Classes/MVADataBus.html">MVADataBus</a> </td>
+<td align="center"> <a href="../Classes/MVADataFGC.html">MVADataFGC</a> </td>
+<td align="center"> <a href="../Classes/MVADataTMB.html">MVADataTMB</a> </td>
+<td align="center"> <a href="../Classes/MVACalendar.html">MVACalendar</a> </td>
+<td align="center"> Priority Queue </td>
+<td align="center"> UIViewController </td>
+</tr>
+</tbody>
+</table>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nodes">&nbsp;&nbsp;nodes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/edgeList">&nbsp;&nbsp;edgeList</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataBus">&nbsp;&nbsp;dataBus</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataFGC">&nbsp;&nbsp;dataFGC</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataTMB">&nbsp;&nbsp;dataTMB</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cal">&nbsp;&nbsp;cal</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openNodes">&nbsp;&nbsp;openNodes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewController">&nbsp;&nbsp;viewController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dijkstraPathtoNode:withCoo:">&ndash;&nbsp;dijkstraPathtoNode:withCoo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/astarPathtoNode:withCoo:">&ndash;&nbsp;astarPathtoNode:withCoo:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateNodesForNode:">&ndash;&nbsp;updateNodesForNode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getNextTrainForEdge:andTime:">&ndash;&nbsp;getNextTrainForEdge:andTime:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeToInt:">&ndash;&nbsp;timeToInt:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeInBusFromNodeA:toNodeB:">&ndash;&nbsp;timeInBusFromNodeA:toNodeB:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateNodeForEdge:andNode:">&ndash;&nbsp;updateNodeForEdge:andNode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/heuristicForCoords:">&ndash;&nbsp;heuristicForCoords:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathwithGoal:andPath:">&ndash;&nbsp;pathwithGoal:andPath:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/distanceForCoordinates:andCoordinates:">&ndash;&nbsp;distanceForCoordinates:andCoordinates:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/edgeFromNode:toNode:">&ndash;&nbsp;edgeFromNode:toNode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadWalkingSpeed">&ndash;&nbsp;loadWalkingSpeed</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadRain">&ndash;&nbsp;loadRain</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cal" title="cal"></a>
+	<h3 class="subsubtitle method-title">cal</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current calendar for the execution</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property MVACalendar *cal</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The current calendar for the execution</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVACalendar.html">MVACalendar</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataBus" title="dataBus"></a>
+	<h3 class="subsubtitle method-title">dataBus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The bus network data base</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property MVADataBus *dataBus</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The bus network data base</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVADataBus.html">MVADataBus</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataFGC" title="dataFGC"></a>
+	<h3 class="subsubtitle method-title">dataFGC</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The FGC network data base</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property MVADataFGC *dataFGC</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The FGC network data base</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVADataFGC.html">MVADataFGC</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataTMB" title="dataTMB"></a>
+	<h3 class="subsubtitle method-title">dataTMB</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The TMB subway network data base</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property MVADataTMB *dataTMB</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The TMB subway network data base</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVADataTMB.html">MVADataTMB</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/edgeList" title="edgeList"></a>
+	<h3 class="subsubtitle method-title">edgeList</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array with all the edges of the graph that will be explored</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *edgeList</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An array with all the edges of the graph that will be explored</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nodes" title="nodes"></a>
+	<h3 class="subsubtitle method-title">nodes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array containin all the nodes of the graph that will be explored</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSMutableArray *nodes</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An array containin all the nodes of the graph that will be explored</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openNodes" title="openNodes"></a>
+	<h3 class="subsubtitle method-title">openNodes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A priority queue that will be used to explore the graph</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property MVAPriorityQueue *openNodes</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A priority queue that will be used to explore the graph</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVAPriorityQueue.html">MVAPriorityQueue</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The type of graph that will be explored (subway or bus).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property int type</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The type of graph that will be explored (subway or bus).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewController" title="viewController"></a>
+	<h3 class="subsubtitle method-title">viewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The view controller that called this algorithm execution</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property MVAPunIntViewController *viewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The view controller that called this algorithm execution</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVAPunIntViewController.html">MVAPunIntViewController</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/astarPathtoNode:withCoo:" title="astarPathtoNode:withCoo:"></a>
+	<h3 class="subsubtitle method-title">astarPathtoNode:withCoo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A* algorithm</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MVAPath *)astarPathtoNode:(MVANode *)<em>nodeB</em> withCoo:(CLLocationCoordinate2D)<em>crds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeB</em></dt>
+			<dd><p>Destination node for the A* computation</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>crds</em></dt>
+			<dd><p>Coordinates of the final destination</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/MVAPath.html">MVAPath</a> object for the given parameters and the current graph</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A* algorithm</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dijkstraPathtoNode:withCoo:" title="dijkstraPathtoNode:withCoo:"></a>
+	<h3 class="subsubtitle method-title">dijkstraPathtoNode:withCoo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dijkstra&rsquo;s algorithm</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MVAPath *)dijkstraPathtoNode:(MVANode *)<em>nodeB</em> withCoo:(CLLocationCoordinate2D)<em>crds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeB</em></dt>
+			<dd><p>Destination node for the Dijkstra computation</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>crds</em></dt>
+			<dd><p>Coordinates of the final destination</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/MVAPath.html">MVAPath</a> object for the given parameters and the current graph</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Dijkstra&rsquo;s algorithm</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/distanceForCoordinates:andCoordinates:" title="distanceForCoordinates:andCoordinates:"></a>
+	<h3 class="subsubtitle method-title">distanceForCoordinates:andCoordinates:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Haversine distance between two coordinates</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)distanceForCoordinates:(CLLocationCoordinate2D)<em>cordA</em> andCoordinates:(CLLocationCoordinate2D)<em>cordB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cordA</em></dt>
+			<dd><p>The first coordinate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cordB</em></dt>
+			<dd><p>The second coordinate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The distance in meters</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Haversine distance between two coordinates</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="http://www.movable-type.co.uk/scripts/latlong.html">http://www.movable-type.co.uk/scripts/latlong.html</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/edgeFromNode:toNode:" title="edgeFromNode:toNode:"></a>
+	<h3 class="subsubtitle method-title">edgeFromNode:toNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that returns the edge that connects the first node with the second.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MVAEdge *)edgeFromNode:(MVANode *)<em>nodeA</em> toNode:(MVANode *)<em>nodeB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeA</em></dt>
+			<dd><p>The first node</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeB</em></dt>
+			<dd><p>The second node</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/MVAEdge.html">MVAEdge</a> object that represents the edge</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that returns the edge that connects the first node with the second.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getNextTrainForEdge:andTime:" title="getNextTrainForEdge:andTime:"></a>
+	<h3 class="subsubtitle method-title">getNextTrainForEdge:andTime:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)getNextTrainForEdge:(MVAEdge *)<em>edge</em> andTime:(double)<em>actualTime</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>edge</em></dt>
+			<dd><p>The edge that contains the destination node and the identifier of the trip</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>actualTime</em></dt>
+			<dd><p>The time for the query</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The time of the next train</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVAEdge.html">MVAEdge</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/heuristicForCoords:" title="heuristicForCoords:"></a>
+	<h3 class="subsubtitle method-title">heuristicForCoords:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Heuristic function. This function calculates the heuristic for a certain location</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)heuristicForCoords:(CLLocationCoordinate2D)<em>cord</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cord</em></dt>
+			<dd><p>The location coordinates</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The heuristic value</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Heuristic function. This function calculates the heuristic for a certain location</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadRain" title="loadRain"></a>
+	<h3 class="subsubtitle method-title">loadRain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that loads if is raining in Barcelona or not.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)loadRain</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A bool with the answer to the query</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that loads if is raining in Barcelona or not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadWalkingSpeed" title="loadWalkingSpeed"></a>
+	<h3 class="subsubtitle method-title">loadWalkingSpeed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function loads the walking speed indicated by the user. (The default value is 5km/h)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)loadWalkingSpeed</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The speed in m/s</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function loads the walking speed indicated by the user. (The default value is 5km/h)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pathwithGoal:andPath:" title="pathwithGoal:andPath:"></a>
+	<h3 class="subsubtitle method-title">pathwithGoal:andPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that recursively construct the path coputed by the A* algorithm.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)pathwithGoal:(MVANode *)<em>node</em> andPath:(MVAPath *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>node</em></dt>
+			<dd><p>The first node of the path</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that recursively construct the path coputed by the A* algorithm.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVANode.html">MVANode</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeInBusFromNodeA:toNodeB:" title="timeInBusFromNodeA:toNodeB:"></a>
+	<h3 class="subsubtitle method-title">timeInBusFromNodeA:toNodeB:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter &lsquo;rain&rsquo; given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)timeInBusFromNodeA:(MVANode *)<em>nodeA</em> toNodeB:(MVANode *)<em>nodeB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeA</em></dt>
+			<dd><p>The origin node</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeB</em></dt>
+			<dd><p>The destination node</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The time in bus from the origin to the destination</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter &lsquo;rain&rsquo; given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVANode.html">MVANode</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeToInt:" title="timeToInt:"></a>
+	<h3 class="subsubtitle method-title">timeToInt:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that transforms a time in HH:MM:SS into an integer in seconds</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (int)timeToInt:(NSString *)<em>time</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>time</em></dt>
+			<dd><p>The time as a string</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The time in seconds</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that transforms a time in HH:MM:SS into an integer in seconds</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateNodeForEdge:andNode:" title="updateNodeForEdge:andNode:"></a>
+	<h3 class="subsubtitle method-title">updateNodeForEdge:andNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that updates the destination node of an edge from the current node</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)updateNodeForEdge:(MVAEdge *)<em>edge</em> andNode:(MVANode *)<em>currentNode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>edge</em></dt>
+			<dd><p>The edge object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currentNode</em></dt>
+			<dd><p>The current node object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that updates the destination node of an edge from the current node</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVAEdge.html">MVAEdge</a> class</p></code></li>
+			
+			<li><code><p><a href="../Classes/MVANode.html">MVANode</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateNodesForNode:" title="updateNodesForNode:"></a>
+	<h3 class="subsubtitle method-title">updateNodesForNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that updates all the adjacent <a href="#//api/name/nodes">nodes</a> of the given one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)updateNodesForNode:(MVANode *)<em>node</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>node</em></dt>
+			<dd><p>An object representing the current node</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that updates all the adjacent <a href="#//api/name/nodes">nodes</a> of the given one.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVANode.html">MVANode</a> class</p></code></li>
+			
+			<li><code><p><a href="../Classes/MVAEdge.html">MVAEdge</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAAlgorithms.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 Mauro Vime Castillo. All rights reserved. (Last updated: 2015-01-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

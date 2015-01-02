@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVASavedPath.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVASavedPath</TokenIdentifier>
+			<Abstract type="html">This class is used to save the paths that the user wants</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setIdentificador:</TokenIdentifier>
+			<Abstract type="html">The identifier of this object</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property int identificador</Declaration>
+			
+			
+			<Anchor>//api/name/identificador</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/identificador</TokenIdentifier>
+			<Abstract type="html">The identifier of this object</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property int identificador</Declaration>
+			
+			
+			<Anchor>//api/name/identificador</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/identificador</TokenIdentifier>
+			<Abstract type="html">The identifier of this object</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property int identificador</Declaration>
+			
+			
+			<Anchor>//api/name/identificador</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setSubwayPath:</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the subway path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/subwayPath</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the subway path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/subwayPath</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the subway path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *subwayPath</Declaration>
+			
+			
+			<Anchor>//api/name/subwayPath</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setSubwayRoutes:</TokenIdentifier>
+			<Abstract type="html">An array with the routes that are used by the subway path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *subwayRoutes</Declaration>
+			
+			
+			<Anchor>//api/name/subwayRoutes</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/subwayRoutes</TokenIdentifier>
+			<Abstract type="html">An array with the routes that are used by the subway path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *subwayRoutes</Declaration>
+			
+			
+			<Anchor>//api/name/subwayRoutes</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/subwayRoutes</TokenIdentifier>
+			<Abstract type="html">An array with the routes that are used by the subway path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *subwayRoutes</Declaration>
+			
+			
+			<Anchor>//api/name/subwayRoutes</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setBusPath:</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the bus path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/busPath</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the bus path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/busPath</TokenIdentifier>
+			<Abstract type="html">A MVAPath object that contains the bus path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPath *busPath</Declaration>
+			
+			
+			<Anchor>//api/name/busPath</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setBusRoutes:</TokenIdentifier>
+			<Abstract type="html">An array with the routes that are used by the subway path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *busRoutes</Declaration>
+			
+			
+			<Anchor>//api/name/busRoutes</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/busRoutes</TokenIdentifier>
+			<Abstract type="html">An array with the routes that are used by the subway path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *busRoutes</Declaration>
+			
+			
+			<Anchor>//api/name/busRoutes</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/busRoutes</TokenIdentifier>
+			<Abstract type="html">An array with the routes that are used by the subway path</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *busRoutes</Declaration>
+			
+			
+			<Anchor>//api/name/busRoutes</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setWalkTime:</TokenIdentifier>
+			<Abstract type="html">The time needed to walk from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double walkTime</Declaration>
+			
+			
+			<Anchor>//api/name/walkTime</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/walkTime</TokenIdentifier>
+			<Abstract type="html">The time needed to walk from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double walkTime</Declaration>
+			
+			
+			<Anchor>//api/name/walkTime</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/walkTime</TokenIdentifier>
+			<Abstract type="html">The time needed to walk from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double walkTime</Declaration>
+			
+			
+			<Anchor>//api/name/walkTime</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setWalkDist:</TokenIdentifier>
+			<Abstract type="html">The distance walking distance from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double walkDist</Declaration>
+			
+			
+			<Anchor>//api/name/walkDist</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/walkDist</TokenIdentifier>
+			<Abstract type="html">The distance walking distance from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double walkDist</Declaration>
+			
+			
+			<Anchor>//api/name/walkDist</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/walkDist</TokenIdentifier>
+			<Abstract type="html">The distance walking distance from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double walkDist</Declaration>
+			
+			
+			<Anchor>//api/name/walkDist</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setCarTime:</TokenIdentifier>
+			<Abstract type="html">The travel time in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double carTime</Declaration>
+			
+			
+			<Anchor>//api/name/carTime</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/carTime</TokenIdentifier>
+			<Abstract type="html">The travel time in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double carTime</Declaration>
+			
+			
+			<Anchor>//api/name/carTime</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/carTime</TokenIdentifier>
+			<Abstract type="html">The travel time in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double carTime</Declaration>
+			
+			
+			<Anchor>//api/name/carTime</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setCarDist:</TokenIdentifier>
+			<Abstract type="html">The distance in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double carDist</Declaration>
+			
+			
+			<Anchor>//api/name/carDist</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/carDist</TokenIdentifier>
+			<Abstract type="html">The distance in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double carDist</Declaration>
+			
+			
+			<Anchor>//api/name/carDist</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/carDist</TokenIdentifier>
+			<Abstract type="html">The distance in car from the origin to the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property double carDist</Declaration>
+			
+			
+			<Anchor>//api/name/carDist</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setInitTime:</TokenIdentifier>
+			<Abstract type="html">The initial time of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property int initTime</Declaration>
+			
+			
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/initTime</TokenIdentifier>
+			<Abstract type="html">The initial time of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property int initTime</Declaration>
+			
+			
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/initTime</TokenIdentifier>
+			<Abstract type="html">The initial time of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property int initTime</Declaration>
+			
+			
+			<Anchor>//api/name/initTime</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setInitCords:</TokenIdentifier>
+			<Abstract type="html">The initial coordinates of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D initCords</Declaration>
+			
+			
+			<Anchor>//api/name/initCords</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/initCords</TokenIdentifier>
+			<Abstract type="html">The initial coordinates of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D initCords</Declaration>
+			
+			
+			<Anchor>//api/name/initCords</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/initCords</TokenIdentifier>
+			<Abstract type="html">The initial coordinates of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D initCords</Declaration>
+			
+			
+			<Anchor>//api/name/initCords</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setCustomlocation:</TokenIdentifier>
+			<Abstract type="html">The name of the initial location of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACustomLocation *customlocation</Declaration>
+			
+			
+			<Anchor>//api/name/customlocation</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/customlocation</TokenIdentifier>
+			<Abstract type="html">The name of the initial location of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACustomLocation *customlocation</Declaration>
+			
+			
+			<Anchor>//api/name/customlocation</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/customlocation</TokenIdentifier>
+			<Abstract type="html">The name of the initial location of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACustomLocation *customlocation</Declaration>
+			
+			
+			<Anchor>//api/name/customlocation</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setPunto:</TokenIdentifier>
+			<Abstract type="html">The name of the initial location of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunInt *punto</Declaration>
+			
+			
+			<Anchor>//api/name/punto</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/punto</TokenIdentifier>
+			<Abstract type="html">The name of the initial location of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunInt *punto</Declaration>
+			
+			
+			<Anchor>//api/name/punto</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/punto</TokenIdentifier>
+			<Abstract type="html">The name of the initial location of the paths in seconds</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunInt *punto</Declaration>
+			
+			
+			<Anchor>//api/name/punto</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setDestImage:</TokenIdentifier>
+			<Abstract type="html">An image that represents the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property UIImage *destImage</Declaration>
+			
+			
+			<Anchor>//api/name/destImage</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/destImage</TokenIdentifier>
+			<Abstract type="html">An image that represents the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property UIImage *destImage</Declaration>
+			
+			
+			<Anchor>//api/name/destImage</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/destImage</TokenIdentifier>
+			<Abstract type="html">An image that represents the destination</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property UIImage *destImage</Declaration>
+			
+			
+			<Anchor>//api/name/destImage</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/setDate:</TokenIdentifier>
+			<Abstract type="html">The date of the paths</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property NSDate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/date</TokenIdentifier>
+			<Abstract type="html">The date of the paths</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property NSDate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVASavedPath/date</TokenIdentifier>
+			<Abstract type="html">The date of the paths</Abstract>
+			<DeclaredIn>MVASavedPath.h</DeclaredIn>
+			
+			<Declaration>@property NSDate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/init</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns self initialized</Abstract>
+			<DeclaredIn>MVASavedPath.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">self, initialized object</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/copy</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns a MVASavedPath copy of self</Abstract>
+			<DeclaredIn>MVASavedPath.m</DeclaredIn>
+			
+			<Declaration>- (id)copy</Declaration>
+			
+			<ReturnValue><Abstract type="html">The new MVASavedPath copied object</Abstract></ReturnValue>
+			<Anchor>//api/name/copy</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVASavedPath.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASavedPath/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVASavedPath.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="37"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

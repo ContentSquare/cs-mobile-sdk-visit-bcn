@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVADataBus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVADataBus</TokenIdentifier>
+			<Abstract type="html">This class englobes all the data of the bus network.</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setBusStops:</TokenIdentifier>
+			<Abstract type="html">The stops of the bus network</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *busStops</Declaration>
+			
+			
+			<Anchor>//api/name/busStops</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/busStops</TokenIdentifier>
+			<Abstract type="html">The stops of the bus network</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *busStops</Declaration>
+			
+			
+			<Anchor>//api/name/busStops</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/busStops</TokenIdentifier>
+			<Abstract type="html">The stops of the bus network</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *busStops</Declaration>
+			
+			
+			<Anchor>//api/name/busStops</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setBusHash:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the stopIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *busHash</Declaration>
+			
+			
+			<Anchor>//api/name/busHash</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/busHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the stopIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *busHash</Declaration>
+			
+			
+			<Anchor>//api/name/busHash</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/busHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the stopIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *busHash</Declaration>
+			
+			
+			<Anchor>//api/name/busHash</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setBusRoutes:</TokenIdentifier>
+			<Abstract type="html">The routes that operate in the bus network</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *busRoutes</Declaration>
+			
+			
+			<Anchor>//api/name/busRoutes</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/busRoutes</TokenIdentifier>
+			<Abstract type="html">The routes that operate in the bus network</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *busRoutes</Declaration>
+			
+			
+			<Anchor>//api/name/busRoutes</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/busRoutes</TokenIdentifier>
+			<Abstract type="html">The routes that operate in the bus network</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *busRoutes</Declaration>
+			
+			
+			<Anchor>//api/name/busRoutes</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setBusRoutesHash:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the routeIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *busRoutesHash</Declaration>
+			
+			
+			<Anchor>//api/name/busRoutesHash</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/busRoutesHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the routeIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *busRoutesHash</Declaration>
+			
+			
+			<Anchor>//api/name/busRoutesHash</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/busRoutesHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the routeIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *busRoutesHash</Declaration>
+			
+			
+			<Anchor>//api/name/busRoutesHash</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setTripsIda:</TokenIdentifier>
+			<Abstract type="html">The trips in the &apos;forward&apos; direction</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *tripsIda</Declaration>
+			
+			
+			<Anchor>//api/name/tripsIda</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/tripsIda</TokenIdentifier>
+			<Abstract type="html">The trips in the &apos;forward&apos; direction</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *tripsIda</Declaration>
+			
+			
+			<Anchor>//api/name/tripsIda</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/tripsIda</TokenIdentifier>
+			<Abstract type="html">The trips in the &apos;forward&apos; direction</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *tripsIda</Declaration>
+			
+			
+			<Anchor>//api/name/tripsIda</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setTripsHashIda:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the &apos;tripsIda&apos; and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHashIda</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHashIda</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/tripsHashIda</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the &apos;tripsIda&apos; and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHashIda</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHashIda</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/tripsHashIda</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the &apos;tripsIda&apos; and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHashIda</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHashIda</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setTripsVuelta:</TokenIdentifier>
+			<Abstract type="html">The trips in the&apos;backward&apos; direction</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *tripsVuelta</Declaration>
+			
+			
+			<Anchor>//api/name/tripsVuelta</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/tripsVuelta</TokenIdentifier>
+			<Abstract type="html">The trips in the&apos;backward&apos; direction</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *tripsVuelta</Declaration>
+			
+			
+			<Anchor>//api/name/tripsVuelta</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/tripsVuelta</TokenIdentifier>
+			<Abstract type="html">The trips in the&apos;backward&apos; direction</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *tripsVuelta</Declaration>
+			
+			
+			<Anchor>//api/name/tripsVuelta</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setTripsHashVuelta:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the &apos;tripsVuelta&apos; and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHashVuelta</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHashVuelta</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/tripsHashVuelta</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the &apos;tripsVuelta&apos; and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHashVuelta</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHashVuelta</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/tripsHashVuelta</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the &apos;tripsVuelta&apos; and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHashVuelta</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHashVuelta</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setFrequencies:</TokenIdentifier>
+			<Abstract type="html">The frequencies of all the bus routes and directions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *frequencies</Declaration>
+			
+			
+			<Anchor>//api/name/frequencies</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/frequencies</TokenIdentifier>
+			<Abstract type="html">The frequencies of all the bus routes and directions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *frequencies</Declaration>
+			
+			
+			<Anchor>//api/name/frequencies</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/frequencies</TokenIdentifier>
+			<Abstract type="html">The frequencies of all the bus routes and directions</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAFrequencies</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *frequencies</Declaration>
+			
+			
+			<Anchor>//api/name/frequencies</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/parseDataBase</TokenIdentifier>
+			<Abstract type="html">This function initiates the parsing of the bus data</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>- (void)parseDataBase</Declaration>
+			
+			
+			<Anchor>//api/name/parseDataBase</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/frequencieForStop:andTime:andCalendar:</TokenIdentifier>
+			<Abstract type="html">This function is used as a query to retrieve the frequency for a given stop, time and calendar</Abstract>
+			<DeclaredIn>MVADataBus.h</DeclaredIn>
+			
+			<Declaration>- (double)frequencieForStop:(MVAStop *)stop andTime:(double)currentTime andCalendar:(NSString *)serviceID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>stop</Name>
+					<Abstract type="html">The bus stop that performs the query</Abstract>
+				</Parameter><Parameter>
+					<Name>currentTime</Name>
+					<Abstract type="html">The time for which the query is performed</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceID</Name>
+					<Abstract type="html">The identifier of the service that operates in that stop at that moment</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The frequency in seconds (double)</Abstract></ReturnValue>
+			<Anchor>//api/name/frequencieForStop:andTime:andCalendar:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/timeToInt:</TokenIdentifier>
+			<Abstract type="html">Returns an integer with the time given respresented in seconds</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (int)timeToInt:(NSString *)time</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>time</Name>
+					<Abstract type="html">The time ins NSString</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The integer with the time in seconds</Abstract></ReturnValue>
+			<Anchor>//api/name/timeToInt:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/distanceForCoordinates:andCoordinates:</TokenIdentifier>
+			<Abstract type="html">Haversine distance between two coordinates</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cordA</Name>
+					<Abstract type="html">The first coordinate</Abstract>
+				</Parameter><Parameter>
+					<Name>cordB</Name>
+					<Abstract type="html">The second coordinate</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The distance in meters</Abstract></ReturnValue>
+			<Anchor>//api/name/distanceForCoordinates:andCoordinates:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/loadRain</TokenIdentifier>
+			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)loadRain</Declaration>
+			
+			<ReturnValue><Abstract type="html">&lt;#return value description#&gt;</Abstract></ReturnValue>
+			<Anchor>//api/name/loadRain</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/parserDidBeginDocument:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has begun a new document</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (void)parserDidBeginDocument:(CHCSVParser *)parser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parserDidBeginDocument:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/parser:didBeginLine:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has begun a new line of the document</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didBeginLine:(NSUInteger)recordNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>recordNumber</Name>
+					<Abstract type="html">The number of the line being parsed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didBeginLine:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/parser:didReadField:atIndex:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has read a new field of the current line</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didReadField:(NSString *)field atIndex:(NSInteger)fieldIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>field</Name>
+					<Abstract type="html">The field that has been read</Abstract>
+				</Parameter><Parameter>
+					<Name>fieldIndex</Name>
+					<Abstract type="html">The index of this field in the line</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didReadField:atIndex:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/parser:didEndLine:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the aprser has finished reading a line</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didEndLine:(NSUInteger)recordNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>recordNumber</Name>
+					<Abstract type="html">The number of the line dad has been parsed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didEndLine:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/parserDidEndDocument:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has finished parsing a document</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (void)parserDidEndDocument:(CHCSVParser *)parser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parserDidEndDocument:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/parser:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates that an error ocurred while parsing the document</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didFailWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The NSError indicating why the parsing ahs failed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didFailWithError:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

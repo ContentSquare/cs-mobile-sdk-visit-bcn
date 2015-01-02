@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVACustomLocationsTableViewController+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVACustomLocationsTableViewController()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+            
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/setCustomLocations:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *customLocations</Declaration>
+			
+			
+			<Anchor>//api/name/customLocations</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/customLocations</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *customLocations</Declaration>
+			
+			
+			<Anchor>//api/name/customLocations</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocationsTableViewController/customLocations</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *customLocations</Declaration>
+			
+			
+			<Anchor>//api/name/customLocations</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/setCustomName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSString *customName</Declaration>
+			
+			
+			<Anchor>//api/name/customName</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/customName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSString *customName</Declaration>
+			
+			
+			<Anchor>//api/name/customName</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocationsTableViewController/customName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSString *customName</Declaration>
+			
+			
+			<Anchor>//api/name/customName</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/setCustomImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIImage *customImage</Declaration>
+			
+			
+			<Anchor>//api/name/customImage</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/customImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIImage *customImage</Declaration>
+			
+			
+			<Anchor>//api/name/customImage</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocationsTableViewController/customImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIImage *customImage</Declaration>
+			
+			
+			<Anchor>//api/name/customImage</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/setDestLoc:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVACustomLocation *destLoc</Declaration>
+			
+			
+			<Anchor>//api/name/destLoc</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/destLoc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVACustomLocation *destLoc</Declaration>
+			
+			
+			<Anchor>//api/name/destLoc</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocationsTableViewController/destLoc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVACustomLocation *destLoc</Declaration>
+			
+			
+			<Anchor>//api/name/destLoc</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/setTextField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UITextField *textField</Declaration>
+			
+			
+			<Anchor>//api/name/textField</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/textField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UITextField *textField</Declaration>
+			
+			
+			<Anchor>//api/name/textField</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACustomLocationsTableViewController/textField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>@property UITextField *textField</Declaration>
+			
+			
+			<Anchor>//api/name/textField</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

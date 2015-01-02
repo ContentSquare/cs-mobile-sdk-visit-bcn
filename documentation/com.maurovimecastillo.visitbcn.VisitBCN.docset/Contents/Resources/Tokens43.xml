@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVASubwayGraph.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVASubwayGraph</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of the MVAGraph class</Abstract>
+			<DeclaredIn>MVASubwayGraph.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAGraph</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="43"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASubwayGraph/createSubwayGraphWithDBTMB:andFGC:</TokenIdentifier>
+			<Abstract type="html">This function creates the subway graph</Abstract>
+			<DeclaredIn>MVASubwayGraph.h</DeclaredIn>
+			
+			<Declaration>- (void)createSubwayGraphWithDBTMB:(MVADataTMB *)dataTMB andFGC:(MVADataFGC *)dataFGC</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataTMB</Name>
+					<Abstract type="html">An object with the TMB data base</Abstract>
+				</Parameter><Parameter>
+					<Name>dataFGC</Name>
+					<Abstract type="html">An object with the FGC data base</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createSubwayGraphWithDBTMB:andFGC:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASubwayGraph/customDate</TokenIdentifier>
+			<Abstract type="html">This function loads if the user has selected a custom date</Abstract>
+			<DeclaredIn>MVASubwayGraph.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)customDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">A boolean</Abstract></ReturnValue>
+			<Anchor>//api/name/customDate</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVASubwayGraph/loadCustomDate</TokenIdentifier>
+			<Abstract type="html">This function loads either the custom date chosen by the user or the current date of the device</Abstract>
+			<DeclaredIn>MVASubwayGraph.m</DeclaredIn>
+			
+			<Declaration>- (NSDate *)loadCustomDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSDate object</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomDate</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVADataFGC+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVADataFGC()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+            
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setParada:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVAStop *parada</Declaration>
+			
+			
+			<Anchor>//api/name/parada</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/parada</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVAStop *parada</Declaration>
+			
+			
+			<Anchor>//api/name/parada</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/parada</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVAStop *parada</Declaration>
+			
+			
+			<Anchor>//api/name/parada</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setRoute:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVARoute *route</Declaration>
+			
+			
+			<Anchor>//api/name/route</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/route</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVARoute *route</Declaration>
+			
+			
+			<Anchor>//api/name/route</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/route</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVARoute *route</Declaration>
+			
+			
+			<Anchor>//api/name/route</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setTrip:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVATrip *trip</Declaration>
+			
+			
+			<Anchor>//api/name/trip</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/trip</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVATrip *trip</Declaration>
+			
+			
+			<Anchor>//api/name/trip</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/trip</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVATrip *trip</Declaration>
+			
+			
+			<Anchor>//api/name/trip</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setDate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVADate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/date</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVADate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/date</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVADate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVATime *time</Declaration>
+			
+			
+			<Anchor>//api/name/time</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/time</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVATime *time</Declaration>
+			
+			
+			<Anchor>//api/name/time</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/time</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property MVATime *time</Declaration>
+			
+			
+			<Anchor>//api/name/time</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setFilePathFGC:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property NSString *filePathFGC</Declaration>
+			
+			
+			<Anchor>//api/name/filePathFGC</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/filePathFGC</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property NSString *filePathFGC</Declaration>
+			
+			
+			<Anchor>//api/name/filePathFGC</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/filePathFGC</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property NSString *filePathFGC</Declaration>
+			
+			
+			<Anchor>//api/name/filePathFGC</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setOutputPathFGC:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property NSString *outputPathFGC</Declaration>
+			
+			
+			<Anchor>//api/name/outputPathFGC</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/outputPathFGC</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property NSString *outputPathFGC</Declaration>
+			
+			
+			<Anchor>//api/name/outputPathFGC</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/outputPathFGC</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property NSString *outputPathFGC</Declaration>
+			
+			
+			<Anchor>//api/name/outputPathFGC</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setDocName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property NSString *docName</Declaration>
+			
+			
+			<Anchor>//api/name/docName</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/docName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property NSString *docName</Declaration>
+			
+			
+			<Anchor>//api/name/docName</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/docName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property NSString *docName</Declaration>
+			
+			
+			<Anchor>//api/name/docName</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setLine:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property int line</Declaration>
+			
+			
+			<Anchor>//api/name/line</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/line</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property int line</Declaration>
+			
+			
+			<Anchor>//api/name/line</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/line</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>@property int line</Declaration>
+			
+			
+			<Anchor>//api/name/line</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

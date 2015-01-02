@@ -7,7 +7,7 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of UIViewController and is used to display the details of the paths.
  *
  *  @since version 1.0
  */
@@ -17,74 +17,88 @@
 #import "MVAPunInt.h"
 #import <CoreLocation/CoreLocation.h>
 #import "MVAGraphs.h"
+#import "MVACustomLocation.h"
 
 @interface MVADetailsViewController : UIViewController
 
 /**
- *  <#Description#>
+ *  The point to be displayed and that will be used to calculate the itineraries.
  *
+ *  @see MVAPunInt class
  *  @since version 1.0
  */
 @property MVAPunInt *punto;
 
+
 /**
- *  <#Description#>
+ *  A custom location selected by the user. The default value is nil.
+ *
+ *  @see MVACustomLocation class
+ *  @since version 1.0
+ */
+@property MVACustomLocation *customlocation;
+
+/**
+ *  The origin's coordinates.
  *
  *  @since version 1.0
  */
 @property CLLocationCoordinate2D orig;
 
 /**
- *  <#Description#>
+ *  A MVAPath object that contains the subway path
  *
+ *  @see MVAPath class
  *  @since version 1.0
  */
 @property MVAPath *subwayPath;
 
 /**
- *  <#Description#>
+ *  A MVAPath object that contains the bus path
  *
+ *  @see MVAPath class
  *  @since version 1.0
  */
 @property MVAPath *busPath;
 
 /**
- *  <#Description#>
+ *  The graphs that will be used to compute the subway and bus paths.
  *
+ *  @see MVAGraphs class
  *  @since version 1.0
  */
 @property MVAGraphs *graphs;
 
 /**
- *  <#Description#>
+ *  The distance walking distance from the origin to the destination
  *
  *  @since version 1.0
  */
 @property double walkDist;
 
 /**
- *  <#Description#>
+ *  The time needed to walk from the origin to the destination
  *
  *  @since version 1.0
  */
 @property double walkTime;
 
 /**
- *  <#Description#>
+ *  The distance in car from the origin to the destination
  *
  *  @since version 1.0
  */
 @property double carDist;
 
 /**
- *  <#Description#>
+ *  The travel time in car from the origin to the destination
  *
  *  @since version 1.0
  */
 @property double carTime;
 
 /**
- *  <#Description#>
+ *  The initial time of the paths in seconds
  *
  *  @since version 1.0
  */

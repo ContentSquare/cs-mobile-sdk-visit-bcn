@@ -17,12 +17,12 @@
 @implementation MVAConfigTableViewCell
 
 /**
- *  <#Description#>
+ *  Function that gets called to initialize the cell with a style and an identifier
  *
- *  @param style           <#style description#>
- *  @param reuseIdentifier <#reuseIdentifier description#>
+ *  @param style           The cell style
+ *  @param reuseIdentifier The identifier
  *
- *  @return <#return value description#>
+ *  @return The initialized cell
  *
  *  @since version 1.0
  */
@@ -34,6 +34,11 @@
     return self;
 }
 
+/**
+ *  Function that gets called to initialize the cell
+ *
+ *  @since version 1.0
+ */
 -(void)configSwitch
 {
     int alg = 0;
@@ -43,8 +48,8 @@
     if(data == nil){
         if ([self.objectName isEqualToString:@"VisitBCNRain"]) [defaults setInteger:0 forKey:self.objectName];
         else {
-            [defaults setInteger:1 forKey:self.objectName];
-            alg = 1;
+            [defaults setInteger:0 forKey:self.objectName];
+            alg = 0;
         }
     }
     else {
@@ -101,9 +106,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user changes the switch value
  *
- *  @param sender <#sender description#>
+ *  @param sender The SevenSwitch object
  *
  *  @since version 1.0
  */
@@ -128,9 +133,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function used to save the switch value
  *
- *  @param alarmaPermitida <#alarmaPermitida description#>
+ *  @param alarmaPermitida The switch value passed as a bool
  *
  *  @since version 1.0
  */

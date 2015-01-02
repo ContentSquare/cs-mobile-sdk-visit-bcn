@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAAppDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAAppDelegate</TokenIdentifier>
+			<Abstract type="html">App&apos;s delegate.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setWindow:</TokenIdentifier>
+			<Abstract type="html">The window object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/window</TokenIdentifier>
+			<Abstract type="html">The window object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/window</TokenIdentifier>
+			<Abstract type="html">The window object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setDataTMB:</TokenIdentifier>
+			<Abstract type="html">The TMB subway data base object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVADataTMB *dataTMB</Declaration>
+			
+			
+			<Anchor>//api/name/dataTMB</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/dataTMB</TokenIdentifier>
+			<Abstract type="html">The TMB subway data base object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVADataTMB *dataTMB</Declaration>
+			
+			
+			<Anchor>//api/name/dataTMB</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/dataTMB</TokenIdentifier>
+			<Abstract type="html">The TMB subway data base object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVADataTMB *dataTMB</Declaration>
+			
+			
+			<Anchor>//api/name/dataTMB</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setDataFGC:</TokenIdentifier>
+			<Abstract type="html">The FGC data base object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVADataFGC *dataFGC</Declaration>
+			
+			
+			<Anchor>//api/name/dataFGC</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/dataFGC</TokenIdentifier>
+			<Abstract type="html">The FGC data base object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVADataFGC *dataFGC</Declaration>
+			
+			
+			<Anchor>//api/name/dataFGC</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/dataFGC</TokenIdentifier>
+			<Abstract type="html">The FGC data base object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVADataFGC *dataFGC</Declaration>
+			
+			
+			<Anchor>//api/name/dataFGC</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setDataBus:</TokenIdentifier>
+			<Abstract type="html">The bus datat abse object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVADataBus *dataBus</Declaration>
+			
+			
+			<Anchor>//api/name/dataBus</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/dataBus</TokenIdentifier>
+			<Abstract type="html">The bus datat abse object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVADataBus *dataBus</Declaration>
+			
+			
+			<Anchor>//api/name/dataBus</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/dataBus</TokenIdentifier>
+			<Abstract type="html">The bus datat abse object.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVADataBus *dataBus</Declaration>
+			
+			
+			<Anchor>//api/name/dataBus</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setPuntos:</TokenIdentifier>
+			<Abstract type="html">The array that will contain the Barcelona landmarks.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *puntos</Declaration>
+			
+			
+			<Anchor>//api/name/puntos</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/puntos</TokenIdentifier>
+			<Abstract type="html">The array that will contain the Barcelona landmarks.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *puntos</Declaration>
+			
+			
+			<Anchor>//api/name/puntos</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/puntos</TokenIdentifier>
+			<Abstract type="html">The array that will contain the Barcelona landmarks.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *puntos</Declaration>
+			
+			
+			<Anchor>//api/name/puntos</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setLocationManager:</TokenIdentifier>
+			<Abstract type="html">The location manager object that will control the location notifications.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/locationManager</TokenIdentifier>
+			<Abstract type="html">The location manager object that will control the location notifications.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/locationManager</TokenIdentifier>
+			<Abstract type="html">The location manager object that will control the location notifications.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setCoordinates:</TokenIdentifier>
+			<Abstract type="html">The last coordinates detected for this device.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/coordinates</TokenIdentifier>
+			<Abstract type="html">The last coordinates detected for this device.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/coordinates</TokenIdentifier>
+			<Abstract type="html">The last coordinates detected for this device.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setDegrees:</TokenIdentifier>
+			<Abstract type="html">The degrees of the device&apos;s heading.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat degrees</Declaration>
+			
+			
+			<Anchor>//api/name/degrees</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/degrees</TokenIdentifier>
+			<Abstract type="html">The degrees of the device&apos;s heading.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat degrees</Declaration>
+			
+			
+			<Anchor>//api/name/degrees</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/degrees</TokenIdentifier>
+			<Abstract type="html">The degrees of the device&apos;s heading.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property CGFloat degrees</Declaration>
+			
+			
+			<Anchor>//api/name/degrees</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setTable:</TokenIdentifier>
+			<Abstract type="html">This property is used to handle the interaction between this delegate and the landmarks view controller.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVAPuntsIntsTableViewController *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/table</TokenIdentifier>
+			<Abstract type="html">This property is used to handle the interaction between this delegate and the landmarks view controller.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVAPuntsIntsTableViewController *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/table</TokenIdentifier>
+			<Abstract type="html">This property is used to handle the interaction between this delegate and the landmarks view controller.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVAPuntsIntsTableViewController *table</Declaration>
+			
+			
+			<Anchor>//api/name/table</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/setCustom:</TokenIdentifier>
+			<Abstract type="html">This property is used to handle the interaction between this delegate and the custom locations view controller.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVACustomLocationsTableViewController *custom</Declaration>
+			
+			
+			<Anchor>//api/name/custom</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/custom</TokenIdentifier>
+			<Abstract type="html">This property is used to handle the interaction between this delegate and the custom locations view controller.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVACustomLocationsTableViewController *custom</Declaration>
+			
+			
+			<Anchor>//api/name/custom</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAppDelegate/custom</TokenIdentifier>
+			<Abstract type="html">This property is used to handle the interaction between this delegate and the custom locations view controller.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property MVACustomLocationsTableViewController *custom</Declaration>
+			
+			
+			<Anchor>//api/name/custom</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/loadAllTheInformation</TokenIdentifier>
+			<Abstract type="html">Function that loads all the information needed by the app.</Abstract>
+			<DeclaredIn>MVAAppDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)loadAllTheInformation</Declaration>
+			
+			
+			<Anchor>//api/name/loadAllTheInformation</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/application:didFinishLaunchingWithOptions:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the launch process is almost done and the app is almost ready to run.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">The singleton app object.</Abstract>
+				</Parameter><Parameter>
+					<Name>launchOptions</Name>
+					<Abstract type="html">A dictionary indicating the reason the app was launched (if any). The contents of this dictionary may be empty in situations where the user launched the app directly. For information about the possible keys in this dictionary and how to handle them, see Launch Options Keys.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">NO if the app cannot handle the URL resource or continue a user activity, otherwise return YES. The return value is ignored if the app is launched as a result of a remote notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/application:didFinishLaunchingWithOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/application:didRegisterForRemoteNotificationsWithDeviceToken:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the app successfully registered with Apple Push Service (APS).</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">The app object that initiated the remote-notification registration process.</Abstract>
+				</Parameter><Parameter>
+					<Name>deviceToken</Name>
+					<Abstract type="html">A token that identifies the device to APS. The token is an opaque data type because that is the form that the provider needs to submit to the APS servers when it sends a notification to a device. The APS servers require a binary format for performance reasons. The size of a device token is 32 bytes. Note that the device token is different from the uniqueIdentifier property of UIDevice because, for security and privacy reasons, it must change when the device is wiped.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/application:didRegisterForRemoteNotificationsWithDeviceToken:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/application:didReceiveRemoteNotification:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the running app received a remote notification.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">The app object that received the remote notification.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an NSDictionary object; the dictionary may contain only property-list objects plus NSNull.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/application:didReceiveRemoteNotification:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/applicationWillResignActive:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the app is about to become inactive.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationWillResignActive:(UIApplication *)application</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">The singleton app object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applicationWillResignActive:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/applicationDidEnterBackground:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the app is now in the background.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationDidEnterBackground:(UIApplication *)application</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">The singleton app object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applicationDidEnterBackground:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/applicationWillEnterForeground:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the app is about to enter the foreground.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationWillEnterForeground:(UIApplication *)application</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">The singleton app object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applicationWillEnterForeground:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/applicationDidBecomeActive:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the app has become active.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationDidBecomeActive:(UIApplication *)application</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">The singleton app object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applicationDidBecomeActive:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/applicationWillTerminate:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate when the app is about to terminate.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)applicationWillTerminate:(UIApplication *)application</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">The singleton app object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applicationWillTerminate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/loadPI</TokenIdentifier>
+			<Abstract type="html">Function that loads all the landmarks.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)loadPI</Declaration>
+			
+			
+			<Anchor>//api/name/loadPI</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/loadTMB</TokenIdentifier>
+			<Abstract type="html">Function that loads the subway TMB data abse.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)loadTMB</Declaration>
+			
+			
+			<Anchor>//api/name/loadTMB</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/loadFGC</TokenIdentifier>
+			<Abstract type="html">Function that loads the FGC data base.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)loadFGC</Declaration>
+			
+			
+			<Anchor>//api/name/loadFGC</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/loadBuses</TokenIdentifier>
+			<Abstract type="html">Function that loads the bus data base.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)loadBuses</Declaration>
+			
+			
+			<Anchor>//api/name/loadBuses</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/hasGPS</TokenIdentifier>
+			<Abstract type="html">Function that checks if the device has GPS connection.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)hasGPS</Declaration>
+			
+			<ReturnValue><Abstract type="html">A bool that answers the query.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasGPS</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/locationManager:didUpdateLocations:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that new location data is available.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager object that generated the update event.</Abstract>
+				</Parameter><Parameter>
+					<Name>locations</Name>
+					<Abstract type="html">An array of CLLocation objects containing the location data. This array always contains at least one object representing the current location. If updates were deferred or if multiple locations arrived before they could be delivered, the array may contain additional entries. The objects in the array are organized in the order in which they occurred. Therefore, the most recent location update is at the end of the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/locationManager:didUpdateLocations:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/locationManager:didChangeAuthorizationStatus:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the authorization status for the application changed.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager object reporting the event.</Abstract>
+				</Parameter><Parameter>
+					<Name>status</Name>
+					<Abstract type="html">The new authorization status for the application.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/locationManager:didChangeAuthorizationStatus:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/locationManager:didUpdateHeading:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the location manager received updated heading information.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager object that generated the update event.</Abstract>
+				</Parameter><Parameter>
+					<Name>newHeading</Name>
+					<Abstract type="html">The new heading data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/locationManager:didUpdateHeading:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/locationManagerShouldDisplayHeadingCalibration:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate whether the heading calibration alert should be displayed.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager object coordinating the display of the heading calibration alert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if you want to allow the heading calibration alert to be displayed; NO if you do not.</Abstract></ReturnValue>
+			<Anchor>//api/name/locationManagerShouldDisplayHeadingCalibration:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAppDelegate/locationManager:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the location manager was unable to retrieve a location value.</Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+			
+			<Declaration>- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager object that was unable to retrieve the location.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error object containing the reason the location or heading could not be retrieved.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/locationManager:didFailWithError:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -24,9 +24,9 @@
 
 /**
  *  The identifier of the service
+ *
  *  @see MVACalendar class
  *  @see MVATrip class
- *
  *  @since version 1.0
  */
 @property NSString *serviceID;

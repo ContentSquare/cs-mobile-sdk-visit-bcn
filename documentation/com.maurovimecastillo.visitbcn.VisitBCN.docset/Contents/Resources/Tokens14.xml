@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVADataFGC.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVADataFGC</TokenIdentifier>
+			<Abstract type="html">This class englobes all the data of the FGC subway network.</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setDates:</TokenIdentifier>
+			<Abstract type="html">Array that contains al the dates of the FGC calendar</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *dates</Declaration>
+			
+			
+			<Anchor>//api/name/dates</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/dates</TokenIdentifier>
+			<Abstract type="html">Array that contains al the dates of the FGC calendar</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *dates</Declaration>
+			
+			
+			<Anchor>//api/name/dates</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/dates</TokenIdentifier>
+			<Abstract type="html">Array that contains al the dates of the FGC calendar</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *dates</Declaration>
+			
+			
+			<Anchor>//api/name/dates</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setServices:</TokenIdentifier>
+			<Abstract type="html">Array that contains the service of the FGC routes</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *services</Declaration>
+			
+			
+			<Anchor>//api/name/services</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/services</TokenIdentifier>
+			<Abstract type="html">Array that contains the service of the FGC routes</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *services</Declaration>
+			
+			
+			<Anchor>//api/name/services</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/services</TokenIdentifier>
+			<Abstract type="html">Array that contains the service of the FGC routes</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *services</Declaration>
+			
+			
+			<Anchor>//api/name/services</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setStops:</TokenIdentifier>
+			<Abstract type="html">Stops of the FGC subway network</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *stops</Declaration>
+			
+			
+			<Anchor>//api/name/stops</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/stops</TokenIdentifier>
+			<Abstract type="html">Stops of the FGC subway network</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *stops</Declaration>
+			
+			
+			<Anchor>//api/name/stops</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/stops</TokenIdentifier>
+			<Abstract type="html">Stops of the FGC subway network</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *stops</Declaration>
+			
+			
+			<Anchor>//api/name/stops</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setStopsHash:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the stopIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *stopsHash</Declaration>
+			
+			
+			<Anchor>//api/name/stopsHash</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/stopsHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the stopIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *stopsHash</Declaration>
+			
+			
+			<Anchor>//api/name/stopsHash</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/stopsHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the stopIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *stopsHash</Declaration>
+			
+			
+			<Anchor>//api/name/stopsHash</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setRoutes:</TokenIdentifier>
+			<Abstract type="html">Routes of the FGC subway network</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *routes</Declaration>
+			
+			
+			<Anchor>//api/name/routes</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/routes</TokenIdentifier>
+			<Abstract type="html">Routes of the FGC subway network</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *routes</Declaration>
+			
+			
+			<Anchor>//api/name/routes</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/routes</TokenIdentifier>
+			<Abstract type="html">Routes of the FGC subway network</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVARoute</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *routes</Declaration>
+			
+			
+			<Anchor>//api/name/routes</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setRoutesHash:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the routeIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *routesHash</Declaration>
+			
+			
+			<Anchor>//api/name/routesHash</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/routesHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the routeIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *routesHash</Declaration>
+			
+			
+			<Anchor>//api/name/routesHash</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/routesHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the routeIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *routesHash</Declaration>
+			
+			
+			<Anchor>//api/name/routesHash</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setTrips:</TokenIdentifier>
+			<Abstract type="html">Trips of the FGC subway network</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *trips</Declaration>
+			
+			
+			<Anchor>//api/name/trips</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/trips</TokenIdentifier>
+			<Abstract type="html">Trips of the FGC subway network</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *trips</Declaration>
+			
+			
+			<Anchor>//api/name/trips</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/trips</TokenIdentifier>
+			<Abstract type="html">Trips of the FGC subway network</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *trips</Declaration>
+			
+			
+			<Anchor>//api/name/trips</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/setTripsHash:</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the tripIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHash</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHash</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/tripsHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the tripIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHash</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHash</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataFGC/tripsHash</TokenIdentifier>
+			<Abstract type="html">This hash table is used to index the tripIDs and make more efficient the algorithm executions</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableDictionary *tripsHash</Declaration>
+			
+			
+			<Anchor>//api/name/tripsHash</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/parseDataBase</TokenIdentifier>
+			<Abstract type="html">This function initiates the parsing of the FGC data</Abstract>
+			<DeclaredIn>MVADataFGC.h</DeclaredIn>
+			
+			<Declaration>- (void)parseDataBase</Declaration>
+			
+			
+			<Anchor>//api/name/parseDataBase</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/init</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns self initialized</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">self, initialized object</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/unZip:at:</TokenIdentifier>
+			<Abstract type="html">Function that extracts the ziped folder</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (void)unZip:(NSString *)filePath at:(NSString *)folder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">The path of the zip file</Abstract>
+				</Parameter><Parameter>
+					<Name>folder</Name>
+					<Abstract type="html">The name of the folder where the extracted data should be stored</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unZip:at:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/parseGTFSAtPath:</TokenIdentifier>
+			<Abstract type="html">This function parses the files at a given path</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (void)parseGTFSAtPath:(NSString *)filesPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filesPath</Name>
+					<Abstract type="html">The path of the files that need to be parsed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parseGTFSAtPath:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/parserDidBeginDocument:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has begun a new document</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (void)parserDidBeginDocument:(CHCSVParser *)parser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parserDidBeginDocument:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/parser:didBeginLine:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has begun a new line of the document</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didBeginLine:(NSUInteger)recordNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>recordNumber</Name>
+					<Abstract type="html">The number of the line being parsed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didBeginLine:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/parser:didReadField:atIndex:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has read a new field of the current line</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didReadField:(NSString *)field atIndex:(NSInteger)fieldIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>field</Name>
+					<Abstract type="html">The field that has been read</Abstract>
+				</Parameter><Parameter>
+					<Name>fieldIndex</Name>
+					<Abstract type="html">The index of this field in the line</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didReadField:atIndex:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/parser:didEndLine:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the aprser has finished reading a line</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didEndLine:(NSUInteger)recordNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>recordNumber</Name>
+					<Abstract type="html">The number of the line dad has been parsed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didEndLine:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/parserDidEndDocument:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates when the parser has finished parsing a document</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (void)parserDidEndDocument:(CHCSVParser *)parser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parserDidEndDocument:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/parser:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">CHCSVParserDelegate method. Indicates that an error ocurred while parsing the document</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (void)parser:(CHCSVParser *)parser didFailWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parser</Name>
+					<Abstract type="html">A CHCSVParser object</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The NSError indicating why the parsing ahs failed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parser:didFailWithError:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/dayOfWeek:</TokenIdentifier>
+			<Abstract type="html">Returns the day of the week for a given date</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (long)dayOfWeek:(NSDate *)anyDate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>anyDate</Name>
+					<Abstract type="html">A NSDate object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The day of the week in European mode</Abstract></ReturnValue>
+			<Anchor>//api/name/dayOfWeek:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataFGC/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVADataFGC.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

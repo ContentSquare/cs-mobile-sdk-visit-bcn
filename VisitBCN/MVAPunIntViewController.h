@@ -7,7 +7,7 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of UIViewController and is used to display the information of a point.
  *
  *  @since version 1.0
  */
@@ -21,29 +21,31 @@
 @interface MVAPunIntViewController : UIViewController
 
 /**
- *  <#Description#>
+ *  The point to be displayed.
  *
+ *  @see MVAPunInt class
  *  @since version 1.0
  */
 @property MVAPunInt *punto;
 
 /**
- *  <#Description#>
+ *  The coordinates that will be used for the computations.
  *
  *  @since version 1.0
  */
 @property CLLocationCoordinate2D coordinates;
 
 /**
- *  <#Description#>
+ *  This bool is used to indicate the algorithm to stop the execution.
  *
  *  @since version 1.0
  */
 @property BOOL stop;
 
 /**
- *  <#Description#>
+ *  The custom location selected by the user, the default value is nil.
  *
+ *  @see MVACustomLocation class
  *  @since version 1.0
  */
 @property MVACustomLocation *customlocation;

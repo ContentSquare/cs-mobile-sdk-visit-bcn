@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAEdge.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAEdge</TokenIdentifier>
+			<Abstract type="html">This class represents an edge of the graph.</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAGraph</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/setDestini:</TokenIdentifier>
+			<Abstract type="html">The destination node of the edge</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVANode *destini</Declaration>
+			
+			
+			<Anchor>//api/name/destini</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/destini</TokenIdentifier>
+			<Abstract type="html">The destination node of the edge</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVANode *destini</Declaration>
+			
+			
+			<Anchor>//api/name/destini</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAEdge/destini</TokenIdentifier>
+			<Abstract type="html">The destination node of the edge</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVANode</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVANode *destini</Declaration>
+			
+			
+			<Anchor>//api/name/destini</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/setWeight:</TokenIdentifier>
+			<Abstract type="html">The weight of the edge</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+			<Declaration>@property NSNumber *weight</Declaration>
+			
+			
+			<Anchor>//api/name/weight</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/weight</TokenIdentifier>
+			<Abstract type="html">The weight of the edge</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+			<Declaration>@property NSNumber *weight</Declaration>
+			
+			
+			<Anchor>//api/name/weight</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAEdge/weight</TokenIdentifier>
+			<Abstract type="html">The weight of the edge</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+			<Declaration>@property NSNumber *weight</Declaration>
+			
+			
+			<Anchor>//api/name/weight</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/setTripID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/tripID</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAEdge/tripID</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/setChange:</TokenIdentifier>
+			<Abstract type="html">This boolean indicates if this edge is used for changing between stops</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+			<Declaration>@property BOOL change</Declaration>
+			
+			
+			<Anchor>//api/name/change</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/change</TokenIdentifier>
+			<Abstract type="html">This boolean indicates if this edge is used for changing between stops</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+			<Declaration>@property BOOL change</Declaration>
+			
+			
+			<Anchor>//api/name/change</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAEdge/change</TokenIdentifier>
+			<Abstract type="html">This boolean indicates if this edge is used for changing between stops</Abstract>
+			<DeclaredIn>MVAEdge.h</DeclaredIn>
+			
+			<Declaration>@property BOOL change</Declaration>
+			
+			
+			<Anchor>//api/name/change</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/copy</TokenIdentifier>
+			<Abstract type="html">This function is overriden from NSObject. Returns a copy of self</Abstract>
+			<DeclaredIn>MVAEdge.m</DeclaredIn>
+			
+			<Declaration>- (id)copy</Declaration>
+			
+			<ReturnValue><Abstract type="html">A MVAEdge object with the same data than the original object</Abstract></ReturnValue>
+			<Anchor>//api/name/copy</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVAEdge.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAEdge/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVAEdge.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

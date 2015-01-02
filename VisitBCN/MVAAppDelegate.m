@@ -22,20 +22,20 @@
 @implementation MVAAppDelegate
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the launch process is almost done and the app is almost ready to run.
  *
- *  @param application   <#application description#>
- *  @param launchOptions <#launchOptions description#>
+ *  @param application   The singleton app object.
+ *  @param launchOptions A dictionary indicating the reason the app was launched (if any). The contents of this dictionary may be empty in situations where the user launched the app directly. For information about the possible keys in this dictionary and how to handle them, see Launch Options Keys.
  *
- *  @return <#return value description#>
+ *  @return NO if the app cannot handle the URL resource or continue a user activity, otherwise return YES. The return value is ignored if the app is launched as a result of a remote notification.
  *
  *  @since version 1.0
  */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [Parse setApplicationId:@""
-                  clientKey:@""];
+    [Parse setApplicationId:@"NzwtEWhQpaIT9ocg0hZwxNt1d4qz871nAYX2AZQY"
+                  clientKey:@"QlTkAr6JAbSQCWcJlvuvcLSzIiq8TpezhCiHKAWP"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
@@ -58,7 +58,6 @@
     }
     [self.locationManager startUpdatingLocation];
     [self.locationManager startUpdatingHeading];
-    [self loadAllTheInformation];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     NSDictionary *attributes = @{ NSFontAttributeName: [UIFont systemFontOfSize:18],
@@ -66,16 +65,14 @@
                                   NSBackgroundColorAttributeName: [UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f]};
     [[UINavigationBar appearance] setTitleTextAttributes:attributes];
     
-    
-    
     return YES;
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the app successfully registered with Apple Push Service (APS).
  *
- *  @param application <#application description#>
- *  @param deviceToken <#deviceToken description#>
+ *  @param application The app object that initiated the remote-notification registration process.
+ *  @param deviceToken A token that identifies the device to APS. The token is an opaque data type because that is the form that the provider needs to submit to the APS servers when it sends a notification to a device. The APS servers require a binary format for performance reasons. The size of a device token is 32 bytes. Note that the device token is different from the uniqueIdentifier property of UIDevice because, for security and privacy reasons, it must change when the device is wiped.
  *
  *  @since version 1.0
  */
@@ -89,10 +86,10 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the running app received a remote notification.
  *
- *  @param application <#application description#>
- *  @param userInfo    <#userInfo description#>
+ *  @param application The app object that received the remote notification.
+ *  @param userInfo    A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an NSDictionary object; the dictionary may contain only property-list objects plus NSNull.
  *
  *  @since version 1.0
  */
@@ -102,9 +99,9 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the app is about to become inactive.
  *
- *  @param application <#application description#>
+ *  @param application The singleton app object.
  *
  *  @since version 1.0
  */
@@ -115,9 +112,9 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the app is now in the background.
  *
- *  @param application <#application description#>
+ *  @param application The singleton app object.
  *
  *  @since version 1.0
  */
@@ -128,9 +125,9 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the app is about to enter the foreground.
  *
- *  @param application <#application description#>
+ *  @param application The singleton app object.
  *
  *  @since version 1.0
  */
@@ -140,9 +137,9 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the app has become active.
  *
- *  @param application <#application description#>
+ *  @param application The singleton app object.
  *
  *  @since version 1.0
  */
@@ -152,9 +149,9 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate when the app is about to terminate.
  *
- *  @param application <#application description#>
+ *  @param application The singleton app object.
  *
  *  @since version 1.0
  */
@@ -163,11 +160,6 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-/**
- *  <#Description#>
- *
- *  @since version 1.0
- */
 -(void)loadAllTheInformation
 {
     /* BUSES */
@@ -187,7 +179,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Function that loads all the landmarks.
  *
  *  @since version 1.0
  */
@@ -227,6 +219,8 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
                 NSNumber *y = [dic objectForKey:@"squareY"];
                 punto.squareX = [x floatValue];
                 punto.squareY = [y floatValue];
+                NSNumber *o = [dic objectForKey:@"offset"];
+                punto.offset = [o floatValue];
                 [self.puntos addObject:punto];
             }
         }
@@ -244,7 +238,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the subway TMB data abse.
  *
  *  @since version 1.0
  */
@@ -264,7 +258,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the FGC data base.
  *
  *  @since version 1.0
  */
@@ -285,7 +279,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the bus data base.
  *
  *  @since version 1.0
  */
@@ -306,9 +300,9 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Function that checks if the device has GPS connection.
  *
- *  @return <#return value description#>
+ *  @return A bool that answers the query.
  *
  *  @since version 1.0
  */
@@ -324,10 +318,10 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 #pragma mark - Location delegate functions
 
 /**
- *  <#Description#>
+ *  Tells the delegate that new location data is available.
  *
- *  @param manager   <#manager description#>
- *  @param locations <#locations description#>
+ *  @param manager   The location manager object that generated the update event.
+ *  @param locations An array of CLLocation objects containing the location data. This array always contains at least one object representing the current location. If updates were deferred or if multiple locations arrived before they could be delivered, the array may contain additional entries. The objects in the array are organized in the order in which they occurred. Therefore, the most recent location update is at the end of the array.
  *
  *  @since version 1.0
  */
@@ -340,10 +334,10 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the authorization status for the application changed.
  *
- *  @param manager <#manager description#>
- *  @param status  <#status description#>
+ *  @param manager The location manager object reporting the event.
+ *  @param status  The new authorization status for the application.
  *
  *  @since version 1.0
  */
@@ -361,10 +355,10 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the location manager received updated heading information.
  *
- *  @param manager    <#manager description#>
- *  @param newHeading <#newHeading description#>
+ *  @param manager    The location manager object that generated the update event.
+ *  @param newHeading The new heading data.
  *
  *  @since version 1.0
  */
@@ -376,21 +370,91 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate whether the heading calibration alert should be displayed.
  *
- *  @param manager <#manager description#>
- *  @param error   <#error description#>
+ *  @param manager The location manager object coordinating the display of the heading calibration alert.
+ *
+ *  @return YES if you want to allow the heading calibration alert to be displayed; NO if you do not.
+ *
+ *  @since version 1.0
+ */
+- (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager
+{
+    if (self.table == nil) return NO;
+    if( manager.heading.headingAccuracy < 0 ) return YES;
+    return NO;
+}
+
+/**
+ *  Tells the delegate that the location manager was unable to retrieve a location value.
+ *
+ *  @param manager The location manager object that was unable to retrieve the location.
+ *  @param error   The error object containing the reason the location or heading could not be retrieved.
  *
  *  @since version 1.0
  */
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
     if (error.code == kCLErrorDenied) {
-        // MOSTRAR PORFAVOR ACEPTAR LOS DATOS
+        if (nil != NSClassFromString(@"UIAlertController")) {
+            //show alertcontroller
+            UIAlertController * alert=   [UIAlertController
+                                          alertControllerWithTitle:@"This app needs GPS data"
+                                          message:@"Please enable the location services for this app"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* ok = [UIAlertAction
+                                 actionWithTitle:@"Settings"
+                                 style:UIAlertActionStyleDefault
+                                 handler:^(UIAlertAction * action)
+                                 {
+                                     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+                                     //Do some thing here
+                                     [alert dismissViewControllerAnimated:YES completion:nil];
+                                     
+                                 }];
+            [alert addAction:ok]; // add action to uialertcontroller
+            [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+        }
+        else {
+            //show alertview
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"This app needs GPS data"
+                                                            message:@"Please go to the settings of your device and enable the location services for this app"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
         NSLog (@"");
     }
     else if (error.code == kCLErrorGeocodeFoundNoResult) {
-        // PROBLEMA !!!!
+        if (nil != NSClassFromString(@"UIAlertController")) {
+            //show alertcontroller
+            UIAlertController * alert=   [UIAlertController
+                                          alertControllerWithTitle:@"Ups!"
+                                          message:@"Something is not working with the location services. Try again later please!"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction* ok = [UIAlertAction
+                                 actionWithTitle:@"OK"
+                                 style:UIAlertActionStyleDefault
+                                 handler:^(UIAlertAction * action)
+                                 {
+                                     //Do some thing here
+                                     [alert dismissViewControllerAnimated:YES completion:nil];
+                                     
+                                 }];
+            [alert addAction:ok]; // add action to uialertcontroller
+            [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+        }
+        else {
+            //show alertview
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ups!"
+                                                            message:@"Something is not working with the location services. Try again later please!"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
         NSLog (@"");
     }
 }

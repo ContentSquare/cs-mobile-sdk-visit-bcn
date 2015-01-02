@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAAlgorithms+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAAlgorithms()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+            
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setPiCoord:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D piCoord</Declaration>
+			
+			
+			<Anchor>//api/name/piCoord</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/piCoord</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D piCoord</Declaration>
+			
+			
+			<Anchor>//api/name/piCoord</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/piCoord</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D piCoord</Declaration>
+			
+			
+			<Anchor>//api/name/piCoord</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setNextTMBCalendar:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property MVACalendar *nextTMBCalendar</Declaration>
+			
+			
+			<Anchor>//api/name/nextTMBCalendar</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/nextTMBCalendar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property MVACalendar *nextTMBCalendar</Declaration>
+			
+			
+			<Anchor>//api/name/nextTMBCalendar</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/nextTMBCalendar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property MVACalendar *nextTMBCalendar</Declaration>
+			
+			
+			<Anchor>//api/name/nextTMBCalendar</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setCurrentCal:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property MVACalendar *currentCal</Declaration>
+			
+			
+			<Anchor>//api/name/currentCal</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/currentCal</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property MVACalendar *currentCal</Declaration>
+			
+			
+			<Anchor>//api/name/currentCal</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/currentCal</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property MVACalendar *currentCal</Declaration>
+			
+			
+			<Anchor>//api/name/currentCal</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

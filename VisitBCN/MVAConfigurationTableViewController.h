@@ -7,7 +7,7 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of UITableViewController and is used to display all the configurations available in the app.
  *
  *  @since version 1.0
  */

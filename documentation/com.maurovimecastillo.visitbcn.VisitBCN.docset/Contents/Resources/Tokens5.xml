@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVACalendar.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+			<Abstract type="html">This class represents a calendar.</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/setServiceID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the service</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *serviceID</Declaration>
+			
+			
+			<Anchor>//api/name/serviceID</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/serviceID</TokenIdentifier>
+			<Abstract type="html">The identifier of the service</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *serviceID</Declaration>
+			
+			
+			<Anchor>//api/name/serviceID</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACalendar/serviceID</TokenIdentifier>
+			<Abstract type="html">The identifier of the service</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *serviceID</Declaration>
+			
+			
+			<Anchor>//api/name/serviceID</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/setDays:</TokenIdentifier>
+			<Abstract type="html">The days that this calendar is operative</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *days</Declaration>
+			
+			
+			<Anchor>//api/name/days</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/days</TokenIdentifier>
+			<Abstract type="html">The days that this calendar is operative</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *days</Declaration>
+			
+			
+			<Anchor>//api/name/days</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACalendar/days</TokenIdentifier>
+			<Abstract type="html">The days that this calendar is operative</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *days</Declaration>
+			
+			
+			<Anchor>//api/name/days</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/setStartDate:</TokenIdentifier>
+			<Abstract type="html">The first day this date is operative</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>@property NSString *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/startDate</TokenIdentifier>
+			<Abstract type="html">The first day this date is operative</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>@property NSString *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACalendar/startDate</TokenIdentifier>
+			<Abstract type="html">The first day this date is operative</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>@property NSString *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/setEndDate:</TokenIdentifier>
+			<Abstract type="html">The last day this date is operative</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>@property NSString *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/endDate</TokenIdentifier>
+			<Abstract type="html">The last day this date is operative</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>@property NSString *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACalendar/endDate</TokenIdentifier>
+			<Abstract type="html">The last day this date is operative</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>@property NSString *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/setExceptions:</TokenIdentifier>
+			<Abstract type="html">The exceptions of this calendar</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *exceptions</Declaration>
+			
+			
+			<Anchor>//api/name/exceptions</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/exceptions</TokenIdentifier>
+			<Abstract type="html">The exceptions of this calendar</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *exceptions</Declaration>
+			
+			
+			<Anchor>//api/name/exceptions</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVACalendar/exceptions</TokenIdentifier>
+			<Abstract type="html">The exceptions of this calendar</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSMutableArray *exceptions</Declaration>
+			
+			
+			<Anchor>//api/name/exceptions</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/insertElement:atIndex:</TokenIdentifier>
+			<Abstract type="html">This function is used to insert a given data to the correct field</Abstract>
+			<DeclaredIn>MVACalendar.h</DeclaredIn>
+			
+			<Declaration>- (void)insertElement:(NSString *)elem atIndex:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>elem</Name>
+					<Abstract type="html">The data to be inserted</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of this data in the GTFS file</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertElement:atIndex:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVACalendar.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACalendar/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVACalendar.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

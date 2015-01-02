@@ -10,6 +10,7 @@
 #import <float.h>
 #import <math.h>
 #import "MVAAlgorithms.h"
+#import "MVApair.h"
 
 @interface MVAGraph ()
 
@@ -19,7 +20,6 @@
 @end
 
 @implementation MVAGraph
-
 
 -(MVAPath *)computePathFromNodes:(NSArray *)originNodes toNode:(NSMutableDictionary *)destiniNodes withAlgorithmID:(int)identifier andOCoords:(CLLocationCoordinate2D)oCoords andDest:(MVAPunInt *)punInt
 {
@@ -42,12 +42,11 @@
             node.pathEdges = [[NSMutableArray alloc] init];
             node.pathNodes = [[NSMutableArray alloc] init];
             if ([originNodes containsObject:[NSNumber numberWithInt:node.identificador]]) {
-                node.open = YES;
                 double sec_rep = [self initTime];
                 double dist = [self distanceForCoordinates:oCoords
                                             andCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude)];
                 double walkingSpeed = [self loadWalkingSpeed];
-                sec_rep += (dist / walkingSpeed);
+                sec_rep += ((dist * 1.2) / walkingSpeed);
                 
                 if (self.type == 1) {
                     node.pathNodes = [[NSMutableArray alloc] init];
@@ -68,7 +67,9 @@
             }
             else {
                 node.pathNodes = [[NSMutableArray alloc] init];
-                node.pathEdges = [[NSMutableArray alloc] init];
+                MVAEdge *test = [[MVAEdge alloc] init];
+                test.tripID = @"walking";
+                node.pathEdges = [[NSMutableArray alloc] initWithObjects:test, nil];
                 node.distance = infinity;
             }
         }
@@ -121,7 +122,7 @@
                 double dist = [self distanceForCoordinates:oCoords
                                             andCoordinates:CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude)];
                 double walkingSpeed = [self loadWalkingSpeed];
-                sec_rep += (dist / walkingSpeed);
+                sec_rep += ((dist * 1.2) / walkingSpeed);
                 
                 CLLocationCoordinate2D cordA = CLLocationCoordinate2DMake(node.stop.latitude, node.stop.longitude);
                 node.previous = nil;
@@ -143,6 +144,9 @@
                 p.first = [node.score doubleValue];
                 p.second = node.identificador;
                 [alg.openNodes addObject:p];
+                MVAEdge *test = [[MVAEdge alloc] init];
+                test.tripID = @"walking";
+                node.pathEdges = [[NSMutableArray alloc] initWithObjects:test, nil];
             }
             else {
                 node.score = infinity;
@@ -194,13 +198,15 @@
     double c = 2 * atan2(sqrt(a), sqrt(1-a));
     double realDist = (R * c);
     
-    return realDist;
+    return (realDist * 1.2);
 }
 
 /**
- *  <#Description#>
+ *  Encodes the receiver using a given archiver. (required)
  *
- *  @param coder <#coder description#>
+ *  @param coder An archiver object
+ *
+ *  @since version 1.0
  */
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
@@ -212,7 +218,7 @@
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *
@@ -230,9 +236,11 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads the walking speed indicated by the user. (The default value is 5km/h)
  *
- *  @return <#return value description#>
+ *  @return The speed in m/s
+ *
+ *  @since version 1.0
  */
 -(double)loadWalkingSpeed
 {
@@ -250,6 +258,13 @@
     }
 }
 
+/**
+ *  This function loads the walking speed indicated by the user. (The default value is 5km/h)
+ *
+ *  @return The speed in m/s
+ *
+ *  @since version 1.0
+ */
 -(BOOL)loadRain
 {
     int alg = 0;
@@ -265,6 +280,13 @@
     return NO;
 }
 
+/**
+ *  This function calculates the initial time for this graph execution
+ *
+ *  @return The time in seconds
+ *
+ *  @since version 1.0
+ */
 -(double)initTime
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
@@ -276,6 +298,13 @@
     return sec_rep;
 }
 
+/**
+ *  This function loads if the user has selected a custom date
+ *
+ *  @return A boolean
+ *
+ *  @since version 1.0
+ */
 -(BOOL)customDate
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
@@ -289,6 +318,13 @@
     return YES;
 }
 
+/**
+ *  This function loads either the custom date chosen by the user or the current date of the device
+ *
+ *  @return An NSDate object
+ *
+ *  @since version 1.0
+ */
 -(NSDate *)loadCustomDate
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];

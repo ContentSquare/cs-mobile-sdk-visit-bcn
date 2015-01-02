@@ -166,6 +166,7 @@
     double dist = [self distanceForCoordinates:CLLocationCoordinate2DMake(stopA.latitude, stopA.longitude)
                                 andCoordinates:CLLocationCoordinate2DMake(stop.latitude, stop.longitude)];
     double busSpeed = (197.0 / 36.0);
+    if ([self loadRain]) busSpeed /= 1.2;
     double time = currentTime - (dist / busSpeed);
     for (int i = 0; i < [freqs count]; ++i) {
         MVAFrequencies *f = [freqs objectAtIndex:i];
@@ -223,6 +224,27 @@
     double c = 2 * atan2(sqrt(a), sqrt(1-a));
     
     return (R * c);
+}
+
+/**
+ *  <#Description#>
+ *
+ *  @return <#return value description#>
+ *  @since version 1.0
+ */
+-(BOOL)loadRain
+{
+    int alg = 0;
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
+    NSData *data = [defaults objectForKey:@"VisitBCNRain"];
+    if(data == nil){
+        [defaults setInteger:0 forKey:@"VisitBCNRain"];
+    }
+    else {
+        alg = (int)[defaults integerForKey:@"VisitBCNRain"];
+    }
+    if (alg == 1) return YES;
+    return NO;
 }
 
 #pragma mark - parser methods
@@ -441,7 +463,7 @@
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *

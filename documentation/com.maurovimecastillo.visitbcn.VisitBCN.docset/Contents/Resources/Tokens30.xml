@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAPathViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAPathViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UIViewController and is used to display a subway or bus path.</Abstract>
+			<DeclaredIn>MVAPathViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/setSavedPath:</TokenIdentifier>
+			<Abstract type="html">The path to be displayed.</Abstract>
+			<DeclaredIn>MVAPathViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVASavedPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/savedPath</TokenIdentifier>
+			<Abstract type="html">The path to be displayed.</Abstract>
+			<DeclaredIn>MVAPathViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVASavedPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPathViewController/savedPath</TokenIdentifier>
+			<Abstract type="html">The path to be displayed.</Abstract>
+			<DeclaredIn>MVAPathViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVASavedPath</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/setSubway:</TokenIdentifier>
+			<Abstract type="html">A bool tha tindicates if the path given is for the subway or the bus network.</Abstract>
+			<DeclaredIn>MVAPathViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/subway</TokenIdentifier>
+			<Abstract type="html">A bool tha tindicates if the path given is for the subway or the bus network.</Abstract>
+			<DeclaredIn>MVAPathViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPathViewController/subway</TokenIdentifier>
+			<Abstract type="html">A bool tha tindicates if the path given is for the subway or the bus network.</Abstract>
+			<DeclaredIn>MVAPathViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Function that gets called when there&apos;s a memory leak or warning</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/viewWillAppear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view is about to be added to a view hierarchy.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewWillAppear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the view is being added to the window using an animation.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewWillAppear:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/createDescription</TokenIdentifier>
+			<Abstract type="html">Function that creates the description of the path</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)createDescription</Declaration>
+			
+			
+			<Anchor>//api/name/createDescription</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/heightForView:text:andSize:</TokenIdentifier>
+			<Abstract type="html">Function that calculates the height of a view that will contain a given text with an specific font and text size.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)heightForView:(UIFont *)font text:(NSString *)text andSize:(CGFloat)width</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>font</Name>
+					<Abstract type="html">The font used</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">The text</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">The width of the view</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The height needed to display the text</Abstract></ReturnValue>
+			<Anchor>//api/name/heightForView:text:andSize:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/distanceForCoordinates:andCoordinates:</TokenIdentifier>
+			<Abstract type="html">Haversine distance between two coordinates</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cordA</Name>
+					<Abstract type="html">The first coordinate</Abstract>
+				</Parameter><Parameter>
+					<Name>cordB</Name>
+					<Abstract type="html">The second coordinate</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The distance in meters</Abstract></ReturnValue>
+			<Anchor>//api/name/distanceForCoordinates:andCoordinates:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html">Called when a segue is about to be performed. (required)</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>segue</Name>
+					<Abstract type="html">The segue object containing information about the view controllers involved in the segue.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

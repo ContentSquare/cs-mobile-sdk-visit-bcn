@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVACustomLocationsTableViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocationsTableViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UITableViewController and is used to create, select and store the custom locations created by the user</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Function that gets called when there&apos;s a memory leak or warning</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/loadCustomLocations</TokenIdentifier>
+			<Abstract type="html">Function that loads the custom locations created by the user</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)loadCustomLocations</Declaration>
+			
+			
+			<Anchor>//api/name/loadCustomLocations</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/guardar</TokenIdentifier>
+			<Abstract type="html">Function that saves the custom locations created by the user</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)guardar</Declaration>
+			
+			
+			<Anchor>//api/name/guardar</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:numberOfRowsInSection:</TokenIdentifier>
+			<Abstract type="html">Tells the data source to return the number of rows in a given section of a table view. (required)</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The number of rows in section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:numberOfRowsInSection:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the data source for a cell to insert in a particular location of the table view. (required)</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">A table-view object requesting the cell.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating a row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An object inheriting from UITableViewCell that the table view can use for the specified row. An assertion is raised if you return nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:heightForHeaderInSection:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for the height to use for the header of a particular section.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section of tableView .</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A nonnegative floating-point value that specifies the height (in points) of the header for section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:heightForHeaderInSection:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:viewForHeaderInSection:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for a view object to display in the header of the specified section of the table view.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object asking for the view object.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section of tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A view object to be displayed in the header of section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:viewForHeaderInSection:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:didSelectRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the specified row is now selected.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">A table-view object informing the delegate about the new row selection.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating the new selected row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tableView:didSelectRowAtIndexPath:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:canEditRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the data source to verify that the given row is editable.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating a row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the row indicated by indexPath is editable; otherwise, NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:canEditRowAtIndexPath:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:commitEditingStyle:forRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the data source to commit the insertion or deletion of a specified row in the receiver.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting the insertion or deletion.</Abstract>
+				</Parameter><Parameter>
+					<Name>editingStyle</Name>
+					<Abstract type="html">The cell editing style corresponding to a insertion or deletion requested for the row specified by indexPath. Possible editing styles are UITableViewCellEditingStyleInsert or UITableViewCellEditingStyleDelete.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating the row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tableView:commitEditingStyle:forRowAtIndexPath:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:titleForSwipeAccessoryButtonForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate the title for the accessory button of a specified row.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)tableView:(UITableView *)tableView titleForSwipeAccessoryButtonForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting the insertion or deletion.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating the row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The title of the button</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:titleForSwipeAccessoryButtonForRowAtIndexPath:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:swipeAccessoryButtonPushedForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the accessory button has been selected</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView swipeAccessoryButtonPushedForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting the insertion or deletion.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating the row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tableView:swipeAccessoryButtonPushedForRowAtIndexPath:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:willBeginEditingRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the table view is about to go into editing mode.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object providing this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating the row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tableView:willBeginEditingRowAtIndexPath:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/tableView:didEndEditingRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the table view has left editing mode.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object providing this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating the row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tableView:didEndEditingRowAtIndexPath:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/textFieldShouldReturn:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate if the text field should return and exit the editing mode</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)textFieldShouldReturn:(UITextField *)textField</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>textField</Name>
+					<Abstract type="html">The text field object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A bool that answers the query</Abstract></ReturnValue>
+			<Anchor>//api/name/textFieldShouldReturn:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/textFieldDidBeginEditing:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the user has begun the editing of the text field</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)textFieldDidBeginEditing:(UITextField *)textField</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>textField</Name>
+					<Abstract type="html">The text field object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/textFieldDidBeginEditing:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/textFieldDidEndEditing:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the use rhas ended editing the text field</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)textFieldDidEndEditing:(UITextField *)textField</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>textField</Name>
+					<Abstract type="html">The text field object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/textFieldDidEndEditing:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/addSel:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user whants to add a new custom location</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)addSel:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The button selected</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSel:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/chooseFoto</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user whants to select a picture for a custom location</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)chooseFoto</Declaration>
+			
+			
+			<Anchor>//api/name/chooseFoto</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/actionSheet:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html">Delegate function that receives the selectio of a UIActionSheet (iOS 7.0)</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)actionSheet:(UIActionSheet *)popup clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>popup</Name>
+					<Abstract type="html">The action sheet</Abstract>
+				</Parameter><Parameter>
+					<Name>buttonIndex</Name>
+					<Abstract type="html">The index of the button selected</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/actionSheet:clickedButtonAtIndex:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/imagePickerControllerDidCancel:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the user has canceled picking the media</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>picker</Name>
+					<Abstract type="html">The picker controller used</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imagePickerControllerDidCancel:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/imagePickerController:didFinishPickingMediaWithInfo:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the user has finished picking up the media from the device.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>picker</Name>
+					<Abstract type="html">The picker controller used</Abstract>
+				</Parameter><Parameter>
+					<Name>info</Name>
+					<Abstract type="html">The information of the media selected</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imagePickerController:didFinishPickingMediaWithInfo:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/navigationController:willShowViewController:animated:</TokenIdentifier>
+			<Abstract type="html">Called just before the navigation controller displays a view controller’s view and navigation item properties.</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>navigationController</Name>
+					<Abstract type="html">The navigation controller that is showing the view and properties of a view controller.</Abstract>
+				</Parameter><Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The view controller whose view and navigation item properties are being shown.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">YES to animate the transition; otherwise, NO.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/navigationController:willShowViewController:animated:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/loadCustom</TokenIdentifier>
+			<Abstract type="html">Function that loads the index of the custom location chosen</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (int)loadCustom</Declaration>
+			
+			<ReturnValue><Abstract type="html">The index of the custom location inside the custom locations array</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustom</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/saveCustom:</TokenIdentifier>
+			<Abstract type="html">Function that saves the index of the custom location chosen</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)saveCustom:(int)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">&lt;#index description#&gt;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveCustom:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/fotoTapped:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user taps into the new custom location picutre</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)fotoTapped:(UITapGestureRecognizer *)onetap</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>onetap</Name>
+					<Abstract type="html">The tap gesture recognizer object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fotoTapped:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVACustomLocationsTableViewController/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html">Called when a segue is about to be performed. (required)</Abstract>
+			<DeclaredIn>MVACustomLocationsTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>segue</Name>
+					<Abstract type="html">The segue object containing information about the view controllers involved in the segue.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

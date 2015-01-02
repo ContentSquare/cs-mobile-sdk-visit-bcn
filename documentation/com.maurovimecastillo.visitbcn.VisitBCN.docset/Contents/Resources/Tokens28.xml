@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAPair.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAPair</TokenIdentifier>
+			<Abstract type="html">This class creates a pair of elements</Abstract>
+			<DeclaredIn>MVAPair.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPair/setFirst:</TokenIdentifier>
+			<Abstract type="html">The first element</Abstract>
+			<DeclaredIn>MVAPair.h</DeclaredIn>
+			
+			<Declaration>@property double first</Declaration>
+			
+			
+			<Anchor>//api/name/first</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPair/first</TokenIdentifier>
+			<Abstract type="html">The first element</Abstract>
+			<DeclaredIn>MVAPair.h</DeclaredIn>
+			
+			<Declaration>@property double first</Declaration>
+			
+			
+			<Anchor>//api/name/first</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPair/first</TokenIdentifier>
+			<Abstract type="html">The first element</Abstract>
+			<DeclaredIn>MVAPair.h</DeclaredIn>
+			
+			<Declaration>@property double first</Declaration>
+			
+			
+			<Anchor>//api/name/first</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPair/setSecond:</TokenIdentifier>
+			<Abstract type="html">The second element</Abstract>
+			<DeclaredIn>MVAPair.h</DeclaredIn>
+			
+			<Declaration>@property int second</Declaration>
+			
+			
+			<Anchor>//api/name/second</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPair/second</TokenIdentifier>
+			<Abstract type="html">The second element</Abstract>
+			<DeclaredIn>MVAPair.h</DeclaredIn>
+			
+			<Declaration>@property int second</Declaration>
+			
+			
+			<Anchor>//api/name/second</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPair/second</TokenIdentifier>
+			<Abstract type="html">The second element</Abstract>
+			<DeclaredIn>MVAPair.h</DeclaredIn>
+			
+			<Declaration>@property int second</Declaration>
+			
+			
+			<Anchor>//api/name/second</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPair/bigger:</TokenIdentifier>
+			<Abstract type="html">This function compares the first elements of the two pares and returns a boolean indicating if one is bigger than the other</Abstract>
+			<DeclaredIn>MVAPair.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)bigger:(MVAPair *)p</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>p</Name>
+					<Abstract type="html">The second pair of the comparison</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A boolean indicating if the current MVAPair object is bigger than the given</Abstract></ReturnValue>
+			<Anchor>//api/name/bigger:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPair/lessOrEqual:</TokenIdentifier>
+			<Abstract type="html">This function compares the first elements of the two pares and returns a boolean indicating if one is smaller or equal than the other</Abstract>
+			<DeclaredIn>MVAPair.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)lessOrEqual:(MVAPair *)p</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>p</Name>
+					<Abstract type="html">The second pair of the comparison</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A boolean indicating if the current MVAPair object is smaller or equal than the given</Abstract></ReturnValue>
+			<Anchor>//api/name/lessOrEqual:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

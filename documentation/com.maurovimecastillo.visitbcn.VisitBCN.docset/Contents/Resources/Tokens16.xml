@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVADate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVADate</TokenIdentifier>
+			<Abstract type="html">This class is used to store the different calendar excepcional dates where the services operates.</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADate/setServiceID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the service</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *serviceID</Declaration>
+			
+			
+			<Anchor>//api/name/serviceID</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADate/serviceID</TokenIdentifier>
+			<Abstract type="html">The identifier of the service</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *serviceID</Declaration>
+			
+			
+			<Anchor>//api/name/serviceID</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADate/serviceID</TokenIdentifier>
+			<Abstract type="html">The identifier of the service</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACalendar</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *serviceID</Declaration>
+			
+			
+			<Anchor>//api/name/serviceID</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADate/setDate:</TokenIdentifier>
+			<Abstract type="html">The calendar date expressed in yyyyMMdd format</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+			<Declaration>@property int date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADate/date</TokenIdentifier>
+			<Abstract type="html">The calendar date expressed in yyyyMMdd format</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+			<Declaration>@property int date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADate/date</TokenIdentifier>
+			<Abstract type="html">The calendar date expressed in yyyyMMdd format</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+			<Declaration>@property int date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADate/setType:</TokenIdentifier>
+			<Abstract type="html">The type of the date. If the value is equal to 1 it indicates we are adding this service to the given date, if it&apos;s 2 it indicates we are erasing this service for the given date</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADate/type</TokenIdentifier>
+			<Abstract type="html">The type of the date. If the value is equal to 1 it indicates we are adding this service to the given date, if it&apos;s 2 it indicates we are erasing this service for the given date</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADate/type</TokenIdentifier>
+			<Abstract type="html">The type of the date. If the value is equal to 1 it indicates we are adding this service to the given date, if it&apos;s 2 it indicates we are erasing this service for the given date</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+			<Declaration>@property int type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADate/insertElement:atIndex:</TokenIdentifier>
+			<Abstract type="html">This function is used to insert a given data to the correct field</Abstract>
+			<DeclaredIn>MVADate.h</DeclaredIn>
+			
+			<Declaration>- (void)insertElement:(NSString *)elem atIndex:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>elem</Name>
+					<Abstract type="html">The data to be inserted</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of this data in the GTFS file</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertElement:atIndex:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADate/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVADate.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADate/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVADate.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

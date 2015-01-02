@@ -6,10 +6,6 @@
 //  Copyright (c) 2014 Mauro Vime Castillo. All rights reserved.
 //
 
-/**
- * <#Description#>
- */
-
 #import "MVAPuntsIntsTableViewController.h"
 #import "MVAAppDelegate.h"
 #import "MVAPunIntTableViewCell.h"
@@ -18,6 +14,7 @@
 #import "ALRadialMenu.h"
 #import "MVAPunInt.h"
 #import "MVACustomLocation.h"
+#import "UIImage+ImageEffects.h"
 
 @interface MVAPuntsIntsTableViewController () <CLLocationManagerDelegate,UITableViewDataSource,UITableViewDelegate,ALRadialMenuDelegate,UISearchBarDelegate,UISearchDisplayDelegate>
 
@@ -25,7 +22,7 @@
 @property MVAPunInt *selectedPoint;
 @property (strong, nonatomic) ALRadialMenu *socialMenu;
 @property BOOL menuON;
-@property NSArray *customLocations;
+@property MVACustomLocation *customLoc;
 @property UISearchBar *searchBar;
 @property UISearchDisplayController *searchDisplay;
 @property NSMutableArray *filteredContentList;
@@ -36,30 +33,30 @@
 @implementation MVAPuntsIntsTableViewController
 
 /**
- *  <#Description#>
+ *  Function that gets called when the view controller has loaded the view
  *
  *  @since version 1.0
  */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
-    delegate.table = self;
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     self.filteredContentList = [[NSMutableArray alloc] init];
     // Just call this line to enable the scrolling navbar
     [self followScrollView:self.tableView usingTopConstraint:self.topConstraint withDelay:65];
     [self setShouldScrollWhenContentFits:YES];
     
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f]];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+    //self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"head"]];
+    [self.navigationController.navigationBar setTranslucent:NO];
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when there's a memory leak or warning
  *
  *  @since version 1.0
  */
@@ -69,14 +66,29 @@
 }
 
 /**
- *  <#Description#>
+ *  Notifies the view controller that its view is about to be added to a view hierarchy.
  *
- *  @param animated <#animated description#>
+ *  @param animated If YES, the view is being added to the window using an animation.
  *
  *  @since version 1.0
  */
 -(void)viewWillAppear:(BOOL)animated
 {
+    MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0,delegate.window.bounds.size.width, 20)];
+    [v setBackgroundColor:[UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f]];
+    [delegate.window.rootViewController.view addSubview:v];
+    
+    int pos = [self loadCustom];
+    if (pos == 0) {
+        delegate.table = self;
+        self.customLoc = nil;
+    }
+    else {
+        self.customLoc = [self loadCustomLocation];
+        delegate.table = nil;
+    }
+    
     CGFloat w = self.view.bounds.size.width;
     CGFloat h = self.view.bounds.size.height;
     w = ((w/2.0f)-25.0);
@@ -109,21 +121,23 @@
 }
 
 /**
- *  <#Description#>
+ *  Notifies the view controller that its view is about to be removed from a view hierarchy.
  *
- *  @param animated <#animated description#>
+ *  @param animated If YES, the disappearance of the view is being animated.
  *
  *  @since version 1.0
  */
 - (void)viewWillDisappear:(BOOL)animated
 {
+    MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
+    delegate.table = nil;
     [self showNavBarAnimated:NO];
 }
 
 /**
- *  <#Description#>
+ *  Notifies the view controller that its view was removed from a view hierarchy.
  *
- *  @param animated <#animated description#>
+ *  @param animated If YES, the disappearance of the view was animated.
  *
  *  @since version 1.0
  */
@@ -134,11 +148,11 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate if the scroll view should scroll to the top of the content.
  *
- *  @param scrollView <#scrollView description#>
+ *  @param scrollView The scroll-view object requesting this information.
  *
- *  @return <#return value description#>
+ *  @return YES to permit scrolling to the top of the content, NO to disallow it.
  *
  *  @since version 1.0
  */
@@ -171,13 +185,13 @@
     double c = 2 * atan2(sqrt(a), sqrt(1-a));
     double realDist = (R * c);
     
-    return realDist;
+    return (realDist * 1.2);
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the index of the custom location chosen
  *
- *  @return <#return value description#>
+ *  @return The index of the custom location inside the custom locations array
  *
  *  @since version 1.0
  */
@@ -194,30 +208,29 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the custom location selected by the user
  *
+ *  @return The MVACustomLocation object
+ *
+ *  @see MVACustomLocation class
  *  @since version 1.0
  */
-- (void) loadCustomLocations
+- (MVACustomLocation *) loadCustomLocation
 {
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.visitBCN.com"];
     NSData *savedArray = [defaults objectForKey:@"VisitBCNCustomLocations"];
-    if (savedArray != nil) {
-        NSArray *oldArray = [NSKeyedUnarchiver unarchiveObjectWithData:savedArray];
-        self.customLocations = [[NSArray alloc] initWithArray:oldArray];
-    }
-    else {
-        self.customLocations = [[NSArray alloc] init];
-    }
+    NSArray *oldArray = [NSKeyedUnarchiver unarchiveObjectWithData:savedArray];
+    NSArray *customLocations = [[NSArray alloc] initWithArray:oldArray];
+    return [customLocations objectAtIndex:([self loadCustom] - 1)];
 }
 
 #pragma mark - Search bar delegate
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the controller has loaded its table view.
  *
- *  @param controller <#controller description#>
- *  @param tableView  <#tableView description#>
+ *  @param controller The search display controller for which the receiver is the delegate.
+ *  @param tableView  The search display controller’s table view.
  *
  *  @since version 1.0
  */
@@ -227,9 +240,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Delegate function that gets called when the user starts entering text
  *
- *  @param searchBar <#searchBar description#>
+ *  @param searchBar The search bar object
  *
  *  @since version 1.0
  */
@@ -240,9 +253,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Delegate function that gets called when the user begins a search
  *
- *  @param searchBar <#searchBar description#>
+ *  @param searchBar The search bar object
  *
  *  @since version 1.0
  */
@@ -253,20 +266,16 @@
 }
 
 /**
- *  <#Description#>
+ *  Delegate function that gets called when the user edits the text in the search bar
  *
- *  @param searchBar  <#searchBar description#>
- *  @param searchText <#searchText description#>
+ *  @param searchBar  The search bar object
+ *  @param searchText The text
  *
  *  @since version 1.0
  */
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
-    NSLog(@"Text change - %d",self.isSearching);
-    
-    //Remove all objects first.
     [self.filteredContentList removeAllObjects];
-    
     if([searchText length] != 0) {
         self.isSearching = YES;
         [self searchTableList];
@@ -277,21 +286,22 @@
 }
 
 /**
- *  <#Description#>
+ *  Delegate function that gets called when the user exits the search bar
  *
- *  @param searchBar <#searchBar description#>
+ *  @param searchBar The search bar object
  *
  *  @since version 1.0
  */
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
 {
-    NSLog(@"Cancel clicked");
+    // Call this after a small delay, or it won't work
     self.isSearching = NO;
     [self.tableView reloadData];
+    [self performSelector:@selector(showNavbar) withObject:nil afterDelay:0.2];
 }
 
 /**
- *  <#Description#>
+ *  Function that filters the list to fit the search.
  *
  *  @since version 1.0
  */
@@ -310,26 +320,12 @@
 #pragma mark - Table view data source
 
 /**
- *  <#Description#>
+ *  Asks the delegate for the height to use for a row in a specified location.
  *
- *  @param tableView <#tableView description#>
+ *  @param tableView The table-view object requesting this information.
+ *  @param indexPath An index path that locates a row in tableView.
  *
- *  @return <#return value description#>
- *
- *  @since version 1.0
- */
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-/**
- *  <#Description#>
- *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
- *
- *  @return <#return value description#>
+ *  @return A nonnegative floating-point value that specifies the height (in points) that row should be.
  *
  *  @since version 1.0
  */
@@ -339,12 +335,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate for the height to use for the header of a particular section.
  *
- *  @param tableView <#tableView description#>
- *  @param section   <#section description#>
+ *  @param tableView The table-view object requesting this information.
+ *  @param section   An index number identifying a section of tableView .
  *
- *  @return <#return value description#>
+ *  @return A nonnegative floating-point value that specifies the height (in points) of the header for section.
  *
  *  @since version 1.0
  */
@@ -356,12 +352,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate for the height to use for the footer of a particular section.
  *
- *  @param tableView <#tableView description#>
- *  @param section   <#section description#>
+ *  @param tableView The table-view object requesting this information.
+ *  @param section   An index number identifying a section of tableView .
  *
- *  @return <#return value description#>
+ *  @return A nonnegative floating-point value that specifies the height (in points) of the footer for section.
  *
  *  @since version 1.0
  */
@@ -371,29 +367,25 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the delegate for a view object to display in the header of the specified section of the table view.
  *
- *  @param tableView <#tableView description#>
- *  @param section   <#section description#>
+ *  @param tableView The table-view object asking for the view object.
+ *  @param section   An index number identifying a section of tableView.
  *
- *  @return <#return value description#>
+ *  @return A view object to be displayed in the header of section.
  *
  *  @since version 1.0
  */
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    self.customLocations = [[NSArray alloc] init];
     CGFloat w = self.view.frame.size.width;
     if (!self.isSearching) {
-        int pos = [self loadCustom];
-        if (pos > 0) {
-            [self loadCustomLocations];
-            MVACustomLocation *loc = [self.customLocations objectAtIndex:(pos - 1)];
+        if (self.customLoc != nil) {
             UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, w, 180)];
             CGFloat w = self.view.frame.size.width;
             
             UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(((w / 2.0) - 51.0), 10, 102, 102)];
-            if (loc.foto != nil) imV.image = loc.foto;
+            if (self.customLoc.foto != nil) imV.image = self.customLoc.foto;
             else imV.image = [UIImage imageNamed:@"customPlace"];
             [imV.layer setCornerRadius:51.0];
             [imV setClipsToBounds:YES];
@@ -402,7 +394,7 @@
             [v addSubview:imV];
             
             UILabel *nom = [[UILabel alloc] initWithFrame:CGRectMake(8, 120, w - 16, 20)];
-            nom.text = loc.name;
+            nom.text = self.customLoc.name;
             [nom setTextAlignment:NSTextAlignmentCenter];
             [nom setTextColor:[UIColor blackColor]];
             [nom setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:15]];
@@ -410,7 +402,7 @@
             [v addSubview:nom];
             
             UILabel *coord = [[UILabel alloc] initWithFrame:CGRectMake(8, 150, w - 16, 20)];
-            NSString *cords = [NSString stringWithFormat:@"(%.4f,%.4f)",loc.coordinates.latitude,loc.coordinates.longitude];
+            NSString *cords = [NSString stringWithFormat:@"(%.4f,%.4f)",self.customLoc.coordinates.latitude,self.customLoc.coordinates.longitude];
             coord.text = cords;
             [coord setTextAlignment:NSTextAlignmentCenter];
             [coord setTextColor:[UIColor blackColor]];
@@ -426,6 +418,12 @@
             tapGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
             [headerView addGestureRecognizer:tapGestureRecognizer];
             
+            UITapGestureRecognizer *tapGestureRecognizer2;
+            tapGestureRecognizer2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(headerTapped:)];
+            tapGestureRecognizer2.numberOfTapsRequired = 1;
+            tapGestureRecognizer2.numberOfTouchesRequired = 1;
+            [headerView addGestureRecognizer:tapGestureRecognizer2];
+            
             [v addSubview:headerView];
             
             return v;
@@ -436,24 +434,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Tells the data source to return the number of rows in a given section of a table view. (required)
  *
- *  @param onetap <#onetap description#>
+ *  @param tableView The table-view object requesting this information.
+ *  @param section   An index number identifying a section in tableView.
  *
- *  @since version 1.0
- */
--(void)headerTapped:(UITapGestureRecognizer *)onetap
-{
-    [self performSegueWithIdentifier:@"customSegue" sender:self];
-}
-
-/**
- *  <#Description#>
- *
- *  @param tableView <#tableView description#>
- *  @param section   <#section description#>
- *
- *  @return <#return value description#>
+ *  @return The number of rows in section.
  *
  *  @since version 1.0
  */
@@ -469,12 +455,12 @@
 }
 
 /**
- *  <#Description#>
+ *  Asks the data source for a cell to insert in a particular location of the table view. (required)
  *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
+ *  @param tableView A table-view object requesting the cell.
+ *  @param indexPath An index path locating a row in tableView.
  *
- *  @return <#return value description#>
+ *  @return An object inheriting from UITableViewCell that the table view can use for the specified row. An assertion is raised if you return nil.
  *
  *  @since version 1.0
  */
@@ -520,94 +506,178 @@
         }
     }
     else {
-        if ([self.customLocations count] > 0) {
-            MVACustomLocation *loc = [self.customLocations objectAtIndex:(pos - 1)];
-            double distance = [self distanceForCoordinates:loc.coordinates andCoordinates:punInt.coordinates];
+        if (self.customLoc != nil) {
+            double distance = [self distanceForCoordinates:self.customLoc.coordinates andCoordinates:punInt.coordinates];
             cell.distance.text = [[NSString stringWithFormat:@"%.3f",(distance / 1000.0)] stringByAppendingString:@"km"];
-            
         }
         else {
             cell.distance.text = @"No GPS";
         }
     }
+
     return cell;
 }
 
 /**
- *  <#Description#>
+ *  Tells the delegate that the specified row is now selected.
  *
- *  @param tableView <#tableView description#>
- *  @param indexPath <#indexPath description#>
+ *  @param tableView A table-view object informing the delegate about the new row selection.
+ *  @param indexPath An index path locating the new selected row in tableView.
  *
  *  @since version 1.0
  */
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
-    self.selectedPoint = [delegate.puntos objectAtIndex:indexPath.row];
+    if (self.isSearching) {
+        self.selectedPoint = [self.filteredContentList objectAtIndex:indexPath.row];
+    }
+    else {
+        MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
+        self.selectedPoint = [delegate.puntos objectAtIndex:indexPath.row];
+    }
     [self performSegueWithIdentifier:@"punIntSegue" sender:self];
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user taps/swipes inside the header view.
  *
- *  @param segue  <#segue description#>
- *  @param sender <#sender description#>
+ *  @param onetap The tap gesture recognizer object that calls this function.
+ *
+ *  @since version 1.0
+ */
+-(void)headerTapped:(UITapGestureRecognizer *)onetap
+{
+    [self performSegueWithIdentifier:@"customSegue" sender:self];
+}
+
+/**
+ *  Function that creates a UIImage from a UIView given
+ *
+ *  @param view The UIView that needs to be converted into an image
+ *
+ *  @return The UIImage created
+ *
+ *  @since version 1.0
+ */
+- (UIImage *)imageWithView:(UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, [[UIScreen mainScreen] scale]);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
+/**
+ *  Called when a segue is about to be performed. (required)
+ *
+ *  @param segue  The segue object containing information about the view controllers involved in the segue.
+ *  @param sender The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.
  *
  *  @since version 1.0
  */
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if (self.menuON) [self.socialMenu buttonsWillAnimateFromButton:self.homeButton withFrame:self.homeButton.frame inView:self.view];
+    self.searchDisplay.active = NO;
+    self.isSearching = NO;
+    [self.tableView reloadData];
+    if (self.menuON) {
+        UIView *view = [self.view viewWithTag:1234567];
+        [UIView animateWithDuration: 1.0
+                         animations:^{
+                             view.alpha = 0.0f;
+                             self.tableView.alpha = 1.0;
+                         }
+                         completion:^(BOOL finished) {
+                             [view removeFromSuperview];
+                         }];
+        [self.socialMenu buttonsWillAnimateFromButton:self.homeButton withFrame:self.homeButton.frame inView:self.view];
+    }
     if ([segue.identifier isEqualToString:@"punIntSegue"]) {
         MVAPunIntViewController *vc = (MVAPunIntViewController *) [segue destinationViewController];
         vc.punto = self.selectedPoint;
     }
-    self.searchDisplay.active = NO;
-    self.isSearching = NO;
-    [self.tableView reloadData];
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user opens/closes the menu
  *
- *  @param sender <#sender description#>
+ *  @param sender The home menu button
  *
  *  @since version 1.0
  */
 - (IBAction)menuSelected:(id)sender
 {
     [self.tableView setContentOffset:self.tableView.contentOffset animated:NO];
-    [self.socialMenu buttonsWillAnimateFromButton:sender withFrame:self.homeButton.frame inView:self.view];
+    
     self.menuON = !self.menuON;
+    
+    [self.homeButton setUserInteractionEnabled:NO];
+    if (self.menuON) {
+        UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        UIColor *tintColor = [UIColor colorWithWhite:0.5 alpha:0.3];
+        imV.image = [[self imageWithView:self.view] applyBlurWithRadius:8 tintColor:tintColor saturationDeltaFactor:1.0 maskImage:nil];
+        imV.tag = 1234567;
+        imV.alpha = 0.0f;
+        [self.view addSubview:imV];
+        [UIView animateWithDuration: 0.5
+                         animations:^{
+                             imV.alpha = 1.0;
+                             self.tableView.alpha = 0.0;
+                             [self.homeButton setBackgroundImage:[UIImage imageNamed:@"delete"] forState:UIControlStateNormal];
+                             [self.homeButton setBackgroundColor:[UIColor redColor]];
+                         }
+                         completion:^(BOOL finished) {
+                             [self.homeButton setUserInteractionEnabled:YES];
+                         }];
+        [self.view bringSubviewToFront:sender];
+        [self showNavBarAnimated:YES];
+    }
+    else {
+        UIView *view = [self.view viewWithTag:1234567];
+        [UIView animateWithDuration: 0.5
+                         animations:^{
+                             view.alpha = 0.0f;
+                             self.tableView.alpha = 1.0;
+                             [self.homeButton setBackgroundImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+                             [self.homeButton setBackgroundColor:[UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f]];
+                         }
+                         completion:^(BOOL finished) {
+                             [view removeFromSuperview];
+                             [self.homeButton setUserInteractionEnabled:YES];
+                         }];
+    }
+    
+    [self.socialMenu buttonsWillAnimateFromButton:sender withFrame:self.homeButton.frame inView:self.view];
 }
 
 /**
- *  <#Description#>
+ *  Function that caclualtes the angle between the current location and another given location. This function doesn't work with a custom location. This function uses the head of the device to calculate the angle.
  *
- *  @param current <#current description#>
+ *  @param location The coordinates of the other location
  *
- *  @return <#return value description#>
+ *  @return The angle between the two coordinates
  *
  *  @since version 1.0
  */
--(CGFloat) calculateUserAngle:(CLLocationCoordinate2D)current
+-(CGFloat)calculateUserAngle:(CLLocationCoordinate2D)location
 {
     double x = 0, y = 0;
     MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
-    y = current.longitude - delegate.coordinates.longitude;
-    x = current.latitude - delegate.coordinates.latitude;
+    y = location.longitude - delegate.coordinates.longitude;
+    x = location.latitude - delegate.coordinates.latitude;
     CGFloat deg = (atan2(y, x) * (180. / M_PI));
     return deg;
 }
 
 #pragma mark - radial menu delegate methods
+
 /**
- *  <#Description#>
+ *  ALRadialMenuDelegate function that indicates the number of items in the menu.
  *
- *  @param radialMenu <#radialMenu description#>
+ *  @param radialMenu The radial menu that calls this delegate function
  *
- *  @return <#return value description#>
+ *  @return The number of items in the menu
  *
  *  @since version 1.0
  */
@@ -617,11 +687,11 @@
 }
 
 /**
- *  <#Description#>
+ *  ALRadialMenuDelegate function that gets called to indicate the arc radius (distance between the button and objects final resting spot)
  *
- *  @param radialMenu <#radialMenu description#>
+ *  @param radialMenu The radial menu that calls this delegate function
  *
- *  @return <#return value description#>
+ *  @return The arc radius
  *
  *  @since version 1.0
  */
@@ -631,11 +701,11 @@
 }
 
 /**
- *  <#Description#>
+ *  ALRadialMenuDelegate function that gets called to indicate the radius of the menu
  *
- *  @param radialMenu <#radialMenu description#>
+ *  @param radialMenu The radial menu that calls this delegate function
  *
- *  @return <#return value description#>
+ *  @return The radius
  *
  *  @since version 1.0
  */
@@ -645,12 +715,12 @@
 }
 
 /**
- *  <#Description#>
+ *  ALRadialMenuDelegate function that gets called for the creaton of the button for each item of the menu.
  *
- *  @param radialMenu <#radialMenu description#>
- *  @param index      <#index description#>
+ *  @param radialMenu The radial menu that calls this delegate function
+ *  @param index      The index of the button that needs to be created
  *
- *  @return <#return value description#>
+ *  @return The ALRadialButton used for th given item
  *
  *  @since version 1.0
  */
@@ -670,10 +740,10 @@
 }
 
 /**
- *  <#Description#>
+ *  ALRadialMenuDelegate function called when the user thaps one of the items
  *
- *  @param radialMenu <#radialMenu description#>
- *  @param index      <#index description#>
+ *  @param radialMenu The radial menu that calls this delegate function
+ *  @param index      The index of the item selected
  *
  *  @since version 1.0
  */

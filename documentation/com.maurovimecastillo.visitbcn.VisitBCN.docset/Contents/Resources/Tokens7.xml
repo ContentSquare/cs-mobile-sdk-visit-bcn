@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAConfigurationTableViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAConfigurationTableViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UITableViewController and is used to display all the configurations available in the app.</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Function that gets called when there&apos;s a memory leak or warning</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/numberOfSectionsInTableView:</TokenIdentifier>
+			<Abstract type="html">Asks the data source to return the number of sections in the table view.</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">An object representing the table view requesting this information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The number of sections in tableView. The default value is 1.</Abstract></ReturnValue>
+			<Anchor>//api/name/numberOfSectionsInTableView:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/tableView:numberOfRowsInSection:</TokenIdentifier>
+			<Abstract type="html">Tells the data source to return the number of rows in a given section of a table view. (required)</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The number of rows in section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:numberOfRowsInSection:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/tableView:titleForFooterInSection:</TokenIdentifier>
+			<Abstract type="html">Asks the data source for the title of the footer of the specified section of the table view.</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object asking for the title.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section of tableView .</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string to use as the title of the section footer. If you return nil , the section will have no title.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:titleForFooterInSection:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/tableView:heightForFooterInSection:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for the height to use for the footer of a particular section.</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section of tableView .</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A nonnegative floating-point value that specifies the height (in points) of the footer for section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:heightForFooterInSection:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/heightForView:text:andSize:</TokenIdentifier>
+			<Abstract type="html">Function that calculates the height of a view that will contain a given text with an specific font and text size.</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)heightForView:(UIFont *)font text:(NSString *)text andSize:(CGFloat)width</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>font</Name>
+					<Abstract type="html">The font used</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">The text</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">The width of the view</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The height needed to display the text</Abstract></ReturnValue>
+			<Anchor>//api/name/heightForView:text:andSize:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/tableView:viewForFooterInSection:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for a view object to display in the footer of the specified section of the table view.</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object asking for the view object.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section of tableView .</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A view object to be displayed in the footer of section .</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:viewForFooterInSection:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/tableView:heightForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for the height to use for a row in a specified location.</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path that locates a row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A nonnegative floating-point value that specifies the height (in points) that row should be.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:heightForRowAtIndexPath:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the data source for a cell to insert in a particular location of the table view. (required)</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">A table-view object requesting the cell.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating a row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An object inheriting from UITableViewCell that the table view can use for the specified row. An assertion is raised if you return nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/customDate</TokenIdentifier>
+			<Abstract type="html">Function that loads if the user has selected a custom date</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)customDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">A bool with the answer to the query</Abstract></ReturnValue>
+			<Anchor>//api/name/customDate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/stared:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user selects the stared cell</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)stared:(UITapGestureRecognizer *)gr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gr</Name>
+					<Abstract type="html">The tap gesture recognizer object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/stared:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigurationTableViewController/custom:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user selects the custom locations cell</Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)custom:(UITapGestureRecognizer *)gr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gr</Name>
+					<Abstract type="html">The tap gesture recognizer object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/custom:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVATime.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVATime</TokenIdentifier>
+			<Abstract type="html">This class represents a reference time for a stop inside a certain trip.</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="45"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/setTripID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/tripID</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATime/tripID</TokenIdentifier>
+			<Abstract type="html">The identifier of the trip</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVATrip</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *tripID</Declaration>
+			
+			
+			<Anchor>//api/name/tripID</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/setArrivalTime:</TokenIdentifier>
+			<Abstract type="html">The arrival time of this reference data</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>@property NSString *arrivalTime</Declaration>
+			
+			
+			<Anchor>//api/name/arrivalTime</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/arrivalTime</TokenIdentifier>
+			<Abstract type="html">The arrival time of this reference data</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>@property NSString *arrivalTime</Declaration>
+			
+			
+			<Anchor>//api/name/arrivalTime</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATime/arrivalTime</TokenIdentifier>
+			<Abstract type="html">The arrival time of this reference data</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>@property NSString *arrivalTime</Declaration>
+			
+			
+			<Anchor>//api/name/arrivalTime</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/setDepartureTime:</TokenIdentifier>
+			<Abstract type="html">The departure time of this reference data</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>@property NSString *departureTime</Declaration>
+			
+			
+			<Anchor>//api/name/departureTime</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/departureTime</TokenIdentifier>
+			<Abstract type="html">The departure time of this reference data</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>@property NSString *departureTime</Declaration>
+			
+			
+			<Anchor>//api/name/departureTime</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATime/departureTime</TokenIdentifier>
+			<Abstract type="html">The departure time of this reference data</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>@property NSString *departureTime</Declaration>
+			
+			
+			<Anchor>//api/name/departureTime</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/setStopID:</TokenIdentifier>
+			<Abstract type="html">The identifier of the stop</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *stopID</Declaration>
+			
+			
+			<Anchor>//api/name/stopID</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/stopID</TokenIdentifier>
+			<Abstract type="html">The identifier of the stop</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *stopID</Declaration>
+			
+			
+			<Anchor>//api/name/stopID</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATime/stopID</TokenIdentifier>
+			<Abstract type="html">The identifier of the stop</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAStop</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property NSString *stopID</Declaration>
+			
+			
+			<Anchor>//api/name/stopID</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/setSequence:</TokenIdentifier>
+			<Abstract type="html">The position of this stop in the sequence of stops that has the trip</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>@property int sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/sequence</TokenIdentifier>
+			<Abstract type="html">The position of this stop in the sequence of stops that has the trip</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>@property int sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVATime/sequence</TokenIdentifier>
+			<Abstract type="html">The position of this stop in the sequence of stops that has the trip</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>@property int sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/insertElement:atIndex:</TokenIdentifier>
+			<Abstract type="html">This function is used to insert a given data to the correct field</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>- (void)insertElement:(NSString *)elem atIndex:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>elem</Name>
+					<Abstract type="html">The data to be inserted</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of this data in the GTFS file</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertElement:atIndex:</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/insertInMetro:isFGC:andHash:andRoute:</TokenIdentifier>
+			<Abstract type="html">This function is used to insert a given data to the correct field</Abstract>
+			<DeclaredIn>MVATime.h</DeclaredIn>
+			
+			<Declaration>- (void)insertInMetro:(NSMutableArray *)subways isFGC:(BOOL)isFGC andHash:(NSMutableDictionary *)hash andRoute:(NSString *)route</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>subways</Name>
+					<Abstract type="html">An array with the subway stops</Abstract>
+				</Parameter><Parameter>
+					<Name>isFGC</Name>
+					<Abstract type="html">A boolean that indicates if the data passed is for the FGC agency</Abstract>
+				</Parameter><Parameter>
+					<Name>hash</Name>
+					<Abstract type="html">A Hashtable used to store the data efficiently</Abstract>
+				</Parameter><Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route identifier</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/insertInMetro:isFGC:andHash:andRoute:</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html">Encodes the receiver using a given archiver. (required)</Abstract>
+			<DeclaredIn>MVATime.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An archiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVATime/initWithCoder:</TokenIdentifier>
+			<Abstract type="html">Returns an object initialized from data in a given unarchiver. (required)</Abstract>
+			<DeclaredIn>MVATime.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithCoder:(NSCoder *)coder</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coder</Name>
+					<Abstract type="html">An unarchiver object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">self, initialized using the data in decoder.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

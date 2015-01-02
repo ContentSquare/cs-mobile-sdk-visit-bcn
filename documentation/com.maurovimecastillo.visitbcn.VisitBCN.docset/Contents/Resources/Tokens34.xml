@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAPunIntViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAPunIntViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UIViewController and is used to display the information of a point.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setPunto:</TokenIdentifier>
+			<Abstract type="html">The point to be displayed.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunInt *punto</Declaration>
+			
+			
+			<Anchor>//api/name/punto</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/punto</TokenIdentifier>
+			<Abstract type="html">The point to be displayed.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunInt *punto</Declaration>
+			
+			
+			<Anchor>//api/name/punto</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/punto</TokenIdentifier>
+			<Abstract type="html">The point to be displayed.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAPunInt</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVAPunInt *punto</Declaration>
+			
+			
+			<Anchor>//api/name/punto</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setCoordinates:</TokenIdentifier>
+			<Abstract type="html">The coordinates that will be used for the computations.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/coordinates</TokenIdentifier>
+			<Abstract type="html">The coordinates that will be used for the computations.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/coordinates</TokenIdentifier>
+			<Abstract type="html">The coordinates that will be used for the computations.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+			<Declaration>@property CLLocationCoordinate2D coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setStop:</TokenIdentifier>
+			<Abstract type="html">This bool is used to indicate the algorithm to stop the execution.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/stop</TokenIdentifier>
+			<Abstract type="html">This bool is used to indicate the algorithm to stop the execution.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/stop</TokenIdentifier>
+			<Abstract type="html">This bool is used to indicate the algorithm to stop the execution.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+			<Declaration>@property BOOL stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/setCustomlocation:</TokenIdentifier>
+			<Abstract type="html">The custom location selected by the user, the default value is nil.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACustomLocation *customlocation</Declaration>
+			
+			
+			<Anchor>//api/name/customlocation</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/customlocation</TokenIdentifier>
+			<Abstract type="html">The custom location selected by the user, the default value is nil.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACustomLocation *customlocation</Declaration>
+			
+			
+			<Anchor>//api/name/customlocation</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAPunIntViewController/customlocation</TokenIdentifier>
+			<Abstract type="html">The custom location selected by the user, the default value is nil.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property MVACustomLocation *customlocation</Declaration>
+			
+			
+			<Anchor>//api/name/customlocation</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Function that gets called when there&apos;s a memory leak or warning</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/viewDidDisappear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view was removed from a view hierarchy.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidDisappear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the disappearance of the view was animated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewDidDisappear:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/createParallax</TokenIdentifier>
+			<Abstract type="html">Function that creates the parallax effect.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)createParallax</Declaration>
+			
+			
+			<Anchor>//api/name/createParallax</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/heightForView:text:andSize:</TokenIdentifier>
+			<Abstract type="html">Function that calculates the height of a view that will contain a given text with an specific font and text size.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)heightForView:(UIFont *)font text:(NSString *)text andSize:(CGFloat)width</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>font</Name>
+					<Abstract type="html">The font used</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">The text</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">The width of the view</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The height needed to display the text</Abstract></ReturnValue>
+			<Anchor>//api/name/heightForView:text:andSize:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/calcularPaths</TokenIdentifier>
+			<Abstract type="html">Function that calls the functions needed to calculate the itineraries desired</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)calcularPaths</Declaration>
+			
+			
+			<Anchor>//api/name/calcularPaths</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/calculateWalkAndCar</TokenIdentifier>
+			<Abstract type="html">Function that calcultes the time and distances for the walking and car options.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)calculateWalkAndCar</Declaration>
+			
+			
+			<Anchor>//api/name/calculateWalkAndCar</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/distanceForCoordinates:andCoordinates:</TokenIdentifier>
+			<Abstract type="html">Haversine distance between two coordinates</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cordA</Name>
+					<Abstract type="html">The first coordinate</Abstract>
+				</Parameter><Parameter>
+					<Name>cordB</Name>
+					<Abstract type="html">The second coordinate</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The distance in meters</Abstract></ReturnValue>
+			<Anchor>//api/name/distanceForCoordinates:andCoordinates:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/reloadPath:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user wants to reload the itineraries</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)reloadPath:(UITapGestureRecognizer *)gr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gr</Name>
+					<Abstract type="html">The tap gesture recognizer object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reloadPath:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/handleSingleTap:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user wants to view the detailed information of the itineraries</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)handleSingleTap:(UITapGestureRecognizer *)gr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gr</Name>
+					<Abstract type="html">gr The tap gesture recognizer object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/handleSingleTap:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/loadWalkingSpeed</TokenIdentifier>
+			<Abstract type="html">Function that loads the walking speed selected by the user</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (double)loadWalkingSpeed</Declaration>
+			
+			<ReturnValue><Abstract type="html">The walking speed selected</Abstract></ReturnValue>
+			<Anchor>//api/name/loadWalkingSpeed</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/loadRain</TokenIdentifier>
+			<Abstract type="html">Function that loads if the user has indicated that is rainig in Barcelona.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)loadRain</Declaration>
+			
+			<ReturnValue><Abstract type="html">A bool that answers the query</Abstract></ReturnValue>
+			<Anchor>//api/name/loadRain</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/loadWalkingDist</TokenIdentifier>
+			<Abstract type="html">Function that loads the walking distance selected by the user.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (double)loadWalkingDist</Declaration>
+			
+			<ReturnValue><Abstract type="html">The walking distance selected by the user.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadWalkingDist</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/initalTime</TokenIdentifier>
+			<Abstract type="html">Function that loads the initial time for the computation.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (double)initalTime</Declaration>
+			
+			<ReturnValue><Abstract type="html">The initial time in seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/initalTime</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/customDate</TokenIdentifier>
+			<Abstract type="html">This function loads if the user has selected a custom date</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)customDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">A boolean</Abstract></ReturnValue>
+			<Anchor>//api/name/customDate</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/loadCustomDate</TokenIdentifier>
+			<Abstract type="html">This function loads either the custom date chosen by the user or the current date of the device</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSDate *)loadCustomDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSDate object</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomDate</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/getCoordinates</TokenIdentifier>
+			<Abstract type="html">Function that loads the origin&apos;s coordinates. The custom location coordinates or the current coordinates.</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (CLLocationCoordinate2D)getCoordinates</Declaration>
+			
+			<ReturnValue><Abstract type="html">The coordinates</Abstract></ReturnValue>
+			<Anchor>//api/name/getCoordinates</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/loadCustom</TokenIdentifier>
+			<Abstract type="html">&lt;#Description#&gt;</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (int)loadCustom</Declaration>
+			
+			<ReturnValue><Abstract type="html">&lt;#return value description#&gt;</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustom</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/loadCustomLocation</TokenIdentifier>
+			<Abstract type="html">Function that loads the custom location selected by the user</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVACustomLocation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (MVACustomLocation *)loadCustomLocation</Declaration>
+			
+			<ReturnValue><Abstract type="html">The MVACustomLocation object</Abstract></ReturnValue>
+			<Anchor>//api/name/loadCustomLocation</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPunIntViewController/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html">Called when a segue is about to be performed. (required)</Abstract>
+			<DeclaredIn>MVAPunIntViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>segue</Name>
+					<Abstract type="html">The segue object containing information about the view controllers involved in the segue.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

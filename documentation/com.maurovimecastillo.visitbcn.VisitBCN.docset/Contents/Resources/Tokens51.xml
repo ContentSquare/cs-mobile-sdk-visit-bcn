@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAConfigurationTableViewController+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAConfigurationTableViewController()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAConfigurationTableViewController.m</DeclaredIn>
+            
+			
+			<NodeRef refid="51"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

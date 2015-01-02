@@ -24,21 +24,22 @@
 
 /**
  *  The identifier of the route
+ *
  *  @see MVARoute class
+ *  @since version 1.0
  */
 @property NSString *routeID;
 
 /**
  *  The identifier of the service
- *  @see MVACalendar class
  *
+ *  @see MVACalendar class
  *  @since version 1.0
  */
 @property NSString* serviceID;
 
 /**
  *  The identifier of the trip
- *  @see MVATrip class
  *
  *  @since version 1.0
  */
@@ -74,8 +75,8 @@
 
 /**
  *  The frequencies of this trip
- *  @see MVAFrequencies class
  *
+ *  @see MVAFrequencies class
  *  @since version 1.0
  */
 @property NSMutableArray *freqs;

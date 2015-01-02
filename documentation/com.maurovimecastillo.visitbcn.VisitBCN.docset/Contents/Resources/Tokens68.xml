@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAStaredPathViewController+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAStaredPathViewController()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+            
+			
+			<NodeRef refid="68"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/setTaxis:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVATaxis *taxis</Declaration>
+			
+			
+			<Anchor>//api/name/taxis</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/taxis</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVATaxis *taxis</Declaration>
+			
+			
+			<Anchor>//api/name/taxis</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredPathViewController/taxis</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVATaxis *taxis</Declaration>
+			
+			
+			<Anchor>//api/name/taxis</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/setTaxiView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIView *taxiView</Declaration>
+			
+			
+			<Anchor>//api/name/taxiView</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/taxiView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIView *taxiView</Declaration>
+			
+			
+			<Anchor>//api/name/taxiView</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredPathViewController/taxiView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIView *taxiView</Declaration>
+			
+			
+			<Anchor>//api/name/taxiView</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/setCreated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/created</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredPathViewController/created</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/setSubway:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/subway</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAStaredPathViewController/subway</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

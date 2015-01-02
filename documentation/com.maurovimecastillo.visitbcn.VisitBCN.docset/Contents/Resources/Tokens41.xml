@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAStaredTableViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAStaredTableViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UITableViewController and is used to display the saved paths</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Function that gets called when there&apos;s a memory leak or warning</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/loadSavedPaths</TokenIdentifier>
+			<Abstract type="html">Function that loads the saved paths by the user</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)loadSavedPaths</Declaration>
+			
+			
+			<Anchor>//api/name/loadSavedPaths</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/tableView:numberOfRowsInSection:</TokenIdentifier>
+			<Abstract type="html">Tells the data source to return the number of rows in a given section of a table view. (required)</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">An index number identifying a section in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The number of rows in section.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:numberOfRowsInSection:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/tableView:estimatedHeightForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate for the estimated height of a row in a specified location.</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path that locates a row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A nonnegative floating-point value that estimates the height (in points) that row should be. Return UITableViewAutomaticDimension if you have no estimate.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:estimatedHeightForRowAtIndexPath:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/tableView:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the data source for a cell to insert in a particular location of the table view. (required)</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">A table-view object requesting the cell.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating a row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An object inheriting from UITableViewCell that the table view can use for the specified row. An assertion is raised if you return nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/tableView:canEditRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the data source to verify that the given row is editable.</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting this information.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating a row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the row indicated by indexPath is editable; otherwise, NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:canEditRowAtIndexPath:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/tableView:commitEditingStyle:forRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the data source to commit the insertion or deletion of a specified row in the receiver.</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table-view object requesting the insertion or deletion.</Abstract>
+				</Parameter><Parameter>
+					<Name>editingStyle</Name>
+					<Abstract type="html">The cell editing style corresponding to a insertion or deletion requested for the row specified by indexPath. Possible editing styles are UITableViewCellEditingStyleInsert or UITableViewCellEditingStyleDelete.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating the row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tableView:commitEditingStyle:forRowAtIndexPath:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/tableView:didSelectRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Tells the delegate that the specified row is now selected.</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">A table-view object informing the delegate about the new row selection.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating the new selected row in tableView.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tableView:didSelectRowAtIndexPath:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/formatDate:</TokenIdentifier>
+			<Abstract type="html">Function that formats a date into dd/MM/yyyy</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)formatDate:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">The date to be formated</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The formated string</Abstract></ReturnValue>
+			<Anchor>//api/name/formatDate:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/nameForDay:</TokenIdentifier>
+			<Abstract type="html">Function that returns the name of the day of the week</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)nameForDay:(long)day</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>day</Name>
+					<Abstract type="html">The number of the day in the week</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The day&apos;s name</Abstract></ReturnValue>
+			<Anchor>//api/name/nameForDay:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/dayOfWeek:</TokenIdentifier>
+			<Abstract type="html">Returns the day of the week for a given date</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (long)dayOfWeek:(NSDate *)anyDate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>anyDate</Name>
+					<Abstract type="html">A NSDate object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The day of the week in European mode</Abstract></ReturnValue>
+			<Anchor>//api/name/dayOfWeek:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredTableViewController/prepareForSegue:sender:</TokenIdentifier>
+			<Abstract type="html">Called when a segue is about to be performed. (required)</Abstract>
+			<DeclaredIn>MVAStaredTableViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>segue</Name>
+					<Abstract type="html">The segue object containing information about the view controllers involved in the segue.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prepareForSegue:sender:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

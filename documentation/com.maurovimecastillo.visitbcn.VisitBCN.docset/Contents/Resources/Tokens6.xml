@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVAConfigTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVAConfigTableViewCell</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UITableViewCell and is used to create the algorithm and rain custom cells</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/MVAConfigurationTableViewController</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/setLogo:</TokenIdentifier>
+			<Abstract type="html">The image of the cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/logo</TokenIdentifier>
+			<Abstract type="html">The image of the cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAConfigTableViewCell/logo</TokenIdentifier>
+			<Abstract type="html">The image of the cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIImageView *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/setLabel:</TokenIdentifier>
+			<Abstract type="html">The label with the text of the cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/label</TokenIdentifier>
+			<Abstract type="html">The label with the text of the cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAConfigTableViewCell/label</TokenIdentifier>
+			<Abstract type="html">The label with the text of the cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UILabel *label</Declaration>
+			
+			
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/setCellSwitch:</TokenIdentifier>
+			<Abstract type="html">The switch</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *cellSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwitch</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/cellSwitch</TokenIdentifier>
+			<Abstract type="html">The switch</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *cellSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwitch</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAConfigTableViewCell/cellSwitch</TokenIdentifier>
+			<Abstract type="html">The switch</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIView *cellSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/cellSwitch</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/setObjectName:</TokenIdentifier>
+			<Abstract type="html">An string used to customize the cell between the algorithm cell and the rain cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property NSString *objectName</Declaration>
+			
+			
+			<Anchor>//api/name/objectName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/objectName</TokenIdentifier>
+			<Abstract type="html">An string used to customize the cell between the algorithm cell and the rain cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property NSString *objectName</Declaration>
+			
+			
+			<Anchor>//api/name/objectName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAConfigTableViewCell/objectName</TokenIdentifier>
+			<Abstract type="html">An string used to customize the cell between the algorithm cell and the rain cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property NSString *objectName</Declaration>
+			
+			
+			<Anchor>//api/name/objectName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/setPapi:</TokenIdentifier>
+			<Abstract type="html">The view controller that creates this cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property MVAConfigurationTableViewController *papi</Declaration>
+			
+			
+			<Anchor>//api/name/papi</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/papi</TokenIdentifier>
+			<Abstract type="html">The view controller that creates this cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property MVAConfigurationTableViewController *papi</Declaration>
+			
+			
+			<Anchor>//api/name/papi</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAConfigTableViewCell/papi</TokenIdentifier>
+			<Abstract type="html">The view controller that creates this cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property MVAConfigurationTableViewController *papi</Declaration>
+			
+			
+			<Anchor>//api/name/papi</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/configSwitch</TokenIdentifier>
+			<Abstract type="html">Function that gets called to initialize the cell</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.h</DeclaredIn>
+			
+			<Declaration>- (void)configSwitch</Declaration>
+			
+			
+			<Anchor>//api/name/configSwitch</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/initWithStyle:reuseIdentifier:</TokenIdentifier>
+			<Abstract type="html">Function that gets called to initialize the cell with a style and an identifier</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>style</Name>
+					<Abstract type="html">The cell style</Abstract>
+				</Parameter><Parameter>
+					<Name>reuseIdentifier</Name>
+					<Abstract type="html">The identifier</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized cell</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/switchChanged:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user changes the switch value</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)switchChanged:(SevenSwitch *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The SevenSwitch object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/switchChanged:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAConfigTableViewCell/saveAlgorithm:</TokenIdentifier>
+			<Abstract type="html">Function used to save the switch value</Abstract>
+			<DeclaredIn>MVAConfigTableViewCell.m</DeclaredIn>
+			
+			<Declaration>- (void)saveAlgorithm:(BOOL)alarmaPermitida</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alarmaPermitida</Name>
+					<Abstract type="html">The switch value passed as a bool</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveAlgorithm:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

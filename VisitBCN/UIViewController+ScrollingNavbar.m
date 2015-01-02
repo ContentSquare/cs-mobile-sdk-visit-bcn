@@ -398,13 +398,13 @@
 {
     CGRect frame = self.navigationController.navigationBar.frame;
     
-    if (self.scrollableView != nil) {
-        [self.navigationController.navigationBar bringSubviewToFront:self.overlay];
-    }
+    [self.navigationController.navigationBar bringSubviewToFront:self.overlay];
+    [self.overlay setBackgroundColor:[UINavigationBar appearance].barTintColor];
+    [self.overlay setAlpha:1.0f];
     
     // Change the alpha channel of every item on the navbr. The overlay will appear, while the other objects will disappear, and vice versa
     float alpha = (frame.origin.y + self.deltaLimit) / frame.size.height;
-    [self.overlay setAlpha:1 - alpha];
+    //[self.overlay setAlpha:1 - alpha];
     [self.navigationItem.leftBarButtonItems enumerateObjectsUsingBlock:^(UIBarButtonItem *obj, NSUInteger idx, BOOL *stop) {
         obj.customView.alpha = alpha;
     }];
@@ -412,7 +412,7 @@
     [self.navigationItem.rightBarButtonItems enumerateObjectsUsingBlock:^(UIBarButtonItem *obj, NSUInteger idx, BOOL *stop) {
         obj.customView.alpha = alpha;
     }];
-    self.navigationItem.rightBarButtonItem.customView.alpha = alpha;
+    [self.navigationItem.rightBarButtonItem setTintColor:[UIColor colorWithWhite:1.0 alpha:alpha]];
     self.navigationItem.titleView.alpha = alpha;
     self.navigationController.navigationBar.tintColor = [self.navigationController.navigationBar.tintColor colorWithAlphaComponent:alpha];
 }

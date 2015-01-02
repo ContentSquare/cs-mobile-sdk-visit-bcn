@@ -7,8 +7,9 @@
 //
 
 /**
- *  <#Description#>
+ *  This class is a subclass of UITableViewCell and is used to create the custom location cell
  *
+ *  @see MVAConfigurationTableViewController class
  *  @since version 1.0
  */
 
@@ -17,14 +18,14 @@
 @interface MVACustomLocTableViewCell : UITableViewCell
 
 /**
- *  <#Description#>
+ *  The image of the cell
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 
 /**
- *  <#Description#>
+ *  The name of the cell
  *
  *  @since version 1.0
  */

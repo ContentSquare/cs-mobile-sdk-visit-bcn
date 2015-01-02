@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAGraph+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAGraph()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+            
+			
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>@property MVAPath *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/path</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>@property MVAPath *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/path</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>@property MVAPath *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/setCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>@property int count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAGraph/count</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>@property int count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAGraph/count</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAGraph.m</DeclaredIn>
+			
+			<Declaration>@property int count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

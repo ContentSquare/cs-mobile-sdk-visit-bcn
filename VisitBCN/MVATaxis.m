@@ -10,9 +10,7 @@
 
 @implementation MVATaxis
 
-NSString * const hailoAPI = @"";
-
-NSString * const uberAPI = @"";
+NSString * const hailoAPI = @"26lsOoj9SzZQo4+RPBqb2UGX+ImifoDA9T78Y50hu8Kgn1ppWHbq1x9yAv84TFEJtQlpsPsQdqbYxow969HlNJJlMmYfhQxHErgB/Yl4CcUo+QoX3yYvKGB9tuK84x1WKC1bulbR3vG7COCnskty4iAJZmOFSdP6o7ztWcPcZAyAsLN8ssOfIFZarZOSbQJuiX5SLwFDIRrf230snbM3+w==";
 
 # pragma mark - Hailo methods
 
@@ -67,15 +65,15 @@ NSString * const uberAPI = @"";
 }
 
 /**
- *  <#Description#>
+ *  Function that encodes an string to use it for the APIs
  *
- *  @param unencodedString <#unencodedString description#>
+ *  @param unencodedString The unencoded string
  *
- *  @return <#return value description#>
+ *  @return The encoded string
  *
  *  @since version 1.0
  */
-- (NSString *)urlencodeString:(NSString *)unencodedString
+-(NSString *)urlencodeString:(NSString *)unencodedString
 {
     NSString *encodedString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(
                                                                                                     NULL,
@@ -86,140 +84,23 @@ NSString * const uberAPI = @"";
     return encodedString;
 }
 
-# pragma mark - Uber methods
-
--(void)loadUberTime
+-(double)taxiFareWithDistance:(double)dist andDate:(NSDate *)date
 {
-    NSString *urlString = @"https://api.uber.com/v1/estimates/time?server_token=";
-    urlString = [urlString stringByAppendingString:uberAPI];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_latitude=%f",self.orig.latitude]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_longitude=%f",self.orig.longitude]];
-    
-    NSError *error = nil;
-    NSHTTPURLResponse *responseCode = nil;
-    
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:requestObj returningResponse:&responseCode error:&error];
-    
-    if(error){
-        NSLog (@"HOLA");
-    }
-    else {
-        NSError *e = nil;
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseData options: NSJSONReadingMutableContainers error: &e];
-        
-        if (!dict) {
-            NSLog(@"Error parsing JSON: %@", e);
-        }
-        else {
-            self.uberTimes = dict;
-        }
-    }
-}
-
--(void)loadUberProducts
-{
-    NSString *urlString = @"https://api.uber.com/v1/products?server_token=";
-    urlString = [urlString stringByAppendingString:uberAPI];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&latitude=%f",self.orig.latitude]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&longitude=%f",self.orig.longitude]];
-    
-    NSError *error = nil;
-    NSHTTPURLResponse *responseCode = nil;
-    
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:requestObj returningResponse:&responseCode error:&error];
-    
-    if(error){
-        NSLog (@"HOLA");
-    }
-    else {
-        NSError *e = nil;
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseData options: NSJSONReadingMutableContainers error: &e];
-        
-        if (!dict) {
-            NSLog(@"Error parsing JSON: %@", e);
-        }
-        else {
-            self.uberProducts = dict;
-        }
-    }
-}
-
--(void)loadUberPrice
-{
-    NSString *urlString = @"https://api.uber.com/v1/estimates/price?server_token=";
-    urlString = [urlString stringByAppendingString:uberAPI];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_latitude=%f",self.orig.latitude]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&start_longitude=%f",self.orig.longitude]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&end_latitude=%f",self.dest.latitude]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&end_longitude=%f",self.dest.longitude]];
-    
-    NSError *error = nil;
-    NSHTTPURLResponse *responseCode = nil;
-    
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:requestObj returningResponse:&responseCode error:&error];
-    
-    if(error){
-        NSLog (@"HOLA");
-    }
-    else {
-        NSError *e = nil;
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseData options: NSJSONReadingMutableContainers error: &e];
-        
-        if (!dict) {
-            NSLog(@"Error parsing JSON: %@", e);
-        }
-        else {
-            self.uberPrices = dict;
-        }
-    }
-}
-
--(void)openUber
-{
-    NSArray *prices = [self.uberPrices objectForKey:@"prices"];
-    NSDictionary *estPrice = [prices firstObject];
-    NSString *urlString = @"uber://?client_id=YOUR_CLIENT_ID";
-    urlString = [urlString stringByAppendingString:uberAPI];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&action=setPickup&pickup[latitude]=%f",self.orig.latitude]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&pickup[longitude]=%f",self.orig.longitude]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&dropoff[latitude]=%f",self.dest.latitude]];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"&dropoff[longitude]=%f",self.dest.longitude]];
-    urlString = [urlString stringByAppendingString:@"&product_id="];
-    urlString = [urlString stringByAppendingString:[estPrice objectForKey:@"product_id"]];
-    
-    NSURL* url = [NSURL URLWithString:urlString];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:url]){
-        [[UIApplication sharedApplication] openURL:url];
-    }
-}
-
--(double)taxiFareWithDistance:(double)dist andTime:(double)time
-{
-    long day = [self dayOfWeek:[self loadCustomDate]];
-    double initTime = [self initTime];
+    long day = [self dayOfWeek:date];
+    double initTime = [self initTimeForDate:date];
     if (day >= 1 && day <= 5) {
         if (initTime >= 28800 && initTime <= 72000) {
-            return (2.10 + (1.03 * (dist/1000.0)));
+            return (2.10 + (1.07 * (dist/1000.0)));
         }
         else {
-            double est = (2.10 + (1.03 * (dist/1000.0)));
-            return fmax(est, 7);
+            double est = (2.10 + (1.30 * (dist/1000.0)));
+            return est;
         }
     }
     else {
         if (initTime >= 28800 && initTime <= 72000) {
-            double est = (2.10 + (1.03 * (dist/1000.0)));
-            return fmax(est, 7);
+            double est = (2.10 + (1.30 * (dist/1000.0)));
+            return est;
         }
         else {
             return (2.30 + (1.40 * (dist/1000.0)));
@@ -228,29 +109,31 @@ NSString * const uberAPI = @"";
 }
 
 /**
- *  <#Description#>
+ *  Functiont that converts the initial time for this execution into an integer that represents the date in seconds
  *
- *  @return <#return value description#>
+ *  @param date The date of the trip
+ *
+ *  @return Integer with the date in seconds
  *
  *  @since version 1.0
  */
--(double)initTime
+-(int)initTimeForDate:(NSDate *)date
 {
     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Madrid"]];
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[self loadCustomDate]];
-    NSInteger hour = [components hour];
-    NSInteger minute = [components minute];
-    NSInteger seconds = [components second];
-    double sec_rep = (hour * 3600) + (minute * 60) + seconds;
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:date];
+    int hour = (int)[components hour];
+    int minute = (int)[components minute];
+    int seconds = (int)[components second];
+    int sec_rep = (hour * 3600) + (minute * 60) + seconds;
     return sec_rep;
 }
 
 /**
- *  <#Description#>
+ *  Returns the day of the week for a given date
  *
- *  @param anyDate <#anyDate description#>
+ *  @param anyDate A NSDate object
  *
- *  @return <#return value description#>
+ *  @return The day of the week in European mode
  *
  *  @since version 1.0
  */
@@ -267,9 +150,9 @@ NSString * const uberAPI = @"";
 }
 
 /**
- *  <#Description#>
+ *  Function that loads if the user has chosen a custom date for the execution
  *
- *  @return <#return value description#>
+ *  @return A bool with the answer to the query
  *
  *  @since version 1.0
  */
@@ -287,9 +170,9 @@ NSString * const uberAPI = @"";
 }
 
 /**
- *  <#Description#>
+ *  Function that loads the custom date chosen by the user
  *
- *  @return <#return value description#>
+ *  @return The date in an NSDate object
  *
  *  @since version 1.0
  */

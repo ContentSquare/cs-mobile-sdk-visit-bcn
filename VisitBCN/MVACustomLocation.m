@@ -33,7 +33,7 @@
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *
@@ -52,4 +52,5 @@
     }
     return self;
 }
+
 @end

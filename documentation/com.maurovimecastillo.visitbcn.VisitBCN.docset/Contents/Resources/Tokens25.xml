@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MVALoadViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MVALoadViewController</TokenIdentifier>
+			<Abstract type="html">This class is a subclass of UIViewController and is used to display a loading view while all the app&apos;s data is being loaded.</Abstract>
+			<DeclaredIn>MVALoadViewController.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVALoadViewController/viewDidLoad</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the view controller has loaded the view</Abstract>
+			<DeclaredIn>MVALoadViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidLoad</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidLoad</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVALoadViewController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Function that gets called when there&apos;s a memory leak or warning</Abstract>
+			<DeclaredIn>MVALoadViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVALoadViewController/viewDidAppear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view was added to a view hierarchy.</Abstract>
+			<DeclaredIn>MVALoadViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidAppear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the view was added to the window using an animation.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewDidAppear:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVALoadViewController/viewDidDisappear:</TokenIdentifier>
+			<Abstract type="html">Notifies the view controller that its view was removed from a view hierarchy.</Abstract>
+			<DeclaredIn>MVALoadViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidDisappear:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">If YES, the disappearance of the view was animated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewDidDisappear:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVALoadViewController/load:</TokenIdentifier>
+			<Abstract type="html">Function that gets called to begin the loading process of all the data.</Abstract>
+			<DeclaredIn>MVALoadViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)load:(NSTimer *)timer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>timer</Name>
+					<Abstract type="html">The timer used to trigger this function.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/load:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVALoadViewController/actualizar:</TokenIdentifier>
+			<Abstract type="html">Function that gets called to create the loading animation</Abstract>
+			<DeclaredIn>MVALoadViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)actualizar:(NSTimer *)timer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>timer</Name>
+					<Abstract type="html">The timer used to trigger this function.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/actualizar:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

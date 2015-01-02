@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVADataBus+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVADataBus()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+            
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setDocName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property NSString *docName</Declaration>
+			
+			
+			<Anchor>//api/name/docName</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/docName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property NSString *docName</Declaration>
+			
+			
+			<Anchor>//api/name/docName</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/docName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property NSString *docName</Declaration>
+			
+			
+			<Anchor>//api/name/docName</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setLine:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property int line</Declaration>
+			
+			
+			<Anchor>//api/name/line</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/line</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property int line</Declaration>
+			
+			
+			<Anchor>//api/name/line</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/line</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property int line</Declaration>
+			
+			
+			<Anchor>//api/name/line</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setIndexRouteIda:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property int indexRouteIda</Declaration>
+			
+			
+			<Anchor>//api/name/indexRouteIda</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/indexRouteIda</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property int indexRouteIda</Declaration>
+			
+			
+			<Anchor>//api/name/indexRouteIda</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/indexRouteIda</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property int indexRouteIda</Declaration>
+			
+			
+			<Anchor>//api/name/indexRouteIda</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setIndexRouteVuelta:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property int indexRouteVuelta</Declaration>
+			
+			
+			<Anchor>//api/name/indexRouteVuelta</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/indexRouteVuelta</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property int indexRouteVuelta</Declaration>
+			
+			
+			<Anchor>//api/name/indexRouteVuelta</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/indexRouteVuelta</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property int indexRouteVuelta</Declaration>
+			
+			
+			<Anchor>//api/name/indexRouteVuelta</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setBusSeq:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVABusSeq *busSeq</Declaration>
+			
+			
+			<Anchor>//api/name/busSeq</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/busSeq</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVABusSeq *busSeq</Declaration>
+			
+			
+			<Anchor>//api/name/busSeq</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/busSeq</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVABusSeq *busSeq</Declaration>
+			
+			
+			<Anchor>//api/name/busSeq</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setIda:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property BOOL ida</Declaration>
+			
+			
+			<Anchor>//api/name/ida</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/ida</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property BOOL ida</Declaration>
+			
+			
+			<Anchor>//api/name/ida</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/ida</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property BOOL ida</Declaration>
+			
+			
+			<Anchor>//api/name/ida</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setRoute:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVARoute *route</Declaration>
+			
+			
+			<Anchor>//api/name/route</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/route</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVARoute *route</Declaration>
+			
+			
+			<Anchor>//api/name/route</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/route</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVARoute *route</Declaration>
+			
+			
+			<Anchor>//api/name/route</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setStop:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVAStop *stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/stop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVAStop *stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/stop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVAStop *stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/setFreq:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVAFrequencies *freq</Declaration>
+			
+			
+			<Anchor>//api/name/freq</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/freq</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVAFrequencies *freq</Declaration>
+			
+			
+			<Anchor>//api/name/freq</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADataBus/freq</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADataBus.m</DeclaredIn>
+			
+			<Declaration>@property MVAFrequencies *freq</Declaration>
+			
+			
+			<Anchor>//api/name/freq</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

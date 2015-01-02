@@ -48,7 +48,8 @@
  *
  *  @since version 1.0
  */
-- (BOOL)isEqual:(id)other {
+- (BOOL)isEqual:(id)other
+{
     if (other == self)
         return YES;
     if (!other || ![other isKindOfClass:[self class]])
@@ -98,7 +99,7 @@
 /**
  *  Returns an object initialized from data in a given unarchiver. (required)
  *
- *  @param An unarchiver object
+ *  @param coder An unarchiver object
  *
  *  @return self, initialized using the data in decoder.
  *

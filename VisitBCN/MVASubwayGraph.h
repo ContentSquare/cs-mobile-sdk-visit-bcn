@@ -7,7 +7,7 @@
 //
 
 /**
- *  Thie class is a subclass of the MVAGraph class
+ *  This class is a subclass of the MVAGraph class
  *
  *  @see MVAGraph class
  *  @since version 1.0
@@ -20,10 +20,10 @@
 
 
 /**
- *  This function 
+ *  This function creates the subway graph
  *
- *  @param dataTMB <#dataTMB description#>
- *  @param dataFGC <#dataFGC description#>
+ *  @param dataTMB An object with the TMB data base
+ *  @param dataFGC An object with the FGC data base
  *
  *  @since version 1.0
  */

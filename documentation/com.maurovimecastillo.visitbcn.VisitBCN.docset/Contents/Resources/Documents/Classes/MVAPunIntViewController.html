@@ -1,0 +1,1798 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MVAPunIntViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">VisitBCN </a></h1>
+				<a id="developerHome" href="../index.html">Mauro Vime Castillo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MVAPunIntViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/coordinates">&nbsp;&nbsp;&nbsp;&nbsp;coordinates</option>
+	
+	<option value="//api/name/customlocation">&nbsp;&nbsp;&nbsp;&nbsp;customlocation</option>
+	
+	<option value="//api/name/punto">&nbsp;&nbsp;&nbsp;&nbsp;punto</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;stop</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/calcularPaths">&nbsp;&nbsp;&nbsp;&nbsp;- calcularPaths</option>
+	
+	<option value="//api/name/calculateWalkAndCar">&nbsp;&nbsp;&nbsp;&nbsp;- calculateWalkAndCar</option>
+	
+	<option value="//api/name/createParallax">&nbsp;&nbsp;&nbsp;&nbsp;- createParallax</option>
+	
+	<option value="//api/name/customDate">&nbsp;&nbsp;&nbsp;&nbsp;- customDate</option>
+	
+	<option value="//api/name/didReceiveMemoryWarning">&nbsp;&nbsp;&nbsp;&nbsp;- didReceiveMemoryWarning</option>
+	
+	<option value="//api/name/distanceForCoordinates:andCoordinates:">&nbsp;&nbsp;&nbsp;&nbsp;- distanceForCoordinates:andCoordinates:</option>
+	
+	<option value="//api/name/getCoordinates">&nbsp;&nbsp;&nbsp;&nbsp;- getCoordinates</option>
+	
+	<option value="//api/name/handleSingleTap:">&nbsp;&nbsp;&nbsp;&nbsp;- handleSingleTap:</option>
+	
+	<option value="//api/name/heightForView:text:andSize:">&nbsp;&nbsp;&nbsp;&nbsp;- heightForView:text:andSize:</option>
+	
+	<option value="//api/name/initalTime">&nbsp;&nbsp;&nbsp;&nbsp;- initalTime</option>
+	
+	<option value="//api/name/loadCustom">&nbsp;&nbsp;&nbsp;&nbsp;- loadCustom</option>
+	
+	<option value="//api/name/loadCustomDate">&nbsp;&nbsp;&nbsp;&nbsp;- loadCustomDate</option>
+	
+	<option value="//api/name/loadCustomLocation">&nbsp;&nbsp;&nbsp;&nbsp;- loadCustomLocation</option>
+	
+	<option value="//api/name/loadRain">&nbsp;&nbsp;&nbsp;&nbsp;- loadRain</option>
+	
+	<option value="//api/name/loadWalkingDist">&nbsp;&nbsp;&nbsp;&nbsp;- loadWalkingDist</option>
+	
+	<option value="//api/name/loadWalkingSpeed">&nbsp;&nbsp;&nbsp;&nbsp;- loadWalkingSpeed</option>
+	
+	<option value="//api/name/prepareForSegue:sender:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareForSegue:sender:</option>
+	
+	<option value="//api/name/reloadPath:">&nbsp;&nbsp;&nbsp;&nbsp;- reloadPath:</option>
+	
+	<option value="//api/name/viewDidDisappear:">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidDisappear:</option>
+	
+	<option value="//api/name/viewDidLoad">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidLoad</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/coordinates">coordinates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/customlocation">customlocation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/punto">punto</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/calcularPaths">calcularPaths</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/calculateWalkAndCar">calculateWalkAndCar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createParallax">createParallax</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/customDate">customDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didReceiveMemoryWarning">didReceiveMemoryWarning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/distanceForCoordinates:andCoordinates:">distanceForCoordinates:andCoordinates:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getCoordinates">getCoordinates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleSingleTap:">handleSingleTap:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/heightForView:text:andSize:">heightForView:text:andSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initalTime">initalTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadCustom">loadCustom</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadCustomDate">loadCustomDate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadCustomLocation">loadCustomLocation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadRain">loadRain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadWalkingDist">loadWalkingDist</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadWalkingSpeed">loadWalkingSpeed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareForSegue:sender:">prepareForSegue:sender:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reloadPath:">reloadPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidDisappear:">viewDidDisappear:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidLoad">viewDidLoad</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MVAPunIntViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MVAPunIntViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MVAPunIntViewController.h<br />MVAPunIntViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class is a subclass of UIViewController and is used to display the information of a point.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/punto">&nbsp;&nbsp;punto</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/coordinates">&nbsp;&nbsp;coordinates</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&nbsp;&nbsp;stop</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/customlocation">&nbsp;&nbsp;customlocation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidDisappear:">&ndash;&nbsp;viewDidDisappear:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createParallax">&ndash;&nbsp;createParallax</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/heightForView:text:andSize:">&ndash;&nbsp;heightForView:text:andSize:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/calcularPaths">&ndash;&nbsp;calcularPaths</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/calculateWalkAndCar">&ndash;&nbsp;calculateWalkAndCar</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/distanceForCoordinates:andCoordinates:">&ndash;&nbsp;distanceForCoordinates:andCoordinates:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reloadPath:">&ndash;&nbsp;reloadPath:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleSingleTap:">&ndash;&nbsp;handleSingleTap:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadWalkingSpeed">&ndash;&nbsp;loadWalkingSpeed</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadRain">&ndash;&nbsp;loadRain</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadWalkingDist">&ndash;&nbsp;loadWalkingDist</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initalTime">&ndash;&nbsp;initalTime</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/customDate">&ndash;&nbsp;customDate</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadCustomDate">&ndash;&nbsp;loadCustomDate</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getCoordinates">&ndash;&nbsp;getCoordinates</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadCustom">&ndash;&nbsp;loadCustom</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadCustomLocation">&ndash;&nbsp;loadCustomLocation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareForSegue:sender:">&ndash;&nbsp;prepareForSegue:sender:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/coordinates" title="coordinates"></a>
+	<h3 class="subsubtitle method-title">coordinates</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The coordinates that will be used for the computations.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CLLocationCoordinate2D coordinates</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The coordinates that will be used for the computations.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/customlocation" title="customlocation"></a>
+	<h3 class="subsubtitle method-title">customlocation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The custom location selected by the user, the default value is nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property MVACustomLocation *customlocation</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The custom location selected by the user, the default value is nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVACustomLocation.html">MVACustomLocation</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/punto" title="punto"></a>
+	<h3 class="subsubtitle method-title">punto</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The point to be displayed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property MVAPunInt *punto</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The point to be displayed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVAPunInt.html">MVAPunInt</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This bool is used to indicate the algorithm to stop the execution.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property BOOL stop</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This bool is used to indicate the algorithm to stop the execution.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/calcularPaths" title="calcularPaths"></a>
+	<h3 class="subsubtitle method-title">calcularPaths</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that calls the functions needed to calculate the itineraries desired</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)calcularPaths</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that calls the functions needed to calculate the itineraries desired</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/calculateWalkAndCar" title="calculateWalkAndCar"></a>
+	<h3 class="subsubtitle method-title">calculateWalkAndCar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that calcultes the time and distances for the walking and car options.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)calculateWalkAndCar</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that calcultes the time and distances for the walking and car options.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createParallax" title="createParallax"></a>
+	<h3 class="subsubtitle method-title">createParallax</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that creates the parallax effect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)createParallax</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that creates the parallax effect.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/customDate" title="customDate"></a>
+	<h3 class="subsubtitle method-title">customDate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function loads if the user has selected a custom date</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)customDate</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A boolean</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function loads if the user has selected a custom date</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
+	<h3 class="subsubtitle method-title">didReceiveMemoryWarning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that gets called when there&rsquo;s a memory leak or warning</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that gets called when there&rsquo;s a memory leak or warning</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/distanceForCoordinates:andCoordinates:" title="distanceForCoordinates:andCoordinates:"></a>
+	<h3 class="subsubtitle method-title">distanceForCoordinates:andCoordinates:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Haversine distance between two <a href="#//api/name/coordinates">coordinates</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)distanceForCoordinates:(CLLocationCoordinate2D)<em>cordA</em> andCoordinates:(CLLocationCoordinate2D)<em>cordB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cordA</em></dt>
+			<dd><p>The first coordinate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cordB</em></dt>
+			<dd><p>The second coordinate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The distance in meters</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Haversine distance between two <a href="#//api/name/coordinates">coordinates</a></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="http://www.movable-type.co.uk/scripts/latlong.html">http://www.movable-type.co.uk/scripts/latlong.html</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getCoordinates" title="getCoordinates"></a>
+	<h3 class="subsubtitle method-title">getCoordinates</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that loads the origin&rsquo;s <a href="#//api/name/coordinates">coordinates</a>. The custom location <a href="#//api/name/coordinates">coordinates</a> or the current <a href="#//api/name/coordinates">coordinates</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CLLocationCoordinate2D)getCoordinates</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/coordinates">coordinates</a></p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that loads the origin&rsquo;s <a href="#//api/name/coordinates">coordinates</a>. The custom location <a href="#//api/name/coordinates">coordinates</a> or the current <a href="#//api/name/coordinates">coordinates</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleSingleTap:" title="handleSingleTap:"></a>
+	<h3 class="subsubtitle method-title">handleSingleTap:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that gets called when the user wants to view the detailed information of the itineraries</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)handleSingleTap:(UITapGestureRecognizer *)<em>gr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gr</em></dt>
+			<dd><p>gr The tap gesture recognizer object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that gets called when the user wants to view the detailed information of the itineraries</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/heightForView:text:andSize:" title="heightForView:text:andSize:"></a>
+	<h3 class="subsubtitle method-title">heightForView:text:andSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that calculates the height of a view that will contain a given text with an specific font and text size.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)heightForView:(UIFont *)<em>font</em> text:(NSString *)<em>text</em> andSize:(CGFloat)<em>width</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>font</em></dt>
+			<dd><p>The font used</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>The text</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>width</em></dt>
+			<dd><p>The width of the view</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The height needed to display the text</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that calculates the height of a view that will contain a given text with an specific font and text size.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initalTime" title="initalTime"></a>
+	<h3 class="subsubtitle method-title">initalTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that loads the initial time for the computation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)initalTime</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The initial time in seconds.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that loads the initial time for the computation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadCustom" title="loadCustom"></a>
+	<h3 class="subsubtitle method-title">loadCustom</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&lt;#Description#></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (int)loadCustom</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&lt;#return value description#></p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&lt;#Description#></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadCustomDate" title="loadCustomDate"></a>
+	<h3 class="subsubtitle method-title">loadCustomDate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function loads either the custom date chosen by the user or the current date of the device</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)loadCustomDate</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An NSDate object</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function loads either the custom date chosen by the user or the current date of the device</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadCustomLocation" title="loadCustomLocation"></a>
+	<h3 class="subsubtitle method-title">loadCustomLocation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that loads the custom location selected by the user</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (MVACustomLocation *)loadCustomLocation</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/MVACustomLocation.html">MVACustomLocation</a> object</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that loads the custom location selected by the user</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/MVACustomLocation.html">MVACustomLocation</a> class</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadRain" title="loadRain"></a>
+	<h3 class="subsubtitle method-title">loadRain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that loads if the user has indicated that is rainig in Barcelona.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)loadRain</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A bool that answers the query</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that loads if the user has indicated that is rainig in Barcelona.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadWalkingDist" title="loadWalkingDist"></a>
+	<h3 class="subsubtitle method-title">loadWalkingDist</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that loads the walking distance selected by the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)loadWalkingDist</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The walking distance selected by the user.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that loads the walking distance selected by the user.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadWalkingSpeed" title="loadWalkingSpeed"></a>
+	<h3 class="subsubtitle method-title">loadWalkingSpeed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that loads the walking speed selected by the user</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)loadWalkingSpeed</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The walking speed selected</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that loads the walking speed selected by the user</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareForSegue:sender:" title="prepareForSegue:sender:"></a>
+	<h3 class="subsubtitle method-title">prepareForSegue:sender:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a segue is about to be performed. (required)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareForSegue:(UIStoryboardSegue *)<em>segue</em> sender:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>segue</em></dt>
+			<dd><p>The segue object containing information about the view controllers involved in the segue.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when a segue is about to be performed. (required)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reloadPath:" title="reloadPath:"></a>
+	<h3 class="subsubtitle method-title">reloadPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that gets called when the user wants to reload the itineraries</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reloadPath:(UITapGestureRecognizer *)<em>gr</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gr</em></dt>
+			<dd><p>The tap gesture recognizer object</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that gets called when the user wants to reload the itineraries</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidDisappear:" title="viewDidDisappear:"></a>
+	<h3 class="subsubtitle method-title">viewDidDisappear:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies the view controller that its view was removed from a view hierarchy.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)viewDidDisappear:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>If YES, the disappearance of the view was animated.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Notifies the view controller that its view was removed from a view hierarchy.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidLoad" title="viewDidLoad"></a>
+	<h3 class="subsubtitle method-title">viewDidLoad</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Function that gets called when the view controller has loaded the view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)viewDidLoad</code></div>
+
+    
+	
+	
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>version 1.0</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Function that gets called when the view controller has loaded the view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MVAPunIntViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 Mauro Vime Castillo. All rights reserved. (Last updated: 2015-01-02)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

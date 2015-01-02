@@ -69,7 +69,7 @@
 @property int identificador;
 
 /**
- *  This boolean indicates if the node has been opened previously
+ *  This BOOL indicates if the node has been opened previously
  *
  *  @since version 1.0
  */

@@ -7,8 +7,9 @@
 //
 
 /**
- * <#Description#>
+ * This class is a sbclass of UITableViewCell and is used to create the cells displayed in the list of the main window of the app
  *
+ *  @see MVAPuntsIntsTableViewController class
  *  @since version 1.0
  */
 
@@ -17,35 +18,35 @@
 @interface MVAPunIntTableViewCell : UITableViewCell
 
 /**
- * <#Description#>
+ * The background image
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UIImageView *fondo;
 
 /**
- * <#Description#>
+ * The display of the distance
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UILabel *distance;
 
 /**
- * <#Description#>
+ * The display of the name
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UILabel *name;
 
 /**
- * <#Description#>
+ * The display of the address
  *
  *  @since version 1.0
  */
 @property (weak, nonatomic) IBOutlet UILabel *street;
 
 /**
- * <#Description#>
+ * The display of the GPS arrow
  *
  *  @since version 1.0
  */

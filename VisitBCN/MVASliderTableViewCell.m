@@ -17,7 +17,7 @@
 @implementation MVASliderTableViewCell
 
 /**
- *  <#Description#>
+ *  Function that gets called to initialize the cell
  *
  *  @since version 1.0
  */
@@ -27,6 +27,11 @@
     self.created = NO;
 }
 
+/**
+ *  Function that gets called to initialize the cell
+ *
+ *  @since version 1.0
+ */
 -(void)initCell
 {
     double speed = [self loadWalkingSpeed];
@@ -42,24 +47,22 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the cell is selected
  *
- *  @param selected <#selected description#>
- *  @param animated <#animated description#>
+ *  @param selected A bool that indicates if the cell has been selected
+ *  @param animated A bool that indicates if the selection needs to be animated or not
  *
  *  @since version 1.0
  */
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 /**
- *  <#Description#>
+ *  Function that gets called when the user changes the value of the slider
  *
- *  @param sender <#sender description#>
+ *  @param sender The slider object
  *
  *  @since version 1.0
  */
@@ -79,11 +82,9 @@
 }
 
 /**
- *  <#Description#>
+ *  This function loads the walking speed indicated by the user. (The default value is 5km/h)
  *
- *  @return <#return value description#>
- *
- *  @since version 1.0
+ *  @return The speed in m/s
  */
 -(double)loadWalkingSpeed
 {
@@ -106,9 +107,9 @@
 }
 
 /**
- *  <#Description#>
+ *  Function that saves the selected speed by the user
  *
- *  @param speed <#speed description#>
+ *  @param speed The speed selected
  *
  *  @since version 1.0
  */

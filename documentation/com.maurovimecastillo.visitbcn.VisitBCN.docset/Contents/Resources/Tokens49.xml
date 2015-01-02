@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVAAppDelegate+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVAAppDelegate()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAppDelegate.m</DeclaredIn>
+            
+			
+			<NodeRef refid="49"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

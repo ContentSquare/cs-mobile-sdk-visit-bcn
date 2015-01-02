@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MVADetailsViewController+.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MVADetailsViewController()</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+            
+			
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setTaxis:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVATaxis *taxis</Declaration>
+			
+			
+			<Anchor>//api/name/taxis</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/taxis</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVATaxis *taxis</Declaration>
+			
+			
+			<Anchor>//api/name/taxis</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/taxis</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVATaxis *taxis</Declaration>
+			
+			
+			<Anchor>//api/name/taxis</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setTaxiView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIView *taxiView</Declaration>
+			
+			
+			<Anchor>//api/name/taxiView</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/taxiView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIView *taxiView</Declaration>
+			
+			
+			<Anchor>//api/name/taxiView</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/taxiView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property UIView *taxiView</Declaration>
+			
+			
+			<Anchor>//api/name/taxiView</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setSavedPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/savedPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/savedPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property MVASavedPath *savedPath</Declaration>
+			
+			
+			<Anchor>//api/name/savedPath</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setCreated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/created</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/created</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setSubway:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/subway</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/subway</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property BOOL subway</Declaration>
+			
+			
+			<Anchor>//api/name/subway</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setStarButton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIBarButtonItem *starButton</Declaration>
+			
+			
+			<Anchor>//api/name/starButton</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/starButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIBarButtonItem *starButton</Declaration>
+			
+			
+			<Anchor>//api/name/starButton</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/starButton</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property (weak, nonatomic) IBOutlet UIBarButtonItem *starButton</Declaration>
+			
+			
+			<Anchor>//api/name/starButton</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/setSavedPaths:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *savedPaths</Declaration>
+			
+			
+			<Anchor>//api/name/savedPaths</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/savedPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *savedPaths</Declaration>
+			
+			
+			<Anchor>//api/name/savedPaths</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVADetailsViewController/savedPaths</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>@property NSMutableArray *savedPaths</Declaration>
+			
+			
+			<Anchor>//api/name/savedPaths</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
