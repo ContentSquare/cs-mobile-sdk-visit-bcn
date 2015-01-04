@@ -240,6 +240,26 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the user clicks a button on an alert view.</Abstract>
+			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alertView</Name>
+					<Abstract type="html">The alert view containing the button.</Abstract>
+				</Parameter><Parameter>
+					<Name>buttonIndex</Name>
+					<Abstract type="html">The index of the button that was clicked. The button indices start at 0.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
+            <NodeRef refid="39"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAStaredPathViewController/findRoute:subway:</TokenIdentifier>
 			<Abstract type="html">Function that looks for the MVARoute object for a given routeID</Abstract>
 			<DeclaredIn>MVAStaredPathViewController.m</DeclaredIn>

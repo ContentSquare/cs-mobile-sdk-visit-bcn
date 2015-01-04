@@ -673,18 +673,38 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/hailoTap:</TokenIdentifier>
-			<Abstract type="html">Function that gets called when the user</Abstract>
+			<Abstract type="html">Function that gets called after the taxi view has been selected</Abstract>
 			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
 			
 			<Declaration>- (void)hailoTap:(UITapGestureRecognizer *)gr</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>gr</Name>
-					<Abstract type="html">The tap gesture recognizer object.</Abstract>
+					<Abstract type="html">The tap gesture recognizer object</Abstract>
 				</Parameter>
 			</Parameters>
 			
 			<Anchor>//api/name/hailoTap:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVADetailsViewController/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the user clicks a button on an alert view.</Abstract>
+			<DeclaredIn>MVADetailsViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alertView</Name>
+					<Abstract type="html">The alert view containing the button.</Abstract>
+				</Parameter><Parameter>
+					<Name>buttonIndex</Name>
+					<Abstract type="html">The index of the button that was clicked. The button indices start at 0.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		

@@ -12,7 +12,7 @@
 #import "MVASavedPath.h"
 #import "MVAPathViewController.h"
 
-@interface MVADetailsViewController ()
+@interface MVADetailsViewController () <UIAlertViewDelegate>
 
 @property MVATaxis *taxis;
 @property UIView *taxiView;
@@ -891,30 +891,33 @@
     }
     else {
         self.taxiView = [[UIView alloc] initWithFrame:CGRectMake(0, 304.5, w, 100)];
-        [self.taxiView setBackgroundColor:[UIColor whiteColor]];
+        [self.taxiView setBackgroundColor:[UIColor colorWithRed:(243.0f/255.0f) green:(181.0f/255.0f) blue:(59.0f/255.0f) alpha:1.0f]];
         UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(8, 8, 34, 34)];
         [imV setImage:[UIImage imageNamed:@"taxi-color"]];
+        [imV setBackgroundColor:[UIColor whiteColor]];
+        [imV.layer setCornerRadius:5.0f];
+        [imV setClipsToBounds:YES];
         [self.taxiView addSubview:imV];
         UILabel *name = [[UILabel alloc] initWithFrame:CGRectMake(50, 8, 104, 34)];
         [name setText:@"Taxi"];
         [name setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
         [name setAdjustsFontSizeToFitWidth:YES];
         [name setTextAlignment:NSTextAlignmentLeft];
-        [name setTextColor:[UIColor darkGrayColor]];
+        [name setTextColor:[UIColor whiteColor]];
         [self.taxiView addSubview:name];
         UILabel *time = [[UILabel alloc] initWithFrame:CGRectMake((w - (8 + 150)), 8, 150, 34)];
         [time setText:[NSString stringWithFormat:@"%d minutes",(int)floor(self.carTime/60.0)]];
         [time setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0f]];
         [time setAdjustsFontSizeToFitWidth:YES];
         [time setTextAlignment:NSTextAlignmentRight];
-        [time setTextColor:[UIColor darkGrayColor]];
+        [time setTextColor:[UIColor whiteColor]];
         [self.taxiView addSubview:time];
         UILabel *pickUp = [[UILabel alloc] initWithFrame:CGRectMake(8, 72, (w - 108), 20)];
         [pickUp setText:@"Price and times estimated for a regular service."];
         [pickUp setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
         [pickUp setAdjustsFontSizeToFitWidth:YES];
         [pickUp setTextAlignment:NSTextAlignmentLeft];
-        [pickUp setTextColor:[UIColor darkGrayColor]];
+        [pickUp setTextColor:[UIColor whiteColor]];
         [self.taxiView addSubview:pickUp];
         UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake((w - 98), 72, 90, 20)];
         double est = [self.taxis taxiFareWithDistance:self.carDist andDate:self.savedPath.date];
@@ -922,7 +925,7 @@
         [price setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0f]];
         [price setAdjustsFontSizeToFitWidth:YES];
         [price setTextAlignment:NSTextAlignmentRight];
-        [price setTextColor:[UIColor darkGrayColor]];
+        [price setTextColor:[UIColor whiteColor]];
         [self.taxiView addSubview:price];
         return self.taxiView;
     }
@@ -974,15 +977,71 @@
 }
 
 /**
- *  Function that gets called when the user
+ *  Function that gets called after the taxi view has been selected
  *
- *  @param gr The tap gesture recognizer object.
+ *  @param gr The tap gesture recognizer object
  *
  *  @since version 1.0
  */
 -(void)hailoTap:(UITapGestureRecognizer *)gr
 {
-    [self.taxis openHailo];
+    if (![self.taxis openHailo]) {
+        if (nil != NSClassFromString(@"UIAlertController")) {
+            //show alertcontroller
+            UIAlertController * alert=   [UIAlertController
+                                          alertControllerWithTitle:@"You need the Hailo app"
+                                          message:@"Visit the App Store and download it"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* ok = [UIAlertAction
+                                 actionWithTitle:@"App store"
+                                 style:UIAlertActionStyleDefault
+                                 handler:^(UIAlertAction * action)
+                                 {
+                                     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/es/app/hailo/id468420446?mt=8"]];
+                                     //Do some thing here
+                                     [alert dismissViewControllerAnimated:YES completion:nil];
+                                     
+                                 }];
+            [alert addAction:ok]; // add action to uialertcontroller
+            
+            UIAlertAction* ok2 = [UIAlertAction
+                                  actionWithTitle:@"Cancel"
+                                  style:UIAlertActionStyleDefault
+                                  handler:^(UIAlertAction * action)
+                                  {
+                                      //Do some thing here
+                                      [alert dismissViewControllerAnimated:YES completion:nil];
+                                      
+                                  }];
+            [alert addAction:ok2];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+        else {
+            //show alertview
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You need the Hailo app"
+                                                            message:@"Visit the App Store and download it"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"App store", nil];
+            [alert show];
+        }
+    }
+}
+
+/**
+ *  Sent to the delegate when the user clicks a button on an alert view.
+ *
+ *  @param alertView   The alert view containing the button.
+ *  @param buttonIndex The index of the button that was clicked. The button indices start at 0.
+ *
+ *  @since version 1.0
+ */
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/es/app/hailo/id468420446?mt=8"]];
+    }
 }
 
 /**

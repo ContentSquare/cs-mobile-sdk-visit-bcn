@@ -105,6 +105,23 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAMapaViewController/customSel:</TokenIdentifier>
+			<Abstract type="html">Function that gets called when the user selects the custom location button.</Abstract>
+			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>
+			
+			<Declaration>- (IBAction)customSel:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The button that triggers this function.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/customSel:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAMapaViewController/prepareForSegue:sender:</TokenIdentifier>
 			<Abstract type="html">Called when a segue is about to be performed. (required)</Abstract>
 			<DeclaredIn>MVAMapaViewController.m</DeclaredIn>

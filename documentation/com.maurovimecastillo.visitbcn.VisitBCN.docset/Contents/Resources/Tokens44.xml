@@ -125,9 +125,9 @@
 			<Abstract type="html">Function that opens the Hailo app using the URL scheme</Abstract>
 			<DeclaredIn>MVATaxis.h</DeclaredIn>
 			
-			<Declaration>- (void)openHailo</Declaration>
+			<Declaration>- (BOOL)openHailo</Declaration>
 			
-			
+			<ReturnValue><Abstract type="html">A bool that indicates if the action was performed or not.</Abstract></ReturnValue>
 			<Anchor>//api/name/openHailo</Anchor>
             <NodeRef refid="44"/>
 		</Token>
