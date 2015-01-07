@@ -99,7 +99,7 @@
 @property MVAPunIntViewController *viewController;
 
 /**
- *  Dijkstra's algorithm
+ *  Dijkstra's algorithm. Cost: O(N * ((E * (T + F + log N)) + logN)), where N is the number of nodes, T the number of times and F the number of frequencies.
  *
  *  @param nodeB Destination node for the Dijkstra computation
  *  @param crds  Coordinates of the final destination
@@ -109,7 +109,7 @@
 -(MVAPath *)dijkstraPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds;
 
 /**
- *  A* algorithm
+ *  A* algorithm. Cost: O(N * ((E * (T + F + log N)) + logN)), where N is the number of nodes, T the number of times and F the number of frequencies.
  *
  *  @param nodeB Destination node for the A* computation
  *  @param crds  Coordinates of the final destination

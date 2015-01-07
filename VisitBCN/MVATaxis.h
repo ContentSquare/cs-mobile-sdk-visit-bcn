@@ -41,9 +41,11 @@
 /**
  *  Function that opens the Hailo app using the URL scheme
  *
+ *  @return A bool that indicates if the action was performed or not.
+ *
  *  @since version 1.0
  */
--(void)openHailo;
+-(BOOL)openHailo;
 
 /**
  *  Function that downloads from the API the Hailo data

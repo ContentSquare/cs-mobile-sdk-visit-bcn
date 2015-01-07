@@ -425,7 +425,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVADataBus/frequencieForStop:andTime:andCalendar:</TokenIdentifier>
-			<Abstract type="html">This function is used as a query to retrieve the frequency for a given stop, time and calendar</Abstract>
+			<Abstract type="html">This function is used as a query to retrieve the frequency for a given stop, time and calendar. Cost: O(F), where F is the number of frequencies.</Abstract>
 			<DeclaredIn>MVADataBus.h</DeclaredIn>
 			
 			<Declaration>- (double)frequencieForStop:(MVAStop *)stop andTime:(double)currentTime andCalendar:(NSString *)serviceID</Declaration>

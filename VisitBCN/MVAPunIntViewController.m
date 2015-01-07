@@ -174,8 +174,6 @@
     constraints = [NSLayoutConstraint constraintsWithVisualFormat:format options:0 metrics:metrics views:views];
     [scrollView addConstraints:constraints];
     
-    
-    
     // Start of the magic
     
     format = @"V:[topImageView]-0-[subContentView]"; // image view bottom is subcontent top

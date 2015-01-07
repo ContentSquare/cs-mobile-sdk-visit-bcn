@@ -7,6 +7,7 @@
 //
 
 #import "MVATaxis.h"
+#import "MVAAppDelegate.h"
 
 @implementation MVATaxis
 
@@ -14,7 +15,7 @@ NSString * const hailoAPI = @"26lsOoj9SzZQo4+RPBqb2UGX+ImifoDA9T78Y50hu8Kgn1ppWH
 
 # pragma mark - Hailo methods
 
--(void)openHailo
+-(BOOL)openHailo
 {
     NSString *urlString = @"hailoapp://confirm?pickupCoordinate=";
     urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%f,",self.orig.latitude]];
@@ -30,7 +31,9 @@ NSString * const hailoAPI = @"26lsOoj9SzZQo4+RPBqb2UGX+ImifoDA9T78Y50hu8Kgn1ppWH
     
     if ([[UIApplication sharedApplication] canOpenURL:url]){
         [[UIApplication sharedApplication] openURL:url];
+        return YES;
     }
+    return NO;
 }
 
 -(void)loadHailoTime

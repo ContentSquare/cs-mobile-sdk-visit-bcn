@@ -514,7 +514,6 @@
             cell.distance.text = @"No GPS";
         }
     }
-
     return cell;
 }
 
@@ -616,7 +615,9 @@
     if (self.menuON) {
         UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         UIColor *tintColor = [UIColor colorWithWhite:0.5 alpha:0.3];
+        self.homeButton.alpha = 0.0f;
         imV.image = [[self imageWithView:self.view] applyBlurWithRadius:8 tintColor:tintColor saturationDeltaFactor:1.0 maskImage:nil];
+        self.homeButton.alpha = 1.0f;
         imV.tag = 1234567;
         imV.alpha = 0.0f;
         [self.view addSubview:imV];

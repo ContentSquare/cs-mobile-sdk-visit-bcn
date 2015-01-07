@@ -19,7 +19,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/init</TokenIdentifier>
-			<Abstract type="html">Predefined constructor</Abstract>
+			<Abstract type="html">Predefined constructor. Cost: O(1).</Abstract>
 			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
 			
 			<Declaration>- (id)init</Declaration>
@@ -31,7 +31,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/initWithCapacity:</TokenIdentifier>
-			<Abstract type="html">Constructor with capacity</Abstract>
+			<Abstract type="html">Constructor with capacity. Cost: O(numItems).</Abstract>
 			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
 			
 			<Declaration>- (id)initWithCapacity:(NSUInteger)numItems</Declaration>
@@ -48,7 +48,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/addObject:</TokenIdentifier>
-			<Abstract type="html">Function to insert an element in the priority queue</Abstract>
+			<Abstract type="html">Function to insert an element in the priority queue. Cost: O(log P), where P is the number of elements of the priority queue.</Abstract>
 			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -70,7 +70,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/isEmpty</TokenIdentifier>
-			<Abstract type="html">Function that returns if the priority que is empty</Abstract>
+			<Abstract type="html">Function that returns if the priority que is empty. Cost: O(1)</Abstract>
 			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)isEmpty</Declaration>
@@ -82,7 +82,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/firstObject</TokenIdentifier>
-			<Abstract type="html">Function that returns the first object of the priority queue</Abstract>
+			<Abstract type="html">Function that returns the first object of the priority queue. Cost: O(1)</Abstract>
 			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -99,7 +99,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAPriorityQueue/removeFirst</TokenIdentifier>
-			<Abstract type="html">Function that removes the first object</Abstract>
+			<Abstract type="html">Function that removes the first object. Cost: O(log P), where P is the number of elements of the priority queue.</Abstract>
 			<DeclaredIn>MVAPriorityQueue.h</DeclaredIn>
 			
 			<Declaration>- (void)removeFirst</Declaration>

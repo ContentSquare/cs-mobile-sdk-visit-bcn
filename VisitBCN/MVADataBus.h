@@ -103,7 +103,7 @@
 - (void)parseDataBase;
 
 /**
- *  This function is used as a query to retrieve the frequency for a given stop, time and calendar
+ *  This function is used as a query to retrieve the frequency for a given stop, time and calendar. Cost: O(F), where F is the number of frequencies.
  *
  *  @param stop        The bus stop that performs the query
  *  @param currentTime The time for which the query is performed

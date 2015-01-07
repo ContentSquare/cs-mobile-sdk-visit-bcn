@@ -101,7 +101,7 @@
 @property NSMutableArray *dates;
 
 /**
- *  This function returns the calendar object for the calendar used in the algorithm calculations
+ *  This function returns the calendar object for the calendar used in the algorithm calculations. Cost: O(D + C), where D is the number of dates and C the number of calendars. D > C, hence the cost is O(D).
  *
  *  @param subway A boolean that indicates if the desired calendar is for the subway or the bus service.
  *
@@ -113,7 +113,7 @@
 -(MVACalendar *)getNextCalendarforSubway:(BOOL)subway;
 
 /**
- *  This function returns the calendar object for the calendar, plus 1 day, used in the algorithm calculations
+ *  This function returns the calendar object for the calendar, plus 1 day, used in the algorithm calculations. Cost: O(D + C), where D is the number of dates and C the number of calendars. D > C, hence the cost is O(D).
  *
  *  @param subway A boolean that indicates if the desired calendar is for the subway or the bus service.
  *

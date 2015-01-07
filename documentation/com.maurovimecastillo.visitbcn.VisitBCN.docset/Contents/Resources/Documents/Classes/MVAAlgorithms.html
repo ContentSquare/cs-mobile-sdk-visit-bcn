@@ -889,7 +889,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>A* algorithm</p>
+		<p>A* algorithm. Cost: O(N * ((E * (T + F + log N)) + logN)), where N is the number of <a href="#//api/name/nodes">nodes</a>, T the number of times and F the number of frequencies.</p>
 	</div>		
 	
     
@@ -931,7 +931,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>A* algorithm</p>
+		<p>A* algorithm. Cost: O(N * ((E * (T + F + log N)) + logN)), where N is the number of <a href="#//api/name/nodes">nodes</a>, T the number of times and F the number of frequencies.</p>
 	</div>
 	
 	
@@ -955,7 +955,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Dijkstra&rsquo;s algorithm</p>
+		<p>Dijkstra&rsquo;s algorithm. Cost: O(N * ((E * (T + F + log N)) + logN)), where N is the number of <a href="#//api/name/nodes">nodes</a>, T the number of times and F the number of frequencies.</p>
 	</div>		
 	
     
@@ -992,7 +992,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Dijkstra&rsquo;s algorithm</p>
+		<p>Dijkstra&rsquo;s algorithm. Cost: O(N * ((E * (T + F + log N)) + logN)), where N is the number of <a href="#//api/name/nodes">nodes</a>, T the number of times and F the number of frequencies.</p>
 	</div>
 	
 	
@@ -1016,7 +1016,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Haversine distance between two coordinates</p>
+		<p>Haversine distance between two coordinates. Cost: O(1).</p>
 	</div>		
 	
     
@@ -1058,7 +1058,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Haversine distance between two coordinates</p>
+		<p>Haversine distance between two coordinates. Cost: O(1).</p>
 	</div>
 	
 	
@@ -1091,7 +1091,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Function that returns the edge that connects the first node with the second.</p>
+		<p>Function that returns the edge that connects the first node with the second. Cost: O(E), where E is the number of Edges of the given node.</p>
 	</div>		
 	
     
@@ -1133,7 +1133,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Function that returns the edge that connects the first node with the second.</p>
+		<p>Function that returns the edge that connects the first node with the second. Cost: O(E), where E is the number of Edges of the given node.</p>
 	</div>
 	
 	
@@ -1157,7 +1157,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line.</p>
+		<p>Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line. Cost: O(T + F), where T are the number of times and F are the number of frequencies.</p>
 	</div>		
 	
     
@@ -1199,7 +1199,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line.</p>
+		<p>Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line. Cost: O(T + F), where T are the number of times and F are the number of frequencies.</p>
 	</div>
 	
 	
@@ -1232,7 +1232,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Heuristic function. This function calculates the heuristic for a certain location</p>
+		<p>Heuristic function. This function calculates the heuristic for a certain location. Cost: O(1).</p>
 	</div>		
 	
     
@@ -1269,7 +1269,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Heuristic function. This function calculates the heuristic for a certain location</p>
+		<p>Heuristic function. This function calculates the heuristic for a certain location. Cost: O(1).</p>
 	</div>
 	
 	
@@ -1465,7 +1465,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter &lsquo;rain&rsquo; given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times.</p>
+		<p>Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter &lsquo;rain&rsquo; given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times. Cost: O(1)</p>
 	</div>		
 	
     
@@ -1507,7 +1507,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter &lsquo;rain&rsquo; given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times.</p>
+		<p>Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter &lsquo;rain&rsquo; given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times. Cost: O(1)</p>
 	</div>
 	
 	
@@ -1540,7 +1540,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Function that transforms a time in HH:MM:SS into an integer in seconds</p>
+		<p>Function that transforms a time in HH:MM:SS into an integer in seconds. Cost: O(1)</p>
 	</div>		
 	
     
@@ -1577,7 +1577,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Function that transforms a time in HH:MM:SS into an integer in seconds</p>
+		<p>Function that transforms a time in HH:MM:SS into an integer in seconds. Cost: O(1)</p>
 	</div>
 	
 	
@@ -1601,7 +1601,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Function that updates the destination node of an edge from the current node</p>
+		<p>Function that updates the destination node of an edge from the current node. Cost: O(T + F + log N).</p>
 	</div>		
 	
     
@@ -1638,7 +1638,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Function that updates the destination node of an edge from the current node</p>
+		<p>Function that updates the destination node of an edge from the current node. Cost: O(T + F + log N).</p>
 	</div>
 	
 	
@@ -1673,7 +1673,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Function that updates all the adjacent <a href="#//api/name/nodes">nodes</a> of the given one.</p>
+		<p>Function that updates all the adjacent <a href="#//api/name/nodes">nodes</a> of the given one. Cost: O(E * (T + F + log N)).</p>
 	</div>		
 	
     
@@ -1705,7 +1705,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Function that updates all the adjacent <a href="#//api/name/nodes">nodes</a> of the given one.</p>
+		<p>Function that updates all the adjacent <a href="#//api/name/nodes">nodes</a> of the given one. Cost: O(E * (T + F + log N)).</p>
 	</div>
 	
 	
@@ -1751,7 +1751,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015 Mauro Vime Castillo. All rights reserved. (Last updated: 2015-01-04)</span><br />
+						<p><span class="copyright">&copy; 2015 Mauro Vime Castillo. All rights reserved. (Last updated: 2015-01-07)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

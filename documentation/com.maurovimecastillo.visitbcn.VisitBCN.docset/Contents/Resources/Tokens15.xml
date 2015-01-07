@@ -428,7 +428,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/getNextCalendarforSubway:</TokenIdentifier>
-			<Abstract type="html">This function returns the calendar object for the calendar used in the algorithm calculations</Abstract>
+			<Abstract type="html">This function returns the calendar object for the calendar used in the algorithm calculations. Cost: O(D + C), where D is the number of dates and C the number of calendars. D &gt; C, hence the cost is O(D).</Abstract>
 			<DeclaredIn>MVADataTMB.h</DeclaredIn>
 			
 	<RelatedTokens>
@@ -450,7 +450,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVADataTMB/getCurrentCalendarforSubway:</TokenIdentifier>
-			<Abstract type="html">This function returns the calendar object for the calendar, plus 1 day, used in the algorithm calculations</Abstract>
+			<Abstract type="html">This function returns the calendar object for the calendar, plus 1 day, used in the algorithm calculations. Cost: O(D + C), where D is the number of dates and C the number of calendars. D &gt; C, hence the cost is O(D).</Abstract>
 			<DeclaredIn>MVADataTMB.h</DeclaredIn>
 			
 	<RelatedTokens>

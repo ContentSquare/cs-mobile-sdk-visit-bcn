@@ -428,7 +428,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/dijkstraPathtoNode:withCoo:</TokenIdentifier>
-			<Abstract type="html">Dijkstra&apos;s algorithm</Abstract>
+			<Abstract type="html">Dijkstra&apos;s algorithm. Cost: O(N  ((E  (T + F + log N)) + logN)), where N is the number of nodes, T the number of times and F the number of frequencies.</Abstract>
 			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
 			
 			<Declaration>- (MVAPath *)dijkstraPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds</Declaration>
@@ -448,7 +448,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/astarPathtoNode:withCoo:</TokenIdentifier>
-			<Abstract type="html">A* algorithm</Abstract>
+			<Abstract type="html">A algorithm. Cost: O(N  ((E * (T + F + log N)) + logN)), where N is the number of nodes, T the number of times and F the number of frequencies.</Abstract>
 			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
 			
 			<Declaration>- (MVAPath *)astarPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds</Declaration>
@@ -468,7 +468,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/updateNodesForNode:</TokenIdentifier>
-			<Abstract type="html">Function that updates all the adjacent nodes of the given one.</Abstract>
+			<Abstract type="html">Function that updates all the adjacent nodes of the given one. Cost: O(E * (T + F + log N)).</Abstract>
 			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
 			
 	<RelatedTokens>
@@ -491,7 +491,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/getNextTrainForEdge:andTime:</TokenIdentifier>
-			<Abstract type="html">Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line.</Abstract>
+			<Abstract type="html">Function that calculates the next train that arrives to a certain stop at a certain time and from the current location. The given time, is used to find the next train that arrives to that stop after that time. In an execution, this will be used to travell around the graph in the same train or for changing of line. Cost: O(T + F), where T are the number of times and F are the number of frequencies.</Abstract>
 			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
 			
 	<RelatedTokens>
@@ -516,7 +516,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/timeToInt:</TokenIdentifier>
-			<Abstract type="html">Function that transforms a time in HH:MM:SS into an integer in seconds</Abstract>
+			<Abstract type="html">Function that transforms a time in HH:MM:SS into an integer in seconds. Cost: O(1)</Abstract>
 			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
 			
 			<Declaration>- (int)timeToInt:(NSString *)time</Declaration>
@@ -533,7 +533,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/timeInBusFromNodeA:toNodeB:</TokenIdentifier>
-			<Abstract type="html">Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter &apos;rain&apos; given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times.</Abstract>
+			<Abstract type="html">Function that calculates the travel time in bus from one stop to the next one. The bus speed used, is an estimation given by TMB (19.7 km/h). This function uses the parameter &apos;rain&apos; given by the user. If the user indicates that is raining, the bus speed is reduced 1.2 times. Cost: O(1)</Abstract>
 			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
 			
 	<RelatedTokens>
@@ -558,7 +558,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/updateNodeForEdge:andNode:</TokenIdentifier>
-			<Abstract type="html">Function that updates the destination node of an edge from the current node</Abstract>
+			<Abstract type="html">Function that updates the destination node of an edge from the current node. Cost: O(T + F + log N).</Abstract>
 			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
 			
 	<RelatedTokens>
@@ -584,7 +584,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/heuristicForCoords:</TokenIdentifier>
-			<Abstract type="html">Heuristic function. This function calculates the heuristic for a certain location</Abstract>
+			<Abstract type="html">Heuristic function. This function calculates the heuristic for a certain location. Cost: O(1).</Abstract>
 			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
 			
 			<Declaration>- (double)heuristicForCoords:(CLLocationCoordinate2D)cord</Declaration>
@@ -626,7 +626,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/distanceForCoordinates:andCoordinates:</TokenIdentifier>
-			<Abstract type="html">Haversine distance between two coordinates</Abstract>
+			<Abstract type="html">Haversine distance between two coordinates. Cost: O(1).</Abstract>
 			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
 			
 			<Declaration>- (double)distanceForCoordinates:(CLLocationCoordinate2D)cordA andCoordinates:(CLLocationCoordinate2D)cordB</Declaration>
@@ -646,7 +646,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/edgeFromNode:toNode:</TokenIdentifier>
-			<Abstract type="html">Function that returns the edge that connects the first node with the second.</Abstract>
+			<Abstract type="html">Function that returns the edge that connects the first node with the second. Cost: O(E), where E is the number of Edges of the given node.</Abstract>
 			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
 			
 			<Declaration>- (MVAEdge *)edgeFromNode:(MVANode *)nodeA toNode:(MVANode *)nodeB</Declaration>

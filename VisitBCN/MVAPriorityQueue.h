@@ -19,7 +19,7 @@
 @interface MVAPriorityQueue : NSObject
 
 /**
- *  Predefined constructor
+ *  Predefined constructor. Cost: O(1).
  *
  *  @return The MVAPriorityQueue object created
  *
@@ -28,7 +28,7 @@
 -(id)init;
 
 /**
- *  Constructor with capacity
+ *  Constructor with capacity. Cost: O(numItems).
  *
  *  @param numItems The initial cpacity of the priority queue.
  *
@@ -39,7 +39,7 @@
 -(id)initWithCapacity:(NSUInteger)numItems;
 
 /**
- *  Function to insert an element in the priority queue
+ *  Function to insert an element in the priority queue. Cost: O(log P), where P is the number of elements of the priority queue.
  *
  *  @param pair MVAPair object that needs to be inserted in the priority queue
  *
@@ -49,7 +49,7 @@
 -(void)addObject:(MVAPair *)pair;
 
 /**
- *  Function that returns if the priority que is empty
+ *  Function that returns if the priority que is empty. Cost: O(1)
  *
  *  @return Boolean that indicates if the priority queue is empty or not
  *
@@ -58,7 +58,7 @@
 -(BOOL)isEmpty;
 
 /**
- *  Function that returns the first object of the priority queue
+ *  Function that returns the first object of the priority queue. Cost: O(1) 
  *
  *  @return The first object of the priority queue
  *
@@ -68,7 +68,7 @@
 -(MVAPair *)firstObject;
 
 /**
- *  Function that removes the first object
+ *  Function that removes the first object. Cost: O(log P), where P is the number of elements of the priority queue.
  *
  *  @since version 1.0
  */
