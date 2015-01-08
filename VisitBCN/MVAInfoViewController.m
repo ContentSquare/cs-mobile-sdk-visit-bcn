@@ -110,7 +110,7 @@
     alt += (125 + 15);
     
     UILabel *version = [[UILabel alloc] initWithFrame:CGRectMake(8, alt, (w - 16), 20)];
-    [version setText:@"Version 1.0"];
+    [version setText:@"Version 1.1"];
     [version setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:15.0f]];
     [version setTextAlignment:NSTextAlignmentCenter];
     [version setAdjustsFontSizeToFitWidth:YES];
