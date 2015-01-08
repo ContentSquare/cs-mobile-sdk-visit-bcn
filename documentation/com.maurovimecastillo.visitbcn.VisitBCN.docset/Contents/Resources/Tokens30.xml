@@ -142,13 +142,419 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/createDescription</TokenIdentifier>
-			<Abstract type="html">Function that creates the description of the path</Abstract>
+			<Abstract type="html">Function that creates the description of the path.</Abstract>
 			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
 			
 			<Declaration>- (void)createDescription</Declaration>
 			
 			
 			<Anchor>//api/name/createDescription</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addSubwayDescription:</TokenIdentifier>
+			<Abstract type="html">Function that adds all the subway content to the scroll view.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addSubwayDescription:(UIScrollView *)scrollView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSubwayDescription:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addSubwayDetails:andY:</TokenIdentifier>
+			<Abstract type="html">Function that iterates over all the path stops that need to be displayed.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addSubwayDetails:(UIScrollView *)scrollView andY:(double *)y</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSubwayDetails:andY:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addSubwayRoute:previousRoute:inView:andY:andEdge:andNode:andAnt:andStops:andPosition:</TokenIdentifier>
+			<Abstract type="html">Function that computes the body of the for loop of addSubwayDetails:andY: function.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addSubwayRoute:(NSString *)routeID previousRoute:(NSString **)prevRouteID inView:(UIScrollView *)scrollView andY:(double)y andEdge:(MVAEdge *)edge andNode:(MVANode *)node andAnt:(MVANode **)antNode andStops:(int *)numStops andPosition:(int *)pos</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>routeID</Name>
+					<Abstract type="html">The route identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>prevRouteID</Name>
+					<Abstract type="html">The previous route identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView where the content will be added.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>edge</Name>
+					<Abstract type="html">The edge that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>antNode</Name>
+					<Abstract type="html">The previous node computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>numStops</Name>
+					<Abstract type="html">The number of stops that haven&apos;t been added because don&apos;t need to be displayed.</Abstract>
+				</Parameter><Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">The position inside the routes array.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSubwayRoute:previousRoute:inView:andY:andEdge:andNode:andAnt:andStops:andPosition:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addSubwayPathIn:inShape:andY:andNode:andEdge:andAnt:andStops:</TokenIdentifier>
+			<Abstract type="html">Function that adds the path for a change or a walking edge.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addSubwayPathIn:(UIScrollView *)scrollView inShape:(CAShapeLayer *)shapeLayer andY:(double)y andNode:(MVANode *)node andEdge:(MVAEdge *)edge andAnt:(MVANode *)antNode andStops:(int *)numStops</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>shapeLayer</Name>
+					<Abstract type="html">The layer where some content will be drawn.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>edge</Name>
+					<Abstract type="html">The edge that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>antNode</Name>
+					<Abstract type="html">The previous node computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>numStops</Name>
+					<Abstract type="html">The number of stops that haven&apos;t been added because don&apos;t need to be displayed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSubwayPathIn:inShape:andY:andNode:andEdge:andAnt:andStops:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addSubwayPathForStopsIn:andNode:andDestination:andAnt:andRoute:previousRoute:andShape:andStops:andPosition:andY:</TokenIdentifier>
+			<Abstract type="html">Function that adds the path between objects.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addSubwayPathForStopsIn:(UIScrollView *)scrollView andNode:(MVANode *)node andDestination:(MVANode *)dest andAnt:(MVANode **)antNode andRoute:(NSString *)routeID previousRoute:(NSString **)prevRouteID andShape:(CAShapeLayer *)shapeLayer andStops:(int *)numStops andPosition:(int *)pos andY:(double)y</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>dest</Name>
+					<Abstract type="html">The destination node that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>antNode</Name>
+					<Abstract type="html">The previous node computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>routeID</Name>
+					<Abstract type="html">The route identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>prevRouteID</Name>
+					<Abstract type="html">The previous route identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>shapeLayer</Name>
+					<Abstract type="html">The layer where some content will be drawn.</Abstract>
+				</Parameter><Parameter>
+					<Name>numStops</Name>
+					<Abstract type="html">The number of stops that haven&apos;t been added because don&apos;t need to be displayed.</Abstract>
+				</Parameter><Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">The position inside the routes array.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSubwayPathForStopsIn:andNode:andDestination:andAnt:andRoute:previousRoute:andShape:andStops:andPosition:andY:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addSubwayLandmarkInView:andY:andNode:andDestination:</TokenIdentifier>
+			<Abstract type="html">Function that adds the information when we arrive to the landmark.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addSubwayLandmarkInView:(UIScrollView *)scrollView andY:(double)y andNode:(MVANode *)node andDestination:(MVANode *)dest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>dest</Name>
+					<Abstract type="html">The destination node that is being computed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSubwayLandmarkInView:andY:andNode:andDestination:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addBusDescription:</TokenIdentifier>
+			<Abstract type="html">Function that adds all the bus content to the scroll view.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addBusDescription:(UIScrollView *)scrollView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBusDescription:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addOriginalBusInfo:andY:</TokenIdentifier>
+			<Abstract type="html">Function that adds all the information displayed on the top of the scroll view.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addOriginalBusInfo:(UIScrollView *)scrollView andY:(double)y</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addOriginalBusInfo:andY:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addFirstBusStop:andY:</TokenIdentifier>
+			<Abstract type="html">Function that adds the information for the first stop.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addFirstBusStop:(UIScrollView *)scrollView andY:(double)y</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addFirstBusStop:andY:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addBusDetails:andY:</TokenIdentifier>
+			<Abstract type="html">Function that iterates over all the path stops that need to be displayed.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addBusDetails:(UIScrollView *)scrollView andY:(double *)y</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBusDetails:andY:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addBusTrip:previousTrip:inView:andY:andEdge:andNode:andAnt:andStops:andPosition:</TokenIdentifier>
+			<Abstract type="html">Function that computes the body of the for loop of addBusDetails:andY: function.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addBusTrip:(NSString *)tripID previousTrip:(NSString **)prevTripID inView:(UIScrollView *)scrollView andY:(double *)y andEdge:(MVAEdge *)edge andNode:(MVANode *)node andAnt:(MVANode **)antNode andStops:(int *)numStops andPosition:(int *)pos</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tripID</Name>
+					<Abstract type="html">The trip identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>prevTripID</Name>
+					<Abstract type="html">The previous trip identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>edge</Name>
+					<Abstract type="html">The edge that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>antNode</Name>
+					<Abstract type="html">The previous node computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>numStops</Name>
+					<Abstract type="html">The number of stops that haven&apos;t been added because don&apos;t need to be displayed.</Abstract>
+				</Parameter><Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">The position inside the routes array.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBusTrip:previousTrip:inView:andY:andEdge:andNode:andAnt:andStops:andPosition:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addBusRouteIn:andShape:andNode:andAnt:andStops:andPosition:andTrip:andPrevious:andY:</TokenIdentifier>
+			<Abstract type="html">Function that adds the path for a change or a walking edge.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addBusRouteIn:(UIScrollView *)scrollView andShape:(CAShapeLayer *)shapeLayer andNode:(MVANode *)node andAnt:(MVANode **)antNode andStops:(int *)numStops andPosition:(int *)pos andTrip:(NSString *)tripID andPrevious:(NSString **)prevTripID andY:(double *)y</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>shapeLayer</Name>
+					<Abstract type="html">The layer where some content will be drawn.</Abstract>
+				</Parameter><Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>antNode</Name>
+					<Abstract type="html">The previous node computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>numStops</Name>
+					<Abstract type="html">The number of stops that haven&apos;t been added because don&apos;t need to be displayed.</Abstract>
+				</Parameter><Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">The position inside the routes array.</Abstract>
+				</Parameter><Parameter>
+					<Name>tripID</Name>
+					<Abstract type="html">The trip identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>prevTripID</Name>
+					<Abstract type="html">The previous trip identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBusRouteIn:andShape:andNode:andAnt:andStops:andPosition:andTrip:andPrevious:andY:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addBusPathForStopsIn:andNode:andEdge:andAnt:previousTrip:andShape:andStops:andY:</TokenIdentifier>
+			<Abstract type="html">Function that adds the path between objects.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addBusPathForStopsIn:(UIScrollView *)scrollView andNode:(MVANode *)node andEdge:(MVAEdge *)edge andAnt:(MVANode **)antNode previousTrip:(NSString **)prevTripID andShape:(CAShapeLayer *)shapeLayer andStops:(int *)numStops andY:(double)y</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>edge</Name>
+					<Abstract type="html">The edge that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>antNode</Name>
+					<Abstract type="html">The previous node computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>prevTripID</Name>
+					<Abstract type="html">The previous trip identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>shapeLayer</Name>
+					<Abstract type="html">The layer where some content will be drawn.</Abstract>
+				</Parameter><Parameter>
+					<Name>numStops</Name>
+					<Abstract type="html">The number of stops that haven&apos;t been added because don&apos;t need to be displayed.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBusPathForStopsIn:andNode:andEdge:andAnt:previousTrip:andShape:andStops:andY:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAPathViewController/addBusLandmarkInView:andY:andNode:andEdge:</TokenIdentifier>
+			<Abstract type="html">Function that adds the information when we arrive to the landmark.</Abstract>
+			<DeclaredIn>MVAPathViewController.m</DeclaredIn>
+			
+			<Declaration>- (void)addBusLandmarkInView:(UIScrollView *)scrollView andY:(double)y andNode:(MVANode *)node andEdge:(MVAEdge *)edge</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scrollView</Name>
+					<Abstract type="html">The scrollView that will host the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>y</Name>
+					<Abstract type="html">The origin.y value for creating the content.</Abstract>
+				</Parameter><Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The node that is being computed.</Abstract>
+				</Parameter><Parameter>
+					<Name>edge</Name>
+					<Abstract type="html">The edge that is being computed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addBusLandmarkInView:andY:andNode:andEdge:</Anchor>
             <NodeRef refid="30"/>
 		</Token>
 		
