@@ -162,16 +162,15 @@
 -(void)addSubwayDetails:(UIScrollView *)scrollView andY:(double *)y
 {
     int pos = 0;
-    NSString *prevRouteID = @"";
+    NSString *prevRouteID = @"walking";
     MVANode *antNode = nil;
     int numStops = 1;
     
     for (int i = 0; i < [self.savedPath.subwayPath.edges count]; ++i) {
         MVAEdge *edge = [self.savedPath.subwayPath.edges objectAtIndex:i];
-        MVANode *dest = edge.destini;
         MVANode *node = [self.savedPath.subwayPath.nodes objectAtIndex:i];
         
-        NSString *routeID = [dest.stop.routes firstObject];
+        NSString *routeID = [edge.destini.stop.routes firstObject];
         if (![prevRouteID isEqualToString:routeID]) {
             [self addSubwayRoute:routeID
                    previousRoute:&prevRouteID
@@ -206,16 +205,19 @@
  */
 -(void)addSubwayRoute:(NSString *)routeID previousRoute:(NSString **)prevRouteID inView:(UIScrollView *)scrollView andY:(double)y andEdge:(MVAEdge *)edge andNode:(MVANode *)node andAnt:(MVANode **)antNode andStops:(int *)numStops andPosition:(int *)pos
 {
-    
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(70, y)];
     [path addLineToPoint:CGPointMake(70, (y + 100))];
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     [shapeLayer setPath:[path CGPath]];
+    
+    double ref;
+    if ([(*prevRouteID) isEqualToString:@"walking"]) ref = [edge.destini.distance doubleValue] - 60.0;
+    else ref = [node.distance doubleValue];
+    
     if (edge.tripID == nil || [edge.tripID isEqualToString:@"landmark"]) [self addSubwayPathIn:scrollView inShape:shapeLayer andY:y andNode:node andEdge:edge andAnt:*antNode andStops:numStops];
     else [self addSubwayPathForStopsIn:scrollView andNode:node andDestination:edge.destini andAnt:antNode andRoute:routeID previousRoute:prevRouteID andShape:shapeLayer andStops:numStops andPosition:pos andY:y];
     
-    double ref = [node.distance doubleValue];
     int second = (ref - (floor(ref/60) * 60.0f)) ;
     double ref2 = (ref / 60.0);
     int minute = (ref2 - (floor(ref2/60) * 60.0f)) ;
@@ -239,6 +241,7 @@
         [destIm setImage:[UIImage imageNamed:@"train-purple"]];
         [scrollView addSubview:destIm];
     }
+    if (edge.change) *prevRouteID = @"walking";
 }
 
 /**
