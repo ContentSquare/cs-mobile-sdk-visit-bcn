@@ -14,6 +14,7 @@
 @property CLLocationCoordinate2D piCoord;
 @property MVACalendar *nextTMBCalendar;
 @property MVACalendar *currentCal;
+@property int count;
 
 @end
 
@@ -21,6 +22,8 @@
 
 -(MVAPath *)dijkstraPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds
 {
+    self.count = 0;
+    
     NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
     self.piCoord = crds;
     
@@ -30,13 +33,14 @@
     MVANode *currentNode = nil;
     BOOL para = NO;
     
-    while (![self.openNodes isEmpty] && !para && !self.viewController.stop) { // Cost: O(N * ((E * (T + F + log N)) + logN)), where N is the number of nodes, T the number of times and F the number of frequencies.
+    while (![self.openNodes isEmpty] && !para && !self.viewController.stop) {
         MVAPair *p = [self.openNodes firstObject]; // Cost: O(1)
         [self.openNodes removeFirst]; // Cost: O(log N)
         currentNode = [self.nodes objectAtIndex:p.second];
         if (([currentNode.distance doubleValue] == p.first)) {
             if (currentNode.identificador == nodeB.identificador) para = YES;
             else {
+                ++self.count;
                 [self updateNodesForNode:currentNode]; // Cost: O(E * (T + F + log N))
                 currentNode.open = YES;
             }
@@ -57,6 +61,8 @@
     NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
     double dif = (end-start);
     NSLog(@"Dijkstra execution time: %.16f",dif);
+    
+    NSLog(@"# visited nodes: %d",self.count);
     
     return path;
 }
@@ -409,6 +415,7 @@
         }
     }
     if (tentative < [dest.score doubleValue]) {// Cost: O(log N)
+        ++self.count;
         dest.previous = currentNode;
         dest.distance = [NSNumber numberWithDouble:newDist];
         dest.score = [NSNumber numberWithDouble:tentative];
@@ -437,13 +444,17 @@
 
 -(MVAPath *)astarPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds
 {
+    self.count = 0;
+    
+    NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
+    
     if (self.type == 1) self.nextTMBCalendar = [self.dataTMB getNextCalendarforSubway:YES]; // Cost: O(D)
     else  self.currentCal = [self.dataTMB getCurrentCalendarforSubway:NO]; // Cost: O(D)
     
     self.piCoord = crds;
     MVANode *currentNode = nil;
     BOOL para = NO;
-    while (![self.openNodes isEmpty] && !para && !self.viewController.stop) { // Cost: O(N * ((E * (T + F + log N)) + logN)), where N is the number of nodes, T the number of times and F the number of frequencies.
+    while (![self.openNodes isEmpty] && !para && !self.viewController.stop) {
         MVAPair *p = [self.openNodes firstObject]; // Cost: O(1)
         [self.openNodes removeFirst]; // Cost: O(log N)
         currentNode = [self.nodes objectAtIndex:p.second];
@@ -466,6 +477,13 @@
     MVAPath *path = [[MVAPath alloc] init];
     [self pathwithGoal:currentNode andPath:path];
     path.totalWeight = [currentNode.distance doubleValue];
+    
+    NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
+    double dif = (end-start);
+    NSLog(@"A* execution time: %.16f",dif);
+    
+    NSLog(@"# visited nodes: %d",self.count);
+    
     return path;
 }
 

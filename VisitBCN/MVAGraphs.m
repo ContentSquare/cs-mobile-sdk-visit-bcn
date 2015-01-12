@@ -17,6 +17,22 @@
     self.busGraph.dataBus = dataBus;
     self.busGraph.dataTMB = dataTMB;
     [self.subwayGraph createSubwayGraphWithDBTMB:dataTMB andFGC:dataFGC];
+    
+    NSLog(@"Bus graph nodes: %d",(int)[self.busGraph.nodes count]);
+    int count = 0;
+    for (int i = 0; i < [self.busGraph.edgeList count]; ++i) {
+        NSArray *edges = [self.busGraph.edgeList objectAtIndex:i];
+        count += [edges count];
+    }
+    NSLog(@"Bus graph edges: %d",(int)count);
+    
+    NSLog(@"Subway graph nodes: %d",(int)[self.subwayGraph.nodes count]);
+    count = 0;
+    for (int i = 0; i < [self.subwayGraph.edgeList count]; ++i) {
+        NSArray *edges = [self.subwayGraph.edgeList objectAtIndex:i];
+        count += [edges count];
+    }
+    NSLog(@"Subway graph edges: %d",(int)count);
 }
 
 -(void)computePathsWithOrigin:(CLLocationCoordinate2D)origin andDestination:(MVAPunInt *)punInt

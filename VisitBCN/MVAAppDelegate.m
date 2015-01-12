@@ -364,7 +364,6 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
  */
 -(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
-    // Use the true heading if it is valid.
     self.degrees = newHeading.magneticHeading;
     if (self.table != nil) [self.table.tableView reloadData];
 }
@@ -425,7 +424,6 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
                                                   otherButtonTitles:nil];
             [alert show];
         }
-        NSLog (@"");
     }
     else if (error.code == kCLErrorGeocodeFoundNoResult) {
         if (nil != NSClassFromString(@"UIAlertController")) {
@@ -455,7 +453,6 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
                                                   otherButtonTitles:nil];
             [alert show];
         }
-        NSLog (@"");
     }
 }
 
