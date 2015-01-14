@@ -15,6 +15,7 @@
 #import "MVAPunInt.h"
 #import "MVACustomLocation.h"
 #import "UIImage+ImageEffects.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MVAPuntsIntsTableViewController () <CLLocationManagerDelegate,UITableViewDataSource,UITableViewDelegate,ALRadialMenuDelegate,UISearchBarDelegate,UISearchDisplayDelegate>
 
@@ -112,6 +113,12 @@
     [self.homeButton setBackgroundColor:[UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f]];
     [self.homeButton.layer setCornerRadius:25.0f];
     [self.homeButton setClipsToBounds:YES];
+    
+    /*self.homeButton.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.homeButton.layer.shadowOffset = CGSizeMake(0.0f,10.0f);
+    self.homeButton.layer.masksToBounds = NO;
+    self.homeButton.layer.shadowRadius = 5.0f;
+    self.homeButton.layer.shadowOpacity = 0.75;*/
     
     self.socialMenu = [[ALRadialMenu alloc] init];
     self.socialMenu.delegate = self;
@@ -612,6 +619,7 @@
     self.menuON = !self.menuON;
     
     [self.homeButton setUserInteractionEnabled:NO];
+    
     if (self.menuON) {
         UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         UIColor *tintColor = [UIColor colorWithWhite:0.5 alpha:0.3];
@@ -620,7 +628,11 @@
         self.homeButton.alpha = 1.0f;
         imV.tag = 1234567;
         imV.alpha = 0.0f;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(menuSelected:)];
+        tap.numberOfTapsRequired = 1;
+        [imV addGestureRecognizer:tap];
         [self.view addSubview:imV];
+        [imV setUserInteractionEnabled:NO];
         [UIView animateWithDuration: 0.6
                          animations:^{
                              imV.alpha = 1.0;
@@ -630,8 +642,9 @@
                          }
                          completion:^(BOOL finished) {
                              [self.homeButton setUserInteractionEnabled:YES];
+                             [imV setUserInteractionEnabled:YES];
                          }];
-        [self.view bringSubviewToFront:sender];
+        [self.view bringSubviewToFront:self.homeButton];
         [self showNavBarAnimated:YES];
     }
     else {
@@ -649,7 +662,7 @@
                          }];
     }
     
-    [self.socialMenu buttonsWillAnimateFromButton:sender withFrame:self.homeButton.frame inView:self.view];
+    [self.socialMenu buttonsWillAnimateFromButton:self.homeButton withFrame:self.homeButton.frame inView:self.view];
 }
 
 /**

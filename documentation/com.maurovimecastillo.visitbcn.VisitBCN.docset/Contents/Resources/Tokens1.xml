@@ -428,7 +428,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/dijkstraPathtoNode:withCoo:</TokenIdentifier>
-			<Abstract type="html">Dijkstra&apos;s algorithm. Cost: O(N  ((E  (T + F + log N)) + logN)), where N is the number of nodes, T the number of times and F the number of frequencies.</Abstract>
+			<Abstract type="html">Dijkstra&apos;s algorithm.</Abstract>
 			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
 			
 			<Declaration>- (MVAPath *)dijkstraPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds</Declaration>
@@ -448,7 +448,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/astarPathtoNode:withCoo:</TokenIdentifier>
-			<Abstract type="html">A algorithm. Cost: O(N  ((E * (T + F + log N)) + logN)), where N is the number of nodes, T the number of times and F the number of frequencies.</Abstract>
+			<Abstract type="html">A* algorithm.</Abstract>
 			<DeclaredIn>MVAAlgorithms.h</DeclaredIn>
 			
 			<Declaration>- (MVAPath *)astarPathtoNode:(MVANode *)nodeB withCoo:(CLLocationCoordinate2D)crds</Declaration>

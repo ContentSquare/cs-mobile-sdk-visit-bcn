@@ -103,7 +103,6 @@
 		344EE6D31A2B2FF300CB1B96 /* parcForumSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6D21A2B2FF300CB1B96 /* parcForumSmall.jpeg */; };
 		344EE6D51A2B2FFA00CB1B96 /* monestirPedrSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6D41A2B2FFA00CB1B96 /* monestirPedrSmall.jpeg */; };
 		344EE6D71A2B300200CB1B96 /* museuHistBcnSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6D61A2B300200CB1B96 /* museuHistBcnSmall.jpeg */; };
-		344EE6D91A2B300800CB1B96 /* basilicaSantaMariaSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6D81A2B300800CB1B96 /* basilicaSantaMariaSmall.jpg */; };
 		344EE6DB1A2B300B00CB1B96 /* basilicaMerceSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6DA1A2B300B00CB1B96 /* basilicaMerceSmall.jpeg */; };
 		344EE6DF1A2B301200CB1B96 /* plazaMonumentalSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6DE1A2B301200CB1B96 /* plazaMonumentalSmall.jpeg */; };
 		344EE6E11A2B301E00CB1B96 /* museuHistoriaSmall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE6E01A2B301E00CB1B96 /* museuHistoriaSmall.jpeg */; };
@@ -143,6 +142,7 @@
 		344EE7251A2B350200CB1B96 /* casaAmatBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7241A2B350200CB1B96 /* casaAmatBig.jpg */; };
 		344EE7271A2B359F00CB1B96 /* palauMusicaBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7261A2B359F00CB1B96 /* palauMusicaBig.jpg */; };
 		344EE7291A2B36E100CB1B96 /* sagradaFamBig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344EE7281A2B36E100CB1B96 /* sagradaFamBig.jpg */; };
+		344FE9C61A6491260060E216 /* basilicaSMariaSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344FE9C51A6491260060E216 /* basilicaSMariaSmall.jpg */; };
 		345009C71A328A73003A8199 /* sagrada_familia.png in Resources */ = {isa = PBXBuildFile; fileRef = 345009C41A328A73003A8199 /* sagrada_familia.png */; };
 		345009C81A328A73003A8199 /* sagrada_familia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 345009C51A328A73003A8199 /* sagrada_familia@3x.png */; };
 		345009C91A328A73003A8199 /* sagrada_familia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 345009C61A328A73003A8199 /* sagrada_familia@2x.png */; };
@@ -490,7 +490,6 @@
 		344EE6D21A2B2FF300CB1B96 /* parcForumSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parcForumSmall.jpeg; sourceTree = "<group>"; };
 		344EE6D41A2B2FFA00CB1B96 /* monestirPedrSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monestirPedrSmall.jpeg; sourceTree = "<group>"; };
 		344EE6D61A2B300200CB1B96 /* museuHistBcnSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museuHistBcnSmall.jpeg; sourceTree = "<group>"; };
-		344EE6D81A2B300800CB1B96 /* basilicaSantaMariaSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basilicaSantaMariaSmall.jpg; sourceTree = "<group>"; };
 		344EE6DA1A2B300B00CB1B96 /* basilicaMerceSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basilicaMerceSmall.jpeg; sourceTree = "<group>"; };
 		344EE6DE1A2B301200CB1B96 /* plazaMonumentalSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plazaMonumentalSmall.jpeg; sourceTree = "<group>"; };
 		344EE6E01A2B301E00CB1B96 /* museuHistoriaSmall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museuHistoriaSmall.jpeg; sourceTree = "<group>"; };
@@ -530,6 +529,7 @@
 		344EE7241A2B350200CB1B96 /* casaAmatBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casaAmatBig.jpg; sourceTree = "<group>"; };
 		344EE7261A2B359F00CB1B96 /* palauMusicaBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = palauMusicaBig.jpg; sourceTree = "<group>"; };
 		344EE7281A2B36E100CB1B96 /* sagradaFamBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sagradaFamBig.jpg; sourceTree = "<group>"; };
+		344FE9C51A6491260060E216 /* basilicaSMariaSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basilicaSMariaSmall.jpg; sourceTree = "<group>"; };
 		345009C41A328A73003A8199 /* sagrada_familia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sagrada_familia.png; sourceTree = "<group>"; };
 		345009C51A328A73003A8199 /* sagrada_familia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sagrada_familia@3x.png"; sourceTree = "<group>"; };
 		345009C61A328A73003A8199 /* sagrada_familia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sagrada_familia@2x.png"; sourceTree = "<group>"; };
@@ -1574,7 +1574,7 @@
 		34A138181A29F04100421753 /* BasilicaSantaMaria */ = {
 			isa = PBXGroup;
 			children = (
-				344EE6D81A2B300800CB1B96 /* basilicaSantaMariaSmall.jpg */,
+				344FE9C51A6491260060E216 /* basilicaSMariaSmall.jpg */,
 				34AE67A21A2B487A0076E5D5 /* basilicaSantaMariaBig.jpg */,
 			);
 			name = BasilicaSantaMaria;
@@ -1838,6 +1838,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				348CC7721A33E3D100A394E6 /* fondo.jpg in Resources */,
+				344FE9C61A6491260060E216 /* basilicaSMariaSmall.jpg in Resources */,
 				34411B761A2CFD0F0003D383 /* taxi-color@2x.png in Resources */,
 				34AA00361A47AF2A006919B3 /* walking_black@3x.png in Resources */,
 				344EE6E91A2B303B00CB1B96 /* fincaGuellSmall.jpeg in Resources */,
@@ -1935,7 +1936,6 @@
 				344EE7011A2B308C00CB1B96 /* mnacSmall.jpeg in Resources */,
 				34AE67AB1A2B4B660076E5D5 /* parcJoanMiroBig.jpg in Resources */,
 				346E24051A51DD3B0057C716 /* google_transit.zip in Resources */,
-				344EE6D91A2B300800CB1B96 /* basilicaSantaMariaSmall.jpg in Resources */,
 				34AE678B1A2B43E60076E5D5 /* catedralBig.jpg in Resources */,
 				3450552D1A3A19C200FC7647 /* error@3x.png in Resources */,
 				34667B091A433595003C6841 /* full_star@3x.png in Resources */,
@@ -2309,7 +2309,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e0ddd617-df34-44f1-869a-91f7988f30fa";
+				PROVISIONING_PROFILE = "a01a7421-92b4-40e2-83ff-9566235c0ead";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2319,7 +2319,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VisitBCN.app/VisitBCN";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(SDKDIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
@@ -2341,7 +2341,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VisitBCN.app/VisitBCN";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(SDKDIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);

@@ -120,6 +120,42 @@
             <NodeRef refid="48"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/setCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property int count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MVAAlgorithms/count</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property int count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MVAAlgorithms/count</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MVAAlgorithms.m</DeclaredIn>
+			
+			<Declaration>@property int count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
         
         
 	</File>

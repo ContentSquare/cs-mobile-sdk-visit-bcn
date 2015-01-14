@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "MVAAppDelegate.h"
+#import "MVAPunIntViewController.h"
 
 @interface VisitBCNTests : XCTestCase
 
