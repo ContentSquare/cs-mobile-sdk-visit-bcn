@@ -9,7 +9,7 @@ This app isn't currently available in the app store.
 
 If you'd like to use this project's code please send an e-mail to mvimeapps@gmail.com
 
-You can check download the documentation of the project as a Docset file, in HTML or check it at http://www.maurovica.com/#!visitbcndocu/c1t26 .
+You can check download the documentation of the project as a Docset file, in HTML or check it at http://maurovime.wix.com/maurovc/#!visitbcndocu/c1t26 .
 
 LICENSE (MIT)
 =============
