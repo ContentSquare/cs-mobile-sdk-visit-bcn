@@ -10,6 +10,8 @@
 
 @interface MVAInfoViewController ()
 
+@property BOOL created;
+
 @end
 
 @implementation MVAInfoViewController
@@ -22,6 +24,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.created = NO;
 }
 
 /**
@@ -43,7 +46,7 @@
  */
 -(void)viewWillAppear:(BOOL)animated
 {
-    [self createScrollView];
+    if (!self.created) [self createScrollView];
 }
 
 /**
@@ -53,6 +56,7 @@
  */
 -(void)createScrollView
 {
+    self.created = YES;
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     
     CGFloat w = self.view.bounds.size.width;
@@ -110,7 +114,7 @@
     alt += (125 + 15);
     
     UILabel *version = [[UILabel alloc] initWithFrame:CGRectMake(8, alt, (w - 16), 20)];
-    [version setText:@"Version 1.1"];
+    [version setText:@"Version 1.2"];
     [version setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:15.0f]];
     [version setTextAlignment:NSTextAlignmentCenter];
     [version setAdjustsFontSizeToFitWidth:YES];

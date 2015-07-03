@@ -301,6 +301,12 @@
  */
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
 {
+    self.isSearching = YES;
+    [self.tableView reloadData];
+}
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
     // Call this after a small delay, or it won't work
     self.isSearching = NO;
     [self.tableView reloadData];
@@ -314,11 +320,11 @@
  */
 - (void)searchTableList
 {
+    [self.filteredContentList removeAllObjects];
     NSString *searchString = self.searchBar.text;
     MVAAppDelegate *delegate = (MVAAppDelegate *)[[UIApplication sharedApplication] delegate];
     for (MVAPunInt* punto in delegate.puntos) {
-        NSComparisonResult result = [punto.nombre compare:searchString options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch) range:NSMakeRange(0, [searchString length])];
-        if (result == NSOrderedSame) {
+        if ([punto.nombre rangeOfString:searchString options:NSCaseInsensitiveSearch].location != NSNotFound) {
             [self.filteredContentList addObject:punto];
         }
     }
@@ -695,7 +701,7 @@
  *
  *  @since version 1.0
  */
-- (NSInteger) numberOfItemsInRadialMenu:(ALRadialMenu *)radialMenu
+- (NSInteger)numberOfItemsInRadialMenu:(ALRadialMenu *)radialMenu
 {
     return 8;
 }
@@ -709,7 +715,7 @@
  *
  *  @since version 1.0
  */
-- (NSInteger) arcSizeForRadialMenu:(ALRadialMenu *)radialMenu
+- (NSInteger)arcSizeForRadialMenu:(ALRadialMenu *)radialMenu
 {
     return 360;
 }
@@ -723,7 +729,7 @@
  *
  *  @since version 1.0
  */
-- (NSInteger) arcRadiusForRadialMenu:(ALRadialMenu *)radialMenu
+- (NSInteger)arcRadiusForRadialMenu:(ALRadialMenu *)radialMenu
 {
     return 80;
 }
@@ -738,7 +744,7 @@
  *
  *  @since version 1.0
  */
-- (ALRadialButton *) radialMenu:(ALRadialMenu *)radialMenu buttonForIndex:(NSInteger)index
+- (ALRadialButton *)radialMenu:(ALRadialMenu *)radialMenu buttonForIndex:(NSInteger)index
 {
     ALRadialButton *button = [[ALRadialButton alloc] init];
     if (index == 1) {
@@ -761,7 +767,7 @@
  *
  *  @since version 1.0
  */
-- (void) radialMenu:(ALRadialMenu *)radialMenu didSelectItemAtIndex:(NSInteger)index
+- (void)radialMenu:(ALRadialMenu *)radialMenu didSelectItemAtIndex:(NSInteger)index
 {
     if (index == 1) {
         [self performSegueWithIdentifier:@"segueInfo" sender:self];

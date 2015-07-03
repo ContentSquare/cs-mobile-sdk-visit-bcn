@@ -12,7 +12,7 @@
 	<dict>
 		<key>45255132-cea6-499d-ad40-b975c50bf719</key>
 		<string>https://riouxsvn.com/svn/visitbcn</string>
-		<key>45255132-cea6-499d-ad40-b975c50bf719++505</key>
+		<key>B31AC6EB7E4EEA28F10FED0D81A6125FA97BB23F</key>
 		<string>https://riouxsvn.com/svn/visitbcn/trunk</string>
 		<key>a88054c8-8548-d212-9dfb-077819fee317++505</key>
 		<string>https://visitbcnapp.googlecode.com/svn/trunk</string>
@@ -23,14 +23,14 @@
 	<dict>
 		<key>45255132-cea6-499d-ad40-b975c50bf719</key>
 		<string>../../..</string>
-		<key>45255132-cea6-499d-ad40-b975c50bf719++505</key>
+		<key>B31AC6EB7E4EEA28F10FED0D81A6125FA97BB23F</key>
 		<string>../..</string>
 		<key>a88054c8-8548-d212-9dfb-077819fee317++505</key>
 		<string>../../../trunk</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
-		<key>45255132-cea6-499d-ad40-b975c50bf719++505</key>
+		<key>B31AC6EB7E4EEA28F10FED0D81A6125FA97BB23F</key>
 		<string>https://riouxsvn.com/svn/visitbcn</string>
 		<key>a88054c8-8548-d212-9dfb-077819fee317++505</key>
 		<string>https://visitbcnapp.googlecode.com/svn</string>
@@ -40,7 +40,7 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>45255132-cea6-499d-ad40-b975c50bf719++505</string>
+	<string>B31AC6EB7E4EEA28F10FED0D81A6125FA97BB23F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -63,7 +63,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.subversion</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>45255132-cea6-499d-ad40-b975c50bf719++505</string>
+			<string>B31AC6EB7E4EEA28F10FED0D81A6125FA97BB23F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>visitbcn</string>
 		</dict>
