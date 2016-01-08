@@ -5,7 +5,7 @@ VisitBCN iOS app.
 
 This project contains all the source code of the iOS app VisitBCN.
 
-This app isn't currently available in the app store.
+This app is available in the app store: https://itunes.apple.com/us/app/visitbcn/id904676442?mt=8
 
 If you'd like to use this project's code please send an e-mail to mvimeapps@gmail.com
 
