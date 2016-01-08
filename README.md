@@ -11,6 +11,8 @@ If you'd like to use this project's code please send an e-mail to mvimeapps@gmai
 
 You can check download the documentation of the project as a Docset file, in HTML or check it at http://maurovime.wix.com/maurovc/#!visitbcndocu/c1t26 .
 
+Notice: The code in this app is old and needs to be refactored as soon as possible.
+
 LICENSE (MIT)
 =============
 
