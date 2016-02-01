@@ -9,7 +9,7 @@ This app is available in the app store: https://itunes.apple.com/us/app/visitbcn
 
 If you'd like to use this project's code please send an e-mail to mvimeapps@gmail.com
 
-You can check download the documentation of the project as a Docset file, in HTML or check it at http://maurovime.wix.com/maurovc/#!visitbcndocu/c1t26 .
+You can check download the documentation of the project as a Docset file, in HTML or check it at http://maurovime.com/visitBCNDocu/index.html .
 
 Notice: The code in this app is old and needs to be refactored as soon as possible.
 
