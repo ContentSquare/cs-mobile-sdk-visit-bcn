@@ -11,7 +11,11 @@ If you'd like to use this project's code please send an e-mail to mvimeapps@gmai
 
 You can check download the documentation of the project as a Docset file, in HTML or check it at http://maurovime.com/visitBCNDocu/index.html .
 
-Notice: The code in this app is old and needs to be refactored as soon as possible.
+NOTICE
+=============
+
+The code in this app is old and needs to be refactored as soon as possible. This code doesn't reflect my current Objective-C level.
+
 
 LICENSE (MIT)
 =============
