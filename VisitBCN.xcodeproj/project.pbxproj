@@ -311,7 +311,6 @@
 		34FA46081A32985300968951 /* logoHailo.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FA46051A32985300968951 /* logoHailo.png */; };
 		34FA46091A32985300968951 /* logoHailo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FA46061A32985300968951 /* logoHailo@2x.png */; };
 		34FA460B1A329EAB00968951 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FA460A1A329EAB00968951 /* LaunchScreen.xib */; };
-		3598D50F1FD6E0B000603031 /* ContentSquare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3598D5101FD6E0B000603031 /* ContentSquare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -758,7 +757,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3598D50F1FD6E0B000603031 /* ContentSquare.framework in Frameworks */,
 				34A21A251A33DB81002F3AEB /* Accounts.framework in Frameworks */,
 				34A21A231A33DB7A002F3AEB /* Social.framework in Frameworks */,
 				34A21A211A33DB42002F3AEB /* MobileCoreServices.framework in Frameworks */,
