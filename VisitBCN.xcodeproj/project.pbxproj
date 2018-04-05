@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26CFF599206944E500D7FAD2 /* ContentSquare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CFF59A206944E500D7FAD2 /* ContentSquare.framework */; };
 		3406FE031A27C8E9004C5D46 /* code-purple@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE021A27C8E9004C5D46 /* code-purple@3x.png */; };
 		3406FE051A27C8FA004C5D46 /* code-purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE041A27C8FA004C5D46 /* code-purple@2x.png */; };
 		3406FE081A27C9C1004C5D46 /* near_me-colored@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE061A27C9C1004C5D46 /* near_me-colored@2x.png */; };
@@ -324,6 +325,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26CFF59A206944E500D7FAD2 /* ContentSquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContentSquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3406FE021A27C8E9004C5D46 /* code-purple@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "code-purple@3x.png"; sourceTree = "<group>"; };
 		3406FE041A27C8FA004C5D46 /* code-purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "code-purple@2x.png"; sourceTree = "<group>"; };
 		3406FE061A27C9C1004C5D46 /* near_me-colored@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "near_me-colored@2x.png"; sourceTree = "<group>"; };
@@ -757,6 +759,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CFF599206944E500D7FAD2 /* ContentSquare.framework in Frameworks */,
 				34A21A251A33DB81002F3AEB /* Accounts.framework in Frameworks */,
 				34A21A231A33DB7A002F3AEB /* Social.framework in Frameworks */,
 				34A21A211A33DB42002F3AEB /* MobileCoreServices.framework in Frameworks */,
@@ -1347,6 +1350,7 @@
 		349000B319B6431000BA3DCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26CFF59A206944E500D7FAD2 /* ContentSquare.framework */,
 				3598D5101FD6E0B000603031 /* ContentSquare.framework */,
 				34A21A241A33DB81002F3AEB /* Accounts.framework */,
 				34A21A221A33DB7A002F3AEB /* Social.framework */,
