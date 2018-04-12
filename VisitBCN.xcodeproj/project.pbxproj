@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		267B3AA7207F982000050100 /* ContentSquare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267B3AA6207F982000050100 /* ContentSquare.framework */; };
+		267B3AA8207F982000050100 /* ContentSquare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 267B3AA6207F982000050100 /* ContentSquare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3406FE031A27C8E9004C5D46 /* code-purple@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE021A27C8E9004C5D46 /* code-purple@3x.png */; };
 		3406FE051A27C8FA004C5D46 /* code-purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE041A27C8FA004C5D46 /* code-purple@2x.png */; };
 		3406FE081A27C9C1004C5D46 /* near_me-colored@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3406FE061A27C9C1004C5D46 /* near_me-colored@2x.png */; };
@@ -323,7 +325,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		267B3AA9207F982000050100 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				267B3AA8207F982000050100 /* ContentSquare.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		267B3AA6207F982000050100 /* ContentSquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContentSquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3406FE021A27C8E9004C5D46 /* code-purple@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "code-purple@3x.png"; sourceTree = "<group>"; };
 		3406FE041A27C8FA004C5D46 /* code-purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "code-purple@2x.png"; sourceTree = "<group>"; };
 		3406FE061A27C9C1004C5D46 /* near_me-colored@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "near_me-colored@2x.png"; sourceTree = "<group>"; };
@@ -758,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A21A251A33DB81002F3AEB /* Accounts.framework in Frameworks */,
+				267B3AA7207F982000050100 /* ContentSquare.framework in Frameworks */,
 				34A21A231A33DB7A002F3AEB /* Social.framework in Frameworks */,
 				34A21A211A33DB42002F3AEB /* MobileCoreServices.framework in Frameworks */,
 				344ACD981A2558CE0065E4E8 /* QuartzCore.framework in Frameworks */,
@@ -1328,6 +1346,7 @@
 		349000A819B6430F00BA3DCE = {
 			isa = PBXGroup;
 			children = (
+				267B3AA6207F982000050100 /* ContentSquare.framework */,
 				349000BA19B6431000BA3DCE /* VisitBCN */,
 				349000D919B6431000BA3DCE /* VisitBCNTests */,
 				349000B319B6431000BA3DCE /* Frameworks */,
@@ -1764,6 +1783,7 @@
 				349000AD19B6431000BA3DCE /* Sources */,
 				349000AE19B6431000BA3DCE /* Frameworks */,
 				349000AF19B6431000BA3DCE /* Resources */,
+				267B3AA9207F982000050100 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2279,6 +2299,7 @@
 				GCC_PREFIX_HEADER = "VisitBCN/VisitBCN-Prefix.pch";
 				INFOPLIST_FILE = "VisitBCN/VisitBCN-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2307,6 +2328,7 @@
 				GCC_PREFIX_HEADER = "VisitBCN/VisitBCN-Prefix.pch";
 				INFOPLIST_FILE = "VisitBCN/VisitBCN-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
