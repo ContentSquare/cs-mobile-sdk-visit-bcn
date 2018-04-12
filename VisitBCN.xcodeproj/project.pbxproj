@@ -774,6 +774,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CFF599206944E500D7FAD2 /* ContentSquare.framework in Frameworks */,
 				34A21A251A33DB81002F3AEB /* Accounts.framework in Frameworks */,
 				267B3AA7207F982000050100 /* ContentSquare.framework in Frameworks */,
 				34A21A231A33DB7A002F3AEB /* Social.framework in Frameworks */,
@@ -1127,7 +1128,7 @@
 			name = Reachability;
 			sourceTree = "<group>";
 		};
-		346219AA1A280C5400763F02 /* PlaçaCatalunya */ = {
+		346219AA1A280C5400763F02 /* PlaçaCatalunya */ = {
 			isa = PBXGroup;
 			children = (
 				344EE6F81A2B307300CB1B96 /* plCatSmall.jpeg */,
@@ -1136,7 +1137,7 @@
 			name = "PlaçaCatalunya";
 			sourceTree = "<group>";
 		};
-		346219B11A280DBB00763F02 /* PlaçaSantJaume */ = {
+		346219B11A280DBB00763F02 /* PlaçaSantJaume */ = {
 			isa = PBXGroup;
 			children = (
 				344EE6F61A2B306E00CB1B96 /* santJaumeSmall.jpeg */,
@@ -1145,7 +1146,7 @@
 			name = "PlaçaSantJaume";
 			sourceTree = "<group>";
 		};
-		346219B81A280EA100763F02 /* PlaçaReial */ = {
+		346219B81A280EA100763F02 /* PlaçaReial */ = {
 			isa = PBXGroup;
 			children = (
 				344EE6F41A2B306500CB1B96 /* plReialSmall.jpeg */,
@@ -1154,7 +1155,7 @@
 			name = "PlaçaReial";
 			sourceTree = "<group>";
 		};
-		346219BF1A280F6900763F02 /* PlaçadelRei */ = {
+		346219BF1A280F6900763F02 /* PlaçadelRei */ = {
 			isa = PBXGroup;
 			children = (
 				344EE6F21A2B306100CB1B96 /* plReiSmall.jpeg */,
@@ -1253,7 +1254,7 @@
 			name = Monumental;
 			sourceTree = "<group>";
 		};
-		34621A0C1A281C5700763F02 /* PalauGüell */ = {
+		34621A0C1A281C5700763F02 /* PalauGüell */ = {
 			isa = PBXGroup;
 			children = (
 				34AE679E1A2B47AD0076E5D5 /* palauGuellBig.jpg */,
@@ -1307,7 +1308,7 @@
 			name = MNAC;
 			sourceTree = "<group>";
 		};
-		347CA4831A27FBC00018F5B8 /* PlaçaEspanya */ = {
+		347CA4831A27FBC00018F5B8 /* PlaçaEspanya */ = {
 			isa = PBXGroup;
 			children = (
 				344EE6FE1A2B308700CB1B96 /* plEspanyaSmall.jpeg */,
@@ -1366,6 +1367,7 @@
 		349000B319B6431000BA3DCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26CFF59A206944E500D7FAD2 /* ContentSquare.framework */,
 				3598D5101FD6E0B000603031 /* ContentSquare.framework */,
 				34A21A241A33DB81002F3AEB /* Accounts.framework */,
 				34A21A221A33DB7A002F3AEB /* Social.framework */,
@@ -1531,13 +1533,13 @@
 			children = (
 				344EE6CB1A2B2F5800CB1B96 /* LaPedrera */,
 				34A1383B1A29FA8F00421753 /* MuseuMaritim */,
-				34A138341A29FA6F00421753 /* ParcJoanMiró */,
+				34A138341A29FA6F00421753 /* ParcJoanMiró */,
 				34A1382D1A29F8B500421753 /* Forum */,
 				34A138261A29F52200421753 /* MonestirPedralbes */,
 				34A1381F1A29F36800421753 /* MuseuHistBCN */,
 				34A138181A29F04100421753 /* BasilicaSantaMaria */,
 				34A138111A29EE3E00421753 /* BasilicaMerce */,
-				34621A0C1A281C5700763F02 /* PalauGüell */,
+				34621A0C1A281C5700763F02 /* PalauGüell */,
 				34621A051A281B7100763F02 /* Monumental */,
 				346219FE1A281A4500763F02 /* MuseuHistoria */,
 				346219F71A28194700763F02 /* Liceu */,
@@ -1548,13 +1550,13 @@
 				346219D41A28135E00763F02 /* FossarMoreres */,
 				346219CD1A28127800763F02 /* SantaMariadelMar */,
 				346219C61A28103C00763F02 /* CatedraldeBarcelona */,
-				346219BF1A280F6900763F02 /* PlaçadelRei */,
-				346219B81A280EA100763F02 /* PlaçaReial */,
-				346219B11A280DBB00763F02 /* PlaçaSantJaume */,
-				346219AA1A280C5400763F02 /* PlaçaCatalunya */,
+				346219BF1A280F6900763F02 /* PlaçadelRei */,
+				346219B81A280EA100763F02 /* PlaçaReial */,
+				346219B11A280DBB00763F02 /* PlaçaSantJaume */,
+				346219AA1A280C5400763F02 /* PlaçaCatalunya */,
 				347CA4911A27FEAD0018F5B8 /* Ciutadella */,
 				347CA48A1A27FD5A0018F5B8 /* SantJordi */,
-				347CA4831A27FBC00018F5B8 /* PlaçaEspanya */,
+				347CA4831A27FBC00018F5B8 /* PlaçaEspanya */,
 				347CA47C1A27FAB40018F5B8 /* MNAC */,
 				347CA4751A27F9B80018F5B8 /* Barceloneta */,
 				347CA46E1A27F8D20018F5B8 /* PeixDaurat */,
@@ -1628,7 +1630,7 @@
 			name = Forum;
 			sourceTree = "<group>";
 		};
-		34A138341A29FA6F00421753 /* ParcJoanMiró */ = {
+		34A138341A29FA6F00421753 /* ParcJoanMiró */ = {
 			isa = PBXGroup;
 			children = (
 				344EE6D01A2B2FED00CB1B96 /* parcJoanMiroSmall.jpeg */,
